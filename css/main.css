@@ -26,3 +26,41 @@
     font-size: 18px;
     line-height: 20px;
 }
+
+@media (min-width: 768px){
+	.navbar-nav>li>.dropdown-menu {
+		position:fixed;
+		text-align:center;
+		width:100%;
+		background: #454545;
+	}
+
+	.dropdown-menu>li{
+		display:inline-block;
+		
+	}
+
+	.dropdown-menu>li>a{
+		color:#999;
+	}
+	
+
+	.navbar-nav {
+		margin-left: 24%;
+	}
+	
+	.navbar-nav>li>a{
+		text-shadow: 0 1px 0 rgba(255,255,255,.25);
+		color: #888;
+		margin-top:10px;
+		
+	}
+	
+	.nav>li>a:hover, .nav .open>a:hover, .nav .open>a:focus {
+		background: none;
+	}
+	
+   /*#ak-header{
+		border-bottom: 1px solid #E9E9E9;
+	}*/
+}
