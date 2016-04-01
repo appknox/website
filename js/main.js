@@ -53,11 +53,6 @@ MenuManager.prototype.positionDropMenu = function(){
 var dropMenuManager = new MenuManager();
 dropMenuManager.init();
 
-
-
-
-
-
 /*******************************************************************************
 SLide Manager
 *******************************************************************************/
@@ -91,7 +86,6 @@ AkSlideManager.prototype.initiate = function(){
 	this.slideBlocks = $(".ak-slide");
 	this.noOfSlides = this.slideBlocks.length;
 	this.jumperBlock = $("#ak-jumper-block");
-	
 	this.createJumpers();
 	this.initSlidePosition();
 	this.callAnimationLoop();
@@ -109,24 +103,53 @@ AkSlideManager.prototype.initSlidePosition = function(){
 
 //Create the jump navigation for the slide
 AkSlideManager.prototype.createJumpers = function(){
+	var _this = this;
 	var html = "";
-	debugger;
+
 	for(var i = 0; i < this.noOfSlides; i++){
 		html = html + "<div class=' " + this.akJumpButtonClass + "' id=ak-jumpto-" + (i+1) +" ><div class='ak-slide-jump-circle'></div></div>";
 	}
 	
 	this.jumperBlock.append(html);
+	this.jumpers = $("."+_this.akJumpButtonClass);
+	this.jumpers.mouseover(function(){
+		$(this).find(".ak-slide-jump-circle").addClass("ak-hovered-jumper");
+	});
+	
+	this.jumpers.mouseout(function(){
+		$(this).find(".ak-slide-jump-circle").removeClass("ak-hovered-jumper");
+	});
+	
+	this.bindJumperClick();
 }
 
 AkSlideManager.prototype.bindJumperClick = function(){
 	var _this = this;
-	$(_this.akJumpButtonClass).unbind("click").bind({self:_this},_this.onJumperClick);
+	$("."+_this.akJumpButtonClass).unbind("click",_this.onJumperClick).bind("click",{self:_this},_this.onJumperClick);
 }
 
 AkSlideManager.prototype.onJumperClick = function(ev){
 	var _this = ev.data.self;
+	var target = ev.currentTarget;
+	var slideNum = null;
+	var id = $(target).attr("id");
+	
+	slideNum = id.split("ak-jumpto-")[1];
+	clearInterval(_this.interval);
+	_this.interval = null;
+	_this.hideSlide(slideNum-1);
 	
 }
+
+
+AkSlideManager.prototype.jumperActivate = function(){
+	var _this = this;
+	
+	$(".ak-jump-active").removeClass("ak-jump-active");
+	$(_this.jumpers[_this.currentSlide]).find(".ak-slide-jump-circle").addClass("ak-jump-active");
+	
+}
+
 
 AkSlideManager.prototype.bringSlide = function(){
 	var _this = this;
@@ -140,6 +163,10 @@ AkSlideManager.prototype.bringSlide = function(){
 		var animator = new AkElementAnimator(elesToAnimate[i]);
 		animator.setInitialState();
 		animator.appearanceAnimate();
+	}
+	
+	if(_this.interval == null){
+		_this.callAnimationLoop();
 	}
 }
 
@@ -161,6 +188,8 @@ AkSlideManager.prototype.hideSlide = function(nextSlideNum){
 	else{
 		_this.currentSlide = _this.currentSlide == (_this.noOfSlides - 1) ? 0 : _this.currentSlide + 1;
 	}
+	
+	_this.jumperActivate();
 	
 	$(currentSlideBlock).fadeOut(timeToHide + _this.hideDeltaTime,function(){_this.bringSlide()});
 	
@@ -226,11 +255,10 @@ AkElementAnimator.prototype.setInitialState = function(){
 AkElementAnimator.prototype.appearanceAnimate = function(){
 	var _this = this;
 	$(_this.eleToAnimate).animate(_this.appearanceCss);
+	
 }
 
 AkElementAnimator.prototype.perishAnimate = function(){
 	var _this = this;
 	$(_this.eleToAnimate).animate(_this.perishCss,_this.animTime,function(){});
 }
-
-
