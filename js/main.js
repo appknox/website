@@ -49,14 +49,12 @@ MenuManager.prototype.positionDropMenu = function(){
 	this.dropMenus.css("top",offsetTop);
 }
 
-
 var dropMenuManager = new MenuManager();
 dropMenuManager.init();
 
 /*******************************************************************************
 SLide Manager
 *******************************************************************************/
-
 function AkSlideManager(){
 	this.noOfSlides = 0;
 	this.slideBlocks = null;  // jQuery Reference
@@ -68,6 +66,7 @@ function AkSlideManager(){
 	this.eleAnimateClass = "ak-ele-animate";
 	this.hideDeltaTime = 500;
 	this.appearDeltaTime = 50;
+	this.slideZoneId = "ak-slide-zone";
 }
 
 AkSlideManager.prototype.init = function(){
@@ -86,19 +85,26 @@ AkSlideManager.prototype.initiate = function(){
 	this.slideBlocks = $(".ak-slide");
 	this.noOfSlides = this.slideBlocks.length;
 	this.jumperBlock = $("#ak-jumper-block");
+	
+	this.addSupportElements();
 	this.createJumpers();
 	this.initSlidePosition();
 	this.callAnimationLoop();
-	
-}
-
-AkSlideManager.prototype.positionSlideChilds = function(){
-	
 }
 
 AkSlideManager.prototype.initSlidePosition = function(){
+	var _this = this;
 	this.slideBlocks.css("display","none");
 	$(this.slideBlocks[0]).css("display","block");
+	
+	var currentSlideBlock = this.slideBlocks[_this.currentSlide];
+	var elesToAnimate = $(currentSlideBlock).find("." + this.eleAnimateClass);
+	
+	for(var i=0; i < elesToAnimate.length; i++){
+		var animator = new AkElementAnimator(elesToAnimate[i]);
+		animator.setInitialState();
+		animator.appearanceAnimate();
+	}
 }
 
 //Create the jump navigation for the slide
@@ -138,7 +144,6 @@ AkSlideManager.prototype.onJumperClick = function(ev){
 	clearInterval(_this.interval);
 	_this.interval = null;
 	_this.hideSlide(slideNum-1);
-	
 }
 
 
@@ -147,17 +152,15 @@ AkSlideManager.prototype.jumperActivate = function(){
 	
 	$(".ak-jump-active").removeClass("ak-jump-active");
 	$(_this.jumpers[_this.currentSlide]).find(".ak-slide-jump-circle").addClass("ak-jump-active");
-	
 }
 
 
 AkSlideManager.prototype.bringSlide = function(){
 	var _this = this;
 	var currentSlideBlock = this.slideBlocks[_this.currentSlide];
+	var elesToAnimate = $(currentSlideBlock).find("." + this.eleAnimateClass);
 	
 	$(currentSlideBlock).fadeIn(_this.appearDeltaTime);
-	
-	var elesToAnimate = $(currentSlideBlock).find("." + this.eleAnimateClass);
 	
 	for(var i=0; i < elesToAnimate.length; i++){
 		var animator = new AkElementAnimator(elesToAnimate[i]);
@@ -190,12 +193,8 @@ AkSlideManager.prototype.hideSlide = function(nextSlideNum){
 	}
 	
 	_this.jumperActivate();
-	
 	$(currentSlideBlock).fadeOut(timeToHide + _this.hideDeltaTime,function(){_this.bringSlide()});
-	
 }
-
-
 
 AkSlideManager.prototype.createIntervalAnim = function(){
 	this.hideSlide();
@@ -214,10 +213,16 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	this.interval = setInterval(repeatAnim,4000);
+	this.interval = setInterval(repeatAnim,8000);
 }
 
-//Test Zone
+AkSlideManager.prototype.addSupportElements = function(){
+	var _this = this;
+	var appendMarginDefendLi = "<li style='height:1px'></li>";
+	$("#"+_this.slideZoneId).prepend(appendMarginDefendLi);
+	
+}
+
 var akSlideManager = new AkSlideManager();
 akSlideManager.init();
 
@@ -239,26 +244,36 @@ AkElementAnimator.prototype.createAnimator = function(element){
 	this.appearanceCss = JSON.parse($(element).attr("data-appear-css"));
 	this.perishCss = JSON.parse($(element).attr("data-perish-css"));
 	this.animTime = parseInt($(element).attr("data-ak-anim-time"));
+	this.animDelay = parseInt($(element).attr("data-ak-anim-delay"));
 	
 	if(this.animTime === NaN){
 		this.animTime = this.defaultAnimTime;
-		
+	}
+	
+	if(this.animDelay === NaN){
+		this.animTime = 0;
 	}
 }
 
 AkElementAnimator.prototype.setInitialState = function(){
 	var _this = this;
-	$(_this.eleToAnimate).css(_this.initialCss);
-	
+	$(_this.eleToAnimate).stop().css(_this.initialCss);
 }
 
 AkElementAnimator.prototype.appearanceAnimate = function(){
 	var _this = this;
-	$(_this.eleToAnimate).animate(_this.appearanceCss);
+	var animTime = _this.animTime;
+	
+	if(_this.animDelay != 0){
+		setTimeout(function(){$(_this.eleToAnimate).stop().animate(_this.appearanceCss,animTime,function(){})},_this.animDelay);
+	}else{
+		$(_this.eleToAnimate).stop().animate(_this.appearanceCss,animTime,function(){});
+	}
 	
 }
 
 AkElementAnimator.prototype.perishAnimate = function(){
 	var _this = this;
-	$(_this.eleToAnimate).animate(_this.perishCss,_this.animTime,function(){});
+	var animTime = _this.animTime;
+	$(_this.eleToAnimate).stop().animate(_this.perishCss,animTime,function(){});
 }
