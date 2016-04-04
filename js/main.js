@@ -113,7 +113,9 @@ AkSlideManager.prototype.createJumpers = function(){
 	var html = "";
 
 	for(var i = 0; i < this.noOfSlides; i++){
-		html = html + "<div class=' " + this.akJumpButtonClass + "' id=ak-jumpto-" + (i+1) +" ><div class='ak-slide-jump-circle'></div></div>";
+		var first = "";
+		if(i == 0){first = "ak-jump-active"}
+		html = html + "<div class=' " + this.akJumpButtonClass + "' id=ak-jumpto-" + (i+1) +" ><div class='ak-slide-jump-circle "  + " " + first + "'></div></div>";
 	}
 	
 	this.jumperBlock.append(html);
@@ -213,7 +215,7 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	this.interval = setInterval(repeatAnim,8000);
+	//this.interval = setInterval(repeatAnim,8000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
