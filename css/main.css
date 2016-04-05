@@ -14,16 +14,29 @@
 
 body{
 	font-family:gillsansmtpro;
+	font-size:20px;
 }
    
+h1,h2,h3,h4,h5,h6{
+	font-family: neosans;
+	line-height:1.3em;
+}
+
 ul,li{list-style-type:none;margin:0;padding:0}
 
 .red{color:#b48787;}
 .bg-red{background:#b48787;}
 .bg-dark{background:#333;}
 
+p{
+	font-size:1em;
+}
+
+.no-border{border:none !important;}
+
 #ak-header li>a{
 	font-family: neosans;
+	font-size:16px;
 	transition:all 0.4s ease-out;
 }
 
@@ -320,6 +333,61 @@ ul,li{list-style-type:none;margin:0;padding:0}
     -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
     transform: rotate(360deg);
   }
+}
+
+#site-footer{
+	background:#333;
+	padding:20px 0;
+	color:#aaa;
+}
+
+#site-footer input[type=email]{
+	border:none;
+	background:#444;
+	padding:8px 2%;
+	width:96%;
+}
+
+#site-footer .container>div{
+	border-left:1px solid #555;
+	padding:10px 3%;
+}
+
+.footer-titles{
+	color:#85C5FC;
+	margin:15px 0%;
+	font-size:0.9em;
+}
+
+#site-footer a{
+	color:#85C5FC;
+	margin:15px 0%;
+	font-size:0.8em;
+}
+
+.footer-article{
+	margin:5px 0 40px 0;
+}
+
+.footer-article p{
+	font-size:0.9em;
+	color:#999;
+}
+
+.news-title{font-size:0.8em;}
+
+#footer-subscribe-butn{
+	background:#555;
+	color:#aaa;
+	border:none;
+	padding:3px 12px;
+	border-radius:15px;
+	font-size:0.9em;
+	margin:10px 0;
+}
+
+#footer-subscribe-butn:hover{
+	color:#fff;
 }
 
 @media (min-width: 768px){
