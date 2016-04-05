@@ -279,3 +279,107 @@ AkElementAnimator.prototype.perishAnimate = function(){
 	var animTime = _this.animTime;
 	$(_this.eleToAnimate).stop().animate(_this.perishCss,animTime,function(){});
 }
+
+
+/************************************************************************
+*Canvas drawing to connect scan procedure breifing zone 
+************************************************************************/
+
+var connectScanZone = (function($){
+	var scanListContainer = $("#scan-process-list");
+	var uploadBlock = $("#uploadAppIcon");
+	var DASTBlock = $("#DASTZone");
+	var SASTIcon = $("#sastIcon");
+	var SASTBlock = $("#SASTZone");
+	var UBABlock = $("#UBAInnerZone");
+	var scanReportBlock = $("#reportZoneTitle");
+	var canvas = null;
+	var ctx = null;
+	
+	function calcOffset(ele){
+		var blockOffset = scanListContainer.offset();
+		var eleOffset = ele.offset();
+		
+		return {top: eleOffset.top - blockOffset.top , left: eleOffset.left - blockOffset.left }
+	}
+	
+	function createCanvas(){
+		canvas = document.createElement("canvas");
+		canvas.id = "scanConnectZoneCanvas";
+		$("body").append(canvas);
+		ctx = canvas.getContext("2d");
+		positionCanvas();
+	}
+	
+	function positionCanvas(){
+		scanListContainer.css({position:"relative",zIndex:100})
+		var containerOffset = scanListContainer.offset();
+		var height = scanListContainer.height();
+		var width = scanListContainer.width();
+		$(canvas).css({position:"absolute",zIndex:99,top:containerOffset.top,left:containerOffset.left});
+		canvas.height = height;
+		canvas.width = width;
+	}
+	
+	function drawDiagram(){
+		var scanReportOffset = calcOffset(scanReportBlock);
+		var reportLeft = scanReportOffset.left + scanReportBlock.width()/2;
+		var reportTop = scanReportOffset.top;
+		var uploadOffset = calcOffset(uploadBlock);
+		var width = uploadBlock.width();
+		var topDelta = 20;
+		
+		if(canvas == null){
+			createCanvas();
+		}
+		ctx.restore();
+		positionCanvas();
+		ctx.beginPath();
+		ctx.lineWidth = 1;
+		ctx.strokeStyle = "#FF4236"
+		debugger;
+		
+		ctx.moveTo(uploadOffset.left + width/2,uploadOffset.top);
+		
+		
+		//ctx.lineTo(sastOffset.left,sastOffset.top);
+		ctx.lineTo(uploadOffset.left + width/2,uploadOffset.top - 30);
+		ctx.stroke();
+		
+		ctx.restore();
+		ctx.strokeStyle = "#ccc";
+		var sastOffset = calcOffset(SASTIcon);
+		ctx.moveTo(uploadOffset.left + width/2,uploadOffset.top - 30);
+		ctx.lineTo(sastOffset.left,uploadOffset.top - 30);
+		ctx.stroke();
+		
+		
+		var sastBlockOffset = calcOffset(SASTBlock);
+		var sastBottom = sastBlockOffset.top + SASTBlock.height();
+		var sastLeft = sastBlockOffset.left + SASTBlock.width()/2;
+		ctx.moveTo(sastLeft,sastBottom + topDelta);
+		ctx.lineTo(reportLeft-20,reportTop);
+		ctx.stroke();
+		
+		
+		var dastBlockOffset = calcOffset(DASTBlock);
+		var dastBottom = dastBlockOffset.top + DASTBlock.height();
+		var dastLeft = dastBlockOffset.left + DASTBlock.width()/2;
+		ctx.moveTo(dastLeft,dastBottom + topDelta);
+		ctx.lineTo(reportLeft,reportTop);
+		ctx.stroke();
+		
+		var ubaBlockOffset = calcOffset(UBABlock);
+		var ubaBottom = ubaBlockOffset.top + UBABlock.height();
+		var ubaLeft = ubaBlockOffset.left + UBABlock.width()/2;
+		ctx.moveTo(ubaLeft,ubaBottom + topDelta);
+		ctx.lineTo(reportLeft+20,reportTop);
+		ctx.stroke();
+	}
+	
+	return {draw : drawDiagram}
+	
+})(jQuery);
+
+
+connectScanZone.draw();
