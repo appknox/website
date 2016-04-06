@@ -115,7 +115,7 @@ AkSlideManager.prototype.createJumpers = function(){
 	for(var i = 0; i < this.noOfSlides; i++){
 		var first = "";
 		if(i == 0){first = "ak-jump-active"}
-		html = html + "<div class=' " + this.akJumpButtonClass + "' id=ak-jumpto-" + (i+1) +" ><div class='ak-slide-jump-circle "  + " " + first + "'></div></div>";
+		html = html + "<div class=' " + this.akJumpButtonClass + " " + first + "' id=ak-jumpto-" + (i+1) +" ></div>";
 	}
 	
 	this.jumperBlock.append(html);
@@ -153,7 +153,7 @@ AkSlideManager.prototype.jumperActivate = function(){
 	var _this = this;
 	
 	$(".ak-jump-active").removeClass("ak-jump-active");
-	$(_this.jumpers[_this.currentSlide]).find(".ak-slide-jump-circle").addClass("ak-jump-active");
+	$(_this.jumpers[_this.currentSlide]).addClass("ak-jump-active");
 }
 
 
@@ -336,48 +336,90 @@ var connectScanZone = (function($){
 		positionCanvas();
 		ctx.beginPath();
 		ctx.lineWidth = 1;
-		ctx.strokeStyle = "#FF4236"
-		debugger;
+		ctx.strokeStyle = "#FF4236";
 		
-		ctx.moveTo(uploadOffset.left + width/2,uploadOffset.top);
-		
-		
-		//ctx.lineTo(sastOffset.left,sastOffset.top);
-		ctx.lineTo(uploadOffset.left + width/2,uploadOffset.top - 30);
-		ctx.stroke();
-		
-		ctx.restore();
-		ctx.strokeStyle = "#ccc";
 		var sastOffset = calcOffset(SASTIcon);
-		ctx.moveTo(uploadOffset.left + width/2,uploadOffset.top - 30);
-		ctx.lineTo(sastOffset.left,uploadOffset.top - 30);
+		var deltaY = uploadOffset.top - sastOffset.top - SASTIcon.height()/2;
+		
+		ctx.beginPath();
+		ctx.moveTo(uploadOffset.left + width/2,uploadOffset.top);
+		ctx.lineTo(uploadOffset.left + width/2,uploadOffset.top - deltaY );
 		ctx.stroke();
+		ctx.closePath();
+
 		
+		ctx.beginPath();
 		
+		ctx.moveTo(uploadOffset.left + width/2,uploadOffset.top - deltaY );
+		ctx.lineTo(sastOffset.left,uploadOffset.top - deltaY);
+		ctx.stroke();
+		ctx.closePath();
+		traingle = {
+			x1:sastOffset.left-10,
+			y1:uploadOffset.top - deltaY - 10,
+			x2:sastOffset.left-10,
+			y2:uploadOffset.top - deltaY + 10,
+			x3:sastOffset.left ,
+			y3:uploadOffset.top - deltaY,
+			fillStyle:"#FF4236"
+		} 
+		drawTriangle(traingle);
+		
+		ctx.strokeStyle = "#ccc";
+		ctx.beginPath();
 		var sastBlockOffset = calcOffset(SASTBlock);
 		var sastBottom = sastBlockOffset.top + SASTBlock.height();
 		var sastLeft = sastBlockOffset.left + SASTBlock.width()/2;
 		ctx.moveTo(sastLeft,sastBottom + topDelta);
 		ctx.lineTo(reportLeft-20,reportTop);
 		ctx.stroke();
+		ctx.closePath();
 		
 		
+		ctx.beginPath();
 		var dastBlockOffset = calcOffset(DASTBlock);
 		var dastBottom = dastBlockOffset.top + DASTBlock.height();
 		var dastLeft = dastBlockOffset.left + DASTBlock.width()/2;
 		ctx.moveTo(dastLeft,dastBottom + topDelta);
-		ctx.lineTo(reportLeft,reportTop);
+		var reportLessLeft = reportLeft;
+		if(dastBlockOffset.top > sastBlockOffset.top + SASTBlock.height()){
+			reportLessLeft = reportLeft - 50;
+		}
+		ctx.lineTo(reportLessLeft,reportTop);
 		ctx.stroke();
+		ctx.closePath();
 		
+		ctx.beginPath();
 		var ubaBlockOffset = calcOffset(UBABlock);
 		var ubaBottom = ubaBlockOffset.top + UBABlock.height();
 		var ubaLeft = ubaBlockOffset.left + UBABlock.width()/2;
 		ctx.moveTo(ubaLeft,ubaBottom + topDelta);
 		ctx.lineTo(reportLeft+20,reportTop);
 		ctx.stroke();
+		ctx.closePath();
 	}
 	
-	return {draw : drawDiagram}
+	function drawTriangle(data){
+		
+		ctx.moveTo(data.x1,data.y1);
+		ctx.lineTo(data.x2,data.y2);
+		ctx.lineTo(data.x3,data.y3);
+		ctx.closePath();
+		ctx.fillStyle = data.fillStyle;
+		ctx.fill();
+	}
+	
+	function draw(){
+		$(document).ready(function(){
+			drawDiagram();
+		});
+		
+		$(window).resize(function(){
+			drawDiagram();
+		});
+	}
+	
+	return {draw : draw}
 	
 })(jQuery);
 
