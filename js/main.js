@@ -66,11 +66,14 @@ function AkSlideManager(){
 	this.eleAnimateClass = "ak-ele-animate";
 	this.hideDeltaTime = 500;
 	this.appearDeltaTime = 50;
-	this.slideZoneId = "ak-slide-zone";
+	this.slideZoneId = null;
+	this.slideZone = null;
 }
 
-AkSlideManager.prototype.init = function(){
+AkSlideManager.prototype.init = function(akSlideZoneId){
 	var _this = this;
+	_this.slideZoneId = akSlideZoneId;
+	
 	
 	$(document).ready(function(){
 		_this.initiate();
@@ -82,10 +85,14 @@ AkSlideManager.prototype.init = function(){
 }
 
 AkSlideManager.prototype.initiate = function(){
-	this.slideBlocks = $(".ak-slide");
-	this.noOfSlides = this.slideBlocks.length;
-	this.jumperBlock = $("#ak-jumper-block");
+	var _this = this;
 	
+	this.slideZone = $("#"+_this.slideZoneId);
+	
+	this.slideBlocks = this.slideZone.find(".ak-slide");
+	this.noOfSlides = this.slideBlocks.length;
+	this.jumperBlock = this.slideZone.find(".ak-jumper-block");
+	debugger;
 	this.addSupportElements();
 	this.createJumpers();
 	this.initSlidePosition();
@@ -111,7 +118,7 @@ AkSlideManager.prototype.initSlidePosition = function(){
 AkSlideManager.prototype.createJumpers = function(){
 	var _this = this;
 	var html = "";
-
+	debugger;
 	for(var i = 0; i < this.noOfSlides; i++){
 		var first = "";
 		if(i == 0){first = "ak-jump-active"}
@@ -119,7 +126,7 @@ AkSlideManager.prototype.createJumpers = function(){
 	}
 	
 	this.jumperBlock.append(html);
-	this.jumpers = $("."+_this.akJumpButtonClass);
+	this.jumpers = this.slideZone.find("."+_this.akJumpButtonClass);
 	this.jumpers.mouseover(function(){
 		$(this).find(".ak-slide-jump-circle").addClass("ak-hovered-jumper");
 	});
@@ -133,7 +140,7 @@ AkSlideManager.prototype.createJumpers = function(){
 
 AkSlideManager.prototype.bindJumperClick = function(){
 	var _this = this;
-	$("."+_this.akJumpButtonClass).unbind("click",_this.onJumperClick).bind("click",{self:_this},_this.onJumperClick);
+	this.slideZone.find("."+_this.akJumpButtonClass).unbind("click",_this.onJumperClick).bind("click",{self:_this},_this.onJumperClick);
 }
 
 AkSlideManager.prototype.onJumperClick = function(ev){
@@ -152,7 +159,7 @@ AkSlideManager.prototype.onJumperClick = function(ev){
 AkSlideManager.prototype.jumperActivate = function(){
 	var _this = this;
 	
-	$(".ak-jump-active").removeClass("ak-jump-active");
+	this.slideZone.find(".ak-jump-active").removeClass("ak-jump-active");
 	$(_this.jumpers[_this.currentSlide]).addClass("ak-jump-active");
 }
 
@@ -215,18 +222,24 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	//this.interval = setInterval(repeatAnim,8000);
+	this.interval = setInterval(repeatAnim,8000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
 	var _this = this;
 	var appendMarginDefendLi = "<li style='height:1px'></li>";
-	$("#"+_this.slideZoneId).prepend(appendMarginDefendLi);
+	_this.slideZone.prepend(appendMarginDefendLi);
 	
 }
 
+
+//For top main slider at home page
 var akSlideManager = new AkSlideManager();
-akSlideManager.init();
+akSlideManager.init("ak-slide-zone");
+
+//For testimonials slider
+var akSlideManager = new AkSlideManager();
+akSlideManager.init("ak-testimony-zone");
 
 /***********************************************************************************
 * Appknox Element Animator
@@ -329,9 +342,15 @@ var connectScanZone = (function($){
 		var width = uploadBlock.width();
 		var topDelta = 20;
 		
+		if($(window).width()<480){
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+			return;
+		}
+		
 		if(canvas == null){
 			createCanvas();
 		}
+		
 		ctx.restore();
 		positionCanvas();
 		ctx.beginPath();
@@ -425,3 +444,80 @@ var connectScanZone = (function($){
 
 
 connectScanZone.draw();
+
+/**************************************************************************************
+/ Radar Zone List Animator
+**************************************************************************************/
+function ListAnimator(){
+	this.animatorBlock = null;
+	this.animatorBlockId = null;
+	this.currentListNum = 0;
+	this.animationLists = null;
+	this.animationListsCount = 0;
+	this.animateItemClass = "ak-vert-animate-ele";
+	this.persistanceTime = null;
+}
+
+ListAnimator.prototype.init = function(initData){
+	var _this = this;
+	this.animatorBlockId = initData.blockId;
+	this.persistanceTime = initData.time;
+	
+	$(document).ready(function(){
+		_this.startAnimation();
+	});	
+	
+}
+
+ListAnimator.prototype.startAnimation = function(){
+	var _this = this;
+	this.animatorBlock = $("#"+_this.animatorBlockId);
+	debugger;
+	this.animationLists = this.animatorBlock.find("."+_this.animateItemClass); 
+	this.animationListsCount = this.animationLists.length;
+	
+	if(this.animationListsCount > 0){
+		$(_this.animationLists[0]).css("opacity","1");
+	}
+	
+	_this.bindInterval();
+}
+
+ListAnimator.prototype.play = function(){
+	var _this = this;
+	
+	var currentEle = this.animationLists[this.currentListNum];
+	this.animationLists.stop().animate({opacity:0.3},_this.persistanceTime);
+	
+	if(this.currentListNum >=  this.animationListsCount-1){
+		this.currentListNum = 0;
+	}else{
+		this.currentListNum++;
+	}
+	
+	var nextEle = this.animationLists[this.currentListNum];
+	$(nextEle).stop().animate({opacity:1},_this.persistanceTime);
+}
+
+ListAnimator.prototype.createIntervalAnim = function(){
+	this.play();
+}
+
+ListAnimator.prototype.bindInterval = function(){
+	var repeatAnim = this.binder(this.createIntervalAnim);
+	this.interval = setInterval(repeatAnim,6000);
+}
+
+ListAnimator.prototype.binder = function(Method){
+	var _this = this;
+ 
+    return(
+		function(){
+           return( Method.apply(_this, arguments));
+		}
+	);
+}
+
+var listAnimatorRadar = new ListAnimator();
+listAnimatorRadar.init({blockId:"radar-list-block",time:500});
+

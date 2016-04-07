@@ -57,8 +57,8 @@
 	  <div class="clearfix"></div>
     </nav>
 	<section id="text-slider">
-		<div class="container">
-			<ul id="ak-slide-zone">
+		<div class="container" id="ak-slide-zone">
+			<ul id="ak-slide-container">
 				<li></li>
 				<li class="ak-slide">
 				  <div class="col-md-6 col-sm-6">
@@ -105,24 +105,34 @@
 				</li>
 				<li class="clearfix"></li>
 			</ul>
+			<section id="slide-jumper-sec" class="text-center">
+				<div class="container ak-jumper-block">
+						
+				</div>
+				<div class="btn btn-primary botton-red btn-lg ak-btn-round uppercase">Request Demo</div>
+					
+			</section>
 		</div>
 	</section>
-	<section id="slide-jumper-sec" class="text-center">
-		<div class="container" id="ak-jumper-block">
-				
-		</div>
-		<div class="btn btn-primary botton-red btn-lg ak-btn-round uppercase">Request Demo</div>
-			
-	</section>
+	
 	<section id="ak-radar-zone"  class="ak-gray-bg">
 		<div class="container ak-container text-center">
 		    <ul class="half-block-container" >
 				<li id="radar-text">
-					<h1 id="head-txt-14" class=" col-md-10 pull-left">Appknox addresses and reports vulnerabilites in mobile apps within minutes</h1>
+					<h1 id="head-txt-14" class=" col-md-10 text-left">
+						Appknox detects & Addresses Vulnerabilities in mobile apps within minutes
+					</h1>
+					<h3 class=" col-md-10 text-left">Enabling businesses achieve</h3>
 				</li>
 				<li id="radar-img-zone" class="text-center">
 					<img id="ak-dotted-circle" src="img/asset-06.svg"/>
 					<img id="ak-cellphone-14" src="img/asset-07.svg"/>
+					<ul id="radar-list-block">
+						<li class="ak-vert-animate-ele">Faster Time to Market</li>
+						<li class="ak-vert-animate-ele"> Higher Productivity</li>
+						<li class="ak-vert-animate-ele"> 360° Mobile Security </li>
+						
+					</ul>
 				</li>
 			</ul>
 			<div class="clearfix"></div>
@@ -137,14 +147,13 @@
 				<li id="uploadAppZone">
 					<div class="icon" id="uploadAppIcon"><img src="img/uploadCloud.svg"></div>
 					<h3 class="title red">Upload</h3>
-					<p class="desc-text">the binary app</p>
+					<p class="desc-text">the binary or copy paste the App URL</p>
 				</li>
 				<li id="SASTZone">
 					<div class="icon" id="sastIcon"><img src="img/gearEye.svg"></div>
 					<h3 class="title red">SAST</h3>
 					<h4 class="desc-title ">Static Application Security Testing</h4>
-					<p class="desc-text">Get faster releases with a fully automated scan that checks
-					 for basic configuration issues in less than 5 minutes</p>
+					<p class="desc-text">Get faster releases with a fully automated scan that checks for basic configuration issues in less than 5 minutes</p>
 				</li>
 				<li id="DASTZone">
 					<div></div><!-- To prevent margin of first child-->
@@ -152,20 +161,17 @@
 					<h3 class="title red">DAST</h3>
 					<h4 class="desc-title">Dynamic Application Security Testing</h4>
 					<p class="desc-text">
-						Your team interacts with our cloud hosted device while 
-						we diagnose leakage in data flow, securing 70% of your app's 
-						possible vulnerabilites						
+						Your team interacts with our cloud hosted device while we diagnose leakages in data flow, securing 70% of your app’s possible vulnerabilities.						
 					</p>
 				</li>
 				<li id="UBAZone">
 					<div class="innerZoneScan" id="UBAInnerZone">
 						<div class="icon"><img src="img/UBA.svg"></div>
 						<h3 class="title red">UBA</h3>
-						<h4 class="desc-title">User Behavioural Analysis</h4>
+						<h4 class="desc-title"> User Behavior Analysis</h4>
 						<p class="desc-text">
 							Concerned about hackers? Don't be!<br>
-							Our industry renowned ethical hackers,
-							hack your app to ensure you are secured from the eyes of a hacker.
+							Our industry renowned hackers hack your app to ensure you are secured from the eyes of a hacker.
 						</p>
 					</div>
 				</li>
@@ -181,12 +187,12 @@
 	</section>
 	
 	<section  class="ak-gray-bg">
-		<ul class="container ak-container text-center">
+		<ul class="container ak-container why-appknox">
 			<li>
 				<h2 class="">Why Appknox?</h2>
 				<div class="horz-split-1x"><span></span></div>
 			</li>
-			<li class="col-md-4 text-left">
+			<li class="col-md-4 col-sm-6">
 				<div class="col-md-12">
 					<img class="side-icon" src="img/happyTeam.svg"/>
 				</div>
@@ -196,7 +202,7 @@
 					<p class="gray-8 ">Appknox boasts of an arsenal of the industry’s leading security researchers which ensure you have peace of mind by giving you a state of the art security solution that uses a system plus human approach to ensure all round security. (You are also assigned a dedicated account manger to ensure there is always someone by your side- represent in image). </p>
 				</div>
 			</li>
-			<li class="col-md-4 text-left" id="whySheildZone">
+			<li class="col-md-4 col-sm-6" id="whySheildZone">
 				<div class="col-md-12">
 					<img class="side-icon" src="img/shield.svg"/>
 				</div>
@@ -209,7 +215,7 @@
 					</p>
 				</div>
 			</li>
-			<li class="col-md-4 text-left">
+			<li class="col-md-4 col-sm-6">
 				<div class="col-md-12">
 					<img class="side-icon" src="img/75faster.svg"/>
 				</div>
@@ -229,7 +235,7 @@
 	<section>
 		<div class="container ak-container text-center">
 			<h2 class="">Our User Says</h2>
-			
+			<!-- 
 			<div class="user-comments">
 				" We are now more confident about security for our product.
 				Appknox has been an extended security team for us."
@@ -242,6 +248,34 @@
 				<div class="horz-selected-span">
 					<span></span>
 				</div>
+			</div> -->
+			<div id="ak-testimony-zone">
+				<ul>
+					<li class="ak-slide">
+						<div class="user-comments">
+							" We are now more confident about security for our product.
+							Appknox has been an extended security team for us."
+						</div>
+						<div class="client-sign">	
+							A.K Mehra(HDFC)
+						</div>
+					</li>
+					<li class="ak-slide">
+						<div class="user-comments">
+							" We are now hyper confident about security for our product.
+							Appknox has been an extended security team for us."
+						</div>
+						<div class="client-sign">	
+							A.K Mehra(ANZ Bank)
+						</div>
+					</li>
+				</ul>
+				<section class="text-center" id="testimony-selector">
+				    <div class="horz-select-span"></div>
+					<div id="testimony-jumpers" class="ak-jumper-block horz-selected-span">
+							
+					</div>
+				</section>
 			</div>
 		</div>
 	</section>

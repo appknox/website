@@ -142,22 +142,26 @@ p{
 #text-slider{
 	clear:both;
 	min-height:400px;
-	padding-top:150px;
+	padding-top:120px;
 }
 
 #ak-slide-zone h1{font-size: 50px;}
 
 #ak-slide-zone p{font-size:25px;}
 
-#ak-slide-zone{
+#ak-slide-container{
 	display:block;
 	list-style-type:none;
-	min-height:520px;
+	min-height:500px;
 	text-align:left;
 	padding-bottom: 40px;
 }
 
 .ak-slide{color:#555;display:none}
+
+#slide-jumper-sec .ak-jumper-block{
+	margin:15px 0 15px;
+}
 
 .ak-slide-jump-butn{
 	height:8px;
@@ -210,7 +214,7 @@ p{
 }
 
 .half-block-container{
-	margin:40px 0 70px;
+	margin:10px 0 70px;
 	text-align:left;
 }
 
@@ -219,7 +223,7 @@ p{
 	float:left;
 }
 
-#ak-radar-zone{ margin: 70px 0 60px;}
+#ak-radar-zone{ margin: 40px 0 60px;}
 
 #ak-dotted-circle{
 	margin-top:30px;
@@ -227,16 +231,18 @@ p{
 
 #ak-cellphone-14 {
     position: relative;
-    margin-top: -80%;
-    max-width: 200px;
-	
+    margin-top: 30px;
+    max-width: 130px;
+	margin-left: -45%;
 }
+
+
 
 #head-txt-14{
 	margin-top:24%;
 }
 
-.side-icon{max-width:100%;}
+.side-icon{width:90%;max-width:300px;margin:0 auto;}
 
 .user-comments{
 	font-size:1.4em;
@@ -335,6 +341,7 @@ p{
   animation-name: radarrotate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  width: 60%;
 }
 
 #scan-process-list{
@@ -348,6 +355,10 @@ p{
 	vertical-align:top;
 	padding:20px 1.5%;
 }
+
+#radar-list-block{margin-left:-200px;}
+
+#radar-list-block>li{opacity:0.3}
 
 .innerZoneScan{
 	text-align:left;
@@ -404,6 +415,10 @@ p{
 }
 
 .awards-image>img:hover{opacity:1;border-radius:45px;}
+
+.why-appknox{text-align:left}
+
+.why-appknox h2{text-align:center}
 
 .contact-us-block{padding-top:80px;padding-bottom:80px;}
 
@@ -560,21 +575,31 @@ p{
 	}
 	
 	#ak-radar-zone {margin-bottom:10px; margin-top:30px}
+	
+	
+	#radar-list-block{margin-left:-100px;}
+
+}
+
+@media (max-width: 600px){
+	.half-block-container>li{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+	
+	#head-txt-14 {margin-top:4%}
 }
 
 @media (max-width: 480px){
 	.slide-img-zone{
 		display:none;
 	}
-	#ak-slide-zone{
+	#ak-slide-container{
 		min-height:0;
+		text-align:center;
 	}
 	
-	.half-block-container>li{
-		float:none;
-		text-align:center;
-		width:100%;
-	}
 	
 	#scan-process-list > li {
 		width:98%;
@@ -616,5 +641,22 @@ p{
 	#whySheildZone{
 		margin-top:0px;
 	}
+	
+	#SASTZone .title {
+		margin-top: 0;
+	}
+	
+	#DASTZone .title {
+		margin-top: 0px;
+	}
+	.innerZoneScan {
+		text-align: center;
+	}
+	
+	.why-appknox{text-align:center}
+	
+	
+	#radar-list-block{margin-left:0px;}
+
 }
 
