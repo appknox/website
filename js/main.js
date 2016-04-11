@@ -500,7 +500,6 @@ ListAnimator.prototype.play = function(){
 		}
 		
 		_this.animationLists.css({display:"none"});
-		debugger;
 		var nextEle = _this.animationLists[_this.currentListNum];
 		$(nextEle).stop().fadeIn(_this.persistanceTime);
 	}

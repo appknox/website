@@ -15,9 +15,8 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/vex.css" />
-		<link rel="stylesheet" href="css/vex-theme-flat-attack.css" />
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 		
     </head>
     <body>
@@ -285,7 +284,6 @@
 							Hari P. - Big Basket
 						</div>
 					</li>
-					
 				</ul>
 				<section class="text-center" id="testimony-selector">
 				    <div class="horz-select-span"></div>
@@ -361,27 +359,42 @@
 	
 	<section>
 		<div class="container ak-container text-center contact-us-block">
-		<div class="btn btn-primary botton-red btn-lg ak-btn-round uppercase">Contact Us</div>
+			<a class="btn btn-primary botton-red btn-lg ak-btn-round uppercase contact-us-btn" href="#contact-us-form">Contact Us</a>
 		</div>
 	</section>
-	<!--
+
 	<section>
-		<div class="container ak-container text-center">
-			<h2 class="red">Contact Us</h2>
-			<h4 class="">We would love to connect to you or hear your concerns</h4>
+		<div class="container text-center" id="contact-us-form">
+			<div class="col-md-3" id="hello-zone-cu">
+				<p>hello@appknox.com</p>
+				<p>+65 316 32145</p>
+				<img src="img/man-uphead.svg">
+				<div id="form-social-block">
+					<a target="_blank" href=""><img src="img/facebook.svg"/></a>
+					<a target="_blank" href=""><img src="img/linkedIn.svg"/></a>
+					<a target="_blank" href=""><img src="img/twitter.svg"/></a>
+				</div>
+			</div>
+			<div class="col-md-9">
+			<h4 class="gray-5 form-title">We would love to hear from you</h4>
+			
 			<div id="contact-form-holder">
-				<form>
+				<form id="ak-contact-from">
 					<fieldset class="form-group col-md-6">
-						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+						<div id="name-cu-error" class="cu-form-eorror red"></div>
+						<input type="text" class="form-control" name="name" placeholder="Name">
 					</fieldset>
 					<fieldset class="form-group col-md-6">
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						<div id="email-cu-error" class="cu-form-eorror red"></div>
+						<input type="email" class="form-control" name="email" placeholder="Email">
 					</fieldset>
 					<fieldset class="form-group col-md-6">
-						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Company">
+						<div id="company-cu-error" class="cu-form-eorror red"></div>
+						<input type="text" class="form-control" name="company" placeholder="Company">
 					</fieldset>
 					<fieldset class="form-group col-md-6">
-						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Designation">
+						<div id="designation-cu-error" class="cu-form-eorror red"></div>
+						<input type="text" class="form-control" name="designation" placeholder="Designation">
 					</fieldset>
 					<ul class="ak-checkbox-pannel">
 						<li class="col-md-4 col-sm-6">
@@ -412,11 +425,13 @@
 					<fieldset class="form-group col-md-12">
 						<textarea class="form-control" rows="4" cols="50" id="" placeholder="Remarks/Message"></textarea>
 					</fieldset>
-					<div class="btn btn-primary botton-red btn-lg ak-btn-round uppercase">Done</div>
+					<input type="submit" class="btn btn-primary botton-red btn-lg ak-btn-round uppercase" value="Submit">
 				</form>
 			</div>
+			</div>
+			
 		</div>
-	</section> -->
+	</section> 
 	<footer id="site-footer">
 		<section class="container">
 			<div class="col-md-12 ">
@@ -489,7 +504,88 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-		<script src="js/vex.combined.min.js"></script>
-		<script>vex.defaultOptions.className = 'vex-theme-flat-attack';</script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript">
+			var contactFormRule = {rules:{
+				 name: "required",
+				 email: "email",
+				 
+			}}
+			   
+			$(document).ready(function() {
+				$(".contact-us-btn").fancybox({
+					'autoResize':true,
+					'autoSize':true,
+					'maxHeight':"100%",
+					'autoCenter':true
+					
+				});
+				
+				$("#ak-contact-from").validate({
+					rules:{
+						"name" : {
+							required : true,
+							maxlength: 40,
+						},
+						"email" : {
+							required : true,
+							maxlength: 90,
+							email:true
+						},
+						"company" : {
+							required : true,
+							maxlength: 30,
+							minlength: 8,
+						},"designation" : {
+							required : true,
+							maxlength: 30,
+							minlength: 8,
+						},
+						
+					},
+					errorPlacement: function(error, element) {
+						var errorEleId = "#"+element.attr("name") + "-cu-error"
+						var errorBox  = null;
+					
+						$(errorEleId).children().remove(); //removing if already outputed error from  backend
+						errorBox = $("<div id='mp-dynamic-error' />");
+						errorBox.fadeOut(200,function(){showError()});
+						
+						$(errorEleId).append(errorBox);
+						function showError()
+						{
+							errorBox.append(error);
+							errorBox.fadeIn(200);
+						}
+						
+					},
+					messages:{
+						"name":{
+							required : "Name is required",
+							maxlength : "Maximum 40 characters allowed"
+						},
+						"email":{
+							required : "Email is required",
+							maxlength: "Email maximum length 90"
+						},
+						"company":{
+							required : "Company name is required",
+							maxlength : "Password max length 30",
+							minlength : "Password min length 8"
+							
+						},
+						"designation":{
+							required : "Designation is required",
+							maxlength : "Password max length 30",
+							minlength : "Password min length 8"
+							
+						}
+					}
+				});
+			});
+			
+			
+		</script>
     </body>
 </html>
