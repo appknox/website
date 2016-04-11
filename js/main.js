@@ -342,10 +342,6 @@ var connectScanZone = (function($){
 		var width = uploadBlock.width();
 		var topDelta = 20;
 		
-		if($(window).width()<480){
-			ctx.clearRect(0,0,canvas.width,canvas.height);
-			return;
-		}
 		
 		if(canvas == null){
 			createCanvas();
@@ -353,6 +349,13 @@ var connectScanZone = (function($){
 		
 		ctx.restore();
 		positionCanvas();
+		
+		
+		if($(window).width()<480){
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+			return;
+		}
+		
 		ctx.beginPath();
 		ctx.lineWidth = 1;
 		ctx.strokeStyle = "#FF4236";
@@ -477,7 +480,7 @@ ListAnimator.prototype.startAnimation = function(){
 	this.animationListsCount = this.animationLists.length;
 	
 	if(this.animationListsCount > 0){
-		$(_this.animationLists[0]).css("opacity","1");
+		$(_this.animationLists[0]).css("display","inline");
 	}
 	
 	_this.bindInterval();
@@ -487,16 +490,20 @@ ListAnimator.prototype.play = function(){
 	var _this = this;
 	
 	var currentEle = this.animationLists[this.currentListNum];
-	this.animationLists.stop().animate({opacity:0.3},_this.persistanceTime);
+	$(currentEle).stop().fadeOut(_this.persistanceTime,appear);
 	
-	if(this.currentListNum >=  this.animationListsCount-1){
-		this.currentListNum = 0;
-	}else{
-		this.currentListNum++;
+	function appear(){
+		if(_this.currentListNum >=  _this.animationListsCount-1){
+			_this.currentListNum = 0;
+		}else{
+			_this.currentListNum++;
+		}
+		
+		_this.animationLists.css({display:"none"});
+		debugger;
+		var nextEle = _this.animationLists[_this.currentListNum];
+		$(nextEle).stop().fadeIn(_this.persistanceTime);
 	}
-	
-	var nextEle = this.animationLists[this.currentListNum];
-	$(nextEle).stop().animate({opacity:1},_this.persistanceTime);
 }
 
 ListAnimator.prototype.createIntervalAnim = function(){
@@ -505,7 +512,7 @@ ListAnimator.prototype.createIntervalAnim = function(){
 
 ListAnimator.prototype.bindInterval = function(){
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	this.interval = setInterval(repeatAnim,6000);
+	this.interval = setInterval(repeatAnim,3000);
 }
 
 ListAnimator.prototype.binder = function(Method){

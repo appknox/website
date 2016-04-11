@@ -219,11 +219,11 @@ p{
 }
 
 .half-block-container>li,.half-block-container>div{
-	width:50%;
-	float:left;
+	//width:50%;
+	//float:left;
 }
 
-#ak-radar-zone{ margin: 40px 0 60px;}
+#ak-radar-zone{ margin: 40px 0 10px;}
 
 #ak-dotted-circle{
 	margin-top:30px;
@@ -232,23 +232,22 @@ p{
 #ak-cellphone-14 {
     position: relative;
     margin-top: 30px;
-    max-width: 130px;
-	margin-left: -45%;
+    max-width: 150px;
+	margin-left: -64%;
 }
 
-
-
 #head-txt-14{
-	margin-top:24%;
+	margin-top:14%;
 }
 
 .side-icon{width:90%;max-width:300px;margin:0 auto;}
 
 .user-comments{
-	font-size:1.4em;
+	font-size:1.0em;
 	color:#888;
 	max-width:700px;
 	margin:30px auto;
+	min-height:140px;
 }
 
 #testimony-selector{
@@ -341,7 +340,8 @@ p{
   animation-name: radarrotate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  width: 60%;
+  width: 90%;
+  max-width:400px;
 }
 
 #scan-process-list{
@@ -356,13 +356,15 @@ p{
 	padding:20px 1.5%;
 }
 
-#radar-list-block{margin-left:-200px;}
+#radar-list-block{margin-left:5px;}
 
-#radar-list-block>li{opacity:0.3}
+#radar-list-block>span{display:none;font-size:1em;border-bottom:1px solid #EE5146;padding-bottom:2px}
 
 .innerZoneScan{
 	text-align:left;
 }
+
+#radar-img-zone{margin-bottom:60px;}
 
 #scan-process-list .icon{
 	max-width:70px;
@@ -576,8 +578,6 @@ p{
 	
 	#ak-radar-zone {margin-bottom:10px; margin-top:30px}
 	
-	
-	#radar-list-block{margin-left:-100px;}
 
 }
 
