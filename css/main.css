@@ -179,7 +179,7 @@ p{
 }
 
 .ak-jump-active,.ak-hovered-jumper{
-	background:#bbb;
+	background:#000;
 }
 
 .ak-slide-jump-butn:hover{
@@ -247,7 +247,7 @@ p{
 	color:#888;
 	max-width:700px;
 	margin:30px auto;
-	min-height:140px;
+	min-height:80px;
 }
 
 #testimony-selector{
