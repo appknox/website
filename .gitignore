@@ -11,3 +11,6 @@ ehthumbs.db
 Thumbs.db
 # Jekyll Files #
 ################
+_site
+.sass-cache
+.jekyll-metadata

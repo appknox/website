@@ -1,38 +1,65 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+<footer id="site-footer">
+  <section class="container">
+    <div class="col-md-12 ">
+      <div class="col-md-8" id="footer-form">
+        <h3 class="footer-titles">Subscribe to Updates</h3>
+        <form>
+          <input type="email" placeholder = "Your email goes here">
+          <input type="submit" id="footer-subscribe-butn" value="SUBMIT">
+        </form>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="col-md-4 footer-links">
+        <a href="faq">FAQs</a>
+        <a href="faq">Careers</a>
       </div>
     </div>
-
-  </div>
-
+    <div class="col-md-12">
+      <h3 class="footer-titles col-md-12">Updates</h3>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">News & Updates</h3>
+        <h4 class="news-title">Security comapny to aid StartUp's exponential growth</h4>
+        <p>
+          Security comapny to aid StartUp's exponential growth
+        </p>
+      </div>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">News & Updates</h3>
+        <h4 class="news-title">Security comapny to aid StartUp's exponential growth</h4>
+        <p>
+          Security comapny to aid StartUp's exponential growth
+        </p>
+      </div>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">News & Updates</h3>
+        <h4 class="news-title">Security comapny to aid StartUp's exponential growth</h4>
+        <p>
+          Security comapny to aid StartUp's exponential growth
+        </p>
+      </div>
+    </div>
+    <div class="col-md-12 no-border">
+      <h3 class="footer-titles col-md-12">XYSec Labs Pvt Ltd</h3>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">Singapore HQ</h3>
+        <li>473, Shri Krishna Temple Rd, Stage 1</li>
+        <li>Indiranagar</li>
+        <li>Bengaluru</li>
+        <li>Karnataka 560038</li>
+      </ul>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">India Dev Center</h3>
+        <li>473, Shri Krishna Temple Rd, Stage 1</li>
+        <li>Indiranagar</li>
+        <li>Bengaluru</li>
+        <li>Karnataka 560038</li>
+      </ul>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">US</h3>
+        <li>473, Shri Krishna Temple Rd, Stage 1</li>
+        <li>Indiranagar</li>
+        <li>Bengaluru</li>
+        <li>Karnataka 560038</li>
+      </ul>
+    </div>
+  </section>
 </footer>
