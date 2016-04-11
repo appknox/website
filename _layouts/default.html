@@ -1,104 +1,97 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    {% include head.html %}
-    <body>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  {% include head.html %}
+  <body>
     {% include header.html %}
 
     {{ content }}
-    
-    {% include footer.html %}
-  
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    {% include footer.html %}
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript">
-      var contactFormRule = {rules:{
-         name: "required",
-         email: "email",
-         
-      }}
-         
-      $(document).ready(function() {
-        $(".contact-us-btn").fancybox({
-          'autoResize':true,
-          'autoSize':true,
-          'maxHeight':"100%",
-          'autoCenter':true
-          
-        });
-        
-        $("#ak-contact-from").validate({
-          rules:{
-            "name" : {
-              required : true,
-              maxlength: 40,
-            },
-            "email" : {
-              required : true,
-              maxlength: 90,
-              email:true
-            },
-            "company" : {
-              required : true,
-              maxlength: 30,
-              minlength: 8,
-            },"designation" : {
-              required : true,
-              maxlength: 30,
-              minlength: 8,
-            },
-            
-          },
-          errorPlacement: function(error, element) {
-            var errorEleId = "#"+element.attr("name") + "-cu-error"
-            var errorBox  = null;
-          
-            $(errorEleId).children().remove(); //removing if already outputed error from  backend
-            errorBox = $("<div id='mp-dynamic-error' />");
-            errorBox.fadeOut(200,function(){showError()});
-            
-            $(errorEleId).append(errorBox);
-            function showError()
-            {
-              errorBox.append(error);
-              errorBox.fadeIn(200);
-            }
-            
-          },
-          messages:{
-            "name":{
-              required : "Name is required",
-              maxlength : "Maximum 40 characters allowed"
-            },
-            "email":{
-              required : "Email is required",
-              maxlength: "Email maximum length 90"
-            },
-            "company":{
-              required : "Company name is required",
-              maxlength : "Password max length 30",
-              minlength : "Password min length 8"
-              
-            },
-            "designation":{
-              required : "Designation is required",
-              maxlength : "Password max length 30",
-              minlength : "Password min length 8"
-              
-            }
-          }
-        });
+    var contactFormRule = {rules:{
+      name: "required",
+      email: "email",
+    }}
+
+    $(document).ready(function() {
+      $(".contact-us-btn").fancybox({
+        'autoResize':true,
+        'autoSize':true,
+        'maxHeight':"100%",
+        'autoCenter':true
       });
-      
-      
+
+      $("#ak-contact-from").validate({
+        rules:{
+          "name" : {
+            required : true,
+            maxlength: 40,
+          },
+          "email" : {
+            required : true,
+            maxlength: 90,
+            email:true
+          },
+          "company" : {
+            required : true,
+            maxlength: 30,
+            minlength: 8,
+          },
+          "designation" : {
+            required : true,
+            maxlength: 30,
+            minlength: 8,
+          },
+        },
+        errorPlacement: function(error, element) {
+          var errorEleId = "#"+element.attr("name") + "-cu-error"
+          var errorBox  = null;
+
+          $(errorEleId).children().remove(); //removing if already outputed error from  backend
+          errorBox = $("<div id='mp-dynamic-error' />");
+          errorBox.fadeOut(200,function(){showError()});
+
+          $(errorEleId).append(errorBox);
+          function showError()
+          {
+            errorBox.append(error);
+            errorBox.fadeIn(200);
+          }
+        },
+        messages:{
+          "name":{
+            required : "Name is required",
+            maxlength : "Maximum 40 characters allowed"
+          },
+          "email":{
+            required : "Email is required",
+            maxlength: "Email maximum length 90"
+          },
+          "company":{
+            required : "Company name is required",
+            maxlength : "Password max length 30",
+            minlength : "Password min length 8"
+          },
+          "designation":{
+            required : "Designation is required",
+            maxlength : "Password max length 30",
+            minlength : "Password min length 8"
+          }
+        }
+      });
+    });
     </script>
-    </body>
+  </body>
 </html>

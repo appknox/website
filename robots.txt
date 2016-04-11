@@ -1,3 +1,6 @@
+---
+layout: null
+---
 # www.robotstxt.org/
 
 # Allow crawling of all content
