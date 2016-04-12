@@ -315,7 +315,7 @@ p{
 #contact-form-holder textarea, #contact-form-holder input[type=text],#contact-form-holder input[type=email]{
 	background:#f8f8f8;
 	border:none;
-	margin:3px auto 18px;
+	margin:3px auto 0px;
 	box-shadow:none;
 	padding:12px 15px;
 	font-size: 17px;
@@ -357,7 +357,7 @@ p{
 
 .ak-checkbox-pannel>li{
 	text-align:left;
-	margin-top:30px;
+	margin-top:16px;
 }
 
 .ak-cb-depth{
