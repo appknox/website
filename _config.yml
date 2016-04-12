@@ -18,6 +18,6 @@ github_username:  appknox
 # Build settings
 markdown: kramdown
 
-# Exclude Files 
+# Exclude Files
 exclude:
   - "Rakefile"

@@ -16,7 +16,7 @@ body{
 	font-family:gillsansmtpro;
 	font-size:20px;
 }
-   
+
 h1,h2,h3,h4,h5,h6{
 	font-family: neosans;
 	line-height:1.3em;
@@ -28,9 +28,15 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .bg-red{background:#b48787;}
 .bg-dark{background:#333;}
 
+.info-para{
+  padding:30px 2%;
+}
+
 p{
 	font-size:19px;
 }
+
+#first-container{padding-top:90px}
 
 .no-border{border:none !important;}
 
@@ -74,6 +80,7 @@ p{
 .gray-6{color:#666}
 .gray-7{color:#777}
 .gray-8{color:#888}
+.gray-9{color:#999}
 .gray-a{color:#aaa}
 
 .underline{text-decoration:underline}
@@ -287,7 +294,7 @@ p{
 	width:130px;
 	display:inline-block;
 	margin:10px 20px;
-	
+
 }
 
 .logos-box>li>img{width:100%;opacity:0.6;transition: all 0.3s ease-out;}
@@ -366,7 +373,7 @@ p{
 .ak-cb-title{
 	display:inline-block;
 	margin-left:7%;
-	
+
 }
 
 #ak-dotted-circle {
@@ -467,7 +474,7 @@ p{
   from {
     m-ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg); 
+    transform: rotate(7deg);
   }
 
   to {
@@ -536,6 +543,72 @@ p{
 
 #contact-us-form{display:nne}
 
+/* PRICING PAGE */
+.pricing-box{
+  border:1px solid #ccc;
+  color:#555;
+  margin-top:30px;
+  padding-bottom:50px;
+}
+
+.pricing-box .btn-primary{
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 7px 26px;
+}
+
+#essential-pricing{
+  border:2px solid #ddd;
+}
+
+#advanced-pricing{
+  border:3px solid #ccc;
+}
+
+.pricing-title{
+  font-weight:bold;
+  color: #7A7A7A;
+  display: inline-block;
+  padding: 12px 5% 6px;
+  border-bottom:2px solid #EE5146;
+}
+.pricing-amount{
+  font-size:25px;
+  font-weight: bold;
+  padding:12px 2%;
+  color: #7A7A7A;
+}
+
+.pricing-amount>span{
+  font-weight: normal;
+  font-size: 17px;
+}
+.pricing-anually{
+  font-weight: normal;
+  font-size: 17px;
+  padding:0 8% 5px;
+  display:inline-block;
+
+}
+
+.pricing-facts.first{
+    border-top:1px solid #ccc;
+    padding-top:18px;
+}
+
+.pricing-facts{
+  margin:3px auto 3px;
+  font-size:0.9em;
+  list-style-type: disc;
+  text-align: left;
+  list-style-position: inside;
+  padding: 8px 5%;
+  width:80%;
+  color:#555;
+
+}
+
+/* END PRICING PAGE */
 
 @media (min-width: 768px){
 	.navbar-nav>li>.dropdown-menu {
@@ -547,29 +620,29 @@ p{
 
 	.dropdown-menu>li{
 		display:inline-block;
-		
+
 	}
 
 	.dropdown-menu>li>a{
 		color:#999;
 	}
-	
+
 	.navbar-nav>li>a{
 		text-shadow: 0 1px 0 rgba(255,255,255,.25);
 		color: #999;
 		margin-top:10px;
-		
+
 	}
-	
+
 	.nav>li>a:hover, .nav .open>a:hover, .nav .open>a:focus {
 		background: none;
 	}
-	
+
     /*#ak-header{
 		border-bottom: 1px solid #E9E9E9;
 	}*/
-	
-	
+
+
 }
 
 @media (max-width: 990px){
@@ -582,11 +655,11 @@ p{
 	#text-slider {
 		padding-top: 60px;
 	}
-	
+
 	#ak-slide-zone{
 		text-align:center;
 	}
-	
+
 
 	#ak-slide-zone h1{
 		font-size:35px;
@@ -594,26 +667,26 @@ p{
 	#head-txt-14{
 		font-size:30px;
 	}
-	
+
 	#scan-process-list > li {
 		width:48%;
 	}
-	
+
 	#UBAZone{width:48% !important;}
-	
+
 	.innerZoneScan{width:100%;}
-	
+
 	#DASTZone .icon {
 		margin-top: -40px;
 		margin-left: 120px;
 	}
-	
+
 	#DASTZone .title {
 		margin-top: -30px;
 	}
-	
+
 	#ak-radar-zone {margin-bottom:10px; margin-top:30px}
-	
+
 
 }
 
@@ -623,7 +696,7 @@ p{
 		text-align:center;
 		width:100%;
 	}
-	
+
 	#head-txt-14 {margin-top:4%}
 }
 
@@ -635,64 +708,63 @@ p{
 		min-height:0;
 		text-align:center;
 	}
-	
-	
+
+
 	#scan-process-list > li {
 		width:98%;
 	}
-	
+
 	#UBAZone{width:98% !important;}
-	
+
 	.innerZoneScan{width:100%;}
-	
+
 	#DASTZone .icon {
 		margin-top: -40px;
 		margin-left: 120px;
 	}
-	
+
 	#DASTZone .title {
 		margin-top: -30px;
 	}
-	
+
 	#head-txt-14 {
 		margin-top: 2%;
 	}
 	.half-block-container {
 		margin-bottom:10px;
 	}
-	
+
 	#scan-process-list {
 		padding-top: 10px;
 		text-align:center;
 	}
-	
+
 	#scan-process-list .icon {
 		margin: 0 auto;
 	}
-	
+
 	#uploadAppZone {
 		margin-top: 30px;
 	}
-	
+
 	#whySheildZone{
 		margin-top:0px;
 	}
-	
+
 	#SASTZone .title {
 		margin-top: 0;
 	}
-	
+
 	#DASTZone .title {
 		margin-top: 0px;
 	}
 	.innerZoneScan {
 		text-align: center;
 	}
-	
+
 	.why-appknox{text-align:center}
-	
-	
+
+
 	#radar-list-block{margin-left:0px;}
 
 }
-
