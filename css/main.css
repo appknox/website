@@ -628,6 +628,8 @@ p{
   padding-bottom:60px;
 }
 
+.resource-tile{margin:20px 0 30px;}
+
 .resource-image-block img{
   width:100%;
 }
