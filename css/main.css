@@ -15,6 +15,7 @@
 body{
 	font-family:gillsansmtpro;
 	font-size:20px;
+  color:#444;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -28,10 +29,17 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .bg-red{background:#b48787;}
 .bg-dark{background:#333;}
 
-.small-font{font-size: 16px}
-.medium-font{font-size:18px}
-.big-font{font-size:20px}
-.large-font{font-size:22px;}
+.small-font{font-size: 0.9em}
+.medium-font{font-size:1.1em}
+.big-font{font-size:1.3em}
+.large-font{font-size:1.5em;}
+
+.midsize-container{
+  width:95%;
+  padding:0 2.5%;
+  max-width:700px;
+  margin:0 auto;
+}
 
 .info-para{
   padding:30px 2%;
