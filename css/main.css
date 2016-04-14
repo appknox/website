@@ -18,6 +18,8 @@ body{
   color:#444;
 }
 
+a{color:#000;}
+
 h1,h2,h3,h4,h5,h6{
 	font-family: neosans;
 	line-height:1.3em;
@@ -61,6 +63,22 @@ p{
 
 .navbar-nav {
 	margin-left: 24%;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 
 #ak-header li>a{
@@ -183,7 +201,7 @@ p{
 #ak-slide-container{
 	display:block;
 	list-style-type:none;
-	min-height:500px;
+	min-height:470px;
 	text-align:left;
 	padding-bottom: 40px;
 }
@@ -237,7 +255,7 @@ p{
 .button-red{
 	background:#EE5146;
 	border:none;
-	padding:10px 40px;
+	padding:10px 90px;
 }
 
 .button-green{
@@ -260,7 +278,7 @@ p{
 	float:left;*/
 }
 
-#ak-radar-zone{ margin: 40px 0 10px;}
+#ak-radar-zone{ margin: 70px 0 10px;}
 
 #ak-dotted-circle{
 	margin-top:30px;
@@ -454,6 +472,19 @@ p{
 }
 #scan-process-list .title{
 	background: #FFF;
+}
+
+#home-video-zone{
+  border: 3px solid #616060;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px #ccc;
+  width: 50% !important;
+  max-width: 90% !important;
+  background: #fff;
+  margin-left: 23%;
+  margin-top: 30px;
+  padding:0 !important;
+  margin-bottom: 30px;
 }
 
 #uploadAppZone{margin-top:110px;}
@@ -722,6 +753,15 @@ p{
     overflow: hidden;
   }
 
+  .logo-pic-zone>img{
+      max-width: 180px;
+      background-color: white;
+      margin-bottom: 20px;
+      overflow: hidden;
+      vertical-align: top;
+    }
+
+
 .social-icons {
   list-style: none;
   overflow: hidden;
@@ -752,6 +792,8 @@ p{
 		width:100%;
 		background: #454545;
 	}
+
+  #ak-menu{float:right}
 
 	.dropdown-menu>li{
 		display:inline-block;
@@ -791,6 +833,12 @@ p{
 }
 
 @media (max-width: 760px){
+
+  #home-video-zone{
+      width:70% !important;
+      margin:15%;
+  }
+
 	#text-slider {
 		padding-top: 60px;
 	}
@@ -831,6 +879,13 @@ p{
     padding: 0 1.5%;
     margin-left: 12px;
   }
+
+    #ak-cellphone-14 {
+      position: relative;
+      margin-top: 30px;
+      max-width: 150px;
+      margin-left: -44%;
+    }
 }
 
 @media (max-width: 600px){
@@ -858,10 +913,14 @@ p{
 		text-align:center;
 	}
 
-
 	#scan-process-list > li {
 		width:98%;
 	}
+
+  #home-video-zone{
+      width:98% !important;
+      margin:1%;
+  }
 
 	#UBAZone{width:98% !important;}
 

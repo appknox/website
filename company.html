@@ -197,6 +197,17 @@ permalink: /company/
         We’ve been featured in
       </p>
     </li>
+    <li id="advisors-zone" class="text-center">
+      <ul class="text-center">
+        {% for pressInfo in site.data.press %}
+        <li class="member-data-zone">
+          <div class="logo-pic-zone">
+            <img src="{{pressInfo.imgLink}}" title="{{partner.title}}"/>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
     <li>
       <p class="text-center gray-8">Write to us at <a href="mailto://press@appknox.com">press@appknox.com</a></p>
     </li>
@@ -213,6 +224,17 @@ permalink: /company/
       <p class="text-center medium-font">
         One great partnership with the right person can have an incredible impact on your business. We've had many…
       </p>
+    </li>
+    <li id="advisors-zone" class="text-center">
+      <ul class="text-center">
+        {% for partner in site.data.partners %}
+        <li class="member-data-zone">
+          <div class="logo-pic-zone">
+            <img src="{{partner.imgLink}}" title="{{partner.title}}"/>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
     </li>
     <li>
       <p class="text-center gray-8">Write to us at  <a href="mailto://patner@appknox.comm">patner@appknox.com</a></p>

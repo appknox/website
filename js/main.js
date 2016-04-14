@@ -222,7 +222,7 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	this.interval = setInterval(repeatAnim,8000);
+	//this.interval = setInterval(repeatAnim,8000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
@@ -535,12 +535,20 @@ listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 **********************************************************************************/
 function activateCompanySubmenu(){
 	 var companyPage = $("#company-page");
-	 if(companyPage.length > 0){
+	 var doc = $(document);
+	 debugger;
+	 if(companyPage.length > 0 && doc.width() > 760){
 		 $("#company-dropdown").css({display:"block"});
+	 }else{
+		  $("#company-dropdown").css({display:"none"});
 	 }
 }
 
 $(document).ready(function(){
+	activateCompanySubmenu();
+});
+
+$(window).resize(function(){
 	activateCompanySubmenu();
 });
 
@@ -670,7 +678,7 @@ HashMenuManager.prototype.currentMenuHighlighter = function(){
 		if(hash === ""){return;}
 
 		$(".current-menu").removeClass("current-menu");
-		$("#"+hash+"-butn").addClass("current-menu");
+		$(hash+"-butn").addClass("current-menu");
 }
 
 //@Description : Changes the current menu highlighter on manual scroll of the page

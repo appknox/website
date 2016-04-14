@@ -1,0 +1,23 @@
+- name: TechPanda
+  imgLink: /img/techpanda.png
+
+- name: e27
+  imgLink: /img/e27.png
+
+- name: YourStory
+  imgLink: /img/yourstory.png
+
+- name: SoftPedia
+  imgLink: /img/softpedia.png
+
+- name: VentureBeat
+  imgLink: /img/venturebeat.png
+
+- name: IDA
+  imgLink: /img/ida.png
+
+- name: Bloomberg
+  imgLink: /img/bloomberg.png
+
+- name: INSG
+  imgLink: /img/insg.png
