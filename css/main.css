@@ -773,6 +773,10 @@ p{
 		background: none;
 	}
 
+  a:focus {
+		background: none !important;
+	}
+
     /*#ak-header{
 		border-bottom: 1px solid #E9E9E9;
 	}*/
