@@ -41,6 +41,8 @@ ul,li{list-style-type:none;margin:0;padding:0}
   margin:0 auto;
 }
 
+.block-breaker{display: block !important}
+
 .info-para{
   padding:30px 2%;
 }
@@ -49,7 +51,7 @@ p{
 	font-size:19px;
 }
 
-#first-container{padding-top:90px}
+#first-container,#about-us{padding-top:90px}
 
 .no-border{border:none !important;}
 
@@ -151,7 +153,7 @@ p{
 }
 
 .call-to-action-demo{
-	margin:60px 40px;
+	margin:40px 40px;
 }
 
 .ak-container{
@@ -223,8 +225,14 @@ p{
 
 .btn{font-family: neosans;}
 
-.botton-red{
+.button-red{
 	background:#EE5146;
+	border:none;
+	padding:10px 40px;
+}
+
+.button-green{
+	background:#4CAF50;
 	border:none;
 	padding:10px 40px;
 }
@@ -259,6 +267,8 @@ p{
 #head-txt-14{
 	margin-top:14%;
 }
+
+#many-more-team{margin-top:20px}
 
 .side-icon{width:90%;max-width:300px;margin:0 auto;}
 
@@ -306,7 +316,7 @@ p{
 .logos-box>li{
 	width:130px;
 	display:inline-block;
-	margin:10px 20px;
+	margin:20px 20px;
 
 }
 
@@ -476,7 +486,12 @@ p{
 
 .why-appknox h2{text-align:center}
 
-.contact-us-block{padding-top:80px;padding-bottom:80px;}
+.contact-us-block{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.contact-us-block .contact-us-btn{display:inline-block;margin-top:30px;}
 
 #footer-form input{display:inline-block}
 
@@ -562,6 +577,7 @@ p{
   color:#555;
   margin-top:30px;
   padding-bottom:50px;
+  box-shadow:0 1px 3px #d0d0d0;
 }
 
 .pricing-box .btn-primary{
@@ -571,11 +587,20 @@ p{
 }
 
 #essential-pricing{
-  border:2px solid #ddd;
+  border:3px solid #ddd;
+  box-shadow:0 2px 5px #ccc;
+  margin-top: 10px;
+  padding-bottom: 90px;
 }
 
+#lite-pricing .pricing-title{color:#3a8c87}
+
+#essential-pricing .pricing-title{color:#49455b}
+
+#advanced-pricing .pricing-title{color:#000}
+
 #advanced-pricing{
-  border:3px solid #ccc;
+  border:1px solid #ccc;
 }
 
 .pricing-title{
@@ -667,6 +692,50 @@ p{
 
 /* RESOURCES PAGE */
 
+/* COMPANY PAGE */
+.member-data-zone{
+  text-align:center;
+  margin-top:45px;
+  margin-bottom:20px;
+  display: inline-block;
+  width: 22%;
+  padding: 0 1.5%;
+  margin-left: 12px;
+  vertical-align: top;
+}
+
+.member-pic-zone>img{
+    width: 157px;
+    height: 157px;
+    background-color: white;
+    border-radius: 80px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+.social-icons {
+  list-style: none;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.member-title{
+  font-size:1em;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.social-icons li > a {
+  color:#999
+}
+/* END OF COMPANY PAGE */
+
 @media (min-width: 768px){
 	.navbar-nav>li>.dropdown-menu {
 		position:fixed;
@@ -744,7 +813,11 @@ p{
 
 	#ak-radar-zone {margin-bottom:10px; margin-top:30px}
 
-
+  .member-data-zone{
+    width: 30%;
+    padding: 0 1.5%;
+    margin-left: 12px;
+  }
 }
 
 @media (max-width: 600px){
@@ -755,6 +828,12 @@ p{
 	}
 
 	#head-txt-14 {margin-top:4%}
+
+  .member-data-zone{
+    width: 47%;
+    padding: 0 1.5%;
+    margin-left: 12px;
+  }
 }
 
 @media (max-width: 480px){

@@ -4,8 +4,8 @@ title: Company
 excerpt: Appknox detects & addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market higher productivity 360° mobile security
 permalink: /company/
 ---
-<section id="first-container">
-  <div class="container text-center">
+<section id="about-us">
+  <div class="container text-center" id="company-page">
     <div class="col-md-12 col-sm-12" id="company-header">
       <p>
           <h1 class="red">
@@ -88,7 +88,7 @@ permalink: /company/
   </ul>
 </section>
 
-<section class="ak-gray-bg">
+<section id="team" class="ak-gray-bg">
   <ul class="container ak-container">
     <li><h1 class="text-center gray-5">Team</h1></li>
     <li class="midsize-container">
@@ -96,7 +96,66 @@ permalink: /company/
         the mobile ecosystem safe and secure for everyone. Write to us if you want to be part of this journey.
       </p>
     </li>
-    <li id="team-members-zone">
+    <li id="team-members-zone" class="text-center">
+      <ul>
+        {% for member in site.data.members %}
+        <li class="member-data-zone">
+          <div class="member-pic-zone">
+            <img src="{{member.gravatar}}" />
+          </div>
+          <div class="member-title">{{member.title}}</div>
+          <ul class="social-icons">
+            {% if member.linkedIn != null %}
+            <li>
+              <a href="https://in.linkedin.com/in/jitendra-choudhary-31869221" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if member.twitter != null %}
+            <li>
+              <a href="https://twitter.com/jitk14" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if member.email != null %}
+            <li>
+              <a href="mailto:jitendra@appknox.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if member.www != null %}
+            <li>
+              <a href="http://dhilipsiva.com/" target="_blank">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if member.github != null %}
+            <li>
+              <a href="https://github.com/dhilipsiva" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if member.facebook != null %}
+            <li>
+              <a href="https://www.facebook.com/umesh.ramalingachar" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
     </li>
   </ul>
 </section>
@@ -109,10 +168,22 @@ permalink: /company/
         Where we are today is the sum of every choice we’ve made. Our Advisors have been an integral part of those choices.
       </p>
     </li>
+    <li id="advisors-zone" class="text-center">
+      <ul>
+        {% for advisor in site.data.advisors %}
+        <li class="member-data-zone col-sm-4 col-md-3 col-xs-6">
+          <div class="member-pic-zone">
+            <img src="{{advisor.imgLink}}" />
+          </div>
+          <div class="member-title">{{advisor.title}}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
   </ul>
 </section>
 
-<section>
+<section id="press">
   <ul class="container ak-container">
     <li><h1 class="text-center gray-5">Press</h1></li>
     <li class="midsize-container">
@@ -126,7 +197,7 @@ permalink: /company/
   </ul>
 </section>
 
-<section>
+<section id="partners">
   <ul class="container ak-container">
     <li><h1 class="text-center gray-5">Partners</h1></li>
     <li class="midsize-container">

@@ -1,4 +1,4 @@
 # _plugins/bundler.rb
 require "rubygems"
-require "bundler/setup"
+ "bundler/setup"
 Bundler.require(:default)
