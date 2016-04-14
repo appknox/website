@@ -554,7 +554,7 @@ function HashMenuManager()
 	this.nextHash = "";
 	this.innerPageOffset = [''];
 
-	this.privateCapsule = (function($,displaceAnimator){
+	this.privateCapsule = (function($){
 
 		//private variables
 		var currentHashMenu = null;
@@ -567,14 +567,11 @@ function HashMenuManager()
 		///////////////////////////////////////////////
 		//private function to scroll page on menu click
 		var scrollMenuPage = function(ev){
-
-			ev.preventDefault();
+		  ev.preventDefault();
 			var stepTime = 50;
 			var scrollSpeed = 20;
 			var currentScrollTop = document.documentElement.scrollTop ||  document.body.scrollTop;
 			var hash = ev.target.href.substring(ev.target.href.lastIndexOf("#"));
-
-
 
 			if(hash == nextPageEleId) //if calling the same menu page as called, then return
 			{
@@ -604,13 +601,10 @@ function HashMenuManager()
 			scrollSteps = scrollSteps + 0.1;
 			//direction of scroll negative upward else downward
 			var direction = ((document.documentElement.scrollTop ||  document.body.scrollTop) - finalPageOffset.top) > 0 ? -1 : 1;
-
 			var scrollStep = currentPageOffset.top + (direction * (scrollLength + 10)*( 1 - Math.exp(-scrollSteps))) ; //easeout exponential function  , +10 as theoritically (1-exp(-x))  reaches 1 at infinte time
-
 
 			if( scrollStep >= finalPageOffset.top && direction == 1) //reached at destination scrollTop
 			{
-
 				//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
 				clearInterval(intervalId);
 				updateHash();
@@ -618,7 +612,6 @@ function HashMenuManager()
 			}
 			else if( scrollStep <= finalPageOffset.top && direction == -1) //reached at destination scrollTop
 			{
-
 				//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
 				clearInterval(intervalId);
 				updateHash();
@@ -627,7 +620,6 @@ function HashMenuManager()
 
 			document.body.scrollTop =  document.documentElement.scrollTop = scrollStep;
 			//console.log(document.documentElement.scrollTop + " : " + document.body.scrollTop)
-
 		}
 
 
@@ -636,29 +628,20 @@ function HashMenuManager()
 		var updateHash = function()
 		{
 			document.location.hash  = nextPageEleId;
-
-			if(nextPageEleId == "#home")
-			{
-				displaceAnimator.animateLogos();
-			}
-
 			nextPageEleId = null; //reseting as it has been scrolled into view
-
 		}
 
 		//Funtion to register function onclick of main menu
 		var registerMenuClick = function()
 		{
-			$(".hashMainMenu").unbind("click",scrollMenuPage).bind("click",scrollMenuPage);
+			$(".hashMenu").unbind("click",scrollMenuPage).bind("click",scrollMenuPage);
 			//console.log($(".hashMainMenu"));
 		}
 
 		return {
 			registerMenuScroll : registerMenuClick,
-
 		}
-	}(jQuery,displaceAnimator));
-
+	}(jQuery));
 }
 
 HashMenuManager.prototype.initializer = function()
@@ -709,12 +692,9 @@ HashMenuManager.prototype.currentMenuOnScroll = function(ev)
 			{ //console.log("inside : " + temp.id);
 				$(".current-menu").removeClass("current-menu");
 				$("#"+temp.id).addClass("current-menu");
-
 			}
 		}
-
 	}
-
 }
 
 //@Description : Gathers the offset of inner page of the main menu
@@ -733,7 +713,6 @@ HashMenuManager.prototype.gatherOffsetData = function(ev)
 		bottom = top + $(id).outerHeight();
 		menuId = menuRefer.eq(i).parent().attr("id");
 		_this.innerPageOffset[i] = {top :  top, bottom : bottom, id : menuId}
-
 	}
 }
 

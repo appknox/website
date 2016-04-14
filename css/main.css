@@ -114,6 +114,10 @@ p{
 	background: #f6f6f6;
 }
 
+.ak-white-bg{
+	background: #fff;
+}
+
 .horz-split-1x,.horz-split-dark-1x{
 	width:100%;
 	text-align:center;
@@ -141,6 +145,11 @@ p{
 .navbar-toggle .icon-bars-button{
   display: inline-block;
   vertical-align:middle;
+}
+
+.horzr-sep-block{
+  width:100%;
+  height:20px;
 }
 
 .navbar-brand {
