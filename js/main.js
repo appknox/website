@@ -436,7 +436,7 @@ var connectScanZone = (function($){
 
 	function draw(){
 		$(document).ready(function(){
-			drawDiagram();
+			setTimeout(drawDiagram,3000);
 		});
 
 		$(window).resize(function(){
