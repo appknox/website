@@ -533,19 +533,66 @@ listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 /*********************************************************************************
 * COmpany Page Sub menu Activation
 **********************************************************************************/
-function activateCompanySubmenu(){
+function activateCompanySubmenu(directCall){
 	 var companyPage = $("#company-page");
 	 var doc = $(document);
-	 debugger;
+
 	 if(companyPage.length > 0 && doc.width() > 760){
-		 $("#company-dropdown").css({display:"block"});
+		 $("#company-dropdown").addClass("block");
+	 }else if( doc.width() > 760){
+		 if(!directCall){
+		    var menu =   $("#company-menu");
+				$("#company-dropdown").addClass("block");
+			}
+
 	 }else{
-		  $("#company-dropdown").css({display:"none"});
+		  $("#company-dropdown").removeClass("block");
 	 }
 }
 
+function hideCompanySubMenu(ev){
+		var target = ev.currentTarget;
+		if(target.id !== "company-menu"){
+			$("#company-dropdown").removeClass("block");
+		}
+}
+
+function hideCompanySubMenuOnDepart(ev){
+	var mouseY = ev.clientY;
+	try{
+		var subMenuTop = $("#company-dropdown").css("top");
+		var subMenuHeight = $("#company-dropdown").outerHeight();
+		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+
+		if(mouseY >= (downEnd + 100)){
+			$("#company-dropdown").removeClass("block");
+		}
+ }catch(e){console.log(e.message)}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of company-link in mobile menu
+function companyLinkClickAction(){
+	$("#company-link").click(function(ev){
+		var doc = $(document);
+		if(doc.width()<760){
+			ev.preventDefault;
+		}else{
+			document.location = ev.currentTarget.href;
+		}
+	})
+}
+
 $(document).ready(function(){
-	activateCompanySubmenu();
+	activateCompanySubmenu(true);
+	companyLinkClickAction();
+
+	$("#company-menu").bind("mouseover",function(){
+			activateCompanySubmenu();
+	});
+
+  $(document).mousemove(hideCompanySubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideCompanySubMenu);
 });
 
 $(window).resize(function(){

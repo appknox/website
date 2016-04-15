@@ -45,6 +45,8 @@ ul,li{list-style-type:none;margin:0;padding:0}
 
 .block-breaker{display: block !important}
 
+.block{ display:block}
+
 .info-para{
   padding:30px 2%;
 }
@@ -478,7 +480,7 @@ p{
   border: 3px solid #616060;
   border-radius: 5px;
   box-shadow: 2px 3px 4px #ccc;
-  width: 50% !important;
+  width: 40% !important;
   max-width: 90% !important;
   background: #fff;
   margin-left: 23%;
@@ -499,7 +501,11 @@ p{
 
 #scReportZone{display:block !important;margin:30px auto}
 
-#UBAZone{width:100% !important;padding:0;max-width:100% !important;text-align:right}
+#UBAZone{width:100% !important;padding:0;max-width:100% !important;text-align:right;}
+
+#UBAInnerZone{margin-top:-138px;}
+
+#UBAInnerZone .icon{margin-left:75px;}
 
 #whySheildZone{
 	margin-top:130px;
