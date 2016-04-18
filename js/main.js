@@ -563,8 +563,9 @@ function hideCompanySubMenuOnDepart(ev){
 		var subMenuTop = $("#company-dropdown").css("top");
 		var subMenuHeight = $("#company-dropdown").outerHeight();
 		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+		var companyPage = $("#company-page");
 
-		if(mouseY >= (downEnd + 100)){
+		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
 			$("#company-dropdown").removeClass("block");
 		}
  }catch(e){console.log(e.message)}

@@ -35,6 +35,14 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .medium-font{font-size:1.1em}
 .big-font{font-size:1.3em}
 .large-font{font-size:1.5em;}
+.xl-font{font-size:1.7em;}
+
+.small-para{
+  width:90%;
+  max-width:350px;
+  margin:0 auto;
+  text-align:left;
+}
 
 .midsize-container{
   width:95%;
@@ -55,7 +63,7 @@ p{
 	font-size:19px;
 }
 
-#first-container,#about-us{padding-top:90px}
+#first-container{padding-top:90px}
 
 .no-border{border:none !important;}
 
@@ -118,6 +126,9 @@ p{
 .gray-9{color:#999}
 .gray-a{color:#aaa}
 
+.white{color:#fff;}
+.light-white{color:#d5d5d5}
+
 .underline{text-decoration:underline}
 .bottom-border{border-bottom:1px solid #aaa;padding-bottom:3px;display:inline-block}
 
@@ -134,8 +145,16 @@ p{
 	background: #f6f6f6;
 }
 
+.ak-black-bg{
+	background: #000;
+}
+
 .ak-white-bg{
 	background: #fff;
+}
+
+.trans-black-bg{
+  background:rgba(0,0,0,0.7);
 }
 
 .horz-split-1x,.horz-split-dark-1x{
@@ -739,6 +758,30 @@ p{
 /* RESOURCES PAGE */
 
 /* COMPANY PAGE */
+
+
+#about-us{
+ background: url('../img/team_working.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#company-page{
+  margin-top: 70px;
+  margin-bottom: 240px;
+}
+
+#company-header{
+  margin-top:120px;
+}
+
+#mission-zone{
+  padding-top:10px;
+  padding-bottom:20px;
+}
+
 .member-data-zone{
   text-align:center;
   margin-top:45px;
