@@ -544,15 +544,16 @@ function activateCompanySubmenu(directCall){
 		    var menu =   $("#company-menu");
 				$("#company-dropdown").addClass("block");
 			}
-
-	 }else{
+	 }else if(companyPage.length === 0){
 		  $("#company-dropdown").removeClass("block");
 	 }
 }
 
 function hideCompanySubMenu(ev){
 		var target = ev.currentTarget;
-		if(target.id !== "company-menu"){
+		var companyPage = $("#company-page");
+
+		if(target.id !== "company-menu" && companyPage.length == 0){
 			$("#company-dropdown").removeClass("block");
 		}
 }
