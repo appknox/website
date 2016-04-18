@@ -106,7 +106,7 @@ permalink: /company/
           <ul class="social-icons">
             {% if member.linkedIn != null %}
             <li>
-              <a href="https://in.linkedin.com/in/jitendra-choudhary-31869221" target="_blank">
+              <a href="{{member.linkedIn}}" target="_blank">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
             </li>
@@ -114,7 +114,7 @@ permalink: /company/
 
             {% if member.twitter != null %}
             <li>
-              <a href="https://twitter.com/jitk14" target="_blank">
+              <a href="{{member.twiiter}}" target="_blank">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
             </li>
@@ -122,7 +122,7 @@ permalink: /company/
 
             {% if member.email != null %}
             <li>
-              <a href="mailto:jitendra@appknox.com">
+              <a href="{{member.email}}">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
               </a>
             </li>
@@ -130,7 +130,7 @@ permalink: /company/
 
             {% if member.www != null %}
             <li>
-              <a href="http://dhilipsiva.com/" target="_blank">
+              <a href="{{member.www}}" target="_blank">
                 <i class="fa fa-globe" aria-hidden="true"></i>
               </a>
             </li>
@@ -138,7 +138,7 @@ permalink: /company/
 
             {% if member.github != null %}
             <li>
-              <a href="https://github.com/dhilipsiva" target="_blank">
+              <a href="{{member.github}}" target="_blank">
                 <i class="fa fa-github" aria-hidden="true"></i>
               </a>
             </li>
@@ -146,7 +146,7 @@ permalink: /company/
 
             {% if member.facebook != null %}
             <li>
-              <a href="https://www.facebook.com/umesh.ramalingachar" target="_blank">
+              <a href="{{member.facebook}}" target="_blank">
               <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
             </li>
@@ -179,7 +179,7 @@ permalink: /company/
     <li id="advisors-zone" class="text-center">
       <ul>
         {% for advisor in site.data.advisors %}
-        <li class="advisor-data-zone">
+        <li class="member-data-zone">
           <div class="member-pic-zone">
             <img src="{{advisor.imgLink}}" />
           </div>
@@ -245,5 +245,24 @@ permalink: /company/
       <p class="text-center gray-8">Write to us at  <a href="mailto://patner@appknox.comm">patner@appknox.com</a></p>
     </li>
   </ul>
+</section>
 
+<section id="supporters">
+  <div class="horzr-sep-block ak-white-bg"></div>
+  <div class="horzr-sep-block ak-white-bg"></div>
+  <div class="horzr-sep-block ak-white-bg"></div>
+  <ul class="container ak-container">
+    <li><h1 class="text-center gray-5">Supported By</h1></li>
+    <li id="supporters-zone" class="text-center">
+      <ul class="text-center">
+        {% for supporter in site.data.supporters %}
+        <li class="member-data-zone">
+          <div class="logo-pic-zone">
+            <img src="{{supporter.imgLink}}" title="{{supporter.title}}"/>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
 </section>
