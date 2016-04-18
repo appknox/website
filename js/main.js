@@ -624,15 +624,15 @@ function HashMenuManager()
 		///////////////////////////////////////////////
 		//private function to scroll page on menu click
 		var scrollMenuPage = function(ev){
-		  ev.preventDefault();
 			var stepTime = 50;
 			var scrollSpeed = 20;
 			var currentScrollTop = document.documentElement.scrollTop ||  document.body.scrollTop;
 			var hash = ev.target.href.substring(ev.target.href.lastIndexOf("#"));
 
-			if(hash == nextPageEleId) //if calling the same menu page as called, then return
-			{
+			if($(hash).length === 0 || hash == nextPageEleId){
 				return;
+			}else{
+				ev.preventDefault();
 			}
 
 			scrollSteps = 0; //for negative exponential easing Ae^-x
