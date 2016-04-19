@@ -25,6 +25,10 @@ h1,h2,h3,h4,h5,h6{
 	line-height:1.3em;
 }
 
+h1{
+  font-size:35px;
+}
+
 ul,li{list-style-type:none;margin:0;padding:0}
 
 .red{color:#EE5146;}
@@ -205,7 +209,7 @@ p{
 }
 
 .ak-container{
-	padding-top:30px;
+	padding-top:50px;
 	padding-bottom: 30px;
 }
 
@@ -299,7 +303,10 @@ p{
 	float:left;*/
 }
 
-#ak-radar-zone{ margin: 70px 0 10px;}
+#ak-radar-zone{
+  margin: 70px 0 10px;
+  padding-bottom: 60px;
+}
 
 #ak-dotted-circle{
 	margin-top:30px;
@@ -314,6 +321,7 @@ p{
 
 #head-txt-14{
 	margin-top:14%;
+  font-size: 40px;
 }
 
 #many-more-team{margin-top:20px}
@@ -499,7 +507,7 @@ p{
   border: 3px solid #616060;
   border-radius: 5px;
   box-shadow: 2px 3px 4px #ccc;
-  width: 40% !important;
+  width: 45% !important;
   max-width: 90% !important;
   background: #fff;
   margin-left: 23%;
@@ -543,6 +551,11 @@ p{
 	border-radius:85px;
 	opacity:0.8;
 	transition:all 0.35s ease-out;
+}
+
+.testimony-container{
+   padding-top:70px;
+   padding-bottom:70px;
 }
 
 .awards-image>img:hover{opacity:1;border-radius:45px;}
@@ -921,7 +934,7 @@ p{
 		margin-top: -30px;
 	}
 
-	#ak-radar-zone {margin-bottom:10px; margin-top:30px}
+	#ak-radar-zone {margin-bottom:10px; margin-top:108px}
 
   .member-data-zone{
     width: 30%;
