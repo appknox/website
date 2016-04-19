@@ -339,8 +339,8 @@ var connectScanZone = (function($){
 			return;
 		}
 		var scanReportOffset = calcOffset(scanReportBlock);
-		var reportLeft = scanReportOffset.left + scanReportBlock.width()/2;
-		var reportTop = scanReportOffset.top;
+		var reportLeft = scanReportOffset.left;
+		var reportTop = scanReportOffset.top-15;
 		var uploadOffset = calcOffset(uploadBlock);
 		var width = uploadBlock.width();
 		var topDelta = 20;
@@ -404,7 +404,7 @@ var connectScanZone = (function($){
 		ctx.beginPath();
 		var dastBlockOffset = calcOffset(DASTBlock);
 		var dastBottom = dastBlockOffset.top + DASTBlock.height();
-		var dastLeft = dastBlockOffset.left + DASTBlock.width()/2;
+		var dastLeft = dastBlockOffset.left + DASTBlock.width()/4;
 		ctx.moveTo(dastLeft,dastBottom + topDelta);
 		var reportLessLeft = reportLeft;
 		if(dastBlockOffset.top > sastBlockOffset.top + SASTBlock.height()){

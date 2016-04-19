@@ -527,7 +527,7 @@ p{
 
 #DASTZone .icon{margin-top:-80px;margin-left:200px}
 
-#scReportZone{display:block !important;margin:-130px auto 30px}
+#scReportZone{display:block !important;margin:-130px auto 0 45%}
 
 #UBAZone{width:100% !important;padding:0;max-width:100% !important;text-align:right;}
 
@@ -561,8 +561,8 @@ p{
 }
 
 .testimony-container{
-   padding-top:70px;
-   padding-bottom:70px;
+   padding-top:130px;
+   padding-bottom:150px;
 }
 
 .awards-image>img:hover{opacity:1;border-radius:45px;}
@@ -1048,4 +1048,8 @@ p{
 
 	#radar-list-block{margin-left:0px;}
 
+  .testimony-container{
+     padding-top:60px;
+     padding-bottom:80px;
+  }
 }
