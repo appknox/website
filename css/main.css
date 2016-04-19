@@ -494,6 +494,7 @@ p{
 
 #scan-process-list .desc-text{
 	background: #FFF;
+  color: #666;
 }
 
 #scan-process-list .desc-title{
@@ -510,7 +511,7 @@ p{
   width: 45% !important;
   max-width: 90% !important;
   background: #fff;
-  margin-left: 23%;
+  margin-left: 27.5%;
   margin-top: 30px;
   padding:0 !important;
   margin-bottom: 30px;
@@ -526,13 +527,19 @@ p{
 
 #DASTZone .icon{margin-top:-80px;margin-left:200px}
 
-#scReportZone{display:block !important;margin:30px auto}
+#scReportZone{display:block !important;margin:-130px auto 30px}
 
 #UBAZone{width:100% !important;padding:0;max-width:100% !important;text-align:right;}
 
 #UBAInnerZone{margin-top:-138px;}
 
-#UBAInnerZone .icon{margin-left:75px;}
+#UBAInnerZone .icon{margin-left:140px;}
+
+#scReportZone .icon{
+  position: relative;
+  top: 92px;
+  left: -95px;
+}
 
 #whySheildZone{
 	margin-top:130px;
@@ -1031,6 +1038,10 @@ p{
 	.innerZoneScan {
 		text-align: center;
 	}
+
+  #UBAInnerZone .icon{
+    margin-top:130px;
+  }
 
 	.why-appknox{text-align:center}
 
