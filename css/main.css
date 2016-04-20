@@ -41,6 +41,9 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .large-font{font-size:1.5em;}
 .xl-font{font-size:1.7em;}
 .gills-24{font-size:24px;font-family: gillsansmtpro}
+.gills-30{font-size:30px;font-family: gillsansmtpro}
+.neosans-40{font-size:40px;font-family: neosans}
+.neosans-50{font-size:50px;font-family: neosans}
 
 .small-para{
   width:90%;
@@ -804,6 +807,9 @@ p{
   padding-top:10px;
   padding-bottom:20px;
 }
+
+#our-vision-container{padding-top:33px !important}
+#culture-container{padding-top:33px !important}
 
 .member-data-zone{
   text-align:center;
