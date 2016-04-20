@@ -15,7 +15,7 @@
 body{
 	font-family:gillsansmtpro;
 	font-size:20px;
-  color:#444;
+  color:#000;
 }
 
 a{color:#000;}
@@ -231,7 +231,7 @@ p{
 	padding-bottom: 40px;
 }
 
-.ak-slide{color:#555;display:none}
+.ak-slide{color:#000;display:none}
 
 #slide-jumper-sec .ak-jumper-block{
 	margin:15px 0 15px;
@@ -876,10 +876,9 @@ p{
 	}
 
 	.navbar-nav>li>a{
-		text-shadow: 0 1px 0 rgba(255,255,255,.25);
+		text-shadow:none;
 		color: #999;
 		margin-top:10px;
-
 	}
 
 	.nav>li>a:hover, .nav .open>a:hover, .nav .open>a:focus {
