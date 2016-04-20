@@ -31,8 +31,8 @@ h1{
 
 ul,li{list-style-type:none;margin:0;padding:0}
 
-.red{color:#EE5146;}
-.bg-red{background:#b48787;}
+.red{color:#f17758;}
+.bg-red{background:#ea2127;}
 .bg-dark{background:#333;}
 
 .small-font{font-size: 0.9em}
@@ -40,6 +40,7 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .big-font{font-size:1.3em}
 .large-font{font-size:1.5em;}
 .xl-font{font-size:1.7em;}
+.gills-24{font-size:24px;font-family: gillsansmtpro}
 
 .small-para{
   width:90%;
@@ -210,7 +211,7 @@ p{
 
 .ak-container{
 	padding-top:50px;
-	padding-bottom: 30px;
+	padding-bottom: 157px;
 }
 
 #text-slider{
@@ -278,7 +279,7 @@ p{
 .btn{font-family: neosans;}
 
 .button-red{
-	background:#EE5146;
+	background:#ea2127;
 	border:none;
 	padding:10px 90px;
 }
@@ -353,7 +354,7 @@ p{
 .horz-selected-span{
 	width:100%;
 	max-width:400px;
-	margin:0 auto;
+	margin:70px auto 0;
 	height:2px;
 }
 
@@ -569,7 +570,7 @@ p{
 
 .awards-image>img:hover{opacity:1;border-radius:45px;}
 
-.why-appknox{text-align:left;padding-bottom: 90px;}
+.why-appknox{text-align:left;padding-bottom: 200px;padding-top: 75px;}
 
 .why-appknox h2{text-align:center}
 
