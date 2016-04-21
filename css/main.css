@@ -42,7 +42,8 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .xl-font{font-size:1.7em;}
 .gills-24{font-size:24px;font-family: gillsansmtpro}
 .gills-30{font-size:30px;font-family: gillsansmtpro}
-.neosans-40{font-size:40px;font-family: neosans}
+.neosans-24{font-size:40px;font-family: neosans}
+.neosans-40{font-size:40px;font-family: neosans;margin-bottom:40px;}
 .neosans-50{font-size:50px;font-family: neosans}
 
 .small-para{
@@ -150,7 +151,7 @@ p{
 }
 
 .ak-gray-bg{
-	background: #f6f6f6;
+	background: #fafafa;
 }
 
 .ak-black-bg{
@@ -214,7 +215,7 @@ p{
 
 .ak-container{
 	padding-top:50px;
-	padding-bottom: 157px;
+	padding-bottom: 110px;
 }
 
 #text-slider{
@@ -230,7 +231,7 @@ p{
 #ak-slide-container{
 	display:block;
 	list-style-type:none;
-	height:470px;
+	height:500px;
 	text-align:left;
 	padding-bottom: 40px;
 }
@@ -238,14 +239,23 @@ p{
 .ak-slide{color:#000;display:none}
 
 #slide-jumper-sec .ak-jumper-block{
-	margin:15px 0 15px;
+	margin: 50px 0 80px;
 }
 
+.inslide-buttons{
+  padding:4px 40px;
+  display:inline-block;
+  border:1px solid #000;
+  border-radius:30px;
+}
+
+.inslide-buttons p{margin-bottom:0;font-size: 20px !important;}
+
 .ak-slide-jump-butn{
-	height:8px;
+	height:6px;
 	border:1px solid rgba(0,0,0,0.8);
-	width:8px;
-	border-radius:4px;
+	width:6px;
+	border-radius:3px;
 	display:inline-block;
 	margin:5px 7px 0;
 	cursor:pointer;
@@ -324,7 +334,8 @@ p{
 }
 
 #head-txt-14{
-	margin-top:14%;
+	margin-top:50px;
+  margin-bottom:50px;
   font-size: 40px;
 }
 
@@ -338,6 +349,8 @@ p{
 	max-width:700px;
 	margin:30px auto 80px;
 	min-height:80px;
+  font-size:24px;
+  font-family: gillsansmtpro;
 }
 
 #testimony-selector{
@@ -357,7 +370,7 @@ p{
 .horz-selected-span{
 	width:100%;
 	max-width:400px;
-	margin:70px auto 0;
+	margin:30px auto 0;
 	height:2px;
 }
 
@@ -569,7 +582,7 @@ p{
    padding-bottom:150px;
 }
 
-#swiggyLogo{ width: 75%;}
+#swiggyLogo{ width: 62%;}
 
 .awards-image>img:hover{opacity:1;border-radius:45px;}
 
@@ -621,7 +634,7 @@ p{
 #site-footer input[type=email]{
 	border:none;
 	background:#444;
-	padding:8px 2%;
+	padding:5px 15px;
 	width:66%;
 }
 
@@ -631,9 +644,10 @@ p{
 }
 
 .footer-titles{
-	color:#C0C0C0;
+	color:#e6e6e6;
 	margin:15px 0%;
-	font-size:0.9em;
+	font-size:24px;
+  font-family: neosans
 }
 
 .footer-article{
@@ -651,8 +665,8 @@ p{
 	background: #555;
     color: #aaa;
     border: none;
-    padding: 10px 12px;
-    border-radius: 15px;
+    padding: 5px 12px;
+    border-radius: 23px;
     font-size: 0.9em;
     margin: 10px 10px;
 }
@@ -666,7 +680,7 @@ p{
 	margin-top:20px;
 }
 #footer-form{margin-bottom:40px;}
-#footer-form h3{display:inline-block;width:38%}
+#footer-form h3{display:inline-block;margin-right: 10px;}
 #footer-form form{display:inline-block;width:60%;}
 
 #contact-us-form{display:nne}
