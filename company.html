@@ -105,53 +105,14 @@ permalink: /company/
           <div class="member-name">{{member.name}}</div>
           <div class="member-title gray-6">{{member.title}}</div>
           <ul class="social-icons">
-            {% if member.linkedIn != null %}
+			{% for link in member.links %}
+			{{ak_link link}}
             <li>
-              <a href="{{member.linkedIn}}" target="_blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
+				<a href="{{ak_link link}}" target="_blank">
+					<i class="fa fa-{{ak_icon link}}" aria-hidden="true"></i>
+              	</a>
             </li>
-            {% endif %}
-
-            {% if member.twitter != null %}
-            <li>
-              <a href="{{member.twitter}}" target="_blank">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if member.email != null %}
-            <li>
-              <a href="mailto://{{member.email}}">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if member.www != null %}
-            <li>
-              <a href="{{member.www}}" target="_blank">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if member.github != null %}
-            <li>
-              <a href="{{member.github}}" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            {% endif %}
-
-            {% if member.facebook != null %}
-            <li>
-              <a href="{{member.facebook}}" target="_blank">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            {% endif %}
+        	{% endfor %}
           </ul>
         </li>
         {% endfor %}
