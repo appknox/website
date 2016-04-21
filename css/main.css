@@ -417,7 +417,7 @@ p{
 }
 
 #hello-zone-cu{
-	padding-top:60px;
+	padding-top:40px;
 }
 
 #hello-zone-cu img{
@@ -427,6 +427,7 @@ p{
 
 #form-social-block{
 	text-align:center;
+  margin-top: 30px;
 }
 
 #form-social-block img{
