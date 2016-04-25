@@ -504,10 +504,13 @@ p{
 
 #radar-img-zone{margin-bottom:60px;}
 
-#scan-process-list .icon{
-	max-width:70px;
-	widtH:100%;
-	background: #FFF;
+#scan-process-list  .icon{margin-top:10px;margin:bottom:10px;}
+
+#scan-process-list  .icon h3{display: inline-block}
+#scan-process-list  .icon img{
+  width:70px;
+  display:inline-block;
+  margin-right:10px;
 }
 
 #scan-process-list .desc-text{
@@ -537,27 +540,13 @@ p{
 
 #uploadAppZone{margin-top:110px;}
 
-#SASTZone .icon{margin-left:-90px;}
-
 #SASTZone .title{margin-top:-70px;}
 
 #DASTZone .title{margin-top:-10px;}
 
-#DASTZone .icon{margin-top:-80px;margin-left:200px}
-
-#scReportZone{display:block !important;margin:-130px auto 0 45%}
+#scReportZone{display:block !important;margin:-130px auto 0 40%}
 
 #UBAZone{width:100% !important;padding:0;max-width:100% !important;text-align:right;}
-
-#UBAInnerZone{margin-top:-138px;}
-
-#UBAInnerZone .icon{margin-left:140px;}
-
-#scReportZone .icon{
-  position: relative;
-  top: 92px;
-  left: -95px;
-}
 
 #whySheildZone{
 	margin-top:130px;

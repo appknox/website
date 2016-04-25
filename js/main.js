@@ -416,7 +416,7 @@ var connectScanZone = (function($){
 
 		ctx.beginPath();
 		var ubaBlockOffset = calcOffset(UBABlock);
-		var ubaBottom = ubaBlockOffset.top + UBABlock.height()/1.3;
+		var ubaBottom = ubaBlockOffset.top + UBABlock.height()/2;
 		var ubaLeft = ubaBlockOffset.left;
 		ctx.moveTo(ubaLeft,ubaBottom + topDelta);
 		ctx.lineTo(reportLeft+20,reportTop);
