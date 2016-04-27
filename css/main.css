@@ -693,16 +693,6 @@ p{
   box-shadow:0px 0px 6px #ccc;
 }
 
-.width25{
-  width:25%;
-  float:left;
-}
-
-.width37{
-  width:37.5%;
-  float:left
-}
-
 .pricing-col-head{
   padding:20px 2%;
 }
@@ -710,10 +700,9 @@ p{
 .quantizer{
   float:left;
   text-align: center;
-  border-bottom:5px solid #fff;
+  border-bottom:5px solid #f1f1f1;
   padding:0;
   margin:0;
-  padding-bottom:5px;
 }
 
 #pricingInterMiddle{
@@ -750,7 +739,6 @@ p{
 }
 
 .horz-pricing{
-  width:92%;
   padding:10px;
   margin: 0 auto;
 }
@@ -786,9 +774,14 @@ p{
 }
 
 .inBlock50{
-  width:49%;
+  width:47%;
   display: inline-block;
   vertical-align: middle;
+}
+
+#platformZone{
+  margin:20px 0;
+  overflow: hidden;
 }
 
 /* END PRICING PAGE */

@@ -18,23 +18,39 @@ permalink: /pricing/
 <section id="pricing-zone">
   <div class="container ak-container text-center">
     <ul id="pricingZoneBox">
-      <li class="width25">
+      <li class="col-md-4 ">
           <div class="pricing-col-head">
               How many apps do <br> you need to scan?
           </div>
           <div id="selectNumberZone" class="">
-            <span><i class="fa fa-minus" aria-hidden="true"></i></span>
-            <span><input type="text" placeholder="2" id="noOfAppsInput" class="ak-gray-bg"/></span>
-            <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+            <span><input type="number" placeholder="2" id="noOfAppsInput" class="ak-gray-bg"/></span>
           </div>
           <div>
-              <ul id="quantityZones" class="small-font gray-7" data-quantizer="1,2-5,6-10">
+              <ul id="quantityZones" class="small-font gray-7 horz-pricing" data-quantizer="1,2-5,6-10">
                 <li class="quantizer current" style="width:10%">1</li>
                 <li class="quantizer current" style="width:40%">2-5</li>
                 <li class="quantizer current" style="width:50%">6-10</li>
                 <li class="clearfix"></li>
               <ul>
           </div>
+        <ul class="ak-checkbox-pannel small-font" id="platformZone">
+          <li class="col-md-6 col-sm-6" id="android-input-li" data-selected="no">
+              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+            <div class="ak-cb-title">Android</div>
+          </li>
+          <li class="col-md-6 col-sm-6" id="windows-input-li" data-selected="no">
+            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+            <div class="ak-cb-title">Windows</div>
+          </li>
+          <li class="col-md-6 col-sm-6" id="ios-input-li" data-selected="no">
+            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+            <div class="ak-cb-title">iOS</div>
+          </li>
+          <li class="col-md-6 col-sm-6" id="wearables-input-li" data-selected="no">
+            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+            <div class="ak-cb-title">Wearables</div>
+          </li>
+      </ul>
           <div>
               <p id="platformCountInfo" class="small-font gray-7 text-left">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Apps for every platform count separately, e.g "Appknox" on iOS
@@ -45,7 +61,7 @@ permalink: /pricing/
             For bulk order click here.
           </div>
       </li>
-      <li class="width37" id="pricingInterMiddle">
+      <li class="col-md-4 " id="pricingInterMiddle">
         <div>
             <h4 class="bordered-blue small-font">Plan Cost</h4>
         </div>
@@ -60,22 +76,32 @@ permalink: /pricing/
         <div class="horz-pricing ak-gray-bg border-radius-10">
             <h4 class="text-left uppercase">Grow</h4>
             <div class="amount-zone gray-9 big-font">
-              <div class="col-md-6">$399  <span class="saveAmt red">save $100</span> <br> <span class="xs-font">per month per app</span></div>
-              <div class="col-md-6">$3990 <span class="saveAmt red">save $198</span> <br> <span class="xs-font">paid annualy per app</span></div>
+              <div class="col-md-6">
+                $399   <br>
+                <span class="xs-font">/month/app</span>
+                <br/>
+                <div class="red">save $198</div>
+              </div>
+              <div class="col-md-6">$3990  <br> <span class="xs-font">/year/app</span></div>
               <div class="clearfix"></div>
             </div>
         </div>
         <div class="horz-pricing">
             <h4 class="text-left uppercase">Succeed</h4>
             <div class="amount-zone gray-9 big-font">
-              <div class="col-md-6">$399 <br> <span class="xs-font">paid month per app</span></div>
-              <div class="col-md-6">$3990 <span class="saveAmt">save $100</span> <br> <span class="xs-font">per month per app</span></div>
+              <div class="col-md-6">
+                $399   <br>
+                <span class="xs-font">/month/app</span>
+                <br/>
+                <span class="saveAmt red">save $198</span>
+              </div>
+              <div class="col-md-6">$3990 <sup>save $100</sup> <br> <span class="xs-font">per month per app</span></div>
               <div class="clearfix"></div>
             </div>
         </div>
 
       </li>
-      <li class="width37">
+      <li class="col-md-4 ">
         <h3 class="text-left horz-pricing">Protect your users</h3>
         <h4 class="text-left red horz-pricing">Stay Proactive</h4>
         <div id="rightSaveZone" class="horz-pricing ak-black-bg border-radius-10 gray-9">
@@ -84,17 +110,17 @@ permalink: /pricing/
             <div>
               <div class="inBlock50 big-font text-left">
                  <div>$1596</div>
-                 <div class="xs-font bold">per month</div>
+                 <div class="xs-font bold">/month</div>
                </div>
-              <div class="inBlock50 text-left">Your save $400</div>
+              <div class="inBlock50 text-left red">Your save $400</div>
             </div>
             <h2 class="gray-a">OR</h2>
             <div>
               <div class="inBlock50 big-font text-left">
                  <div>$1596</div>
-                 <div class="xs-font bold">per month</div>
+                 <div class="xs-font bold">/month</div>
                </div>
-              <div class="inBlock50 text-left">Your save $400</div>
+              <div class="inBlock50 text-left red">Your save $400</div>
             </div>
           </div>
         </div>
