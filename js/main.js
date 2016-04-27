@@ -776,3 +776,59 @@ HashMenuManager.prototype.gatherOffsetData = function(ev)
 
 var hashMenuController = new HashMenuManager();
 hashMenuController.initializer();
+
+
+/***********************************************************
+* Pricing Zone
+***********************************************************/
+function PricingManager(){
+	//Data Attributes
+	this.annualFactor = null;
+	this.platforms  = [];
+	this.quantityZones = [];
+
+	//Element(s) references
+	this.minusOne = null;
+	this.inputBox = null;
+
+	//Ids and Classes
+	this.annualFactorId =  "annualPricingFactor";
+	this.plusOne = null;
+}
+
+PricingManager.prototype.init = function(){
+	$(document).ready(function(){
+
+	})
+}
+
+PricingManager.prototype.gatherInitData = function(){
+	var _this = this;
+
+	this.annualFactor = $("#" + _this.annualFactorId).attr("data-attr-anf");
+	this.gatherPlatformsData();
+}
+
+PricingManager.prototype.gatherPlatformsData = function(){
+
+}
+
+PricingManager.prototype.bindPlusOneClick = function(){
+	var _this = this;
+	_this.minusOne.unbind("click",_this.onPlusOneClick).bind("click",{that: _this},_this.onPlusOneClick);
+}
+
+PricingManager.prototype.bindMinusOneClick = function(){
+	var _this = this;
+	_this.minusOne.unbind("click",_this.onMinusOneClick).bind("click",{that: _this},_this.onMinusOneClick);
+}
+
+PricingManager.prototype.onMinusOneClick = function(ev){
+	var _this = ev.data.that;
+
+}
+
+PricingManager.prototype.onPlusOneClick = function(ev){
+	var _this = ev.data.that;
+
+}

@@ -35,6 +35,7 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .bg-red{background:#ea2127;}
 .bg-dark{background:#333;}
 
+.xs-font{font-size: 0.7em}
 .small-font{font-size: 0.9em}
 .medium-font{font-size:1.1em}
 .big-font{font-size:1.3em}
@@ -63,6 +64,8 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .block-breaker{display: block !important}
 
 .block{ display:block}
+
+.center{margin:0 auto}
 
 .info-para{
   padding:30px 2%;
@@ -154,6 +157,10 @@ p{
 	background: #fafafa;
 }
 
+.ak-dark-gray-bg{
+	background: #f0f0f0;
+}
+
 .ak-black-bg{
 	background: #000;
 }
@@ -165,6 +172,10 @@ p{
 .trans-black-bg{
   background:rgba(0,0,0,0.7);
 }
+
+.border-radius-10{border-radius: 10px}
+.border-radius-15{border-radius: 15px}
+.border-radius-20{border-radius: 20px}
 
 .horz-split-1x,.horz-split-dark-1x{
 	width:100%;
@@ -676,78 +687,108 @@ p{
 #contact-us-form{display:nne}
 
 /* PRICING PAGE */
-.pricing-box{
-  border:1px solid #ccc;
-  color:#555;
-  margin-top:30px;
-  padding-bottom:50px;
-  box-shadow:0 1px 3px #d0d0d0;
+
+#pricingZoneBox{
+  padding:10px;
+  box-shadow:0px 0px 6px #ccc;
 }
 
-.pricing-box .btn-primary{
-  font-size: 16px;
-  margin-top: 20px;
-  padding: 7px 26px;
+.width25{
+  width:25%;
+  float:left;
 }
 
-#essential-pricing{
-  border:3px solid #ddd;
-  box-shadow:0 2px 5px #ccc;
-  margin-top: 10px;
-  padding-bottom: 90px;
+.width37{
+  width:37.5%;
+  float:left
 }
 
-#lite-pricing .pricing-title{color:#3a8c87}
-
-#essential-pricing .pricing-title{color:#49455b}
-
-#advanced-pricing .pricing-title{color:#000}
-
-#advanced-pricing{
-  border:1px solid #ccc;
+.pricing-col-head{
+  padding:20px 2%;
 }
 
-.pricing-title{
-  font-weight:bold;
-  color: #7A7A7A;
+.quantizer{
+  float:left;
+  text-align: center;
+  border-bottom:5px solid #fff;
+  padding:0;
+  margin:0;
+  padding-bottom:5px;
+}
+
+#pricingInterMiddle{
+ border-left:1px solid #f0f0f0;
+ border-right:1px solid #f0f0f0;
+}
+
+.sky-blue{
+  color:#62B0DD;
+}
+
+.quantizer.active{
+  border-bottom:5px solid #62B0DD;
+}
+
+#selectNumberZone{
+  padding:20px 1%;
+  margin-bottom:20px;
+}
+
+#noOfAppsInput{
+  font-size: 40px;
   display: inline-block;
-  padding: 12px 5% 6px;
-  border-bottom:2px solid #EE5146;
-}
-.pricing-amount{
-  font-size:25px;
-  font-weight: bold;
-  padding:12px 2%;
-  color: #7A7A7A;
+  width: 90px;
+  text-align: center;
+  border:none;
+  background: transparent;
+  border-bottom: 1px solid #62B0DD;
 }
 
-.pricing-amount>span{
-  font-weight: normal;
-  font-size: 17px;
-}
-.pricing-anually{
-  font-weight: normal;
-  font-size: 17px;
-  padding:0 8% 5px;
-  display:inline-block;
-
+#platformCountInfo{
+  margin-top:50px;
+  padding:10px 20px;
 }
 
-.pricing-facts.first{
-    border-top:1px solid #ccc;
-    padding-top:18px;
+.horz-pricing{
+  width:92%;
+  padding:10px;
+  margin: 0 auto;
 }
 
-.pricing-facts{
-  margin:3px auto 3px;
-  font-size:0.9em;
-  list-style-type: disc;
-  text-align: left;
-  list-style-position: inside;
-  padding: 8px 5%;
-  width:80%;
-  color:#555;
+.amount-zone{
+  width:100%;
+}
 
+.saveAmt{
+  position: relative;
+  top:-30px;
+  font-size: 0.7em;
+}
+
+.bordered-blue{
+  padding:5px 20px;
+  display: inline-block;
+  border-bottom: 1px solid #62B0DD;
+}
+
+.max260{max-width: 260px}
+
+#pricingBulkOrder{
+  padding:6px 20px;
+  border: 1px solid #62B0DD;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom:20px;
+}
+
+#rightSaveZone{
+  padding:10px 10%;
+}
+
+.inBlock50{
+  width:49%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* END PRICING PAGE */

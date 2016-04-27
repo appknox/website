@@ -17,43 +17,93 @@ permalink: /pricing/
 </section>
 <section id="pricing-zone">
   <div class="container ak-container text-center">
-    <div class="col-md-4 col-sm-6">
-      <ul id="lite-pricing" class="pricing-box">
-        <li class="pricing-title">Lite</li>
-        <li class="pricing-amount">$499<span>/month</span></li>
-        <li class="pricing-anually">or $4990 paid annualy</li>
-        <li class="pricing-facts  first">iOS & Android</li>
-        <li class="pricing-facts">SAST, DAST & UBA</li>
-        <li class="pricing-facts"><span class="gray-9">Remediation</span> 1 session</li>
-        <li class="pricing-facts"><span class="gray-9">TAT/SLA: </span> 3-5 days</li>
-        <li><a class="btn btn-primary button-green btn-lg ak-btn-round uppercase contact-us-btn" href="#contact-us-form">Get Started</a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <ul id="essential-pricing"  class="pricing-box">
-        <li class="pricing-title">Essential</li>
-        <li class="pricing-amount">$699<span>/month</span></li>
-        <li class="pricing-anually">or $6990 paid annualy</li>
-        <li class="pricing-facts first">iOS & Android</li>
-        <li class="pricing-facts">SAST, DAST & UBA</li>
-        <li class="pricing-facts"><span class="gray-9">Remediation</span> 3 session</li>
-        <li class="pricing-facts"><span class="gray-9">TAT/SLA: </span> 5 days</li>
-        <li><a class="btn btn-primary button-green btn-lg ak-btn-round uppercase contact-us-btn" href="#contact-us-form">Get Started</a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <ul id="advanced-pricing" class="pricing-box">
-        <li class="pricing-title">Advanced</li>
-        <li class="pricing-amount">$999<span>/month</span></li>
-        <li class="pricing-anually">or $9990 paid annualy</li>
-        <li class="pricing-facts  first">iOS, Android & Wearables</li>
-        <li class="pricing-facts">SAST, DAST & UBA</li>
-        <li class="pricing-facts"><span class="gray-9">Remediation</span> 5 session</li>
-        <li class="pricing-facts"><span class="gray-9">TAT/SLA: </span> 7 days</li>
-        <li><a class="btn btn-primary button-green btn-lg ak-btn-round uppercase contact-us-btn" href="#contact-us-form">Get Started</a></li>
-      </ul>
-    </div>
-    <div class="clearfix"></div>
-    <p class="info-para gray-7">For any queries regarding pricing contact us at <a href="mailto://pricing@appknox.com">pricing@appknox.com</a></p>
+    <ul id="pricingZoneBox">
+      <li class="width25">
+          <div class="pricing-col-head">
+              How many apps do <br> you need to scan?
+          </div>
+          <div id="selectNumberZone" class="">
+            <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+            <span><input type="text" placeholder="2" id="noOfAppsInput" class="ak-gray-bg"/></span>
+            <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+          </div>
+          <div>
+              <ul id="quantityZones" class="small-font gray-7" data-quantizer="1,2-5,6-10">
+                <li class="quantizer current" style="width:10%">1</li>
+                <li class="quantizer current" style="width:40%">2-5</li>
+                <li class="quantizer current" style="width:50%">6-10</li>
+                <li class="clearfix"></li>
+              <ul>
+          </div>
+          <div>
+              <p id="platformCountInfo" class="small-font gray-7 text-left">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> Apps for every platform count separately, e.g "Appknox" on iOS
+                  and Android both counts to 2
+              </p>
+          </div>
+          <div id="pricingBulkOrder">
+            For bulk order click here.
+          </div>
+      </li>
+      <li class="width37" id="pricingInterMiddle">
+        <div>
+            <h4 class="bordered-blue small-font">Plan Cost</h4>
+        </div>
+        <div class="horz-pricing">
+            <h4 class="text-left uppercase">Start</h4>
+            <div class="amount-zone gray-9 big-font">
+              <div class="col-md-6">$399 <br> <span class="xs-font">per month per app</span></div>
+              <div class="col-md-6">$3990 <span class="saveAmt">save $100</span> <br> <span class="xs-font">paid annualy per app</span></div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="horz-pricing ak-gray-bg border-radius-10">
+            <h4 class="text-left uppercase">Grow</h4>
+            <div class="amount-zone gray-9 big-font">
+              <div class="col-md-6">$399  <span class="saveAmt red">save $100</span> <br> <span class="xs-font">per month per app</span></div>
+              <div class="col-md-6">$3990 <span class="saveAmt red">save $198</span> <br> <span class="xs-font">paid annualy per app</span></div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="horz-pricing">
+            <h4 class="text-left uppercase">Succeed</h4>
+            <div class="amount-zone gray-9 big-font">
+              <div class="col-md-6">$399 <br> <span class="xs-font">paid month per app</span></div>
+              <div class="col-md-6">$3990 <span class="saveAmt">save $100</span> <br> <span class="xs-font">per month per app</span></div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
+
+      </li>
+      <li class="width37">
+        <h3 class="text-left horz-pricing">Protect your users</h3>
+        <h4 class="text-left red horz-pricing">Stay Proactive</h4>
+        <div id="rightSaveZone" class="horz-pricing ak-black-bg border-radius-10 gray-9">
+          <div class="text-left gray-9">Amout Payable</div>
+          <div>
+            <div>
+              <div class="inBlock50 big-font text-left">
+                 <div>$1596</div>
+                 <div class="xs-font bold">per month</div>
+               </div>
+              <div class="inBlock50 text-left">Your save $400</div>
+            </div>
+            <h2 class="gray-a">OR</h2>
+            <div>
+              <div class="inBlock50 big-font text-left">
+                 <div>$1596</div>
+                 <div class="xs-font bold">per month</div>
+               </div>
+              <div class="inBlock50 text-left">Your save $400</div>
+            </div>
+          </div>
+        </div>
+        <p>
+          Let us help you with account setup and verification
+        </p>
+        <p>Billing after verification</p>
+      </li>
+      <li class="clearfix"></li>
+    </ul>
   </div>
 </section>
