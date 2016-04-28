@@ -110,61 +110,66 @@ excerpt: Appknox detects & addresses vulnerabilities in mobile apps enabling bus
     <h1 class=" text-center">How It Works</h1>
     <div class="horz-split-1x"><span></span></div>
     <ul id="scan-process-list">
-      <li id="uploadAppZone">
+      <li id="uploadAppZone" class="col-md-3">
         <div class="icon">
           <img id="uploadAppIcon" src="img/uploadCloud.svg">
           <h3 class="title red">Upload</h3>
         </div>
-        <p class="desc-text">the binary or copy paste the app URL</p>
+        <div><p class="desc-text block">the binary or copy paste the app URL</p></div>
       </li>
-      <li id="SASTZone">
-        <div class="icon" id="sastIcon">
-          <img src="img/gearEye.svg">
-          <h3 class="title red">SAST</h3>
-        </div>
-        <h4 class="desc-title ">Static Application Security Testing</h4>
-        <p class="desc-text">Get faster releases with a fully automated scan that checks for basic configuration issues in less than 5 minutes</p>
-      </li>
-      <li id="DASTZone">
-        <div></div><!-- To prevent margin of first child-->
-        <div class="icon" id="dastIcon">
-          <img src="img/DAST_V2.svg">
-          <h3 class="title red">DAST</h3>
-        </div>
-        <h4 class="desc-title">Dynamic Application Security Testing</h4>
-        <p class="desc-text">
-          Your team interacts with our cloud hosted device while we diagnose leakages in data flow, securing 70% of your app’s possible vulnerabilities.
-        </p>
-      </li>
-      <li id="home-video-zone">
+      <li id="home-video-zone" class="col-md-6">
         <div id="video-wrapper">
             <div class="video-container" >
                 <iframe width="854" height="480" src="https://www.youtube.com/embed/ZyKA6xRW7Jc" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
       </li>
-      <li id="UBAZone">
-        <div class="innerZoneScan" id="UBAInnerZone">
-          <div class="icon">
-            <img src="img/UBA.svg">
-            <h3 class="title red">UBA</h3>
-          </div>
-          <h4 class="desc-title"> User Behavior Analysis</h4>
-          <p class="desc-text ">
-            Concerned about hackers? Don't be!<br>
-            Our industry renowned hackers hack your app to ensure you are secured from the eyes of a hacker.
-          </p>
-        </div>
-      </li>
-      <li id="scReportZone">
+      <li id="scReportZone" class="col-md-3">
         <div class="icon">
           <img src="img/report.svg">
           <h3 class="title red" id="reportZoneTitle">Report</h3>
         </div>
 
-        <p class="desc-text">Detailed list of vulnerabilites with suggestions to fix them</p>
+        <div><p class="desc-text">Detailed list of vulnerabilites with suggestions to fix them</p></div>
+      </li>
+      <li id="SASTZone" class="col-md-4">
+
+        <div class="titleZone">
+          <h3 class="title red">SAST</h3>
+          <h4 class="desc-title ">Static Application <br> Security Testing</h4>
+        </div>
+        <div class="icon-N-text">
+          <div class="icon"><img src="img/gearEye.svg"></div>
+          <p class="desc-text">Get faster releases with a fully automated scan that checks for basic configuration issues in less than 5 minutes</p>
+        </div>
+      </li>
+      <li id="DASTZone" class="col-md-4" >
+        <div class="titleZone">
+          <h3 class="title red">DAST</h3>
+          <h4 class="desc-title">Dynamic Application <br> Security Testing</h4>
+        </div>
+        <div class="icon-N-text">
+          <div class="icon"><img src="img/DAST_V2.svg"></div>
+          <p class="desc-text">
+            Your team interacts with our cloud hosted device while we diagnose leakages in data flow, securing 70% of your app’s possible vulnerabilities.
+          </p>
+        </div>
       </li>
 
+      <li id="UBAZone" class="col-md-4">
+        <div class="innerZoneScan" id="UBAInnerZone">
+          <div class="titleZone">
+            <h3 class="title red">UBA</h3>
+            <h4 class="desc-title"> User Behavior <br> Analysis</h4>
+          </div>
+          <div class="icon-N-text">
+            <div class="icon" ><img src="img/UBA.svg"></div>
+            <p class="desc-text ">
+              Our industry renowned hackers hack your app to ensure you are secured from the eyes of a hacker.
+            </p>
+        </div>
+        </div>
+      </li>
     </ul>
   </div>
 </section>

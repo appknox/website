@@ -501,14 +501,6 @@ p{
 	padding-top:90px;
 }
 
-#scan-process-list > li,.innerZoneScan{
-	width:32%;
-	max-width:380px;
-	display:inline-block;
-	vertical-align:top;
-	padding:20px 1.5%;
-}
-
 #radar-list-block{margin-left:5px;}
 
 #radar-list-block>span{display:none;font-size:1em;border-bottom:1px solid #EE5146;padding-bottom:2px}
@@ -519,9 +511,9 @@ p{
 
 #radar-img-zone{margin-bottom:60px;}
 
-#scan-process-list  .icon{margin-top:10px;margin:bottom:10px;}
+#scan-process-list  .icon{margin-top:5px;margin-bottom:10px;}
 
-#scan-process-list  .icon h3{display: inline-block}
+#scan-process-list  .icon{display: inline-block;width:22%;vertical-align: top}
 #scan-process-list  .icon img{
   width:70px;
   display:inline-block;
@@ -531,6 +523,9 @@ p{
 #scan-process-list .desc-text{
 	background: #FFF;
   color: #666;
+  display: inline-block;
+  width:75%;
+  vertical-align: top
 }
 
 #scan-process-list .desc-title{
@@ -540,28 +535,37 @@ p{
 	background: #FFF;
 }
 
+#scan-process-list .titleZone h3,#scan-process-list .titleZone h4{
+  display: inline-block;
+  width:22%;
+  vertical-align: top;
+  margin-top: 0px;
+}
+
+#scan-process-list .titleZone h4{width:72%;}
+
 #home-video-zone{
   border: 3px solid #616060;
   border-radius: 5px;
   box-shadow: 2px 3px 4px #ccc;
-  width: 45% !important;
   max-width: 90% !important;
   background: #fff;
-  margin-left: 27.5%;
-  margin-top: 30px;
-  padding:0 !important;
-  margin-bottom: 30px;
+  padding: 0;
 }
 
-#uploadAppZone{margin-top:110px;}
+#uploadAppZone{margin-top:30px;text-align: center;}
 
-#SASTZone .title{margin-top:-70px;}
+#SASTZone .title{margin-top:0px;}
+
+#DASTZone .title{margin-top:0px;}
+
+#scReportZone{display:block !important;margin-top:30px;text-align: center;}
+
+#DASTZone{margin-top:60px;}
+#SASTZone{margin-top:60px;}
 
 #DASTZone .title{margin-top:-10px;}
-
-#scReportZone{display:block !important;margin:-130px auto 0 40%}
-
-#UBAZone{width:100% !important;padding:0;max-width:100% !important;text-align:right;}
+#UBAZone{margin-top: 60px;text-align:right;}
 
 #whySheildZone{
 	margin-top:130px;
@@ -1024,24 +1028,7 @@ p{
 	#head-txt-14{
 		font-size:30px;
 	}
-
-	#scan-process-list > li {
-		width:48%;
-	}
-
-	#UBAZone{width:48% !important;}
-
-	.innerZoneScan{width:100%;}
-
-	#DASTZone .icon {
-		margin-top: -40px;
-		margin-left: 120px;
-	}
-
-	#DASTZone .title {
-		margin-top: -30px;
-	}
-
+  
 	#ak-radar-zone {margin-bottom:10px; margin-top:108px}
 
   .member-data-zone{
