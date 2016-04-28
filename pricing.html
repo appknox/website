@@ -23,7 +23,7 @@ permalink: /pricing/
               How many apps do <br> you need to scan?
           </div>
           <div id="selectNumberZone" class="">
-            <span><input type="number" placeholder="2" id="noOfAppsInput" class="ak-gray-bg"/></span>
+            <span><input type="number" min="1" max="10" placeholder="2" id="noOfAppsInput" class="ak-gray-bg"/></span>
           </div>
           <div>
               <ul id="quantityZones" class="small-font gray-7 horz-pricing" data-quantizer="1,2-5,6-10">
@@ -63,49 +63,62 @@ permalink: /pricing/
       </li>
       <li class="col-md-4 " id="pricingInterMiddle">
         <div>
-            <h4 class="bordered-blue small-font">Plan Cost</h4>
+            <h4 class="gray-bg-butn-like small-font">Plan Cost</h4>
         </div>
-        <div class="horz-pricing">
-            <h4 class="text-left uppercase">Start</h4>
-            <div class="amount-zone gray-9 big-font">
-              <div class="col-md-6">$399 <br> <span class="xs-font">per month per app</span></div>
-              <div class="col-md-6">$3990 <span class="saveAmt">save $100</span> <br> <span class="xs-font">paid annualy per app</span></div>
-              <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="horz-pricing ak-gray-bg border-radius-10">
-            <h4 class="text-left uppercase">Grow</h4>
-            <div class="amount-zone gray-9 big-font">
-              <div class="col-md-6">
-                $399   <br>
-                <span class="xs-font">/month/app</span>
-                <br/>
-                <div class="red">save $198</div>
-              </div>
-              <div class="col-md-6">$3990  <br> <span class="xs-font">/year/app</span></div>
-              <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="horz-pricing">
-            <h4 class="text-left uppercase">Succeed</h4>
-            <div class="amount-zone gray-9 big-font">
-              <div class="col-md-6">
-                $399   <br>
-                <span class="xs-font">/month/app</span>
-                <br/>
-                <span class="saveAmt red">save $198</span>
-              </div>
-              <div class="col-md-6">$3990 <sup>save $100</sup> <br> <span class="xs-font">per month per app</span></div>
-              <div class="clearfix"></div>
-            </div>
-        </div>
+        <div class="horz-pricing-box">
+            <h5 class="text-left uppercase">Grow</h5>
+            <div class="amount-zone gray-9 big-font text-left">
+              <div>
+                <span class="neosans small-font">$399</span>
+                <span class="xs-font">per month per app</span>
 
+                <span class="saveAmt  bold gray-7">Save <span class="">$198</span></span>
+              </div>
+              <div >
+                <span class="neosans small-font">$399</span>
+                <span class="xs-font">paid annualy per app</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="horz-pricing-box ak-black-bg border-radius-10 activePricing">
+            <h5 class="text-left uppercase activePricingPlan">Grow</h5>
+            <div class="amount-zone gray-9 big-font text-left">
+              <div>
+                <span class="neosans small-font">$399</span>
+                <span class="xs-font">per month per app</span>
+
+                <span class="saveAmt  bold gray-7">Save <span class="">$198</span></span>
+              </div>
+              <div >
+                <span class="neosans small-font">$399</span>
+                <span class="xs-font">paid annualy per app</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="horz-pricing-box  border-radius-10">
+            <h5 class="text-left uppercase">Grow</h5>
+            <div class="amount-zone gray-9 big-font text-left">
+              <div>
+                <span class="neosans small-font">$399</span>
+                <span class="xs-font">per month per app</span>
+
+                <span class="saveAmt bold gray-7">Save <span class="">$198</span></span>
+              </div>
+              <div >
+                <span class="neosans small-font">$399</span>
+                <span class="xs-font">paid annualy per app</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+        </div>
       </li>
       <li class="col-md-4 ">
         <h3 class="text-left horz-pricing">Protect your users</h3>
         <h4 class="text-left red horz-pricing">Stay Proactive</h4>
         <div id="rightSaveZone" class="horz-pricing ak-black-bg border-radius-10 gray-9">
-          <div class="text-left gray-9">Amout Payable</div>
+          <div class="text-left gray-9"><span class="bordered-bottom-text uppercase neosans small-font">Total</span> </div>
           <div>
             <div>
               <div class="inBlock50 big-font text-left">
@@ -124,10 +137,10 @@ permalink: /pricing/
             </div>
           </div>
         </div>
-        <p>
+        <p id="pricingHelpText" class="text-left small-font">
           Let us help you with account setup and verification
         </p>
-        <p>Billing after verification</p>
+        <p class="xs-font gray-9 text-left">* Billing after verification</p>
       </li>
       <li class="clearfix"></li>
     </ul>

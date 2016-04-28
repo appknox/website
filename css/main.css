@@ -35,12 +35,16 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .bg-red{background:#ea2127;}
 .bg-dark{background:#333;}
 
+.bold{font-weight:bold}
+
 .xs-font{font-size: 0.7em}
 .small-font{font-size: 0.9em}
 .medium-font{font-size:1.1em}
 .big-font{font-size:1.3em}
 .large-font{font-size:1.5em;}
 .xl-font{font-size:1.7em;}
+.neosans{font-family: neosans}
+.gillsans{font-family: gillsansmtpro}
 .gills-24{font-size:24px;font-family: gillsansmtpro}
 .gills-30{font-size:30px;font-family: gillsansmtpro}
 .neosans-24{font-size:40px;font-family: neosans}
@@ -688,6 +692,12 @@ p{
 
 /* PRICING PAGE */
 
+.horz-pricing-box{
+  padding:10px;
+  border:1px solid #f2f2f2;
+  margin:20px auto;
+}
+
 #pricingZoneBox{
   padding:10px;
   box-shadow:0px 0px 6px #ccc;
@@ -749,14 +759,24 @@ p{
 
 .saveAmt{
   position: relative;
-  top:-30px;
-  font-size: 0.7em;
+  left:15px;
+  font-size: 0.6em;
+  font-family: neosans;
 }
 
-.bordered-blue{
+.gray-bg-butn-like{
   padding:5px 20px;
   display: inline-block;
-  border-bottom: 1px solid #62B0DD;
+  background: #F8F8F8;
+  border-radius: 5px;
+  padding: 5px 70px;
+}
+
+.active-package{
+  background: #ccc;
+  padding: 5px 2%;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .max260{max-width: 260px}
@@ -782,6 +802,32 @@ p{
 #platformZone{
   margin:20px 0;
   overflow: hidden;
+}
+#pricingHelpText{
+  margin-top:70px;
+}
+
+.bordered-bottom-text{
+  padding-bottom:0px;
+  margin-bottom:10px;
+  border-bottom:1px solid #888;
+  display: inline-block;
+}
+
+.activePricing div,.activePricing span{
+  color:#d4d4d4 !important;
+}
+
+.activePricing .xs-font{
+  color:#aaa !important;
+}
+
+.activePricingPlan{
+  padding: 5px 5px;
+  color: #ddd;
+  background: #777;
+  margin: 5px auto;
+  border-radius: 5px;
 }
 
 /* END PRICING PAGE */
