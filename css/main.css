@@ -58,6 +58,8 @@ ul,li{list-style-type:none;margin:0;padding:0}
   text-align:left;
 }
 
+.marginTop{margin-top:20px}
+
 .midsize-container{
   width:95%;
   padding:0 2.5%;
@@ -860,6 +862,13 @@ p{
   margin: 5px auto;
   border-radius: 5px;
 }
+
+.faq-region{margin-bottom:20px;}
+.faqArrow{font-size: 15px;width:20px;}
+
+.faq-quest{color:#777;cursor:pointer;transition:all 0.4s ease-out}
+.faq-quest:hover{color:#333}
+.faq-answer{display:none}
 
 /* END PRICING PAGE */
 

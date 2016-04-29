@@ -643,6 +643,7 @@ PricingManager.prototype.init = function(){
 
 	$(document).ready(function(){
 		_this.resizeMiddleBox();
+		_this.faqControl();
 	})
 }
 
@@ -698,6 +699,18 @@ PricingManager.prototype.resizeMiddleBox = function(){
 					middleCol.css("height","auto");
 		}
 	}
+}
+
+PricingManager.prototype.faqControl = function(){
+	$(".faq-quest-area").click(function(ev){
+		var faqEle = $(ev.currentTarget).parent();
+		var icon = $(ev.currentTarget).parent().find("i");
+
+		faqEle.find(".faq-answer").slideToggle(400);
+		var isClosed = icon.hasClass("fa-caret-right");
+		icon.toggleClass("fa-caret-right fa-caret-down");
+
+	});
 }
 
 var pricingManager = new PricingManager();
