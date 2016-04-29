@@ -141,6 +141,10 @@ p{
 .gray-8{color:#888}
 .gray-9{color:#999}
 .gray-a{color:#aaa}
+.gray-b{color:#bbb}
+.gray-c{color:#ccc}
+
+.block{display: block}
 
 .white{color:#fff;}
 .light-white{color:#d5d5d5}
@@ -699,16 +703,23 @@ p{
 .horz-pricing-box{
   padding:10px;
   border:1px solid #f2f2f2;
-  margin:20px auto;
+  margin:40px auto;
 }
 
 #pricingZoneBox{
-  padding:10px;
+  padding:0px;
   box-shadow:0px 0px 6px #ccc;
 }
 
+#pricingZoneBox>li{padding-top:15px;}
+
 .pricing-col-head{
   padding:20px 2%;
+}
+
+#quantityZones,#quantityTitleZones{
+  width: 70%;
+  margin:5px auto 0;
 }
 
 .quantizer{
@@ -729,7 +740,11 @@ p{
 }
 
 .quantizer.active{
-  border-bottom:5px solid #62B0DD;
+  border-bottom:5px solid #333;
+}
+
+#quantityTitleZones .active{
+  color:#62B0DD;
 }
 
 #selectNumberZone{
@@ -761,6 +776,14 @@ p{
   width:100%;
 }
 
+#quantityTitleZones li{
+  float:left;
+  text-align: center;
+  font-weight: bold;
+  font-family: neosans;
+  padding-bottom:10px;
+}
+
 .saveAmt{
   position: relative;
   left:15px;
@@ -772,8 +795,9 @@ p{
   padding:5px 20px;
   display: inline-block;
   background: #F8F8F8;
-  border-radius: 5px;
-  padding: 5px 70px;
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: 85%;
 }
 
 .active-package{
@@ -804,9 +828,12 @@ p{
 }
 
 #platformZone{
-  margin:20px 0;
-  overflow: hidden;
+  margin:-10px 0 0px;
+  padding-bottom: 15px;
 }
+
+#platformHead{width:80%;margin:0 auto 0;padding-top:15px;font-weight: bold}
+
 #pricingHelpText{
   margin-top:70px;
 }
@@ -1028,7 +1055,7 @@ p{
 	#head-txt-14{
 		font-size:30px;
 	}
-  
+
 	#ak-radar-zone {margin-bottom:10px; margin-top:108px}
 
   .member-data-zone{

@@ -23,34 +23,45 @@ permalink: /pricing/
               How many apps do <br> you need to scan?
           </div>
           <div id="selectNumberZone" class="">
-            <span><input type="number" min="1" max="10" placeholder="2" id="noOfAppsInput" class="ak-gray-bg"/></span>
+            <span><input type="number" min="1" max="10" value="1" id="noOfAppsInput" class="ak-gray-bg sky-blue"/></span>
           </div>
           <div>
-              <ul id="quantityZones" class="small-font gray-7 horz-pricing" data-quantizer="1,2-5,6-10">
-                <li class="quantizer current" style="width:10%">1</li>
-                <li class="quantizer current" style="width:40%">2-5</li>
-                <li class="quantizer current" style="width:50%">6-10</li>
+              <ul id="quantityZones" class="small-font gray-7">
+                <li class="quantizer " style="width:20%">1</li>
+                <li class="quantizer active" style="width:40%">2-5</li>
+                <li class="quantizer " style="width:40%">6-10</li>
                 <li class="clearfix"></li>
-              <ul>
+              </ul>
+              <ul id="quantityTitleZones" class="xs-font gray-7" >
+                <li  style="width:20%">START</li>
+                <li class="active" style="width:40%">GROW</li>
+                <li style="width:40%">SUCCEED</li>
+                <li class="clearfix"></li>
+              </ul>
+              <div class="clearfix"></div>
           </div>
-        <ul class="ak-checkbox-pannel small-font" id="platformZone">
-          <li class="col-md-6 col-sm-6" id="android-input-li" data-selected="no">
+        <div class="ak-gray-bg border-radius-10 small-font" >
+          <div class="text-left neosans" id="platformHead">Choose Platform</div>
+          <ul class="ak-checkbox-pannel small-font" id="platformZone">
+            <li class="col-md-6 col-sm-6" id="android-input-li" data-selected="no">
+                <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <div class="ak-cb-title">Android</div>
+            </li>
+            <li class="col-md-6 col-sm-6" id="windows-input-li" data-selected="no">
               <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-            <div class="ak-cb-title">Android</div>
-          </li>
-          <li class="col-md-6 col-sm-6" id="windows-input-li" data-selected="no">
-            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-            <div class="ak-cb-title">Windows</div>
-          </li>
-          <li class="col-md-6 col-sm-6" id="ios-input-li" data-selected="no">
-            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-            <div class="ak-cb-title">iOS</div>
-          </li>
-          <li class="col-md-6 col-sm-6" id="wearables-input-li" data-selected="no">
-            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-            <div class="ak-cb-title">Wearables</div>
-          </li>
-      </ul>
+              <div class="ak-cb-title">Windows</div>
+            </li>
+            <li class="col-md-6 col-sm-6" id="ios-input-li" data-selected="no">
+              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <div class="ak-cb-title">iOS</div>
+            </li>
+            <li class="col-md-6 col-sm-6" id="wearables-input-li" data-selected="no">
+              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <div class="ak-cb-title">Wearables</div>
+            </li>
+            <li class="clearfix"></li>
+        </ul>
+      </div>
           <div>
               <p id="platformCountInfo" class="small-font gray-7 text-left">
                   <i class="fa fa-info-circle" aria-hidden="true"></i> Apps for every platform count separately, e.g "Appknox" on iOS
@@ -58,7 +69,7 @@ permalink: /pricing/
               </p>
           </div>
           <div id="pricingBulkOrder">
-            For bulk order click here.
+              <a href="" class="block">For Bulk Order Click Here</a>
           </div>
       </li>
       <li class="col-md-4 " id="pricingInterMiddle">
@@ -66,7 +77,7 @@ permalink: /pricing/
             <h4 class="gray-bg-butn-like small-font">Plan Cost</h4>
         </div>
         <div class="horz-pricing-box">
-            <h5 class="text-left uppercase">Grow</h5>
+            <h5 class="text-left uppercase">Start</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
                 <span class="neosans small-font">$399</span>
@@ -98,7 +109,7 @@ permalink: /pricing/
             </div>
         </div>
         <div class="horz-pricing-box  border-radius-10">
-            <h5 class="text-left uppercase">Grow</h5>
+            <h5 class="text-left uppercase">Succeed</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
                 <span class="neosans small-font">$399</span>
@@ -117,8 +128,8 @@ permalink: /pricing/
       <li class="col-md-4 ">
         <h3 class="text-left horz-pricing">Protect your users</h3>
         <h4 class="text-left red horz-pricing">Stay Proactive</h4>
-        <div id="rightSaveZone" class="horz-pricing ak-black-bg border-radius-10 gray-9">
-          <div class="text-left gray-9"><span class="bordered-bottom-text uppercase neosans small-font">Total</span> </div>
+        <div id="rightSaveZone" class="horz-pricing ak-black-bg border-radius-10 gray-c">
+          <div class="text-left gray-c"><span class="bordered-bottom-text uppercase neosans small-font">Total</span> </div>
           <div>
             <div>
               <div class="inBlock50 big-font text-left">
@@ -127,7 +138,7 @@ permalink: /pricing/
                </div>
               <div class="inBlock50 text-left red">Your save $400</div>
             </div>
-            <h2 class="gray-a">OR</h2>
+            <h2 class="gray-c">OR</h2>
             <div>
               <div class="inBlock50 big-font text-left">
                  <div>$1596</div>

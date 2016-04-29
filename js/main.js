@@ -639,8 +639,10 @@ function PricingManager(){
 }
 
 PricingManager.prototype.init = function(){
-	$(document).ready(function(){
+  var _this = this;
 
+	$(document).ready(function(){
+		_this.resizeMiddleBox();
 	})
 }
 
@@ -674,3 +676,29 @@ PricingManager.prototype.onPlusOneClick = function(ev){
 	var _this = ev.data.that;
 
 }
+
+PricingManager.prototype.resizeMiddleBox = function(){
+
+	$(document).ready(function(){
+		resizeBox();
+	});
+
+	$(document).ready(function(){
+		resizeBox();
+	});
+
+	function resizeBox(){
+		var winWidth = $(document).width();
+		var middleCol = $("#pricingInterMiddle");
+		var boxHeight = $("#pricingZoneBox").height();
+
+    if(winWidth>760 && middleCol.height() < boxHeight){
+					middleCol.height(boxHeight);
+		}else{
+					middleCol.css("height","auto");
+		}
+	}
+}
+
+var pricingManager = new PricingManager();
+pricingManager.init();
