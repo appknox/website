@@ -634,8 +634,12 @@ function PricingManager(){
 	this.plusOne = null;
 	this.inputBox = null;
 
+	//Others
+	this.platformHeadTimeout = null;
+
 	//Ids and Classes
 	this.annualFactorId =  "annualPricingFactor";
+	this.platformsClass = "platforms";
 
 }
 
@@ -648,6 +652,7 @@ PricingManager.prototype.init = function(){
 		_this.faqControl();
 		_this.bindPlusOneClick();
 		_this.bindMinusOneClick();
+		_this.bindPlatformClick();
 
 	})
 }
@@ -665,6 +670,7 @@ PricingManager.prototype.gatherInitData = function(){
   this.activateQuantityGroup(_this);
 	//subscribe app count Changes
   this.subscribeAppCount(_this.activateQuantityGroup);
+	this.subscribeAppCount(_this.resetPlatformsOnInvalid);
 }
 
 PricingManager.prototype.gatherPlatformsData = function(){
@@ -780,5 +786,72 @@ PricingManager.prototype.activateQuantityGroup = function(_this){
 	}
 }
 
+PricingManager.prototype.bindPlatformClick = function(){
+	var _this = this;
+	$("."+_this.platformsClass).unbind("click",_this.onPlatformClick).bind("click",{that: _this},_this.onPlatformClick);
+}
+
+PricingManager.prototype.onPlatformClick = function(ev){
+	var _this = ev.data.that;
+	var target = ev.currentTarget;
+	var noOfApps = _this.inputBox.attr("data-value");
+	var isActive = $(target).hasClass("active");
+	var platfromsActive = $("."+_this.platformsClass+".active");
+
+	if(isActive){
+		_this.deactivatePlatform(target);
+	}else if(noOfApps > platfromsActive.length){
+		_this.activatePlatform(target);
+	}else{
+		var statistics = "<p class='gray-7 small-font'>Number of App(s): <span class='gray-4'> " + noOfApps +"</span></p><p class='gray-7 small-font'> Number Platform(s): <span class='gray-4'> " + platfromsActive.length + "</span></p>";
+		fancyConfirm("<h4 class='text-center'><i class='fa fa-info-circle' aria-hidden='true'></i> Please increase app counts to choose more platform </h4> <div class='horz-split-1x'><span></span></div>" + statistics);
+	}
+}
+
+PricingManager.prototype.activatePlatform = function(element){
+  var ele = $(element);
+	ele.addClass("active");
+	ele.attr("data-seleceted","yes");
+}
+
+PricingManager.prototype.deactivatePlatform = function(element){
+  var ele = $(element);
+	ele.removeClass("active");
+	ele.attr("data-seleceted","no");
+}
+
+PricingManager.prototype.resetPlatformsOnInvalid = function(_this){
+	var platfromsActive = $("."+_this.platformsClass+".active");
+	var heading = $("#platformHead");
+  var noOfApps = _this.inputBox.attr("data-value");
+
+	if(noOfApps >= platfromsActive.length){
+		return;
+	}
+
+	platfromsActive.removeClass("active").attr("data-seleceted","no");
+
+	clearTimeout(_this.platformHeadTimeout);
+	heading.addClass("red");
+	_this.platformHeadTimeout = setTimeout(removeRed,3000);
+
+	function removeRed(){
+		heading.removeClass("red");
+	}
+}
+
 var pricingManager = new PricingManager();
 pricingManager.init();
+
+///////////////////////////////////////////////////////////////////////////////////////
+// General pop up/alert with fancybox
+function fancyConfirm(msg, options, callback) {
+    $.fancybox("#fancyboxAlert", {
+
+        beforeShow: function () {
+            this.content.prepend("<p class=\"title\"></p>");
+            $("#fancyboxAlert").html(msg);
+
+        }
+    });
+}

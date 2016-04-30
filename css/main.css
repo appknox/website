@@ -852,10 +852,25 @@ p{
   padding-bottom: 15px;
 }
 
-#platformHead{width:80%;margin:0 auto 0;padding-top:15px;font-weight: bold}
+#platformHead{
+  width:80%;
+  margin:0 auto 0;
+  padding-top:15px;
+  font-weight: bold;
+  transition: all 0.35s ease-out;
+}
 
 #pricingHelpText{
   margin-top:70px;
+}
+
+#fancyboxAlert{
+  text-align: center;
+  padding:20px;
+}
+
+#fancyboxAlert .horz-split-1x{
+  margin-bottom: 20px;
 }
 
 .bordered-bottom-text{
@@ -887,6 +902,10 @@ p{
   background: #777;
   margin: 5px auto;
   border-radius: 5px;
+}
+
+.platforms.active .ak-cb-depth-inner{
+  background: #62B0DD;
 }
 
 .faq-region{margin-bottom:20px;}
