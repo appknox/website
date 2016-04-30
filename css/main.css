@@ -732,6 +732,24 @@ p{
   margin:0;
 }
 
+.num-app-control{
+    display: inline-block;
+}
+
+.num-app-control img{
+    width:50px;
+    opacity: 0.3;
+    padding:6px;
+    border:1px solid #000;
+    border-radius:28px;
+    transition: all 0.35s ease-out;
+    cursor:pointer;
+}
+
+.num-app-control img:hover{
+    opacity: 1;
+}
+
 #pricingInterMiddle{
  border-left:1px solid #f0f0f0;
  border-right:1px solid #f0f0f0;
@@ -847,15 +865,23 @@ p{
   display: inline-block;
 }
 
-.activePricing div,.activePricing span{
+.horz-pricing-box{
+  transition: all 0.3s ease-out;
+}
+
+.active-pricing div,.active-pricing span{
   color:#d4d4d4 !important;
 }
 
-.activePricing .xs-font{
+.active-pricing .xs-font{
   color:#aaa !important;
 }
 
-.activePricingPlan{
+.active-pricing{
+  background: #333;
+}
+
+.active-pricing>h5{
   padding: 5px 5px;
   color: #ddd;
   background: #777;

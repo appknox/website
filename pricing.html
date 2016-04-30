@@ -23,13 +23,15 @@ permalink: /pricing/
               How many apps do <br> you need to scan?
           </div>
           <div id="selectNumberZone" class="">
-            <span><input type="number" min="1" max="10" value="1" id="noOfAppsInput" class="ak-gray-bg sky-blue"/></span>
+            <div id="appMinus" class="num-app-control"><img src="/img/minus.svg"/></div>
+            <div data-min="1" data-max="10" data-value="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue"/>1</div>
+            <div id="appPlus" class="num-app-control"><img src="/img/plus.svg"/></div>
           </div>
           <div>
               <ul id="quantityZones" class="small-font gray-7">
-                <li class="quantizer " style="width:20%">1</li>
-                <li class="quantizer active" style="width:40%">2-5</li>
-                <li class="quantizer " style="width:40%">6-10</li>
+                <li class="quantizer " style="width:20%" data-range="1-1">1</li>
+                <li class="quantizer active" style="width:40%" data-range="2-5">2-5</li>
+                <li class="quantizer " style="width:40%" data-range="6-10">6-10</li>
                 <li class="clearfix"></li>
               </ul>
               <ul id="quantityTitleZones" class="xs-font gray-7" >
@@ -76,7 +78,7 @@ permalink: /pricing/
         <div>
             <h4 class="gray-bg-butn-like small-font">Plan Cost</h4>
         </div>
-        <div class="horz-pricing-box">
+        <div class="horz-pricing-box border-radius-10">
             <h5 class="text-left uppercase">Start</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
@@ -92,8 +94,8 @@ permalink: /pricing/
               <div class="clearfix"></div>
             </div>
         </div>
-        <div class="horz-pricing-box ak-black-bg border-radius-10 activePricing">
-            <h5 class="text-left uppercase activePricingPlan">Grow</h5>
+        <div class="horz-pricing-box border-radius-10">
+            <h5 class="text-left uppercase">Grow</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
                 <span class="neosans small-font">$399</span>

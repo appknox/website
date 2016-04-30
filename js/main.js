@@ -627,23 +627,28 @@ function PricingManager(){
 	//Data Attributes
 	this.annualFactor = null;
 	this.platforms  = [];
-	this.quantityZones = [];
+	this.appCountSubscribers = [];
 
 	//Element(s) references
 	this.minusOne = null;
+	this.plusOne = null;
 	this.inputBox = null;
 
 	//Ids and Classes
 	this.annualFactorId =  "annualPricingFactor";
-	this.plusOne = null;
+
 }
 
 PricingManager.prototype.init = function(){
   var _this = this;
 
 	$(document).ready(function(){
+		_this.gatherInitData();
 		_this.resizeMiddleBox();
 		_this.faqControl();
+		_this.bindPlusOneClick();
+		_this.bindMinusOneClick();
+
 	})
 }
 
@@ -651,7 +656,15 @@ PricingManager.prototype.gatherInitData = function(){
 	var _this = this;
 
 	this.annualFactor = $("#" + _this.annualFactorId).attr("data-attr-anf");
+	this.inputBox = $("#noOfAppsInput");
+	this.plusOne = $("#appPlus");
+	this.minusOne = $("#appMinus");
+	this.minAppCount = this.inputBox.attr("data-min");
+	this.maxAppCount = this.inputBox.attr("data-max");
 	this.gatherPlatformsData();
+  this.activateQuantityGroup(_this);
+	//subscribe app count Changes
+  this.subscribeAppCount(_this.activateQuantityGroup);
 }
 
 PricingManager.prototype.gatherPlatformsData = function(){
@@ -660,7 +673,7 @@ PricingManager.prototype.gatherPlatformsData = function(){
 
 PricingManager.prototype.bindPlusOneClick = function(){
 	var _this = this;
-	_this.minusOne.unbind("click",_this.onPlusOneClick).bind("click",{that: _this},_this.onPlusOneClick);
+	_this.plusOne.unbind("click",_this.onPlusOneClick).bind("click",{that: _this},_this.onPlusOneClick);
 }
 
 PricingManager.prototype.bindMinusOneClick = function(){
@@ -670,16 +683,35 @@ PricingManager.prototype.bindMinusOneClick = function(){
 
 PricingManager.prototype.onMinusOneClick = function(ev){
 	var _this = ev.data.that;
+	var noOfApp = parseInt(_this.inputBox.html());
 
+	if(noOfApp > _this.minAppCount){
+			noOfApp--;
+			_this.inputBox.attr("data-value",noOfApp);
+			_this.publishAppCountChange();
+	}else{
+
+	}
+
+	_this.inputBox.text(noOfApp);
 }
 
 PricingManager.prototype.onPlusOneClick = function(ev){
 	var _this = ev.data.that;
+  var noOfApp = parseInt(_this.inputBox.html());
 
+	if(noOfApp < _this.maxAppCount){
+			noOfApp++;
+			_this.inputBox.attr("data-value",noOfApp);
+			_this.publishAppCountChange();
+	}else{
+
+	}
+
+	_this.inputBox.text(noOfApp);
 }
 
 PricingManager.prototype.resizeMiddleBox = function(){
-
 	$(document).ready(function(){
 		resizeBox();
 	});
@@ -711,6 +743,41 @@ PricingManager.prototype.faqControl = function(){
 		icon.toggleClass("fa-caret-right fa-caret-down");
 
 	});
+}
+
+PricingManager.prototype.publishAppCountChange = function(){
+	var subscribersLength = this.appCountSubscribers.length;
+	var _this = this;
+	for(var i = 0; i < subscribersLength; i++){
+		this.appCountSubscribers[i](_this);
+	}
+}
+
+PricingManager.prototype.subscribeAppCount = function(callFunc){
+	this.appCountSubscribers.push(callFunc);
+}
+
+PricingManager.prototype.activateQuantityGroup = function(_this){
+	var appCount = parseInt(_this.inputBox.attr("data-value"));
+	var quantizers = $(".quantizer");
+	var quantizerTitle = $("#quantityTitleZones>li");
+	var priceBox = $(".horz-pricing-box")
+
+	for(var i = 0; i < quantizers.length; i++){
+		var quantizer = $(quantizers[i]);
+
+		var range = quantizer.attr("data-range").split("-");
+		if(appCount >= parseInt(range[0]) && appCount <= parseInt(range[1])){
+			$(".quantizer").removeClass("active");
+			quantizer.addClass("active");
+
+			quantizerTitle.removeClass("active");
+			$(quantizerTitle[i]).addClass("active");
+
+			priceBox.removeClass("active-pricing");
+			$(priceBox[i]).addClass("active-pricing");
+		}
+	}
 }
 
 var pricingManager = new PricingManager();
