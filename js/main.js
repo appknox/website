@@ -743,7 +743,7 @@ PricingManager.prototype.faqControl = function(){
 	$(".faq-quest-area").click(function(ev){
 		var faqEle = $(ev.currentTarget).parent();
 		var icon = $(ev.currentTarget).parent().find("i");
-
+		$(".faq-answer").stop().slideUp(400);
 		faqEle.find(".faq-answer").slideToggle(400);
 		var isClosed = icon.hasClass("fa-caret-right");
 		icon.toggleClass("fa-caret-right fa-caret-down");
