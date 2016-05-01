@@ -743,8 +743,17 @@ PricingManager.prototype.faqControl = function(){
 	$(".faq-quest-area").click(function(ev){
 		var faqEle = $(ev.currentTarget).parent();
 		var icon = $(ev.currentTarget).parent().find("i");
-		$(".faq-answer").stop().slideUp(400);
+		var displayCurEle = faqEle.css("display");
+		$(".faq-answer").each(function(){
+			if($(this).parent()[0] !== faqEle[0]){
+				debugger;
+				$(this).stop().slideUp(400);
+			}
+		});
+
 		faqEle.find(".faq-answer").slideToggle(400);
+
+
 		var isClosed = icon.hasClass("fa-caret-right");
 		icon.toggleClass("fa-caret-right fa-caret-down");
 
