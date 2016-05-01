@@ -918,14 +918,15 @@ p{
 .red-border-button{
   border:1px solid #f17758;
   padding:10px 20px;
-  width:80%;
-  max-width:200px;
+  width:90%;
+  max-width:280px;
   display: inline-block;
   margin:30px auto;
   border-radius: 25px;
   font-size: 1.2em;
   font-family: neosans;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
 .red-border-button:hover{
