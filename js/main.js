@@ -746,13 +746,14 @@ PricingManager.prototype.faqControl = function(){
 		var displayCurEle = faqEle.css("display");
 		$(".faq-answer").each(function(){
 			if($(this).parent()[0] !== faqEle[0]){
-				debugger;
 				$(this).stop().slideUp(400);
+				if($(this).parent().find("i").hasClass("fa-caret-down")){
+						$(this).parent().find("i").toggleClass("fa-caret-right fa-caret-down");
+				}
 			}
 		});
 
 		faqEle.find(".faq-answer").slideToggle(400);
-
 
 		var isClosed = icon.hasClass("fa-caret-right");
 		icon.toggleClass("fa-caret-right fa-caret-down");
