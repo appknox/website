@@ -381,12 +381,16 @@ function activateCompanySubmenu(directCall){
 
 	 if(companyPage.length > 0 && doc.width() > 760){
 		 $("#company-dropdown").addClass("block");
-	 }else if( doc.width() > 760){
+	 }
+	 else if(companyPage.length > 0 && doc.width() < 760){
+		 $("#company-dropdown").removeClass("block");
+	 }
+	 else if( doc.width() > 760){
 		 if(!directCall){
 		    var menu =   $("#company-menu");
 				$("#company-dropdown").addClass("block");
 			}
-	 }else if(companyPage.length === 0){
+	 }else if(companyPage.length === 0 && doc.width() > 760){
 		  $("#company-dropdown").removeClass("block");
 	 }
 }
@@ -457,7 +461,7 @@ function activateResourceSubmenu(directCall){
 		    var menu =   $("#resource-menu");
 				$("#resource-dropdown").addClass("block");
 			}
-	 }else if(resourcePage.length === 0){
+	 }else if(resourcePage.length === 0 && doc.width() > 760){
 		  $("#resource-dropdown").removeClass("block");
 	 }
 }

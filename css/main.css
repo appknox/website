@@ -125,11 +125,6 @@ p{
     background: transparent !important;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-	background-color:transparent !important;
-	color: #fff;
-}
-
 .text-breaker{
 	display:block;
 	float:none;
@@ -945,8 +940,6 @@ p{
   padding-top: 50px;
 }
 
-#resource-dropdown .active{color:#fff !important;}
-
 #resources-zone{
   border-top:1px solid #ccc;
   padding-top:60px;
@@ -1065,6 +1058,14 @@ p{
 /* END OF COMPANY PAGE */
 
 @media (min-width: 768px){
+
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  	background-color:transparent !important;
+  	color: #fff;
+  }
+
+  #resource-dropdown .active{color:#fff !important;}
+
 	.navbar-nav>li>.dropdown-menu {
 		position:fixed;
 		text-align:center;
