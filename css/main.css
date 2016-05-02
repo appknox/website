@@ -937,6 +937,8 @@ p{
 
 /* RESOURCES PAGE */
 
+.resource{display:none}
+
 #resources-header{
   text-align: left;
   margin-bottom:70px;

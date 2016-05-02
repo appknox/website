@@ -514,6 +514,62 @@ $(window).resize(function(){
 	activateResourceSubmenu();
 });
 
+/*************************************************************************************************
+Resource Sub Menu To show specific reources
+*************************************************************************************************/
+function ResourceManager(){
+	this.resourceType = null;
+	this.subMenuSelector = "#resource-dropdown a";
+}
+
+ResourceManager.prototype.init = function(){
+	var _this = this;
+
+	$(document).ready(function(){
+		_this.setResourceType();
+		_this.showResourceType();
+		_this.bindSubMenuClick();
+	});
+}
+
+ResourceManager.prototype.setResourceType = function(){
+	this.resourceType = document.location.hash == "" ? "resource" : document.location.hash.substring(1);
+}
+
+ResourceManager.prototype.showResourceType = function(){
+	var _this = this;
+  var resourceClass =  _this.resourceType === "resource" || _this.resourceType === "all" ? "resource" : "res-"+_this.resourceType;
+	var resources = $("." + resourceClass);
+
+	var resBlock = $(".reource-block-zone");
+	resBlock.height(resBlock.height());
+
+	$(".resource").stop().fadeOut(300,function(){
+		setTimeout(function(){
+			$(".reource-block-zone").css("height","auto");
+			$("." + resourceClass).stop().fadeIn(300);
+		},400);
+	})
+
+}
+
+ResourceManager.prototype.bindSubMenuClick = function(){
+  var _this = this;
+	$(_this.subMenuSelector).unbind("click",_this.onSubMenuClick).bind("click",{that:_this},_this.onSubMenuClick);
+}
+
+ResourceManager.prototype.onSubMenuClick = function(ev){
+  var _this = ev.data.that;
+	var target = ev.currentTarget;
+	_this.resourceType = $(target).attr("data-id");
+
+	var resourceClass =  _this.resourceType === "all" ? "resource" : "res-"+_this.resourceType;
+
+	_this.showResourceType();
+}
+
+var resourceManager = new ResourceManager();
+resourceManager.init();
 
 /*************************************************************************************************
 Hash Menu To inline page block scrol animation
