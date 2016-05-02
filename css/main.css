@@ -263,7 +263,11 @@ p{
 .ak-slide{color:#000;display:none}
 
 #slide-jumper-sec .ak-jumper-block{
-	margin: 50px 0 80px;
+	margin: 50px 0 0;
+}
+
+#request-demo {
+  margin-top: 4%;  
 }
 
 .inslide-buttons{
@@ -1150,7 +1154,11 @@ p{
 		margin-left: 5%;
 	}
 }
-
+@@media (max-width: 767px) {
+  .slide-img-zone{
+		display:none;
+	}
+}
 @media (max-width: 760px){
 
   #home-video-zone{
@@ -1166,6 +1174,9 @@ p{
 		text-align:center;
 	}
 
+  .slide-img-zone{
+		display:none;
+	}
 
 	#ak-slide-zone h1{
 		font-size:35px;
