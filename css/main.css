@@ -560,6 +560,8 @@ p{
   max-width: 90% !important;
   background: #fff;
   padding: 0;
+  margin-left: 47px;
+  margin-right: 47px;
 }
 
 #uploadAppZone{margin-top:30px;}
