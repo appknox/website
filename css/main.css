@@ -1210,8 +1210,8 @@ p{
 	}
 
   #home-video-zone{
-      width:98% !important;
-      margin:1%;
+    width: 98% !important;
+    margin: 20px auto;
   }
 
 	#UBAZone{width:98% !important;}
@@ -1261,10 +1261,6 @@ p{
 	.innerZoneScan {
 		text-align: center;
 	}
-
-  #UBAInnerZone .icon{
-    margin-top:130px;
-  }
 
 	.why-appknox{text-align:center}
 
