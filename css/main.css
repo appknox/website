@@ -1216,74 +1216,81 @@ p {
     margin-left: 12px;
   }
 }
-@media (max-width: 480px) {
-  .slide-img-zone {
-    display: none;
-  }
-  #ak-slide-container {
-    min-height: 0;
-    text-align: center;
-  }
-  #scan-process-list > li {
-    width: 98%;
-  }
-  #home-video-zone {
+
+@media (max-width: 480px){
+	.slide-img-zone{
+		display:none;
+	}
+	#ak-slide-container{
+		min-height:0;
+		text-align:center;
+	}
+
+	#scan-process-list > li {
+		width:98%;
+	}
+
+  #home-video-zone{
     width: 98% !important;
-    margin: 1%;
+    margin: 20px auto;
   }
-  #UBAZone {
-    width: 98% !important;
-  }
-  .innerZoneScan {
-    width: 100%;
-  }
-  #DASTZone .icon {
-    margin-top: -40px;
-    margin-left: 120px;
-  }
-  #DASTZone .title {
-    margin-top: -30px;
-  }
-  #head-txt-14 {
-    margin-top: 2%;
-  }
-  .half-block-container {
-    margin-bottom: 10px;
-  }
-  #scan-process-list {
-    padding-top: 10px;
-    text-align: center;
-  }
-  #scan-process-list .icon {
-    margin: 0 auto;
-  }
-  #uploadAppZone {
-    margin-top: 30px;
-  }
-  #whySheildZone {
-    margin-top: 0px;
-  }
-  #SASTZone .title {
-    margin-top: 0;
-  }
-  #DASTZone .title {
-    margin-top: 0px;
-  }
-  .innerZoneScan {
-    text-align: center;
-  }
-  #UBAInnerZone .icon {
-    margin-top: 130px;
-  }
-  .why-appknox {
-    text-align: center
-  }
-  #radar-list-block {
-    margin-left: 0px;
-  }
-  .testimony-container {
-    padding-top: 60px;
-    padding-bottom: 80px;
+
+	#UBAZone{width:98% !important;}
+
+	.innerZoneScan{width:100%;}
+
+	#DASTZone .icon {
+		margin-top: -40px;
+		margin-left: 120px;
+	}
+
+	#DASTZone .title {
+		margin-top: -30px;
+	}
+
+	#head-txt-14 {
+		margin-top: 2%;
+	}
+	.half-block-container {
+		margin-bottom:10px;
+	}
+
+	#scan-process-list {
+		padding-top: 10px;
+		text-align:center;
+	}
+
+	#scan-process-list .icon {
+		margin: 0 auto;
+	}
+
+	#uploadAppZone {
+		margin-top: 30px;
+	}
+
+	#whySheildZone{
+		margin-top:0px;
+	}
+
+	#SASTZone .title {
+		margin-top: 0;
+	}
+
+	#DASTZone .title {
+		margin-top: 0px;
+	}
+	.innerZoneScan {
+		text-align: center;
+	}
+
+	.why-appknox{text-align:center}
+
+
+	#radar-list-block{margin-left:0px;}
+
+  .testimony-container{
+     padding-top:60px;
+     padding-bottom:80px;
   }
 }
 
