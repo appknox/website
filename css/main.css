@@ -942,7 +942,10 @@ p{
 #resources-header{
   text-align: left;
   margin-bottom:70px;
+  padding-top: 50px;
 }
+
+#resource-dropdown .active{color:#fff !important;}
 
 #resources-zone{
   border-top:1px solid #ccc;

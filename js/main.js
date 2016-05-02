@@ -551,6 +551,7 @@ ResourceManager.prototype.showResourceType = function(){
 		},400);
 	})
 
+	_this.activateSubMenu();
 }
 
 ResourceManager.prototype.bindSubMenuClick = function(){
@@ -564,8 +565,15 @@ ResourceManager.prototype.onSubMenuClick = function(ev){
 	_this.resourceType = $(target).attr("data-id");
 
 	var resourceClass =  _this.resourceType === "all" ? "resource" : "res-"+_this.resourceType;
-
 	_this.showResourceType();
+}
+
+ResourceManager.prototype.activateSubMenu = function(){
+	var _this = this;
+	var subMenu = $(_this.subMenuSelector);
+
+	subMenu.removeClass("active");
+	$("#res-" + _this.resourceType).addClass("active");
 }
 
 var resourceManager = new ResourceManager();
