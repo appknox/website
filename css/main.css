@@ -952,6 +952,36 @@ p{
   width:100%;
 }
 
+.resource-sublinks-inner a{
+  display:inline-block;
+  color: #999;
+  border:1px solid #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.35s ease-out;
+  padding: 5px 25px;
+  border-radius: 25px;
+  margin:20px 15px;
+}
+
+.resource-sublinks-inner a.active{
+  border:1px solid #999;
+}
+
+.resource-sublinks-inner a:hover{
+  color:#444;
+}
+
+.resource-download .fa-icon{
+  font-size:28px;
+  transition: all 0.35s ease-out;
+  color:#999;
+}
+
+.resource-download .fa-icon:hover{
+  color:#444
+}
+
 .resource-info .author{
   float:left;
   text-align: left;

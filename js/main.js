@@ -526,7 +526,7 @@ Resource Sub Menu To show specific reources
 *************************************************************************************************/
 function ResourceManager(){
 	this.resourceType = null;
-	this.subMenuSelector = "#resource-dropdown a";
+	this.subMenuSelector = ".resource-sublinks a";
 }
 
 ResourceManager.prototype.init = function(){
@@ -581,7 +581,7 @@ ResourceManager.prototype.activateSubMenu = function(){
 	var subMenu = $(_this.subMenuSelector);
 
 	subMenu.removeClass("active");
-	$("#res-" + resType).addClass("active");
+	$("#res-" + resType+",#res-in-"+resType).addClass("active");
 }
 
 var resourceManager = new ResourceManager();
