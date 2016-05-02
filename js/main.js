@@ -458,7 +458,7 @@ function activateResourceSubmenu(directCall){
 		 $("#resource-dropdown").addClass("block");
 	 }
 	 else if(companyPage.length > 0 && doc.width() < 760){
- 		 $("#company-dropdown").removeClass("block");
+ 		 $("#resource-dropdown").removeClass("block");
  	 }else if( doc.width() > 760){
 		 if(!directCall){
 		    var menu =   $("#resource-menu");
