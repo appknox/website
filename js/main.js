@@ -570,10 +570,11 @@ ResourceManager.prototype.onSubMenuClick = function(ev){
 
 ResourceManager.prototype.activateSubMenu = function(){
 	var _this = this;
+	var resType = _this.resourceType === "resource" ? "all" : _this.resourceType;
 	var subMenu = $(_this.subMenuSelector);
 
 	subMenu.removeClass("active");
-	$("#res-" + _this.resourceType).addClass("active");
+	$("#res-" + resType).addClass("active");
 }
 
 var resourceManager = new ResourceManager();
