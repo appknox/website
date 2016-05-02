@@ -302,7 +302,7 @@ p {
 #ak-slide-container {
   display: block;
   list-style-type: none;
-  height: 500px;
+  max-height: 500px;
   text-align: left;
   padding-bottom: 40px;
 }
