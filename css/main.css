@@ -267,7 +267,7 @@ p{
 }
 
 #request-demo {
-  margin-top: 4%;  
+  margin-top: 4%;
 }
 
 .inslide-buttons{
@@ -564,8 +564,6 @@ p{
   max-width: 90% !important;
   background: #fff;
   padding: 0;
-  margin-left: 47px;
-  margin-right: 47px;
 }
 
 #uploadAppZone{margin-top:30px;}
@@ -574,7 +572,7 @@ p{
 
 #DASTZone .title{margin-top:0px;}
 
-#scReportZone{display:block !important;margin-top:30px;padding-left: 50px}
+#scReportZone{display:block !important;margin-top:30px;}
 
 #DASTZone{margin-top:60px;}
 #SASTZone{margin-top:60px;}
