@@ -381,12 +381,16 @@ function activateCompanySubmenu(directCall){
 
 	 if(companyPage.length > 0 && doc.width() > 760){
 		 $("#company-dropdown").addClass("block");
-	 }else if( doc.width() > 760){
+	 }
+	 else if(companyPage.length > 0 && doc.width() < 760){
+		 $("#company-dropdown").removeClass("block");
+	 }
+	 else if( doc.width() > 760){
 		 if(!directCall){
 		    var menu =   $("#company-menu");
 				$("#company-dropdown").addClass("block");
 			}
-	 }else if(companyPage.length === 0){
+	 }else if(companyPage.length === 0 && doc.width() > 760){
 		  $("#company-dropdown").removeClass("block");
 	 }
 }
@@ -452,12 +456,15 @@ function activateResourceSubmenu(directCall){
 
 	 if(resourcePage.length > 0 && doc.width() > 760){
 		 $("#resource-dropdown").addClass("block");
-	 }else if( doc.width() > 760){
+	 }
+	 else if(resourcePage.length > 0 && doc.width() < 760){
+ 		 $("#resource-dropdown").removeClass("block");
+ 	 }else if( doc.width() > 760){
 		 if(!directCall){
 		    var menu =   $("#resource-menu");
 				$("#resource-dropdown").addClass("block");
 			}
-	 }else if(resourcePage.length === 0){
+	 }else if(resourcePage.length === 0 && doc.width() > 760){
 		  $("#resource-dropdown").removeClass("block");
 	 }
 }
@@ -519,7 +526,7 @@ Resource Sub Menu To show specific reources
 *************************************************************************************************/
 function ResourceManager(){
 	this.resourceType = null;
-	this.subMenuSelector = "#resource-dropdown a";
+	this.subMenuSelector = ".resource-sublinks a";
 }
 
 ResourceManager.prototype.init = function(){
@@ -570,10 +577,11 @@ ResourceManager.prototype.onSubMenuClick = function(ev){
 
 ResourceManager.prototype.activateSubMenu = function(){
 	var _this = this;
+	var resType = _this.resourceType === "resource" ? "all" : _this.resourceType;
 	var subMenu = $(_this.subMenuSelector);
 
 	subMenu.removeClass("active");
-	$("#res-" + _this.resourceType).addClass("active");
+	$("#res-" + resType+",#res-in-"+resType).addClass("active");
 }
 
 var resourceManager = new ResourceManager();

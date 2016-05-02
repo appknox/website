@@ -184,6 +184,7 @@ permalink: /company/
           <div class="member-pic-zone">
             <img src="{{advisor.imgLink}}" />
           </div>
+          <div class="member-name">{{advisor.name}}</div>
           <div class="member-title">{{advisor.title}}</div>
         </li>
         {% endfor %}
@@ -203,7 +204,7 @@ permalink: /company/
         We’ve been featured in
       </p>
     </li>
-    <li id="advisors-zone" class="text-center">
+    <li id="press-zone" class="text-center">
       <ul class="text-center">
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
@@ -231,7 +232,7 @@ permalink: /company/
         One great partnership with the right person can have an incredible impact on your business. We've had many…
       </p>
     </li>
-    <li id="advisors-zone" class="text-center">
+    <li id="partners-zone" class="text-center">
       <ul class="text-center">
         {% for partner in site.data.partners %}
         <li class="member-data-zone">
