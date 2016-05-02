@@ -11,7 +11,15 @@
     font-family: gillsansmtpro;
     src: url(../fonts/GILLSANSMTPRO-BOOK.OTF);
 }
-
+body,html {
+  width: 100%;
+  height: 100%;
+}
+.fullscreen {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
 body{
 	font-family:gillsansmtpro;
 	font-size:20px;
@@ -236,7 +244,7 @@ p{
 
 #text-slider{
 	clear:both;
-	min-height:400px;
+	height:100%;
 	padding-top:70px;
 }
 
@@ -255,7 +263,11 @@ p{
 .ak-slide{color:#000;display:none}
 
 #slide-jumper-sec .ak-jumper-block{
-	margin: 50px 0 80px;
+	margin: 50px 0 0;
+}
+
+#request-demo {
+  margin-top: 4%;  
 }
 
 .inslide-buttons{
@@ -552,15 +564,17 @@ p{
   max-width: 90% !important;
   background: #fff;
   padding: 0;
+  margin-left: 47px;
+  margin-right: 47px;
 }
 
-#uploadAppZone{margin-top:30px;text-align: center;}
+#uploadAppZone{margin-top:30px;}
 
 #SASTZone .title{margin-top:0px;}
 
 #DASTZone .title{margin-top:0px;}
 
-#scReportZone{display:block !important;margin-top:30px;text-align: center;}
+#scReportZone{display:block !important;margin-top:30px;padding-left: 50px}
 
 #DASTZone{margin-top:60px;}
 #SASTZone{margin-top:60px;}
@@ -1140,7 +1154,11 @@ p{
 		margin-left: 5%;
 	}
 }
-
+@@media (max-width: 767px) {
+  .slide-img-zone{
+		display:none;
+	}
+}
 @media (max-width: 760px){
 
   #home-video-zone{
@@ -1156,6 +1174,9 @@ p{
 		text-align:center;
 	}
 
+  .slide-img-zone{
+		display:none;
+	}
 
 	#ak-slide-zone h1{
 		font-size:35px;
@@ -1272,3 +1293,4 @@ p{
      padding-bottom:80px;
   }
 }
+/* Subho's addition */
