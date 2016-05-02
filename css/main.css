@@ -11,7 +11,15 @@
     font-family: gillsansmtpro;
     src: url(../fonts/GILLSANSMTPRO-BOOK.OTF);
 }
-
+body,html {
+  width: 100%;
+  height: 100%;
+}
+.fullscreen {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
 body{
 	font-family:gillsansmtpro;
 	font-size:20px;
@@ -241,7 +249,7 @@ p{
 
 #text-slider{
 	clear:both;
-	min-height:400px;
+	height:100%;
 	padding-top:70px;
 }
 
@@ -559,13 +567,13 @@ p{
   padding: 0;
 }
 
-#uploadAppZone{margin-top:30px;text-align: center;}
+#uploadAppZone{margin-top:30px;}
 
 #SASTZone .title{margin-top:0px;}
 
 #DASTZone .title{margin-top:0px;}
 
-#scReportZone{display:block !important;margin-top:30px;text-align: center;}
+#scReportZone{display:block !important;margin-top:30px;padding-left: 50px}
 
 #DASTZone{margin-top:60px;}
 #SASTZone{margin-top:60px;}
@@ -1245,3 +1253,4 @@ p{
      padding-bottom:80px;
   }
 }
+/* Subho's addition */
