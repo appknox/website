@@ -459,6 +459,7 @@ function activateResourceSubmenu(directCall){
 	 }
 	 else if(resourcePage.length > 0 && doc.width() < 760){
  		 $("#resource-dropdown").removeClass("block");
+		 $("#resource-dropdown").css("display","");
  	 }else if( doc.width() > 760){
 		 if(!directCall){
 		    var menu =   $("#resource-menu");
@@ -527,6 +528,7 @@ Resource Sub Menu To show specific reources
 function ResourceManager(){
 	this.resourceType = null;
 	this.subMenuSelector = ".resource-sublinks a";
+	this.deltaToShow = 60;
 }
 
 ResourceManager.prototype.init = function(){
@@ -534,8 +536,9 @@ ResourceManager.prototype.init = function(){
 
 	$(document).ready(function(){
 		_this.setResourceType();
-		_this.showResourceType();
+		_this.showResourceType(true);
 		_this.bindSubMenuClick();
+		_this.bindScroll();
 	});
 }
 
@@ -543,18 +546,21 @@ ResourceManager.prototype.setResourceType = function(){
 	this.resourceType = document.location.hash == "" ? "resource" : document.location.hash.substring(1);
 }
 
-ResourceManager.prototype.showResourceType = function(){
+ResourceManager.prototype.showResourceType = function(directCall){
 	var _this = this;
   var resourceClass =  _this.resourceType === "resource" || _this.resourceType === "all" ? "resource" : "res-"+_this.resourceType;
 	var resources = $("." + resourceClass);
 
-	var resBlock = $(".reource-block-zone");
+	var resBlock = $(".resource-block-zone");
 	resBlock.height(resBlock.height());
 
 	$(".resource").stop().fadeOut(300,function(){
 		setTimeout(function(){
-			$(".reource-block-zone").css("height","auto");
+			$(".resource-block-zone").css("height","auto");
 			$("." + resourceClass).stop().fadeIn(300);
+			if(!directCall){
+				_this.autoScroll();
+			}
 		},400);
 	})
 
@@ -575,6 +581,66 @@ ResourceManager.prototype.onSubMenuClick = function(ev){
 	_this.showResourceType();
 }
 
+ResourceManager.prototype.autoScroll = function(){
+	var resourceZone =  $("#resources-zone");
+	var paddingTop = resourceZone.css("padding-top");
+	var offsetTop = resourceZone.offset().top;
+	var scrollSteps = 0;
+	var intervalId = null;
+	var finalPageOffset = offsetTop - parseInt(paddingTop)/2;
+	var currentPageOffsetTop = document.documentElement.scrollTop ||  document.body.scrollTop;
+	var scrollLength = Math.abs(currentPageOffsetTop - finalPageOffset);
+
+
+	clearInterval(intervalId);
+	intervalId = setInterval(animateScroll,30);
+
+	function animateScroll(){
+		//debugger;
+		scrollSteps = scrollSteps + 0.1;
+		//direction of scroll negative upward else downward
+		var direction = ((document.documentElement.scrollTop ||  document.body.scrollTop) - finalPageOffset) > 0 ? -1 : 1;
+		var scrollStep = currentPageOffsetTop + (direction * (scrollLength + 10)*( 1 - Math.exp(-scrollSteps))) ; //easeout exponential function  , +10 as theoritically (1-exp(-x))  reaches 1 at infinte time
+
+		if( scrollStep >= finalPageOffset && direction == 1) //reached at destination scrollTop
+		{
+			//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+			clearInterval(intervalId);
+			return;
+		}
+		else if( scrollStep <= finalPageOffset && direction == -1) //reached at destination scrollTop
+		{
+			//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+			clearInterval(intervalId);
+			return;
+		}
+
+		document.body.scrollTop =  document.documentElement.scrollTop = scrollStep;
+		//console.log(document.documentElement.scrollTop + " : " + document.body.scrollTop)
+	}
+
+}
+
+ResourceManager.prototype.bindScroll = function(){
+  var _this = this;
+	$(window).unbind("scroll",_this.onWindowScroll).bind("scroll",{that:_this},_this.onWindowScroll);
+}
+
+ResourceManager.prototype.onWindowScroll = function(ev){
+	var _this  = ev.data.that;
+	var resourceContainer = $(".resource-block-zone");
+	var offsetTop = resourceContainer.offset().top;
+	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+	if(scrollTop > offsetTop + _this.deltaToShow){
+		$("#resource-dropdown").fadeIn(300,function(){$(this).addClass("block")});
+	}
+	else{
+		$("#resource-dropdown").fadeOut(300,function(){$(this).removeClass("block")});
+	}
+
+}
+
 ResourceManager.prototype.activateSubMenu = function(){
 	var _this = this;
 	var resType = _this.resourceType === "resource" ? "all" : _this.resourceType;
@@ -583,6 +649,7 @@ ResourceManager.prototype.activateSubMenu = function(){
 	subMenu.removeClass("active");
 	$("#res-" + resType+",#res-in-"+resType).addClass("active");
 }
+
 
 var resourceManager = new ResourceManager();
 resourceManager.init();

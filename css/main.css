@@ -115,7 +115,7 @@ ul, li {
   display: block !important
 }
 .block {
-  display: block
+  display: block !important;
 }
 .center {
   margin: 0 auto
@@ -590,29 +590,11 @@ p {
   background: #fff;
   padding: 0;
 }
-<<<<<<< HEAD
 
-#uploadAppZone{margin-top:30px;}
-
-#SASTZone .title{margin-top:0px;}
-
-#DASTZone .title{margin-top:0px;}
-
-#scReportZone{display:block !important;margin-top:30px;}
-
-#DASTZone{margin-top:60px;}
-#SASTZone{margin-top:60px;}
-
-#DASTZone .title{margin-top:-10px;}
-#UBAZone{margin-top: 60px;text-align:right;}
-
-#whySheildZone{
-	margin-top:130px;
-=======
 #uploadAppZone {
   margin-top: 30px;
->>>>>>> e0f2755bbc31aea93fcbedff27dea856f2a81dc7
 }
+
 #SASTZone .title {
   margin-top: 0px;
 }
@@ -1142,6 +1124,7 @@ p {
   }
   #resource-dropdown .active {
     color: #fff !important;
+    transition: all 0.35s ease-out;
   }
   .navbar-nav>li>.dropdown-menu {
     position: fixed;
