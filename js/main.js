@@ -74,9 +74,9 @@ AkSlideManager.prototype.init = function(akSlideZoneId){
 	var _this = this;
 	_this.slideZoneId = akSlideZoneId;
 
-
 	$(document).ready(function(){
 		$(".ui-loader-default").hide();
+		$("a").attr("rel","external");
 		_this.initiate();
 	});
 
