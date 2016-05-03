@@ -76,6 +76,7 @@ AkSlideManager.prototype.init = function(akSlideZoneId){
 
 
 	$(document).ready(function(){
+		$(".ui-loader-default").hide();
 		_this.initiate();
 	});
 
@@ -92,7 +93,6 @@ AkSlideManager.prototype.initiate = function(){
 	this.slideBlocks = this.slideZone.find(".ak-slide");
 	this.noOfSlides = this.slideBlocks.length;
 	this.jumperBlock = this.slideZone.find(".ak-jumper-block");
-	;
 	this.addSupportElements();
 	this.createJumpers();
 	this.initSlidePosition();
