@@ -582,7 +582,7 @@ ResourceManager.prototype.init = function(){
 }
 
 ResourceManager.prototype.setResourceType = function(){
-	this.resourceType = document.location.hash == "" ? "resource" : document.location.hash.substring(1);
+	this.resourceType = document.location.hash == "" ? "resource" : document.location.hash.substring(1).toLowerCase();
 }
 
 ResourceManager.prototype.showResourceType = function(directCall){
