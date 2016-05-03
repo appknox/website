@@ -383,7 +383,7 @@ p {
 }
 #ak-radar-zone {
   margin: 70px 0 10px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 #ak-dotted-circle {
   margin-top: 30px;
@@ -607,7 +607,6 @@ p {
 
 #whySheildZone{
 	margin-top:130px;
->>>>>>> fae70b4e3edc238e6ccecc95e59a36e3c1d40315
 }
 
 #SASTZone .title {
@@ -1216,6 +1215,10 @@ p {
     max-width: 150px;
     margin-left: -44%;
   }
+
+  #ak-dotted-circle{
+    width:70%;
+  }
 }
 @media (max-width: 600px) {
   .half-block-container>li {
@@ -1307,6 +1310,19 @@ p {
   .testimony-container{
      padding-top:60px;
      padding-bottom:80px;
+  }
+
+  #ak-cellphone-14{
+    left:-40px;
+  }
+
+  .ak-container {
+    padding-bottom: 50px;
+  }
+
+  #uploadAppZone .desc-text,#scReportZone .desc-text{
+    text-align: center;
+    width:100% !important;
   }
 }
 
