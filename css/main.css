@@ -14,7 +14,7 @@ body, html {
   width: 100%;
   height: 100%;
 }
-.fullscreen {
+.ak-fullscreen {
   min-height: 100%;
   width: 100%;
   position: relative;
@@ -302,7 +302,7 @@ p {
 #ak-slide-container {
   display: block;
   list-style-type: none;
-  height: 500px;
+  max-height: 500px;
   text-align: left;
   padding-bottom: 40px;
 }
@@ -591,8 +591,23 @@ p {
   padding: 0;
 }
 
-#uploadAppZone {
-  margin-top: 30px;
+#uploadAppZone{margin-top:30px;}
+
+#SASTZone .title{margin-top:0px;}
+
+#DASTZone .title{margin-top:0px;}
+
+#scReportZone{display:block !important;margin-top:30px;}
+
+#DASTZone{margin-top:60px;}
+#SASTZone{margin-top:60px;}
+
+#DASTZone .title{margin-top:-10px;}
+#UBAZone{margin-top: 60px;text-align:right;}
+
+#whySheildZone{
+	margin-top:130px;
+>>>>>>> fae70b4e3edc238e6ccecc95e59a36e3c1d40315
 }
 
 #SASTZone .title {
