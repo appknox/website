@@ -97,6 +97,7 @@ AkSlideManager.prototype.initiate = function(){
 	this.createJumpers();
 	this.initSlidePosition();
 	this.callAnimationLoop();
+	this.bindSwipe();
 }
 
 AkSlideManager.prototype.initSlidePosition = function(){
@@ -163,6 +164,38 @@ AkSlideManager.prototype.jumperActivate = function(){
 	$(_this.jumpers[_this.currentSlide]).addClass("ak-jump-active");
 }
 
+AkSlideManager.prototype.bindSwipe = function(){
+	var _this = this;
+
+	_this.slideZone.unbind("swipeleft",_this.onSwipeLeft).bind("swipeleft",{that: _this},_this.onSwipeLeft);
+	_this.slideZone.unbind("swiperight",_this.onSwipeRight).bind("swiperight",{that: _this},_this.onSwipeRight);
+}
+
+AkSlideManager.prototype.onSwipeLeft = function(ev){
+	var _this = ev.data.that;
+  var slideNumToBring = 0;
+
+	if(_this.currentSlide == _this.noOfSlides - 1){
+		slideNumToBring = 0;
+	}else{
+		slideNumToBring = _this.currentSlide + 1;
+	}
+
+	_this.hideSlide(slideNumToBring);
+}
+
+AkSlideManager.prototype.onSwipeRight = function(ev){
+	var _this = ev.data.that;
+	var slideNumToBring = 0;
+
+	if(_this.currentSlide == 0){
+		slideNumToBring = _this.noOfSlides - 1;
+	}else{
+		slideNumToBring = _this.currentSlide - 1;
+	}
+
+	_this.hideSlide(slideNumToBring);
+}
 
 AkSlideManager.prototype.bringSlide = function(){
 	var _this = this;
@@ -194,7 +227,7 @@ AkSlideManager.prototype.hideSlide = function(nextSlideNum){
 		timeToHide = animator.animTime > timeToHide ? animator.animTime : timeToHide;
 	}
 
-	if(nextSlideNum && parseInt(nextSlideNum) != NaN ){
+	if(parseInt(nextSlideNum) != NaN ){
 		_this.currentSlide = nextSlideNum;
 	}
 	else{
@@ -535,6 +568,12 @@ ResourceManager.prototype.init = function(){
 	var _this = this;
 
 	$(document).ready(function(){
+		var resourceZone =  $("#resources-zone");
+
+		if(resourceZone.length == 0){
+			return; //not resource page
+		}
+
 		_this.setResourceType();
 		_this.showResourceType(true);
 		_this.bindSubMenuClick();
