@@ -19,80 +19,33 @@ permalink: /resources/
 <section id="resources-zone">
   <div class="resource-sublinks resource-sublinks-inner text-center gillsans">
     <a href="/resources/#all" class="hashMenu" data-id="all" id="res-in-all">All</a>
-    <a href="/resources/#security" class="hashMenu" data-id="security" id="res-in-security">Security</a>
-    <a href="/resources/#IoT" class="hashMenu" data-id="iot" id="res-in-iot">IoT</a>
-    <a href="/resources/#android" class="hashMenu" data-id="android" id="res-in-android">Android</a>
+    {% for type in site.data.resource_types%}
+      <a href="/resources/#{{type.name | downcase}}" class="hashMenu" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}">{{type.name}}</a>
+    {% endfor %}
   </div>
   <ul class="container ak-container resource-block-zone">
-    <li class="col-md-4 col-sm-4 resource res-android">
+    {% for resource in site.data.resources%}
+    <li class="col-md-4 col-sm-4 resource res-{{resource.category | downcase}}">
       <section class="resource-tile">
         <ul class="resource-head neosans">
-          <li class="resource-type pull-left">Case Study</li>
+          <li class="resource-type pull-left">{{resource.type}}</li>
           <li class="resource-download pull-right gray-9">
-            <a href="#" target="_blank"><i class="fa fa-icon fa-cloud-download gray-9" area-hidden="true"></i></a>
+            <a href="{{resource.downloadLink}}" target="_blank"><i class="fa fa-icon fa-cloud-download gray-9" area-hidden="true"></i></a>
           </li>
         </ul>
         <div class="resource-image-block">
-          <img src="https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg" />
-        </div>
-        <div class="resource-title">
-          <h4>  Why Android  as a service will be the biggest asset for CIO or CTO </h4>
-        </div>
-      </section>
-    </li>
-    <li class="col-md-4 col-sm-4 resource res-iot">
-      <section class="resource-tile">
-        <ul class="resource-head neosans">
-          <li class="resource-type pull-left">Case Study</li>
-          <li class="resource-download pull-right gray-9">
-            <a href="#" target="_blank"><i class="fa fa-icon fa-cloud-download gray-9" area-hidden="true"></i></a>
-          </li>
-        </ul>
-        <div class="resource-image-block">
-          <img src="https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg" />
-        </div>
-        <div class="resource-title">
-          <h4>  Why IoT as a service will be the biggest asset for CIO or CTO </h4>
-        </div>
-      </section>
-    </li>
-    <li class="col-md-4 col-sm-4 resource res-security">
-      <section class="resource-tile">
-        <ul class="resource-head neosans">
-          <li class="resource-type pull-left">Case Study</li>
-          <li class="resource-download pull-right gray-9">
-            <a href="#" target="_blank"><i class="fa fa-icon fa-cloud-download gray-9" area-hidden="true"></i></a>
-          </li>
-        </ul>
-        <div class="resource-image-block">
-          <img src="https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg" />
-        </div>
-        <div class="resource-title">
-          <h4>  Why security as a service will be the biggest asset for CIO or CTO </h4>
-        </div>
-      </section>
-    </li>
-    <li class="col-md-4 col-sm-4 resource res-android">
-      <section class="resource-tile">
-        <ul class="resource-head neosans">
-          <li class="resource-type pull-left">Case Study</li>
-          <li class="resource-download pull-right gray-9">
-            <a href="#" target="_blank"><i class="fa fa-icon fa-cloud-download gray-9" area-hidden="true"></i></a>
-          </li>
-        </ul>
-        <div class="resource-image-block">
-          <img src="https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Security-as-a-Service.jpg" />
+          <img src="{{resource.img}}" />
         </div>
         <!--<div class="resource-info small-font gray-9">
           <span class="author">Hardeep Singh</span>
           <span class="publish-date">23 Sep, 15</span>
         </div>-->
         <div class="resource-title">
-         <h4>  Why android as a service will be the biggest asset for CIO or CTO </h4>
+         <h4>  {{resource.name}} </h4>
         </div>
       </section>
     </li>
-
+    {% endfor %}
   </ul>
   <div class="clearfix"></div>
 </section>
