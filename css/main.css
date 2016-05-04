@@ -1022,7 +1022,8 @@ p {
   margin: 20px 15px;
 }
 .resource-sublinks-inner a.active {
-  border: 1px solid #999;
+  border: 1px solid #222;
+  color:#000;
 }
 .resource-sublinks-inner a:hover {
   color: #444;
