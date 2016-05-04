@@ -64,7 +64,7 @@ function AkSlideManager(){
 	this.akJumpButtonClass = "ak-slide-jump-butn";
 	this.autoAnimate = false;
 	this.eleAnimateClass = "ak-ele-animate";
-	this.hideDeltaTime = 500;
+	this.hideDeltaTime = 0;
 	this.appearDeltaTime = 50;
 	this.slideZoneId = null;
 	this.slideZone = null;
@@ -75,8 +75,6 @@ AkSlideManager.prototype.init = function(akSlideZoneId){
 	_this.slideZoneId = akSlideZoneId;
 
 	$(document).ready(function(){
-		$(".ui-loader-default").hide();
-		$("a").attr("rel","external");
 		_this.initiate();
 	});
 
