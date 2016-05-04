@@ -451,7 +451,7 @@ p {
 }
 .logos-box>li>img {
   width: 100%;
-  opacity: 0.6;
+  opacity: 1;
   transition: all 0.3s ease-out;
 }
 .logos-box>li>img:hover {

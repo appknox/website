@@ -260,7 +260,11 @@ AkSlideManager.prototype.addSupportElements = function(){
 	var _this = this;
 	var appendMarginDefendLi = "<li style='height:1px'></li>";
 	_this.slideZone.prepend(appendMarginDefendLi);
+}
 
+AkSlideManager.prototype.adjustSlideContainerHeight = function(){
+	 var clonedSlideZone = _this.slideZone.clone();
+	 var newRandomId = "clonedSlideZone" + Math.floor(Math.random()*1000);
 }
 
 
