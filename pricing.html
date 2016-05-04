@@ -24,7 +24,7 @@ permalink: /pricing/
           </div>
           <div id="selectNumberZone" class="">
             <div id="appMinus" class="num-app-control"><img src="/img/minus.svg"/></div>
-            <div data-min="1" data-max="10" data-value="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue"/>1</div>
+            <div data-min="1" data-max="10" data-value="1" data-base-price="600" data-delta-minus="1" data-annual-factor="10" data-delta-price="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue"/>1</div>
             <div id="appPlus" class="num-app-control"><img src="/img/plus.svg"/></div>
           </div>
           <div>
@@ -82,13 +82,12 @@ permalink: /pricing/
             <h5 class="text-left uppercase">Start</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
-                <span class="neosans small-font">$399</span>
+                <span class="neosans small-font" id="startPriceMonth">$399</span>
                 <span class="xs-font">per month per app</span>
-
-                <span class="saveAmt  bold gray-7">Save <span class="">$198</span></span>
+                <!-- <span class="saveAmt  bold gray-7" id="startPriceMonthSave">Save <span class="">$198</span></span>-->
               </div>
-              <div >
-                <span class="neosans small-font">$399</span>
+              <div>
+                <span class="neosans small-font" id="startPriceAnnual">$399</span>
                 <span class="xs-font">paid annualy per app</span>
               </div>
               <div class="clearfix"></div>
@@ -98,14 +97,13 @@ permalink: /pricing/
             <h5 class="text-left uppercase">Grow</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
-                <span class="neosans small-font">$399</span>
+                <span class="neosans small-font" id="growPriceMonth">$399</span>
                 <span class="xs-font">per month per app</span>
-
-                <span class="saveAmt  bold gray-7">Save <span class="">$198</span></span>
+                <!-- <span class="saveAmt  bold gray-7" id="growPriceMonthSave">Save <span class="">$198</span></span> -->
               </div>
               <div >
-                <span class="neosans small-font">$399</span>
-                <span class="xs-font">paid annualy per app</span>
+                <span class="neosans small-font" id="growPriceAnnual">$399</span>
+                <span class="xs-font" id="g">paid annualy per app</span>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -114,13 +112,13 @@ permalink: /pricing/
             <h5 class="text-left uppercase">Succeed</h5>
             <div class="amount-zone gray-9 big-font text-left">
               <div>
-                <span class="neosans small-font">$399</span>
+                <span class="neosans small-font" id="succeedPriceMonth">$399</span>
                 <span class="xs-font">per month per app</span>
 
-                <span class="saveAmt bold gray-7">Save <span class="">$198</span></span>
+                <!-- <span class="saveAmt bold gray-7">Save <span class="">$198</span></span> -->
               </div>
-              <div >
-                <span class="neosans small-font">$399</span>
+              <div>
+                <span class="neosans small-font" id="succeedPriceAnnual">$399</span>
                 <span class="xs-font">paid annualy per app</span>
               </div>
               <div class="clearfix"></div>
@@ -135,18 +133,18 @@ permalink: /pricing/
           <div>
             <div>
               <div class="inBlock50 big-font text-left">
-                 <div>$1596</div>
+                 <div id="monthlySumZone">$1596</div>
                  <div class="xs-font bold">/month</div>
                </div>
-              <div class="inBlock50 text-left red">Your save $400</div>
+              <div class="inBlock50 text-left red">Your save <span id="monthlySumSave">$400</span></div>
             </div>
             <h2 class="gray-c">OR</h2>
             <div>
               <div class="inBlock50 big-font text-left">
-                 <div>$1596</div>
-                 <div class="xs-font bold">/month</div>
+                 <div id="annualSumZone">$1596</div>
+                 <div class="xs-font bold">/annum</div>
                </div>
-              <div class="inBlock50 text-left red">Your save $400</div>
+              <div class="inBlock50 text-left red">Your save <span id="annualSumSave">$400</span></div>
             </div>
           </div>
         </div>

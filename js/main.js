@@ -880,6 +880,7 @@ function PricingManager(){
 	this.annualFactor = null;
 	this.platforms  = [];
 	this.appCountSubscribers = [];
+	this.noOfApps = 1;
 
 	//Element(s) references
 	this.minusOne = null;
@@ -893,6 +894,12 @@ function PricingManager(){
 	this.annualFactorId =  "annualPricingFactor";
 	this.platformsClass = "platforms";
 
+	//pricing rate
+	this.basePrice = 0;
+	this.annualFactor = 0;
+	this.deltaPriceMinus = 0;
+	this.discountPercent = 0;
+
 }
 
 PricingManager.prototype.init = function(){
@@ -905,6 +912,7 @@ PricingManager.prototype.init = function(){
 		_this.bindPlusOneClick();
 		_this.bindMinusOneClick();
 		_this.bindPlatformClick();
+		_this.adjustPricePlan();
 
 	})
 }
@@ -918,11 +926,16 @@ PricingManager.prototype.gatherInitData = function(){
 	this.minusOne = $("#appMinus");
 	this.minAppCount = this.inputBox.attr("data-min");
 	this.maxAppCount = this.inputBox.attr("data-max");
+	this.basePrice = this.inputBox.attr("data-base-price");
+	this.annualFactor = this.inputBox.attr("data-annual-factor");
+	this.deltaPriceMinus = this.inputBox.attr("data-delta-minus");;
 	this.gatherPlatformsData();
   this.activateQuantityGroup(_this);
 	//subscribe app count Changes
   this.subscribeAppCount(_this.activateQuantityGroup);
 	this.subscribeAppCount(_this.resetPlatformsOnInvalid);
+	this.subscribeAppCount(_this.adjustPricePlan);
+
 }
 
 PricingManager.prototype.gatherPlatformsData = function(){
@@ -946,12 +959,14 @@ PricingManager.prototype.onMinusOneClick = function(ev){
 	if(noOfApp > _this.minAppCount){
 			noOfApp--;
 			_this.inputBox.attr("data-value",noOfApp);
+			_this.noOfApps = noOfApp;
 			_this.publishAppCountChange();
 	}else{
 
 	}
 
 	_this.inputBox.text(noOfApp);
+
 }
 
 PricingManager.prototype.onPlusOneClick = function(ev){
@@ -961,12 +976,17 @@ PricingManager.prototype.onPlusOneClick = function(ev){
 	if(noOfApp < _this.maxAppCount){
 			noOfApp++;
 			_this.inputBox.attr("data-value",noOfApp);
+			_this.noOfApps = noOfApp;
 			_this.publishAppCountChange();
 	}else{
 
 	}
 
 	_this.inputBox.text(noOfApp);
+}
+
+PricingManager.prototype.setDiscount = function(){
+	this.discountPercent = this.noOfApps == 1 ? 0 :( this.noOfApps <= 4 ? 10 : 20);
 }
 
 PricingManager.prototype.resizeMiddleBox = function(){
@@ -983,7 +1003,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 		var middleCol = $("#pricingInterMiddle");
 		var boxHeight = $("#pricingZoneBox").height();
 
-    if(winWidth>760 && middleCol.height() < boxHeight){
+    if(winWidth > 760 && middleCol.height() < boxHeight){
 					middleCol.height(boxHeight);
 		}else{
 					middleCol.css("height","auto");
@@ -1029,7 +1049,7 @@ PricingManager.prototype.activateQuantityGroup = function(_this){
 	var appCount = parseInt(_this.inputBox.attr("data-value"));
 	var quantizers = $(".quantizer");
 	var quantizerTitle = $("#quantityTitleZones>li");
-	var priceBox = $(".horz-pricing-box")
+	var priceBox = $(".horz-pricing-box");
 
 	for(var i = 0; i < quantizers.length; i++){
 		var quantizer = $(quantizers[i]);
@@ -1101,6 +1121,70 @@ PricingManager.prototype.resetPlatformsOnInvalid = function(_this){
 		heading.removeClass("red");
 	}
 }
+
+PricingManager.prototype.adjustPricePlan = function(_this){
+	var _this = _this || this;
+	_this.setDiscount();
+	_this.adjustStartPlan();
+	_this.adjustGrowPlan();
+	_this.adjustSucceedPlan();
+	_this.adjustFinalPrice();
+}
+
+PricingManager.prototype.adjustStartPlan = function(basePrice){
+  var _this = this;
+	var monthlyZone = $("#startPriceMonth");
+	var annualZone = $("#startPriceAnnual");
+	var monthlyPrice = _this.basePrice - _this.deltaPriceMinus;
+	var annualPrice = (_this.basePrice - _this.deltaPriceMinus)* _this.annualFactor;
+	monthlyZone.html("$" + monthlyPrice);
+	annualZone.html("$" + annualPrice);
+}
+
+PricingManager.prototype.adjustGrowPlan = function(){
+	var _this = this;
+	var monthlyZone = $("#growPriceMonth");
+	var annualZone = $("#growPriceAnnual");
+	var monthlyPrice = (_this.basePrice - (_this.basePrice * 0.1)) - _this.deltaPriceMinus;
+	var annualPrice = monthlyPrice * _this.annualFactor;
+	monthlyZone.html("$" + monthlyPrice);
+	annualZone.html("$" + annualPrice);
+}
+
+PricingManager.prototype.adjustSucceedPlan = function(){
+	var _this = this;
+	var monthlyZone = $("#succeedPriceMonth");
+	var annualZone = $("#succeedPriceAnnual");
+	var monthlyPrice = (_this.basePrice - (_this.basePrice * 0.2)) - _this.deltaPriceMinus;
+	var annualPrice = monthlyPrice * _this.annualFactor;
+	monthlyZone.html("$" + monthlyPrice);
+	annualZone.html("$" + annualPrice);
+}
+
+PricingManager.prototype.adjustFinalPrice = function(){
+	var _this = this;
+	var monthlyZone = $("#monthlySumZone");
+	var monthlySaveZone = $("#monthlySumSave");
+	var annualZone = $("#annualSumZone");
+	var annualSumSave = $("#annualSumSave");
+
+	var quantityCost =  _this.noOfApps * (_this.basePrice - (_this.basePrice * _this.discountPercent)/100);
+	var monthPrice = quantityCost - (_this.deltaPriceMinus * _this.noOfApps) ;
+  var monthSave = (_this.noOfApps * (_this.basePrice - _this.deltaPriceMinus)) - monthPrice;
+
+	var annualPrice = monthPrice * _this.annualFactor;
+  var annualSave = monthPrice * 12 - annualPrice;
+
+	monthlyZone.html("$" + monthPrice);
+	monthlySaveZone.html("$" + monthSave);
+
+	annualZone.html("$" + annualPrice);
+	annualSumSave.html("$" + annualSave);
+
+
+}
+
+
 
 var pricingManager = new PricingManager();
 pricingManager.init();
