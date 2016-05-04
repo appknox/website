@@ -1060,6 +1060,12 @@ p {
   font-family: neosans;
   font-size:16px;
   color:#aaa;
+  margin-top:8px;
+}
+
+.resource-download{
+  position: relative;
+  top:2px;
 }
 
 /* RESOURCES PAGE */
