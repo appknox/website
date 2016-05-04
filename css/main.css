@@ -1001,7 +1001,7 @@ p {
 }
 #resources-zone {
   border-top: 1px solid #ccc;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 .resource-tile {
@@ -1054,6 +1054,12 @@ p {
   color: #666;
   padding: 5px 1.5%;
   border-bottom: 2px solid #ccc;
+}
+
+.resource-type{
+  font-family: neosans;
+  font-size:16px;
+  color:#aaa;
 }
 
 /* RESOURCES PAGE */
