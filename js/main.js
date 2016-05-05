@@ -467,11 +467,11 @@ function companyLinkClickAction(){
 }
 
 $(document).ready(function(){
-	//activateCompanySubmenu(true);
-	//companyLinkClickAction();
+	activateCompanySubmenu(true);
+	companyLinkClickAction();
 
 	$("#company-menu").bind("mouseover",function(){
-		//activateCompanySubmenu();
+		activateCompanySubmenu();
 	});
 
   //$(document).mousemove(hideCompanySubMenuOnDepart);
@@ -479,7 +479,7 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-	//activateCompanySubmenu();
+	activateCompanySubmenu();
 });
 
 /*************************************************************************************************
