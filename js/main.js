@@ -1205,7 +1205,7 @@ function fancyConfirm(msg, options, callback) {
 //////////////////////////////////////////////////////////////////////////////////////
 // Testing zone to solve iOS menu click not working problem
 $(document).ready(function(){
-	$("#ak-menu a").click(respondToMenuClickMobile);
+	$(document).click(respondToMenuClickMobile);
 });
 
 function respondToMenuClickMobile(ev){
