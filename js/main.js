@@ -450,7 +450,7 @@ function hideCompanySubMenuOnDepart(ev){
 		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
 			$("#company-dropdown").removeClass("block");
 		}
- }catch(e){console.log(e.message)}
+ }catch(e){}
 }
 
 ////////////////////////////////////////////////////////
@@ -1200,24 +1200,4 @@ function fancyConfirm(msg, options, callback) {
 
         }
     });
-}
-
-//////////////////////////////////////////////////////////////////////////////////////
-// Testing zone to solve iOS menu click not working problem
-$(document).ready(function(){
-	$("#ak-menu a").bind("click",respondToMenuClickMobile);
-});
-
-function respondToMenuClickMobile(ev){
-	var docWidth = $(document).width();
-	alert("clicked0");
-	if(docWidth < 760){
-		var target = ev.target;
-		var toggleLink = $(target).hasClass("dropdown-toggle");
-		if(!toggleLink){
-			alert("clicked2");
-			document.location = target.href;
-
-		}
-	}
 }
