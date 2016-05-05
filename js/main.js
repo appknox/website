@@ -407,6 +407,467 @@ ListAnimator.prototype.binder = function(Method){
 var listAnimatorRadar = new ListAnimator();
 listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 
+/*********************************************************************************
+* COmpany Page Sub menu Activation
+**********************************************************************************/
+function activateCompanySubmenu(directCall){
+	 var companyPage = $("#company-page");
+	 var doc = $(document);
+
+	 if(companyPage.length > 0 && doc.width() > 760){
+		 $("#company-dropdown").addClass("block");
+	 }
+	 else if(companyPage.length > 0 && doc.width() < 760){
+		 $("#company-dropdown").removeClass("block");
+	 }
+	 else if( doc.width() > 760){
+		 if(!directCall){
+		    var menu =   $("#company-menu");
+				$("#company-dropdown").addClass("block");
+			}
+	 }else if(companyPage.length === 0 && doc.width() > 760){
+		  $("#company-dropdown").removeClass("block");
+	 }
+}
+
+function hideCompanySubMenu(ev){
+		var target = ev.currentTarget;
+		var companyPage = $("#company-page");
+
+		if(target.id !== "company-menu" && companyPage.length == 0){
+			$("#company-dropdown").removeClass("block");
+		}
+}
+
+function hideCompanySubMenuOnDepart(ev){
+	var mouseY = ev.clientY;
+	try{
+		var subMenuTop = $("#company-dropdown").css("top");
+		var subMenuHeight = $("#company-dropdown").outerHeight();
+		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+		var companyPage = $("#company-page");
+
+		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
+			$("#company-dropdown").removeClass("block");
+		}
+ }catch(e){}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of company-link in mobile menu
+function companyLinkClickAction(){
+	$("#company-link").click(function(ev){
+		var doc = $(document);
+		if(doc.width()<760){
+			ev.preventDefault;
+		}else{
+			document.location = ev.currentTarget.href;
+		}
+	})
+}
+
+$(document).ready(function(){
+	activateCompanySubmenu(true);
+	companyLinkClickAction();
+
+	$("#company-menu").bind("mouseover",function(){
+			activateCompanySubmenu();
+	});
+
+  $(document).mousemove(hideCompanySubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideCompanySubMenu);
+});
+
+$(window).resize(function(){
+	activateCompanySubmenu();
+});
+
+/*********************************************************************************
+* Resource Page Sub menu Activation
+**********************************************************************************/
+function activateResourceSubmenu(directCall){
+	 var resourcePage = $("#resource-page");
+	 var doc = $(document);
+
+	 if(resourcePage.length > 0 && doc.width() > 760){
+		 $("#resource-dropdown").addClass("block");
+	 }
+	 else if(resourcePage.length > 0 && doc.width() < 760){
+ 		 $("#resource-dropdown").removeClass("block");
+		 $("#resource-dropdown").css("display","");
+ 	 }else if( doc.width() > 760){
+		 if(!directCall){
+		    var menu =   $("#resource-menu");
+				$("#resource-dropdown").addClass("block");
+			}
+	 }else if(resourcePage.length === 0 && doc.width() > 760){
+		  $("#resource-dropdown").removeClass("block");
+	 }
+}
+
+function hideResourceSubMenu(ev){
+		var target = ev.currentTarget;
+		var resourcePage = $("#resource-page");
+
+		if(target.id !== "resource-menu" && resourcePage.length == 0){
+			$("#resource-dropdown").removeClass("block");
+		}
+}
+
+function hideResourceSubMenuOnDepart(ev){
+	var mouseY = ev.clientY;
+	try{
+		var subMenuTop = $("#resource-dropdown").css("top");
+		var subMenuHeight = $("#resource-dropdown").outerHeight();
+		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+		var companyPage = $("#resource-page");
+
+		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
+			$("#resource-dropdown").removeClass("block");
+		}
+ }catch(e){console.log(e.message)}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of resource-link in mobile menu
+function resourceLinkClickAction(){
+	$("#resource-link").click(function(ev){
+		var doc = $(document);
+		if(doc.width()<760){
+			ev.preventDefault;
+		}else{
+			document.location = ev.currentTarget.href;
+		}
+	})
+}
+
+$(document).ready(function(){
+	activateResourceSubmenu(true);
+	resourceLinkClickAction();
+
+	$("#resource-menu").bind("mouseover",function(){
+			activateResourceSubmenu();
+	});
+
+  $(document).mousemove(hideResourceSubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideResourceSubMenu);
+});
+
+$(window).resize(function(){
+	activateResourceSubmenu();
+});
+
+/*************************************************************************************************
+Resource Sub Menu To show specific reources
+*************************************************************************************************/
+function ResourceManager(){
+	this.resourceType = null;
+	this.subMenuSelector = ".resource-sublinks a";
+	this.deltaToShow = 60;
+}
+
+ResourceManager.prototype.init = function(){
+	var _this = this;
+
+	$(document).ready(function(){
+		var resourceZone =  $("#resources-zone");
+
+		if(resourceZone.length == 0){
+			return; //not resource page
+		}
+
+		_this.setResourceType();
+		_this.showResourceType(true);
+		_this.bindSubMenuClick();
+		_this.bindScroll();
+	});
+}
+
+ResourceManager.prototype.setResourceType = function(){
+	this.resourceType = document.location.hash == "" ? "resource" : document.location.hash.substring(1).toLowerCase();
+}
+
+ResourceManager.prototype.showResourceType = function(directCall){
+	var _this = this;
+  var resourceClass =  _this.resourceType === "resource" || _this.resourceType === "all" ? "resource" : "res-"+_this.resourceType;
+	var resources = $("." + resourceClass);
+
+	var resBlock = $(".resource-block-zone");
+	resBlock.height(resBlock.height());
+
+	$(".resource").stop().fadeOut(300,function(){
+		setTimeout(function(){
+			$(".resource-block-zone").css("height","auto");
+			$("." + resourceClass).stop().fadeIn(300);
+			if(!directCall){
+				_this.autoScroll();
+			}
+		},400);
+	})
+
+	_this.activateSubMenu();
+}
+
+ResourceManager.prototype.bindSubMenuClick = function(){
+  var _this = this;
+	$(_this.subMenuSelector).unbind("click",_this.onSubMenuClick).bind("click",{that:_this},_this.onSubMenuClick);
+}
+
+ResourceManager.prototype.onSubMenuClick = function(ev){
+  var _this = ev.data.that;
+	var target = ev.currentTarget;
+	_this.resourceType = $(target).attr("data-id");
+
+	var resourceClass =  _this.resourceType === "all" ? "resource" : "res-"+_this.resourceType;
+	_this.showResourceType();
+}
+
+ResourceManager.prototype.autoScroll = function(){
+	var resourceZone =  $("#resources-zone");
+	var paddingTop = resourceZone.css("padding-top");
+	var offsetTop = resourceZone.offset().top;
+	var scrollSteps = 0;
+	var intervalId = null;
+	var finalPageOffset = offsetTop - parseInt(paddingTop)/2;
+	var currentPageOffsetTop = document.documentElement.scrollTop ||  document.body.scrollTop;
+	var scrollLength = Math.abs(currentPageOffsetTop - finalPageOffset);
+
+
+	clearInterval(intervalId);
+	intervalId = setInterval(animateScroll,30);
+
+	function animateScroll(){
+		//debugger;
+		scrollSteps = scrollSteps + 0.1;
+		//direction of scroll negative upward else downward
+		var direction = ((document.documentElement.scrollTop ||  document.body.scrollTop) - finalPageOffset) > 0 ? -1 : 1;
+		var scrollStep = currentPageOffsetTop + (direction * (scrollLength + 10)*( 1 - Math.exp(-scrollSteps))) ; //easeout exponential function  , +10 as theoritically (1-exp(-x))  reaches 1 at infinte time
+
+		if( scrollStep >= finalPageOffset && direction == 1) //reached at destination scrollTop
+		{
+			//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+			clearInterval(intervalId);
+			return;
+		}
+		else if( scrollStep <= finalPageOffset && direction == -1) //reached at destination scrollTop
+		{
+			//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+			clearInterval(intervalId);
+			return;
+		}
+
+		document.body.scrollTop =  document.documentElement.scrollTop = scrollStep;
+		//console.log(document.documentElement.scrollTop + " : " + document.body.scrollTop)
+	}
+
+}
+
+ResourceManager.prototype.bindScroll = function(){
+  var _this = this;
+	$(window).unbind("scroll",_this.onWindowScroll).bind("scroll",{that:_this},_this.onWindowScroll);
+}
+
+ResourceManager.prototype.onWindowScroll = function(ev){
+	var _this  = ev.data.that;
+	var resourceContainer = $(".resource-block-zone");
+	var offsetTop = resourceContainer.offset().top;
+	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+	if(scrollTop > offsetTop + _this.deltaToShow){
+		$("#resource-dropdown").fadeIn(300,function(){$(this).addClass("block")});
+	}
+	else{
+		$("#resource-dropdown").fadeOut(300,function(){$(this).removeClass("block")});
+	}
+
+}
+
+ResourceManager.prototype.activateSubMenu = function(){
+	var _this = this;
+	var resType = _this.resourceType === "resource" ? "all" : _this.resourceType;
+	var subMenu = $(_this.subMenuSelector);
+
+	subMenu.removeClass("active");
+	$("#res-" + resType+",#res-in-"+resType).addClass("active");
+}
+
+
+var resourceManager = new ResourceManager();
+resourceManager.init();
+
+/*************************************************************************************************
+Hash Menu To inline page block scrol animation
+*************************************************************************************************/
+function HashMenuManager()
+{
+	this.currentHash = "";
+	this.scrollSpeed = 20;
+	this.nextHash = "";
+	this.innerPageOffset = [''];
+
+	this.privateCapsule = (function($){
+
+		//private variables
+		var currentHashMenu = null;
+		var currentPageOffset = {};
+		var finalPageOffset = {};
+		var nextPageEleId = null;
+		var scrollSteps = 0; //for negative exponential easing
+		var intervalId = null; //reference to intervaled function, used to clearInterval
+		var scrollLength  = 0; //magnitude of difference between current page/ele offset and next pageEle offset
+		///////////////////////////////////////////////
+		//private function to scroll page on menu click
+		var scrollMenuPage = function(ev){
+			var stepTime = 50;
+			var scrollSpeed = 20;
+			var currentScrollTop = document.documentElement.scrollTop ||  document.body.scrollTop;
+			var hash = ev.target.href.substring(ev.target.href.lastIndexOf("#"));
+
+			if($(hash).length === 0 || hash == nextPageEleId){
+				return;
+			}else{
+				ev.preventDefault();
+			}
+
+			scrollSteps = 0; //for negative exponential easing Ae^-x
+			nextPageEleId = hash;
+			currentPageOffset.top = currentScrollTop;
+			//console.log("Hah Id : "+ hash);
+
+			//clearInterval  to prevent previous on going scroll
+			clearInterval(intervalId);
+
+			finalPageOffset = $(nextPageEleId).offset();
+			scrollLength = Math.abs(currentScrollTop - finalPageOffset.top);
+
+			intervalId = setInterval(animateScroll,scrollSpeed);
+
+		}
+
+
+		///////////////////////////////////////////////////////
+		//Funtion to scroll the page with animation
+		var animateScroll = function(){
+
+			scrollSteps = scrollSteps + 0.1;
+			//direction of scroll negative upward else downward
+			var direction = ((document.documentElement.scrollTop ||  document.body.scrollTop) - finalPageOffset.top) > 0 ? -1 : 1;
+			var scrollStep = currentPageOffset.top + (direction * (scrollLength + 10)*( 1 - Math.exp(-scrollSteps))) ; //easeout exponential function  , +10 as theoritically (1-exp(-x))  reaches 1 at infinte time
+
+			if( scrollStep >= finalPageOffset.top && direction == 1) //reached at destination scrollTop
+			{
+				//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+				clearInterval(intervalId);
+				updateHash();
+				return;
+			}
+			else if( scrollStep <= finalPageOffset.top && direction == -1) //reached at destination scrollTop
+			{
+				//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+				clearInterval(intervalId);
+				updateHash();
+				return;
+			}
+
+			document.body.scrollTop =  document.documentElement.scrollTop = scrollStep;
+			//console.log(document.documentElement.scrollTop + " : " + document.body.scrollTop)
+		}
+
+
+		//////////////////////////////////////////////////////////
+		//Function to update hash at url bar
+		var updateHash = function()
+		{
+			document.location.hash  = nextPageEleId;
+			nextPageEleId = null; //reseting as it has been scrolled into view
+		}
+
+		//Funtion to register function onclick of main menu
+		var registerMenuClick = function()
+		{
+			$(".hashMenu").unbind("click",scrollMenuPage).bind("click",scrollMenuPage);
+			//console.log($(".hashMainMenu"));
+		}
+
+		return {
+			registerMenuScroll : registerMenuClick,
+		}
+	}(jQuery));
+}
+
+HashMenuManager.prototype.initializer = function()
+{
+	var _that = this;
+	$(document).ready(function(){
+		_that.listenStart();
+		_that.currentMenuHighlighter();
+		_that.gatherOffsetData({data:{_that:_that}});
+		$(window).on('hashchange', _that.currentMenuHighlighter);
+		$(window).on('resize',{_that:_that}, _that.gatherOffsetData);
+		$(document).on("scroll",{_that:_that},_that.currentMenuOnScroll);
+	})
+
+}
+
+HashMenuManager.prototype.listenStart = function()
+{
+	var _this = this;
+	this.privateCapsule.registerMenuScroll();
+
+}
+
+HashMenuManager.prototype.currentMenuHighlighter = function(){
+	  var hash = window.location.hash;
+		if(hash === ""){return;}
+
+		$(".current-menu").removeClass("current-menu");
+		$(hash+"-butn").addClass("current-menu");
+}
+
+//@Description : Changes the current menu highlighter on manual scroll of the page
+HashMenuManager.prototype.currentMenuOnScroll = function(ev)
+{
+	var _this = ev.data._that, temp;
+	var length = _this.innerPageOffset.length;
+
+	var bodyScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	for(var i=0;i<length;i++)
+	{
+		temp = _this.innerPageOffset[i];
+
+		//console.log(bodyScroll + " : " + temp.top + " : " + temp.bottom);
+		if(bodyScroll >= temp.top && bodyScroll  <= temp.bottom )
+		{
+			currentActiveMenu = $(".current-menu").attr("id");
+			if( currentActiveMenu != temp.id)
+			{ //console.log("inside : " + temp.id);
+				$(".current-menu").removeClass("current-menu");
+				$("#"+temp.id).addClass("current-menu");
+			}
+		}
+	}
+}
+
+//@Description : Gathers the offset of inner page of the main menu
+HashMenuManager.prototype.gatherOffsetData = function(ev)
+{
+	var _this = ev.data._that;
+	var id = null,top = null,bottom = null,menuId=null;
+	var headerHeight = $("#main-header").height();
+	var menuRefer = $(".topMenu");
+	var menuLength = menuRefer.length;
+	for(var i = 0; i < menuLength;i++)
+	{
+		id =  menuRefer.eq(i).attr("href");
+		id = id.substring(id.lastIndexOf("#"));
+		top = $(id).offset().top - headerHeight;
+		bottom = top + $(id).outerHeight();
+		menuId = menuRefer.eq(i).parent().attr("id");
+		_this.innerPageOffset[i] = {top :  top, bottom : bottom, id : menuId}
+	}
+}
+
+
 
 /***********************************************************
 * Pricing Zone
