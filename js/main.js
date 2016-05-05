@@ -1201,3 +1201,21 @@ function fancyConfirm(msg, options, callback) {
         }
     });
 }
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Testing zone to solve iOS menu click not working problem
+$(document).ready(function(){
+	$("#ak-menu a").click(respondToMenuClickMobile);
+});
+
+function respondToMenuClickMobile(ev){
+	var docWidth = $(document).width();
+
+	if(docWidth < 760){
+		var target = ev.currentTarget;
+		var toggleLink = $(target).hasClass("dropdown-toggle");
+		if(!toggleLink){
+			document.location = target.href;
+		}
+	}
+}
