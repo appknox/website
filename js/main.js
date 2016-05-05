@@ -467,19 +467,19 @@ function companyLinkClickAction(){
 }
 
 $(document).ready(function(){
-	activateCompanySubmenu(true);
+	//activateCompanySubmenu(true);
 	companyLinkClickAction();
 
 	$("#company-menu").bind("mouseover",function(){
-			activateCompanySubmenu();
+		//	activateCompanySubmenu();
 	});
 
-  $(document).mousemove(hideCompanySubMenuOnDepart);
-	$("#ak-menu>li").mouseover(hideCompanySubMenu);
+//  $(document).mousemove(hideCompanySubMenuOnDepart);
+//	$("#ak-menu>li").mouseover(hideCompanySubMenu);
 });
 
 $(window).resize(function(){
-	activateCompanySubmenu();
+	//activateCompanySubmenu();
 });
 
 /*********************************************************************************
@@ -542,19 +542,19 @@ function resourceLinkClickAction(){
 }
 
 $(document).ready(function(){
-	activateResourceSubmenu(true);
-	resourceLinkClickAction();
+//	activateResourceSubmenu(true);
+//	resourceLinkClickAction();
 
 	$("#resource-menu").bind("mouseover",function(){
-			activateResourceSubmenu();
+//activateResourceSubmenu();
 	});
 
   $(document).mousemove(hideResourceSubMenuOnDepart);
-	$("#ak-menu>li").mouseover(hideResourceSubMenu);
+//	$("#ak-menu>li").mouseover(hideResourceSubMenu);
 });
 
 $(window).resize(function(){
-	activateResourceSubmenu();
+//	activateResourceSubmenu();
 });
 
 /*************************************************************************************************
