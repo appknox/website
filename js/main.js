@@ -407,57 +407,56 @@ ListAnimator.prototype.binder = function(Method){
 var listAnimatorRadar = new ListAnimator();
 listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 
-
 /*********************************************************************************
-* Resource Page Sub menu Activation
+* COmpany Page Sub menu Activation
 **********************************************************************************/
-function activateResourceSubmenu(directCall){
-	 var resourcePage = $("#resource-page");
+function activateCompanySubmenu(directCall){
+	 var companyPage = $("#company-page");
 	 var doc = $(document);
 
-	 if(resourcePage.length > 0 && doc.width() > 760){
-		 $("#resource-dropdown").addClass("block");
+	 if(companyPage.length > 0 && doc.width() > 760){
+		 $("#company-dropdown").addClass("block");
 	 }
-	 else if(resourcePage.length > 0 && doc.width() < 760){
- 		 $("#resource-dropdown").removeClass("block");
-		 $("#resource-dropdown").css("display","");
- 	 }else if( doc.width() > 760){
+	 else if(companyPage.length > 0 && doc.width() < 760){
+		 $("#company-dropdown").removeClass("block");
+	 }
+	 else if( doc.width() > 760){
 		 if(!directCall){
-		    var menu =   $("#resource-menu");
-				$("#resource-dropdown").addClass("block");
+		    var menu =   $("#company-menu");
+				$("#company-dropdown").addClass("block");
 			}
-	 }else if(resourcePage.length === 0 && doc.width() > 760){
-		  $("#resource-dropdown").removeClass("block");
+	 }else if(companyPage.length === 0 && doc.width() > 760){
+		  $("#company-dropdown").removeClass("block");
 	 }
 }
 
-function hideResourceSubMenu(ev){
+function hideCompanySubMenu(ev){
 		var target = ev.currentTarget;
-		var resourcePage = $("#resource-page");
+		var companyPage = $("#company-page");
 
-		if(target.id !== "resource-menu" && resourcePage.length == 0){
-			$("#resource-dropdown").removeClass("block");
+		if(target.id !== "company-menu" && companyPage.length == 0){
+			$("#company-dropdown").removeClass("block");
 		}
 }
 
-function hideResourceSubMenuOnDepart(ev){
+function hideCompanySubMenuOnDepart(ev){
 	var mouseY = ev.clientY;
 	try{
-		var subMenuTop = $("#resource-dropdown").css("top");
-		var subMenuHeight = $("#resource-dropdown").outerHeight();
+		var subMenuTop = $("#company-dropdown").css("top");
+		var subMenuHeight = $("#company-dropdown").outerHeight();
 		var downEnd = parseInt(subMenuTop) + subMenuHeight;
-		var companyPage = $("#resource-page");
+		var companyPage = $("#company-page");
 
 		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
-			$("#resource-dropdown").removeClass("block");
+			$("#company-dropdown").removeClass("block");
 		}
- }catch(e){console.log(e.message)}
+ }catch(e){}
 }
 
 ////////////////////////////////////////////////////////
-//Method to prevent navigation of resource-link in mobile menu
-function resourceLinkClickAction(){
-	$("#resource-link").click(function(ev){
+//Method to prevent navigation of company-link in mobile menu
+function companyLinkClickAction(){
+	$("#company-link").click(function(ev){
 		var doc = $(document);
 		if(doc.width()<760){
 			ev.preventDefault;
@@ -468,19 +467,19 @@ function resourceLinkClickAction(){
 }
 
 $(document).ready(function(){
-	activateResourceSubmenu(true);
-	resourceLinkClickAction();
+	activateCompanySubmenu(true);
+	companyLinkClickAction();
 
-	$("#resource-menu").bind("mouseover",function(){
-			activateResourceSubmenu();
+	$("#company-menu").bind("mouseover",function(){
+			activateCompanySubmenu();
 	});
 
-  $(document).mousemove(hideResourceSubMenuOnDepart);
-	$("#ak-menu>li").mouseover(hideResourceSubMenu);
+  $(document).mousemove(hideCompanySubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideCompanySubMenu);
 });
 
 $(window).resize(function(){
-	activateResourceSubmenu();
+	activateCompanySubmenu();
 });
 
 /*************************************************************************************************
