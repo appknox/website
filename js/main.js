@@ -468,10 +468,10 @@ function companyLinkClickAction(){
 
 $(document).ready(function(){
 	activateCompanySubmenu(true);
-	companyLinkClickAction();
+	//companyLinkClickAction();
 
 	$("#company-menu").bind("mouseover",function(){
-			activateCompanySubmenu();
+		activateCompanySubmenu();
 	});
 
   $(document).mousemove(hideCompanySubMenuOnDepart);
