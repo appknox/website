@@ -156,6 +156,7 @@ p {
   font-family: neosans;
   font-size: 16px;
   transition: all 0.4s ease-out;
+  cursor: pointer;
 }
 #ak-header li>a:focus, #ak-header nav .open>a {
   text-decoration: none;
