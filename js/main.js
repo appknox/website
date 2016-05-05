@@ -440,6 +440,13 @@ function hideCompanySubMenu(ev){
 }
 
 function hideCompanySubMenuOnDepart(ev){
+	var doc = $(document);
+
+	if(doc.width()<760){
+		$("#company-dropdown").removeClass("block");
+		return;
+	}
+
 	try{
 		var mouseY = ev.clientY;
 		var subMenuTop = $("#company-dropdown").css("top");
