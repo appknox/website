@@ -868,6 +868,9 @@ HashMenuManager.prototype.gatherOffsetData = function(ev)
 }
 
 
+var hashMenuController = new HashMenuManager();
+hashMenuController.initializer();
+
 
 /***********************************************************
 * Pricing Zone
