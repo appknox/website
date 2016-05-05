@@ -440,8 +440,8 @@ function hideCompanySubMenu(ev){
 }
 
 function hideCompanySubMenuOnDepart(ev){
-	var mouseY = ev.clientY;
 	try{
+		var mouseY = ev.clientY;
 		var subMenuTop = $("#company-dropdown").css("top");
 		var subMenuHeight = $("#company-dropdown").outerHeight();
 		var downEnd = parseInt(subMenuTop) + subMenuHeight;
@@ -466,7 +466,21 @@ function companyLinkClickAction(){
 	})
 }
 
+$(document).ready(function(){
+	activateCompanySubmenu(true);
+	companyLinkClickAction();
 
+	$("#company-menu").bind("mouseover",function(){
+			activateCompanySubmenu();
+	});
+
+  $(document).mousemove(hideCompanySubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideCompanySubMenu);
+});
+
+$(window).resize(function(){
+	activateCompanySubmenu();
+});
 
 /*************************************************************************************************
 Resource Sub Menu To show specific reources
