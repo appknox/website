@@ -444,7 +444,7 @@ function hideCompanySubMenuOnDepart(ev){
 
 	if(doc.width()<760){
 		$("#company-dropdown").removeClass("block");
-		return;
+		return; //to prevent non clickable menu links in iOS
 	}
 
 	try{
@@ -488,6 +488,89 @@ $(document).ready(function(){
 $(window).resize(function(){
 	activateCompanySubmenu();
 });
+
+/*********************************************************************************
+* Resource Page Sub menu Activation
+**********************************************************************************/
+function activateResourceSubmenu(directCall){
+	 var resourcePage = $("#resource-page");
+	 var doc = $(document);
+
+	 if(resourcePage.length > 0 && doc.width() > 760){
+		 $("#resource-dropdown").addClass("block");
+	 }
+	 else if(resourcePage.length > 0 && doc.width() < 760){
+ 		 $("#resource-dropdown").removeClass("block");
+		 $("#resource-dropdown").css("display","");
+ 	 }else if( doc.width() > 760){
+		 if(!directCall){
+		    var menu =   $("#resource-menu");
+				$("#resource-dropdown").addClass("block");
+			}
+	 }else if(resourcePage.length === 0 && doc.width() > 760){
+		  $("#resource-dropdown").removeClass("block");
+	 }
+}
+
+function hideResourceSubMenu(ev){
+		var target = ev.currentTarget;
+		var resourcePage = $("#resource-page");
+
+		if(target.id !== "resource-menu" && resourcePage.length == 0){
+			$("#resource-dropdown").removeClass("block");
+		}
+}
+
+function hideResourceSubMenuOnDepart(ev){
+	var doc = $(document);
+
+	if(doc.width()<760){
+		$("#company-dropdown").removeClass("block");
+		return; //to prevent non clickable menu links in iOS
+	}
+
+	try{
+		var mouseY = ev.clientY;
+		var subMenuTop = $("#resource-dropdown").css("top");
+		var subMenuHeight = $("#resource-dropdown").outerHeight();
+		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+		var companyPage = $("#resource-page");
+
+		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
+			$("#resource-dropdown").removeClass("block");
+		}
+ }catch(e){console.log(e.message)}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of resource-link in mobile menu
+function resourceLinkClickAction(){
+	$("#resource-link").click(function(ev){
+		var doc = $(document);
+		if(doc.width()<760){
+			ev.preventDefault;
+		}else{
+			document.location = ev.currentTarget.href;
+		}
+	})
+}
+
+$(document).ready(function(){
+	activateResourceSubmenu(true);
+	resourceLinkClickAction();
+
+	$("#resource-menu").bind("mouseover",function(){
+			activateResourceSubmenu();
+	});
+
+  $(document).mousemove(hideResourceSubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideResourceSubMenu);
+});
+
+$(window).resize(function(){
+	activateResourceSubmenu();
+});
+
 
 /*************************************************************************************************
 Resource Sub Menu To show specific reources
