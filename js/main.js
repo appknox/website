@@ -407,7 +407,6 @@ ListAnimator.prototype.binder = function(Method){
 var listAnimatorRadar = new ListAnimator();
 listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 
-
 /*************************************************************************************************
 Resource Sub Menu To show specific reources
 *************************************************************************************************/
@@ -545,6 +544,182 @@ ResourceManager.prototype.activateSubMenu = function(){
 
 var resourceManager = new ResourceManager();
 resourceManager.init();
+
+/*************************************************************************************************
+Hash Menu To inline page block scrol animation
+*************************************************************************************************/
+function HashMenuManager()
+{
+	this.currentHash = "";
+	this.scrollSpeed = 20;
+	this.nextHash = "";
+	this.innerPageOffset = [''];
+
+	this.privateCapsule = (function($){
+
+		//private variables
+		var currentHashMenu = null;
+		var currentPageOffset = {};
+		var finalPageOffset = {};
+		var nextPageEleId = null;
+		var scrollSteps = 0; //for negative exponential easing
+		var intervalId = null; //reference to intervaled function, used to clearInterval
+		var scrollLength  = 0; //magnitude of difference between current page/ele offset and next pageEle offset
+		///////////////////////////////////////////////
+		//private function to scroll page on menu click
+		var scrollMenuPage = function(ev){
+			var stepTime = 50;
+			var scrollSpeed = 20;
+			var currentScrollTop = document.documentElement.scrollTop ||  document.body.scrollTop;
+			var hash = ev.target.href.substring(ev.target.href.lastIndexOf("#"));
+
+			if($(hash).length === 0 || hash == nextPageEleId){
+				return;
+			}else{
+				ev.preventDefault();
+			}
+
+			scrollSteps = 0; //for negative exponential easing Ae^-x
+			nextPageEleId = hash;
+			currentPageOffset.top = currentScrollTop;
+			//console.log("Hah Id : "+ hash);
+
+			//clearInterval  to prevent previous on going scroll
+			clearInterval(intervalId);
+
+			finalPageOffset = $(nextPageEleId).offset();
+			scrollLength = Math.abs(currentScrollTop - finalPageOffset.top);
+
+			intervalId = setInterval(animateScroll,scrollSpeed);
+
+		}
+
+
+		///////////////////////////////////////////////////////
+		//Funtion to scroll the page with animation
+		var animateScroll = function(){
+
+			scrollSteps = scrollSteps + 0.1;
+			//direction of scroll negative upward else downward
+			var direction = ((document.documentElement.scrollTop ||  document.body.scrollTop) - finalPageOffset.top) > 0 ? -1 : 1;
+			var scrollStep = currentPageOffset.top + (direction * (scrollLength + 10)*( 1 - Math.exp(-scrollSteps))) ; //easeout exponential function  , +10 as theoritically (1-exp(-x))  reaches 1 at infinte time
+
+			if( scrollStep >= finalPageOffset.top && direction == 1) //reached at destination scrollTop
+			{
+				//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+				clearInterval(intervalId);
+				updateHash();
+				return;
+			}
+			else if( scrollStep <= finalPageOffset.top && direction == -1) //reached at destination scrollTop
+			{
+				//document.documentElement.scrollTop =  document.body.scrollTop = finalPageOffset.top;
+				clearInterval(intervalId);
+				updateHash();
+				return;
+			}
+
+			document.body.scrollTop =  document.documentElement.scrollTop = scrollStep;
+			//console.log(document.documentElement.scrollTop + " : " + document.body.scrollTop)
+		}
+
+
+		//////////////////////////////////////////////////////////
+		//Function to update hash at url bar
+		var updateHash = function()
+		{
+			document.location.hash  = nextPageEleId;
+			nextPageEleId = null; //reseting as it has been scrolled into view
+		}
+
+		//Funtion to register function onclick of main menu
+		var registerMenuClick = function()
+		{
+			$(".hashMenu").unbind("click",scrollMenuPage).bind("click",scrollMenuPage);
+			//console.log($(".hashMainMenu"));
+		}
+
+		return {
+			registerMenuScroll : registerMenuClick,
+		}
+	}(jQuery));
+}
+
+HashMenuManager.prototype.initializer = function()
+{
+	var _that = this;
+	$(document).ready(function(){
+		_that.listenStart();
+		_that.currentMenuHighlighter();
+		_that.gatherOffsetData({data:{_that:_that}});
+		$(window).on('hashchange', _that.currentMenuHighlighter);
+		$(window).on('resize',{_that:_that}, _that.gatherOffsetData);
+		$(document).on("scroll",{_that:_that},_that.currentMenuOnScroll);
+	})
+
+}
+
+HashMenuManager.prototype.listenStart = function()
+{
+	var _this = this;
+	this.privateCapsule.registerMenuScroll();
+
+}
+
+HashMenuManager.prototype.currentMenuHighlighter = function(){
+	  var hash = window.location.hash;
+		if(hash === ""){return;}
+
+		$(".current-menu").removeClass("current-menu");
+		$(hash+"-butn").addClass("current-menu");
+}
+
+//@Description : Changes the current menu highlighter on manual scroll of the page
+HashMenuManager.prototype.currentMenuOnScroll = function(ev)
+{
+	var _this = ev.data._that, temp;
+	var length = _this.innerPageOffset.length;
+
+	var bodyScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	for(var i=0;i<length;i++)
+	{
+		temp = _this.innerPageOffset[i];
+
+		//console.log(bodyScroll + " : " + temp.top + " : " + temp.bottom);
+		if(bodyScroll >= temp.top && bodyScroll  <= temp.bottom )
+		{
+			currentActiveMenu = $(".current-menu").attr("id");
+			if( currentActiveMenu != temp.id)
+			{ //console.log("inside : " + temp.id);
+				$(".current-menu").removeClass("current-menu");
+				$("#"+temp.id).addClass("current-menu");
+			}
+		}
+	}
+}
+
+//@Description : Gathers the offset of inner page of the main menu
+HashMenuManager.prototype.gatherOffsetData = function(ev)
+{
+	var _this = ev.data._that;
+	var id = null,top = null,bottom = null,menuId=null;
+	var headerHeight = $("#main-header").height();
+	var menuRefer = $(".topMenu");
+	var menuLength = menuRefer.length;
+	for(var i = 0; i < menuLength;i++)
+	{
+		id =  menuRefer.eq(i).attr("href");
+		id = id.substring(id.lastIndexOf("#"));
+		top = $(id).offset().top - headerHeight;
+		bottom = top + $(id).outerHeight();
+		menuId = menuRefer.eq(i).parent().attr("id");
+		_this.innerPageOffset[i] = {top :  top, bottom : bottom, id : menuId}
+	}
+}
+
+
+var hashMenuController = new HashMenuManager();
+hashMenuController.initializer();
 
 
 /***********************************************************
