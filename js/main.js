@@ -474,7 +474,7 @@ $(document).ready(function(){
 		//activateCompanySubmenu();
 	});
 
-  $(document).mousemove(hideCompanySubMenuOnDepart);
+  //$(document).mousemove(hideCompanySubMenuOnDepart);
 	$("#ak-menu>li").mouseover(hideCompanySubMenu);
 });
 
