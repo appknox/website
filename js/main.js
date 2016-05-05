@@ -459,7 +459,7 @@ function companyLinkClickAction(){
 	$("#company-link").click(function(ev){
 		var doc = $(document);
 		if(doc.width()<760){
-			ev.preventDefault;
+			//ev.preventDefault;
 		}else{
 			document.location = ev.currentTarget.href;
 		}
@@ -534,7 +534,7 @@ function resourceLinkClickAction(){
 	$("#resource-link").click(function(ev){
 		var doc = $(document);
 		if(doc.width()<760){
-			ev.preventDefault;
+			//ev.preventDefault;
 		}else{
 			document.location = ev.currentTarget.href;
 		}
@@ -726,7 +726,7 @@ function HashMenuManager()
 			if($(hash).length === 0 || hash == nextPageEleId){
 				return;
 			}else{
-				ev.preventDefault();
+				//ev.preventDefault();
 			}
 
 			scrollSteps = 0; //for negative exponential easing Ae^-x
