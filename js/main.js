@@ -407,6 +407,156 @@ ListAnimator.prototype.binder = function(Method){
 var listAnimatorRadar = new ListAnimator();
 listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 
+/*********************************************************************************
+* COmpany Page Sub menu Activation
+**********************************************************************************/
+function activateCompanySubmenu(directCall){
+	 var companyPage = $("#company-page");
+	 var doc = $(document);
+
+	 if(companyPage.length > 0 && doc.width() > 760){
+		 $("#company-dropdown").addClass("block");
+	 }
+	 else if(companyPage.length > 0 && doc.width() < 760){
+		 $("#company-dropdown").removeClass("block");
+	 }
+	 else if( doc.width() > 760){
+		 if(!directCall){
+		    var menu =   $("#company-menu");
+				$("#company-dropdown").addClass("block");
+			}
+	 }else if(companyPage.length === 0 && doc.width() > 760){
+		  $("#company-dropdown").removeClass("block");
+	 }
+}
+
+function hideCompanySubMenu(ev){
+		var target = ev.currentTarget;
+		var companyPage = $("#company-page");
+
+		if(target.id !== "company-menu" && companyPage.length == 0){
+			$("#company-dropdown").removeClass("block");
+		}
+}
+
+function hideCompanySubMenuOnDepart(ev){
+	var mouseY = ev.clientY;
+	try{
+		var subMenuTop = $("#company-dropdown").css("top");
+		var subMenuHeight = $("#company-dropdown").outerHeight();
+		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+		var companyPage = $("#company-page");
+
+		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
+			$("#company-dropdown").removeClass("block");
+		}
+ }catch(e){}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of company-link in mobile menu
+function companyLinkClickAction(){
+	$("#company-link").click(function(ev){
+		var doc = $(document);
+		if(doc.width()<760){
+			//ev.preventDefault;
+		}else{
+			document.location = ev.currentTarget.href;
+		}
+	})
+}
+
+$(document).ready(function(){
+	activateCompanySubmenu(true);
+	companyLinkClickAction();
+
+	$("#company-menu").bind("mouseover",function(){
+			activateCompanySubmenu();
+	});
+
+  $(document).mousemove(hideCompanySubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideCompanySubMenu);
+});
+
+$(window).resize(function(){
+	activateCompanySubmenu();
+});
+
+/*********************************************************************************
+* Resource Page Sub menu Activation
+**********************************************************************************/
+function activateResourceSubmenu(directCall){
+	 var resourcePage = $("#resource-page");
+	 var doc = $(document);
+
+	 if(resourcePage.length > 0 && doc.width() > 760){
+		 $("#resource-dropdown").addClass("block");
+	 }
+	 else if(resourcePage.length > 0 && doc.width() < 760){
+ 		 $("#resource-dropdown").removeClass("block");
+		 $("#resource-dropdown").css("display","");
+ 	 }else if( doc.width() > 760){
+		 if(!directCall){
+		    var menu =   $("#resource-menu");
+				$("#resource-dropdown").addClass("block");
+			}
+	 }else if(resourcePage.length === 0 && doc.width() > 760){
+		  $("#resource-dropdown").removeClass("block");
+	 }
+}
+
+function hideResourceSubMenu(ev){
+		var target = ev.currentTarget;
+		var resourcePage = $("#resource-page");
+
+		if(target.id !== "resource-menu" && resourcePage.length == 0){
+			$("#resource-dropdown").removeClass("block");
+		}
+}
+
+function hideResourceSubMenuOnDepart(ev){
+	var mouseY = ev.clientY;
+	try{
+		var subMenuTop = $("#resource-dropdown").css("top");
+		var subMenuHeight = $("#resource-dropdown").outerHeight();
+		var downEnd = parseInt(subMenuTop) + subMenuHeight;
+		var companyPage = $("#resource-page");
+
+		if(companyPage.length == 0 && mouseY >= (downEnd + 100)){
+			$("#resource-dropdown").removeClass("block");
+		}
+ }catch(e){}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of resource-link in mobile menu
+function resourceLinkClickAction(){
+	$("#resource-link").click(function(ev){
+		var doc = $(document);
+		if(doc.width()<760){
+			//ev.preventDefault;
+		}else{
+			document.location = ev.currentTarget.href;
+		}
+	})
+}
+
+$(document).ready(function(){
+	activateResourceSubmenu(true);
+	resourceLinkClickAction();
+
+	$("#resource-menu").bind("mouseover",function(){
+			activateResourceSubmenu();
+	});
+
+  $(document).mousemove(hideResourceSubMenuOnDepart);
+	$("#ak-menu>li").mouseover(hideResourceSubMenu);
+});
+
+$(window).resize(function(){
+	activateResourceSubmenu();
+});
+
 /*************************************************************************************************
 Resource Sub Menu To show specific reources
 *************************************************************************************************/
