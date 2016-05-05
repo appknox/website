@@ -1210,12 +1210,14 @@ $(document).ready(function(){
 
 function respondToMenuClickMobile(ev){
 	var docWidth = $(document).width();
-
+	alert("clicked0");
 	if(docWidth < 760){
-		var target = ev.currentTarget;
+		var target = ev.target;
 		var toggleLink = $(target).hasClass("dropdown-toggle");
 		if(!toggleLink){
+			alert("clicked2");
 			document.location = target.href;
+
 		}
 	}
 }
