@@ -291,11 +291,10 @@ p {
 }
 #text-slider {
   clear: both;
-  height: 100%;
   padding-top: 70px;
 }
 #ak-slide-zone h1 {
-  font-size: 60px;
+  font-size: 56px;
 }
 #ak-slide-zone p {
   font-size: 25px;
@@ -303,17 +302,17 @@ p {
 #ak-slide-container {
   display: block;
   list-style-type: none;
-  max-height: 500px;
+  min-height: 510px;
   text-align: left;
   padding-top:30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .ak-slide {
   color: #000;
   display: none
 }
 #slide-jumper-sec .ak-jumper-block {
-  margin: 50px 0 0;
+  margin: 30px 0 0;
 }
 #request-demo {
   margin-top: 4%;
@@ -518,6 +517,11 @@ p {
   border: 1px solid #444;
   vertical-align: middle;
 }
+
+.ak-checkbox-pannel>li.active .ak-cb-depth{
+  background: #62B0DD;
+}
+
 .ak-cb-title {
   display: inline-block;
   margin-left: 7%;
@@ -951,9 +955,7 @@ p {
   margin: 5px auto;
   border-radius: 5px;
 }
-.platforms.active .ak-cb-depth-inner {
-  background: #62B0DD;
-}
+
 .faq-region {
   margin-bottom: 20px;
 }
@@ -1188,7 +1190,7 @@ p {
 }
 @media (max-width: 990px) {
   .navbar-nav {
-    margin-left: 5%;
+    margin-left: 4%;
   }
 }
 @@media (max-width: 767px) {
@@ -1249,6 +1251,15 @@ p {
     width: 47%;
     padding: 0 1.5%;
     margin-left: 12px;
+  }
+}
+
+@media (max-width: 680px){
+  #footer-form form {
+      width: 100%;
+  }
+  #footer-form {
+    text-align: center;
   }
 }
 

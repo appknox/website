@@ -109,18 +109,21 @@
         <input type="text" class="form-control" name="phone" placeholder="Phone/Mobile">
       </fieldset>
       <div class="clearfix"></div>
-      <ul class="ak-checkbox-pannel">
-        <li class="col-md-4 col-sm-6" id="purchase-input-li"  data-selected="no">
-            <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+      <ul class="ak-checkbox-pannel" id="cu-ak-checkbox-pannel">
+        <li class="col-md-4 col-sm-6 active" id="purchase-input-li"  data-selected="no">
+          <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Purchase</div>
+          <input name="purchase" id="purchase-input" type="hidden" value="0" />
         </li>
         <li class="col-md-4 col-sm-6"  id="collaborate-input-li" data-selected="no">
           <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Collaborate</div>
+          <input name="collaborate" id="collaborate-input" type="hidden" value="0" />
         </li>
         <li class="col-md-4 col-sm-6" id="talk-to-us-input-li" data-selected="no">
           <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Enquire</div>
+          <input name="talk" id="talk-input" type="hidden" value="0" />
         </li>
       </ul>
       <div class="clearfix"></div>

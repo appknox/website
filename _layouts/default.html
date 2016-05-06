@@ -19,7 +19,7 @@
     <script src="https://www.appknox.com/assets/js/bootstrap.min.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
     <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script> 
+    <script src="/js/main.js"></script>
     <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
     <script>
@@ -113,6 +113,32 @@
         }
       });
     });
+
+  function activateDivCheckBox(){
+    var liInputs = $("#cu-ak-checkbox-pannel > li");
+    liInputs.unbind("click",reactToDivCheckbox).bind("click",reactToDivCheckbox);
+
+    function reactToDivCheckbox(ev){
+        var target = ev.currentTarget;
+        var isActive = $(target).hasClass("active");
+        var idFirstSegment = $(target).attr("id").split("-")[0];
+        var inputValue = "0";
+
+        if(isActive){
+            inputValue = "0";
+        }else{
+            inputValue = "1";
+        }
+
+        $(target).toggleClass("active");
+        $("#" + idFirstSegment + "-input").attr("value",inputValue);
+    }
+  }
+
+  $(document).ready(function(){
+    activateDivCheckBox();
+  });
+
   </script>
   <script>
     window.intercomSettings = {
