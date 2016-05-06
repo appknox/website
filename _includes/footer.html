@@ -3,8 +3,9 @@
     <div class="col-md-12 ">
       <div class="col-md-8" id="footer-form">
         <h3 class="footer-titles">Subscribe to Updates</h3>
-        <form>
-          <input type="email" placeholder = "your email goes here">
+        <form id="subscribe-form" action="/" method="post">
+          <div id="email-su-error" class="cu-form-eorror red"></div>
+          <input type="email" name="email" placeholder = "your email goes here">
           <input type="submit" id="footer-subscribe-butn" value="SUBMIT">
         </form>
       </div>
@@ -87,6 +88,7 @@
   </div>
   <div class="col-md-9">
   <div id="contact-form-holder">
+    <div id="messageBoxCU" class="neosans-24"> </div>
     <form id="ak-contact-from">
       <fieldset class="form-group col-md-6 col-sm-6">
         <div id="name-cu-error" class="cu-form-eorror red"></div>
@@ -110,7 +112,7 @@
       </fieldset>
       <div class="clearfix"></div>
       <ul class="ak-checkbox-pannel" id="cu-ak-checkbox-pannel">
-        <li class="col-md-4 col-sm-6 active" id="purchase-input-li"  data-selected="no">
+        <li class="col-md-4 col-sm-6" id="purchase-input-li"  data-selected="no">
           <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Purchase</div>
           <input name="purchase" id="purchase-input" type="hidden" value="0" />
@@ -128,10 +130,10 @@
       </ul>
       <div class="clearfix"></div>
       <fieldset class="form-group col-md-12">
-        <textarea class="form-control" rows="4" cols="50" id="" placeholder="Remarks/Message"></textarea>
+        <textarea class="form-control" name="remarks" rows="4" cols="50" id="" placeholder="Remarks/Message"></textarea>
       </fieldset>
       <div class="clearfix"></div>
-      <input type="submit" class="btn btn-primary button-red btn-lg ak-btn-round uppercase" value="Submit">
+      <input type="submit" id="contact-form-submit" class="btn btn-primary button-red btn-lg ak-btn-round uppercase" value="Submit">
     </form>
   </div>
   </div>

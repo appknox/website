@@ -39,6 +39,9 @@ ul, li {
   margin: 0;
   padding: 0
 }
+.green{
+  color:#81C06C;
+}
 .red {
   color: #f17758;
 }
@@ -691,7 +694,8 @@ p {
 }
 .footer-links {
   text-align: center;
-  font-size: 1.2em
+  font-size: 1.2em;
+  margin-top: 25px;
 }
 .footer-links a {
   display: inline-block;

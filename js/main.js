@@ -1,3 +1,7 @@
+/////////////////////////////////////////////////////////////////
+//Globally declaring $ as reference to jQuery as required in WP
+var $ = jQuery
+
 /*****************************************************************
 *Object prototype to manage the sub drop-down menu as full width
 *
@@ -1204,6 +1208,8 @@ PricingManager.prototype.adjustFinalPrice = function(){
 var pricingManager = new PricingManager();
 pricingManager.init();
 
+
+
 ///////////////////////////////////////////////////////////////////////////////////////
 // General pop up/alert with fancybox
 function fancyConfirm(msg, options, callback) {
@@ -1216,3 +1222,241 @@ function fancyConfirm(msg, options, callback) {
         }
     });
 }
+
+var contactFormRule = {rules:{
+	name: "required",
+	email: "email",
+}}
+
+$(document).ready(function() {
+	$(".contact-us-btn").fancybox({
+		'autoResize': true,
+		'autoSize': true,
+		'maxHeight': "100%",
+		'autoCenter': true,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+});
+
+//Contact us form validation rules
+var contactFormValidateRules = {
+	rules: {
+		"name": {
+			required: true,
+			maxlength: 40,
+		},
+		"email": {
+			required: true,
+			maxlength: 90,
+			email: true
+		},
+		"company": {
+			required: true,
+			maxlength: 40,
+			minlength: 2,
+		},
+		"designation": {
+			required: true,
+			maxlength: 40,
+			minlength: 2,
+		},
+		"phone": {
+			required: true,
+			maxlength: 20,
+			minlength: 6,
+		},
+	},
+	errorPlacement: function(error, element) {
+		var errorEleId = "#" + element.attr("name") + "-cu-error"
+		var errorBox = null;
+		$(errorEleId).children().remove(); //removing if already outputed error from  backend
+		errorBox = $("<div id='mp-dynamic-error' />");
+		errorBox.fadeOut(200, function() {
+			showError()
+		});
+		$(errorEleId).append(errorBox);
+
+		function showError() {
+			errorBox.append(error);
+			errorBox.fadeIn(200);
+		}
+	},
+	messages: {
+		"name": {
+			required: "Name is required",
+			maxlength: "Maximum 50 characters allowed"
+		},
+		"email": {
+			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+		"company": {
+			required: "Company name is required",
+		},
+		"phone": {
+			required: "Phone number is required"
+		},
+		"designation": {
+			required: "Designation is required"
+		}
+	}
+}
+
+//Function to watch subscribe form submit
+function bindSubscribeSubmitCheck(){
+	$("#contact-form-submit").unbind("click",sendContactForm).bind("click",sendContactForm);
+}
+
+function sendContactForm(ev){
+	ev.preventDefault();
+	var form = $("#subscribe-form");
+	form.validate(subscribeFormValidateRules);
+	var isValid = form.valid();
+	debugger;
+	if(isValid){
+				//Loading sign etc
+	}else{
+		return;
+	}
+
+	var serializeData = form.serialize();
+	var url = form.attr("action");
+	var method = form.attr("method");
+
+	var option = {
+		url : url,
+		method : method,
+		data : serializeData,
+		asyn : true,
+		error : errorCallback,
+		success : successCallback
+	}
+
+	var xhr = $.ajax(option);
+
+	function errorCallback(jqXHR, err, errException){
+
+	}
+
+	function successCallback(resData){
+			if(resData.status === "success"){
+					$("#messageBoxCU").removeClass("red").addClass("green").html(resData.data.message);
+					form.disable();
+			}else{
+					$("#email-su-error").removeClass("green").addClass("red").html(resData.data.message);
+			}
+	}
+}
+
+//subscribe form validation
+var subscribeFormValidateRules = {
+	rules: {
+		"email": {
+			required: true,
+			maxlength: 90,
+			email: true
+		},
+	},
+	errorPlacement: function(error, element) {
+		var errorEleId = "#" + element.attr("name") + "-su-error"
+		var errorBox = null;
+		$(errorEleId).children().remove(); //removing if already outputed error from  backend
+		errorBox = $("<div class='mp-dynamic-error' />");
+		errorBox.fadeOut(200, function() {
+			showError()
+		});
+		$(errorEleId).append(errorBox);
+
+		function showError() {
+			errorBox.append(error);
+			errorBox.fadeIn(200);
+		}
+	},
+	messages: {
+		"email": {
+			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+	},
+	submitHandler: function(form) {
+
+	}
+}
+
+//Function to watch subscribe form submit
+function bindSubscribeSubmitCheck(){
+$("#subscribe-form").unbind("click",sendSubsribeForm).bind("click",sendSubsribeForm);
+}
+
+function sendSubsribeForm(ev){
+	ev.preventDefault();
+	var form = $("#subscribe-form");
+	form.validate(subscribeFormValidateRules);
+	var isValid = form.valid();
+	debugger;
+	if(isValid){
+				//Loading sign etc
+	}else{
+		return;
+	}
+
+	var serializeData = form.serialize();
+	var url = form.attr("action");
+	var method = form.attr("method");
+
+	var option = {
+		url : url,
+		method : method,
+		data : serializeData,
+		asyn : true,
+		error : errorCallback,
+		success : successCallback
+	}
+
+	var xhr = $.ajax(option);
+
+	function errorCallback(jqXHR, err, errException){
+
+	}
+
+	function successCallback(resData){
+			if(resData.status === "success"){
+					$("#email-su-error").removeClass("red").addClass(green).html(resData.data.message);
+					form.disable();
+			}else{
+					$("#email-su-error").html(resData.data.message);
+			}
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Activate the div based checkboxes in contact us form
+function activateDivCheckBox(){
+	var liInputs = $("#cu-ak-checkbox-pannel > li");
+	liInputs.unbind("click",reactToDivCheckbox).bind("click",reactToDivCheckbox);
+
+	function reactToDivCheckbox(ev){
+			var target = ev.currentTarget;
+			var isActive = $(target).hasClass("active");
+			var idFirstSegment = $(target).attr("id").split("-")[0];
+			var inputValue = "0";
+
+			if(isActive){
+					inputValue = "0";
+			}else{
+					inputValue = "1";
+			}
+
+			$(target).toggleClass("active");
+			$("#" + idFirstSegment + "-input").attr("value",inputValue);
+	}
+}
+
+$(document).ready(function(){
+activateDivCheckBox();
+bindSubscribeSubmitCheck();
+});
