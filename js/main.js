@@ -1229,7 +1229,7 @@ var contactFormRule = {rules:{
 }}
 
 $(document).ready(function() {
-	$(".contactus-btn").fancybox({
+	$(".cu-btn").fancybox({
 		'autoResize': true,
 		'autoSize': true,
 		'maxHeight': "100%",
