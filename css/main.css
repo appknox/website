@@ -484,11 +484,12 @@ p {
 #hello-zone-cu img {
   width: 100px;
 }
-#form-social-block {
+#form-social-block,.form-social-block {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
-#form-social-block img {
+#form-social-block img,.form-social-block img {
   width: 35px;
   margin-left: 15px;
 }
@@ -685,7 +686,7 @@ p {
   padding-top: 30px;
   padding-bottom: 60px;
 }
-.contact-us-block .cu-btn {
+.contact-us-block .cubtn{
   display: inline-block;
   margin-top: 30px;
 }
@@ -771,6 +772,7 @@ p {
 .adress-text {
   font-size: 0.9em;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 #footer-form {
   margin-bottom: 40px;
