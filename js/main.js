@@ -1223,22 +1223,31 @@ function fancyConfirm(msg, options, callback) {
     });
 }
 
+///////////////////////////////////////////////////////////////////////////////////////
+// Contact Us form with Fancybox
+function fancyContactForm() {
+    $.fancybox("#cuform", {
+				'autoResize': true,
+				'autoSize': true,
+				'maxHeight': "100%",
+				'autoCenter': true,
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				},
+    });
+}
+
 var contactFormRule = {rules:{
 	name: "required",
 	email: "email",
 }}
 
 $(document).ready(function() {
-	$(".cubtn").fancybox({
-		'autoResize': true,
-		'autoSize': true,
-		'maxHeight': "100%",
-		'autoCenter': true,
-		helpers: {
-			overlay: {
-				locked: false
-			}
-		}
+	$(".cubtn").click(function(ev){
+		ev.preventDefault();
+		fancyContactForm();
 	});
 });
 
