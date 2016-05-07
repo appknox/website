@@ -1203,12 +1203,8 @@ PricingManager.prototype.adjustFinalPrice = function(){
 
 }
 
-
-
 var pricingManager = new PricingManager();
 pricingManager.init();
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // General pop up/alert with fancybox
@@ -1218,7 +1214,6 @@ function fancyConfirm(msg, options, callback) {
         beforeShow: function () {
             this.content.prepend("<p class=\"title\"></p>");
             $("#fancyboxAlert").html(msg);
-
         }
     });
 }
@@ -1316,16 +1311,16 @@ var contactFormValidateRules = {
 }
 
 //Function to watch subscribe form submit
-function bindSubscribeSubmitCheck(){
+function bindContactSubmitCheck(){
 	$("#contact-form-submit").unbind("click",sendContactForm).bind("click",sendContactForm);
 }
 
 function sendContactForm(ev){
 	ev.preventDefault();
-	var form = $("#subscribe-form");
-	form.validate(subscribeFormValidateRules);
+	var form = $("#ak-contact-from");
+	form.validate(contactFormValidateRules);
 	var isValid = form.valid();
-	debugger;
+
 	if(isValid){
 				//Loading sign etc
 	}else{
@@ -1348,7 +1343,7 @@ function sendContactForm(ev){
 	var xhr = $.ajax(option);
 
 	function errorCallback(jqXHR, err, errException){
-
+			$("#messageBoxCU").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
 	}
 
 	function successCallback(resData){
@@ -1356,7 +1351,7 @@ function sendContactForm(ev){
 					$("#messageBoxCU").removeClass("red").addClass("green").html(resData.data.message);
 					form.disable();
 			}else{
-					$("#email-su-error").removeClass("green").addClass("red").html(resData.data.message);
+					$("#messageBoxCU").removeClass("green").addClass("red").html(resData.data.message);
 			}
 	}
 }
@@ -1429,7 +1424,7 @@ function sendSubsribeForm(ev){
 	var xhr = $.ajax(option);
 
 	function errorCallback(jqXHR, err, errException){
-
+			$("#email-su-error").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
 	}
 
 	function successCallback(resData){
@@ -1466,6 +1461,7 @@ function activateDivCheckBox(){
 }
 
 $(document).ready(function(){
-activateDivCheckBox();
-bindSubscribeSubmitCheck();
+	activateDivCheckBox();
+	bindSubscribeSubmitCheck();
+	bindContactSubmitCheck();
 });
