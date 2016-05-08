@@ -369,6 +369,14 @@ p {
   border: none;
   padding: 10px 90px;
 }
+.button-gray{
+  background: #dedede;
+  border: none;
+  padding: 10px 20px;
+  color:#555;
+  transition:all 0.35s ease-out;
+  margin-top:20px;
+}
 .button-green {
   background: #4CAF50;
   border: none;
@@ -902,7 +910,6 @@ p {
 }
 #pricingBulkOrder {
   padding: 6px 20px;
-  border: 1px solid #62B0DD;
   display: inline-block;
   border-radius: 10px;
   margin-bottom: 20px;
