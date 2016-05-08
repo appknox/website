@@ -3,6 +3,15 @@
 var $ = jQuery
 var HAWKINS_ENDURL = "http://hawkins.appknox.com/api/send/";
 
+////////////////////////////////////////////////////////////////
+//Commonly used functions
+
+function getProcessingHtml(msg){
+	msg = msg || "Processing";
+	var html = '<span class="gray-6 green"><i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i> ' + msg + "</span>";
+	return html;
+}
+
 /*****************************************************************
 *Object prototype to manage the sub drop-down menu as full width
 *
@@ -1462,8 +1471,125 @@ function activateDivCheckBox(){
 	}
 }
 
+///////////////////////////////////////////////////////////////////////////////////////
+// Request Demo form with Fancybox
+function fancyRequestDemoForm() {
+
+		$("#messageBoxDemo").html("");
+
+    $.fancybox("#request-demo-box", {
+				'autoResize': true,
+				'autoSize': true,
+				'maxHeight': "100%",
+				'autoCenter': true,
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				},
+    });
+}
+
+//Contact us form validation rules
+var demoFormValidateRules = {
+	rules: {
+		"name": {
+			required: true,
+			maxlength: 40,
+		},
+		"email": {
+			required: true,
+			maxlength: 90,
+			email: true
+		},
+
+	},
+	errorPlacement: function(error, element) {
+		var errorEleId = "#" + element.attr("name") + "-ds-error"
+		var errorBox = null;
+		$(errorEleId).children().remove(); //removing if already outputed error from  backend
+		errorBox = $("<div class='mp-dynamic-error' />");
+		errorBox.fadeOut(200, function() {
+			showError()
+		});
+		$(errorEleId).append(errorBox);
+
+		function showError() {
+			errorBox.append(error);
+			errorBox.fadeIn(200);
+		}
+	},
+	messages: {
+		"name": {
+			required: "Name is required",
+			maxlength: "Maximum 50 characters allowed"
+		},
+		"email": {
+			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+	}
+}
+
+function sendDemoForm(ev){
+	ev.preventDefault();
+
+	var form = $("#request-demo-form");
+	form.validate(demoFormValidateRules);
+	var isValid = form.valid();
+
+	if(isValid){
+				//Loading sign etc
+	}else{
+		return;
+	}
+
+	$("#messageBoxDemo").html(getProcessingHtml());
+
+	var serializeData = form.serialize();
+	var url = HAWKINS_ENDURL + "appknox-demo-subscribe";
+	var method = form.attr("method");
+
+	var option = {
+		url : url,
+		method : method,
+		data : serializeData,
+		asyn : true,
+		error : errorCallback,
+		success : successCallback
+	}
+
+	var xhr = $.ajax(option);
+
+	function errorCallback(jqXHR, err, errException){
+			$("#messageBoxDemo").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+	}
+
+	function successCallback(resData){
+			if(resData.status === "success"){
+					$("#messageBoxDemo").removeClass("red").addClass(green).html(resData.data.message);
+					form.disable();
+			}else{
+					$("#messageBoxDemo").html(resData.data.message);
+			}
+	}
+}
+
+//Function to watch demo form submit
+function bindDemoSubmitCheck(){
+	$("#demo-form-submit").unbind("click",sendDemoForm).bind("click",sendDemoForm);
+}
+
+$(document).ready(function() {
+	$(".req-demo").click(function(ev){
+		ev.preventDefault();
+		fancyRequestDemoForm();
+	});
+});
+
 $(document).ready(function(){
 	activateDivCheckBox();
 	bindSubscribeSubmitCheck();
 	bindContactSubmitCheck();
+	bindDemoSubmitCheck();
 });

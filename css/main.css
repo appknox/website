@@ -280,7 +280,7 @@ p {
 .bottom-border {
   border-bottom: 1px solid #aaa;
   padding-bottom: 3px;
-  display: inline-block
+  display: inline-block;
 }
 
 .container>h2, .container>h3, .container>h3, .container>li>h2 {
@@ -903,6 +903,22 @@ p {
   display: nne
 }
 
+input[type=email],input[type=text]{
+  background: #f8f8f8;
+  border: none;
+  margin: 3px auto 0px;
+  box-shadow: none;
+  padding: 12px 15px;
+  font-size: 17px;
+}
+
+#demo-form-submit{
+  margin-bottom:50px;
+}
+
+.req-demo{
+  cursor:pointer;
+}
 /* PRICING PAGE */
 
 .horz-pricing-box {
