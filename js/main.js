@@ -1,6 +1,7 @@
 /////////////////////////////////////////////////////////////////
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
+var HAWKINS_ENDURL = "http://hawkins.appknox.com/api/send/";
 
 /*****************************************************************
 *Object prototype to manage the sub drop-down menu as full width
@@ -1328,8 +1329,9 @@ function sendContactForm(ev){
 	}
 
 	var serializeData = form.serialize();
-	var url = form.attr("action");
+	var url = HAWKINS_ENDURL + "contact-us";
 	var method = form.attr("method");
+	form.attr("action",url);
 
 	var option = {
 		url : url,
@@ -1349,7 +1351,7 @@ function sendContactForm(ev){
 	function successCallback(resData){
 			if(resData.status === "success"){
 					$("#messageBoxCU").removeClass("red").addClass("green").html(resData.data.message);
-					form.disable();
+					form.fadeOut();
 			}else{
 					$("#messageBoxCU").removeClass("green").addClass("red").html(resData.data.message);
 			}
@@ -1401,7 +1403,7 @@ function sendSubsribeForm(ev){
 	var form = $("#subscribe-form");
 	form.validate(subscribeFormValidateRules);
 	var isValid = form.valid();
-	debugger;
+
 	if(isValid){
 				//Loading sign etc
 	}else{
@@ -1409,7 +1411,7 @@ function sendSubsribeForm(ev){
 	}
 
 	var serializeData = form.serialize();
-	var url = form.attr("action");
+	var url = HAWKINS_ENDURL + "appknox-email-subscribe";
 	var method = form.attr("method");
 
 	var option = {
