@@ -1585,11 +1585,127 @@ $(document).ready(function() {
 		ev.preventDefault();
 		fancyRequestDemoForm();
 	});
+
+	$(".bulk-order").click(function(ev){
+		ev.preventDefault();
+		fancyBulkOrderForm();
+	});
 });
+
+///////////////////////////////////////////////////////////////////////////////////////
+// Bulk Order form with Fancybox
+function fancyBulkOrderForm() {
+
+		$("#messageBoxBulk").html("");
+
+    $.fancybox("#bulk-orders-box", {
+				'autoResize': true,
+				'autoSize': true,
+				'maxHeight': "100%",
+				'autoCenter': true,
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				},
+    });
+}
+
+//Contact us form validation rules
+var demoFormValidateRules = {
+	rules: {
+		"name": {
+			required: true,
+			maxlength: 40,
+		},
+		"email": {
+			required: true,
+			maxlength: 90,
+			email: true
+		},
+
+	},
+	errorPlacement: function(error, element) {
+		var errorEleId = "#" + element.attr("name") + "-bulk-error"
+		var errorBox = null;
+		$(errorEleId).children().remove(); //removing if already outputed error from  backend
+		errorBox = $("<div class='mp-dynamic-error' />");
+		errorBox.fadeOut(200, function() {
+			showError()
+		});
+		$(errorEleId).append(errorBox);
+
+		function showError() {
+			errorBox.append(error);
+			errorBox.fadeIn(200);
+		}
+	},
+	messages: {
+		"name": {
+			required: "Name is required",
+			maxlength: "Maximum 50 characters allowed"
+		},
+		"email": {
+			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+	}
+}
+
+function sendBulkOrderForm(ev){
+	ev.preventDefault();
+
+	var form = $("#bulk-order-form");
+	form.validate(demoFormValidateRules);
+	var isValid = form.valid();
+
+	if(isValid){
+				//Loading sign etc
+	}else{
+		return;
+	}
+
+	$("#messageBoxBulk").html(getProcessingHtml());
+
+	var serializeData = form.serialize();
+	var url = HAWKINS_ENDURL + "appknox-bulk-order";
+	var method = form.attr("method");
+
+	var option = {
+		url : url,
+		method : method,
+		data : serializeData,
+		asyn : true,
+		error : errorCallback,
+		success : successCallback
+	}
+
+	var xhr = $.ajax(option);
+
+	function errorCallback(jqXHR, err, errException){
+			$("#messageBoxBulk").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+	}
+
+	function successCallback(resData){
+			if(resData.status === "success"){
+					$("#messageBoxBulk").removeClass("red").addClass(green).html(resData.data.message);
+					form.disable();
+			}else{
+					$("#messageBoxBulk").html(resData.data.message);
+			}
+	}
+}
+
+//Function to watch demo form submit
+function bindBulkSubmitCheck(){
+	$("#bulk-order-submit").unbind("click",sendBulkOrderForm).bind("click",sendBulkOrderForm);
+}
+
 
 $(document).ready(function(){
 	activateDivCheckBox();
 	bindSubscribeSubmitCheck();
 	bindContactSubmitCheck();
 	bindDemoSubmitCheck();
+	bindBulkSubmitCheck();
 });
