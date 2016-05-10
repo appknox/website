@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
-var HAWKINS_ENDURL = "http://hawkins.appknox.com/api/send/";
+var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
 
 ////////////////////////////////////////////////////////////////
 //Commonly used functions
@@ -1338,7 +1338,7 @@ function sendContactForm(ev){
 	}
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "contact-us/1029041/u5obs8/";
+	var url = HAWKINS_ENDURL + "contact-us/1029041/u5obs8";
 	var method = form.attr("method");
 	form.attr("action",url);
 
