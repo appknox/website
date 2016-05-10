@@ -1338,7 +1338,7 @@ function sendContactForm(ev){
 	}
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "contact-us";
+	var url = HAWKINS_ENDURL + "contact-us/1029041/u5obs8/";
 	var method = form.attr("method");
 	form.attr("action",url);
 
