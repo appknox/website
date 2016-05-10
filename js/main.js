@@ -1709,3 +1709,14 @@ $(document).ready(function(){
 	bindDemoSubmitCheck();
 	bindBulkSubmitCheck();
 });
+
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		autoSize	: true,
+		closeClick	: true,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+	});
