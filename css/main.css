@@ -660,12 +660,10 @@ p {
   padding-top: 90px;
 }
 #radar-list-block {
-  margin-left: 5px;
 }
 #radar-list-block>span {
   display: none;
   font-size: 1em;
-  border-bottom: 1px solid #EE5146;
   padding-bottom: 2px
 }
 .innerZoneScan {
@@ -802,7 +800,6 @@ p {
 }
 .why-appknox {
   text-align: left;
-  padding-bottom: 200px;
   padding-top: 75px;
 }
 .why-appknox h2 {
