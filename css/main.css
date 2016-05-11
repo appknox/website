@@ -1507,3 +1507,7 @@ input[type=email],input[type=text]{
 .pointer {
   cursor:pointer;
 }
+
+.slide-img-zone {
+  text-align: center;
+}
