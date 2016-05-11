@@ -426,10 +426,10 @@ p {
 }
 
 .ak-slide-jump-butn {
-  height: 6px;
+  height: 8px;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  width: 6px;
-  border-radius: 3px;
+  width: 8px;
+  border-radius: 4px;
   display: inline-block;
   margin: 5px 7px 0;
   cursor: pointer;
@@ -1507,4 +1507,8 @@ input[type=email],input[type=text]{
 
 .pointer {
   cursor:pointer;
+}
+
+.slide-img-zone {
+  text-align: center;
 }
