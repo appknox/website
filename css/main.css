@@ -684,6 +684,14 @@ p {
   display: inline-block;
   margin-right: 10px;
 }
+#uploadAppZone .desc-text, #scReportZone .desc-text{
+  width:100% !important;
+}
+
+#scReportZone{
+    padding-left: 50px;
+}
+
 #scan-process-list .desc-text {
   background: #FFF;
   color: #666;
@@ -1447,7 +1455,7 @@ input[type=email],input[type=text]{
 		margin: 0 auto;
 	}
 
-	#uploadAppZone {
+  #uploadAppZone {
 		margin-top: 30px;
 	}
 
