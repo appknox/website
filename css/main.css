@@ -473,6 +473,7 @@ p {
   padding: 10px 90px;
   color:#fff;
   cursor:pointer;
+  font-family: neosans;
 }
 
 .button-red:hover{
