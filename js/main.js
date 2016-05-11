@@ -1420,7 +1420,7 @@ function sendSubsribeForm(ev){
 	}
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "appknox-email-subscribe";
+	var url = HAWKINS_ENDURL + "appknox-email-subscribe/1029041/urrz0l";
 	var method = form.attr("method");
 
 	var option = {
