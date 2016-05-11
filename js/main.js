@@ -267,7 +267,7 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	//this.interval = setInterval(repeatAnim,8000);
+	this.interval = setInterval(repeatAnim,8000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
