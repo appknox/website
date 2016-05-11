@@ -1351,6 +1351,18 @@ input[type=email],input[type=text]{
   }
 }
 @media (max-width: 760px) {
+  #ak-slide-zone p {
+    text-align: center;
+  }
+  #ak-slide-zone h1 {
+    text-align: center;
+  }
+  #ak-slide-container {
+    min-height: 375px;
+  }
+  .ak-slide div{
+    text-align: center;
+  }
   #home-video-zone {
     width: 70% !important;
     margin: 15%;
@@ -1424,7 +1436,7 @@ input[type=email],input[type=text]{
 		display:none;
 	}
 	#ak-slide-container{
-		min-height:0;
+		min-height:470px;
 		text-align:center;
 	}
 
