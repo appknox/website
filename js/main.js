@@ -1612,7 +1612,7 @@ function fancyBulkOrderForm() {
 }
 
 //Contact us form validation rules
-var demoFormValidateRules = {
+var bulkFormValidateRules = {
 	rules: {
 		"name": {
 			required: true,
@@ -1656,7 +1656,7 @@ function sendBulkOrderForm(ev){
 	ev.preventDefault();
 
 	var form = $("#bulk-order-form");
-	form.validate(demoFormValidateRules);
+	form.validate(bulkFormValidateRules);
 	var isValid = form.valid();
 
 	if(isValid){
