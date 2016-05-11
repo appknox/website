@@ -530,11 +530,16 @@ p {
   max-width: 300px;
   margin: 0 auto;
 }
+
+#testimony-container{
+  min-height: 200px;
+}
+
 .user-comments {
   font-size: 1.0em;
   color: #888;
   max-width: 700px;
-  margin: 30px auto 80px;
+  margin: 30px auto 60px;
   min-height: 80px;
   font-size: 24px;
   font-family: gillsansmtpro;
@@ -1384,6 +1389,10 @@ input[type=email],input[type=text]{
   #ak-dotted-circle{
     width:70%;
   }
+
+  #testimony-container{
+    min-height: 250px;
+  }
 }
 @media (max-width: 600px) {
   .half-block-container>li {
@@ -1497,6 +1506,10 @@ input[type=email],input[type=text]{
   #uploadAppZone .desc-text,#scReportZone .desc-text{
     text-align: center;
     width:100% !important;
+  }
+
+  #testimony-container{
+    min-height: 310px;
   }
 }
 
