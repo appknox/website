@@ -1,29 +1,29 @@
-- name: Tech Android
-  category: Android
-  type: Case Study
+- name: Security Analysis of Top 100 Banking Apps in APAC
+  category: Report
   img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg
-  downloadLink: http://sdsd.sdsd.sds
+  downloadLink: https://appknox1.viewpage.co/Security-Analysis-of-Top-100-Banking-Apps-in-APAC
 
-- name: IoT under IoC
-  category: IoT
-  type: Case Study
-  img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg
-  downloadLink: http://sdsd.sdsd.sds
+- name: 10 Reasons Why Apple Rejects Apps from the App Store
+  category: Ebook
+  img: https://blog.appknox.com/wp-content/uploads/2016/02/appknox-why-apple-rejects-apps.jpg
+  downloadLink: https://appknox1.viewpage.co/10-Reasons-Why-Apple-Rejects-Apps-from-the-App-Store
 
-- name: TechPanda
-  category: Android
-  type: Case Study
-  img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg
-  downloadLink: http://sdsd.sdsd.sds
+- name: A Day in Today's Life of Mobile App
+  category: Infographic
+  img: https://blog.appknox.com/wp-content/uploads/2016/04/appknox-What-happens-in-a-day-in-mobile-apps-article-Image-1.jpg
+  downloadLink: https://appknox1.viewpage.co/Landing-Page-2
 
-- name: Not the security again
-  category: Security
-  type: Case Study
+- name: How we increased a global FMCG giant's productivity by 120%
+  category: Case-Study
   img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg
-  downloadLink: http://sdsd.sdsd.sds
+  downloadLink: https://appknox1.viewpage.co/Landing-Page-2
 
-- name: TechPanda
-  category: Android
-  type: Case Study
-  img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Certificate-Validation.jpg
-  downloadLink: http://sdsd.sdsd.sds
+- name: Top 5 Cyber Security Findings You Can't Afford to Miss
+  category: Infographic
+  img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Cyber-Security-Findings.jpg
+  downloadLink: https://appknox1.viewpage.co/Landing-Page-2
+
+- name: 2015 Year in Review with 105,000 Apps Scanned & More!
+  category: Infographic
+  img: /img/Mark-II-header.jpg
+  downloadLink: https://appknox1.viewpage.co/Landing-Page-2
