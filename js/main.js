@@ -239,7 +239,7 @@ AkSlideManager.prototype.hideSlide = function(nextSlideNum){
 		timeToHide = animator.animTime > timeToHide ? animator.animTime : timeToHide;
 	}
 
-	if(parseInt(nextSlideNum) != NaN ){
+	if(nextSlideNum != undefined ){
 		_this.currentSlide = nextSlideNum;
 	}
 	else{
@@ -267,7 +267,7 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
 	var repeatAnim = this.binder(this.createIntervalAnim);
-	//this.interval = setInterval(repeatAnim,8000);
+	this.interval = setInterval(repeatAnim,16000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
