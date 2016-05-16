@@ -633,7 +633,16 @@ p {
   height: 25px;
   text-align: left;
   text-shadow: none;
+  font-family: neosans;
+  font-weight: normal !important;
+  font-size: 16px;
 }
+
+label.error {
+  font-weight: normal !important;
+  color:#D15738;
+}
+
 .ak-checkbox-pannel>li {
   text-align: left;
   margin-top: 16px;

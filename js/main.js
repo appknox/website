@@ -1222,13 +1222,11 @@ PricingManager.prototype.appendPricingInputs = function(form){
 	form.find("." + dynamicClass).remove();
 
 	$("#pricingForm input").each(function(){
-		debugger;
 		var clone = $(this).clone();
 		var value = $(this).val();
 		clone.val(value);
 	  clone.addClass(dynamicClass);
 		clone.attr("id","");
-		debugger;
 		if(clone.length == 1){
 			form.append(clone[0]);
 		}
@@ -1839,6 +1837,126 @@ function bindBulkSubmitCheck(){
 	$("#bulk-order-submit").unbind("click",sendBulkOrderForm).bind("click",sendBulkOrderForm);
 }
 
+///////////////////////////////////////////////////////////////////////////////////////
+// Landing Page form with Fancybox
+
+//Landing Page form1 validation rules
+var landinPageForm1ValidateRules = {
+	rules: {
+		"name": {
+			required: true,
+			maxlength: 40,
+		},
+		"email": {
+			required: true,
+			maxlength: 90,
+			email: true
+		},
+		"phone": {
+			required: true,
+			maxlength: 20,
+		},
+		"company":{
+			required: true,
+			maxlength: 40,
+		},
+		"app-url":{
+			required: true,
+			maxlength: 40,
+			url:true,
+		}
+
+	},
+	errorPlacement: function(error, element) {
+		var errorEleId = "#" + element.attr("name") + "-lp-error"
+		var errorBox = null;
+		$(errorEleId).children().remove(); //removing if already outputed error from  backend
+		errorBox = $("<div class='mp-dynamic-error' />");
+		errorBox.fadeOut(200, function() {
+			showError()
+		});
+		$(errorEleId).append(errorBox);
+
+		function showError() {
+			errorBox.append(error);
+			errorBox.fadeIn(200);
+		}
+	},
+	messages: {
+		"name": {
+			required: "Name is required",
+			maxlength: "Maximum 50 characters allowed"
+		},
+		"email": {
+			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+		"phone": {
+			required: "Phone is required",
+			maxlength: "Phone maximum length 90"
+		},
+		"company": {
+			required: "Company is required",
+			maxlength: "Company maximum length 90"
+		},
+		"app-url":{
+			required: "App URL is required",
+			maxlength: "300",
+			url: "Please enter a valid URL"
+		}
+	}
+}
+
+function sendLandingPageForm1(ev){
+	ev.preventDefault();
+
+	var form = $("#lp_form_1");
+	form.validate(landinPageForm1ValidateRules);
+	var isValid = form.valid();
+
+	if(isValid){
+				//Loading sign etc
+	}else{
+		return;
+	}
+
+	$("#lpForm1MsgBox").html(getProcessingHtml());
+
+	var serializeData = form.serialize();
+	var url = HAWKINS_ENDURL + "appknox-lp-form-1";
+	var method = form.attr("method");
+
+	var option = {
+		url : url,
+		method : method,
+		data : serializeData,
+		asyn : true,
+		error : errorCallback,
+		success : successCallback
+	}
+
+	var xhr = $.ajax(option);
+
+	function errorCallback(jqXHR, err, errException){
+			$("#lpForm1MsgBox").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+	}
+
+	function successCallback(resData){
+			if(resData.status === "success"){
+					$("#lpForm1MsgBox").removeClass("red").addClass(green).html(resData.data.message);
+					form.disable();
+			}else{
+					$("#lpForm1MsgBox").html(resData.data.message);
+			}
+	}
+}
+
+//Function to watch demo form submit
+function bindLandingPageForm1(){
+	$("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
+}
+
+
 
 $(document).ready(function(){
 	activateDivCheckBox();
@@ -1846,6 +1964,7 @@ $(document).ready(function(){
 	bindContactSubmitCheck();
 	bindDemoSubmitCheck();
 	bindBulkSubmitCheck();
+	bindLandingPageForm1();
 });
 
 $(document).ready(function() {
