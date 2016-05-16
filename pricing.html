@@ -18,6 +18,8 @@ permalink: /pricing/
 <section id="pricing-zone">
   <div class="container ak-container text-center">
     <ul id="pricingZoneBox">
+      <form id="pricingForm" action="" method="post">
+      <input type="hidden" name="pricing-version-num" class="os-input" value="encrypted"/>
       <li class="col-md-4 ">
           <div class="pricing-col-head">
               How many apps do <br> you need to scan?
@@ -26,6 +28,7 @@ permalink: /pricing/
             <div id="appMinus" class="num-app-control"><img src="/img/minus.svg"/></div>
             <div data-min="1" data-max="10" data-value="1" data-base-price="600" data-delta-minus="1" data-annual-factor="10" data-delta-price="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue"/>1</div>
             <div id="appPlus" class="num-app-control"><img src="/img/plus.svg"/></div>
+            <input type="hidden" name="app-count" id="app-count-input" value="1"/>
           </div>
           <div>
               <ul id="quantityZones" class="small-font gray-7">
@@ -46,19 +49,23 @@ permalink: /pricing/
           <div class="text-left neosans " id="platformHead">Choose Platform</div>
           <ul class="ak-checkbox-pannel small-font" id="platformZone">
             <li class="col-md-6 col-sm-6 platforms" id="android-input-li" data-selected="no" data-value="android">
-                <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <input type="hidden" name="os-android" class="os-input" value="0"/>
               <div class="ak-cb-title">Android</div>
             </li>
             <li class="col-md-6 col-sm-6 platforms" id="windows-input-li" data-selected="no" data-value="windows">
               <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <input type="hidden" name="os-windows" class="os-input" value="0"/>
               <div class="ak-cb-title">Windows</div>
             </li>
             <li class="col-md-6 col-sm-6 platforms" id="ios-input-li" data-selected="no" data-value="ios">
               <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <input type="hidden" name="os-ios" class="os-input" value="0"/>
               <div class="ak-cb-title">iOS</div>
             </li>
             <li class="col-md-6 col-sm-6 platforms" id="wearables-input-li" data-selected="no" data-value="wearables">
               <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
+              <input type="hidden" name="os-wearables" class="os-input" value="0"/>
               <div class="ak-cb-title">Wearables</div>
             </li>
             <li class="clearfix"></li>
@@ -157,6 +164,7 @@ permalink: /pricing/
         </div>
       </li>
       <li class="clearfix"></li>
+    </form>
     </ul>
     <ul class="marginTop">
         <li class="small-font gray-a text-center">For any queries regarding pricing, reach us at- <a class="gray-7" href="mailto:pricing@appknox.com">pricing@appknox.com</a></li>

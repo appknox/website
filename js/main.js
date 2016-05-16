@@ -942,6 +942,8 @@ PricingManager.prototype.init = function(){
 		_this.bindMinusOneClick();
 		_this.bindPlatformClick();
 		_this.adjustPricePlan();
+		_this.resgisterPlaceOrderClick();
+		_this.resgisterSubmitOrderClick();
 
 	})
 }
@@ -958,17 +960,17 @@ PricingManager.prototype.gatherInitData = function(){
 	this.basePrice = this.inputBox.attr("data-base-price");
 	this.annualFactor = this.inputBox.attr("data-annual-factor");
 	this.deltaPriceMinus = this.inputBox.attr("data-delta-minus");;
-	this.gatherPlatformsData();
   this.activateQuantityGroup(_this);
 	//subscribe app count Changes
   this.subscribeAppCount(_this.activateQuantityGroup);
 	this.subscribeAppCount(_this.resetPlatformsOnInvalid);
 	this.subscribeAppCount(_this.adjustPricePlan);
-
+	this.subscribeAppCount(_this.setNumAppFormInput);
 }
 
-PricingManager.prototype.gatherPlatformsData = function(){
-
+PricingManager.prototype.setNumAppFormInput = function(_this){
+	_this = _this || this;
+	$("#app-count-input").val(_this.noOfApps);
 }
 
 PricingManager.prototype.bindPlusOneClick = function(){
@@ -1123,12 +1125,14 @@ PricingManager.prototype.activatePlatform = function(element){
   var ele = $(element);
 	ele.addClass("active");
 	ele.attr("data-seleceted","yes");
+	ele.find(".os-input").val("1");
 }
 
 PricingManager.prototype.deactivatePlatform = function(element){
   var ele = $(element);
 	ele.removeClass("active");
 	ele.attr("data-seleceted","no");
+	ele.find(".os-input").val("0");
 }
 
 PricingManager.prototype.resetPlatformsOnInvalid = function(_this){
@@ -1210,8 +1214,142 @@ PricingManager.prototype.adjustFinalPrice = function(){
 	annualZone.html("$" + annualPrice);
 	annualSumSave.html("$" + annualSave);
 
-
 }
+
+PricingManager.prototype.appendPricingInputs = function(form){
+	var dynamicClass = "added-input-dynamically";
+
+	form.find("." + dynamicClass).remove();
+
+	$("#pricingForm input").each(function(){
+		debugger;
+		var clone = $(this).clone();
+		var value = $(this).val();
+		clone.val(value);
+	  clone.addClass(dynamicClass);
+		clone.attr("id","");
+		debugger;
+		if(clone.length == 1){
+			form.append(clone[0]);
+		}
+
+	});
+}
+
+PricingManager.prototype.resgisterPlaceOrderClick = function(){
+	var _this = this;
+	$("#placeOrder").unbind("click",_this.onPlaceOrderClick).bind("click",{that:_this},_this.onPlaceOrderClick);
+}
+
+PricingManager.prototype.onPlaceOrderClick = function(ev){
+  var _this = ev.data.that;
+
+	$("#placeOrderMsgBox").html("");
+
+	$.fancybox("#place-order-box", {
+			'autoResize': true,
+			'autoSize': true,
+			'maxHeight': "100%",
+			'autoCenter': true,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
+	});
+}
+
+PricingManager.prototype.resgisterSubmitOrderClick = function(){
+	var _this = this;
+	$("#submit-order-button").unbind("click",_this.onSubmitOrderClick).bind("click",{that:_this},_this.onSubmitOrderClick);
+}
+
+PricingManager.prototype.orderFormValidateRules = {
+	rules: {
+		"name": {
+			required: true,
+			maxlength: 40,
+		},
+		"email": {
+			required: true,
+			maxlength: 90,
+			email: true
+		},
+
+	},
+	errorPlacement: function(error, element) {
+		var errorEleId = "#" + element.attr("name") + "-sumbit-order-error"
+		var errorBox = null;
+		$(errorEleId).children().remove(); //removing if already outputed error from  backend
+		errorBox = $("<div class='mp-dynamic-error' />");
+		errorBox.fadeOut(200, function() {
+			showError()
+		});
+		$(errorEleId).append(errorBox);
+
+		function showError() {
+			errorBox.append(error);
+			errorBox.fadeIn(200);
+		}
+	},
+	messages: {
+		"name": {
+			required: "Name is required",
+			maxlength: "Maximum 50 characters allowed"
+		},
+		"email": {
+			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+	}
+}
+
+
+PricingManager.prototype.onSubmitOrderClick = function(ev){
+		var _this = ev.data.that;
+		ev.preventDefault();
+		var form = $("#place-order-form");
+
+		_this.appendPricingInputs(form);
+		form.validate(_this.orderFormValidateRules);
+		var isValid = form.valid();
+
+		if(!isValid){
+					return;
+		}
+
+		$("#placeOrderMsgBox").html(getProcessingHtml());
+
+		var serializeData = form.serialize();
+		var url = HAWKINS_ENDURL + "appknox-place-order";
+		var method = form.attr("method");
+
+		var option = {
+			url : url,
+			method : method,
+			data : serializeData,
+			asyn : true,
+			error : errorCallback,
+			success : successCallback
+		}
+
+		var xhr = $.ajax(option);
+
+		function errorCallback(jqXHR, err, errException){
+				$("#placeOrderMsgBox").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+		}
+
+		function successCallback(resData){
+				if(resData.status === "success"){
+						$("#placeOrderMsgBox").removeClass("red").addClass(green).html(resData.data.message);
+						form.disable();
+				}else{
+						$("#placeOrderMsgBox").html(resData.data.message);
+				}
+		}
+}
+
+
 
 var pricingManager = new PricingManager();
 pricingManager.init();
