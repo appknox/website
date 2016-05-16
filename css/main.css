@@ -1541,11 +1541,21 @@ input[type=email],input[type=text]{
   text-align: center;
 }
 
-/* Landing Pages Style*/
+/* Landing Pages Style */
 .lp-list img{
   width:40px;
   height:40px;
   margin-right:20px;
+  margin-top:4px;
+}
+
+.lp-list li{
+  margin-top:20px;
+}
+
+.lp-list li>p{
+  width: 80%;
+  vertical-align: top;
 }
 
 .lp-col-content .title{
@@ -1556,6 +1566,14 @@ input[type=email],input[type=text]{
 
 .lp-col-content .desc-text{
   text-align: justify;
+}
+
+#lpForm1Container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #EBEBEB;
+  margin-bottom: 60px;
+  margin-top:20px;
 }
 
 /* End of Landing Pages Style*/
