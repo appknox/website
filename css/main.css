@@ -924,7 +924,7 @@ p {
   display: nne
 }
 
-input[type=email],input[type=text]{
+input[type=email],input[type=text],input[type=url]{
   background: #f8f8f8;
   border: none;
   margin: 3px auto 0px;
