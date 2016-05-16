@@ -1540,3 +1540,22 @@ input[type=email],input[type=text]{
 .slide-img-zone {
   text-align: center;
 }
+
+/* Landing Pages Style*/
+.lp-list img{
+  width:40px;
+  height:40px;
+  margin-right:20px;
+}
+
+.lp-col-content .title{
+  margin:35px 0 15px;
+  font-family: neosans;
+  text-align: center;
+}
+
+.lp-col-content .desc-text{
+  text-align: justify;
+}
+
+/* End of Landing Pages Style*/
