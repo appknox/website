@@ -1354,7 +1354,7 @@ PricingManager.prototype.onSubmitOrderClick = function(ev){
 
 		function successCallback(resData){
 				if(resData.status === "success"){
-						$("#placeOrderMsgBox").removeClass("red").addClass(green).html(resData.data.message);
+						$("#placeOrderMsgBox").removeClass("red").addClass("green").html(resData.data.message);
 						form.disable();
 				}else{
 						$("#placeOrderMsgBox").html(resData.data.message);
@@ -1591,7 +1591,7 @@ function sendSubsribeForm(ev){
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#email-su-error").removeClass("red").addClass(green).html(resData.data.message);
+					$("#email-su-error").removeClass("red").addClass("green").html(resData.data.message);
 					form.disable();
 			}else{
 					$("#email-su-error").html(resData.data.message);
@@ -1732,7 +1732,7 @@ function sendDemoForm(ev){
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#messageBoxDemo").removeClass("red").addClass(green).html(resData.data.message);
+					$("#messageBoxDemo").removeClass("red").addClass("green").html(resData.data.message);
 					form.disable();
 			}else{
 					$("#messageBoxDemo").html(resData.data.message);
@@ -1877,7 +1877,7 @@ function sendBulkOrderForm(ev){
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#messageBoxBulk").removeClass("red").addClass(green).html(resData.data.message);
+					$("#messageBoxBulk").removeClass("red").addClass("green").html(resData.data.message);
 					form.disable();
 			}else{
 					$("#messageBoxBulk").html(resData.data.message);
@@ -1986,7 +1986,7 @@ function sendLandingPageForm1(ev){
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#lpForm1MsgBox").removeClass("red").addClass(green).html(resData.data.message);
+					$("#lpForm1MsgBox").removeClass("red").addClass("green").html(resData.data.message);
 					form.disable();
 			}else{
 					$("#lpForm1MsgBox").html(resData.data.message);
