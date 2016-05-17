@@ -1025,7 +1025,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 		resizeBox();
 	});
 
-	$(document).ready(function(){
+	$(window).resize(function(){
 		resizeBox();
 	});
 
@@ -1033,8 +1033,8 @@ PricingManager.prototype.resizeMiddleBox = function(){
 		var winWidth = $(document).width();
 		var middleCol = $("#pricingInterMiddle");
 		var boxHeight = $("#pricingZoneBox").height();
-
-    if(winWidth > 760 && middleCol.height() < boxHeight){
+		
+    if(winWidth > 760 && middleCol.height() <= boxHeight){
 					middleCol.height(boxHeight);
 		}else{
 					middleCol.css("height","auto");
