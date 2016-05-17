@@ -1144,7 +1144,11 @@ input[type=email],input[type=text],input[type=url]{
   color: #333
 }
 .faq-answer {
-  display: none
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 25px
+
 }
 .red-border-button {
   border: 1px solid #f17758;
