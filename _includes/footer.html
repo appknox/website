@@ -82,6 +82,7 @@
 <div class=" text-center" id="cuform" style="display:none">
   <div class="col-md-12">
     <h4 class="form-title neosans-40">We Would Love to Hear From You</h4>
+    <div id="messageBoxCU" class="neosans"> </div>
   </div>
   <div class="col-md-3" id="hello-zone-cu">
     <p>hello@appknox.com</p>
@@ -95,8 +96,7 @@
   </div>
   <div class="col-md-9">
   <div id="contact-form-holder">
-    <div id="messageBoxCU" class="neosans"> </div>
-    <form id="ak-contact-from" method="post">
+    <form id="ak-contact-from" method="post" data-attr-submitted = "no">
       <fieldset class="form-group col-md-6 col-sm-6">
         <div id="name-cu-error" class="cu-form-eorror red"></div>
         <input type="text" class="form-control" name="name" placeholder="Full Name">
@@ -119,17 +119,17 @@
       </fieldset>
       <div class="clearfix"></div>
       <ul class="ak-checkbox-pannel" id="cu-ak-checkbox-pannel">
-        <li class="col-md-4 col-sm-6" id="purchase-input-li"  data-selected="no">
+        <li class="col-md-4 col-sm-6 radio-apk" id="purchase-input-li"  data-selected="no">
           <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Purchase</div>
           <input name="purchase" id="purchase-input" type="hidden" value="0" />
         </li>
-        <li class="col-md-4 col-sm-6"  id="collaborate-input-li" data-selected="no">
+        <li class="col-md-4 col-sm-6  radio-apk"  id="collaborate-input-li" data-selected="no">
           <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Collaborate</div>
           <input name="collaborate" id="collaborate-input" type="hidden" value="0" />
         </li>
-        <li class="col-md-4 col-sm-6" id="talk-to-us-input-li" data-selected="no">
+        <li class="col-md-4 col-sm-6 radio-apk" id="talk-to-us-input-li" data-selected="no">
           <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
           <div class="ak-cb-title">Enquire</div>
           <input name="talk" id="talk-input" type="hidden" value="0" />
@@ -152,8 +152,8 @@
 
 <div id="request-demo-box" class="gen-form text-center maxWidth450" style="display:none">
   <h3 class="neosans text-center bottom-border gray-5">Request Demo</h3>
-  <div id="messageBoxDemo" class="neosans"> </div>
-  <form id="request-demo-form" method="post">
+  <div id="messageBoxDemo" class="neosans marginTop"> </div>
+  <form id="request-demo-form" method="post" data-attr-submitted = "no">
     <fieldset class="form-group col-md-12">
       <div id="name-ds-error" class="cu-form-eorror red"></div>
       <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
@@ -183,8 +183,8 @@
 
 <div id="bulk-orders-box" class="gen-form text-center maxWidth450" style="display:none">
   <h3 class="neosans text-center bottom-border gray-5">Bulk Orders</h3>
-  <div id="messageBoxBulk" class="neosans"> </div>
-  <form id="bulk-order-form" method="post">
+  <div id="messageBoxBulk" class="neosans marginTop"> </div>
+  <form id="bulk-order-form" method="post" data-attr-submitted = "no">
     <fieldset class="form-group col-md-12">
       <div id="name-bulk-error" class="cu-form-eorror red"></div>
       <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
@@ -222,8 +222,8 @@
 
 <div id="place-order-box" class="gen-form text-center maxWidth450" style="display:none">
   <h3 class="neosans text-center bottom-border gray-5">Place Order</h3>
-  <div id="placeOrderMsgBox" class="neosans"> </div>
-  <form id="place-order-form" method="post">
+  <div id="placeOrderMsgBox" class="neosans marginTop"> </div>
+  <form id="place-order-form" method="post" data-attr-submitted = "no">
     <fieldset class="form-group col-md-12">
       <div id="name-sumbit-order-error" class="cu-form-eorror red"></div>
       <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
