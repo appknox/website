@@ -1147,7 +1147,8 @@ input[type=email],input[type=text],input[type=url]{
   display: none;
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 25px
+  padding-left: 25px;
+  text-align: justify;
 
 }
 .red-border-button {
