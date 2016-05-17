@@ -1631,14 +1631,20 @@ var demoFormValidateRules = {
 	rules: {
 		"name": {
 			required: true,
-			maxlength: 40,
+			maxlength: 90
 		},
 		"email": {
 			required: true,
-			maxlength: 90,
-			email: true
+			maxlength: 90
 		},
-
+		"company": {
+			required: true,
+			maxlength: 90
+		},
+		"jobtitle": {
+			required: true,
+			maxlength: 90
+		},
 	},
 	errorPlacement: function(error, element) {
 		var errorEleId = "#" + element.attr("name") + "-ds-error"
@@ -1657,12 +1663,20 @@ var demoFormValidateRules = {
 	},
 	messages: {
 		"name": {
-			required: "Name is required",
-			maxlength: "Maximum 50 characters allowed"
+			required: "Full Name is required",
+			maxlength: "Maximum 90 characters allowed"
 		},
 		"email": {
 			required: "Email is required",
 			maxlength: "Email maximum length 90"
+		},
+		"company": {
+			required: "Company is required",
+			maxlength: "Company maximum length 90"
+		},
+		"jobtitle": {
+			required: "Job Title is required",
+			maxlength: "Job Title maximum length 90"
 		},
 	}
 }
@@ -1683,7 +1697,7 @@ function sendDemoForm(ev){
 	$("#messageBoxDemo").html(getProcessingHtml());
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "appknox-demo-subscribe";
+	var url = HAWKINS_ENDURL + "appknox-demo-signup";
 	var method = form.attr("method");
 
 	var option = {
