@@ -64,7 +64,6 @@ MenuManager.prototype.positionDropMenu = function(){
 		offsetTop = document.body.scrollTop || document.documentElement.scrollTop;
 	}
 
-	offsetTop = -offsetTop + headerHeight;
 	this.dropMenus.css("top",offsetTop);
 }
 
