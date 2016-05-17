@@ -72,6 +72,7 @@ MenuManager.prototype.positionDropMenu = function(){
 	}
 
 	offsetTop = -offsetTop + headerHeight + marginTop;
+
 	this.dropMenus.css("top",offsetTop);
 }
 
@@ -2067,8 +2068,6 @@ function sendLandingPageForm1(ev){
 function bindLandingPageForm1(){
 	$("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
 }
-
-
 
 
 
