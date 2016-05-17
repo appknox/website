@@ -2,6 +2,11 @@
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
+var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
+var SUBMIT_ERROR_MSG = "<i class='fa fa-check-square' aria-hidden='true'></i> Sorry! Form submission failed";
+var SUBMITTED_NO = "no";
+var FORM_SUBMITTED_YES = "yes";
+var FORM_SUBMITTING = "processing";
 
 ////////////////////////////////////////////////////////////////
 //Commonly used functions
@@ -1242,7 +1247,11 @@ PricingManager.prototype.resgisterPlaceOrderClick = function(){
 PricingManager.prototype.onPlaceOrderClick = function(ev){
   var _this = ev.data.that;
 
-	$("#placeOrderMsgBox").html("");
+	var formStatus = $("#place-order-form").attr("data-attr-submitted");
+
+	if(formStatus === SUBMITTED_NO){
+		$("#placeOrderMsgBox").html("");
+	}
 
 	$.fancybox("#place-order-box", {
 			'autoResize': true,
@@ -1347,17 +1356,23 @@ PricingManager.prototype.onSubmitOrderClick = function(ev){
 		}
 
 		var xhr = $.ajax(option);
+		form.slideUp(300);
+		form.attr("data-attr-submitted",FORM_SUBMITTING);
 
 		function errorCallback(jqXHR, err, errException){
-				$("#placeOrderMsgBox").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+				$("#placeOrderMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+				form.attr("data-attr-submitted",SUBMITTED_NO);
+				form.slideDown(300);
 		}
 
 		function successCallback(resData){
 				if(resData.status === "success"){
-						$("#placeOrderMsgBox").removeClass("red").addClass("green").html(resData.data.message);
-						form.disable();
+						$("#placeOrderMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+						form.attr("data-attr-submitted", FORM_SUBMITTED_YES);
 				}else{
-						$("#placeOrderMsgBox").html(resData.data.message);
+						$("#placeOrderMsgBox").html(SUBMIT_ERROR_MSG);
+						form.attr("data-attr-submitted",SUBMITTED_NO);
+						form.slideDown(300);
 				}
 		}
 }
@@ -1382,16 +1397,22 @@ function fancyConfirm(msg, options, callback) {
 ///////////////////////////////////////////////////////////////////////////////////////
 // Contact Us form with Fancybox
 function fancyContactForm() {
-    $.fancybox("#cuform", {
-				'autoResize': true,
-				'autoSize': true,
-				'maxHeight': "100%",
-				'autoCenter': true,
-				helpers: {
-					overlay: {
-						locked: false
-					}
-				},
+	var formStatus = $("#ak-contact-from").attr("data-attr-submitted");
+
+	if(formStatus === SUBMITTED_NO){
+		$("#messageBoxCU").html("");
+	}
+
+  $.fancybox("#cuform", {
+			'autoResize': true,
+			'autoSize': true,
+			'maxHeight': "100%",
+			'autoCenter': true,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			},
     });
 }
 
@@ -1503,17 +1524,23 @@ function sendContactForm(ev){
 	}
 
 	var xhr = $.ajax(option);
+	$("#messageBoxCU").removeClass("red").addClass("green").html(getProcessingHtml());
+	form.slideUp(300);
+	form.attr("data-attr-submitted",FORM_SUBMITTING);
 
 	function errorCallback(jqXHR, err, errException){
-			$("#messageBoxCU").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+			$("#messageBoxCU").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+			form.slideDown(300);
 	}
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#messageBoxCU").removeClass("red").addClass("green").html(resData.data.message);
-					form.fadeOut();
+					$("#messageBoxCU").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+					form.attr("data-attr-submitted",FORM_SUBMITTED_YES);
 			}else{
 					$("#messageBoxCU").removeClass("green").addClass("red").html(resData.data.message);
+					form.attr("data-attr-submitted",SUBMITTED_NO);
+					form.slideDown(300);
 			}
 	}
 }
@@ -1584,17 +1611,22 @@ function sendSubsribeForm(ev){
 	}
 
 	var xhr = $.ajax(option);
+	form.attr("data-attr-submitted",FORM_SUBMITTING);
+	form.fadeOut(300);
 
 	function errorCallback(jqXHR, err, errException){
-			$("#email-su-error").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+			$("#email-su-error").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+			form.attr("data-attr-submitted",SUBMITTED_NO);
 	}
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#email-su-error").removeClass("red").addClass("green").html(resData.data.message);
-					form.disable();
+					$("#email-su-error").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+					form.attr("data-attr-submitted",FORM_SUBMITTED_YES);
 			}else{
-					$("#email-su-error").html(resData.data.message);
+					$("#email-su-error").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+					form.attr("data-attr-submitted",SUBMITTED_NO);
+					form.slideDown(300);
 			}
 	}
 }
@@ -1625,8 +1657,11 @@ function activateDivCheckBox(){
 ///////////////////////////////////////////////////////////////////////////////////////
 // Request Demo form with Fancybox
 function fancyRequestDemoForm() {
+		var formStatus = $("#request-demo-form").attr("data-attr-submitted");
 
-		$("#messageBoxDemo").html("");
+		if(formStatus === SUBMITTED_NO){
+			$("#messageBoxDemo").html("");
+		}
 
     $.fancybox("#request-demo-box", {
 				'autoResize': true,
@@ -1709,7 +1744,10 @@ function sendDemoForm(ev){
 		return;
 	}
 
-	$("#messageBoxDemo").html(getProcessingHtml());
+	var msgBox = $("#messageBoxDemo");
+
+	msgBox.html(getProcessingHtml());
+	form.slideUp(300);
 
 	var serializeData = form.serialize();
 	var url = HAWKINS_ENDURL + "appknox-demo-signup/1029041/u8hu7c";
@@ -1725,17 +1763,20 @@ function sendDemoForm(ev){
 	}
 
 	var xhr = $.ajax(option);
+	form.attr("data-attr-submitted",FORM_SUBMITTING);
 
 	function errorCallback(jqXHR, err, errException){
-			$("#messageBoxDemo").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+			msgBox.removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+			form.slideDown(300);
 	}
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#messageBoxDemo").removeClass("red").addClass("green").html(resData.data.message);
-					form.disable();
+					msgBox.removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+					form.attr("data-attr-submitted",FORM_SUBMITTED_YES);
 			}else{
-					$("#messageBoxDemo").html(resData.data.message);
+					msgBox.removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+					form.slideDown(300);
 			}
 	}
 }
@@ -1760,8 +1801,11 @@ $(document).ready(function() {
 ///////////////////////////////////////////////////////////////////////////////////////
 // Bulk Order form with Fancybox
 function fancyBulkOrderForm() {
+	var formStatus = $("#bulk-order-form").attr("data-attr-submitted");
 
+	if(formStatus === SUBMITTED_NO){
 		$("#messageBoxBulk").html("");
+	}
 
     $.fancybox("#bulk-orders-box", {
 				'autoResize': true,
@@ -1870,17 +1914,23 @@ function sendBulkOrderForm(ev){
 	}
 
 	var xhr = $.ajax(option);
+	form.attr("data-attr-submitted",FORM_SUBMITTING);
+	form.slideUp(300);
 
 	function errorCallback(jqXHR, err, errException){
 			$("#messageBoxBulk").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+			form.attr("data-attr-submitted",SUBMITTED_NO);
+			form.slideDown(300);
 	}
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#messageBoxBulk").removeClass("red").addClass("green").html(resData.data.message);
-					form.disable();
+					$("#messageBoxBulk").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+					form.attr("data-attr-submitted",FORM_SUBMITTED_YES);
 			}else{
-					$("#messageBoxBulk").html(resData.data.message);
+					$("#messageBoxBulk").html(SUBMIT_ERROR_MSG);
+					form.attr("data-attr-submitted",SUBMITTED_NO);
+					form.slideDown(300);
 			}
 	}
 }
@@ -1979,17 +2029,20 @@ function sendLandingPageForm1(ev){
 	}
 
 	var xhr = $.ajax(option);
+	form.find("input,textarea").attr("disabled",true);
 
 	function errorCallback(jqXHR, err, errException){
-			$("#lpForm1MsgBox").removeClass("green").addClass("red").html("Some error occurred while submitting the form");
+			$("#lpForm1MsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+			form.find("input,textarea").removeAttr("disabled");
 	}
 
 	function successCallback(resData){
 			if(resData.status === "success"){
-					$("#lpForm1MsgBox").removeClass("red").addClass("green").html(resData.data.message);
-					form.disable();
+					$("#lpForm1MsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+					form.find("input,textarea").attr("disabled",true);
 			}else{
-					$("#lpForm1MsgBox").html(resData.data.message);
+					$("#lpForm1MsgBox").html(SUBMIT_ERROR_MSG);
+					form.find("input,textarea").removeAttr("disabled");
 			}
 	}
 }
