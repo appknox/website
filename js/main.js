@@ -1612,6 +1612,7 @@ function sendSubsribeForm(ev){
 
 	var xhr = $.ajax(option);
 	form.attr("data-attr-submitted",FORM_SUBMITTING);
+	$("#email-su-error").removeClass("red").addClass("green").html(getProcessingHtml());
 	form.find("input").fadeOut(300);
 
 	function errorCallback(jqXHR, err, errException){
