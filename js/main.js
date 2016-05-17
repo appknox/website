@@ -57,6 +57,13 @@ MenuManager.prototype.isHeaderFixed = function(){
 
 MenuManager.prototype.positionDropMenu = function(){
 	var headerTop = this.getHeaderOffsetTop();
+	var marginTop = this.header.css("margin-top");
+	marginTop = (parseInt(marginTop));
+
+	if(!marginTop){
+			marginTop = 0;
+	}
+
 	var headerHeight = this.getHeaderHeight();
 	var offsetTop = 0;
 
@@ -64,7 +71,7 @@ MenuManager.prototype.positionDropMenu = function(){
 		offsetTop = document.body.scrollTop || document.documentElement.scrollTop;
 	}
 
-	offsetTop = -offsetTop + headerHeight + headerTop;
+	offsetTop = -offsetTop + headerHeight + marginTop;
 	this.dropMenus.css("top",offsetTop);
 }
 
