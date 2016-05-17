@@ -144,6 +144,10 @@ ul, li {
   margin-top: 20px
 }
 
+.maxWidth450{
+  max-width:450px;
+}
+
 .midsize-container {
   width: 95%;
   padding: 0 2.5%;
@@ -624,7 +628,7 @@ p {
   margin-left: 15px;
 }
 .form-title {
-  font-size: 1.1em;
+  font-size: 1.1em;l ser
   padding-bottom: 3px;
   border-bottom: 1px solid #ccc;
   display: inline-block;
@@ -1139,12 +1143,7 @@ input[type=email],input[type=text],input[type=url]{
   color: #333
 }
 .faq-answer {
-  display: none;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 25px;
-  text-align: justify;
-  font-size: 18px;
+  display: none
 }
 .red-border-button {
   border: 1px solid #f17758;
