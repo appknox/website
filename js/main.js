@@ -1033,7 +1033,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 		var winWidth = $(document).width();
 		var middleCol = $("#pricingInterMiddle");
 		var boxHeight = $("#pricingZoneBox").height();
-		
+
     if(winWidth > 760 && middleCol.height() <= boxHeight){
 					middleCol.height(boxHeight);
 		}else{
@@ -1266,14 +1266,21 @@ PricingManager.prototype.orderFormValidateRules = {
 	rules: {
 		"name": {
 			required: true,
-			maxlength: 40,
+			maxlength: 90,
 		},
 		"email": {
 			required: true,
 			maxlength: 90,
 			email: true
 		},
-
+		"company": {
+			required: true,
+			maxlength: 90,
+		},
+		"jobtitle": {
+			required: true,
+			maxlength: 90,
+		},
 	},
 	errorPlacement: function(error, element) {
 		var errorEleId = "#" + element.attr("name") + "-sumbit-order-error"
@@ -1293,10 +1300,18 @@ PricingManager.prototype.orderFormValidateRules = {
 	messages: {
 		"name": {
 			required: "Name is required",
-			maxlength: "Maximum 50 characters allowed"
+			maxlength: "Maximum 90 characters allowed"
 		},
 		"email": {
 			required: "Email is required",
+			maxlength: "Email maximum length 90"
+		},
+		"company": {
+			required: "Company is required",
+			maxlength: "Email maximum length 90"
+		},
+		"jobtitle": {
+			required: "Job Title is required",
 			maxlength: "Email maximum length 90"
 		},
 	}
@@ -1319,7 +1334,7 @@ PricingManager.prototype.onSubmitOrderClick = function(ev){
 		$("#placeOrderMsgBox").html(getProcessingHtml());
 
 		var serializeData = form.serialize();
-		var url = HAWKINS_ENDURL + "appknox-place-order";
+		var url = HAWKINS_ENDURL + "appknox-place-order/1029041/u8hzz6";
 		var method = form.attr("method");
 
 		var option = {
@@ -1697,7 +1712,7 @@ function sendDemoForm(ev){
 	$("#messageBoxDemo").html(getProcessingHtml());
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "appknox-demo-signup";
+	var url = HAWKINS_ENDURL + "appknox-demo-signup/1029041/u8hu7c";
 	var method = form.attr("method");
 
 	var option = {
@@ -1773,7 +1788,18 @@ var bulkFormValidateRules = {
 			maxlength: 90,
 			email: true
 		},
-
+		"company": {
+			required: true,
+			maxlength: 90
+		},
+		"jobtitle": {
+			required: true,
+			maxlength: 90
+		},
+		"numapp": {
+			required: true,
+			digits: true,
+		}
 	},
 	errorPlacement: function(error, element) {
 		var errorEleId = "#" + element.attr("name") + "-bulk-error"
@@ -1799,6 +1825,19 @@ var bulkFormValidateRules = {
 			required: "Email is required",
 			maxlength: "Email maximum length 90"
 		},
+		"company": {
+			required: "Company is required",
+			maxlength: "Company maximum length 90"
+		},
+		"jobtitle": {
+			required: "Job Title is required",
+			maxlength: "Job Title maximum length 90"
+		},
+		"numapp": {
+			required: "Number of apps is required",
+			maxlength: "Job Title maximum length 90",
+			digits: "Only numeric values"
+		},
 	}
 }
 
@@ -1818,7 +1857,7 @@ function sendBulkOrderForm(ev){
 	$("#messageBoxBulk").html(getProcessingHtml());
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "appknox-bulk-order";
+	var url = HAWKINS_ENDURL + "appknox-bulk-order/1029041/u8h9no";
 	var method = form.attr("method");
 
 	var option = {
