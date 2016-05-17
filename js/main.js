@@ -64,7 +64,7 @@ MenuManager.prototype.positionDropMenu = function(){
 		offsetTop = document.body.scrollTop || document.documentElement.scrollTop;
 	}
 
-	offsetTop = -offsetTop + headerHeight + headerTop;
+	offsetTop = -offsetTop + headerHeight;
 	this.dropMenus.css("top",offsetTop);
 }
 
@@ -2060,8 +2060,6 @@ function sendLandingPageForm1(ev){
 function bindLandingPageForm1(){
 	$("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
 }
-
-
 
 
 
