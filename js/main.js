@@ -1905,17 +1905,12 @@ var landinPageForm1ValidateRules = {
 			maxlength: 90,
 			email: true
 		},
-		"phone": {
-			required: true,
-			maxlength: 20,
-		},
 		"company":{
 			required: true,
 			maxlength: 40,
 		},
 		"app-url":{
-			required: true,
-			maxlength: 40,
+			maxlength: 100,
 			url:true,
 		}
 
@@ -1944,16 +1939,11 @@ var landinPageForm1ValidateRules = {
 			required: "Email is required",
 			maxlength: "Email maximum length 90"
 		},
-		"phone": {
-			required: "Phone is required",
-			maxlength: "Phone maximum length 90"
-		},
 		"company": {
 			required: "Company is required",
 			maxlength: "Company maximum length 90"
 		},
 		"app-url":{
-			required: "App URL is required",
 			maxlength: "300",
 			url: "Please enter a valid URL"
 		}
@@ -1976,7 +1966,7 @@ function sendLandingPageForm1(ev){
 	$("#lpForm1MsgBox").html(getProcessingHtml());
 
 	var serializeData = form.serialize();
-	var url = HAWKINS_ENDURL + "appknox-lp-form-1";
+	var url = HAWKINS_ENDURL + "appknox-lp-form-1/1029041/u8hakm";
 	var method = form.attr("method");
 
 	var option = {
