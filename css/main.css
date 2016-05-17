@@ -484,6 +484,7 @@ p {
   color:#fff;
   cursor:pointer;
   font-family: neosans;
+  margin-bottom: 30px;
 }
 
 .button-red:hover{
