@@ -1612,21 +1612,23 @@ function sendSubsribeForm(ev){
 
 	var xhr = $.ajax(option);
 	form.attr("data-attr-submitted",FORM_SUBMITTING);
-	form.fadeOut(300);
+	form.find("input").fadeOut(300);
 
 	function errorCallback(jqXHR, err, errException){
 			$("#email-su-error").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
 			form.attr("data-attr-submitted",SUBMITTED_NO);
+			form.find("input").fadeIn(300);
 	}
 
 	function successCallback(resData){
 			if(resData.status === "success"){
 					$("#email-su-error").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
 					form.attr("data-attr-submitted",FORM_SUBMITTED_YES);
+					form.find("input").fadeOut(300);
 			}else{
 					$("#email-su-error").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
 					form.attr("data-attr-submitted",SUBMITTED_NO);
-					form.slideDown(300);
+					form.find("input").fadeOut(300);
 			}
 	}
 }
