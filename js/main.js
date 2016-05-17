@@ -1642,14 +1642,19 @@ function activateDivCheckBox(){
 			var isActive = $(target).hasClass("active");
 			var idFirstSegment = $(target).attr("id").split("-")[0];
 			var inputValue = "0";
+			var isRadio = $(target).hasClass("radio-apk");
+
+			$(target).parent().find("li.radio-apk").removeClass("active");
+			$(target).parent().find("li.radio-apk input").attr("value","0")
 
 			if(isActive){
 					inputValue = "0";
+					$(target).removeClass("active");
 			}else{
 					inputValue = "1";
+					$(target).addClass("active");
 			}
 
-			$(target).toggleClass("active");
 			$("#" + idFirstSegment + "-input").attr("value",inputValue);
 	}
 }
