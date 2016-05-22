@@ -52,9 +52,9 @@ mixpanel.init("f16cc690670dac16e2f51553c42775a1");</script><!-- end Mixpanel -->
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "name": "Appknox - Security zen as a service",
-      "alternateName": "Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market",
-      "url": "https://www.appknox.com",
+      "name": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
+      "alternateName": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines}}{% else %}{{ site.description }}{% endif %}",
+      "url": "{{page.url | prepend: site.baseurl}}",
       "logo": "https://www.appknox.com/img/logo.png",
       "sameAs": [
         "https://www.facebook.com/appknox",
