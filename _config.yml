@@ -11,7 +11,7 @@ email: sunny@appknox.com
 description: > # this means to ignore newlines until "baseurl:"
   Appknox detects & addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market higher productivity 360° mobile security
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.appknox.com" # the base hostname & protocol for your site
+url: "https://www.appknox.com" # the base hostname & protocol for your site
 twitter_username: appknox
 github_username:  appknox
 
