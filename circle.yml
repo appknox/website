@@ -10,9 +10,9 @@ dependencies:
 
 test:
   pre:
-    bundle exec jekyll build
-    bundle exec rake minify
+    - bundle exec jekyll build
+    - bundle exec rake minify
   override:
-    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --check-favicon --enforce-https --check-html 
+    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --check-favicon --enforce-https --check-html
   post:
     - coveralls -v
