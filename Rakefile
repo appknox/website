@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'reduce'
+require 'coveralls'
+Coveralls.wear!
 
 desc 'Deploy to Github Pages'
 task :deploy do
