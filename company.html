@@ -11,11 +11,7 @@ permalink: /company/
            We’re a community of ethical hackers <br> dedicated to unmatched mobile app security
       </p>
     </div>
-    <p>
-        <h1 class="gills-30 red">
-        #Proactive Always
-        </h1>
-    </p>
+    <h1 class="gills-30 red">#Proactive Always</h1>
   </div>
   <div class="gray-a trans-black-bg" id="mission-zone">
     <ul class="container ">
@@ -107,7 +103,7 @@ permalink: /company/
         {% for member in site.data.members %}
         <li class="member-data-zone">
           <div class="member-pic-zone">
-            <img src="{{member.gravatar}}" />
+            <img src="{{member.gravatar}}" alt="{{member.name}}"/>
           </div>
           <div class="member-name">{{member.name}}</div>
           <div class="member-title gray-6">{{member.title}}</div>
@@ -171,7 +167,7 @@ permalink: /company/
         Write to us if you want to be the part of this journey.
       </p>
       <p class="text-center">
-        <a href="mailto://team@appknox.com">team@appknox.com</a>
+        <a href="mailto:team@appknox.com">team@appknox.com</a>
       </p>
   </ul>
 </section>
@@ -189,7 +185,7 @@ permalink: /company/
         {% for advisor in site.data.advisors %}
         <li class="member-data-zone">
           <div class="member-pic-zone">
-            <img src="{{advisor.imgLink}}" />
+            <img src="{{advisor.img}}" alt="{{advisor.name}}" />
           </div>
           <div class="member-name">{{advisor.name}}</div>
           <div class="member-title">{{advisor.title}}</div>
@@ -216,14 +212,14 @@ permalink: /company/
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{pressInfo.imgLink}}" title="{{partner.title}}"/>
+            <img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/>
           </div>
         </li>
         {% endfor %}
       </ul>
     </li>
     <li>
-      <p class="text-center gray-8">Write to us at <a href="mailto://press@appknox.com">press@appknox.com</a></p>
+      <p class="text-center gray-8">Write to us at <a href="mailto:press@appknox.com">press@appknox.com</a></p>
     </li>
   </ul>
 </section>
@@ -244,14 +240,14 @@ permalink: /company/
         {% for partner in site.data.partners %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{partner.imgLink}}" title="{{partner.title}}"/>
+            <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
           </div>
         </li>
         {% endfor %}
       </ul>
     </li>
     <li>
-      <p class="text-center gray-8">Write to us at  <a href="mailto://patner@appknox.comm">patner@appknox.com</a></p>
+      <p class="text-center gray-8">Write to us at  <a href="mailto:patner@appknox.comm">patner@appknox.com</a></p>
     </li>
   </ul>
 </section>
@@ -267,7 +263,7 @@ permalink: /company/
         {% for supporter in site.data.supporters %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{supporter.imgLink}}" title="{{supporter.title}}"/>
+            <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}"/>
           </div>
         </li>
         {% endfor %}

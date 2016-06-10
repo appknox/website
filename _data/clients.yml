@@ -1,19 +1,20 @@
--  imgLink: /img/citrus.png
-
--  imgLink: /img/mobikwik.png
-
--  imgLink: /img/Zerodha.png
-
--  imgLink: /img/zoomcarlogo.jpg
-
--  imgLink: /img/bigbasket.png
-
--  imgLink: /img/timesinternet.png
-
--  imgLink: /img/paytm.png
-
--  imgLink: /img/redmart.png
-
--  imgLink: /img/dronahq.png
-
--  imgLink: /img/accessbanknigeria.png
+- img: /img/citrus.png
+  alt: CitrusPay
+- img: /img/mobikwik.png
+  alt: Mobikwik
+- img: /img/Zerodha.png
+  alt: Zerodha
+- img: /img/zoomcarlogo.jpg
+  alt: Zoomcar
+- img: /img/bigbasket.png
+  alt: BigBasket
+- img: /img/timesinternet.png
+  alt: Times Internet
+- img: /img/paytm.png
+  alt: Paytm
+- img: /img/redmart.png
+  alt: RedMart
+- img: /img/dronahq.png
+  alt: DronaHQ
+- img: /img/accessbanknigeria.png
+  alt: Acessbank PLC

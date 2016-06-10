@@ -6,28 +6,24 @@ permalink: /pricing/
 ---
 <section id="first-container">
   <div class="container ak-container text-center">
-    <p>
-      <h2> Sign Up Now For Complete Mobile Security </h2>
-    </p>
-    <p>
-        <h4 class="gray-8">Flexible Plans &nbsp;&nbsp;|&nbsp;&nbsp; Anytime Cancellation</h4>
-    </p>
+    <h2> Sign Up Now For Complete Mobile Security </h2>
+    <h4 class="gray-8">Flexible Plans &nbsp;&nbsp;|&nbsp;&nbsp; Anytime Cancellation</h4>
     <div class="horz-split-1x"><span></span></div>
   </div>
 </section>
 <section id="pricing-zone">
   <div class="container ak-container text-center">
+    <form id="pricingForm" action="" method="post">
+    <input type="hidden" name="pricing-version-num" class="os-input" value="encrypted"/>
     <ul id="pricingZoneBox">
-      <form id="pricingForm" action="" method="post">
-      <input type="hidden" name="pricing-version-num" class="os-input" value="encrypted"/>
       <li class="col-md-4 ">
           <div class="pricing-col-head">
               How many apps do <br> you want to scan?
           </div>
           <div id="selectNumberZone" class="">
-            <div id="appMinus" class="num-app-control"><img src="/img/minus.svg"/></div>
-            <div data-min="1" data-max="10" data-value="1" data-base-price="800" data-delta-minus="1" data-annual-factor="10" data-delta-price="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue"/>1</div>
-            <div id="appPlus" class="num-app-control"><img src="/img/plus.svg"/></div>
+            <div id="appMinus" class="num-app-control"><img data-proofer-ignore src="/img/minus.svg"/></div>
+            <div data-min="1" data-max="10" data-value="1" data-base-price="800" data-delta-minus="1" data-annual-factor="10" data-delta-price="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue">1</div>
+            <div id="appPlus" class="num-app-control"><img data-proofer-ignore src="/img/plus.svg"/></div>
             <input type="hidden" name="app-count" id="app-count-input" value="1"/>
           </div>
           <div>
@@ -164,8 +160,8 @@ permalink: /pricing/
         </div>
       </li>
       <li class="clearfix"></li>
-    </form>
     </ul>
+    </form>
     <ul class="marginTop">
         <li class="small-font gray-a text-center">For any queries regarding pricing, reach us at - <a class="gray-7" href="mailto:pricing@appknox.com">pricing@appknox.com</a></li>
     </ul>

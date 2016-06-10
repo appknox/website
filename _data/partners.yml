@@ -1,8 +1,8 @@
-- name: kuliza
-  imgLink: /img/kuliza.png
+- name: Kuliza
+  img: /img/kuliza.png
 
 - name: Straits Interactive
-  imgLink: /img/straitsInteractive.png
+  img: /img/straitsInteractive.png
 
 - name: TeskaLabs
-  imgLink: /img/teskalabs.png
+  img: /img/teskalabs.png
