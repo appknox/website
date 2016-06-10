@@ -1,5 +1,5 @@
 require "rubygems"
-require "Reduce"
+require "reduce"
 
 desc "Deploy to Github Pages"
 task :deploy do

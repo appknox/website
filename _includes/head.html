@@ -4,7 +4,7 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	  <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png">
@@ -102,7 +102,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1632023723704931');
 fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
+<noscript><img data-proofer-ignore height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1632023723704931&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->

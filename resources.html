@@ -18,9 +18,9 @@ permalink: /resources/
 </section>
 <section id="resources-zone">
   <div class="resource-sublinks resource-sublinks-inner text-center gillsans">
-    <a href="/resources/#all" class="hashMenu" data-id="all" id="res-in-all">All</a>
+    <a href="/resources/#all" class="hashMenu" data-id="all" id="res-in-all" data-proofer-ignore>All</a>
     {% for type in site.data.resource_types%}
-      <a href="/resources/#{{type.name | downcase}}" class="hashMenu" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}">{{type.name}}</a>
+      <a href="/resources/#{{type.name | downcase}}" class="hashMenu" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}" data-proofer-ignore>{{type.name}}</a>
     {% endfor %}
   </div>
   <ul class="container ak-container resource-block-zone">
@@ -34,7 +34,7 @@ permalink: /resources/
           </li>
         </ul>
         <div class="resource-image-block various fancybox.iframe pointer" href="{{resource.downloadLink}}" >
-          <img src="{{resource.img}}" />
+          <img src="{{resource.img}}" alt="{{resource.name}}"/>
         </div>
         <!--<div class="resource-info small-font gray-9">
           <span class="author">Hardeep Singh</span>

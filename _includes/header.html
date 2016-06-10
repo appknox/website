@@ -11,7 +11,7 @@
     <span class="icon-bar"></span>
   </button>
   <a href="/">
-    <img class="navbar-brand" src="/img/logo.png" />
+    <img class="navbar-brand" src="/img/logo.png" alt="Appknox"/>
   </a>
 </div>
 <div id="navbar" class="navbar-collapse collapse">
@@ -21,23 +21,23 @@
     <li class="dropdown" id="resource-menu">
       <a href="/resources" id="resource-link" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
       <ul class="dropdown-menu resource-sublinks" id="resource-dropdown">
-        <li><a href="/resources/#all" class="hashMenu" data-id="all" id="res-in-all">All</a></li>
+        <li><a href="/resources/#all" class="hashMenu" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
         {% for type in site.data.resource_types%}
-          <li><a href="/resources/#{{type.name | downcase}}" class="hashMenu" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}">{{type.name}}</a></li>
+          <li><a href="/resources/#{{type.name | downcase}}" class="hashMenu" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}" data-proofer-ignore>{{type.name}}</a></li>
         {% endfor %}
       </ul>
     </li>
     <li class="dropdown" id="company-menu">
       <a href="/company" id="company-link" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
         <ul class="dropdown-menu" id="company-dropdown">
-          <li><a href="/company/#about-us" class="hashMenu" id="about-us-butn">About Us</a></li>
-          <li><a href="/company/#team" class="hashMenu" id="team-butn">Team</a></li>
-          <li><a href="/company/#press" class="hashMenu" id="press-butn">Press</a></li>
-          <li><a href="/company/#partners" class="hashMenu" id="partners-butn">Partners</a></li>
+          <li><a href="/company/#about-us" class="hashMenu" id="about-us-butn" data-proofer-ignore>About Us</a></li>
+          <li><a href="/company/#team" class="hashMenu" id="team-butn" data-proofer-ignore>Team</a></li>
+          <li><a href="/company/#press" class="hashMenu" id="press-butn" data-proofer-ignore>Press</a></li>
+          <li><a href="/company/#partners" class="hashMenu" id="partners-butn" data-proofer-ignore>Partners</a></li>
         </ul>
     </li>
     <li><a href="https://blog.appknox.com">Blog</a></li>
-    <li><a href="#cu-form" class="cubtn">Contact Us</a></li>
+    <li><a href="#cu-form" class="cubtn" data-proofer-ignore>Contact Us</a></li>
   </ul>
 </div><!-- /.navbar-collapse -->
 </div>
