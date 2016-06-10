@@ -20,5 +20,8 @@ markdown: kramdown
 
 # Exclude Files
 exclude:
-  - "Rakefile"
-  - "README.md"
+  - Rakefile
+  - README.md
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
