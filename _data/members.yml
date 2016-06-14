@@ -1,218 +1,188 @@
 - name: Harshit Agarwal
   title: Founder & CEO
   gravatar: https://www.gravatar.com/avatar/3f13f70fdb98a4f38ba1bd9bdfc44fa1?s=150
-  linkedIn: https://in.linkedin.com/in/agarwalharshit
-  twitter: https://twitter.com/harshwebweaver
-  facebook:
-  email: harshit@appknox.com
-  github:
-  www:
+  links:
+    - http://in.linkedin.com/in/agarwalharshit
+    - https://twitter.com/harshwebweaver
+    - harshit@appknox.com
 
 - name: Subho Halder
   title: Founder & CTO
   gravatar: https://en.gravatar.com/avatar/730593e354d39036ab49b750eb944f80?s=150
-  linkedIn: https://in.linkedin.com/in/subhohalder/
-  twitter: https://twitter.com/sunnyrockzzs
-  facebook:
-  email: sunny@appknox.com
-  github:
-  www:
+  links:
+    - http://in.linkedin.com/in/subhohalder/
+    - https://twitter.com/sunnyrockzzs
+    - sunny@appknox.com
 
 - name: Prateek Panda
   title: Founder & CMO
   gravatar: https://en.gravatar.com/avatar/0ba4fb34d18fa1fe613004c36afcb1ac?s=150
-  linkedIn: https://in.linkedin.com/in/prateekpanda
-  twitter: https://twitter.com/prateekpanda
-  facebook:
-  email: prateek@appknox.com
-  github:
-  www:
+  links:
+    - http://in.linkedin.com/in/prateekpanda
+    - https://twitter.com/prateekpanda
+    - prateek@appknox.com
 
 - name: Miguel Martín Romero
   title: Head of Business Development
   gravatar: https://pbs.twimg.com/profile_images/502751707340615680/8cif9y7B_400x400.jpeg
-  linkedIn: https://sg.linkedin.com/in/miguelmartinromero/en
-  twitter: https://twitter.com/MiguelMarRom
-  facebook:
-  email: miguel@appknox.com
-  github:
-  www:
+  links:
+    - https://sg.linkedin.com/in/miguelmartinromero/en
+    - https://twitter.com/MiguelMarRom
+    - miguel@appknox.com
 
 - name: dhilipsiva
   title: Tech Lead, Full-Stack & DevOps
   gravatar: https://www.gravatar.com/avatar/45a742e07ab5f1e1944cef0701ff0c4b.png?s=150
-  linkedIn:
-  twitter: https://twitter.com/dhilipsiva
-  facebook:
-  email:
-  github: https://github.com/dhilipsiva
-  www: https://dhilipsiva.com/
+  links:
+    - https://twitter.com/dhilipsiva
+    - https://github.com/dhilipsiva
+    - http://dhilipsiva.com/
 
 - name: Hardeep Singh
   title: Outreach Manager
   gravatar: https://en.gravatar.com/avatar/e7790468106dbd6fa0d720b7dfacbd13?s=150
-  linkedIn: https://in.linkedin.com/pub/hardeep-singh/41/459/b8a
-  twitter:
-  facebook: https://www.facebook.com/hardeep.singh.37669
-  email: hardeep@appknox.com
-  github:
-  www:
+  links:
+    - https://in.linkedin.com/pub/hardeep-singh/41/459/b8a
+    - https://www.facebook.com/hardeep.singh.37669
+    - hardeep@appknox.com
 
 - name: Amit Subodh
   title: AVP, Global Sales
   gravatar: https://www.gravatar.com/avatar/3c886ea1e8af9b17c42f3608d00437bf?s=150
-  linkedIn: https://in.linkedin.com/in/amitsubodh
-  twitter: https://twitter.com/amitsubodh
-  facebook:
-  email: amit@appknox.com
-  github:
-  www:
+  links:
+    - https://in.linkedin.com/in/amitsubodh
+    - https://twitter.com/amitsubodh
+    - amit@appknox.com
 
 - name: Darell Khin
   title: Marketing Manager
   gravatar: https://www.gravatar.com/avatar/5be943aafeb0eec0cec98d06b48edce9?s=150
-  linkedIn: https://www.linkedin.com/in/darell-khin-37413160
-  twitter:
-  facebook: https://www.facebook.com/darell.khin
-  email: darell@appknox.com
-  github:
-  www:
+  links:
+    - https://www.linkedin.com/in/darell-khin-37413160
+    - https://www.facebook.com/darell.khin
+    - darell@appknox.com
 
 - name: Syed Khalid M
   title: Security Analyst
   gravatar: https://www.gravatar.com/avatar/98746bcb4bebdfc698607f3e1c809d59?s=150
-  linkedIn: https://www.linkedin.com/in/syedkhaled
-  twitter: https://twitter.com/syed_khaled
-  facebook:
-  email: syed@appknox.com
-  github:
-  www:
+  links:
+    - https://www.linkedin.com/in/syedkhaled
+    - https://twitter.com/syed_khaled
+    - syed@appknox.com
 
 - name: Avantika Agarwal
   title: Product Designer
   gravatar: https://www.gravatar.com/avatar/98e456b993fde5a45b438d9633b8801e?s=150
-  linkedIn:
-  twitter: https://twitter.com/avantika_agarwa
-  facebook: https://in.linkedin.com/in/avantika-agarwal-07b27132
-  email: avantikaagarwal2014@gmail.com
-  github:
-  www:
+  links:
+    - https://twitter.com/avantika_agarwa
+    - https://in.linkedin.com/in/avantika-agarwal-07b27132
+    - avantikaagarwal2014@gmail.com
 
 - name: Manikanta Gupta
   title: Associate Security Analyst
   gravatar: https://www.gravatar.com/avatar/2d839559098676b22fb1bd69860a7de7?s=150
-  linkedIn: https://in.linkedin.com/in/manikanta-gupta-p-10978038
-  twitter: https://twitter.com/Manikanta8888
-  facebook:
-  email: manikanta@appknox.com
-  github:
-  www:
+  links:
+    - https://in.linkedin.com/in/manikanta-gupta-p-10978038
+    - https://twitter.com/Manikanta8888
+    - manikanta@appknox.com
 
 - name: Jitendra Choudhary
   title: Fullstack Developer
   gravatar: https://s.gravatar.com/avatar/9e5892b4a1211e36e349a3550dcafdae?s=150
-  linkedIn: https://in.linkedin.com/in/jitendra-choudhary-31869221
-  twitter: https://twitter.com/jitk14
-  facebook:
-  email: jitendra@appknox.com
-  github:
-  www:
+  links:
+    - https://in.linkedin.com/in/jitendra-choudhary-31869221
+    - https://twitter.com/jitk14
+    - jitendra@appknox.com
 
 - name: Pushparaj Balamani
   title: Facility Manager
   gravatar: https://www.gravatar.com/avatar/36bc3903c7843a2959d20d59e2c84070?s=200
-  linkedIn: https://in.linkedin.com/in/pushpi-b-4154a8102
-  twitter:
-  facebook: https://www.facebook.com/pushpiracer
-  email: pushpi@appknox.com
-  github:
-  www:
-
+  links:
+    - https://in.linkedin.com/in/pushpi-b-4154a8102
+    - https://www.facebook.com/pushpiracer
+    - pushpi@appknox.com
 
 - name: Aditya Pahuja
   title: Creative Designer
   gravatar: https://www.gravatar.com/avatar/d6114920ba5dd0f1a8208f6897dbab7f?s=200
-  linkedIn: https://www.linkedin.com/in/adityapahuja
-  twitter: https://twitter.com/adityapahuja
-  facebook: https://www.facebook.com/aditya.pahuja
-  email: aditya@appknox.com
-  github:
-  www:
+  links:
+    - https://www.linkedin.com/in/adityapahuja
+    - https://twitter.com/adityapahuja
+    - https://www.facebook.com/aditya.pahuja
+    - aditya@appknox.com
 
 - name: Vaishalli Garg
   title: Security Researcher
   gravatar: https://www.gravatar.com/avatar/4edb3340a5e8a464c18939e8d02fbb8c?s=200
-  linkedIn: https://in.linkedin.com/in/vaishali-garg-41423a19
-  twitter:
-  facebook: https://www.facebook.com/vaishali.garg.54
-  email: vaishali@appknox.com
-  github:
-  www:
+  links:
+    - https://in.linkedin.com/in/vaishali-garg-41423a19
+    - https://www.facebook.com/vaishali.garg.54
+    - vaishali@appknox.com
 
 - name: Manik  Hundgenn
   title: Lead Designer
   gravatar: https://www.gravatar.com/avatar/fec934a169c34307b3d7d83be06d83c0?s=200
-  linkedIn:
-  twitter:  https://www.twitter.com/tweetvala
-  facebook:  https://www.facebook.com/manik.msh
-  email: manik@appknox.com
-  github:
-  www: https://goo.gl/Zi0kMM
+  links:
+    - https://www.twitter.com/tweetvala
+    - https://www.facebook.com/manik.msh
+    - manik@appknox.com
+    - http://www.manikhundgenn.com
 
 - name: Sugat Nayak
   title: AVP Sales
   gravatar: https://www.gravatar.com/avatar/296707e3e5901a3438c0173122478cfe?s=200
-  linkedIn: https://in.linkedin.com/in/sugatnayak
-  twitter:  https://twitter.com/sugatnayak
-  facebook:  https://www.facebook.com/sugatnayak
-  email: sugat@appknox.com
-  github:
-  www:
+  links:
+    - https://in.linkedin.com/in/sugatnayak
+    - https://twitter.com/sugatnayak
+    - https://www.facebook.com/sugatnayak
+    - sugat@appknox.com
 
 - name: Darshan Chaudhary
   title: Backend Engineer
   gravatar: https://www.gravatar.com/avatar/8e4cf01db0775e989082beb30c5cc44c?s=200
-  linkedIn: https://in.linkedin.com/in/darshanchaudhary
-  twitter: https://twitter.com/deathbullet
-  facebook: https://www.facebook.com/darshan.chaudhary
-  email: darshanime@appknox.com
-  github: https://github.com/darshanime
-  www: https://darshanime.github.io/
+  links:
+    - https://in.linkedin.com/in/darshanchaudhary
+    - https://twitter.com/deathbullet
+    - https://www.facebook.com/darshan.chaudhary
+    - darshanime@appknox.com
+    - https://github.com/darshanime
+    - https://darshanime.github.io/
 
 - name: Yashwin
   title: Frontend Engineer
   gravatar: https://www.gravatar.com/avatar/44492dac2beebbcaf97a5f526b64f059?s=200
-  linkedIn: https://in.linkedin.com/in/yashwin-poojary-7a510178
-  twitter: https://twitter.com/iamyashwin
-  facebook: https://www.facebook.com/yashwinpoojary
-  email: yash@appknox.com
-  github: https://github.com/yashwin
-
+  links:
+    - https://in.linkedin.com/in/yashwin-poojary-7a510178
+    - https://twitter.com/iamyashwin
+    - https://www.facebook.com/yashwinpoojary
+    - yash@appknox.com
+    - https://github.com/yashwin
 
 - name: Kartik Jha
   title: Digital Marketing Manager
   gravatar: https://www.gravatar.com/avatar/dda05c9a9cc6732423f3c8dfaa06edd3?s=200
-  linkedIn: https://in.linkedin.com/in/kartikjha
-  twitter: https://twitter.com/kartikjha
-  facebook: https://www.facebook.com/kajh92
-  email: kartik@appknox.com
+  links:
+    - https://in.linkedin.com/in/kartikjha
+    - https://twitter.com/kartikjha
+    - https://www.facebook.com/kajh92
+    - kartik@appknox.com
 
 - name: ChillarAnand
   title: Backend Developer
   gravatar: https://en.gravatar.com/userimage/29781034/768ea60a4afc235c348a84862ec29889.jpg?size=200
-  linkedIn:
-  facebook:
-  www: https://goo.gl/Aov14S
-  email: chillaranand@appknox.com
-  twitter: https://twitter.com/chillaranand
-  github: https://github.com/chillaranand
+  links:
+    - http://avilpage.com/
+    - chillaranand@appknox.com
+    - https://twitter.com/chillaranand
+    - https://github.com/chillaranand
 
 - name: Hemansu Kumar Tanty
   title: Prod-Dev Engineer
   gravatar: https://s.gravatar.com/avatar/9ae62326b2957a2893c11ec6e29f017a?s=200
-  linkedIn: https://in.linkedin.com/in/hemansu-tanty-28693587
-  facebook: https://www.facebook.com/hemansu.tanty
-  www: https://hemansutanty.github.io/
-  email: hemansu.tanty@appknox.com
-  twitter: https://twitter.com/hemansutanty
-  github: https://github.com/hemansutanty
+  links:
+    - https://in.linkedin.com/in/hemansu-tanty-28693587
+    - https://www.facebook.com/hemansu.tanty
+    - http://hemansutanty.github.io/
+    - hemansu.tanty@appknox.com
+    - https://twitter.com/hemansutanty
+    - https://github.com/hemansutanty
