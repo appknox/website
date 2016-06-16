@@ -107,12 +107,12 @@ permalink: /company/
           </div>
           <div class="member-name">{{member.name}}</div>
           <div class="member-title gray-6">{{member.title}}</div>
-          <ul class="social-icons">
+            <ul class="social-icons">
             {% for link in member.links %}
-            {{ak_link link}}
-            <li>
-                <a href="{{ak_link link}}" target="_blank">
-                  <i class="fa fa-{{ak_icon link}}" aria-hidden="true"></i>
+
+              <li>
+               <a href="{% context_link @ %}" target="_blank">
+                  <i class="fa fa-{%context_icon %}" aria-hidden="true"></i>
                 </a>
             </li>
           {% endfor %}
