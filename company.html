@@ -111,8 +111,9 @@ permalink: /company/
             {% for link in member.links %}
 
               <li>
-               <a href="{% context_link @ %}" target="_blank">
-                  <i class="fa fa-{%context_icon %}" aria-hidden="true"></i>
+
+               <a href="{{ link | ak_link }}" target="_blank">
+                  <i class="fa fa-{{link | ak_icon }}" aria-hidden="true"></i>
                 </a>
             </li>
           {% endfor %}

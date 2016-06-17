@@ -1,13 +1,8 @@
 module Jekyll
-  class AKIconTag < Liquid::Tag
+  module AKUtils
 
-    def initialize(tag_name, text, tokens)
-      super
-      @text = text
-    end
-
-    def render(context)
-      case @text
+    def ak_icon(text)
+      case text
       when /linkedin/
         'linkedin'
       when /facebook/
@@ -20,24 +15,15 @@ module Jekyll
         'globe'
       end
     end
-  end
-  
-  class AKLinkTag < Liquid::Tag
 
-    def initialize(tag_name, text, tokens)
-      super
-      @text = text
-    end
-
-    def render(context)
-      if @text.include? "@"
-        "mailto://#{@text}"
+    def ak_link(text)
+      if text.include? "@"
+        "mailto://#{text}"
       else
-          "#{@text}"
+          "#{text}"
       end
     end
   end
 end
 
-Liquid::Template.register_tag('context_icon', Jekyll::AKIconTag)
-Liquid::Template.register_tag('context_link', Jekyll::AKLinkTag)
+Liquid::Template.register_filter(Jekyll::AKUtils)
