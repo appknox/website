@@ -342,11 +342,12 @@ AkSlideManager.prototype.swipeHandler = function(){
 
 				if(swipedir === "left"){
 					_this.onSwipeLeft();
+					e.preventDefault();
 				}else if(swipedir === "right"){
 					_this.onSwipeRight();
+					e.preventDefault();
 				}
-				
-        e.preventDefault();
+
     }, false)
 }
 
