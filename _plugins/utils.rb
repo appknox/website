@@ -1,6 +1,5 @@
 module Jekyll
   module AKUtils
-
     def ak_icon(text)
       case text
       when /linkedin/
@@ -17,10 +16,10 @@ module Jekyll
     end
 
     def ak_link(text)
-      if text.include? "@"
+      if text.include? '@'
         "mailto://#{text}"
       else
-          "#{text}"
+        text.to_s
       end
     end
   end
