@@ -299,6 +299,9 @@ AkSlideManager.prototype.adjustSlideContainerHeight = function(){
 }
 
 AkSlideManager.prototype.swipeHandler = function(){
+	if(this.slideZone == undefined || this.slideZone.length ==0){
+		return;
+	}
 	var _this = this;
 	var touchsurface = this.slideZone[0],
     swipedir,
@@ -325,7 +328,7 @@ AkSlideManager.prototype.swipeHandler = function(){
     }, false)
 
     touchsurface.addEventListener('touchmove', function(e){
-       
+
     }, false)
 
     touchsurface.addEventListener('touchend', function(e){
@@ -345,13 +348,10 @@ AkSlideManager.prototype.swipeHandler = function(){
 				if(swipedir === "left"){
 					_this.onSwipeLeft();
 					e.preventDefault();
-
 				}else if(swipedir === "right"){
 					_this.onSwipeRight();
 					e.preventDefault();
-
 				}
-
     }, false)
 }
 
