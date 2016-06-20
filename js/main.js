@@ -345,7 +345,7 @@ AkSlideManager.prototype.swipeHandler = function(){
 				}else if(swipedir === "right"){
 					_this.onSwipeRight();
 				}
-				console.log(swipedir);
+				
         e.preventDefault();
     }, false)
 }
