@@ -312,18 +312,20 @@ AkSlideManager.prototype.swipeHandler = function(){
     elapsedTime,
     startTime;
 
+		var touchMoveEv = undefined;
+
     touchsurface.addEventListener('touchstart', function(e){
-        var touchobj = e.changedTouches[0]
-        swipedir = 'none'
-        dist = 0
-        startX = touchobj.pageX
-        startY = touchobj.pageY
-        startTime = new Date().getTime() // record time when finger first makes contact with surface
-        e.preventDefault()
+        var touchobj = e.changedTouches[0];
+        swipedir = 'none';
+        dist = 0;
+        startX = touchobj.pageX;
+        startY = touchobj.pageY;
+        startTime = new Date().getTime();
+
     }, false)
 
     touchsurface.addEventListener('touchmove', function(e){
-        e.preventDefault() // prevent scrolling when inside DIV
+       
     }, false)
 
     touchsurface.addEventListener('touchend', function(e){
@@ -343,9 +345,11 @@ AkSlideManager.prototype.swipeHandler = function(){
 				if(swipedir === "left"){
 					_this.onSwipeLeft();
 					e.preventDefault();
+
 				}else if(swipedir === "right"){
 					_this.onSwipeRight();
 					e.preventDefault();
+
 				}
 
     }, false)
