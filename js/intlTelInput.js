@@ -36,15 +36,15 @@
         // geoIp lookup function
         geoIpLookup: null,
         // initial country
-        initialCountry: "",
+        initialCountry: "in",
         // don't insert international dial codes
-        nationalMode: true,
+        nationalMode: false,
         // number type to use for placeholders
         numberType: "MOBILE",
         // display only these countries
         onlyCountries: [],
         // the countries at the top of the list. defaults to united states and united kingdom
-        preferredCountries: [ "us", "gb" ],
+        preferredCountries: [ "in", "sg" ],
         // display the country dial code next to the selected flag so it's not part of the typed number
         separateDialCode: false,
         // specify the path to the libphonenumber script to enable validation/formatting
