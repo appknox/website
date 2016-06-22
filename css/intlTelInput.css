@@ -19,8 +19,16 @@
     z-index: 0;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    padding-right: 0px;
-    margin-right: 0
+    padding-right: 36px;
+    margin-right: 200px;
+
+}
+@media all and (max-width: 375px) and (min-width: 320px) {
+  .intl-tel-input input,
+  .intl-tel-input input[type=text],
+  .intl-tel-input input[type=tel] {
+      margin-right: 150px;
+  }
 }
 .intl-tel-input .flag-container {
     position: absolute;
@@ -32,7 +40,7 @@
 .intl-tel-input .selected-flag {
     z-index: 1;
     position: relative;
-    width: 50px;
+    width: 36px;
     height: 100%;
     padding: 0 0 0 8px
 }
@@ -110,14 +118,9 @@
 .intl-tel-input.allow-dropdown input,
 .intl-tel-input.allow-dropdown input[type=text],
 .intl-tel-input.allow-dropdown input[type=tel] {
-    padding-right: 190px;
+    padding-right: 6px;
     padding-left: 52px;
-    margin: 3px auto 0;
-    background: #f8f8f8;
-    font-size: 17px;
-    border: 0;
-    height: 34px;
-    color: #555;
+    margin-left: 0
 }
 .intl-tel-input.allow-dropdown .flag-container {
     right: auto;
