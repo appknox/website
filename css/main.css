@@ -491,6 +491,52 @@ p {
     color:#fff !important;
 }
 
+.request-button {
+  background: #ea2127;
+  border: none;
+  padding: 10px 60px;
+  color:#fff;
+  cursor:pointer;
+  font-family: neosans;
+  margin-bottom: 30px;
+}
+
+.scan-list{
+  width:90%;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.scan-benifits{
+  width:100%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+
+.platform-type{
+  margin-top: 10px;
+}
+
+.button-white {
+  background: #f5f5f5;
+  border-color: #000;
+  padding: 5px 20px;
+  color:#000;
+  cursor:pointer;
+  font-family: neosans;
+  margin-bottom: 30px;
+}
+
+.button-white:active{
+  background-color: #cdcdcd;
+}
+.button-white:hover{
+  background-color: #cdcdcd;
+}
+
+
 .button-gray{
   background: #dedede;
   border: none;
@@ -965,11 +1011,17 @@ input[type=email],input[type=text],input[type=url]{
   padding: 0px;
   box-shadow: 0px 0px 6px #ccc;
 }
-#pricingZoneBox>li {
-  padding-top: 15px;
+
+.plan-section{
+  padding: 0 !important;
 }
+
 .pricing-col-head {
-  padding: 20px 2%;
+
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+
 }
 #quantityZones, #quantityTitleZones {
   width: 70%;
