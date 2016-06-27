@@ -123,6 +123,7 @@ AkSlideManager.prototype.initiate = function(){
 	this.initSlidePosition();
 	this.callAnimationLoop();
 	this.bindSwipe();
+	this.swipeHandler();
 }
 
 AkSlideManager.prototype.initSlidePosition = function(){
@@ -197,7 +198,7 @@ AkSlideManager.prototype.bindSwipe = function(){
 }
 
 AkSlideManager.prototype.onSwipeLeft = function(ev){
-	var _this = ev.data.that;
+	var _this = this;
   var slideNumToBring = 0;
 
 	if(_this.currentSlide == _this.noOfSlides - 1){
@@ -205,12 +206,13 @@ AkSlideManager.prototype.onSwipeLeft = function(ev){
 	}else{
 		slideNumToBring = _this.currentSlide + 1;
 	}
-
+	clearInterval(_this.interval);
+	_this.interval = null;
 	_this.hideSlide(slideNumToBring);
 }
 
 AkSlideManager.prototype.onSwipeRight = function(ev){
-	var _this = ev.data.that;
+	var _this = this;
 	var slideNumToBring = 0;
 
 	if(_this.currentSlide == 0){
@@ -219,6 +221,8 @@ AkSlideManager.prototype.onSwipeRight = function(ev){
 		slideNumToBring = _this.currentSlide - 1;
 	}
 
+	clearInterval(_this.interval);
+	_this.interval = null;
 	_this.hideSlide(slideNumToBring);
 }
 
@@ -227,7 +231,7 @@ AkSlideManager.prototype.bringSlide = function(){
 	var currentSlideBlock = this.slideBlocks[_this.currentSlide];
 	var elesToAnimate = $(currentSlideBlock).find("." + this.eleAnimateClass);
 
-	$(currentSlideBlock).fadeIn(_this.appearDeltaTime);
+	$(currentSlideBlock).stop().fadeIn(_this.appearDeltaTime);
 
 	for(var i=0; i < elesToAnimate.length; i++){
 		var animator = new AkElementAnimator(elesToAnimate[i]);
@@ -260,7 +264,7 @@ AkSlideManager.prototype.hideSlide = function(nextSlideNum){
 	}
 
 	_this.jumperActivate();
-	$(currentSlideBlock).fadeOut(timeToHide + _this.hideDeltaTime,function(){_this.bringSlide()});
+	$(currentSlideBlock).stop().fadeOut(timeToHide + _this.hideDeltaTime,function(){_this.bringSlide()});
 }
 
 AkSlideManager.prototype.createIntervalAnim = function(){
@@ -294,6 +298,62 @@ AkSlideManager.prototype.adjustSlideContainerHeight = function(){
 	 var newRandomId = "clonedSlideZone" + Math.floor(Math.random()*1000);
 }
 
+AkSlideManager.prototype.swipeHandler = function(){
+	if(this.slideZone == undefined || this.slideZone.length ==0){
+		return;
+	}
+	var _this = this;
+	var touchsurface = this.slideZone[0],
+    swipedir,
+    startX,
+    startY,
+    distX,
+    distY,
+    threshold = 100, //required min distance traveled to be considered swipe
+    restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+    allowedTime = 200, // maximum time allowed to travel that distance
+    elapsedTime,
+    startTime;
+
+		var touchMoveEv = undefined;
+
+    touchsurface.addEventListener('touchstart', function(e){
+        var touchobj = e.changedTouches[0];
+        swipedir = 'none';
+        dist = 0;
+        startX = touchobj.pageX;
+        startY = touchobj.pageY;
+        startTime = new Date().getTime();
+
+    }, false)
+
+    touchsurface.addEventListener('touchmove', function(e){
+
+    }, false)
+
+    touchsurface.addEventListener('touchend', function(e){
+        var touchobj = e.changedTouches[0]
+        distX = touchobj.pageX - startX; // get horizontal dist traveled by finger while in contact with surface
+        distY = touchobj.pageY - startY; // get vertical dist traveled by finger while in contact with surface
+        elapsedTime = new Date().getTime() - startTime; // get time elapsed
+        if (elapsedTime <= allowedTime){ // first condition for awipe met
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
+                swipedir = (distX < 0)? 'left' : 'right'; // if dist traveled is negative, it indicates left swipe
+            }
+            else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
+                swipedir = (distY < 0)? 'up' : 'down'; // if dist traveled is negative, it indicates up swipe
+            }
+        }
+
+				if(swipedir === "left"){
+					_this.onSwipeLeft();
+					e.preventDefault();
+				}else if(swipedir === "right"){
+					_this.onSwipeRight();
+					e.preventDefault();
+				}
+    }, false)
+}
 
 //For top main slider at home page
 var akSlideManager = new AkSlideManager();
