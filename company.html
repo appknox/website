@@ -212,7 +212,7 @@ permalink: /company/
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/>
+            <a href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/></a>
           </div>
         </li>
         {% endfor %}
@@ -240,7 +240,9 @@ permalink: /company/
         {% for partner in site.data.partners %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
+            <a href="{{partner.link}}" target="_blank">
+              <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
+            </a>
           </div>
         </li>
         {% endfor %}
@@ -263,7 +265,9 @@ permalink: /company/
         {% for supporter in site.data.supporters %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}"/>
+            <a href="{{supporter.link}}" target="_blank">
+              <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}">
+            </a>
           </div>
         </li>
         {% endfor %}

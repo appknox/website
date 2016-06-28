@@ -1,5 +1,7 @@
-- name: Microsoft Ventures
+- name: Microsoft Ventures startups
   img: /img/ms-ventures-logo.png
+  link: https://www.microsoftaccelerator.com/startups
 
-- name: JFDI
+- name: JFDI asia alumnus
   img: /img/jfdi-logo.png
+  link: http://www.jfdi.asia/portfolio/appknox

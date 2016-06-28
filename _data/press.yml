@@ -1,23 +1,29 @@
-- name: TechPanda
+- name: Appknox thetechpanda
   img: /img/techpanda2.png
+  link: http://thetechpanda.com/about-us/our-team/
 
-- name: e27
+- name: Appknox e27
   img: /img/e27.png
+  link: https://www.facebook.com/appknox/photos/a.220347381509680.1073741826.218311445046607/389528204591596/?type=3&theater
 
-- name: YourStory
+- name: Appknox YourStory
   img: /img/yourstory.png
+  link: http://yourstory.com/2015/01/appknox-architecture/
 
-- name: SoftPedia
+- name: Appknox softpedia
   img: /img/softpedia.png
+  link: http://news.softpedia.com/news/Experts-Demonstrate-Security-Holes-in-Android-with-Exploitation-Framework-285047.shtml
 
 - name: VentureBeat
   img: /img/venturebeat.png
 
-- name: IDA
+- name: Appknox IDA
   img: /img/ida.png
+  link: https://www.ida.gov.sg/blog/insg/ict-enterprises/securing-mobile-apps-with-appknox/
 
-- name: Bloomberg
+- name: Appknox Bloomberg
   img: /img/bloomberg.png
+  link: http://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=268070454
 
-- name: INSG
+- name: Appknox INSG
   img: /img/insg.png
