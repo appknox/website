@@ -201,11 +201,11 @@ permalink: /company/
       <ul class="text-center">
         {% for partner in site.data.partners %}
         <li class="member-data-zone">
-          <div class="logo-pic-zone">
-            <a data-proofer-ignore href="{{partner.link}}" target="_blank">
-              <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
-            </a>
-          </div>
+          <a data-proofer-ignore href="{{partner.link}}" target="_blank">
+            <div class="logo-pic-zone">
+                <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
+            </div>
+          </a>
         </li>
         {% endfor %}
       </ul>
