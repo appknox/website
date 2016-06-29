@@ -1,8 +1,11 @@
-- name: Kuliza
+- name: appknox kuliza
   img: /img/kuliza.png
+  link : http://www.kuliza.com/
 
-- name: Straits Interactive
+- name: appknox straits interactive
   img: /img/straitsInteractive.png
+  link: https://www.straitsinteractive.com/
 
-- name: TeskaLabs
+- name: appknox teskalabs
   img: /img/teskalabs.png
+  link: https://www.teskalabs.com/
