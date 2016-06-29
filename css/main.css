@@ -119,6 +119,11 @@ ul,li {
     font-family: gillsansmtpro;
 }
 
+.gills-14 {
+    font-size: 14px !important;
+    font-family: gillsansmtpro;
+}
+
 .neosans-24 {
     font-size: 40px;
     font-family: neosans;
@@ -200,9 +205,7 @@ p {
     margin-bottom: 10px;
     font-family : neosans !important;
 }
-.calculatePrice{
-  font-style: neosans !important;
-}
+
 .black-line {
     border-bottom: 1px solid #000;
 }
@@ -519,14 +522,17 @@ p {
     border-color: black !important;
     font-family: neosans;
     font-size: 14px;
-
 }
 
 button:active {
-outline: none !important;
-border: none !important;
+    outline: none !important;
+    border: none !important;
 }
-button:focus {outline:0 !important;}
+
+button:focus {
+    outline:0 !important;
+}
+
 .blue {
     font-weight: 900; !important;
     color: #000000 !important;
@@ -534,10 +540,10 @@ button:focus {outline:0 !important;}
 }
 
 .saving-text{
-  margin-left: 20px;
-  font-family: neosans;
-  font-size: 14px;
-  color: red;
+    margin-left: 20px;
+    font-family: neosans;
+    font-size: 14px;
+    color: red;
 }
 
 .btn {
@@ -559,17 +565,24 @@ button:focus {outline:0 !important;}
 }
 
 .request-button {
-    background: #ea2127;
+    background: #f24c40;
     border: none;
-    padding: 10px 60px;
-    color: #fff;
+    color: #181021;
     cursor: pointer;
     font-family: neosans;
-    margin-bottom: 30px;
+    text-align: center;
     font-size: 16px;
-    width: 220px;
-    height: 50px;
-    padding: 15px 5px 5px;
+    width:73%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.request-button:hover{
+    box-shadow: 2px 2px 2px #999;
 }
 
 .scan-list {
@@ -579,13 +592,12 @@ button:focus {outline:0 !important;}
     text-align: left;
     margin-left: 40px;
     font-size: 14px;
-    font-style: gillsans;
     color: #816f85;
 }
 
 .enterprise-list{
-  width: 70%;
-  margin-left: 42px;
+    width: 70%;
+    margin-left: 42px;
 }
 
 .enterprise-features {
@@ -596,13 +608,12 @@ button:focus {outline:0 !important;}
     text-align: left;
     margin-left: 30px;
     font-size: 14px;
-    font-style: gillsans;
     color: #7f7f7f;
 }
 
 .black-font{
-  color: #000000;
-  font-weight: 900;
+    color: #000000;
+    font-weight: 900;
 }
 
 .scan-benifits {
@@ -610,9 +621,7 @@ button:focus {outline:0 !important;}
     text-align: left;
     margin-left: 40px;
     font-size: 14px;
-    font-style: gillsans;
     color: #5d4770;
-
 }
 
 .scan-enter {
@@ -628,8 +637,12 @@ button:focus {outline:0 !important;}
 .platform-type {
     margin-top: 10px;
     padding: 0;
-    font-style: gillsans;
     font-size: 20px;
+}
+
+#know-more{
+    display: none;
+    font-size: 10px;
 }
 
 .button-white {
@@ -1231,15 +1244,24 @@ input[type=email],input[type=text],input[type=url] {
 
 .plan-section {
     padding: 0 !important;
-    border: 1px solid #f2f2f2;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: #f2f2f2;
 }
 
 .plan-section:hover {
-    box-shadow: 3px 3px 3px 5px #999;
+    box-shadow: 2px 2px 2px #999;
+}
+.plan-section:hover #know-more {
+    display: block;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    position: absolute;
+    top:240px;
   }
 
 .plan-section:hover .pricing-col-head {
-
     background-color: #41ceef;
 }
 
@@ -1250,8 +1272,11 @@ input[type=email],input[type=text],input[type=url] {
 
 .pricing-tagline {
     font-size: 14px;
-    font-style: gillsans;
     color: red;
+}
+
+.margin-reduce{
+  margin-top: 70px;
 }
 
 .plan-type {
@@ -1263,13 +1288,11 @@ input[type=email],input[type=text],input[type=url] {
 
 .pricing-desc {
     font-size: 14px;
-    font-style: gillsans;
     margin-top: 20px;
 }
 
-
 .changeBack{
-  background-color: red;
+    background-color: red;
 }
 
 .pricing-col-head {
@@ -1741,14 +1764,57 @@ input[type=email],input[type=text],input[type=url] {
     .navbar-nav {
         margin-left: 4%;
     }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    .plan-top-line{
+      width: 40%;
+    }
+    .request-button{
+      display: block !important ;
+      width: 30%;
+      margin-left: 250px;
+    }
+    .plan-bottom-line{
+      width: 20%;
+    }
+    .scan-list{
+      width:30%;
+      margin-left: 235px;
+    }
+    .scan-benifits{
+      width:56%;
+      margin-left: 235px;
+    }
+    .plan-section:hover #know-more {
+          margin-left: 235px;
 
-    .plan-bottom-line {
-        width: 75%;
+    }
+    .scan-enter{
+      margin-left: 235px;
+    }
+    .enterprise-features{
+      margin-left: 100px;
     }
 }
 
-
-
+@media (min-width: 425px) and (max-width: 767px) {
+  .enterprise-features{
+    margin-left: 130px;
+  }
+  .plan-section{
+    margin-top: 20px;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .enterprise-features{
+    margin-left: 110px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .enterprise-features{
+    margin-left: 80px;
+  }
+}
 @media (max-width: 767px) {
     .slide-img-zone{
       display: none;
@@ -1861,12 +1927,9 @@ input[type=email],input[type=text],input[type=url] {
     #footer-form form {
         width: 100%;
     }
-
     #footer-form {
         text-align: center;
     }
-
-
 }
 
 @media (max-width: 480px) {
