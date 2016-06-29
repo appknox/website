@@ -17,7 +17,7 @@ module Jekyll
 
     def ak_link(text)
       if text.include? '@'
-        "mailto://#{text}"
+        "mailto:#{text}"
       else
         text.to_s
       end
