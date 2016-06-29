@@ -226,11 +226,11 @@ permalink: /company/
       <ul class="text-center">
         {% for supporter in site.data.supporters %}
         <li class="member-data-zone">
-          <div class="logo-pic-zone">
-            <a data-proofer-ignore href="{{supporter.link}}" target="_blank">
-              <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}">
-            </a>
-          </div>
+          <a data-proofer-ignore href="{{supporter.link}}" target="_blank">
+            <div class="logo-pic-zone">
+                <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}">
+            </div>
+          </a>
         </li>
         {% endfor %}
       </ul>
