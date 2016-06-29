@@ -2148,3 +2148,44 @@ $(document).ready(function() {
 		closeEffect	: 'none'
 	});
 	});
+
+
+
+$(document).ready(function(){
+
+    $("#monthly").click(function(){
+				var title = $( ".calculatePrice" ).attr( "value" );
+			$(".calculatePrice").text("US $" + title + "/month");
+
+			var title = $( ".calculatePrice2" ).attr( "value" );
+		$(".calculatePrice2").text("US $" + title + "/month");
+		var title = $( ".calculatePrice3" ).attr( "value" );
+	$(".calculatePrice3").text("US $" + title + "/month");
+    });
+    $("#yearly").click(function(){
+				var value = $( ".calculatePrice" ).attr( "value" );
+				var total =value*10;
+        $(".calculatePrice").text("US $" + total + "/year");
+				var value = $( ".calculatePrice2" ).attr( "value" );
+				var total =value*10;
+				$(".calculatePrice2").text("US $" + total + "/year");
+				var value = $( ".calculatePrice3" ).attr( "value" );
+				var total =value*10;
+				$(".calculatePrice3").text("US $" + total + "/year");
+    });
+
+});
+
+
+$(document).ready(function(){
+    $(".month").click(function(){
+        $(".month").addClass("blue");
+				$(".year").removeClass("blue");
+    });
+		$(".year").click(function(){
+
+				$(".year").addClass("blue");
+				$(".month").removeClass("blue");
+    });
+
+});

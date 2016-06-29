@@ -5,160 +5,224 @@ excerpt: Sign up now for complete mobile security with flexible plans and anytim
 permalink: /pricing/
 ---
 <section id="first-container">
-  <div class="container ak-container text-center">
-    <h2> Sign Up Now For Complete Mobile Security </h2>
-    <h4 class="gray-8">Flexible Plans &nbsp;&nbsp;|&nbsp;&nbsp; Anytime Cancellation</h4>
-    <div class="horz-split-1x"><span></span></div>
+  <div class="text-center">
+    <h2 class="pricing-heading"> Unlimited Scan For Everyone </h2>
+    <p class="pricing-tagline">Flexible Cancellation &nbsp;&nbsp;|&nbsp;&nbsp; Proactive Support</p>
   </div>
 </section>
-<section id="pricing-zone">
-  <div class="container ak-container text-center">
-    <form id="pricingForm" action="" method="post">
-    <input type="hidden" name="pricing-version-num" class="os-input" value="encrypted"/>
+<section class="plan-type">
+  <div class="text-center">
+      <div class="btn-group">
+    <button class="btn active plan-btn-round month blue" id="monthly"  data-target="#collapsible">MONTHLY</button>
+    <button class="btn plan-btn-round year" id="yearly" data-toggle="collapse" data-target="#collapsible">YEARLY</button>
+  </div>
+    <span class="saving-text">Save 16% Yearly</span>
+  </div>
+</section>
+  <p class="pricing-desc text-center">All prices are per App<sup>*</sup> </p>
+<section class="pricing-zone">
+  <div class="container text-center">
     <ul id="pricingZoneBox">
-      <li class="col-md-4 ">
+      <section>
+      <li class="col-md-3 plan-section">
           <div class="pricing-col-head">
-              How many apps do <br> you want to scan?
+                <img src="/img/asset-22.png" />
           </div>
-          <div id="selectNumberZone" class="">
-            <div id="appMinus" class="num-app-control"><img data-proofer-ignore src="/img/minus.svg"/></div>
-            <div data-min="1" data-max="10" data-value="1" data-base-price="800" data-delta-minus="1" data-annual-factor="10" data-delta-price="1" id="noOfAppsInput" class="num-app-control ak-gray-bg sky-blue">1</div>
-            <div id="appPlus" class="num-app-control"><img data-proofer-ignore src="/img/plus.svg"/></div>
-            <input type="hidden" name="app-count" id="app-count-input" value="1"/>
-          </div>
-          <div>
-              <ul id="quantityZones" class="small-font gray-7">
-                <li class="quantizer " style="width:20%" data-range="1-1">1</li>
-                <li class="quantizer active" style="width:40%" data-range="2-5">2-5</li>
-                <li class="quantizer " style="width:40%" data-range="6-10">6-10</li>
-                <li class="clearfix"></li>
-              </ul>
-              <ul id="quantityTitleZones" class="xs-font gray-7" >
-                <li  style="width:20%">LITE</li>
-                <li class="active" style="width:40%">ESSENTIAL</li>
-                <li style="width:40%">PREMIUM</li>
-                <li class="clearfix"></li>
-              </ul>
-              <div class="clearfix"></div>
-          </div>
-        <div class="ak-gray-bg border-radius-10 small-font" >
-          <div class="text-left neosans " id="platformHead">Choose Platform</div>
-          <ul class="ak-checkbox-pannel small-font" id="platformZone">
-            <li class="col-md-6 col-sm-6 platforms" id="android-input-li" data-selected="no" data-value="android">
-              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-              <input type="hidden" name="os-android" class="os-input" value="0"/>
-              <div class="ak-cb-title">Android</div>
-            </li>
-            <li class="col-md-6 col-sm-6 platforms" id="windows-input-li" data-selected="no" data-value="windows">
-              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-              <input type="hidden" name="os-windows" class="os-input" value="0"/>
-              <div class="ak-cb-title">Windows</div>
-            </li>
-            <li class="col-md-6 col-sm-6 platforms" id="ios-input-li" data-selected="no" data-value="ios">
-              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-              <input type="hidden" name="os-ios" class="os-input" value="0"/>
-              <div class="ak-cb-title">iOS</div>
-            </li>
-            <li class="col-md-6 col-sm-6 platforms" id="wearables-input-li" data-selected="no" data-value="wearables">
-              <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-              <input type="hidden" name="os-wearables" class="os-input" value="0"/>
-              <div class="ak-cb-title">Wearables</div>
-            </li>
-            <li class="clearfix"></li>
-        </ul>
-      </div>
-          <div>
-              <p id="platformCountInfo" class="small-font gray-7 text-left">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i> Apps for every platform count separately, e.g "WhatsApp" on iOS
-                  and Android together count to 2
-              </p>
-          </div>
-          <div id="pricingBulkOrder">
-              <a href="" class="block button-gray btn-lg ak-btn-round bulk-order">For Bulk Orders Click Here</a>
-          </div>
-      </li>
-      <li class="col-md-4 " id="pricingInterMiddle">
-        <div>
-            <h4 class="gray-bg-butn-like small-font">Plan Cost</h4>
-        </div>
-        <div class="horz-pricing-box border-radius-10">
-            <h5 class="text-left uppercase">Mini</h5>
-            <div class="amount-zone gray-9 big-font text-left">
-              <div>
-                <span class="neosans small-font" id="startPriceMonth"></span>
-                <span class="xs-font">per month per app</span>
-                <!-- <span class="saveAmt  bold gray-7" id="startPriceMonthSave">Save <span class="">$198</span></span>-->
-              </div>
-              <div>
-                <span class="neosans small-font" id="startPriceAnnual"></span>
-                <span class="xs-font">paid annually per app</span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="horz-pricing-box border-radius-10">
-            <h5 class="text-left uppercase">Standard</h5>
-            <div class="amount-zone gray-9 big-font text-left">
-              <div>
-                <span class="neosans small-font" id="growPriceMonth"></span>
-                <span class="xs-font">per month per app</span>
-                <!-- <span class="saveAmt  bold gray-7" id="growPriceMonthSave">Save <span class="">$198</span></span> -->
-              </div>
-              <div >
-                <span class="neosans small-font" id="growPriceAnnual">$399</span>
-                <span class="xs-font" id="g">paid annually per app</span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="horz-pricing-box  border-radius-10">
-            <h5 class="text-left uppercase">Grand</h5>
-            <div class="amount-zone gray-9 big-font text-left">
-              <div>
-                <span class="neosans small-font" id="succeedPriceMonth">$399</span>
-                <span class="xs-font">per month per app</span>
+          <div class="platform-type plan-top-line fountain-blue">
 
-                <!-- <span class="saveAmt bold gray-7">Save <span class="">$198</span></span> -->
-              </div>
-              <div>
-                <span class="neosans small-font" id="succeedPriceAnnual">$399</span>
-                <span class="xs-font">paid annually per app</span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
+          Single Platform<br>
+          <img src="/img/pricing-19.png" />
         </div>
+
+          <table class="scan-list">
+            <tr>
+              <td>SAST (Static)</td>
+              <td><img src="/img/check-26.png" /></td>
+            </tr>
+            <tr>
+              <td>DAST (Dynamic)</td>
+              <td><img src="/img/check-26.png" /></td>
+            </tr>
+            <tr>
+              <td>UBA (Manual)</td>
+              <td><img src="/img/check-26.png" /></td>
+            </tr>
+          </table>
+
+
+          <table class="scan-benifits">
+            <tr>
+              <td>Remedition</td>
+              <td>1 Session</td>
+            </tr>
+            <tr>
+              <td>SLA</td>
+              <td>3-5 Working Days</td>
+            </tr>
+            <tr>
+              <td>No.of Scans</td>
+              <td>Unlimited</td>
+            </tr>
+          </table>
+            <div class="calculatePrice plan-bottom-line fountain-blue" value="799">US $799/month</div>
+        <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
       </li>
-      <li class="col-md-4 ">
-        <h3 class="text-left horz-pricing">Protect Your Business</h3>
-        <h4 class="text-left red horz-pricing">Stay Proactive</h4>
-        <div id="rightSaveZone" class="horz-pricing ak-black-bg border-radius-10 gray-c">
-          <div class="text-left gray-c"><span class="bordered-bottom-text uppercase neosans small-font">Total</span> </div>
-          <div>
-            <div>
-              <div class="inBlock50 big-font text-left">
-                 <div id="monthlySumZone"></div>
-                 <div class="xs-font bold">/month</div>
-               </div>
-              <div class="inBlock50 text-left red">You save <span id="monthlySumSave">$400</span></div>
+    </section>
+    <section>
+        <li class="col-md-3 plan-section">
+            <div class="pricing-col-head">
+                  <img src="/img/asset-23.png" />
             </div>
-            <h2 class="gray-c">OR</h2>
-            <div>
-              <div class="inBlock50 big-font text-left">
-                 <div id="annualSumZone"></div>
-                 <div class="xs-font bold">/annum</div>
-               </div>
-              <div class="inBlock50 text-left red">You save <span id="annualSumSave">$400</span></div>
-            </div>
+            <div class="platform-type plan-top-line blue-shade">
+
+            Dual Platform<br>
+            <img src="/img/pricing-20.png" />
+
           </div>
-        </div>
-        <p id="pricingHelpText" class="text-left small-font">
-          We'll help you with account setup and verification
-        </p>
-        <p class="xs-font gray-9 text-left">* Billing after verification</p>
-        <div id="placeOrder">
-            <span class="button-red btn-lg ak-btn-round uppercase">Place Order</span>
-        </div>
-      </li>
+
+            <table class="scan-list">
+              <tr>
+                <td>SAST (Static)</td>
+                <td><img src="/img/check-26.png" /></td>
+              </tr>
+              <tr>
+                <td>DAST (Dynamic)</td>
+                <td><img src="/img/check-26.png" /></td>
+              </tr>
+              <tr>
+                <td>UBA (Manual)</td>
+                <td><img src="/img/check-26.png" /></td>
+              </tr>
+            </table>
+
+
+
+            <table class="scan-benifits">
+              <tr>
+                <td>Remedition</td>
+                <td>3 Session</td>
+              </tr>
+              <tr>
+                <td>SLA</td>
+                <td>5-7 Working Days</td>
+              </tr>
+              <tr>
+                <td>No.of Scans</td>
+                <td>Unlimited</td>
+              </tr>
+            </table>
+
+          <div class="calculatePrice2 plan-bottom-line blue-shade" value="1399">US $1399/month</div>
+        <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
+          </li>
+        </section>
+        <section>
+          <li class="col-md-3 plan-section">
+              <div class="pricing-col-head">
+                    <img src="/img/asset-24.png" />
+              </div>
+              <div class="platform-type plan-top-line voilet-shade">
+              Multiple Platform<br>
+              <img src="/img/pricing-21.png" />
+
+            </div>
+
+              <table class="scan-list">
+                <tr>
+                  <td>SAST (Static)</td>
+                  <td><img src="/img/check-26.png" /></td>
+                </tr>
+                <tr>
+                  <td>DAST (Dynamic)</td>
+                  <td><img src="/img/check-26.png" /></td>
+                </tr>
+                <tr>
+                  <td>UBA (Manual)</td>
+                <td><img src="/img/check-26.png" /></td>
+              </table>
+
+
+
+              <table class="scan-benifits">
+                <tr>
+                  <td>Remedition</td>
+                  <td>5 Session</td>
+                </tr>
+                <tr>
+                  <td>SLA</td>
+                  <td>7-9 Working Days</td>
+                </tr>
+                <tr>
+                  <td>No.of Scans</td>
+                  <td>Unlimited</td>
+                </tr>
+              </table>
+
+            <div class="calculatePrice3 plan-bottom-line voilet-shade" value="1999">US $1999/month</div>
+          <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
+            </li>
+
+          </section>
+          <section>
+            <li class="col-md-3 plan-section">
+                <div class="pricing-col-head">
+                      <img src="/img/asset-25.png" />
+                </div>
+                <div class="platform-type plan-top-line black-line">
+
+                Dedicated Infrastructure<br>
+                <table class="enterprise-features">
+                  <tr>
+                    <td>Multiple <span class="black-font">Teams</span></td>
+                  </tr>
+                  <tr>
+                    <td>Multiple <span class="black-font">Projects</span></td>
+                  </tr>
+                  <tr>
+                    <td>Multiple <span class="black-font">Platforms</span></td>
+                  </tr>
+                </table>
+
+              </div>
+
+                <table class="scan-list enterprise-list">
+                  <tr>
+                    <td>SAST (Static)</td>
+                    <td><img src="/img/check-26.png" /></td>
+                  </tr>
+                  <tr>
+                    <td>DAST (Dynamic)</td>
+                    <td><img src="/img/check-26.png" /></td>
+                  </tr>
+                  <tr>
+                    <td>On Premise Deployment</td>
+                    <td><img src="/img/check-26.png" /></td>
+                  </tr>
+                  <tr>
+                    <td>Private Secure Cloud</td>
+                    <td><img src="/img/check-26.png" /></td>
+                  </tr>
+                </table>
+
+
+                <table class="scan-enter">
+                  <tr>
+                    <td>Dedicated Account Manager</td>
+                  </tr>
+                  <tr>
+                    <td>Dedicated Security Researcher</td>
+                  </tr>
+                </table>
+
+            <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
+              </li>
+            </section>
+
+
+
+
+
+
       <li class="clearfix"></li>
     </ul>
     </form>
