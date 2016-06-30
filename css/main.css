@@ -560,6 +560,7 @@ button:focus {
     width:73%;
     height: 40px;
     margin-bottom: 30px;
+    margin-top: 4%;
 }
 
 .letter-spacing {
@@ -2092,3 +2093,8 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 /* End of Landing Pages Style*/
+
+.check-26 {
+  background:url('/img/check-26.png') no-repeat right;
+  width:20px
+}
