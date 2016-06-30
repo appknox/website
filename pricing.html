@@ -16,7 +16,7 @@ permalink: /pricing/
       <button class="btn active plan-btn-round month blue" id="monthly"  data-target="#collapsible">MONTHLY</button>
       <button class="btn plan-btn-round year" id="yearly" data-toggle="collapse" data-target="#collapsible">YEARLY</button>
     </div>
-    <span class="saving-text">Save 16% Yearly</span>
+    <div class="saving-text">Save With Yearly Subscription</div>
   </div>
 </section>
   <p class="pricing-desc text-center">All prices are per App<sup>*</sup> </p>
@@ -24,29 +24,15 @@ permalink: /pricing/
   <div class="container text-center">
     <ul id="pricingZoneBox">
       <section>
-      <li class="col-md-3 plan-section" id="some-element">
-        <div class="pricing-col-head">
-          <img src="/img/asset-22.png" />
+      <li class="col-md-3 plan-section">
+        <div class="pricing-col-head col-head-line">
+          <img src="/img/plans-22.png" />
         </div>
-        <div class="platform-type plan-top-line fountain-blue">
+        <div class="platform-type plan-top-line">
         Single Platform<br>
         <img src="/img/pricing-19.png" />
         </div>
-        <table class="scan-list">
-          <tr>
-            <td>SAST (Static)</td>
-            <td><img src="/img/check-26.png" /></td>
-          </tr>
-          <tr>
-            <td>DAST (Dynamic)</td>
-            <td><img src="/img/check-26.png" /></td>
-          </tr>
-          <tr>
-            <td>UBA (Manual)</td>
-            <td><img src="/img/check-26.png" /></td>
-          </tr>
-        </table>
-        <a href="/index.html#myAnchor" target="_blank"><div id="know-more">(know more)</div></a>
+        {% include scan_list.html %}
         <table class="scan-benifits">
           <tr>
             <td>Remedition</td>
@@ -61,34 +47,22 @@ permalink: /pricing/
             <td>Unlimited</td>
           </tr>
         </table>
-        <div class="calculatePrice plan-bottom-line fountain-blue" value="799">US $799/month</div>
+        <div class="plan-bottom-line monthly-plan">{{site.data.pricings.lite.monthly}}</div>
+        <div class="plan-bottom-line yearly-plan" style="display:none;">{{site.data.pricings.lite.yearly}}</div>
+        <div class="yearly-saving">{{site.data.pricings.lite.savings}}</div>
         <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
       </li>
       </section>
       <section>
         <li class="col-md-3 plan-section">
-          <div class="pricing-col-head">
-            <img src="/img/asset-23.png" />
+        <div class="pricing-col-head col-head-line">
+            <img src="/img/plans-23.png" />
           </div>
-          <div class="platform-type plan-top-line blue-shade">
+          <div class="platform-type plan-top-line">
           Dual Platform<br>
           <img src="/img/pricing-20.png" />
           </div>
-          <table class="scan-list">
-            <tr>
-              <td>SAST (Static)</td>
-              <td><img src="/img/check-26.png" /></td>
-            </tr>
-            <tr>
-              <td>DAST (Dynamic)</td>
-              <td><img src="/img/check-26.png" /></td>
-            </tr>
-            <tr>
-              <td>UBA (Manual)</td>
-              <td><img src="/img/check-26.png" /></td>
-            </tr>
-            </table>
-            <a href="/index.html#myAnchor" target="_blank"><div id="know-more">(know more)</div></a>
+          {% include scan_list.html %}
             <table class="scan-benifits">
               <tr>
                 <td>Remedition</td>
@@ -103,33 +77,22 @@ permalink: /pricing/
                 <td>Unlimited</td>
               </tr>
             </table>
-            <div class="calculatePrice2 plan-bottom-line blue-shade" value="1399">US $1399/month</div>
+            <div class="plan-bottom-line monthly-plan">{{site.data.pricings.essential.monthly}}</div>
+            <div class="plan-bottom-line yearly-plan" style="display:none;">{{site.data.pricings.essential.yearly}}</div>
+            <div class="yearly-saving">{{site.data.pricings.essential.savings}}</div>
             <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
           </li>
         </section>
         <section>
           <li class="col-md-3 plan-section">
-            <div class="pricing-col-head">
-            <img src="/img/asset-24.png" />
+            <div class="pricing-col-head col-head-line">
+            <img src="/img/plans-24.png" />
             </div>
             <div class="platform-type plan-top-line voilet-shade">
             Multiple Platform<br>
             <img src="/img/pricing-21.png" />
             </div>
-            <table class="scan-list">
-              <tr>
-                <td>SAST (Static)</td>
-                <td><img src="/img/check-26.png" /></td>
-              </tr>
-              <tr>
-                <td>DAST (Dynamic)</td>
-                <td><img src="/img/check-26.png" /></td>
-              </tr>
-              <tr>
-                <td>UBA (Manual)</td>
-              <td><img src="/img/check-26.png" /></td>
-            </table>
-            <a href="/index.html#myAnchor" target="_blank"><div id="know-more">(know more)</div></a>
+            {% include scan_list.html %}
             <table class="scan-benifits">
               <tr>
                 <td>Remedition</td>
@@ -144,14 +107,16 @@ permalink: /pricing/
                 <td>Unlimited</td>
               </tr>
             </table>
-            <div class="calculatePrice3 plan-bottom-line voilet-shade" value="1999">US $1999/month</div>
+            <div class="plan-bottom-line monthly-plan">{{site.data.pricings.premium.monthly}}</div>
+            <div class="plan-bottom-line yearly-plan" style="display:none;">{{site.data.pricings.premium.yearly}}</div>
+            <div class="yearly-saving">{{site.data.pricings.premium.savings}}</div>
             <div class="request-button btn-lg ak-btn-round uppercase inblock req-demo" id="request-demo">Request Demo</div>
           </li>
         </section>
         <section>
           <li class="col-md-3 plan-section">
-            <div class="pricing-col-head">
-              <img src="/img/asset-25.png" />
+            <div class="pricing-col-head col-head-line">
+              <img src="/img/plans-25.png" />
             </div>
             <div class="platform-type plan-top-line black-line">
             Dedicated Infrastructure<br>
@@ -208,41 +173,28 @@ permalink: /pricing/
     <h1 class="pricing-heading">Testimonials</h1>
     <div class="container">
       <ul id="testimony-container">
-        <li class="col-md-4">
-          <div class="user-comments gills-14">
+        <li class="col-md-6">
+          <div class="user-opinion">
           <q>The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.</q>
           </div>
-          <div class="gills-14">
+          <div class="client-name gills-14">
             Viet Nguyen Tuan - Redmart
           </div>
         </li>
-        <li class="col-md-4">
-          <div class="user-comments gills-14">
-            <q>Appknox helped us scan our app thoroughly. They also tagged a security researcher who helped us understand all our issues, clarify our doubts and suggested appropriate solutions to fix them.</q>
+        <li class="col-md-6">
+          <div class="user-opinion">
+            <q>I am satisfied with the appknox findings related to security related vulnerabilities.</q>
           </div>
-          <div class="gills-14">
-            Neeraj Kumar - DronaHQ
-          </div>
-        </li>
-        <li class="col-md-4">
-          <div class="user-comments gills-14">
-            <q>Appknox helped us find some really interesting security loopholes and also helped us to fix it.</q>
-          </div>
-          <div class="gills-14">
-            Hari Palappetty - Big Basket
+          <div class="client-name gills-14">
+           Nitin Gautam - Times Internet Limited, Chief Manager Technology
           </div>
         </li>
       </ul>
-      <section class="text-center" id="testimony-selector">
-        <div id="testimony-jumpers" class="ak-jumper-block horz-selected-span">
-
-        </div>
-      </section>
     </div>
   </div>
 </section>
 <section>
-    <div class="container ak-container" id="faq">
+    <div class="container" id="faq">
         <h1 class="text-center pricing-heading">FAQs</h1>
         <div class="horzr-sep-block ak-white-bg"></div>
         <div class="horzr-sep-block ak-white-bg"></div>

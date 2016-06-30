@@ -194,32 +194,24 @@ p {
 
 .plan-top-line {
     display: inline-block;
-    width: 90%;
+    width: 80%;
+    border-bottom: 1px solid #ccc;
 }
 
 .plan-bottom-line {
     display: inline-block;
     width: 55%;
+    border-bottom: 1px solid #ccc;
     font-size: 16px;
     margin-top: 30px;
     margin-bottom: 10px;
     font-family : neosans !important;
 }
 
-.black-line {
-    border-bottom: 1px solid #000;
-}
-
-.fountain-blue {
-    border-bottom: 1px solid #69BBB6;
-}
-
-.blue-shade {
-    border-bottom: 1px solid #41CEEF;
-}
-
-.voilet-shade {
-    border-bottom: 1px solid #573F6A;
+.col-head-line{
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid #000;
 }
 
 #first-container {
@@ -514,7 +506,7 @@ p {
 }
 
 .plan-btn-round {
-    border-radius: 20px;
+    border-radius: 50px;
     height: 40px;
     width: 144px;
     background-color: #ffffff !important;
@@ -537,13 +529,6 @@ button:focus {
     font-weight: 900; !important;
     color: #000000 !important;
     box-shadow: 0px 0px 2px 2px #999 !important;
-}
-
-.saving-text{
-    margin-left: 20px;
-    font-family: neosans;
-    font-size: 14px;
-    color: red;
 }
 
 .btn {
@@ -625,7 +610,7 @@ button:focus {
 }
 
 .scan-enter {
-    margin-bottom: 62px;
+    margin-bottom: 84px;
     width: 100%;
     text-align: left;
     margin-left: 40px;
@@ -635,7 +620,7 @@ button:focus {
 }
 
 .platform-type {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0;
     font-size: 20px;
 }
@@ -736,6 +721,15 @@ button:focus {
     min-height: 80px;
     font-size: 24px;
     font-family: gillsansmtpro;
+}
+
+.user-opinion{
+  color: #888;
+  max-width: 700px;
+  margin: 30px auto 10px;
+  min-height: 80px;
+  font-size: 16px;
+  font-family: gillsansmtpro;
 }
 
 #testimony-selector {
@@ -1066,6 +1060,10 @@ label.error {
     padding-bottom: 150px;
 }
 
+.client-name{
+  margin: 0;
+}
+
 #zerodhaLogo {
     width: 62%;
 }
@@ -1247,22 +1245,17 @@ input[type=email],input[type=text],input[type=url] {
     border-style: solid;
     border-width: 0px 1px 0px 1px;
     border-color: #f2f2f2;
+    height: 516px;
 }
 
 .plan-section:hover {
-    box-shadow: 2px 2px 2px #999;
-}
-.plan-section:hover #know-more {
-    display: block;
-    text-align: left;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    position: absolute;
-    top:240px;
-  }
+      box-shadow: 3px 3px 20px #999;
+      z-index: 1;
 
-.plan-section:hover .pricing-col-head {
-    background-color: #41ceef;
+}
+
+.plan-section:hover .col-head-line {
+    border-bottom: 2px solid #f24c40;
 }
 
 .pricing-heading {
@@ -1272,7 +1265,22 @@ input[type=email],input[type=text],input[type=url] {
 
 .pricing-tagline {
     font-size: 14px;
-    color: red;
+    color: #f24c40;
+    position: relative;
+    bottom: 10px;
+}
+
+.saving-text{
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999999;
+  font-family: neosans;
+}
+
+.yearly-saving{
+  font-size: 16px;
+  font-family: neosans;
+  color: #7AAF14;
 }
 
 .margin-reduce{
@@ -1282,8 +1290,8 @@ input[type=email],input[type=text],input[type=url] {
 .plan-type {
     font-style: neosans;
     font-size: 14px;
-    margin-top: 30px;
-    margin-left: 110px;
+    margin-top: 5px;
+
 }
 
 .pricing-desc {
@@ -1297,8 +1305,10 @@ input[type=email],input[type=text],input[type=url] {
 
 .pricing-col-head {
     margin: 0;
-    background-color: #000;
+    background-color: #FFF;
     color: #fff;
+
+
 }
 
 #quantityZones,#quantityTitleZones {
@@ -1765,6 +1775,12 @@ input[type=email],input[type=text],input[type=url] {
         margin-left: 4%;
     }
 }
+@media (max-width: 1024px) {
+    .scan-enter {
+      margin-bottom: 55px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 990px) {
     .plan-top-line{
       width: 40%;
@@ -1784,10 +1800,6 @@ input[type=email],input[type=text],input[type=url] {
     .scan-benifits{
       width:56%;
       margin-left: 235px;
-    }
-    .plan-section:hover #know-more {
-          margin-left: 235px;
-
     }
     .scan-enter{
       margin-left: 235px;
@@ -1906,17 +1918,9 @@ input[type=email],input[type=text],input[type=url] {
         padding: 0 1.5%;
         margin-left: 12px;
     }
-    .saving-text{
-      margin-left: 10px;
-    }
 }
 
 @media (max-width: 600px) {
-  .saving-text{
-    display:inline-block;
-    margin-top: 5px;
-    margin-left: 0px;
-  }
   .plan-type{
     margin-left: 70px;
   }
@@ -2038,10 +2042,6 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 @media all and (max-width: 480px) and (min-width: 320px) {
-  .saving-text{
-    display:block;
-
-  }
   .plan-type{
     margin-left: 0px;
   }
