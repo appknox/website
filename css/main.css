@@ -1786,7 +1786,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 @media (max-width: 1024px) {
     .scan-enter {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
     }
 }
 
