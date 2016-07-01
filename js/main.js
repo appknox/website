@@ -2155,11 +2155,13 @@ $(document).ready(function(){
 				$(".year").removeClass("blue");
 				$(".yearly-plan").hide();
 				$(".monthly-plan").show();
+				$(".hide-savings").removeClass("show-savings");
     });
 		$(".year").click(function(){
 				$(".year").addClass("blue");
 				$(".month").removeClass("blue");
 				$(".monthly-plan").hide();
 				$(".yearly-plan").show();
+			  $(".hide-savings").addClass("show-savings");
     });
 });
