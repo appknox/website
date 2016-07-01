@@ -683,7 +683,7 @@ button:focus {
 
 .half-block-container>li,.half-block-container>div {
 /*width:50%;
-	float:left;*/
+  float:left;*/
 }
 
 #ak-radar-zone {
@@ -1774,8 +1774,8 @@ input[type=email],input[type=text],input[type=url] {
     a:focus {
         background: none !important;
     }/*#ak-header{
-    		border-bottom: 1px solid #E9E9E9;
-    	}*/
+        border-bottom: 1px solid #E9E9E9;
+      }*/
 
 }
 
