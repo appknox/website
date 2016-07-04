@@ -2,16 +2,12 @@ module Jekyll
   module AKUtils
     def ak_icon(text)
       case text
-      when /linkedin/
-        'linkedin'
-      when /facebook/
-        'facebook'
-      when /twitter/
-        'twitter'
-      when /@/
-        'envelope'
-      else
-        'globe'
+      when /linkedin/ then 'linkedin'
+      when /facebook/ then 'facebook'
+      when /twitter/ then 'twitter'
+      when /github.com/ then 'github'
+      when /@/ then 'envelope'
+      else 'globe'
       end
     end
 
