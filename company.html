@@ -112,7 +112,7 @@ permalink: /company/
 
               <li>
 
-               <a href="{{ link | ak_link }}" target="_blank">
+               <a data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
                   <i class="fa fa-{{link | ak_icon }}" aria-hidden="true"></i>
                 </a>
             </li>
@@ -174,7 +174,7 @@ permalink: /company/
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/>
+            <a data-proofer-ignore href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/></a>
           </div>
         </li>
         {% endfor %}
@@ -201,9 +201,11 @@ permalink: /company/
       <ul class="text-center">
         {% for partner in site.data.partners %}
         <li class="member-data-zone">
-          <div class="logo-pic-zone">
-            <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
-          </div>
+          <a data-proofer-ignore href="{{partner.link}}" target="_blank">
+            <div class="logo-pic-zone">
+                <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
+            </div>
+          </a>
         </li>
         {% endfor %}
       </ul>
@@ -224,9 +226,11 @@ permalink: /company/
       <ul class="text-center">
         {% for supporter in site.data.supporters %}
         <li class="member-data-zone">
-          <div class="logo-pic-zone">
-            <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}"/>
-          </div>
+          <a data-proofer-ignore href="{{supporter.link}}" target="_blank">
+            <div class="logo-pic-zone">
+                <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}">
+            </div>
+          </a>
         </li>
         {% endfor %}
       </ul>
