@@ -1103,6 +1103,16 @@ label.error {
     margin-top: 30px;
 }
 
+.margin-bottom {
+  margin-bottom: 30px !important;
+}
+
+.contact-page{
+  background-color: #fff;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
 #footer-form input {
     display: inline-block;
 }
