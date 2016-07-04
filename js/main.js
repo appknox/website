@@ -1870,6 +1870,11 @@ $(document).ready(function() {
     fancyRequestDemoForm();
   });
 
+  $(".pricing-demo").click(function(ev){
+    ev.preventDefault();
+    window.location= $(this).attr("href");
+  });
+
   $(".bulk-order").click(function(ev){
     ev.preventDefault();
     fancyBulkOrderForm();
