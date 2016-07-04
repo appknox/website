@@ -503,6 +503,7 @@ function activateCompanySubmenu(directCall){
 
   if(companyPage.length > 0 && doc.width() > 760){
     $("#company-dropdown").addClass("block");
+    $("#company-dropdown").css("z-index","1");
   }
   else if(companyPage.length > 0 && doc.width() < 760){
     $("#company-dropdown").removeClass("block");
