@@ -1,6 +1,3 @@
-=begin
-Utils
-=end
 module Jekyll
   module AKUtils
     def ak_icon(text)
