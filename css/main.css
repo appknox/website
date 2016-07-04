@@ -123,6 +123,10 @@ ul,li {
     font-size: 14px !important;
     font-family: gillsansmtpro;
 }
+.gills-19 {
+    font-size: 19px !important;
+    font-family: gillsansmtpro;
+}
 
 .neosans-24 {
     font-size: 40px;
@@ -619,7 +623,7 @@ button:focus {
 }
 
 .scan-enter {
-    margin-bottom: 84px;
+    margin-bottom: 85px;
     width: 100%;
     text-align: left;
     margin-left: 40px;
@@ -734,11 +738,9 @@ button:focus {
 
 .user-opinion{
   color: #888;
-  max-width: 700px;
-  margin: 30px auto 10px;
+  max-width: 400px;
+  margin: 30px auto 30px;
   min-height: 80px;
-  font-size: 16px;
-  font-family: gillsansmtpro;
 }
 
 #testimony-selector {
@@ -1294,13 +1296,13 @@ input[type=email],input[type=text],input[type=url] {
 
 .margin-reduce{
   margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .plan-type {
     font-style: neosans;
     font-size: 14px;
     margin-top: 5px;
-
 }
 
 .pricing-desc {
@@ -1316,8 +1318,6 @@ input[type=email],input[type=text],input[type=url] {
     margin: 0;
     background-color: #FFF;
     color: #fff;
-
-
 }
 
 #quantityZones,#quantityTitleZones {
@@ -1786,7 +1786,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 @media (max-width: 1024px) {
     .scan-enter {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
     }
 }
 
