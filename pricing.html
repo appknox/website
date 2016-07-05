@@ -23,13 +23,15 @@ permalink: /pricing/
 <section class="pricing-zone">
   <div class="container text-center">
     <ul id="pricingZoneBox">
+      {% for plan in site.data.pricing_plans %}
       <section>
       <li class="col-md-3 plan-section">
         <div class="pricing-col-head col-head-line">
+
           <img src="/img/plans-22.png" alt="Appknox Lite Plan" />
         </div>
         <div class="platform-type plan-top-line">
-        Single Platform<br>
+        {{plan.lite.planTitle}}<br>
         <img src="/img/pricing-19.png" alt="Appknox any one platform either Android or iOS" />
         </div>
         {% include scan_list.html %}
@@ -52,7 +54,9 @@ permalink: /pricing/
         <div class="yearly-saving hide-savings">{{site.data.pricings.lite.savings}}</div>
         <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-lite">Request Demo</div>
       </li>
+
       </section>
+        {% endfor %}
       <section>
         <li class="col-md-3 plan-section">
         <div class="pricing-col-head col-head-line">
