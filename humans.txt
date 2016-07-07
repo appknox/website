@@ -7,12 +7,11 @@ layout: null
 # TEAM
 
     <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+{% for member in site.data.members %}
+    {{member.name}} -- {{member.title}} -- @{{member.links[1] | split:"/" | last}}
+{% endfor %}
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    HTML5, CSS3, Python, Django
+    jQuery, Modernizr, Android
