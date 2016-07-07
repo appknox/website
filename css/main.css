@@ -430,7 +430,7 @@ p {
 }
 
 #ak-slide-zone h1 {
-    font-size: 56px;
+    font-size: 36px;
 }
 
 #ak-slide-zone p {
@@ -440,7 +440,7 @@ p {
 #ak-slide-container {
     display: block;
     list-style-type: none;
-    min-height: 510px;
+    min-height: 370px;
     text-align: left;
     padding-top: 30px;
     padding-bottom: 20px;
