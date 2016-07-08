@@ -7,10 +7,9 @@ layout: null
 # TEAM
 
     <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+{% for member in site.data.members %}
+    {{member.name}} -- {{member.title}} -- @{{member.links[1] | split:"/" | last}}
+{% endfor %}
 
 # TECHNOLOGY COLOPHON
 
