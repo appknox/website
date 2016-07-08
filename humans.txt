@@ -6,10 +6,9 @@ layout: null
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-{% for member in site.data.members %}
-    {{member.name}} -- {{member.title}} -- @{{member.links[1] | split:"/" | last}}
-{% endfor %}
+        <name> -- <role> -- <twitter>
+{% include username.html members=site.data.members %}
+
 
 # TECHNOLOGY COLOPHON
 
