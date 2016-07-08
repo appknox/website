@@ -5596,6 +5596,12 @@ button[type="submit"] .loading {
   width: 100%;
   height: auto;
 }
+ul.bulletpoint{
+  list-style-type: square;
+}
+.main-content{
+  margin-top: 10px;
+}
 @media (max-width: 991px) {
   .gallery.light-slider .description-slider-wrapper .description-slider > li {
     padding: 35px 25px 15px;
