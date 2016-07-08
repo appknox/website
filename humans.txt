@@ -14,5 +14,5 @@ layout: null
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    Python, NodeJS, Java, Shell, PostgreSQL, RabbitMQ & Redis
+    JQuery, EmeberJS, Brocolli, CoffeeScript
