@@ -9,7 +9,7 @@
     {% endfor %}
 
     {% if t_user != '' %}
-        {{member.name}} -- {{member.title}} -- {{ t_user | strip | strip_newlines }}
+        {{member.name}} -- {{member.title}} -- @{{ t_user | strip | strip_newlines }}
     {% else %}
         {{member.name}} -- {{member.title}}
     {% endif %}
