@@ -155,6 +155,10 @@ ul,li {
     margin-top: 20px;
 }
 
+.marginTopMax{
+  margin-top: 59px !important;
+}
+
 .maxWidth450 {
     max-width: 450px;
 }
