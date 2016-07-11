@@ -19,6 +19,7 @@
         monthly: $799/ month
         yearly: $7990/ year
         savings: SAVE $1598
+      link: https://try.appknox.com/demo-lite
 
 - pricingplan :
       plan :
@@ -41,6 +42,7 @@
         monthly: $1399/ month
         yearly:  $13990/ year
         savings: SAVE $2798
+      link: https://try.appknox.com/demo-essential
 
 - pricingplan :
       plan :
@@ -63,3 +65,4 @@
         monthly: $ 1999/month
         yearly:  $ 19990/year
         savings: SAVE $3998
+      link: https://try.appknox.com/demo-premium
