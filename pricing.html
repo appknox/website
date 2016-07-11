@@ -23,144 +23,89 @@ permalink: /pricing/
 <section class="pricing-zone">
   <div class="container text-center">
     <ul id="pricingZoneBox">
+      {% for plan in site.data.pricingplans %}
       <section>
       <li class="col-md-3 plan-section">
         <div class="pricing-col-head col-head-line">
-          <img src="/img/plans-22.png" alt="Appknox Lite Plan" />
+
+          <img src="{{plan.pricingplan.plan.img}}" alt="{{plan.pricingplan.plan.alt}}" />
         </div>
         <div class="platform-type plan-top-line">
-        Single Platform<br>
-        <img src="/img/pricing-19.png" alt="Appknox any one platform either Android or iOS" />
+        {{plan.pricingplan.planTitle}}<br>
+        <img src="{{plan.pricingplan.pricings.img}}" alt="{{plan.pricingplan.pricings.alt}}" />
         </div>
         {% include scan_list.html %}
         <table class="scan-benifits">
           <tr>
-            <td>Remedition</td>
-            <td>1 Session</td>
+            <td>{{plan.pricingplan.firstScan.name}}</td>
+            <td>{{plan.pricingplan.firstScan.desc}}</td>
           </tr>
           <tr>
-            <td>SLA</td>
-            <td>3-5 Working Days</td>
+            <td>{{plan.pricingplan.secondScan.name}}</td>
+            <td>{{plan.pricingplan.secondScan.desc}}</td>
           </tr>
           <tr>
-            <td>No.of Scans</td>
-            <td>Unlimited</td>
+            <td>{{plan.pricingplan.thirdScan.name}}</td>
+            <td>{{plan.pricingplan.thirdScan.desc}}</td>
           </tr>
         </table>
-        <div class="plan-bottom-line monthly-plan">{{site.data.pricings.lite.monthly}}</div>
-        <div class="plan-bottom-line yearly-plan" style="display:none;">{{site.data.pricings.lite.yearly}}</div>
-        <div class="yearly-saving hide-savings">{{site.data.pricings.lite.savings}}</div>
-        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-lite">Request Demo</div>
+        <div class="plan-bottom-line monthly-plan">{{plan.pricingplan.pricing.monthly}}</div>
+        <div class="plan-bottom-line yearly-plan" style="display:none;">{{plan.pricingplan.pricing.yearly}}</div>
+        <div class="yearly-saving hide-savings">{{plan.pricingplan.pricing.savings}}</div>
+        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="{{plan.pricingplan.link}}">Request Demo</div>
       </li>
       </section>
-      <section>
-        <li class="col-md-3 plan-section">
-        <div class="pricing-col-head col-head-line">
-            <img src="/img/plans-23.png" alt="Appknox Essential Plan" />
-          </div>
-          <div class="platform-type plan-top-line">
-          Dual Platform<br>
-          <img src="/img/pricing-20.png" alt="Appknox Dual Platform including only Android and iOS" />
-          </div>
-          {% include scan_list.html %}
-            <table class="scan-benifits">
-              <tr>
-                <td>Remedition</td>
-                <td>3 Session</td>
-              </tr>
-              <tr>
-                <td>SLA</td>
-                <td>5-7 Working Days</td>
-              </tr>
-              <tr>
-                <td>No.of Scans</td>
-                <td>Unlimited</td>
-              </tr>
-            </table>
-            <div class="plan-bottom-line monthly-plan">{{site.data.pricings.essential.monthly}}</div>
-            <div class="plan-bottom-line yearly-plan" style="display:none;">{{site.data.pricings.essential.yearly}}</div>
-            <div class="yearly-saving hide-savings">{{site.data.pricings.essential.savings}}</div>
-            <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-essential">Request Demo</div>
-          </li>
-        </section>
+        {% endfor %}
         <section>
-          <li class="col-md-3 plan-section">
-            <div class="pricing-col-head col-head-line">
-            <img src="/img/plans-24.png" alt="Appknox Premium Plan" />
-            </div>
-            <div class="platform-type plan-top-line voilet-shade">
-            Multiple Platform<br>
-            <img src="/img/pricing-21.png" alt="Appknox Multiple Platform including Android, iOS and Windows" />
-            </div>
-            {% include scan_list.html %}
-            <table class="scan-benifits">
-              <tr>
-                <td>Remedition</td>
-                <td>5 Session</td>
-              </tr>
-              <tr>
-                <td>SLA</td>
-                <td>7-9 Working Days</td>
-              </tr>
-              <tr>
-                <td>No.of Scans</td>
-                <td>Unlimited</td>
-              </tr>
-            </table>
-            <div class="plan-bottom-line monthly-plan">{{site.data.pricings.premium.monthly}}</div>
-            <div class="plan-bottom-line yearly-plan" style="display:none;">{{site.data.pricings.premium.yearly}}</div>
-            <div class="yearly-saving hide-savings">{{site.data.pricings.premium.savings}}</div>
-            <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-premium">Request Demo</div>
-          </li>
-        </section>
-        <section>
-          <li class="col-md-3 plan-section">
-            <div class="pricing-col-head col-head-line">
-              <img src="/img/plans-25.png" alt="Appknox Enterprise Plan" />
-            </div>
-            <div class="platform-type plan-top-line black-line">
-            Dedicated Infrastructure<br>
-            <table class="enterprise-features">
-              <tr>
-                <td>Multiple <span class="black-font">Teams</span></td>
-              </tr>
-              <tr>
-                <td>Multiple <span class="black-font">Projects</span></td>
-              </tr>
-              <tr>
-                <td>Multiple <span class="black-font">Platforms</span></td>
-              </tr>
-            </table>
-            </div>
-            <table class="scan-list enterprise-list">
-              <tr>
-                <td>SAST (Static)</td>
-                <td class="check-26"></td>
-              </tr>
-              <tr>
-                <td>DAST (Dynamic)</td>
-                <td class="check-26"></td>
-              </tr>
-              <tr>
-                <td>On Premise Deployment</td>
-                <td class="check-26"></td>
-              </tr>
-              <tr>
-                <td>Private Secure Cloud</td>
-                <td class="check-26"></td>
-              </tr>
-            </table>
-            <table class="scan-enter">
-              <tr>
-                <td>Dedicated Account Manager</td>
-              </tr>
-              <tr>
-                <td>Dedicated Security Researcher</td>
-              </tr>
-            </table>
-            <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-enterprise">Get In Touch</div>
-          </li>
-        </section>
+            <li class="col-md-3 plan-section">
+              <div class="pricing-col-head col-head-line">
+                <img src="/img/plans-25.png" alt="Appknox Enterprise Plan" />
+              </div>
+              <div class="platform-type plan-top-line black-line">
+              Dedicated Infrastructure<br>
+              <table class="enterprise-features">
+                <tr>
+                  <td>Multiple <span class="black-font">Teams</span></td>
+                </tr>
+                <tr>
+                  <td>Multiple <span class="black-font">Projects</span></td>
+                </tr>
+                <tr>
+                  <td>Multiple <span class="black-font">Platforms</span></td>
+                </tr>
+              </table>
+              </div>
+              <table class="scan-list enterprise-list">
+                <tr>
+                  <td>SAST (Static)</td>
+                  <td class="check-26"></td>
+                </tr>
+                <tr>
+                  <td>DAST (Dynamic)</td>
+                  <td class="check-26"></td>
+                </tr>
+                <tr>
+                  <td>On Premise Deployment</td>
+                  <td class="check-26"></td>
+                </tr>
+                <tr>
+                  <td>Private Secure Cloud</td>
+                  <td class="check-26"></td>
+                </tr>
+              </table>
+              <table class="scan-enter">
+                <tr>
+                  <td>Dedicated Account Manager</td>
+                </tr>
+                <tr>
+                  <td>Dedicated Security Researcher</td>
+                </tr>
+              </table>
+              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-enterprise">Get In Touch</div>
+            </li>
+          </section>
+
+
           <li class="clearfix"></li>
     </ul>
     <ul class="marginTop">

@@ -1,0 +1,68 @@
+- pricingplan :
+      plan:
+        img: /img/plans-22.png
+        alt : Appknox Lite Plan
+      planTitle: Single Platform
+      pricings:
+        img: /img/pricing-19.png
+        alt: Appknox any one platform either Android or iOS
+      firstScan:
+        name: Remedition
+        desc: 1 Session
+      secondScan:
+        name: SLA
+        desc: 3-5 Working Days
+      thirdScan:
+        name: No.of Scans
+        desc: Unlimited
+      pricing:
+        monthly: $799/ month
+        yearly: $7990/ year
+        savings: SAVE $1598
+      link: https://try.appknox.com/demo-lite
+
+- pricingplan :
+      plan :
+        img: /img/plans-23.png
+        alt : Appknox Essential Plan
+      planTitle: Dual Platform
+      pricings:
+        img: /img/pricing-20.png
+        alt: Appknox Dual Platform including only Android and iOS
+      firstScan:
+        name: Remedition
+        desc: 3 Session
+      secondScan:
+        name: SLA
+        desc: 5-7 Working Days
+      thirdScan:
+        name: No.of Scans
+        desc: Unlimited
+      pricing:
+        monthly: $1399/ month
+        yearly:  $13990/ year
+        savings: SAVE $2798
+      link: https://try.appknox.com/demo-essential
+
+- pricingplan :
+      plan :
+        img: /img/plans-24.png
+        alt : Appknox Premium Plan
+      planTitle: Multiple Platform
+      pricings:
+        img: /img/pricing-21.png
+        alt: Appknox Multiple Platform including Android, iOS and Windows
+      firstScan:
+        name: Remedition
+        desc: 5 Session
+      secondScan:
+        name: SLA
+        desc: 7-9 Working Days
+      thirdScan:
+        name: No.of Scans
+        desc: Unlimited
+      pricing:
+        monthly: $ 1999/month
+        yearly:  $ 19990/year
+        savings: SAVE $3998
+      link: https://try.appknox.com/demo-premium
