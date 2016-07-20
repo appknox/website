@@ -734,9 +734,18 @@ button:focus {
   height: 400px;
 }
 
-.corousel-spots li{
-  border: 1px solid #000000;
-  margin-top: 100px;
+.carousel-spots li{
+      width: 9px;
+      height: 9px;
+      border: 1px solid #000;
+      border-radius: 100%;
+      line-height: 30px;
+      color: #fff;
+      background-color: #f6f6f6;
+}
+
+.carousel-spots li{
+  background-color: #000;
 }
 
 .user-comments {
