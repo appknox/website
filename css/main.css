@@ -1600,6 +1600,38 @@ input[type=email],input[type=text],input[type=url] {
     margin-top: 50px;
 }
 
+.placeholder-position{
+  height: 40px;
+  padding: 12px 10px 10px 10px!important;
+}
+
+.placeholder-tele{
+  height: 40px;
+  padding: 12px 10px 10px 50px!important;
+}
+
+.placeholder-position::-webkit-input-placeholder { /* WebKit browsers */
+  position: relative;
+  top: 3px;
+  left: 0px;
+}
+
+.placeholder-position::-moz-placeholder { /* Firefox 19+ */
+  line-height:23px;
+}
+
+.placeholder-tele::-moz-placeholder { /* Firefox 19+ */
+  line-height:23px;
+}
+
+.placeholder-position:-moz-placeholder { /* Firefox 18- */
+  line-height:23px;
+}
+
+.placeholder-tele:-moz-placeholder { /* Firefox 18- */
+    line-height:23px;
+}
+
 .faq-region {
     margin-bottom: 20px;
 }
