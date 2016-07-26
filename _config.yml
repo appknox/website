@@ -25,3 +25,4 @@ exclude:
   - circle.yml
   - Gemfile
   - Gemfile.lock
+  - .editorconfig
