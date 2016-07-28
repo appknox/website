@@ -1,27 +1,3 @@
-- name: Harshit Agarwal
-  title: Founder & CEO
-  gravatar: https://www.gravatar.com/avatar/3f13f70fdb98a4f38ba1bd9bdfc44fa1?s=150
-  links:
-    - http://in.linkedin.com/in/agarwalharshit
-    - https://twitter.com/harshwebweaver
-    - harshit@appknox.com
-
-- name: Subho Halder
-  title: Founder & CTO
-  gravatar: https://en.gravatar.com/avatar/730593e354d39036ab49b750eb944f80?s=150
-  links:
-    - http://in.linkedin.com/in/subhohalder/
-    - https://twitter.com/sunnyrockzzs
-    - sunny@appknox.com
-
-- name: Prateek Panda
-  title: Founder & CMO
-  gravatar: https://en.gravatar.com/avatar/0ba4fb34d18fa1fe613004c36afcb1ac?s=150
-  links:
-    - http://in.linkedin.com/in/prateekpanda
-    - https://twitter.com/prateekpanda
-    - prateek@appknox.com
-
 - name: Miguel Martín Romero
   title: Head of Business Development
   gravatar: https://pbs.twimg.com/profile_images/502751707340615680/8cif9y7B_400x400.jpeg
