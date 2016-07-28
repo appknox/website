@@ -12,5 +12,5 @@ layout: null
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, Python, Django
-    jQuery, Modernizr, Android
+    HTML5, CSS3, Python, Django, Postgres,
+    jQuery, Modernizr, Android, Java
