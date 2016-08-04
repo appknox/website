@@ -410,6 +410,7 @@ body{
     height: 300px;
   }
   .session-heading{
+    width: 80%;
     margin-left: -20px;
   }
   .session-desc{
@@ -420,10 +421,12 @@ body{
     margin-top: 0px!important;
   }
   .book-button{
-    margin-left: 80px;
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 50%;
   }
   .tab-view3{
-    width: 85%;
+    width: 80%;
   }
   .session-section{
     height: 350px;
