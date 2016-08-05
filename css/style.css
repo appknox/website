@@ -94,6 +94,7 @@ body{
   text-align: left;
   color: #000000;
   font-family: neosans;
+  width: 85%;
 }
 
 .session-desc{
@@ -468,4 +469,109 @@ body{
     margin-left: 15px;
     font-size: 20px;
   }
+}
+#site-footer {
+    background: #333;
+    padding: 20px 0;
+    color: #9d9d9d;
+}
+
+#site-footer a {
+    color: #9d9d9d !important;
+    transition: all .35s ease-out;
+}
+
+#site-footer a:hover {
+    color: #bbb !important;
+}
+
+#site-footer input[type=email] {
+    border: none;
+    background: #444;
+    padding: 5px 15px;
+    width: 66%;
+}
+
+#site-footer .container>div {
+    padding: 10px 3%;
+    border-bottom: 1px solid #444;
+}
+
+.footer-titles {
+    color: #e6e6e6;
+    margin: 15px 0;
+    font-size: 24px;
+    font-family: neosans;
+}
+
+.footer-article {
+    margin: 5px 0 40px;
+}
+
+.footer-article p {
+    font-size: .9em;
+    color: #767676;
+}
+
+.news-title {
+    font-size: .8em;
+}
+
+#footer-subscribe-butn {
+    background: #555;
+    color: #aaa;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 23px;
+    font-size: .9em;
+    margin: 10px;
+}
+
+#footer-subscribe-butn:hover {
+    color: #fff;
+}
+
+.adress-text {
+    font-size: .9em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer-form {
+    margin-bottom: 40px;
+}
+
+#footer-form h3 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#footer-form form {
+    display: inline-block;
+    width: 60%;
+}
+
+#contact-us-form {
+    display: nne;
+}
+.footer-links {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#form-social-block,.form-social-block {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#form-social-block img,.form-social-block img {
+    width: 35px;
+    margin-left: 15px;
 }
