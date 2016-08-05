@@ -18,10 +18,18 @@ body{
 
 .heading{
   margin-top: 60px;
-  max-width: 300px;
+  max-width: 400px;
   font-size: 24px;
   color: #000000;
   font-family: neosans;
+}
+
+.form-heading{
+  font-size: 24px;
+  color: #000000;
+  font-family: neosans;
+  margin-left: 250px;
+  margin-top: 30px;
 }
 
 .content{
@@ -30,7 +38,7 @@ body{
   color: #979797;
   font-family: lato;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .testimony-client{
@@ -179,6 +187,18 @@ body{
   .session-heading{
     margin-left: -50px;
   }
+  .form-heading{
+    margin-left: 110px;
+  }
+  .session-section{
+    height: 250px;
+  }
+  .last-section{
+    margin-top: 60px!important;
+  }
+  .third-section{
+    margin-top: 80px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -204,72 +224,58 @@ body{
     margin-top: 50px;
   }
   .session-section{
-    height:300px;
-    width: 44%;
+    height:250px;
+    width: 55%;
     margin-top: 30px;
   }
   .second-section{
-    width: 56%;
+    width: 45%;
   }
   .session-heading{
-    margin-left: -30px;
-    width: 85%;
+    margin-left: -45px;
+    font-size: 20px;
   }
   .session-desc{
     text-align: left;
     margin-top: 60px;
+    font-size: 15px;
     margin-left: 40px;
   }
   .book-button {
-    margin-left: 90px;
+    margin-left: 115px;
     margin-top: 20px;
   }
   .tab-view{
-    height:300px;
-    width: 60%;
+    width: 55%;
     margin-top: 30px;
   }
   .tab-view2{
     height:300px;
-    width: 40%;
-    margin-top: 100px;
+    width: 45%;
   }
   .last-section{
     margin-top: 0px !important;
-    margin-left: -13px;
+    margin-left: 0px;
   }
-  .tab-view3{
-    width: 80%;
+  .image-enlarge{
+    margin-left: 15px;
   }
-  .tab-view4{
-    margin-top: 80px;
-    margin-left: 85px;
+  .third-section{
+    margin-top: 0px;
   }
-  .tab-view5{
-    margin-left: 120px;
+  .second-image{
+    margin-top: 100px;
   }
-  .tab-view6{
-    width: 47%;
-    margin-left: -30px;
+  .session-icon{
+    margin-left: -20px;
   }
-  .tab-view7{
-    width: 59%;
-    margin-left: -15px;
-    height: 250px;
+  .last-heading{
+    width: 85%;
   }
-  .tab-view8{
-    width: 364px;
-    margin-top: -35px;
-    margin-left: 50px;
+  .form-heading{
+    margin-left: 190px;
   }
-  .tab-view9{
-    margin-left: 65px;
-    margin-top: 80px;
-  }
-  .tab-view10{
-    margin-left: 120px;
-    margin-top: 30px;
-  }
+
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .heading{
@@ -305,22 +311,33 @@ body{
   }
   .session-heading{
     margin-left: -45px;
+    font-size: 20px;
   }
   .session-desc{
-    margin-left: 60px;
+    margin-left: 40px;
+    font-size: 15px;
   }
   .last-section{
     margin-left: 0px;
     margin-top: 0px!important;
   }
   .book-button{
-    margin-left: 115px;
+    margin-left: 105px;
   }
   .tab-view3{
     width: 85%;
   }
   .session-section{
     height: 250px;
+  }
+  .session-icon{
+    margin-left: -20px;
+  }
+  .last-heading{
+    width: 85%;
+  }
+  .form-heading{
+    margin-left: 45px;
   }
 }
 
@@ -342,7 +359,10 @@ body{
     margin-left: 110px;
   }
   .condition-text{
-    margin-left: 30px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 13px;
+    max-width: 300px;
   }
   .form-field{
     margin-top: 50px;
@@ -358,22 +378,31 @@ body{
   }
   .session-heading{
     margin-left: -35px;
+    font-size: 20px;
   }
   .session-desc{
-    margin-left: 60px;
+    margin-left: 40px;
+    font-size: 15px;
   }
   .last-section{
     margin-left: 0px;
     margin-top: 0px!important;
   }
   .book-button{
-    margin-left: 100px;
+    margin-left: 50px;
+    width: 70%;
   }
   .tab-view3{
-    width: 85%;
+    width: 90%;
   }
   .session-section{
     height: 270px;
+  }
+  .session-icon{
+    margin-left: -20px;
+  }
+  .form-heading{
+    margin-left: 20px;
   }
 }
 
@@ -412,23 +441,31 @@ body{
   .session-heading{
     width: 80%;
     margin-left: -20px;
+    font-size: 20px;
   }
   .session-desc{
     margin-left: 60px;
+    font-size: 15px;
   }
   .last-section{
     margin-left: 0px;
     margin-top: 0px!important;
   }
   .book-button{
-    margin-left: 70px;
+    margin-left: 40px;
     margin-top: 20px;
-    width: 50%;
+    width: 70%;
   }
   .tab-view3{
     width: 80%;
   }
-  .session-section{
-    height: 350px;
+  .condition-text{
+    text-align: center;
+    font-size: 13px;
+    max-width: 300px;
+  }
+  .form-heading{
+    margin-left: 15px;
+    font-size: 20px;
   }
 }
