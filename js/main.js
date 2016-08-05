@@ -650,7 +650,7 @@ $(document).ready(function(){
 
     if (IS_IPAD || IS_IPHONE) {
 
-        $('a#menubar, a#menubar1').on('click touchend', function() {
+        $('.menubar').on('click touchend', function() {
             var link = $(this).attr('href');
             window.open(link,'_self'); // open in the same window
 

@@ -10,34 +10,34 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-  <a id="menubar" href="/">
+  <a class="menubar" href="/">
     <img class="navbar-brand" src="/img/logo.png" alt="Appknox"/>
   </a>
 </div>
 <div id="navbar" class="navbar-collapse collapse">
   <ul class="nav navbar-nav" id="ak-menu">
-    <li><a id="menubar" href="/">Home</a></li>
-    <li><a id="menubar1" href="/pricing">Pricing</a></li>
+    <li><a class="menubar" href="/">Home</a></li>
+    <li><a class="menubar" href="/pricing">Pricing</a></li>
     <li class="dropdown" id="resource-menu">
-      <a href="/resources" id="resource-link" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+      <a href="/resources" id="resource-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
       <ul class="dropdown-menu resource-sublinks" id="resource-dropdown">
-        <li><a id="menubar1" href="/resources/#all" class="hashMenu" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
+        <li><a href="/resources/#all" class="hashMenu menubar" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
         {% for type in site.data.resource_types%}
-          <li><a id="menubar1" href="/resources/#{{type.name | downcase}}" class="hashMenu" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}} menubar2" data-proofer-ignore>{{type.name}}</a></li>
+          <li><a href="/resources/#{{type.name | downcase}}" class="hashMenu menubar" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}" data-proofer-ignore>{{type.name}}</a></li>
         {% endfor %}
       </ul>
     </li>
     <li class="dropdown" id="company-menu">
-      <a href="/company" id="company-link" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
+      <a href="/company" id="company-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
         <ul class="dropdown-menu" id="company-dropdown">
-          <li><a id="menubar1" href="/company/#about-us" class="hashMenu" id="about-us-butn" data-proofer-ignore>About Us</a></li>
-          <li><a id="menubar1" href="/company/#team" class="hashMenu" id="team-butn" data-proofer-ignore>Team</a></li>
-          <li><a id="menubar1" href="/company/#press" class="hashMenu" id="press-butn" data-proofer-ignore>Press</a></li>
-          <li><a id="menubar1" href="/company/#partners" class="hashMenu" id="partners-butn" data-proofer-ignore>Partners</a></li>
+          <li><a href="/company/#about-us" class="hashMenu menubar" id="about-us-butn" data-proofer-ignore>About Us</a></li>
+          <li><a href="/company/#team" class="hashMenu menubar" id="team-butn" data-proofer-ignore>Team</a></li>
+          <li><a href="/company/#press" class="hashMenu menubar" id="press-butn" data-proofer-ignore>Press</a></li>
+          <li><a href="/company/#partners" class="hashMenu menubar" id="partners-butn" data-proofer-ignore>Partners</a></li>
         </ul>
     </li>
-    <li><a id="menubar1" href="https://blog.appknox.com">Blog</a></li>
-    <li><a id="menubar1" href="/contact">Contact Us</a></li>
+    <li><a class="menubar" href="https://blog.appknox.com">Blog</a></li>
+    <li><a class="menubar" href="/contact">Contact Us</a></li>
   </ul>
 </div><!-- /.navbar-collapse -->
 </div>
