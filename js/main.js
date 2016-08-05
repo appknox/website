@@ -656,6 +656,9 @@ $(document).ready(function(){
 
             return true; // set false to prevent anchor click
         });
+        $('#yearly').on('click',function(){
+           alert( 't!')
+         });
     }
 });
 
