@@ -315,6 +315,45 @@ function sendBulkOrderForm(ev){
   }
 }
 
+$("#submitSOSForm").html(getProcessingHtml());
+
+  var serializeData = form.serialize();
+  var url = HAWKINS_ENDURL + "sos/1029041/4l50bp";
+  var method = form.attr("method");
+
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback
+  }
+
+  var xhr = $.ajax(option);
+  form.slideUp(300);
+  form.attr("data-attr-submitted",FORM_SUBMITTING);
+
+  function errorCallback(jqXHR, err, errException){
+    $("#submitSOSForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+    form.attr("data-attr-submitted",SUBMITTED_NO);
+    form.slideDown(300);
+  }
+
+  function successCallback(resData){
+    if(resData.status === "success"){
+      $("#submitSOSForm").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+      form.attr("data-attr-submitted", FORM_SUBMITTED_YES);
+    }else{
+      $("#submitSOSForm").html(SUBMIT_ERROR_MSG);
+      form.attr("data-attr-submitted",SUBMITTED_NO);
+      form.slideDown(300);
+    }
+  }
+}
+
+
+
 //Function to watch demo form submit
 function bindBulkSubmitCheck(){
   $("#bulk-order-submit").unbind("click",sendBulkOrderForm).bind("click",sendBulkOrderForm);
