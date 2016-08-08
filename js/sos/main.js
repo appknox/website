@@ -350,7 +350,7 @@ $("#submitSOSForm").html(getProcessingHtml());
       form.slideDown(300);
     }
   }
-}
+
 
 
 
