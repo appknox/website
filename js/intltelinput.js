@@ -337,7 +337,7 @@
             }
             // toggle country dropdown on click
             var selectedFlag = this.selectedFlagInner.parent();
-            selectedFlag.on("click" + this.ns, function(e) {
+            selectedFlag.on("click touchend" + this.ns, function(e) {
                 // only intercept this event if we're opening the dropdown
                 // else let it bubble up to the top ("click-off-to-close" listener)
                 // we cannot just stopPropagation as it may be needed to close another instance

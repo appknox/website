@@ -112,7 +112,7 @@ permalink: /company/
 
                 <li>
 
-                 <a data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
+                 <a class="submenu" data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
                     <i class="fa fa-{{link | ak_icon }}" aria-hidden="true"></i>
                   </a>
               </li>
@@ -134,7 +134,7 @@ permalink: /company/
 
               <li>
 
-               <a data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
+               <a class="submenu" data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
                   <i class="fa fa-{{link | ak_icon }}" aria-hidden="true"></i>
                 </a>
             </li>
@@ -151,7 +151,7 @@ permalink: /company/
         Write to us if you want to be the part of this journey.
       </p>
       <p class="text-center">
-        <a href="mailto:team@appknox.com">team@appknox.com</a>
+        <a class="submenu" href="mailto:team@appknox.com">team@appknox.com</a>
       </p>
   </ul>
 </section>
@@ -196,14 +196,14 @@ permalink: /company/
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <a data-proofer-ignore href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/></a>
+            <a class="submenu" data-proofer-ignore href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/></a>
           </div>
         </li>
         {% endfor %}
       </ul>
     </li>
     <li>
-      <p class="text-center gray-8">Write to us at <a href="mailto:press@appknox.com">press@appknox.com</a></p>
+      <p class="text-center gray-8">Write to us at <a class="submenu" href="mailto:press@appknox.com">press@appknox.com</a></p>
     </li>
   </ul>
 </section>
@@ -223,7 +223,7 @@ permalink: /company/
       <ul class="text-center">
         {% for partner in site.data.partners %}
         <li class="member-data-zone">
-          <a data-proofer-ignore href="{{partner.link}}" target="_blank">
+          <a class="submenu" data-proofer-ignore href="{{partner.link}}" target="_blank">
             <div class="logo-pic-zone">
                 <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
             </div>
@@ -233,7 +233,7 @@ permalink: /company/
       </ul>
     </li>
     <li>
-      <p class="text-center gray-8">Write to us at  <a href="mailto:patner@appknox.comm">patner@appknox.com</a></p>
+      <p class="text-center gray-8">Write to us at  <a class="submenu" href="mailto:patner@appknox.comm">patner@appknox.com</a></p>
     </li>
   </ul>
 </section>
@@ -248,7 +248,7 @@ permalink: /company/
       <ul class="text-center">
         {% for supporter in site.data.supporters %}
         <li class="member-data-zone">
-          <a data-proofer-ignore href="{{supporter.link}}" target="_blank">
+          <a class="submenu" data-proofer-ignore href="{{supporter.link}}" target="_blank">
             <div class="logo-pic-zone">
                 <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}">
             </div>

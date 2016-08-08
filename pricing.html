@@ -13,8 +13,8 @@ permalink: /pricing/
 <section class="plan-type">
   <div class="text-center">
     <div class="btn-group">
-      <button class="btn active plan-btn-round month blue menubar" id="monthly"  data-target="#collapsible">MONTHLY</button>
-      <button class="btn plan-btn-round year menubar" id="yearly" data-toggle="collapse" data-target="#collapsible">YEARLY</button>
+      <button class="btn active plan-btn-round month blue" id="monthly"  data-target="#collapsible">MONTHLY</button>
+      <button class="btn plan-btn-round year" id="yearly" data-toggle="collapse" data-target="#collapsible">YEARLY</button>
     </div>
     <div class="saving-text">Save With Yearly Subscription</div>
   </div>
@@ -52,7 +52,7 @@ permalink: /pricing/
         <div class="plan-bottom-line monthly-plan">{{plan.pricingplan.pricing.monthly}}</div>
         <div class="plan-bottom-line yearly-plan" style="display:none;">{{plan.pricingplan.pricing.yearly}}</div>
         <div class="yearly-saving hide-savings">{{plan.pricingplan.pricing.savings}}</div>
-        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="{{plan.pricingplan.link}}">Request Demo</div>
+        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="{{plan.pricingplan.link}}">Request Demo</div>
       </li>
       </section>
         {% endfor %}
@@ -101,7 +101,7 @@ permalink: /pricing/
                   <td>Dedicated Security Researcher</td>
                 </tr>
               </table>
-              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing" href="https://try.appknox.com/demo-enterprise">Get In Touch</div>
+              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="https://try.appknox.com/demo-enterprise">Get In Touch</div>
             </li>
           </section>
 
