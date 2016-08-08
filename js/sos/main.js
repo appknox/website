@@ -315,8 +315,10 @@ function sendBulkOrderForm(ev){
   }
 }
 
+
 $("#submitSOSForm").html(getProcessingHtml());
 
+  var form = $("#submit-sos-form");
   var serializeData = form.serialize();
   var url = HAWKINS_ENDURL + "sos/1029041/4l50bp";
   var method = form.attr("method");
