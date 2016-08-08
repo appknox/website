@@ -643,24 +643,6 @@ function resourceLinkClickAction(){
   })
 }
 
-$(document).ready(function(){
-
-    IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
-    IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
-
-    if (IS_IPAD || IS_IPHONE) {
-
-        $('.menubar').on('click touchend', function() {
-            var link = $(this).attr('href');
-            window.open(link,'_self'); // open in the same window
-
-            return true; // set false to prevent anchor click
-        });
-        $('#yearly').on('click',function(){
-           alert( 't!')
-         });
-    }
-});
 
 $(document).ready(function(){
   activateResourceSubmenu(true);
@@ -676,6 +658,26 @@ $(document).ready(function(){
 
 $(window).resize(function(){
   activateResourceSubmenu();
+});
+
+
+////////////////////////////////////////////////////////
+// Menu to work on iPad and iPhone
+
+$(document).ready(function(){
+
+    IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+    IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+
+    if (IS_IPAD || IS_IPHONE) {
+
+        $('.menubar').on('click touchend', function() {
+            var link = $(this).attr('href');
+            window.open(link,'_self'); // open in the same window
+
+            return true; // set false to prevent anchor click
+        });
+    }
 });
 
 
