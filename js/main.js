@@ -2294,7 +2294,7 @@ var CallFormValidateRules = {
     }
   },
   errorPlacement: function(error, element) {
-    var errorEleId = "#" + element.attr("name") + "-lp-error"
+    var errorEleId = "#" + element.attr("name") + "-call-error"
     var errorBox = null;
     $(errorEleId).children().remove(); //removing if already outputed error from  backend
     errorBox = $("<div class='mp-dynamic-error' />");
