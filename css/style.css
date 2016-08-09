@@ -323,6 +323,20 @@ body{
     text-align: right;
 }
 
+.button-red {
+    background: #ea2127;
+    border: none;
+    padding: 10px 90px;
+    color: #fff;
+    cursor: pointer;
+    font-family: neosans;
+    margin-bottom: 30px;
+}
+
+.button-red:hover {
+    color: #fff !important;
+}
+
 
 @media (max-width: 1024px) {
   .content{
