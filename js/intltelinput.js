@@ -266,7 +266,7 @@
             for (var i = 0; i < countries.length; i++) {
                 var c = countries[i];
                 // open the list item
-                tmp += "<li class='country " + className + "' data-dial-code='" + c.dialCode + "' data-country-code='" + c.iso2 + "'>";
+                tmp += "<li class='country listing " + className + "' data-dial-code='" + c.dialCode + "' data-country-code='" + c.iso2 + "'>";
                 // add the flag
                 tmp += "<div class='flag-box'><div class='iti-flag " + c.iso2 + "'></div></div>";
                 // and the country name and dial code

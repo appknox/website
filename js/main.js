@@ -688,9 +688,15 @@ $(document).ready(function(){
           var val = $(this).val();
           this.select();
         });
-        $('.carousel-click').on('click touchend', function(event) {
-          var link = $(this).attr('href');
+        $('.carousel-prev').on('click touchend', function() {
+          $('#carousel-example-generic').carousel('prev')
         });
+        $('.carousel-next').on('click touchend', function() {
+          $('#carousel-example-generic').carousel('next')
+        });
+        
+
+
 
     }
 });
