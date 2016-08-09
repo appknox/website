@@ -20,6 +20,10 @@ body{
     color: #81C06C;
 }
 
+.ak-margin-10 {
+    margin-top: 20%;
+}
+
 .red {
     color: #f17758;
 }
@@ -313,6 +317,10 @@ body{
 #form-social-block img,.form-social-block img {
     width: 35px;
     margin-left: 15px;
+}
+
+#SOSForm {
+    text-align: right;
 }
 
 

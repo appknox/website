@@ -2135,6 +2135,114 @@ function bindLandingPageForm1(){
   $("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
 }
 
+var SOSFormValidateRules = {
+  rules: {
+    "name": {
+      required: true,
+      maxlength: 100,
+    },
+    "email": {
+      required: true,
+      maxlength: 100,
+      email: true
+    },
+    "telephone":{
+      required: true,
+      maxlength: 40,
+    },
+    "app-url":{
+      required: true,
+      maxlength: 100,
+      url:true,
+    }
+
+  },
+  errorPlacement: function(error, element) {
+    var errorEleId = "#" + element.attr("name") + "-lp-error"
+    var errorBox = null;
+    $(errorEleId).children().remove(); //removing if already outputed error from  backend
+    errorBox = $("<div class='mp-dynamic-error' />");
+    errorBox.fadeOut(200, function() {
+      showError()
+    });
+    $(errorEleId).append(errorBox);
+
+    function showError() {
+      errorBox.append(error);
+      errorBox.fadeIn(200);
+    }
+  },
+  messages: {
+    "name": {
+      required: "Name is required",
+      maxlength: "Maximum 100 characters allowed"
+    },
+    "email": {
+      required: "Email is required",
+      maxlength: "Email maximum length 100"
+    },
+    "telephone": {
+      required: "Phone Number is required",
+      maxlength: "Phone Number maximum length 40"
+    },
+    "app-url":{
+      maxlength: "300",
+      url: "Please enter a valid App URL"
+    }
+  }
+}
+
+function sendSOSForm(ev){
+  ev.preventDefault();
+
+  var form = $("#submit-sos-form");
+  form.validate(SOSFormValidateRules);
+  var isValid = form.valid();
+
+  if(isValid){
+    //Loading sign etc
+  }else{
+    return;
+  }
+
+  $("#SOSForm").html(getProcessingHtml());
+
+  var serializeData = form.serialize();
+  var url = HAWKINS_ENDURL + "appknox-sos-form/1029041/4l50bp";
+  var method = form.attr("method");
+
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback
+  }
+
+  var xhr = $.ajax(option);
+  form.find("input,textarea").attr("disabled",true);
+
+  function errorCallback(jqXHR, err, errException){
+    $("#SOSForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+    form.find("input,textarea").removeAttr("disabled");
+  }
+
+  function successCallback(resData){
+    if(resData.status === "success"){
+      $("#SOSForm").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
+      form.find("input,textarea").attr("disabled",true);
+      form.remove();
+    }else{
+      $("#SOSForm").html(SUBMIT_ERROR_MSG);
+      form.find("input,textarea").removeAttr("disabled");
+    }
+  }
+}
+
+function bindSOSForm(){
+  $("#SOSForm-submit").unbind("click",sendSOSForm).bind("click",sendSOSForm);
+}
 
 
 $(document).ready(function(){
@@ -2144,6 +2252,12 @@ $(document).ready(function(){
   bindDemoSubmitCheck();
   bindBulkSubmitCheck();
   bindLandingPageForm1();
+  bindSOSForm();
+  $(".book_section").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#sos-form-section").offset().top
+      }, 200, function() {window.location.href="#sos-form-section";});
+  });
 });
 
 $(document).ready(function() {
