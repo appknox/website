@@ -2323,7 +2323,7 @@ function bindCallForm(){
 function sendCallForm(ev){
   ev.preventDefault();
 
-  var form = $("#submit-sos-form");
+  var form = $("#callbox-form");
   form.validate(CallFormValidateRules);
   var isValid = form.valid();
 
@@ -2351,6 +2351,7 @@ function sendCallForm(ev){
     asyn : true,
     error : errorCallback,
     success : successCallback,
+    dataType : 'text',
     cache: !1
   }
 
@@ -2358,8 +2359,13 @@ function sendCallForm(ev){
   form.find("input,textarea").attr("disabled",true);
 
   function errorCallback(jqXHR, err, errException){
-    $("#messageBoxCall").removeClass("green").addClass("red").html("Number should be in international format like +65988888.");
-    form.find("input,textarea").removeAttr("disabled");
+    if (jqXHR.responseText) {
+        $("#messageBoxCall").removeClass("green").addClass("red").html("Number should be in international format like +6598888888.");
+        form.find("input,textarea").removeAttr("disabled");
+    } else {
+        successCallback("");
+    }
+
   }
 
   function successCallback(resData){
