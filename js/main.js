@@ -2363,14 +2363,9 @@ function sendCallForm(ev){
   }
 
   function successCallback(resData){
-    if(resData.status === "success"){
       $("#messageBoxCall").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
       form.find("input,textarea").attr("disabled",true);
       form.remove();
-    }else{
-      $("#messageBoxCall").html(SUBMIT_ERROR_MSG);
-      form.find("input,textarea").removeAttr("disabled");
-    }
   }
 }
 
