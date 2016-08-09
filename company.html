@@ -173,6 +173,9 @@ permalink: /company/
           </div>
           <div class="member-name">{{advisor.name}}</div>
           <div class="member-title">{{advisor.title}}</div>
+          <a class="submenu" href="{{advisor.link}}" target="_blank">
+            <img src="/img/LinkedIn.png" alt="Appknox advisors"/>
+          </a>
         </li>
         {% endfor %}
       </ul>
@@ -196,7 +199,7 @@ permalink: /company/
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-            <a data-proofer-ignore href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" title="{{pressInfo.name}}" alt="pressInfo.name"/></a>
+            <a data-proofer-ignore href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" alt="{{pressInfo.name}}"/></a>
           </div>
         </li>
         {% endfor %}
@@ -225,7 +228,7 @@ permalink: /company/
         <li class="member-data-zone">
           <a data-proofer-ignore href="{{partner.link}}" target="_blank">
             <div class="logo-pic-zone">
-                <img src="{{partner.img}}" title="{{partner.name}}" alt="{{partner.name}}"/>
+                <img src="{{partner.img}}" alt="{{partner.name}}"/>
             </div>
           </a>
         </li>
@@ -250,7 +253,7 @@ permalink: /company/
         <li class="member-data-zone">
           <a data-proofer-ignore href="{{supporter.link}}" target="_blank">
             <div class="logo-pic-zone">
-                <img src="{{supporter.img}}" title="{{supporter.name}}" alt="{{supporter.name}}">
+                <img src="{{supporter.img}}" alt="{{supporter.name}}">
             </div>
           </a>
         </li>
