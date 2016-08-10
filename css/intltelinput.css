@@ -188,7 +188,7 @@
     position: absolute;
     top: -1000px;
     left: -1000px;
-    z-index: 1060;
+    z-index: 9000;
     padding: 1px
 }
 .intl-tel-input.iti-container:hover {

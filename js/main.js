@@ -646,6 +646,7 @@ function resourceLinkClickAction(){
   })
 }
 
+
 $(document).ready(function(){
   activateResourceSubmenu(true);
   resourceLinkClickAction();
@@ -660,6 +661,47 @@ $(document).ready(function(){
 
 $(window).resize(function(){
   activateResourceSubmenu();
+});
+
+
+////////////////////////////////////////////////////////
+// Menu to work on iPad and iPhone
+
+$(document).ready(function(){
+
+    IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+    IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+
+    if (IS_IPAD || IS_IPHONE) {
+
+        $('.menubar').on('click touchend', function() {
+            var link = $(this).attr('href');
+            window.open(link,'_self'); // open in the same window
+
+            return true; // set false to prevent anchor click
+        });
+        $('.submenu').on('click touchend', function() {
+            var link = $(this).attr('href');
+            window.open(link,'_blank'); // open in the same window
+
+            return true; // set false to prevent anchor click
+        });
+
+        $('input, textarea').on('click touchend', function() {
+          var val = $(this).val();
+          this.select();
+        });
+        $('.carousel-prev').on('click touchend', function() {
+          $('#carousel-example-generic').carousel('prev')
+        });
+        $('.carousel-next').on('click touchend', function() {
+          $('#carousel-example-generic').carousel('next')
+        });
+        
+
+
+
+    }
 });
 
 
@@ -1120,7 +1162,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 }
 
 PricingManager.prototype.faqControl = function(){
-  $(".faq-quest-area").click(function(ev){
+  $('.faq-quest-area').on('click touchend', function(ev) {
     var faqEle = $(ev.currentTarget).parent();
     var icon = $(ev.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
@@ -1566,7 +1608,7 @@ var contactFormValidateRules = {
 
 //Function to watch subscribe form submit
 function bindContactSubmitCheck(){
-  $("#contact-form-submit").unbind("click",sendContactForm).bind("click",sendContactForm);
+  $("#contact-form-submit").unbind("click touchend",sendContactForm).bind("click touchend",sendContactForm);
 }
 
 function sendContactForm(ev){
@@ -1654,7 +1696,7 @@ var subscribeFormValidateRules = {
 
 //Function to watch subscribe form submit
 function bindSubscribeSubmitCheck(){
-  $("#subscribe-form").unbind("click",sendSubsribeForm).bind("click",sendSubsribeForm);
+  $("#subscribe-form").unbind("click touchend",sendSubsribeForm).bind("click touchend",sendSubsribeForm);
 }
 
 function sendSubsribeForm(ev){
@@ -1710,7 +1752,7 @@ function sendSubsribeForm(ev){
 // Activate the div based checkboxes in contact us form
 function activateDivCheckBox(){
   var liInputs = $("#cu-ak-checkbox-pannel > li");
-  liInputs.unbind("click",reactToDivCheckbox).bind("click",reactToDivCheckbox);
+  liInputs.unbind("click touchend",reactToDivCheckbox).bind("click touchend",reactToDivCheckbox);
 
   function reactToDivCheckbox(ev){
     var target = ev.currentTarget;
@@ -1864,11 +1906,12 @@ function sendDemoForm(ev){
 
 //Function to watch demo form submit
 function bindDemoSubmitCheck(){
-  $("#demo-form-submit").unbind("click",sendDemoForm).bind("click",sendDemoForm);
+  $("#demo-form-submit").unbind("click touchend",sendDemoForm).bind("click touchend",sendDemoForm);
 }
 
 $(document).ready(function() {
-  $(".req-demo").click(function(ev){
+
+  $('.req-demo').on('click touchend', function(ev) {
     ev.preventDefault();
     fancyRequestDemoForm();
   });
@@ -2401,14 +2444,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  $(".month").click(function(){
+  $('.month').on('click touchend', function() {
     $(".month").addClass("blue");
     $(".year").removeClass("blue");
     $(".yearly-plan").hide();
     $(".monthly-plan").show();
     $(".hide-savings").removeClass("show-savings");
   });
-  $(".year").click(function(){
+$('.year').on('click touchend', function() {
     $(".year").addClass("blue");
     $(".month").removeClass("blue");
     $(".monthly-plan").hide();
