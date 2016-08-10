@@ -7,6 +7,9 @@ var SUBMIT_ERROR_MSG = "<i class='fa fa-check-square' aria-hidden='true'></i> So
 var SUBMITTED_NO = "no";
 var FORM_SUBMITTED_YES = "yes";
 var FORM_SUBMITTING = "processing";
+var API_KEY = 'ee8ebf9c-48e1-11e6-b56f-066beb27a027';
+var AGENT_NUMBER = '+6598111992';
+var SR_NUMBER = '+6531585898';
 
 ////////////////////////////////////////////////////////////////
 //Commonly used functions
@@ -643,6 +646,7 @@ function resourceLinkClickAction(){
   })
 }
 
+
 $(document).ready(function(){
   activateResourceSubmenu(true);
   resourceLinkClickAction();
@@ -657,6 +661,47 @@ $(document).ready(function(){
 
 $(window).resize(function(){
   activateResourceSubmenu();
+});
+
+
+////////////////////////////////////////////////////////
+// Menu to work on iPad and iPhone
+
+$(document).ready(function(){
+
+    IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+    IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+
+    if (IS_IPAD || IS_IPHONE) {
+
+        $('.menubar').on('click touchend', function() {
+            var link = $(this).attr('href');
+            window.open(link,'_self'); // open in the same window
+
+            return true; // set false to prevent anchor click
+        });
+        $('.submenu').on('click touchend', function() {
+            var link = $(this).attr('href');
+            window.open(link,'_blank'); // open in the same window
+
+            return true; // set false to prevent anchor click
+        });
+
+        $('input, textarea').on('click touchend', function() {
+          var val = $(this).val();
+          this.select();
+        });
+        $('.carousel-prev').on('click touchend', function() {
+          $('#carousel-example-generic').carousel('prev')
+        });
+        $('.carousel-next').on('click touchend', function() {
+          $('#carousel-example-generic').carousel('next')
+        });
+
+
+
+
+    }
 });
 
 
@@ -1117,7 +1162,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 }
 
 PricingManager.prototype.faqControl = function(){
-  $(".faq-quest-area").click(function(ev){
+  $('.faq-quest-area').on('click touchend', function(ev) {
     var faqEle = $(ev.currentTarget).parent();
     var icon = $(ev.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
@@ -1563,7 +1608,7 @@ var contactFormValidateRules = {
 
 //Function to watch subscribe form submit
 function bindContactSubmitCheck(){
-  $("#contact-form-submit").unbind("click",sendContactForm).bind("click",sendContactForm);
+  $("#contact-form-submit").unbind("click touchend",sendContactForm).bind("click touchend",sendContactForm);
 }
 
 function sendContactForm(ev){
@@ -1651,7 +1696,7 @@ var subscribeFormValidateRules = {
 
 //Function to watch subscribe form submit
 function bindSubscribeSubmitCheck(){
-  $("#subscribe-form").unbind("click",sendSubsribeForm).bind("click",sendSubsribeForm);
+  $("#subscribe-form").unbind("click touchend",sendSubsribeForm).bind("click touchend",sendSubsribeForm);
 }
 
 function sendSubsribeForm(ev){
@@ -1707,7 +1752,7 @@ function sendSubsribeForm(ev){
 // Activate the div based checkboxes in contact us form
 function activateDivCheckBox(){
   var liInputs = $("#cu-ak-checkbox-pannel > li");
-  liInputs.unbind("click",reactToDivCheckbox).bind("click",reactToDivCheckbox);
+  liInputs.unbind("click touchend",reactToDivCheckbox).bind("click touchend",reactToDivCheckbox);
 
   function reactToDivCheckbox(ev){
     var target = ev.currentTarget;
@@ -1861,11 +1906,12 @@ function sendDemoForm(ev){
 
 //Function to watch demo form submit
 function bindDemoSubmitCheck(){
-  $("#demo-form-submit").unbind("click",sendDemoForm).bind("click",sendDemoForm);
+  $("#demo-form-submit").unbind("click touchend",sendDemoForm).bind("click touchend",sendDemoForm);
 }
 
 $(document).ready(function() {
-  $(".req-demo").click(function(ev){
+
+  $('.req-demo').on('click touchend', function(ev) {
     ev.preventDefault();
     fancyRequestDemoForm();
   });
@@ -1878,6 +1924,10 @@ $(document).ready(function() {
   $(".bulk-order").click(function(ev){
     ev.preventDefault();
     fancyBulkOrderForm();
+  });
+  $("#callphone").click(function(ev){
+    ev.preventDefault();
+    fancyCallPhoneForm();
   });
 });
 
@@ -2135,7 +2185,238 @@ function bindLandingPageForm1(){
   $("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
 }
 
+var SOSFormValidateRules = {
+  rules: {
+    "name": {
+      required: true,
+      maxlength: 100,
+    },
+    "email": {
+      required: true,
+      maxlength: 100,
+      email: true
+    },
+    "telephone":{
+      required: true,
+      maxlength: 40,
+    },
+    "app-url":{
+      required: true,
+      maxlength: 100,
+      url:true,
+    }
 
+  },
+  errorPlacement: function(error, element) {
+    var errorEleId = "#" + element.attr("name") + "-lp-error"
+    var errorBox = null;
+    $(errorEleId).children().remove(); //removing if already outputed error from  backend
+    errorBox = $("<div class='mp-dynamic-error' />");
+    errorBox.fadeOut(200, function() {
+      showError()
+    });
+    $(errorEleId).append(errorBox);
+
+    function showError() {
+      errorBox.append(error);
+      errorBox.fadeIn(200);
+    }
+  },
+  messages: {
+    "name": {
+      required: "Name is required",
+      maxlength: "Maximum 100 characters allowed"
+    },
+    "email": {
+      required: "Email is required",
+      maxlength: "Email maximum length 100"
+    },
+    "telephone": {
+      required: "Phone Number is required",
+      maxlength: "Phone Number maximum length 40"
+    },
+    "app-url":{
+      maxlength: "300",
+      url: "Please enter a valid App URL"
+    }
+  }
+}
+
+function sendSOSForm(ev){
+  ev.preventDefault();
+
+  var form = $("#submit-sos-form");
+  form.validate(SOSFormValidateRules);
+  var isValid = form.valid();
+
+  if(isValid){
+    //Loading sign etc
+  }else{
+    return;
+  }
+
+  $("#SOSForm").html(getProcessingHtml());
+
+  var serializeData = form.serialize();
+  var url = HAWKINS_ENDURL + "appknox-sos-form/1029041/4l50bp";
+  var method = form.attr("method");
+
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback
+  }
+
+  var xhr = $.ajax(option);
+  form.find("input,textarea").attr("disabled",true);
+
+  function errorCallback(jqXHR, err, errException){
+    $("#SOSForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+    form.find("input,textarea").removeAttr("disabled");
+  }
+
+  function successCallback(resData){
+    if(resData.status === "success"){
+      $("#SOSForm").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
+      form.find("input,textarea").attr("disabled",true);
+      form.remove();
+    }else{
+      $("#SOSForm").html(SUBMIT_ERROR_MSG);
+      form.find("input,textarea").removeAttr("disabled");
+    }
+  }
+}
+
+function bindSOSForm(){
+  $("#SOSForm-submit").unbind("click",sendSOSForm).bind("click",sendSOSForm);
+}
+
+function fancyCallPhoneForm() {
+  var formStatus = $("#callphone-form").attr("data-attr-submitted");
+
+  if(formStatus === SUBMITTED_NO){
+    $("#messageBoxCall").html("");
+  }
+
+  $.fancybox("#callphone-box", {
+    'autoResize': true,
+    'autoSize': true,
+    'maxHeight': "100%",
+    'autoCenter': true,
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    },
+  });
+}
+
+$.validator.addMethod(
+    "telephonecustom",
+    function(value, element, regexp)
+    {
+        if (regexp.constructor != RegExp)
+            regexp = new RegExp(regexp);
+        else if (regexp.global)
+            regexp.lastIndex = 0;
+        return this.optional(element) || regexp.test(value);
+    },
+    "Number should be in international format like +65988888."
+);
+
+//Landing Page form1 validation rules
+var CallFormValidateRules = {
+  rules: {
+    "phone": {
+      telephonecustom: /(^\+(\d{10}|\d{12}|\d{11}|\d{13}|\d{14})|^(1800(\d{6}|\d{7}|\d{8}))|^(1888(\d{6}|\d{7}|\d{8})))$/,
+      required: true,
+      maxlength: 40,
+    }
+  },
+  errorPlacement: function(error, element) {
+    var errorEleId = "#" + element.attr("name") + "-call-error"
+    var errorBox = null;
+    $(errorEleId).children().remove(); //removing if already outputed error from  backend
+    errorBox = $("<div class='mp-dynamic-error' />");
+    errorBox.fadeOut(200, function() {
+      showError()
+    });
+    $(errorEleId).append(errorBox);
+
+    function showError() {
+      errorBox.append(error);
+      errorBox.fadeIn(200);
+    }
+  },
+  messages: {
+    "phone": {
+      required: "Your Phone Number is required",
+      maxlength: "Maximum 50 characters allowed"
+    }
+  }
+}
+
+function bindCallForm(){
+  $("#CallForm-submit").unbind("click",sendCallForm).bind("click",sendCallForm);
+}
+
+function sendCallForm(ev){
+  ev.preventDefault();
+
+  var form = $("#callbox-form");
+  form.validate(CallFormValidateRules);
+  var isValid = form.valid();
+
+  if(isValid){
+    //Loading sign etc
+  }else{
+    return;
+  }
+
+  $("#CallForm").html(getProcessingHtml());
+  phone_num = $("#visitorphone").val().trim();
+  var serializeData = {
+                  api_key: API_KEY,
+                  agent_number: AGENT_NUMBER,
+                  phone_number: phone_num,
+                  sr_number: SR_NUMBER
+              };
+  var url = "https://sr.knowlarity.com/vr/api/click2call/";
+  var method = form.attr("method");
+
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback,
+    dataType : 'text',
+    cache: !1
+  }
+
+  var xhr = $.ajax(option);
+  form.find("input,textarea").attr("disabled",true);
+
+  function errorCallback(jqXHR, err, errException){
+    if (jqXHR.responseText) {
+        $("#messageBoxCall").removeClass("green").addClass("red").html("Number should be in international format like +6598888888.");
+        form.find("input,textarea").removeAttr("disabled");
+    } else {
+        successCallback("");
+    }
+
+  }
+
+  function successCallback(resData){
+      $("#messageBoxCall").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
+      form.find("input,textarea").attr("disabled",true);
+      form.remove();
+  }
+}
 
 $(document).ready(function(){
   activateDivCheckBox();
@@ -2144,6 +2425,13 @@ $(document).ready(function(){
   bindDemoSubmitCheck();
   bindBulkSubmitCheck();
   bindLandingPageForm1();
+  bindSOSForm();
+  bindCallForm()
+  $(".book_section").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#sos-form-section").offset().top
+      }, 200, function() {window.location.href="#sos-form-section";});
+  });
 });
 
 $(document).ready(function() {
@@ -2156,14 +2444,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  $(".month").click(function(){
+  $('.month').on('click touchend', function() {
     $(".month").addClass("blue");
     $(".year").removeClass("blue");
     $(".yearly-plan").hide();
     $(".monthly-plan").show();
     $(".hide-savings").removeClass("show-savings");
   });
-  $(".year").click(function(){
+$('.year').on('click touchend', function() {
     $(".year").addClass("blue");
     $(".month").removeClass("blue");
     $(".monthly-plan").hide();

@@ -90,7 +90,8 @@ e.parentNode.insertBefore(n, e);
 <!-- Plugin to include the country codes in the phone number -->
 <script src="/js/intltelinput.js"></script>
 <script>
-  $("#tele").intlTelInput();
+  $(".tele").intlTelInput({initialCountry: "in"});
+  $(".telesg").intlTelInput({initialCountry: "sg"});
 </script>
 <script>
 jQuery('.carousel').carousel({

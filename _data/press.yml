@@ -1,29 +1,32 @@
-- name: Appknox thetechpanda
-  img: /img/techpanda2.png
-  link: http://thetechpanda.com/about-us/our-team/
+- name: Appknox EconomicTimes
+  img: /img/press/economictimes.jpg
+  link: http://articles.economictimes.indiatimes.com/2015-05-20/news/62413108_1_corporate-espionage-hotspots-bengaluru-airport
+
+
+- name: Appknox StraitsInteractive
+  img: /img/press/str.jpg
+  link: https://www.straitsinteractive.com/research-findings/summary-findings-from-singapores-first-privacy-survey-covering-mobile-applications/
+
+- name: Appknox BusinessStandard
+  img: /img/press/business-standard.jpg
+  link: http://www.business-standard.com/article/companies/all-for-a-ride-techies-flag-major-vulnerabilities-in-ola-app-115032000022_1.html
 
 - name: Appknox e27
-  img: /img/e27.png
+  img: /img/press/e27.jpg
   link: https://www.facebook.com/appknox/photos/a.220347381509680.1073741826.218311445046607/389528204591596/?type=3&theater
 
-- name: Appknox YourStory
-  img: /img/yourstory.png
-  link: http://yourstory.com/2015/01/appknox-architecture/
-
-- name: Appknox softpedia
-  img: /img/softpedia.png
-  link: http://news.softpedia.com/news/Experts-Demonstrate-Security-Holes-in-Android-with-Exploitation-Framework-285047.shtml
-
-- name: VentureBeat
-  img: /img/venturebeat.png
+- name: Appknox TechInAsia
+  img: /img/press/techinasia.jpg
+  link: https://www.techinasia.com/10-startups-asia-watch-techlist-march-30-2015
 
 - name: Appknox IDA
-  img: /img/ida.png
+  img: /img/press/IDA.jpg
   link: https://www.ida.gov.sg/blog/insg/ict-enterprises/securing-mobile-apps-with-appknox/
 
 - name: Appknox Bloomberg
-  img: /img/bloomberg.png
+  img: /img/press/bloomberg.jpg
   link: http://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=268070454
 
-- name: Appknox INSG
-  img: /img/insg.png
+- name: Appknox highscalability
+  img: /img/press/high.jpg
+  link: http://highscalability.com/blog/2015/5/25/appknox-architecture-making-the-switch-from-aws-to-the-googl.html

@@ -5,13 +5,13 @@
         <h3 class="footer-titles">Subscribe to Updates</h3>
         <form id="subscribe-form" action="/" method="post">
           <div id="email-su-error" class="cu-form-eorror red"></div>
-          <input type="email" name="email" placeholder = "your email goes here">
+          <input type="email" class="email-placeholder" name="email" placeholder = "your email goes here">
           <input type="submit" id="footer-subscribe-butn" value="SUBMIT">
         </form>
       </div>
       <div class="col-md-4 footer-links">
-        <a href="/pricing/#faq" class="gray-a">FAQs</a>
-        <a href="https://github.com/appknox/careers" class="gray-a">Careers</a>
+        <a href="/pricing/#faq" class="gray-a submenu">FAQs</a>
+        <a href="https://github.com/appknox/careers" class="gray-a submenu">Careers</a>
       </div>
     </div>
     <div class="col-md-12">
@@ -19,7 +19,7 @@
       <div class="footer-article col-md-4">
         <h3 class="footer-titles">Blogs</h3>
         <h4 class="news-title">
-          <a target="_blank" href="https://blog.appknox.com/5-steps-cto-cio-build-agile-team-that-wins/">
+          <a target="_blank" class="submenu" href="https://blog.appknox.com/5-steps-cto-cio-build-agile-team-that-wins/">
             5 Steps for CTOs & CIOs to Build Agile Teams that Win
           </a>
         </h4>
@@ -30,7 +30,7 @@
       <div class="footer-article col-md-4">
         <h3 class="footer-titles">Events</h3>
         <h4 class="news-title">
-            <a data-proofer-ignore href="http://www.terrapinn.com/exhibition/cards-asia/index.stm" target="_blank">Cards & payments Asia 2016, Singapore</a>
+            <a data-proofer-ignore href="http://www.terrapinn.com/exhibition/cards-asia/index.stm" target="_blank" class="submenu">Cards & payments Asia 2016, Singapore</a>
         </h4>
         <p>
 
@@ -39,7 +39,7 @@
       <div class="footer-article col-md-4">
         <h3 class="footer-titles">Press</h3>
         <h4 class="news-title">
-              <a data-proofer-ignore href="http://timesofindia.indiatimes.com/tech/tech-news/50-software-products-in-India-to-safeguard-your-online-assets/articleshow/51304458.cms" target="_blank">
+              <a data-proofer-ignore href="http://timesofindia.indiatimes.com/tech/tech-news/50-software-products-in-India-to-safeguard-your-online-assets/articleshow/51304458.cms" target="_blank" class="submenu">
                 50 software products in India to safeguard your online assets - Times of India
               </a>
         </h4>
@@ -71,9 +71,9 @@
     </div>
     <div class="col-md-12 no-border">
       <div class="form-social-block">
-        <a target="_blank" href="https://www.facebook.com/appknox"><img src="/img/facebook.svg" alt="Appknox facebook"/></a>
-        <a target="_blank" href="https://www.linkedin.com/company/3771872"><img src="/img/linkedIn.svg" alt="Appknox LinkedIn"/></a>
-        <a target="_blank" href="https://twitter.com/appknox"><img src="/img/twitter.svg" alt="Appkox Twitter"/></a>
+        <a target="_blank" class="submenu" href="https://www.facebook.com/appknox"><img src="/img/facebook.svg" alt="Appknox facebook"/></a>
+        <a target="_blank" class="submenu" href="https://www.linkedin.com/company/3771872"><img src="/img/linkedIn.svg" alt="Appknox LinkedIn"/></a>
+        <a target="_blank" class="submenu" href="https://twitter.com/appknox"><img src="/img/twitter.svg" alt="Appkox Twitter"/></a>
       </div>
     </div>
   </section>
@@ -187,6 +187,22 @@
     <div class="clearfix"></div>
     <div class="text-center">
       <input type="submit" id="submit-order-button" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="callphone-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">We'll Call You Right Away</h3>
+  <div id="messageBoxCall" class="neosans marginTop"> </div>
+  <div class="neosans marginTop"> </div>
+  <form id="callbox-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-13">
+      <div id="phone-call-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control telesg" id="visitorphone" name="phone" placeholder="Enter Your Phone Number">
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="CallForm-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Call Me">
     </div>
   </form>
 </div>
