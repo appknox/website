@@ -1912,6 +1912,18 @@ input[type=email],input[type=text],input[type=url] {
     .client-sign {
       margin-left: 360px;
     }
+    .press-heading{
+      margin-top: 20px;
+    }
+    .sixteen{
+      margin-left: 60px;
+    }
+    .other-section{
+      margin-left: 249px!important;
+    }
+    .first-section{
+      margin-left: 45px!important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -1942,6 +1954,39 @@ input[type=email],input[type=text],input[type=url] {
     }
     .client-sign {
       margin-left: 260px;
+    }
+    .press-heading{
+      margin-left: 100px!important;
+    }
+    .release-text{
+      margin-left: 100px!important;
+      margin-top: 20px!important;
+    }
+    .year-text{
+      margin-left: 100px!important;
+      margin-top: 10px!important;
+    }
+    .year-selector{
+      margin-left: 150px!important;
+      margin-top: 0px!important;
+      position: absolute;
+      top:37px;
+    }
+    .horz-splitting{
+      display: block!important;
+    }
+    .first-section{
+        margin-left: 20px!important;
+    }
+    .other-section{
+      margin-left: 20px!important;
+    }
+    .logo-section{
+        margin-left: 0px;
+        margin-top: 0px!important;
+    }
+    .press-mention{
+    margin-top: 0px!important;
     }
 }
 
@@ -2265,4 +2310,103 @@ input[type=email],input[type=text],input[type=url] {
 .check-26 {
   background:url('/img/check-26.png') no-repeat right;
   width:20px
+}
+
+
+/* Press Page */
+
+.press-heading{
+  font-family: neosans;
+  font-size: 30px;
+  color: #000000;
+  margin-left: 200px;
+}
+
+.release-text{
+  color: #ef5245;
+  font-size: 20px;
+  font-family: neosans;
+  margin-left: 200px;
+  margin-top: 70px;
+}
+
+.year-text{
+  color: #bcbcbc;
+  font-size: 16px;
+  font-family: neosans;
+  margin-left: 210px;
+  margin-top: 10px;
+
+}
+
+.date-section{
+  color: #bcbcbc;
+  font-size: 13px;
+  font-family: gillsans;
+  margin-left: -20px;
+  margin-top: 0px;
+
+}
+
+.year-selector{
+  margin-left: 200px;
+  margin-top: 10px;
+  border: none;
+  color: #bcbcbc;
+  font-size: 16px;
+}
+
+.press-logo{
+  width: 50%;
+}
+
+.logo-section{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.press-mention{
+  margin-top: 100px;
+  margin-left: -50px;
+}
+
+.press-title{
+  color: #ef5245;
+  font-size: 13px;
+  font-family: neosans;
+}
+
+.press-desc{
+  color: #000000;
+  font-size: 13px;
+  font-family: gillsans;
+}
+
+.sixteen{
+  display: none;
+
+}
+
+.other-section{
+  margin-left: 333px;
+}
+
+.block-section{
+  padding: 10px 10px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 3px solid #eee;
+}
+
+select:active {
+    outline: none !important;
+    border: none !important;
+}
+
+select:focus {
+    outline:0 !important;
+}
+
+.horz-splitting {
+  display: none;
 }
