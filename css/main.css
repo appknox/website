@@ -1905,6 +1905,8 @@ input[type=email],input[type=text],input[type=url] {
         margin-left: 4%;
     }
 }
+
+
 @media (max-width: 1024px) {
     .scan-enter {
       margin-bottom: 57px;
@@ -1912,135 +1914,9 @@ input[type=email],input[type=text],input[type=url] {
     .client-sign {
       margin-left: 360px;
     }
-    .press-heading{
-      margin-top: 20px;
-    }
-    .sixteen{
-      margin-left: 60px;
-    }
-    .other-section{
-      margin-left: 249px!important;
-    }
-    .first-section{
-      margin-left: 45px!important;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 990px) {
-    .plan-top-line{
-      width: 40%;
-    }
-    .request-button{
-      display: block !important ;
-      width: 30%;
-      margin-left: 250px;
-    }
-    .plan-bottom-line{
-      width: 20%;
-    }
-    .scan-list{
-      width:30%;
-      margin-left: 235px;
-    }
-    .scan-benifits{
-      width:56%;
-      margin-left: 235px;
-    }
-    .scan-enter{
-      margin-left: 235px;
-    }
-    .enterprise-features{
-      margin-left: 100px;
-    }
-    .client-sign {
-      margin-left: 260px;
-    }
-    .press-heading{
-      margin-left: 100px!important;
-    }
-    .release-text{
-      margin-left: 100px!important;
-      margin-top: 20px!important;
-    }
-    .year-text{
-      margin-left: 100px!important;
-      margin-top: 10px!important;
-    }
-    .year-selector{
-      margin-left: 150px!important;
-      margin-top: 0px!important;
-      position: absolute;
-      top:37px;
-    }
-    .horz-splitting{
-      display: block!important;
-    }
-    .first-section{
-        margin-left: 20px!important;
-    }
-    .other-section{
-      margin-left: 20px!important;
-    }
-    .logo-section{
-        margin-left: 0px;
-        margin-top: 0px!important;
-    }
-    .press-mention{
-    margin-top: 0px!important;
-    }
-}
 
-@media (min-width: 425px) and (max-width: 767px) {
-  .enterprise-features{
-    margin-left: 130px;
-  }
-  .plan-section{
-    margin-top: 20px;
-  }
-  .testimonial-section{
-    height: 350px;
-  }
-  .client-sign {
-    margin-left: 90px;
-    margin-top: 60px;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-  .enterprise-features{
-    margin-left: 110px;
-  }
-  .testimonial-section{
-    height: 380px;
-  }
-  .client-sign {
-    margin-left: 60px;
-    margin-top: 70px;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-}
-@media (min-width: 320px) and (max-width: 374px) {
-  .enterprise-features{
-    margin-left: 80px;
-  }
-  .testimonial-section{
-    height: 400px;
-  }
-  .client-sign {
-    margin-left: 40px;
-    margin-top: 100px;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-}
 @media (max-width: 767px) {
     .slide-img-zone{
       display: none;
@@ -2315,6 +2191,10 @@ input[type=email],input[type=text],input[type=url] {
 
 /* Press Page */
 
+.press-container{
+  margin-top: 100px;
+}
+
 .press-heading{
   font-family: neosans;
   font-size: 30px;
@@ -2343,7 +2223,7 @@ input[type=email],input[type=text],input[type=url] {
   color: #bcbcbc;
   font-size: 13px;
   font-family: gillsans;
-  margin-left: -20px;
+  text-align: center;
   margin-top: 0px;
 
 }
@@ -2356,24 +2236,15 @@ input[type=email],input[type=text],input[type=url] {
   font-size: 16px;
 }
 
-.press-logo{
-  width: 50%;
-}
-
-.logo-section{
-    margin-top: 70px;
-    margin-left: 20px;
-}
-
-.press-mention{
-  margin-top: 100px;
-  margin-left: -50px;
-}
 
 .press-title{
   color: #ef5245;
   font-size: 13px;
   font-family: neosans;
+}
+
+.press-mention{
+  margin-top: 20px;
 }
 
 .press-desc{
@@ -2382,20 +2253,8 @@ input[type=email],input[type=text],input[type=url] {
   font-family: gillsans;
 }
 
-.sixteen{
-  display: none;
-
-}
-
-.other-section{
-  margin-left: 333px;
-}
-
-.block-section{
-  padding: 10px 10px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 3px solid #eee;
+.press-content{
+  margin-top: 75px;
 }
 
 select:active {
@@ -2407,6 +2266,302 @@ select:focus {
     outline:0 !important;
 }
 
+.press-logo{
+  width: 80px;
+  height: 80px;
+  margin-left: 45px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .horz-splitting {
   display: none;
+  width: 100%;
+  margin-top: 20px;
+  height: 6px;
+  border: 0;
+  box-shadow: inset 0 6px 10px -6px black;
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .plan-top-line{
+      width: 40%;
+    }
+    .request-button{
+      display: block !important ;
+      width: 30%;
+      margin-left: 250px;
+    }
+    .plan-bottom-line{
+      width: 20%;
+    }
+    .scan-list{
+      width:30%;
+      margin-left: 235px;
+    }
+    .scan-benifits{
+      width:56%;
+      margin-left: 235px;
+    }
+    .scan-enter{
+      margin-left: 235px;
+    }
+    .enterprise-features{
+      margin-left: 100px;
+    }
+    .client-sign {
+      margin-left: 260px;
+    }
+    .press-heading{
+      margin-left: 70px;
+    }
+    .release-text{
+      margin-left: 70px;
+      margin-top: 10px;
+    }
+    .year-text{
+      margin-left: 70px;
+      margin-top: 10px;
+    }
+    .year-selector{
+      margin-left: 70px;
+      position: absolute;
+      top:35px;
+      left: 60px;
+    }
+    .press-title{
+      color: #ef5245;
+      font-size: 13px;
+      font-family: neosans;
+    }
+
+    .press-desc{
+      color: #000000;
+      font-size: 13px;
+      font-family: gillsans;
+    }
+
+    .press-content{
+      margin-top: 25px;
+      margin-left: 30px;
+    }
+    .section-collapse{
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    .horz-splitting{
+      display: block;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .enterprise-features{
+    margin-left: 130px;
+  }
+  .plan-section{
+    margin-top: 20px;
+  }
+  .testimonial-section{
+    height: 350px;
+  }
+  .client-sign {
+    margin-left: 90px;
+    margin-top: 60px;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .press-heading{
+    margin-left: 30px;
+  }
+  .release-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .year-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .date-section{
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .year-selector{
+    margin-left: 30px;
+    position: absolute;
+    top:35px;
+    left: 60px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+  }
+
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+  }
+
+  .press-content{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .section-collapse{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .press-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: -20px;
+
+  }
+  .horz-splitting{
+    display: block;
+  }
+
+
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .enterprise-features{
+    margin-left: 110px;
+  }
+  .testimonial-section{
+    height: 380px;
+  }
+  .client-sign {
+    margin-left: 60px;
+    margin-top: 70px;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .press-heading{
+    margin-left: 30px;
+  }
+  .release-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .year-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .date-section{
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .year-selector{
+    margin-left: 30px;
+    position: absolute;
+    top:35px;
+    left: 60px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+  }
+
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+  }
+
+  .press-content{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .section-collapse{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .press-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: -20px;
+
+  }
+  .horz-splitting{
+    display: block;
+  }
+
+
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .enterprise-features{
+    margin-left: 80px;
+  }
+  .testimonial-section{
+    height: 400px;
+  }
+  .client-sign {
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .press-heading{
+    margin-left: 30px;
+  }
+  .release-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .year-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .date-section{
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .year-selector{
+    margin-left: 30px;
+    position: absolute;
+    top:35px;
+    left: 60px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+  }
+
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+  }
+
+  .press-content{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .section-collapse{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .press-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: -20px;
+
+  }
+  .horz-splitting{
+    display: block;
+  }
+
+
 }

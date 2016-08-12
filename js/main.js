@@ -2418,10 +2418,11 @@ $(document).ready(function(){
 });
 
 $(function(){
+          $(".first-section").show();
+          $(".other-section").hide();
           $('.year-selector').change(function(){
             var selected = $(this).find(':selected').text();
-            //alert(selected);
-            $(".sixteen").hide();
+            $(".main-container").hide();
              $('#' + selected).show();
           });
 });
