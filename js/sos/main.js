@@ -423,6 +423,7 @@ $(document).ready(function(){
   bindLandingPageForm1();
 });
 
+
 $(document).ready(function () {
   $(".book_section").click(function() {
   window.location.href="#submit_section";
