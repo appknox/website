@@ -12,6 +12,10 @@ body{
   margin-top: 30px;
 }
 
+input.error {
+    border-bottom: 1px solid red;
+}
+
 .lp-gray-bg{
   background-color: #f6f6f6;
 }
@@ -167,8 +171,24 @@ body{
   display: block;
   width: 400px;
   margin-left: 200px;
-  margin-top: 30px;
   font-size: 17px;
+  font-family: lato;
+  font-weight: 400;
+}
+
+.sos-form-eorror{
+  height: 28px;
+  padding-left: 10px;
+  text-decoration: none;
+  border-top:0;
+  border-right:0;
+  border-bottom:0;
+  border-left:0;
+  outline:none;
+  display: block;
+  width: 400px;
+  margin-left: 200px;
+  font-size: 12px;
   font-family: lato;
   font-weight: 400;
 }
