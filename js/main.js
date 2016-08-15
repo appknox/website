@@ -2237,7 +2237,7 @@ var SOSFormValidateRules = {
     },
     "app-url":{
       maxlength: "300",
-      url: "Please enter a valid App URL"
+      required: "App name or URL is required"
     }
   }
 }
