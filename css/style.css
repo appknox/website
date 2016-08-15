@@ -34,6 +34,128 @@ input.error {
 .no-border {
     border: none !important;
 }
+/* Nav Bar Style
+*/
+
+.navbar-brand {
+    padding-left: 25px !important;
+}
+
+.navbar-nav {
+    margin-left: 24%;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #231F20;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bars-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.horzr-sep-block {
+    width: 100%;
+    height: 20px;
+}
+
+.header {
+    margin-top: 60px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.block {
+    display: block !important;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+#ak-header {
+    background: #fff;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+#ak-header li>a {
+    font-family: neosans;
+    font-size: 16px;
+    transition: all .4s ease-out;
+    cursor: pointer;
+}
+
+#ak-header li>a:focus,#ak-header nav .open>a {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+#ak-header li>a:hover,#ak-header li>a:active {
+    text-decoration: none;
+    background: transparent !important;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
+        background-color: transparent !important;
+        color: #fff;
+    }
+
+    #resource-dropdown .active {
+        color: #fff !important;
+        transition: all .35s ease-out;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        background: #454545;
+    }
+
+    #ak-menu {
+        float: right;
+    }
+
+    .dropdown-menu>li {
+        display: inline-block;
+    }
+
+    .dropdown-menu>li>a {
+        color: #999;
+    }
+
+    .navbar-nav>li>a {
+        text-shadow: none;
+        color: #000;
+        margin-top: 10px;
+    }
+
+    .nav>li>a:hover,.nav .open>a:hover,.nav .open>a:focus {
+        background: none;
+    }
+
+    a:focus {
+        background: none !important;
+    }/*#ak-header{
+        border-bottom: 1px solid #E9E9E9;
+      }*/
+
+}
+
+@media (max-width: 990px) {
+    .navbar-nav {
+        margin-left: 4%;
+    }
+}
 
 .heading{
   margin-top: 60px;
