@@ -2202,8 +2202,7 @@ var SOSFormValidateRules = {
     },
     "app-url":{
       required: true,
-      maxlength: 100,
-      url:true,
+      maxlength: 100
     }
 
   },
