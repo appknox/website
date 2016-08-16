@@ -767,13 +767,16 @@ button:focus {
     font-family: gillsansmtpro;
 }
 
-.client-logo img{
-  width: 20%;
+.client-sign{
   margin-top: 10px;
 }
 
-.sign-position{
+.logo-pos{
   margin-top: -20px;
+}
+
+.sign-pos{
+  margin-top: 20px;
 }
 
 .carousel-spots{
@@ -1920,9 +1923,13 @@ input[type=email],input[type=text],input[type=url] {
       top: 270px;
       right: 100px;
     }
-    .sign-position{
-      margin-top: -40px;
+    .testimonial-section{
+      height: 350px;
     }
+    .logo-pos{
+      margin-top: 10px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -1966,7 +1973,12 @@ input[type=email],input[type=text],input[type=url] {
     .second-client{
       margin-top: 40px;
     }
-
+    .testimonial-section{
+      height: 400px;
+    }
+    .logo-pos{
+      margin-top: 10px;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -1977,7 +1989,7 @@ input[type=email],input[type=text],input[type=url] {
     margin-top: 20px;
   }
   .testimonial-section{
-    height: 350px;
+    height: 400px;
   }
   .user-comments{
     max-width: 400px;
@@ -1998,6 +2010,9 @@ input[type=email],input[type=text],input[type=url] {
   .second-client{
     margin-top: 40px;
   }
+  .logo-pos{
+    margin-top: 10px;
+  }
 
 }
 @media (min-width: 375px) and (max-width: 424px) {
@@ -2005,7 +2020,7 @@ input[type=email],input[type=text],input[type=url] {
     margin-left: 110px;
   }
   .testimonial-section{
-    height: 380px;
+    height: 450px;
   }
   .user-comments{
     max-width: 300px;
@@ -2026,15 +2041,20 @@ input[type=email],input[type=text],input[type=url] {
   .second-client{
     margin-top: 70px;
   }
+  .last-logo{
+    margin-top: -40px!important;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px) {
   .enterprise-features{
     margin-left: 80px;
   }
   .testimonial-section{
-    height: 400px;
+    height: 450px;
   }
-
+  .last-logo{
+    margin-top: -40px!important;
+  }
   .user-comments{
     max-width: 300px;
     font-size: 1em;
