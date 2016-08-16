@@ -2295,8 +2295,6 @@ select:focus {
   color: #666666;
   font-size: 16px;
   font-family: neosans;
-  border-bottom-style: solid;
-  width: 70px;
 }
 
 .side-list:hover a {
