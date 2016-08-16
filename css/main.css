@@ -2196,13 +2196,18 @@ input[type=email],input[type=text],input[type=url] {
 
 .press-container{
   margin-top: 100px;
+
 }
 
 .press-heading{
   font-family: neosans;
   font-size: 30px;
   color: #000000;
-  margin-left: 180px;
+
+}
+
+ul.nav-pills {
+    position: fixed;
 }
 
 .release-text{
@@ -2277,42 +2282,25 @@ select:focus {
   box-shadow: inset 0 6px 10px -6px black;
 }
 
-.sticky {
-  position: relative;
-  top: 0; }
-
-.sticky-sidebar{
-  box-shadow: none;
+.affix{
+  top:20px;
 }
 
-.side-section{
-  position: relative;
-  left:180px;
-}
-
-
-.side-list a {
-  color: #666666;
+.navbar-side{
+  margin-left: 50px;
+  margin-top: 40px;
+  color: #bcbcbc;
   font-size: 16px;
   font-family: neosans;
 }
 
-.side-list:hover a {
-  color: #000;
-}
-
-.side-list:active li{
-  background-color: #FFFFFF !important;
-}
-
-
 .main-container{
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .other-section{
   margin-left: 294px;
-  margin-top: -20px!important;
+  margin-top: -80px!important;
 }
 
 .block-section{
@@ -2320,7 +2308,7 @@ select:focus {
 }
 
 .first-section{
-  margin-top: -140px!important;
+  margin-top: -50px!important;
 }
 
 .select-style {
