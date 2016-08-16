@@ -1914,6 +1914,9 @@ input[type=email],input[type=text],input[type=url] {
     .client-sign {
       margin-left: 360px;
     }
+    .other-section{
+      margin-left: 244px!important;
+    }
 }
 
 
@@ -2199,7 +2202,7 @@ input[type=email],input[type=text],input[type=url] {
   font-family: neosans;
   font-size: 30px;
   color: #000000;
-  margin-left: 200px;
+  margin-left: 180px;
 }
 
 .release-text{
@@ -2274,8 +2277,52 @@ select:focus {
   box-shadow: inset 0 6px 10px -6px black;
 }
 
+.sticky {
+  position: relative;
+  top: 0; }
+
+.sticky-sidebar{
+  box-shadow: none;
+}
+
+.side-section{
+  position: relative;
+  left:180px;
+}
+
+
+.side-list a {
+  color: #666666;
+  font-size: 16px;
+  font-family: neosans;
+  border-bottom-style: solid;
+  width: 70px;
+}
+
+.side-list:hover a {
+  color: #000;
+}
+
+.side-list:active li{
+  background-color: #FFFFFF !important;
+}
+
+
+.main-container{
+  padding-top: 60px;
+}
+
+.other-section{
+  margin-left: 294px;
+  margin-top: -20px!important;
+}
+
 .block-section{
   border-left: 2px solid #eee;
+}
+
+.first-section{
+  margin-top: -140px!important;
 }
 
 .select-style {
