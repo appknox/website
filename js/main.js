@@ -2420,7 +2420,7 @@ $(document).ready(function(){
 var stickySidebar = $('.sticky');
 
 if (stickySidebar.length > 0) {
-  var stickyHeight = stickySidebar.height(),
+  var stickyHeight = stickySidebar.height() +20,
       sidebarTop = stickySidebar.offset().top;
 }
 
