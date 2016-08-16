@@ -759,20 +759,25 @@ button:focus {
 
 .user-comments {
     color: #888;
-    max-width: 700px;
-    margin: 50px auto 60px;
+    max-width: 80%;
+    margin: 10px auto 60px;
     text-align : center;
     min-height: 80px;
     font-size: 24px;
     font-family: gillsansmtpro;
 }
 
-.client-sign {
-  text-align: center;
-  position: absolute;
-  top: 150px;
-  margin-left: 450px;
+.client-logo img{
+  width: 20%;
+  margin-top: 10px;
+}
 
+.sign-position{
+  margin-top: -20px;
+}
+
+.carousel-spots{
+  bottom: 0px;
 }
 
 .carousel-button{
@@ -1151,7 +1156,9 @@ label.error {
 }
 
 .client-name{
-  margin: 0;
+  position: absolute;
+  top: 250px;
+  right: 140px;
 }
 
 #zerodhaLogo {
@@ -1909,8 +1916,12 @@ input[type=email],input[type=text],input[type=url] {
     .scan-enter {
       margin-bottom: 57px;
     }
-    .client-sign {
-      margin-left: 360px;
+    .client-name {
+      top: 270px;
+      right: 100px;
+    }
+    .sign-position{
+      margin-top: -40px;
     }
 }
 
@@ -1940,9 +1951,22 @@ input[type=email],input[type=text],input[type=url] {
     .enterprise-features{
       margin-left: 100px;
     }
-    .client-sign {
-      margin-left: 260px;
+    .sign-position{
+      margin-top: -55px;
     }
+    .client-name{
+      right: 320px;
+      top:160px;
+      margin-top: 30px;
+    }
+    .last-client{
+      margin-top: 60px;
+      right: 300px;
+    }
+    .second-client{
+      margin-top: 40px;
+    }
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -1955,14 +1979,26 @@ input[type=email],input[type=text],input[type=url] {
   .testimonial-section{
     height: 350px;
   }
-  .client-sign {
-    margin-left: 90px;
-    margin-top: 60px;
-  }
   .user-comments{
-    max-width: 300px;
+    max-width: 400px;
     font-size: 1em;
   }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 90px;
+    left: 90px;
+  }
+  .second-client{
+    margin-top: 40px;
+  }
+
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .enterprise-features{
@@ -1971,13 +2007,24 @@ input[type=email],input[type=text],input[type=url] {
   .testimonial-section{
     height: 380px;
   }
-  .client-sign {
-    margin-left: 60px;
-    margin-top: 70px;
-  }
   .user-comments{
     max-width: 300px;
     font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 90px;
+  }
+  .second-client{
+    margin-top: 70px;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -1987,13 +2034,25 @@ input[type=email],input[type=text],input[type=url] {
   .testimonial-section{
     height: 400px;
   }
-  .client-sign {
-    margin-left: 40px;
-    margin-top: 100px;
-  }
+
   .user-comments{
     max-width: 300px;
     font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:180px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 70px;
+  }
+  .second-client{
+    margin-top: 80px;
   }
 }
 @media (max-width: 767px) {
