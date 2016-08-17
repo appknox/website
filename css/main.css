@@ -1917,6 +1917,10 @@ input[type=email],input[type=text],input[type=url] {
     .other-section{
       margin-left: 244px!important;
     }
+    .affix{
+      top: 20px!important;
+    }
+
 }
 
 
@@ -2213,6 +2217,13 @@ ul.nav-pills {
 .navbar-sidesec>li.active>a, .navbar-sidesec>li.active>a:focus, .navbar-sidesec>li.active>a:hover {
     color: #fff;
     background-color: #666666;
+    border-radius: 0px;
+}
+
+.navbar-sidesec li{
+  margin-top: 10px;
+  width:100%;
+  border:1px solid rgba(0,0,0,.7);
 }
 
 .release-text{
@@ -2288,7 +2299,7 @@ select:focus {
 }
 
 .affix{
-  top:20px;
+  top:30px;
 }
 
 .navbar-side{
@@ -2388,13 +2399,11 @@ select:focus {
       font-size: 13px;
       font-family: neosans;
     }
-
     .press-desc{
       color: #000000;
       font-size: 13px;
       font-family: gillsans;
     }
-
     .press-content{
       margin-top: 25px;
       margin-left: 30px;
@@ -2410,6 +2419,12 @@ select:focus {
       margin-left: 120px;
       position: absolute;
       top:40px;
+    }
+    .other-section{
+      margin-left: 30px!important;
+    }
+    .navbar-sidesec{
+      display: none;
     }
 }
 
@@ -2487,6 +2502,12 @@ select:focus {
     position: absolute;
     top:40px;
   }
+  .other-section{
+    margin-left: 0px!important;
+  }
+  .navbar-sidesec{
+    display: none;
+  }
 
 
 }
@@ -2527,14 +2548,12 @@ select:focus {
     font-family: neosans;
     width: 280px;
   }
-
   .press-desc{
     color: #000000;
     font-size: 13px;
     font-family: gillsans;
     width: 280px;
   }
-
   .press-content{
     margin-top: 10px;
     margin-left: 0px;
@@ -2560,9 +2579,14 @@ select:focus {
     position: absolute;
     top:40px;
   }
-
-
+  .other-section{
+    margin-left: 0px!important;
+  }
+  .navbar-sidesec{
+    display: none;
+  }
 }
+
 @media (min-width: 320px) and (max-width: 374px) {
   .enterprise-features{
     margin-left: 80px;
@@ -2630,6 +2654,12 @@ select:focus {
     margin-left: 75px;
     position: absolute;
     top:40px;
+  }
+  .other-section{
+    margin-left: 0px!important;
+  }
+  .navbar-sidesec{
+    display: none;
   }
 
 
