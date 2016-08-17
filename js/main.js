@@ -2291,6 +2291,60 @@ function bindSOSForm(){
   $("#SOSForm-submit").unbind("click",sendSOSForm).bind("click",sendSOSForm);
 }
 
+function sendAGForm(ev){
+  ev.preventDefault();
+
+  var form = $("#submit-ag-form");
+  form.validate(SOSFormValidateRules);
+  var isValid = form.valid();
+
+  if(isValid){
+    //Loading sign etc
+  }else{
+    return;
+  }
+
+  $("#AGForm").html(getProcessingHtml());
+
+  var serializeData = form.serialize();
+  var url = HAWKINS_ENDURL + "appknox-sos-form/1029041/4l50bp";
+  var method = form.attr("method");
+
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback
+  }
+
+  var xhr = $.ajax(option);
+  form.find("input,textarea").attr("disabled",true);
+
+  function errorCallback(jqXHR, err, errException){
+    $("#AGForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+    form.find("input,textarea").removeAttr("disabled");
+  }
+
+  function successCallback(resData){
+    if(resData.status === "success"){
+      $("#AGForm").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
+      form.find("input,textarea").attr("disabled",true);
+      form.remove();
+    }else{
+      $("#AGForm").html(SUBMIT_ERROR_MSG);
+      form.find("input,textarea").removeAttr("disabled");
+    }
+  }
+}
+
+function bindAGForm(){
+  $("#AGForm-submit").unbind("click",sendAGForm).bind("click",sendAGForm);
+}
+
+
+
 function fancyCallPhoneForm() {
   var formStatus = $("#callphone-form").attr("data-attr-submitted");
 
@@ -2415,59 +2469,6 @@ function sendCallForm(ev){
   }
 }
 
-function sendAGForm(ev){
-  ev.preventDefault();
-
-  var form = $("#submit-ag-form");
-  form.validate(SOSFormValidateRules); //using the same validation rules because the input are same.
-  var isValid = form.valid();
-
-  if(isValid){
-    //Loading sign etc
-  }else{
-    return;
-  }
-
-  $("#AGForm").html(getProcessingHtml());
-
-  var serializeData = form.serialize();
-  var url = HAWKINS_ENDURL + "appknox-sos-form/1029041/4l50bp";
-  var method = form.attr("method");
-
-  var option = {
-    url : url,
-    method : method,
-    data : serializeData,
-    asyn : true,
-    error : errorCallback,
-    success : successCallback
-  }
-
-  var xhr = $.ajax(option);
-  form.find("input,textarea").attr("disabled",true);
-
-  function errorCallback(jqXHR, err, errException){
-    $("#AGForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
-    form.find("input,textarea").removeAttr("disabled");
-  }
-
-  function successCallback(resData){
-    if(resData.status === "success"){
-      $("#AGForm").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
-      form.find("input,textarea").attr("disabled",true);
-      form.remove();
-    }else{
-      $("#AGForm").html(SUBMIT_ERROR_MSG);
-      form.find("input,textarea").removeAttr("disabled");
-    }
-  }
-}
-
-function bindAGForm(){
-  $("#AGForm-submit").unbind("click",sendAGForm).bind("click",sendAGForm);
-}
-
-
 
 $(document).ready(function(){
   activateDivCheckBox();
@@ -2477,6 +2478,7 @@ $(document).ready(function(){
   bindBulkSubmitCheck();
   bindLandingPageForm1();
   bindSOSForm();
+  bindAGForm();
   bindCallForm()
   $(".book_section").click(function() {
       $('html, body').animate({

@@ -1,7 +1,7 @@
 ---
 layout: sos
 title: Appknox - Appgrader
-excerpt: Appgrader
+excerpt: How secure is your mobile application? Scan online and view the vulnerabilities now!
 permalink: /appgrader/
 code: secure-our-soul
 stylesheets: '/css/style.css'
@@ -9,34 +9,45 @@ stylesheets: '/css/style.css'
 <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<nav class="navbar navbar-fixed-top" role="navigation" id="ak-header">
-<div class="clearfix"></div>
-</nav>
+
 <header class="header">
   <div class="ag-logo">
     <div class="appgrader-combine">
-    <img src="/img/appgrader/appgrader-01.png" class="img-responsive appgrader-logo" alt="Appknox Security Session">
-    <img src="/img/appgrader/appgrader-07.png" class="img-responsive appgrader-logo" alt="Appknox Security Session">
+    <img src="/img/appgrader/appgrader-01.png" class="img-responsive appgrader-logo" alt="scan mobile app online">
+    <img src="/img/appgrader/appgrader-07.png" class="img-responsive appgrader-logo" alt="scan mobile app online">
     </div>
-    <img src="/img/appgrader/appgrader-08.png" class="img-responsive center-block" alt="Appknox Security Session">
+    <img src="/img/appgrader/appgrader-08.png" class="img-responsive center-block" alt="scan mobile app online">
   </div>
 </header>
 <section class="lp-gray-bg" id="grade-section">
   <div class="container">
     <p class="ag-content">How Does Your App Fair Against Industry Security Benchmarks- Find out in 24 hours!</p>
     <div class="col-md-6 main-section">
-      <img  src="/img/appgrader/appgrader-05.png" class="img-responsive ag-curve" alt="Appknox Security Session">
-      <img  src="/img/appgrader/appgrader-06.png" class="img-responsive image-fit" alt="Appknox Security Session">
+      <img  src="/img/appgrader/appgrader-05.png" class="img-responsive ag-curve" alt="scan mobile app online">
+      <img  src="/img/appgrader/appgrader-06.png" class="img-responsive image-fit" alt="scan mobile app online">
       <p class="curve-content"><span class="sub-content">Submit your App</span> to stay on top of the Mobile App Security curve</p>
   	</div>
-    <div class="col-md-6 form-field" id="sos-form-section">
-      <div id="SOSForm"></div>
-      <form id="submit-sos-form" method="post">
-        <input class="lined-input" type="text" name="name" placeholder="Full Name"/>
-        <input class="lined-input" type="email" name="email" placeholder="Official Email"/>
-        <input class="lined-input" type="tel" name="telephone" placeholder="Phone Number"/>
-        <input class="lined-input" type="url" name="app-url" placeholder="App URL"/>
-        <input id="AGForm-submit" class="submit-button grade-now btn-lg" type="submit" value="GRADE NOW">
+    <div class="col-md-6">
+      <div id="AGForm"></div>
+      <form id="submit-ag-form" method="post">
+        <fieldset class="form-group col-md-12 col-sm-6">
+          <div id="name-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="text" name="name" placeholder="Full Name" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-6">
+          <div id="email-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="email" name="email" placeholder="Official Email" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-6">
+          <div id="telephone-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="tel" name="telephone" placeholder="Phone Number" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-6">
+          <div id="app-url-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="text" name="app-url" placeholder="App URL or App Name" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-6">
+          <input id="AGForm-submit" class="submit-button btn-lg" type="submit" value="SUBMIT">
       </form>
    </div>
  </div>
@@ -47,7 +58,7 @@ stylesheets: '/css/style.css'
       <div class="col-md-4">
         <p class="mailbox-sub">Powerful Insights</p>
         <div class="clearfix float-my-children">
-          <img src="/img/appgrader/appgrader-02.png" class="img-responsive insight-images" alt="Appknox Security Session">
+          <img src="/img/appgrader/appgrader-02.png" class="img-responsive insight-images" alt="scan mobile app online">
           <span class="image-text">32% High</span>
         <div>
           <table class="ap-table">
@@ -78,12 +89,12 @@ stylesheets: '/css/style.css'
       </div>
       <div class="col-md-4">
         <p class="mailbox-sub">Benchmark with the best</p>
-        <img src="/img/appgrader/appgrader-04.png" class="img-responsive center-block" alt="Appknox Security Session">
+        <img src="/img/appgrader/appgrader-04.png" class="img-responsive center-block" alt="scan mobile app online">
         <p class="insight-content">Does your App score above the industry benchmark of 85?</p>
       </div>
       <div class="col-md-4">
       <p class="mailbox-sub">Know critical Gaps</p>
-        <img src="/img/appgrader/appgrader-03.png" class="img-responsive center-block" alt="Appknox Security Session">
+        <img src="/img/appgrader/appgrader-03.png" class="img-responsive center-block" alt="scan mobile app online">
         <p class="insight-content">The Appknox grader gives you an overview of your App score and basic security check parameters that examines 14 critical threat criteria</p>
       </div>
   </div>
@@ -96,7 +107,7 @@ stylesheets: '/css/style.css'
 </section>
 <section class="proactive-appgrader">
   <div class="container">
-  <img src="/img/appgrader/appknox_grey-08.png" class="img-responsive center-block" alt="Appknox Security Session">
+  <img src="/img/appgrader/appknox_grey-08.png" class="img-responsive center-block" alt="scan mobile app online">
   </div>
   <p class="proactive-text">#ProactiveAlways</p>
 </section>
