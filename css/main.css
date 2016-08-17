@@ -565,6 +565,35 @@ button:focus {
     margin-bottom: 30px;
 }
 
+.call-button {
+    background: #ea2127;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+    font-family: neosans;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 480px;
+    border-radius: 40px;
+}
+
+.request-menu{
+  background: #ea2127;
+  border: none;
+  padding: 5px 20px;
+  color: #ffffff!important;
+  border-radius: 30px;
+  margin-top: -43px;
+  float: right;
+  font-size: 13px;
+  font-family: neosans;
+  margin-right: 140px;
+  height: 30px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
 .button-red:hover {
     color: #fff !important;
 }
@@ -1890,6 +1919,7 @@ input[type=email],input[type=text],input[type=url] {
 
     #ak-menu {
         float: right;
+        margin-right: 130px;
     }
 
     .dropdown-menu>li {
@@ -1937,12 +1967,27 @@ input[type=email],input[type=text],input[type=url] {
     .logo-pos{
       margin-top: 10px;
     }
+    .navbar-nav {
+        margin-left: 0%;
+    }
+    .request-menu{
+      margin-right: 40px;
+    }
+    .call-button {
+      margin-left: 450px;
+    }
 
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
     .plan-top-line{
       width: 40%;
+    }
+    .request-menu{
+      margin-right: 25px;
+    }
+    .call-button {
+      margin-left: 280px;
     }
     .request-button{
       display: block !important ;
@@ -2000,6 +2045,12 @@ input[type=email],input[type=text],input[type=url] {
   .enterprise-features{
     margin-left: 130px;
   }
+  .request-menu{
+  display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
   .plan-section{
     margin-top: 20px;
   }
@@ -2037,6 +2088,12 @@ input[type=email],input[type=text],input[type=url] {
 
 }
 @media (min-width: 375px) and (max-width: 424px) {
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
   .enterprise-features{
     margin-left: 110px;
   }
@@ -2070,6 +2127,12 @@ input[type=email],input[type=text],input[type=url] {
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
   .enterprise-features{
     margin-left: 80px;
   }
