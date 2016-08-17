@@ -2210,6 +2210,11 @@ ul.nav-pills {
     position: fixed;
 }
 
+.navbar-sidesec>li.active>a, .navbar-sidesec>li.active>a:focus, .navbar-sidesec>li.active>a:hover {
+    color: #fff;
+    background-color: #666666;
+}
+
 .release-text{
   color: #ef5245;
   font-size: 20px;
