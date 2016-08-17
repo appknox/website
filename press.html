@@ -6,10 +6,10 @@ permalink: /press/
 ---
 
 <section class="press-container">
-<div class="container">
-  <div class="press-heading">
-    Press Mentions
-  </div>
+  <div class="container">
+    <div class="press-heading">
+      Press Mentions
+    </div>
     <div class="row">
       <nav class="col-sm-3 navbar-side" id="myScrollspy">
         <ul class="nav navbar-sidesec nav-pills nav-stacked">
@@ -19,103 +19,102 @@ permalink: /press/
           <li><a href="#2012">2012</a></li>
         </ul>
       </nav>
-        <hr class="horz-splitting">
-        <div class="col-xs-8 press-content main-container other-section section-collapse" id=2016>
-            {% for press in site.data.press_data.six %}
-            <div class="row">
-                <div class="col-xs-3 press-collapse">
-                  <div class="">
-                    <div class="">
-                      <div class="date-section">{{press.date}}</div>
-                        <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-9 press-collapse">
-                  <div class="press-mention">
-                    <blockquote class="block-section">
-                      <a data-proofer-ignore href="{{press.link}}" target="_blank">
-                        <div class="press-title">{{press.title}}</div>
-                      </a>
-                      <div class="press-desc">{{press.desc}}</div>
-                    </blockquote>
-                  </div>
-                </div>
+    <hr class="horz-splitting">
+      <div class="col-xs-8 press-content main-container other-section section-collapse" id=2016>
+        {% for press in site.data.press_data.six %}
+        <div class="row">
+            <div class="col-xs-3 press-collapse">
+              <div class="date-section">{{press.date}}</div>
+                    <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
             </div>
-            {% endfor %}
-        </div>
-        <div class="col-xs-8 press-content main-container other-section section-collapse" id=2015>
-            {% for press in site.data.press_data.five %}
-            <div class="row">
-                <div class="col-xs-3 press-collapse">
-                  <div class="">
-                    <div class="">
-                      <div class="date-section">{{press.date}}</div>
-                        <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-9 press-collapse">
-                  <div class="press-mention">
-                    <blockquote class="block-section">
-                      <a data-proofer-ignore href="{{press.link}}" target="_blank">
-                        <div class="press-title">{{press.title}}</div>
-                      </a>
-                      <div class="press-desc">{{press.desc}}</div>
-                    </blockquote>
-                  </div>
-                </div>
+            <div class="col-xs-9 press-collapse">
+              <div class="press-mention">
+                <blockquote class="block-section">
+                  <a data-proofer-ignore href="{{press.link}}" target="_blank">
+                    <div class="press-title">{{press.title}}</div>
+                  </a>
+                  <div class="press-desc">{{press.desc}}</div>
+                </blockquote>
+              </div>
             </div>
-            {% endfor %}
         </div>
-        <div class="col-xs-8 press-content main-container other-section section-collapse" id=2014>
-            {% for press in site.data.press_data.four %}
-            <div class="row">
-                <div class="col-xs-3 press-collapse">
-                  <div class="">
-                    <div class="">
-                      <div class="date-section">{{press.date}}</div>
-                        <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-9 press-collapse">
-                  <div class="press-mention">
-                    <blockquote class="block-section">
-                      <a data-proofer-ignore href="{{press.link}}" target="_blank">
-                        <div class="press-title">{{press.title}}</div>
-                      </a>
-                      <div class="press-desc">{{press.desc}}</div>
-                    </blockquote>
-                  </div>
-                </div>
+        {% endfor %}
+        <hr class="content-separator">
+      </div>
+      <div class="col-xs-8 press-content main-container other-section section-collapse" id=2015>
+        {% for press in site.data.press_data.five %}
+        <div class="row">
+          <div class="col-xs-3 press-collapse">
+            <div class="">
+              <div class="">
+                <div class="date-section">{{press.date}}</div>
+                  <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
+              </div>
             </div>
-            {% endfor %}
-        </div>
-        <div class="col-xs-8 press-content main-container other-section section-collapse" id=2012>
-            {% for press in site.data.press_data.two %}
-            <div class="row">
-                <div class="col-xs-3 press-collapse">
-                  <div class="">
-                    <div class="">
-                      <div class="date-section">{{press.date}}</div>
-                        <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-9 press-collapse">
-                  <div class="press-mention">
-                    <blockquote class="block-section">
-                      <a data-proofer-ignore href="{{press.link}}" target="_blank">
-                        <div class="press-title">{{press.title}}</div>
-                      </a>
-                      <div class="press-desc">{{press.desc}}</div>
-                    </blockquote>
-                  </div>
-                </div>
+          </div>
+          <div class="col-xs-9 press-collapse">
+            <div class="press-mention">
+              <blockquote class="block-section">
+                <a data-proofer-ignore href="{{press.link}}" target="_blank">
+                  <div class="press-title">{{press.title}}</div>
+                </a>
+                <div class="press-desc">{{press.desc}}</div>
+              </blockquote>
             </div>
-            {% endfor %}
+          </div>
         </div>
-    </div>
-</div>
+        {% endfor %}
+        <hr class="content-separator">
+      </div>
+      <div class="col-xs-8 press-content main-container other-section section-collapse" id=2014>
+        {% for press in site.data.press_data.four %}
+        <div class="row">
+          <div class="col-xs-3 press-collapse">
+            <div class="">
+              <div class="">
+                <div class="date-section">{{press.date}}</div>
+                  <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-9 press-collapse">
+            <div class="press-mention">
+              <blockquote class="block-section">
+                <a data-proofer-ignore href="{{press.link}}" target="_blank">
+                  <div class="press-title">{{press.title}}</div>
+                </a>
+                <div class="press-desc">{{press.desc}}</div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <hr class="content-separator">
+     </div>
+     <div class="col-xs-8 press-content main-container other-section section-collapse" id=2012>
+      {% for press in site.data.press_data.two %}
+        <div class="row">
+          <div class="col-xs-3 press-collapse">
+            <div class="">
+              <div class="">
+                <div class="date-section">{{press.date}}</div>
+                  <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-9 press-collapse">
+            <div class="press-mention">
+              <blockquote class="block-section">
+                <a data-proofer-ignore href="{{press.link}}" target="_blank">
+                  <div class="press-title">{{press.title}}</div>
+                </a>
+                <div class="press-desc">{{press.desc}}</div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+     </div>
+   </div>
+ </div>
 </section>

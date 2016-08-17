@@ -2200,14 +2200,12 @@ input[type=email],input[type=text],input[type=url] {
 
 .press-container{
   margin-top: 100px;
-
 }
 
 .press-heading{
   font-family: neosans;
   font-size: 30px;
   color: #000000;
-
 }
 
 ul.nav-pills {
@@ -2217,13 +2215,6 @@ ul.nav-pills {
 .navbar-sidesec>li.active>a, .navbar-sidesec>li.active>a:focus, .navbar-sidesec>li.active>a:hover {
     color: #fff;
     background-color: #666666;
-    border-radius: 0px;
-}
-
-.navbar-sidesec li{
-  margin-top: 10px;
-  width:100%;
-  border:1px solid rgba(0,0,0,.7);
 }
 
 .release-text{
@@ -2273,12 +2264,12 @@ ul.nav-pills {
 }
 
 select:active {
-    outline: none !important;
-    border: none !important;
+  outline: none !important;
+  border: none !important;
 }
 
 select:focus {
-    outline:0 !important;
+  outline:0 !important;
 }
 
 .press-logo{
@@ -2319,6 +2310,14 @@ select:focus {
   margin-top: -80px!important;
 }
 
+.content-separator{
+  width: 90%;
+  margin-top: 20px;
+  height: 6px;
+  border: 0;
+  box-shadow: inset 0 1px 0px 0px black;
+}
+
 .block-section{
   border-left: 2px solid #eee;
 }
@@ -2328,16 +2327,15 @@ select:focus {
 }
 
 .select-style {
-    border: 1px solid #ccc;
-    width: 80px;
-    border-radius: 3px;
-    overflow: hidden;
-    background: #fafafa url("/img/press/drop-down.png") no-repeat 100% 60%;
-    margin-left: 190px;
-    font-size: 16px;
-    border: none;
-
-    font-size: 16px;
+  border: 1px solid #ccc;
+  width: 80px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fafafa url("/img/press/drop-down.png") no-repeat 100% 60%;
+  margin-left: 190px;
+  font-size: 16px;
+  border: none;
+  font-size: 16px;
 }
 
 .select-style select {
@@ -2351,7 +2349,6 @@ select:focus {
     background-image: none;
     -webkit-appearance: none;
 }
-
 
 
 @media (min-width: 768px) and (max-width: 990px) {
