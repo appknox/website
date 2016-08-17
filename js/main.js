@@ -2089,7 +2089,6 @@ var landinPageForm1ValidateRules = {
       email: true
     },
     "company":{
-      required: true,
       maxlength: 40,
     },
     "app-url":{
@@ -2123,8 +2122,7 @@ var landinPageForm1ValidateRules = {
       maxlength: "Email maximum length 90"
     },
     "company": {
-      required: "Company is required",
-      maxlength: "Company maximum length 90"
+      maxlength: "Company maximum length 90",
     },
     "app-url":{
       maxlength: "300",
@@ -2202,8 +2200,7 @@ var SOSFormValidateRules = {
     },
     "app-url":{
       required: true,
-      maxlength: 100,
-      url:true,
+      maxlength: 100
     }
 
   },
@@ -2237,7 +2234,7 @@ var SOSFormValidateRules = {
     },
     "app-url":{
       maxlength: "300",
-      url: "Please enter a valid App URL"
+      required: "App name or URL is required"
     }
   }
 }
