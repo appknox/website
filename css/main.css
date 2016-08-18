@@ -2025,19 +2025,11 @@ input[type=email],input[type=text],input[type=url] {
     .logo-pos{
       margin-top: 10px;
     }
-    .pricing-testSign{
-      margin-top: 80px;
-      right: 290px;
-    }
     .pricing-testLogo{
       margin-top: 50px;
     }
     .pricing-secLogo{
         margin-top: 50px;
-    }
-    .second-client{
-      margin-top: 50px;
-      right: 310px;
     }
 }
 
@@ -2073,14 +2065,8 @@ input[type=email],input[type=text],input[type=url] {
     margin-top: 90px;
     left: 90px;
   }
-  .second-client{
-    margin-top: 60px;
-  }
   .logo-pos{
     margin-top: 10px;
-  }
-  .pricing-testSign{
-    margin-top: 100px;
   }
   .pricing-testLogo{
     margin-top: 50px;
@@ -2116,14 +2102,8 @@ input[type=email],input[type=text],input[type=url] {
     margin-top: 120px;
     left: 90px;
   }
-  .second-client{
-    margin-top: 70px;
-  }
   .last-logo{
     margin-top: -40px!important;
-  }
-  .pricing-testSign{
-    margin-top: 110px;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -2157,12 +2137,6 @@ input[type=email],input[type=text],input[type=url] {
   .last-client{
     margin-top: 120px;
     left: 70px;
-  }
-  .second-client{
-    margin-top: 80px;
-  }
-  .pricing-testSign{
-    margin-top: 120px;
   }
 }
 @media (max-width: 767px) {
