@@ -103,6 +103,23 @@ a {
     background: transparent !important;
 }
 
+.request-menu{
+   background: #ea2127;
+   border: none;
+   padding: 5px 20px;
+   color: #ffffff!important;
+   border-radius: 30px;
+   margin-top: -43px;
+   float: right;
+   font-size: 13px;
+   font-family: neosans;
+   margin-right: 140px;
+   height: 30px;
+   line-height: 23px;
+   cursor: pointer;
+ }
+
+
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
         background-color: transparent !important;
@@ -123,6 +140,7 @@ a {
 
     #ak-menu {
         float: right;
+        margin-right: 130px;
     }
 
     .dropdown-menu>li {
@@ -617,6 +635,15 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .navbar-nav {
+      margin-left: 0%;
+  }
+  .request-menu{
+    margin-right: 40px;
+  }
+  .call-button {
+    margin-left: 450px;
+  }
   .content{
     max-width: 400px;
   }
@@ -650,6 +677,9 @@ a {
 @media (min-width: 768px) and (max-width: 990px) {
   .heading{
     max-width: 100%;
+  }
+  .request-menu{
+      margin-right: 25px;
   }
   .content{
     max-width: 100%;
@@ -767,6 +797,9 @@ a {
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
+  .request-menu{
+   display: none;
+ }
   .heading{
     max-width: 100%;
   }
