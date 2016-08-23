@@ -565,6 +565,35 @@ button:focus {
     margin-bottom: 30px;
 }
 
+.call-button {
+    background: #ea2127;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+    font-family: neosans;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 480px;
+    border-radius: 40px;
+}
+
+.request-menu{
+  background: #ea2127;
+  border: none;
+  padding: 5px 20px;
+  color: #ffffff!important;
+  border-radius: 30px;
+  margin-top: -43px;
+  float: right;
+  font-size: 13px;
+  font-family: neosans;
+  margin-right: 140px;
+  height: 30px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
 .button-red:hover {
     color: #fff !important;
 }
@@ -759,20 +788,36 @@ button:focus {
 
 .user-comments {
     color: #888;
-    max-width: 700px;
-    margin: 50px auto 60px;
+    max-width: 80%;
+    margin: 10px auto 60px;
     text-align : center;
     min-height: 80px;
     font-size: 24px;
     font-family: gillsansmtpro;
 }
 
-.client-sign {
-  text-align: center;
-  position: absolute;
-  top: 150px;
-  margin-left: 450px;
+.pricing-testLogo{
+    margin-top: 15px;
+}
 
+.pricing-testOpinion{
+    margin-top: 40px!important;
+}
+
+.client-sign{
+  margin-top: 10px;
+}
+
+.logo-pos{
+  margin-top: -20px;
+}
+
+.sign-pos{
+  margin-top: 20px;
+}
+
+.carousel-spots{
+  bottom: 0px;
 }
 
 .carousel-button{
@@ -1151,7 +1196,9 @@ label.error {
 }
 
 .client-name{
-  margin: 0;
+  position: absolute;
+  top: 300px;
+  right: 140px;
 }
 
 #zerodhaLogo {
@@ -1872,6 +1919,7 @@ input[type=email],input[type=text],input[type=url] {
 
     #ak-menu {
         float: right;
+        margin-right: 130px;
     }
 
     .dropdown-menu>li {
@@ -1918,8 +1966,15 @@ input[type=email],input[type=text],input[type=url] {
     .scan-enter {
       margin-bottom: 57px;
     }
-    .client-sign {
-      margin-left: 360px;
+    .client-name {
+      top: 320px;
+      right: 100px;
+    }
+    .testimonial-section{
+      height: 350px;
+    }
+    .logo-pos{
+      margin-top: 10px;
     }
     .section-collapse{
       width: 90%;
@@ -1928,9 +1983,178 @@ input[type=email],input[type=text],input[type=url] {
     .year-menu{
         width: 90%;
     }
+    .navbar-nav {
+        margin-left: 0%;
+    }
+    .request-menu{
+      margin-right: 40px;
+    }
+    .call-button {
+      margin-left: 450px;
+    }
+
 }
 
+@media (min-width: 768px) and (max-width: 990px) {
+    .plan-top-line{
+      width: 40%;
+    }
+    .request-menu{
+      margin-right: 25px;
+    }
+    .call-button {
+      margin-left: 280px;
+    }
+    .request-button{
+      display: block !important ;
+      width: 30%;
+      margin-left: 250px;
+    }
+    .plan-bottom-line{
+      width: 20%;
+    }
+    .scan-list{
+      width:30%;
+      margin-left: 235px;
+    }
+    .scan-benifits{
+      width:56%;
+      margin-left: 235px;
+    }
+    .scan-enter{
+      margin-left: 235px;
+    }
+    .enterprise-features{
+      margin-left: 100px;
+    }
+    .sign-position{
+      margin-top: -55px;
+    }
+    .client-name{
+      right: 320px;
+      top:160px;
+      margin-top: 30px;
+    }
+    .testimonial-section{
+      height: 400px;
+    }
+    .logo-pos{
+      margin-top: 10px;
+    }
+    .pricing-testLogo{
+      margin-top: 50px;
+    }
+    .pricing-secLogo{
+        margin-top: 50px;
+    }
+}
 
+@media (min-width: 425px) and (max-width: 767px) {
+  .enterprise-features{
+    margin-left: 130px;
+  }
+  .request-menu{
+  display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .plan-section{
+    margin-top: 20px;
+  }
+  .testimonial-section{
+    height: 400px;
+  }
+  .user-comments{
+    max-width: 400px;
+    font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 90px;
+    left: 90px;
+  }
+  .logo-pos{
+    margin-top: 10px;
+  }
+  .pricing-testLogo{
+    margin-top: 50px;
+  }
+
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .enterprise-features{
+    margin-left: 110px;
+  }
+  .testimonial-section{
+    height: 450px;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 90px;
+  }
+  .last-logo{
+    margin-top: -40px!important;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .enterprise-features{
+    margin-left: 80px;
+  }
+  .testimonial-section{
+    height: 450px;
+  }
+  .last-logo{
+    margin-top: -40px!important;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:180px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 70px;
+  }
+}
 @media (max-width: 767px) {
     .slide-img-zone{
       display: none;

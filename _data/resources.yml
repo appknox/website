@@ -1,29 +1,34 @@
 - name: Security Analysis of Top 100 Banking Apps in APAC
   category: Report
   img: /img/Appknox-Report-October-2015-Thumbnail.jpg
-  downloadLink: https://appknox1.viewpage.co/Security-Analysis-of-Top-100-Banking-Apps-in-APAC
+  downloadLink: https://try.appknox.com/mobile-security-report-banking-apac
+
+- name: Global e-commerce mobile security threat report
+  category: Report
+  img: /img/Appknox-Report-August-2016-Thumbnail.jpg
+  downloadLink: https://try.appknox.com/global-e-commerce-mobile-security-threat-report
 
 - name: 10 Reasons Why Apple Rejects Apps from the App Store
   category: Ebook
   img: /img/Why-apple-rejects-apps-Thumbnail.jpg
-  downloadLink: https://appknox1.viewpage.co/10-Reasons-Why-Apple-Rejects-Apps-from-the-App-Store
+  downloadLink: https://try.appknox.com/ios-app-development-best-practices
 
 - name: A Day in Today's Life of Mobile Apps
   category: Infographic
   img: https://blog.appknox.com/wp-content/uploads/2016/04/appknox-What-happens-in-a-day-in-mobile-apps-article-Image-1.jpg
-  downloadLink: https://appknox1.viewpage.co/A-Day-in-the-Life-of-Mobile-Apps
+  downloadLink: https://try.appknox.com/infographic/a-day-in-the-life-of-mobile-apps
 
 - name: How We Increased a Global FMCG Giant's Productivity by 120%
   category: Case-Study
   img: /img/Appknox-Case-Study-Thumbnail.jpg
-  downloadLink: https://appknox1.viewpage.co/Global-FMCG-Giants-Case-Study
+  downloadLink: https://try.appknox.com/case-study-mobile-security-testing-automation
 
 - name: Top 5 Cyber Security Findings You Can't Afford to Miss
   category: Infographic
   img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Cyber-Security-Findings.jpg
-  downloadLink: https://appknox1.viewpage.co/Top-5-Cyber-Security-Findings-You-Cant-Afford-to-Miss
+  downloadLink: https://try.appknox.com/infographic/cyber-security-findings-by-experts
 
 - name: Why You Should Care About Mobile Security
   category: Infographic
   img: /img/Why-you-should-care-about-mobile-security-Thumbnail.jpg
-  downloadLink: https://appknox1.viewpage.co/Why-You-Should-Care-About-Mobile-Security
+  downloadLink: https://try.appknox.com/infographic/why-you-should-care-about-mobile-security
