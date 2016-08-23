@@ -1904,6 +1904,13 @@ input[type=email],input[type=text],input[type=url] {
     .navbar-nav {
         margin-left: 4%;
     }
+    .year-menu{
+      margin-left: 30px;
+    }
+    .mentions-text{
+      text-align: left!important;
+      margin-left: 50px;
+    }
 }
 
 
@@ -1914,13 +1921,13 @@ input[type=email],input[type=text],input[type=url] {
     .client-sign {
       margin-left: 360px;
     }
-    .other-section{
-      margin-left: 244px!important;
+    .section-collapse{
+      width: 90%;
+      margin-bottom: 10px;
     }
-    .affix{
-      top: 20px!important;
+    .year-menu{
+        width: 90%;
     }
-
 }
 
 
@@ -2198,48 +2205,67 @@ input[type=email],input[type=text],input[type=url] {
 
 /* Press Page */
 
-.press-container{
-  margin-top: 100px;
-}
-
 .press-heading{
   font-family: neosans;
   font-size: 30px;
   color: #000000;
 }
 
-ul.nav-pills {
-    position: fixed;
+.arrow-left {
+  position: relative;
+  bottom: 21px;
+  left: 57px;
 }
 
-.navbar-sidesec>li.active>a, .navbar-sidesec>li.active>a:focus, .navbar-sidesec>li.active>a:hover {
-    color: #fff;
-    background-color: #666666;
+.current-year{
+  color: #000000!important;
+  border-bottom: solid 3px #ef5245;
+  height: 40px;
+  padding-left: 5px!important;
+  padding-right: 5px!important;
+
 }
 
-.release-text{
+.mentions-text {
   color: #ef5245;
-  font-size: 20px;
-  font-family: neosans;
-  margin-left: 200px;
-  margin-top: 70px;
+  text-align: right;
 }
 
-.year-text{
-  color: #666666;
-  font-size: 16px;
-  font-family: neosans;
-  margin-left: 210px;
-  margin-top: 10px;
+.press-container{
+  margin-top: 100px;
+}
 
+.year-menu{
+background-color: #e6e6e6;
+font-size: 18px;
+border: 0px;
+padding: 0px;
+margin-top: 20px;
+height: 40px;
+font-family: neosans;
+}
+
+.year-menu li{
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.year-menu li a{
+  color: #999999;
+  padding-left: 7px!important;
+  padding-right: 7px!important;
+}
+
+.year-selector{
+  margin-top: 0px;
+  color: #999999;
 }
 
 .date-section{
   color: #bcbcbc;
   font-size: 13px;
   font-family: gillsans;
-  text-align: center;
-  margin-top: 0px;
+  margin-top: 5px;
 
 }
 
@@ -2250,7 +2276,8 @@ ul.nav-pills {
 }
 
 .press-mention{
-  margin-top: 20px;
+  margin-top: 0px;
+  margin-left: -20px;
 }
 
 .press-desc{
@@ -2260,94 +2287,27 @@ ul.nav-pills {
 }
 
 .press-content{
-  margin-top: 75px;
+  margin-top: 30px;
 }
 
-select:active {
-  outline: none !important;
-  border: none !important;
+.navbar-years{
+  margin-left: 20px;
 }
 
-select:focus {
-  outline:0 !important;
+.toggleNow:active{
+  color: #000000;
 }
 
 .press-logo{
   width: 80px;
   height: 80px;
-  margin-left: 45px;
+  margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.horz-splitting {
-  display: none;
-  width: 100%;
-  margin-top: 20px;
-  height: 6px;
-  border: 0;
-  box-shadow: inset 0 6px 10px -6px black;
-}
-
-.affix{
-  top:30px;
-}
-
-.navbar-side{
-  margin-left: 50px;
-  margin-top: 40px;
-  color: #bcbcbc;
-  font-size: 16px;
-  font-family: neosans;
-}
-
-.main-container{
-  padding-top: 80px;
-}
-
-.other-section{
-  margin-left: 294px;
-  margin-top: -80px!important;
-}
-
-.content-separator{
-  width: 90%;
-  margin-top: 20px;
-  height: 6px;
-  border: 0;
-  box-shadow: inset 0 1px 0px 0px black;
-}
-
 .block-section{
   border-left: 2px solid #eee;
-}
-
-.first-section{
-  margin-top: -50px!important;
-}
-
-.select-style {
-  border: 1px solid #ccc;
-  width: 80px;
-  border-radius: 3px;
-  overflow: hidden;
-  background: #fafafa url("/img/press/drop-down.png") no-repeat 100% 60%;
-  margin-left: 190px;
-  font-size: 16px;
-  border: none;
-  font-size: 16px;
-}
-
-.select-style select {
-    padding: 5px 8px;
-    width: 80%;
-    border: none;
-    box-shadow: none;
-    border: none;
-    color: #666666;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
 }
 
 
@@ -2383,14 +2343,6 @@ select:focus {
     .press-heading{
       margin-left: 70px;
     }
-    .release-text{
-      margin-left: 70px;
-      margin-top: 10px;
-    }
-    .year-text{
-      margin-left: 70px;
-      margin-top: 10px;
-    }
     .press-title{
       color: #ef5245;
       font-size: 13px;
@@ -2409,20 +2361,7 @@ select:focus {
       width: 90%;
       margin-bottom: 10px;
     }
-    .horz-splitting{
-      display: block;
-    }
-    .select-style{
-      margin-left: 120px;
-      position: absolute;
-      top:40px;
-    }
-    .other-section{
-      margin-left: 30px!important;
-    }
-    .navbar-sidesec{
-      display: none;
-    }
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2444,35 +2383,18 @@ select:focus {
     font-size: 1em;
   }
   .press-heading{
-    margin-left: 30px;
-  }
-  .release-text{
-    margin-left: 30px;
-    margin-top: 10px;
-  }
-  .year-text{
-    margin-left: 30px;
-    margin-top: 10px;
-  }
-  .date-section{
-    margin-top: 0px;
-    text-align: left;
-    margin-left: 40px;
+    margin-left: 0px;
   }
   .press-title{
     color: #ef5245;
     font-size: 13px;
     font-family: neosans;
-    width: 350px;
   }
-
   .press-desc{
     color: #000000;
     font-size: 13px;
     font-family: gillsans;
-    width: 350px;
   }
-
   .press-content{
     margin-top: 10px;
     margin-left: 0px;
@@ -2484,28 +2406,24 @@ select:focus {
   .press-collapse{
     width: 90%;
     margin-bottom: 10px;
-    margin-top: -20px;
-
-  }
-  .horz-splitting{
-    display: block;
   }
   .press-logo{
     width:70px;
     height: 70px;
   }
-  .select-style{
-    margin-left: 80px;
-    position: absolute;
-    top:40px;
+  .year-menu li{
+    display: inline-block;
   }
-  .other-section{
-    margin-left: 0px!important;
+  .year-menu{
+    width: 90%;
   }
-  .navbar-sidesec{
-    display: none;
+  .navbar-years{
+    margin-left: 100px;
   }
-
+  .mentions-text {
+    text-align: center!important;
+    margin-left: 0px;
+  }
 
 }
 @media (min-width: 375px) and (max-width: 424px) {
@@ -2562,25 +2480,25 @@ select:focus {
   .press-collapse{
     width: 90%;
     margin-bottom: 10px;
-    margin-top: -20px;
-  }
-  .horz-splitting{
-    display: block;
   }
   .press-logo{
     width:70px;
     height: 70px;
   }
-  .select-style{
-    margin-left: 75px;
-    position: absolute;
-    top:40px;
+  .year-menu li{
+    display: inline-block;
   }
-  .other-section{
-    margin-left: 0px!important;
+  .year-menu{
+    width: 90%;
+    font-size: 13px;
+    height: 50px;
   }
-  .navbar-sidesec{
-    display: none;
+  .navbar-years{
+    margin-left: 100px;
+  }
+  .mentions-text {
+    text-align: center!important;
+    margin-left: 0px;
   }
 }
 

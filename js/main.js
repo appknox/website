@@ -2417,16 +2417,19 @@ $(document).ready(function(){
   });
 });
 
-$(document).scroll(function() {
-  var windowSize = $(window).width();
-  if(windowSize > 1000){
-  var y = $(this).scrollTop();
-  if (y > 3250) {
-    $('.navbar-sidesec').fadeOut();
-  } else {
-    $('.navbar-sidesec').fadeIn();
-  }
-  }
+$(document).ready(function(){
+  $(".first-section").show();
+  $(".other-section").hide();
+  $(".toggleNew").on("click", function(){
+    $('.main-container').hide();
+    $('#201'+$(this).attr('target')).show();
+  });
+  $('#sixteen').addClass('current-year');
+    $('#year-selected li a').on('click', function (e) {
+    e.preventDefault();
+    $('#year-selected li a.current-year').removeClass('current-year');
+    $(this).addClass('current-year');
+  });
 });
 
 
