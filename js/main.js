@@ -2514,22 +2514,23 @@ $('.year').on('click touchend', function() {
 });
 
 $(document).ready(function(){
-  $(".first-section").show();
-  $(".other-section").hide();
   $(".toggleNew").on("click", function(){
-    $('.main-container').hide();
-    $('#201'+$(this).attr('target')).show();
+      var $href = $(this).attr('href');
+      var $anchor = $('#'+$href).offset();
+      window.scrollTo($anchor.left,$anchor.top-120);
+      return false;
   });
   $('#sixteen').addClass('current-year');
     $('#year-selected li a').on('click', function (e) {
     e.preventDefault();
     $('#year-selected li a.current-year').removeClass('current-year');
     $(this).addClass('current-year');
-  $(".landing-page").click(function(){
+    });
+    $(".landing-page").click(function(){
     e.preventDefault();
     var url = $(this).attr('href');
     window.open(url, '_self');
-  });
+    });
 });
 
 $(document).ready(function () {

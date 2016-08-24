@@ -1959,6 +1959,8 @@ input[type=email],input[type=text],input[type=url] {
       text-align: left!important;
       margin-left: 50px;
     }
+
+
 }
 
 
@@ -1992,169 +1994,13 @@ input[type=email],input[type=text],input[type=url] {
     .call-button {
       margin-left: 450px;
     }
-
-}
-
-@media (min-width: 768px) and (max-width: 990px) {
-    .plan-top-line{
-      width: 40%;
-    }
-    .request-menu{
-      margin-right: 25px;
-    }
-    .call-button {
-      margin-left: 280px;
-    }
-    .request-button{
-      display: block !important ;
-      width: 30%;
-      margin-left: 250px;
-    }
-    .plan-bottom-line{
-      width: 20%;
-    }
-    .scan-list{
-      width:30%;
-      margin-left: 235px;
-    }
-    .scan-benifits{
-      width:56%;
-      margin-left: 235px;
-    }
-    .scan-enter{
-      margin-left: 235px;
-    }
-    .enterprise-features{
-      margin-left: 100px;
-    }
-    .sign-position{
-      margin-top: -55px;
-    }
-    .client-name{
-      right: 320px;
-      top:160px;
-      margin-top: 30px;
-    }
-    .testimonial-section{
-      height: 400px;
-    }
-    .logo-pos{
-      margin-top: 10px;
-    }
-    .pricing-testLogo{
-      margin-top: 50px;
-    }
-    .pricing-secLogo{
-        margin-top: 50px;
+    .press-container{
+      margin-top: 120px;
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
-  .enterprise-features{
-    margin-left: 130px;
-  }
-  .request-menu{
-  display: none;
-  }
-  .call-button {
-    margin-left: 10px;
-  }
-  .plan-section{
-    margin-top: 20px;
-  }
-  .testimonial-section{
-    height: 400px;
-  }
-  .user-comments{
-    max-width: 400px;
-    font-size: 1em;
-  }
-  .client-logo{
-    width: 100%;
-  }
-  .client-name{
-    left: 90px;
-    top:160px;
-    margin-top: 30px;
-  }
-  .last-client{
-    margin-top: 90px;
-    left: 90px;
-  }
-  .logo-pos{
-    margin-top: 10px;
-  }
-  .pricing-testLogo{
-    margin-top: 50px;
-  }
 
-}
-@media (min-width: 375px) and (max-width: 424px) {
-  .request-menu{
-    display: none;
-  }
-  .call-button {
-    margin-left: 10px;
-  }
-  .enterprise-features{
-    margin-left: 110px;
-  }
-  .testimonial-section{
-    height: 450px;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-  .client-logo{
-    width: 100%;
-  }
-  .client-name{
-    left: 90px;
-    top:160px;
-    margin-top: 30px;
-  }
-  .last-client{
-    margin-top: 120px;
-    left: 90px;
-  }
-  .last-logo{
-    margin-top: -40px!important;
-  }
-}
-@media (min-width: 320px) and (max-width: 374px) {
-  .request-menu{
-    display: none;
-  }
-  .call-button {
-    margin-left: 10px;
-  }
-  .enterprise-features{
-    margin-left: 80px;
-  }
-  .testimonial-section{
-    height: 450px;
-  }
-  .last-logo{
-    margin-top: -40px!important;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-  .client-logo{
-    width: 100%;
-  }
-  .client-name{
-    left: 90px;
-    top:180px;
-    margin-top: 30px;
-  }
-  .last-client{
-    margin-top: 120px;
-    left: 70px;
-  }
-}
+
 @media (max-width: 767px) {
     .slide-img-zone{
       display: none;
@@ -2445,9 +2291,8 @@ input[type=email],input[type=text],input[type=url] {
   color: #000000!important;
   border-bottom: solid 3px #ef5245;
   height: 40px;
-  padding-left: 5px!important;
-  padding-right: 5px!important;
-
+  padding-left: 4px!important;
+  padding-right: 4px!important;
 }
 
 .mentions-text {
@@ -2460,7 +2305,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .year-menu{
-background-color: #e6e6e6;
+background-color: #fafafa ;
 font-size: 18px;
 border: 0px;
 padding: 0px;
@@ -2476,12 +2321,13 @@ font-family: neosans;
 
 .year-menu li a{
   color: #999999;
-  padding-left: 7px!important;
-  padding-right: 7px!important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .year-selector{
   margin-top: 0px;
+  margin-left: -10px;
   color: #999999;
 }
 
@@ -2501,7 +2347,7 @@ font-family: neosans;
 
 .press-mention{
   margin-top: 0px;
-  margin-left: -20px;
+  margin-left: -60px;
 }
 
 .press-desc{
@@ -2511,6 +2357,10 @@ font-family: neosans;
 }
 
 .press-content{
+  padding-top: 0px;
+}
+
+.main-container{
   margin-top: 30px;
 }
 
@@ -2525,7 +2375,7 @@ font-family: neosans;
 .press-logo{
   width: 80px;
   height: 80px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -2534,58 +2384,88 @@ font-family: neosans;
   border-left: 2px solid #eee;
 }
 
-
 @media (min-width: 768px) and (max-width: 990px) {
-    .plan-top-line{
-      width: 40%;
-    }
-    .request-button{
-      display: block !important ;
-      width: 30%;
-      margin-left: 250px;
-    }
-    .plan-bottom-line{
-      width: 20%;
-    }
-    .scan-list{
-      width:30%;
-      margin-left: 235px;
-    }
-    .scan-benifits{
-      width:56%;
-      margin-left: 235px;
-    }
-    .scan-enter{
-      margin-left: 235px;
-    }
-    .enterprise-features{
-      margin-left: 100px;
-    }
-    .client-sign {
-      margin-left: 260px;
-    }
-    .press-heading{
-      margin-left: 70px;
-    }
-    .press-title{
-      color: #ef5245;
-      font-size: 13px;
-      font-family: neosans;
-    }
-    .press-desc{
-      color: #000000;
-      font-size: 13px;
-      font-family: gillsans;
-    }
-    .press-content{
-      margin-top: 25px;
-      margin-left: 30px;
-    }
-    .section-collapse{
-      width: 90%;
-      margin-bottom: 10px;
-    }
-
+  .plan-top-line{
+    width: 40%;
+  }
+  .request-button{
+    display: block !important ;
+    width: 30%;
+    margin-left: 250px;
+  }
+  .plan-bottom-line{
+    width: 20%;
+  }
+  .scan-list{
+    width:30%;
+    margin-left: 235px;
+  }
+  .scan-benifits{
+    width:56%;
+    margin-left: 235px;
+  }
+  .scan-enter{
+    margin-left: 235px;
+  }
+  .enterprise-features{
+    margin-left: 100px;
+  }
+  .client-sign {
+    margin-left: 260px;
+  }
+  .press-heading{
+    margin-left: 70px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+  }
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+  }
+  .press-content{
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .section-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .request-menu{
+    margin-right: 25px;
+  }
+  .call-button {
+    margin-left: 280px;
+  }
+  .sign-position{
+    margin-top: -55px;
+  }
+  .client-name{
+    right: 320px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .testimonial-section{
+    height: 400px;
+  }
+  .logo-pos{
+    margin-top: 10px;
+  }
+  .pricing-testLogo{
+    margin-top: 50px;
+  }
+  .pricing-secLogo{
+      margin-top: 50px;
+  }
+  .press-container{
+    margin-top: 160px!important;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2595,16 +2475,9 @@ font-family: neosans;
   .plan-section{
     margin-top: 20px;
   }
-  .testimonial-section{
-    height: 350px;
-  }
   .client-sign {
     margin-left: 90px;
     margin-top: 60px;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
   }
   .press-heading{
     margin-left: 0px;
@@ -2634,12 +2507,14 @@ font-family: neosans;
   .press-logo{
     width:70px;
     height: 70px;
+    margin-left: 20px;
   }
   .year-menu li{
     display: inline-block;
   }
   .year-menu{
     width: 90%;
+    font-size: 13px!important;
   }
   .navbar-years{
     margin-left: 100px;
@@ -2648,14 +2523,75 @@ font-family: neosans;
     text-align: center!important;
     margin-left: 0px;
   }
+  .press-mention{
+    margin-left: 0px;
+  }
+  .request-menu{
+  display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .testimonial-section{
+    height: 400px;
+  }
+  .user-comments{
+    max-width: 400px;
+    font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 90px;
+    left: 90px;
+  }
+  .logo-pos{
+    margin-top: 10px;
+  }
+  .pricing-testLogo{
+    margin-top: 50px;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .year-menu{
+  font-size: 13px;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 30px;
+  }
+  .year-menu li{
+    margin-top: -15px;
+  }
+  .year-menu li a{
+    line-height: 10px;
+  }
+  .year-selector{
+    margin-left: -20px;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .current-year{
+    height: 30px;
+  }
+  .arrow-left{
+    bottom:20px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
 
 }
+
 @media (min-width: 375px) and (max-width: 424px) {
   .enterprise-features{
     margin-left: 110px;
-  }
-  .testimonial-section{
-    height: 380px;
   }
   .client-sign {
     margin-left: 60px;
@@ -2677,9 +2613,8 @@ font-family: neosans;
     margin-top: 10px;
   }
   .date-section{
-    margin-top: 0px;
+    margin-top: 5px;
     text-align: left;
-    margin-left: 40px;
   }
   .press-title{
     color: #ef5245;
@@ -2708,14 +2643,7 @@ font-family: neosans;
   .press-logo{
     width:70px;
     height: 70px;
-  }
-  .year-menu li{
-    display: inline-block;
-  }
-  .year-menu{
-    width: 90%;
-    font-size: 13px;
-    height: 50px;
+    margin-left: 20px;
   }
   .navbar-years{
     margin-left: 100px;
@@ -2724,14 +2652,69 @@ font-family: neosans;
     text-align: center!important;
     margin-left: 0px;
   }
+  .press-mention{
+    margin-left: 0px;
+  }
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .testimonial-section{
+    height: 450px;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 90px;
+  }
+  .last-logo{
+    margin-top: -40px!important;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .year-menu{
+  font-size: 13px;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 30px;
+  width: 90%;
+  }
+  .year-menu li{
+    margin-top: -15px;
+    display: inline-block;
+  }
+  .year-menu li a{
+    line-height: 10px;
+  }
+  .year-selector{
+    margin-left: -20px;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .current-year{
+    height: 30px;
+  }
+  .arrow-left{
+    bottom:20px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
   .enterprise-features{
     margin-left: 80px;
-  }
-  .testimonial-section{
-    height: 400px;
   }
   .client-sign {
     margin-left: 40px;
@@ -2753,9 +2736,9 @@ font-family: neosans;
     margin-top: 10px;
   }
   .date-section{
-    margin-top: 0px;
+    margin-top: 5px;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 0px;
   }
   .press-title{
     color: #ef5245;
@@ -2772,6 +2755,7 @@ font-family: neosans;
   .press-logo{
     width:70px;
     height: 70px;
+    margin-left: 20px;
   }
   .press-content{
     margin-top: 10px;
@@ -2784,7 +2768,6 @@ font-family: neosans;
   .press-collapse{
     width: 90%;
     margin-bottom: 10px;
-    margin-top: -20px;
   }
   .horz-splitting{
     display: block;
@@ -2800,6 +2783,69 @@ font-family: neosans;
   .navbar-sidesec{
     display: none;
   }
-
-
+  .press-mention{
+    margin-left: 0px;
+  }
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .testimonial-section{
+    height: 450px;
+  }
+  .last-logo{
+    margin-top: -40px!important;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:180px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 70px;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .year-menu{
+  font-size: 13px;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 30px;
+  width: 90%;
+  }
+  .year-menu li{
+    margin-top: -15px;
+    margin-left: 15px;
+    display: inline-block;
+  }
+  .year-menu li a{
+    line-height: 10px;
+    padding-left: 3px;
+    padding-right:3px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
+  .current-year{
+    height: 30px;
+  }
+  .year-selector{
+    margin-left: -22px;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+  .arrow-left{
+    bottom:22px;
+    left: 37px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
 }
