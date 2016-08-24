@@ -2516,7 +2516,7 @@ $('.year').on('click touchend', function() {
 $(document).ready(function(){
   $(".toggleNew").on("click", function(){
       var $href = $(this).attr('href');
-      var $anchor = $('#'+$href).offset();
+      var $anchor = $('.'+$href).offset();
       window.scrollTo($anchor.left,$anchor.top-80);
       return false;
   });
