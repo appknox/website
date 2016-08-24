@@ -234,8 +234,8 @@ p {
     padding-left: 25px !important;
 }
 
-.navbar-nav {
-    margin-left: 24%;
+#ak-menu {
+  margin-right: 200px!important;
 }
 
 .video-container {
@@ -585,10 +585,10 @@ button:focus {
   color: #ffffff!important;
   border-radius: 30px;
   margin-top: -43px;
+  margin-right: 70px;
   float: right;
   font-size: 13px;
   font-family: neosans;
-  margin-right: 140px;
   height: 30px;
   line-height: 23px;
   cursor: pointer;
@@ -1949,9 +1949,14 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 @media (max-width: 990px) {
-    .navbar-nav {
-        margin-left: 4%;
-    }
+  #ak-menu {
+    margin-right: 100px!important;
+    float: left;
+  }
+  .request-menu{
+    margin-right: 40px;
+  }
+
 }
 @media (max-width: 1024px) {
     .scan-enter {
@@ -1967,12 +1972,6 @@ input[type=email],input[type=text],input[type=url] {
     .logo-pos{
       margin-top: 10px;
     }
-    .navbar-nav {
-        margin-left: 0%;
-    }
-    .request-menu{
-      margin-right: 40px;
-    }
     .call-button {
       margin-left: 450px;
     }
@@ -1982,9 +1981,6 @@ input[type=email],input[type=text],input[type=url] {
 @media (min-width: 768px) and (max-width: 990px) {
     .plan-top-line{
       width: 40%;
-    }
-    .request-menu{
-      margin-right: 25px;
     }
     .call-button {
       margin-left: 280px;
