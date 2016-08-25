@@ -1,0 +1,167 @@
+- date: August 10, 2016
+  logo: /img/press/press_01.jpg
+  title: 5 Things About Rio Olympics Cybersecurity Your Boss Wants To Know
+  desc: Rio Olympics Cybersecurity is the talk of the town. We list down 5 things that your boss would want to know regarding it.
+  link: http://threatbrief.com/5-things-rio-olympics-cybersecurity-boss-wants-know/
+  identifier: 2016
+
+- date: July 15, 2016
+  logo: /img/press/press_02.png
+  title: Singapore Plans Legislation to Secure Data Collected by Firms
+  desc: Singapore will introduce legislation to protect sensitive data used by mobile app developers and other companies as the city-state intensifies its push to become one of the world’s leading technology hubs.
+  link: http://www.bloomberg.com/news/articles/2016-07-14/singapore-plans-legislation-to-secure-data-collected-by-firms
+  identifier: 2016-2
+
+- date: May 24, 2016
+  logo: /img/press/press_03.png
+  title: Beyond Interiors- Adding More Meaning To Spaces And How I Did It For Appknox
+  desc: Bangalore is a city that I have come to terms with now and started calling home. This place has nurtured a very healthy startup culture which is unique in its own way. One of my first interior projects in the city is an office space for a mobile security startup called Appknox.
+  link: https://inc42.com/resources/designing-appknox/
+  identifier: 2016-3
+  show_separtor: content-separator
+
+- date: November 02, 2015
+  logo: /img/press/press_16.png
+  title: 90% of mobile apps could be in breach of Singapore privacy law
+  desc: Ninety per cent of mobile apps in Singapore do not adequately declare what consumer data is collected or how it is used, potentially falling foul of Singapore's Personal Data Protection Act (PDPA)
+  link: http://www.straitstimes.com/tech/90-of-mobile-apps-could-be-in-breach-of-singapore-privacy-law
+  class: first-section
+  identifier: 2015
+
+- date:  October 01, 2015
+  logo: /img/press/press_04.png
+  title: SUMMARY FINDINGS FROM SINGAPORE’S FIRST PRIVACY SURVEY COVERING MOBILE APPLICATIONS
+  desc: Mobile application developers are advised to get their mobile apps scanned for privacy and security vulnerabilities by using of scan technology from Appknox
+  link: https://www.straitsinteractive.com/research-findings/summary-findings-from-singapores-first-privacy-survey-covering-mobile-applications/
+  identifier: 2015-1
+
+
+- date: August 04, 2015
+  logo: /img/press/press_05.png
+  title: Ola is finally willing to share its bounty with hackers
+  desc: On Aug. 2, taxi aggregator Ola launched its bug bounty programme, under which the company will compensate or acknowledge those who report bugs in its software. The only other Indian startup that runs a well-known bug bounty programme is the digital payment and e-commerce company Paytm.
+  link: http://qz.com/470033/ola-is-finally-willing-to-share-its-bounty-with-hackers/
+  identifier: 2015-2
+
+- date: May 25, 2015
+  logo: /img/press/press_06.jpg
+  title: Appknox Architecture - Making The Switch From AWS To The Google Cloud
+  desc: Our back-end architecture consists of 3 subsystems- Client, Data and Workers. Read this article to find how exactly we work.
+  link: http://highscalability.com/blog/2015/5/25/appknox-architecture-making-the-switch-from-aws-to-the-googl.html
+  identifier: 2015-3
+
+- date: May 20, 2015
+  logo: /img/press/press_07.png
+  title: WiFi offered free in public places poses a major security risk
+  desc: According to Shubho Halder, chief scientist at mobile security firm Appknox, who conducted the exercise at Bengaluru airport, most airports and free WiFi hotspots in India are a hacker's paradise owing to lack of proactive security.
+  link: http://articles.economictimes.indiatimes.com/2015-05-20/news/62413108_1_corporate-espionage-hotspots-bengaluru-airport
+  identifier: 2015-4
+
+- date: March 20, 2015
+  logo: /img/press/press_08.png
+  title: All for a ride- Techies flag major vulnerabilities in Ola app
+  desc: Ola says it has fixed the bugs in its latest update, but Bengaluru-based ethical hackers claim they can still access users' accounts if devices are connected to a public network
+  link: http://www.business-standard.com/article/companies/all-for-a-ride-techies-flag-major-vulnerabilities-in-ola-app-115032000022_1.html
+  identifier: 2015-5
+
+- date: March 19, 2015
+  logo: /img/press/press_03.png
+  title: Major Bug In Ola App Can Make You Either Rich Or Poor!
+  desc: Looking at the recent news of Ola we decided to put the Ola app, available on the Google Play store, through our system to find out how secure it is.
+  link: https://inc42.com/buzz/major-bug-in-ola-app-can-make-you-either-rich-or-poor/
+  identifier: 2015-6
+
+- date: March 01, 2015
+  logo: /img/press/press_10.png
+  title: Appknox- Discovering and Fixing Security Loopholes in Enterprise Mobile Apps
+  desc: Appknox has simplified the whole process of security testing and vulnerability detection. The company helps developers and enterprises discover security loopholes and fix them in a matter of minutes.
+  link: http://www.cioreviewindia.com/magazine/Appknox-Discovering-and-Fixing-Security-Loopholes-in-Enterprise-Mobile-Apps-BSJO11488613.html
+  identifier: 2015-7
+
+- date: January 29, 2015
+  logo: /img/press/press_11.png
+  title: Architecture behind Appknox – Inspired by Sherlock
+  desc: Take a sneak peak into Appknox - what stacks and languges we use, hwo we work, and how we find vulnerabilities
+  link: https://yourstory.com/2015/01/appknox-architecture/
+  identifier: 2015-8
+
+- date: January 01, 2015
+  logo: /img/press/press_03.png
+  title: 14 Startups That’ll Rock The Indian Ecosystem In 2015
+  desc: Inc42 brings to you a list of startups you should watch in the coming year. These startups pack a punch and it’s just a matter of time when they deliver it.
+  link: https://inc42.com/startups/14-startups-thatll-rock-indian-ecosystem-2015/
+  identifier: 2015-9
+  show_separtor: content-separator
+
+- date: December 19, 2014
+  logo: /img/press/press_11.png
+  title: Top mobile startups from India, here are the MobileSparks of 2014
+  desc: Looking for the best of Indian mobile startups? Well, YourStory MobileSparks attempts to unearth the best of the mobile every year and 2014 is the third
+  link: https://yourstory.com/2014/12/top-mobile-startups-mobilesparks-2014/
+  class: first-section
+  identifier: 2014
+
+- date: December 05, 2014
+  logo: /img/press/press_12.png
+  title: Microsoft Ventures graduates 11 tech startups from fifth batch of India Accelerator program
+  desc: The 11 startups which graduated today will join the 63 strong alumni network of Microsoft Ventures in India. While their four month stay at the Accelerator Program ended today, it also marked the beginning of another life-long association.
+  link: https://news.microsoft.com/en-in/microsoft-ventures-graduates-11-tech-startups-from-fifth-batch-of-india-accelerator-program/#sm.000kaxwq713b9fbbple28i9lt7pyc
+  identifier: 2014-1
+
+- date: December 02, 2014
+  logo: /img/press/press_02.png
+  title: Appknox In Talks To Raise Fund
+  desc: Appknox is in talks to raise funds from Jungle Ventures, along with angel investors including Google India Head Rajan Anandan.
+  link: http://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=268070454
+  identifier: 2014-2
+
+- date: December 02, 2014
+  logo: /img/press/press_03.png
+  title: Appknox Close To Raising Funds From Jungle Ventures, Rajan Anandan & Others
+  desc: Mobile application vulnerability detection startup, Appknox has raised an undisclosed amount in funding led by Jungle Ventures alongwith Google India Head Rajan Anandan also participating in the round.
+  link: https://inc42.com/buzz/appknox-raises-funding-jungle-ventures-rajan-anandan-others/
+  identifier: 2014-3
+
+- date: November 18, 2014
+  logo: /img/press/press_11.png
+  title: This trio found loopholes in 80% of the top apps they tested, founded Appknox
+  desc: Appknox is an automated testing tool for application developers and enterprises to help them identify and fix security loopholes in their applications.
+  link: https://yourstory.com/2014/11/appknox/
+  identifier: 2014-4
+
+- date: September 04, 2014
+  logo: /img/press/press_13.jpg
+  title: Securing mobile apps with Appknox
+  desc: Getting to the vulnerabilities first enables Appknox’s customers to plug loopholes in their apps, securing their reputations and preventing any data loss due to malicious activity. “We will hack your app before the hacker does.” says Harshit
+  link: http://www.ida.gov.sg/blog/insg/ict-enterprises/securing-mobile-apps-with-appknox/
+  identifier: 2014-5
+
+- date: September 04, 2014
+  logo: /img/press/press_13.jpg
+  title: Securing mobile apps with Appknox
+  desc: “We talked to as many people as we could, talked to customers to understand what their real pain was, and as soon as we were able to do this, we could align our product to what the market needed,” said Harshit Agarwal.
+  link: https://www.ida.gov.sg/Tech-Scene-News/Tech-News/Startups/2014/9/Securing-mobile-apps-with-Appknox
+  identifier: 2014-6
+
+- date: July 25, 2014
+  logo: /img/press/press_14.png
+  title: Meet the 12 startups picked for Microsoft Ventures’ 5th accelerator batch
+  desc: Appknox provides security as a service for mobile apps that prevents embarrassing data leaks and stops security breaches by detecting vulnerabilities.
+  link: http://techcircle.vccircle.com/2014/07/25/meet-the-12-startups-picked-for-microsoft-ventures-5th-accelerator-batch/
+  identifier: 2014-7
+
+- date: July 23, 2014
+  logo: /img/press/press_03.png
+  title: First Look at the 12 Startups in Microsoft Venture Accelerator’s 5th Batch
+  desc: We got a hold of Microsoft Accelerators latest batch of startups. This time there are only 12 companies in the batch with plans to spend more time on alumni and high potential companies from India. This batch has 3 companies from outside India – one each from Singapore, Australia and the US.
+  link: https://inc42.com/buzz/first-look-microsoft-venture-accelerators-latest-batch-5s-12-startups/
+  identifier: 2014-8
+  show_separtor: content-separator
+
+- date: August 06, 2012
+  logo: /img/press/press_15.png
+  title: Experts Demonstrate Security Holes in Android with Exploitation Framework
+  desc: The Android Framework Exploitation is constantly being improved by Gupta and Halder, but after its public release in September, the experts are counting on the community’s support in making the framework as complex as possible.
+  link: http://news.softpedia.com/news/Experts-Demonstrate-Security-Holes-in-Android-with-Exploitation-Framework-285047.shtml
+  class: first-section
+  identifier: 2012

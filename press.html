@@ -1,0 +1,59 @@
+---
+layout: default
+title: Appknox - Press Mentions
+excerpt: Appknox has been recognized at various places. Write to us at press@appknox.com
+permalink: /press/
+---
+
+<section class="press-container">
+  <div class="text-center">
+    <h2 class="press-heading"> Press </h2>
+  </div>
+</section>
+<section class="press-spy" data-spy="scroll" data-target="#myScrollspy" data-offset="90">
+ <div class="row">
+  <div class="col-md-3">
+    <h3 class="mentions-text"> Mentions </h3>
+  </div>
+  <div class="col-md-9">
+    <div class="col-xs-8 sticky-sec">
+      <nav class="year-menu main-nav navbar">
+        <div class="container-fluid fluid-selector">
+          <div class="navbar-brand year-selector">YEAR
+            <img class="arrow-left" src="/img/arrow_red-14.png" alt="arrow" />
+          </div>
+          <div id="myScrollspy">
+          <ul class="nav navbar-nav navbar-years nav-pills">
+            <li class="active list-active"><a class="toggleNew" data-proofer-ignore href="#2016" id="sixteen">2016</a></li>
+            <li class="list-active"><a class="toggleNew" data-proofer-ignore href="#2015">2015</a></li>
+            <li class="list-active"><a class="toggleNew" data-proofer-ignore href="#2014">2014</a></li>
+            <li class="list-active"><a class="toggleNew" data-proofer-ignore href="#2012">2012</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-xs-8 press-content main-container first-section section-collapse">
+      {% for press in site.data.press_data %}
+        <div class="row" id="{{press.identifier}}">
+            <div class="col-xs-3 press-collapse">
+              <img class="press-logo" src="{{press.logo}}" alt="Appknox news" />
+            </div>
+            <div class="col-xs-9 press-collapse">
+              <div class="press-mention">
+                <blockquote class="block-section">
+                  <a data-proofer-ignore href="{{press.link}}" target="_blank">
+                    <div class="press-title">{{press.title}}</div>
+                  </a>
+                  <div class="press-desc">{{press.desc}}</div>
+                  <div class="date-section">{{press.date}}</div>
+                </blockquote>
+              </div>
+            </div>
+        </div>
+        <hr class="hide-others {{press.show_separtor}}">
+        {% endfor %}
+    </div>
+  </div>
+ </div>
+</section>

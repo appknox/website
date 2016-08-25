@@ -1245,8 +1245,8 @@ label.error {
 
 .footer-links {
     text-align: center;
-    font-size: 1.2em;
-    margin-top: 25px;
+    font-size: 0.9em;
+    margin-top: 30px;
 }
 
 .footer-links a {
@@ -1949,6 +1949,19 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 @media (max-width: 990px) {
+
+    .navbar-nav {
+        margin-left: 4%;
+    }
+    .year-menu{
+      margin-left: 30px;
+    }
+    .mentions-text{
+      text-align: left!important;
+      margin-left: 50px;
+    }
+
+
   #ak-menu {
     margin-right: 100px!important;
     float: left;
@@ -1957,7 +1970,10 @@ input[type=email],input[type=text],input[type=url] {
     margin-right: 40px;
   }
 
+
 }
+
+
 @media (max-width: 1024px) {
     .scan-enter {
       margin-bottom: 57px;
@@ -1971,6 +1987,25 @@ input[type=email],input[type=text],input[type=url] {
     }
     .logo-pos{
       margin-top: 10px;
+    }
+    .section-collapse{
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    .sticky-section{
+      width: 90%;
+    }
+    .navbar-nav {
+        margin-left: 0%;
+    }
+    .request-menu{
+      margin-right: 40px;
+    }
+    .call-button {
+      margin-left: 450px;
+    }
+    .press-container{
+      margin-top: 120px;
     }
     .call-button {
       margin-left: 450px;
@@ -2007,134 +2042,20 @@ input[type=email],input[type=text],input[type=url] {
     .enterprise-features{
       margin-left: 100px;
     }
-    .sign-position{
-      margin-top: -55px;
+    .main-nav-scrolled {
+      width: 66%!important;
     }
-    .client-name{
-      right: 320px;
-      top:160px;
-      margin-top: 30px;
+    .year-menu{
+      margin-left: -35px!important;
     }
-    .testimonial-section{
-      height: 400px;
-    }
-    .logo-pos{
-      margin-top: 10px;
-    }
-    .pricing-testLogo{
-      margin-top: 50px;
-    }
-    .pricing-secLogo{
-        margin-top: 50px;
+    .footer-links{
+       font-size: 13px;
+       margin-top: 60px;
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
-  .enterprise-features{
-    margin-left: 130px;
-  }
-  .request-menu{
-  display: none;
-  }
-  .call-button {
-    margin-left: 10px;
-  }
-  .plan-section{
-    margin-top: 20px;
-  }
-  .testimonial-section{
-    height: 400px;
-  }
-  .user-comments{
-    max-width: 400px;
-    font-size: 1em;
-  }
-  .client-logo{
-    width: 100%;
-  }
-  .client-name{
-    left: 90px;
-    top:160px;
-    margin-top: 30px;
-  }
-  .last-client{
-    margin-top: 90px;
-    left: 90px;
-  }
-  .logo-pos{
-    margin-top: 10px;
-  }
-  .pricing-testLogo{
-    margin-top: 50px;
-  }
 
-}
-@media (min-width: 375px) and (max-width: 424px) {
-  .request-menu{
-    display: none;
-  }
-  .call-button {
-    margin-left: 10px;
-  }
-  .enterprise-features{
-    margin-left: 110px;
-  }
-  .testimonial-section{
-    height: 450px;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-  .client-logo{
-    width: 100%;
-  }
-  .client-name{
-    left: 90px;
-    top:160px;
-    margin-top: 30px;
-  }
-  .last-client{
-    margin-top: 120px;
-    left: 90px;
-  }
-  .last-logo{
-    margin-top: -40px!important;
-  }
-}
-@media (min-width: 320px) and (max-width: 374px) {
-  .request-menu{
-    display: none;
-  }
-  .call-button {
-    margin-left: 10px;
-  }
-  .enterprise-features{
-    margin-left: 80px;
-  }
-  .testimonial-section{
-    height: 450px;
-  }
-  .last-logo{
-    margin-top: -40px!important;
-  }
-  .user-comments{
-    max-width: 300px;
-    font-size: 1em;
-  }
-  .client-logo{
-    width: 100%;
-  }
-  .client-name{
-    left: 90px;
-    top:180px;
-    margin-top: 30px;
-  }
-  .last-client{
-    margin-top: 120px;
-    left: 70px;
-  }
-}
+
 @media (max-width: 767px) {
     .slide-img-zone{
       display: none;
@@ -2404,4 +2325,692 @@ input[type=email],input[type=text],input[type=url] {
 .check-26 {
   background:url('/img/check-26.png') no-repeat right;
   width:20px
+}
+
+
+/* Press Page */
+
+.press-heading{
+  font-family: neosans;
+  font-size: 30px;
+  color: #000000;
+}
+
+.arrow-left {
+  position: relative;
+  bottom: 21px;
+  left: 57px;
+}
+
+.mentions-text {
+  color: #ef5245;
+  text-align: right;
+  margin-top: 35px;
+}
+
+.press-container{
+  margin-top: 100px;
+}
+
+.year-menu{
+background-color: #fafafa ;
+font-size: 18px;
+border: 0px;
+padding: 0px;
+margin-top: 20px;
+font-family: neosans;
+background-image: none;
+margin-left: -20px;
+}
+
+.main-nav,
+.main-container {
+  position: relative;
+}
+.main-nav {
+  z-index: 150;
+  background-color: #fafafa ;
+  font-size: 18px;
+  border: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  font-family: neosans;
+}
+
+header, .main-nav-scrolled {
+  position: fixed;
+  width: 49%;
+  top: 40px;
+}
+
+.year-menu li{
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.year-menu a{
+  color: #999999!important;
+}
+
+.navbar-years>li.active>a, .navbar-years>li.active>a:focus, .navbar-years>li.active>a:hover{
+  color: #000000!important;
+  background-color: #fafafa;
+  border-bottom: solid 3px #ef5245;
+  border-radius: 0px;
+  height: 30px;
+}
+
+.year-menu a:hover{
+  color: #000000!important;
+}
+
+.year-selector{
+  margin-top: 10px;
+  margin-left: -10px;
+  color: #999999;
+}
+
+.date-section{
+  color: #bcbcbc;
+  font-size: 13px;
+  font-family: gillsans;
+  margin-top: 5px;
+
+}
+
+.press-title{
+  color: #ef5245;
+  font-size: 13px;
+  font-family: neosans;
+}
+
+.press-mention{
+  margin-top: 0px;
+  margin-left: -60px;
+}
+
+.press-desc{
+  color: #000000;
+  font-size: 13px;
+  font-family: gillsans;
+}
+
+.press-content{
+  padding-top: 0px;
+}
+
+.main-container{
+  margin-top: 30px;
+}
+
+.navbar-years{
+  margin-left: 20px;
+}
+
+.toggleNew{
+  margin-top: 35px!important;
+  padding-top:0px!important;
+}
+
+.toggleNow:active{
+  color: #000000;
+}
+
+.press-logo{
+  width: 80px;
+  height: 80px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.block-section{
+  border-left: 2px solid #eee;
+}
+
+.content-separator{
+   width: 100%;
+   margin-top: 20px;
+   height: 6px;
+   border: 0;
+   box-shadow: inset 0 1px 0px 0px black;
+   display: block!important;
+  }
+
+  .hide-others{
+    display: none;
+  }
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .plan-top-line{
+    width: 40%;
+  }
+  .request-button{
+    display: block !important ;
+    width: 30%;
+    margin-left: 250px;
+  }
+  .plan-bottom-line{
+    width: 20%;
+  }
+  .scan-list{
+    width:30%;
+    margin-left: 235px;
+  }
+  .scan-benifits{
+    width:56%;
+    margin-left: 235px;
+  }
+  .scan-enter{
+    margin-left: 235px;
+  }
+  .enterprise-features{
+    margin-left: 100px;
+  }
+  .client-sign {
+    margin-left: 260px;
+  }
+  .press-heading{
+    margin-left: 70px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+  }
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+  }
+  .press-content{
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .section-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .request-menu{
+    margin-right: 25px;
+  }
+  .call-button {
+    margin-left: 280px;
+  }
+  .sign-position{
+    margin-top: -55px;
+  }
+  .client-name{
+    right: 320px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .testimonial-section{
+    height: 400px;
+  }
+  .logo-pos{
+    margin-top: 10px;
+  }
+  .pricing-testLogo{
+    margin-top: 50px;
+  }
+  .pricing-secLogo{
+      margin-top: 50px;
+  }
+  .press-container{
+    margin-top: 160px!important;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .main-nav-scrolled {
+    width: 90%!important;
+    top: 98px;
+    margin-left: 20px;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+  }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .enterprise-features{
+    margin-left: 130px;
+  }
+  .plan-section{
+    margin-top: 20px;
+  }
+  .client-sign {
+    margin-left: 90px;
+    margin-top: 60px;
+  }
+  .press-heading{
+    margin-left: 0px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+  }
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+  }
+  .press-content{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .section-collapse{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .press-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .press-logo{
+    width:70px;
+    height: 70px;
+    margin-left: 20px;
+  }
+  .navbar-years{
+    margin-left: 80px;
+  }
+  .toggleNew {
+    margin-top: 29px!important;
+  }
+  .mentions-text {
+    text-align: center!important;
+    margin-left: 0px;
+  }
+  .press-mention{
+    margin-left: 0px;
+  }
+  .request-menu{
+  display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .testimonial-section{
+    height: 400px;
+  }
+  .user-comments{
+    max-width: 400px;
+    font-size: 1em;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 90px;
+    left: 90px;
+  }
+  .logo-pos{
+    margin-top: 10px;
+  }
+  .pricing-testLogo{
+    margin-top: 50px;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .year-menu li{
+    margin-top: -15px;
+    display: inline-block;
+  }
+  .year-menu li a{
+    line-height: 10px;
+  }
+  .year-selector{
+    margin-left: -20px;
+    margin-top: 5px;
+    font-size: 13px;
+    padding-left: 0px;
+  }
+  .current-year{
+    height: 30px;
+  }
+  .arrow-left{
+    bottom:20px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
+  .main-nav-scrolled {
+    width: 90%!important;
+    top: 39px;
+    margin-left: 0px;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+    width: 350px;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+  }
+  .footer-links {
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .enterprise-features{
+    margin-left: 110px;
+  }
+  .client-sign {
+    margin-left: 60px;
+    margin-top: 70px;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .release-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .year-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .date-section{
+    margin-top: 5px;
+    text-align: left;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+    width: 280px;
+  }
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+    width: 280px;
+  }
+  .press-content{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .section-collapse{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .press-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .press-logo{
+    width:70px;
+    height: 70px;
+    margin-left: 20px;
+  }
+  .mentions-text {
+    text-align: center!important;
+    margin-left: 0px;
+  }
+  .press-mention{
+    margin-left: 0px;
+  }
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .testimonial-section{
+    height: 450px;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:160px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 90px;
+  }
+  .last-logo{
+    margin-top: -40px!important;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .year-menu{
+  font-size: 13px;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 30px;
+  width: 90%;
+  }
+  .year-menu li{
+    margin-top: -15px;
+    display: inline-block;
+  }
+  .year-menu li a{
+    line-height: 10px;
+  }
+  .year-selector{
+    margin-left: -20px;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .current-year{
+    height: 30px;
+  }
+  .arrow-left{
+    bottom:20px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
+  .main-nav-scrolled {
+    width: 90%!important;
+    top: 39px;
+    margin-left: 0px;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+    width: 300px;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+  }
+  .navbar-years>li>a{
+      padding: 7px;
+  }
+  .toggleNew {
+    margin-top: 28px!important;
+  }
+  .navbar-years {
+    margin-left: 80px;
+  }
+  .footer-links {
+    margin-left: -20px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .enterprise-features{
+    margin-left: 80px;
+  }
+  .client-sign {
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  .user-comments{
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .release-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .year-text{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .date-section{
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .press-title{
+    color: #ef5245;
+    font-size: 13px;
+    font-family: neosans;
+    width: 250px;
+  }
+  .press-desc{
+    color: #000000;
+    font-size: 13px;
+    font-family: gillsans;
+    width: 250px;
+  }
+  .press-logo{
+    width:70px;
+    height: 70px;
+    margin-left: 20px;
+  }
+  .press-content{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .section-collapse{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .press-collapse{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .horz-splitting{
+    display: block;
+  }
+  .select-style{
+    margin-left: 75px;
+    position: absolute;
+    top:40px;
+  }
+  .other-section{
+    margin-left: 0px!important;
+  }
+  .navbar-sidesec{
+    display: none;
+  }
+  .press-mention{
+    margin-left: 0px;
+  }
+  .request-menu{
+    display: none;
+  }
+  .call-button {
+    margin-left: 10px;
+  }
+  .testimonial-section{
+    height: 450px;
+  }
+  .last-logo{
+    margin-top: -40px!important;
+  }
+  .client-logo{
+    width: 100%;
+  }
+  .client-name{
+    left: 90px;
+    top:180px;
+    margin-top: 30px;
+  }
+  .last-client{
+    margin-top: 120px;
+    left: 70px;
+  }
+  .content-container{
+    margin-top: 0px;
+  }
+  .year-menu{
+  font-size: 13px;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 30px;
+  width: 90%;
+  }
+  .footer-links {
+    margin-left: -57px;
+    text-align: left;
+  }
+  .year-menu li{
+    margin-top: -15px;
+    margin-left: 15px;
+    display: inline-block;
+  }
+  .year-menu li a{
+    line-height: 10px;
+    padding-left: 3px;
+    padding-right:3px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
+  .current-year{
+    height: 30px;
+  }
+  .year-selector{
+    margin-left: -22px;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+  .arrow-left{
+    bottom:22px;
+    left: 37px;
+  }
+  .year-menu li a:hover{
+  background-color: #fafafa;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+    width: 250px;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+    margin-left: 20px!important;
+  }
+  .main-nav-scrolled {
+    width: 85%!important;
+    top: 39px;
+    margin-left: 0px!important;
+  }
+  .navbar-years>li>a{
+      padding: 3px;
+  }
+  .toggleNew {
+    margin-top: 27px!important;
+  }
+  .mentions-text {
+    text-align: center!important;
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 320px) {
+    .request-menu{
+        display: none;
+    }
 }
