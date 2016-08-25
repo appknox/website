@@ -1982,8 +1982,8 @@ input[type=email],input[type=text],input[type=url] {
       width: 90%;
       margin-bottom: 10px;
     }
-    .year-menu{
-        width: 90%;
+    .sticky-section{
+      width: 90%;
     }
     .navbar-nav {
         margin-left: 0%;
@@ -1996,6 +1996,12 @@ input[type=email],input[type=text],input[type=url] {
     }
     .press-container{
       margin-top: 120px;
+    }
+    .main-nav-scrolled {
+      width: 66%!important;
+    }
+    .year-menu{
+      margin-left: -35px!important;
     }
 }
 
@@ -2287,17 +2293,10 @@ input[type=email],input[type=text],input[type=url] {
   left: 57px;
 }
 
-.current-year{
-  color: #000000!important;
-  border-bottom: solid 3px #ef5245;
-  height: 40px;
-  padding-left: 4px!important;
-  padding-right: 4px!important;
-}
-
 .mentions-text {
   color: #ef5245;
   text-align: right;
+  margin-top: 35px;
 }
 
 .press-container{
@@ -2310,8 +2309,29 @@ font-size: 18px;
 border: 0px;
 padding: 0px;
 margin-top: 20px;
-height: 40px;
 font-family: neosans;
+background-image: none;
+margin-left: -20px;
+}
+
+.main-nav,
+.main-container {
+  position: relative;
+}
+.main-nav {
+  z-index: 150;
+  background-color: #fafafa ;
+  font-size: 18px;
+  border: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  font-family: neosans;
+}
+
+header, .main-nav-scrolled {
+  position: fixed;
+  width: 49%;
+  top: 40px;
 }
 
 .year-menu li{
@@ -2319,14 +2339,24 @@ font-family: neosans;
   cursor: pointer;
 }
 
-.year-menu li a{
-  color: #999999;
-  padding-left: 10px;
-  padding-right: 10px;
+.year-menu a{
+  color: #999999!important;
+}
+
+.navbar-years>li.active>a, .navbar-years>li.active>a:focus, .navbar-years>li.active>a:hover{
+  color: #000000!important;
+  background-color: #fafafa;
+  border-bottom: solid 3px #ef5245;
+  border-radius: 0px;
+  height: 30px;
+}
+
+.year-menu a:hover{
+  color: #000000!important;
 }
 
 .year-selector{
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: -10px;
   color: #999999;
 }
@@ -2368,6 +2398,11 @@ font-family: neosans;
   margin-left: 20px;
 }
 
+.toggleNew{
+  margin-top: 35px!important;
+  padding-top:0px!important;
+}
+
 .toggleNow:active{
   color: #000000;
 }
@@ -2383,6 +2418,7 @@ font-family: neosans;
 .block-section{
   border-left: 2px solid #eee;
 }
+
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
@@ -2466,6 +2502,15 @@ font-family: neosans;
   .content-container{
     margin-top: 0px;
   }
+  .main-nav-scrolled {
+    width: 90%!important;
+    top: 98px;
+    margin-left: 20px;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+  }
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2509,15 +2554,11 @@ font-family: neosans;
     height: 70px;
     margin-left: 20px;
   }
-  .year-menu li{
-    display: inline-block;
-  }
-  .year-menu{
-    width: 90%;
-    font-size: 13px!important;
-  }
   .navbar-years{
-    margin-left: 100px;
+    margin-left: 80px;
+  }
+  .toggleNew {
+    margin-top: 25px!important;
   }
   .mentions-text {
     text-align: center!important;
@@ -2560,14 +2601,9 @@ font-family: neosans;
   .content-container{
     margin-top: 0px;
   }
-  .year-menu{
-  font-size: 13px;
-  margin-top: 20px;
-  height: 42px;
-  line-height: 30px;
-  }
   .year-menu li{
     margin-top: -15px;
+    display: inline-block;
   }
   .year-menu li a{
     line-height: 10px;
@@ -2576,6 +2612,7 @@ font-family: neosans;
     margin-left: -20px;
     margin-top: 5px;
     font-size: 13px;
+    padding-left: 0px;
   }
   .current-year{
     height: 30px;
@@ -2585,6 +2622,19 @@ font-family: neosans;
   }
   .year-menu li a:hover{
   background-color: #fafafa;
+  }
+  .main-nav-scrolled {
+    width: 90%!important;
+    top: 39px;
+    margin-left: 0px;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+    width: 350px;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
   }
 
 }
@@ -2600,9 +2650,6 @@ font-family: neosans;
   .user-comments{
     max-width: 300px;
     font-size: 1em;
-  }
-  .press-heading{
-    margin-left: 30px;
   }
   .release-text{
     margin-left: 30px;
@@ -2644,9 +2691,6 @@ font-family: neosans;
     width:70px;
     height: 70px;
     margin-left: 20px;
-  }
-  .navbar-years{
-    margin-left: 100px;
   }
   .mentions-text {
     text-align: center!important;
@@ -2710,6 +2754,29 @@ font-family: neosans;
   .year-menu li a:hover{
   background-color: #fafafa;
   }
+  .main-nav-scrolled {
+    width: 90%!important;
+    top: 39px;
+    margin-left: 0px;
+  }
+  .year-menu{
+    margin-left: 0px!important;
+    width: 300px;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+  }
+  .navbar-years>li>a{
+      padding: 7px;
+  }
+  .toggleNew {
+    margin-top: 28px!important;
+  }
+  .navbar-years {
+    margin-left: 80px;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -2723,9 +2790,6 @@ font-family: neosans;
   .user-comments{
     max-width: 300px;
     font-size: 1em;
-  }
-  .press-heading{
-    margin-left: 30px;
   }
   .release-text{
     margin-left: 30px;
@@ -2848,4 +2912,29 @@ font-family: neosans;
   .year-menu li a:hover{
   background-color: #fafafa;
   }
+  .year-menu{
+    margin-left: 0px!important;
+    width: 250px;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+    margin-left: 20px!important;
+  }
+  .main-nav-scrolled {
+    width: 85%!important;
+    top: 39px;
+    margin-left: 0px!important;
+  }
+  .navbar-years>li>a{
+      padding: 3px;
+  }
+  .toggleNew {
+    margin-top: 27px!important;
+  }
+  .mentions-text {
+    text-align: center!important;
+    margin-left: 0px;
+  }
+
 }

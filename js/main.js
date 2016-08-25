@@ -2516,16 +2516,10 @@ $('.year').on('click touchend', function() {
 $(document).ready(function(){
   $(".toggleNew").on("click", function(){
       var $href = $(this).attr('href');
-      var $anchor = $('.'+$href).offset();
+      var $anchor = $(''+$href).offset();
       window.scrollTo($anchor.left,$anchor.top-80);
       return false;
   });
-  $('#sixteen').addClass('current-year');
-    $('#year-selected li a').on('click', function (e) {
-    e.preventDefault();
-    $('#year-selected li a.current-year').removeClass('current-year');
-    $(this).addClass('current-year');
-    });
     $(".landing-page").click(function(){
     e.preventDefault();
     var url = $(this).attr('href');
@@ -2537,6 +2531,19 @@ $(document).ready(function () {
   $(".grade_section").click(function() {
   window.location.href="#grade-section";
   });
+});
+
+
+var  mn = $(".main-nav");
+    mns = "main-nav-scrolled";
+    hdr = $('header').height()+90;
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
 });
 
 
