@@ -41,8 +41,12 @@ input.error {
     padding-left: 25px !important;
 }
 
-.navbar-nav {
+/*.navbar-nav {
     margin-left: 24%;
+}*/
+
+#ak-menu {
+  margin-right: 200px!important;
 }
 .navbar-toggle .icon-bar {
     display: block;
@@ -113,7 +117,7 @@ a {
    float: right;
    font-size: 13px;
    font-family: neosans;
-   margin-right: 140px;
+   margin-right: 70px;
    height: 30px;
    line-height: 23px;
    cursor: pointer;
@@ -170,9 +174,13 @@ a {
 }
 
 @media (max-width: 990px) {
-    .navbar-nav {
-        margin-left: 4%;
-    }
+  #ak-menu {
+  margin-right: 100px!important;
+  float: left;
+  }
+  .request-menu{
+    margin-right: 40px;
+  }
 }
 
 .heading{
@@ -635,12 +643,6 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .navbar-nav {
-      margin-left: 0%;
-  }
-  .request-menu{
-    margin-right: 40px;
-  }
   .call-button {
     margin-left: 450px;
   }
@@ -682,8 +684,8 @@ a {
   .heading{
     max-width: 100%;
   }
-  .request-menu{
-      margin-right: 25px;
+  .header {
+      margin-top: 160px;
   }
   .content{
     max-width: 100%;
@@ -695,7 +697,7 @@ a {
     margin-left: 130px;
   }
   .submit-button{
-    margin-left: 190px;
+    margin-left: 250px;
   }
   .condition-text{
     margin-left: 165px;
@@ -901,6 +903,9 @@ a {
   .heading{
     max-width: 100%;
   }
+  .request-menu{
+  display: none;
+  }
   .content{
     max-width: 100%;
   }
@@ -987,6 +992,9 @@ a {
 @media (min-width: 320px) and (max-width: 374px) {
   .heading{
     max-width: 100%;
+  }
+  .request-menu{
+  display: none;
   }
   .content{
     max-width: 100%;

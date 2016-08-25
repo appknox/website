@@ -234,8 +234,8 @@ p {
     padding-left: 25px !important;
 }
 
-.navbar-nav {
-    margin-left: 24%;
+#ak-menu {
+  margin-right: 200px!important;
 }
 
 .video-container {
@@ -585,10 +585,10 @@ button:focus {
   color: #ffffff!important;
   border-radius: 30px;
   margin-top: -43px;
+  margin-right: 70px;
   float: right;
   font-size: 13px;
   font-family: neosans;
-  margin-right: 140px;
   height: 30px;
   line-height: 23px;
   cursor: pointer;
@@ -1949,6 +1949,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 @media (max-width: 990px) {
+
     .navbar-nav {
         margin-left: 4%;
     }
@@ -1959,6 +1960,15 @@ input[type=email],input[type=text],input[type=url] {
       text-align: left!important;
       margin-left: 50px;
     }
+
+
+  #ak-menu {
+    margin-right: 100px!important;
+    float: left;
+  }
+  .request-menu{
+    margin-right: 40px;
+  }
 
 
 }
@@ -1996,6 +2006,41 @@ input[type=email],input[type=text],input[type=url] {
     }
     .press-container{
       margin-top: 120px;
+    }
+    .call-button {
+      margin-left: 450px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .plan-top-line{
+      width: 40%;
+    }
+    .call-button {
+      margin-left: 280px;
+    }
+    .request-button{
+      display: block !important ;
+      width: 30%;
+      margin-left: 250px;
+    }
+    .plan-bottom-line{
+      width: 20%;
+    }
+    .scan-list{
+      width:30%;
+      margin-left: 235px;
+    }
+    .scan-benifits{
+      width:56%;
+      margin-left: 235px;
+    }
+    .scan-enter{
+      margin-left: 235px;
+    }
+    .enterprise-features{
+      margin-left: 100px;
     }
     .main-nav-scrolled {
       width: 66%!important;
