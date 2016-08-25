@@ -18,6 +18,7 @@
   desc: Bangalore is a city that I have come to terms with now and started calling home. This place has nurtured a very healthy startup culture which is unique in its own way. One of my first interior projects in the city is an office space for a mobile security startup called Appknox.
   link: https://inc42.com/resources/designing-appknox/
   identifier: 2016-3
+  show_separtor: content-separator
 
 - date: November 02, 2015
   logo: /img/press/press_16.png
@@ -90,6 +91,7 @@
   desc: Inc42 brings to you a list of startups you should watch in the coming year. These startups pack a punch and it’s just a matter of time when they deliver it.
   link: https://inc42.com/startups/14-startups-thatll-rock-indian-ecosystem-2015/
   identifier: 2015-9
+  show_separtor: content-separator
 
 - date: December 19, 2014
   logo: /img/press/press_11.png
@@ -154,6 +156,7 @@
   desc: We got a hold of Microsoft Accelerators latest batch of startups. This time there are only 12 companies in the batch with plans to spend more time on alumni and high potential companies from India. This batch has 3 companies from outside India – one each from Singapore, Australia and the US.
   link: https://inc42.com/buzz/first-look-microsoft-venture-accelerators-latest-batch-5s-12-startups/
   identifier: 2014-8
+  show_separtor: content-separator
 
 - date: August 06, 2012
   logo: /img/press/press_15.png
