@@ -1245,8 +1245,8 @@ label.error {
 
 .footer-links {
     text-align: center;
-    font-size: 1.2em;
-    margin-top: 25px;
+    font-size: 0.8em;
+    margin-top: 30px;
 }
 
 .footer-links a {
@@ -2003,6 +2003,10 @@ input[type=email],input[type=text],input[type=url] {
     .year-menu{
       margin-left: -35px!important;
     }
+    .footer-links{
+       font-size: 13px;
+       margin-top: 60px;
+    }
 }
 
 
@@ -2570,7 +2574,7 @@ header, .main-nav-scrolled {
     margin-left: 80px;
   }
   .toggleNew {
-    margin-top: 25px!important;
+    margin-top: 29px!important;
   }
   .mentions-text {
     text-align: center!important;
@@ -2648,7 +2652,9 @@ header, .main-nav-scrolled {
     height: 42px;
     line-height: 30px;
   }
-
+  .footer-links {
+    margin-left: -20px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -2788,6 +2794,9 @@ header, .main-nav-scrolled {
   .navbar-years {
     margin-left: 80px;
   }
+  .footer-links {
+    margin-left: -20px;
+  }
 
 }
 
@@ -2895,6 +2904,10 @@ header, .main-nav-scrolled {
   height: 42px;
   line-height: 30px;
   width: 90%;
+  }
+  .footer-links {
+    margin-left: -57px;
+    text-align: left;
   }
   .year-menu li{
     margin-top: -15px;

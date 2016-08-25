@@ -457,8 +457,8 @@ a {
 }
 .footer-links {
     text-align: center;
-    font-size: 24px;
-    margin-top: 25px;
+    font-size: 18px;
+    margin-top: 30px;
     font-family: gillsansmtpro;
 }
 
@@ -671,6 +671,10 @@ a {
   }
   .third-section{
     margin-top: 80px;
+  }
+  .footer-links{
+     font-size: 12px;
+     margin-top: 60px;
   }
 }
 
@@ -887,6 +891,9 @@ a {
     margin-left: 70px;
     margin-top: 20px;
   }
+  .footer-links {
+    margin-left: -20px;
+  }
 
 }
 
@@ -971,6 +978,9 @@ a {
   .insight-content{
     margin-left: 60px;
     margin-top: 30px;
+  }
+  .footer-links {
+    margin-left: -20px;
   }
 }
 
@@ -1067,5 +1077,9 @@ a {
     margin-left: 10px;
     margin-top: 30px;
     width: 100%;
+  }
+  .footer-links {
+    margin-left: -30px;
+    text-align: left;
   }
 }
