@@ -2010,6 +2010,9 @@ input[type=email],input[type=text],input[type=url] {
     .call-button {
       margin-left: 450px;
     }
+    .sign-pos{
+      margin-top: 20px;
+    }
 
 }
 
@@ -2507,9 +2510,6 @@ header, .main-nav-scrolled {
   .enterprise-features{
     margin-left: 100px;
   }
-  .client-sign {
-    margin-left: 260px;
-  }
   .press-heading{
     margin-left: 70px;
   }
@@ -2551,6 +2551,9 @@ header, .main-nav-scrolled {
   .logo-pos{
     margin-top: 10px;
   }
+  .sign-pos{
+    margin-top: 20px;
+  }
   .pricing-testLogo{
     margin-top: 50px;
   }
@@ -2582,8 +2585,10 @@ header, .main-nav-scrolled {
     margin-top: 20px;
   }
   .client-sign {
-    margin-left: 90px;
     margin-top: 60px;
+  }
+  .last-sign{
+    margin-top: 30px;
   }
   .press-heading{
     margin-left: 0px;
@@ -2707,8 +2712,10 @@ header, .main-nav-scrolled {
     margin-left: 110px;
   }
   .client-sign {
-    margin-left: 60px;
     margin-top: 70px;
+  }
+  .last-sign{
+    margin-top: 40px;
   }
   .user-comments{
     max-width: 300px;
@@ -2850,8 +2857,7 @@ header, .main-nav-scrolled {
     margin-left: 80px;
   }
   .client-sign {
-    margin-left: 40px;
-    margin-top: 100px;
+    margin-top: 40px;
   }
   .user-comments{
     max-width: 300px;
