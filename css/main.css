@@ -2484,6 +2484,76 @@ header, .main-nav-scrolled {
     display: none;
   }
 
+/* End of Press Page */
+
+
+
+/* 404 Error Page */
+
+  .error-header{
+    margin-top: 20px;
+  }
+
+  .error-heading{
+    font-family: gillsans;
+    font-size: 16px;
+    color : #979797;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .previous-page a{
+    font-family: neosans;
+    color: #f24c40!important;
+  }
+
+  .change-color{
+    color: #f24c40;
+  }
+
+  .or-heading{
+    color : #979797;
+  }
+
+  .reduced-image{
+    width: 80%;
+  }
+
+  .error-right-heading{
+    color : #979797;
+    font-family: gillsans;
+    font-size: 19px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .blog-box-top{
+    margin-top: 46px;
+  }
+
+  .blog-box-down{
+    margin-top: 49px;
+  }
+
+  .grade-logo{
+    margin-top: 7px;
+    margin-left: 130px;
+  }
+
+  .freedemo-logo{
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+
+  .left-error-content{
+    margin-left: 130px;
+  }
+  .right-error-content{
+    margin-left: -130px;
+  }
+/* End of 404 Error Page */
+
+
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
     width: 40%;
@@ -2574,7 +2644,24 @@ header, .main-nav-scrolled {
   .year-menu{
     margin-left: 0px!important;
   }
-
+  .reduced-image{
+    width: 50%;
+  }
+  .left-error-content{
+    margin-left: 0px;
+  }
+  .or-heading{
+    margin-top: 30px;
+  }
+  .blog-box-top{
+    margin-top: 20px;
+  }
+  .blog-box-down{
+    margin-top: 20px;
+  }
+  .error-right-heading{
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2704,6 +2791,24 @@ header, .main-nav-scrolled {
   }
   .footer-links {
     margin-left: -20px;
+  }
+  .left-error-content{
+    margin-left: 0px;
+  }
+  .or-heading{
+    margin-top: 30px;
+  }
+  .blog-box-top{
+    margin-top: 20px;
+  }
+  .blog-box-down{
+    margin-top: 20px;
+  }
+  .error-right-heading{
+    margin-top: 30px;
+  }
+  .reduced-image{
+    width: 50%;
   }
 }
 
@@ -2848,6 +2953,21 @@ header, .main-nav-scrolled {
   }
   .footer-links {
     margin-left: -20px;
+  }
+  .left-error-content{
+    margin-left: 0px;
+  }
+  .or-heading{
+    margin-top: 30px;
+  }
+  .blog-box-top{
+    margin-top: 20px;
+  }
+  .blog-box-down{
+    margin-top: 20px;
+  }
+  .error-right-heading{
+    margin-top: 30px;
   }
 
 }
@@ -3011,6 +3131,24 @@ header, .main-nav-scrolled {
   .mentions-text {
     text-align: center!important;
     margin-left: 0px;
+  }
+  .left-error-content{
+    margin-left: 0px;
+  }
+  .or-heading{
+    margin-top: 30px;
+  }
+  .blog-box-top{
+    margin-top: 20px;
+  }
+  .blog-box-down{
+    margin-top: 20px;
+  }
+  .error-right-heading{
+    margin-top: 30px;
+  }
+  .reduced-image{
+    width: 50%;
   }
 
 }
