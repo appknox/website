@@ -2523,8 +2523,15 @@ header, .main-nav-scrolled {
     color : #979797;
     font-family: gillsans;
     font-size: 19px;
-    margin-top: 5px;
+    margin-top: -34px;
     text-align: center;
+  }
+
+  .e404-top-row {
+      padding-top: 40px;
+  }
+  .e404-bottom-row {
+      padding-top: 70px;
   }
 
   .blog-box-top{
