@@ -681,6 +681,9 @@ a {
      font-size: 12px;
      margin-top: 60px;
   }
+  .sos-form-eorror{
+    margin-left: 60px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -793,6 +796,9 @@ a {
   input:focus {
       outline:0 !important;
   }
+  .sos-form-eorror{
+    margin-left: 130px;
+  }
 
 }
 
@@ -899,6 +905,9 @@ a {
   .footer-links {
     margin-left: -20px;
   }
+  .sos-form-eorror{
+    margin-left: 30px;
+  }
 
 }
 
@@ -989,6 +998,9 @@ a {
   }
   .footer-links {
     margin-left: -20px;
+  }
+  .sos-form-eorror{
+    margin-left: 20px;
   }
 }
 
@@ -1092,5 +1104,8 @@ a {
   .footer-links {
     margin-left: -30px;
     text-align: left;
+  }
+  .sos-form-eorror{
+    margin-left: 10px;
   }
 }
