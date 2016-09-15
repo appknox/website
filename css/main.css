@@ -3165,3 +3165,38 @@ header, .main-nav-scrolled {
         display: none;
     }
 }
+
+.ak-appgrader-green-bg {
+  margin-top: 15px;
+  background-color: #6BB8B2;
+}
+
+.ak-appgrader-green-darker {
+  background-color: #149B8C;
+}
+
+.ak-appgrader-green-bg .ak-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.ak-appgrader-green-bg img {
+  max-width: 100%;
+}
+
+.max-height {
+  min-height: 100% !important;
+}
+
+.ak-button {
+  background-color: #ea2127;
+  border: none;
+  padding: 5px 20px;
+  color: #ffffff!important;
+  border-radius: 30px;
+  font-size: 13px;
+  font-family: neosans;
+  height: 30px;
+  line-height: 23px;
+  cursor: pointer;
+}
