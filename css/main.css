@@ -1960,6 +1960,12 @@ input[type=email],input[type=text],input[type=url] {
       text-align: left!important;
       margin-left: 50px;
     }
+    .banner-main-section{
+      margin-top: 0px!important;
+    }
+    .banner-top img{
+      display: none!important;
+    }
 
 
   #ak-menu {
@@ -2012,6 +2018,13 @@ input[type=email],input[type=text],input[type=url] {
     }
     .sign-pos{
       margin-top: 20px;
+    }
+    .shield-sub-text{
+      font-size: 15px!important;
+      margin-right: -60px!important;
+    }
+    .banner-top img{
+      margin-left: 100px!important;
     }
 
 }
@@ -2560,6 +2573,81 @@ header, .main-nav-scrolled {
   }
 /* End of 404 Error Page */
 
+/* Start of Banner  */
+
+.ak-appgrader-green-bg {
+  background-color: #55c5b9;
+  height: 94px;
+}
+
+.ak-appgrader-green-darker {
+  background-color: #00aa98;
+  height: 94px;
+}
+
+.ak-appgrader-green-dark {
+  background-color: #3dbeb2;
+  height: 94px;
+}
+
+.grader-row{
+  margin: 0px!important;
+}
+
+.banner-main-section{
+  margin-top: -29px;
+}
+
+.banner-top img{
+  position:relative;
+  z-index: 100;
+  margin-left: 100px;
+}
+
+.grader-logo img {
+  position: relative;
+  top: 10px;
+}
+
+.free-shield img {
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
+
+.shield-text{
+  color: #ffffff;
+  font-family: neosans;
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+}
+
+.shield-sub-text{
+  font-family: gillsans;
+  font-size: 16px;
+  margin-right: -25px;
+}
+
+
+
+.try-now-button{
+  background-color: #ea2127;
+  color: #ffffff!important;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: neosans;
+  height: 40px;
+  line-height: 23px;
+  cursor: pointer;
+  padding: 15px 50px 15px 50px;
+  position: relative;
+  top: 35px;
+  left: 100px;
+}
+
+/* End of Banner  */
+
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
@@ -2669,6 +2757,28 @@ header, .main-nav-scrolled {
   .error-right-heading{
     margin-top: 30px;
   }
+  .free-shield img {
+    display: inline-block;
+  }
+  .shield-text{
+    top : -60px;
+    text-align: center;
+  }
+  .shield-sub-text{
+    margin-right: 0px;
+  }
+  .grader-logo img {
+    position: relative;
+    top: 0px;
+  }
+  .try-now-button{
+    left: 0px;
+  }
+  .ak-appgrader-green-dark {
+    text-align: center;
+  }
+
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2816,6 +2926,16 @@ header, .main-nav-scrolled {
   }
   .reduced-image{
     width: 50%;
+  }
+  .grader-logo img {
+    position: relative;
+    top: 0px;
+  }
+  .try-now-button{
+    left: 0px;
+  }
+  .ak-appgrader-green-dark {
+    text-align: center;
   }
 }
 
@@ -2975,6 +3095,16 @@ header, .main-nav-scrolled {
   }
   .error-right-heading{
     margin-top: 30px;
+  }
+  .grader-logo img {
+    position: relative;
+    top: 0px;
+  }
+  .try-now-button{
+    left: 0px;
+  }
+  .ak-appgrader-green-dark {
+    text-align: center;
   }
 
 }
@@ -3157,6 +3287,16 @@ header, .main-nav-scrolled {
   .reduced-image{
     width: 50%;
   }
+  .grader-logo img {
+    position: relative;
+    top: 0px;
+  }
+  .try-now-button{
+    left: 0px;
+  }
+  .ak-appgrader-green-dark {
+    text-align: center;
+  }
 
 }
 
@@ -3164,39 +3304,4 @@ header, .main-nav-scrolled {
     .request-menu{
         display: none;
     }
-}
-
-.ak-appgrader-green-bg {
-  margin-top: 15px;
-  background-color: #6BB8B2;
-}
-
-.ak-appgrader-green-darker {
-  background-color: #149B8C;
-}
-
-.ak-appgrader-green-bg .ak-container {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.ak-appgrader-green-bg img {
-  max-width: 100%;
-}
-
-.max-height {
-  min-height: 100% !important;
-}
-
-.ak-button {
-  background-color: #ea2127;
-  border: none;
-  padding: 5px 20px;
-  color: #ffffff!important;
-  border-radius: 30px;
-  font-size: 13px;
-  font-family: neosans;
-  height: 30px;
-  line-height: 23px;
-  cursor: pointer;
 }
