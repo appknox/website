@@ -2629,8 +2629,6 @@ header, .main-nav-scrolled {
   margin-right: -25px;
 }
 
-
-
 .try-now-button{
   background-color: #ea2127;
   color: #ffffff!important;
@@ -2644,6 +2642,22 @@ header, .main-nav-scrolled {
   position: relative;
   top: 35px;
   left: 100px;
+  animation: blinker 4s ease infinite;
+}
+
+@keyframes blinker {
+  90% { opacity: 0.5; }
+}
+
+
+
+
+.try-now-button:link {
+    background-color: #ea2127!important;
+}
+
+.try-now-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* End of Banner  */
