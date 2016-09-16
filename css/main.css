@@ -2642,15 +2642,7 @@ header, .main-nav-scrolled {
   position: relative;
   top: 35px;
   left: 100px;
-  animation: blinker 4s ease infinite;
 }
-
-@keyframes blinker {
-  90% { opacity: 0.5; }
-}
-
-
-
 
 .try-now-button:link {
     background-color: #ea2127!important;
