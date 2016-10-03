@@ -2531,7 +2531,7 @@ header, .main-nav-scrolled {
   }
 
   .error-heading{
-    font-family: gillsans;
+    font-family: gillsansmtpro;
     font-size: 16px;
     color : #979797;
     text-align: center;
@@ -2557,7 +2557,7 @@ header, .main-nav-scrolled {
 
   .error-right-heading{
     color : #979797;
-    font-family: gillsans;
+    font-family: gillsansmtpro;
     font-size: 19px;
     margin-top: -34px;
     text-align: center;
@@ -2647,7 +2647,7 @@ header, .main-nav-scrolled {
 }
 
 .shield-sub-text{
-  font-family: gillsans;
+  font-family: gillsansmtpro;
   font-size: 16px;
   margin-right: -25px;
 }
