@@ -3256,6 +3256,40 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
+  .diy-image1{
+    display: none;
+  }
+  .diy-signup {
+    display: none!important;
+  }
+  .diy-feat{
+    display: inline;
+  }
+  .diy-form{
+    display: none;
+  }
+  .diy-icons{
+    margin-left: 0px;
+  }
+  .diy-icons img {
+    width: 20%;
+  }
+  .diy-no-margin{
+    margin-right: 0px!important;
+  }
+  .diy-submit{
+    bottom: 20px;
+    left: 60px;
+  }
+  .diy-arrow{
+    display: none;
+  }
+  .diy-steps{
+    display: inline!important;
+  }
+  .diy-submit {
+    display: none
+  }
 
 }
 
@@ -3446,6 +3480,40 @@ header, .main-nav-scrolled {
   }
   .ak-appgrader-green-dark {
     text-align: center;
+  }
+  .diy-image1{
+    display: none;
+  }
+  .diy-signup {
+    display: none!important;
+  }
+  .diy-feat{
+    display: inline;
+  }
+  .diy-form{
+    display: none;
+  }
+  .diy-icons{
+    margin-left: 0px;
+  }
+  .diy-icons img {
+    width: 20%;
+  }
+  .diy-no-margin{
+    margin-right: 0px!important;
+  }
+  .diy-submit{
+    bottom: 20px;
+    left: 60px;
+  }
+  .diy-arrow{
+    display: none;
+  }
+  .diy-steps{
+    display: inline!important;
+  }
+  .diy-submit {
+    display: none
   }
 
 }
