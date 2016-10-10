@@ -2654,6 +2654,91 @@ header, .main-nav-scrolled {
 
 /* End of Banner  */
 
+/* Start of DIY Landing Page */
+
+.navbar-diy {
+  border-bottom: 0px!important
+}
+
+.diy-signup{
+  display: none;
+}
+
+.diy-background{
+  background-image: url("/img/diy/background-14.png");
+}
+
+.diy-heading{
+  margin-top: 70px;
+  color: white;
+}
+
+.div-desc{
+  color: white;
+  font-size: 12px;
+  margin-top: -20px;
+}
+
+.div-price{
+  color: white;
+  margin-top: 10px;
+}
+
+.diy-feat{
+  color: white;
+}
+
+.diy-testimonial{
+  color: white;
+  font-size: 12px;
+}
+
+.diy-client{
+  color: white;
+  margin-top: 20px;
+  margin-left: 60px
+}
+
+.diy-testimonial-container{
+  background-color: black;
+  opacity: 0.5;
+  margin-top: 190px
+}
+
+.diy-image1{
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.diy-image4{
+  margin-left: 260px
+}
+
+.diy-submit{
+  position: relative;
+  bottom:15px;
+  left:100px
+}
+
+.diy-icons{
+  margin-left: -120px;
+}
+
+.diy-form{
+  margin-left: 150px;
+  margin-top: 70px;
+  width: 300px;
+  background-color: black;
+  opacity: 0.5;
+  padding: 10px;
+}
+
+.diy-form-heading{
+  color: white;
+}
+
+/* End of DIY Landing Page */
+
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{

@@ -2533,6 +2533,16 @@ $(document).ready(function () {
   });
 });
 
+var nbh = 200;
+
+$(window).scroll(function(){
+  if($(this).scrollTop()> nbh) {
+    $('.diy-signup').css({"display":"inline-block"});
+  }
+  else{
+    $('.diy-signup').css({"display":"none"});
+  }
+});
 
 var  mn = $(".main-nav");
     mns = "main-nav-scrolled";
