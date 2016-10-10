@@ -2702,7 +2702,6 @@ header, .main-nav-scrolled {
 .diy-testimonial-container{
   background-color: black;
   opacity: 0.5;
-  margin-top: 190px
 }
 
 .diy-image1{
@@ -2868,7 +2867,33 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
-
+  .diy-signup {
+    display: none!important;
+  }
+  .diy-form{
+    margin-left: 0px;
+    width: 250px;
+  }
+  .diy-image1{
+    margin-left: -5px;
+    margin-top: 80px;
+  }
+  .diy-feat{
+    display: inline;
+  }
+  .diy-icons{
+    margin-left: 120px;
+  }
+  .diy-icons img {
+    width: 30%;
+  }
+  .diy-no-margin{
+    margin-right: 0px!important;
+  }
+  .diy-submit{
+    bottom: 20px;
+    left: 60px;
+  }
 
 }
 
