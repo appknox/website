@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://www.appknox.com/</title>
+  <link>https://www.appknox.com/</link>
+  <description>ROR sitemap for https://www.appknox.com</description>
+<item>
+     <link>https://www.appknox.com/</link>
+     <title>Appknox - Security zen as a service</title>
+     <description>Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market, higher productivity and complete mobile security</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.appknox.com/pricing/</link>
+     <title>Appknox - Pricing</title>
+     <description>Sign up now for complete mobile security with flexible plans and anytime cancellation</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://blog.appknox.com/</link>
+     <title>Appknox - Blog - This blog shares important tips and advice to help make better mobile app</title>
+     <description>Sign up now for complete mobile security with flexible plans and anytime cancellation</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.appknox.com/resources/</link>
+     <title>Appknox - Resources</title>
+     <description>Access our meticolously compiled in-house reports on mobile app security</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.appknox.com/company/</link>
+     <title>Appknox - About Us</title>
+     <description>We’re a community of ethical hackers dedicated to unmatched mobile app security</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.appknox.com/find-out-now/</link>
+     <title>Appknox - Find Out Now</title>
+     <description>More than 75% of mobile apps fail basic security checks. Is your app safe?</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.appknox.com/secure-your-app/</link>
+     <title>Appknox - Secure Your App</title>
+     <description>We combine enterprise-grade security features with intelligent audits to ensure customer and business data is always protected</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.appknox.com/get-in-touch/</link>
+     <title>Appknox - Get In Touch</title>
+     <description>Appknox is a team within your team that ensures complete mobile security so that you can rest assured that your business is protected</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,35 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+        <name> -- <role> -- <twitter>
+
+        Miguel Martín Romero -- Head of Business Development -- @MiguelMarRom
+        dhilipsiva -- Tech Lead, Full-Stack & DevOps -- @dhilipsiva
+        Hardeep Singh -- Outreach Manager
+        Amit Subodh -- AVP, Global Sales -- @amitsubodh
+        Darell Khin -- Marketing Manager
+        Syed Khalid M -- Security Analyst -- @syed_khaled
+        Avantika Agarwal -- Product Designer -- @avantika_agarwa
+        Manikanta Gupta -- Associate Security Analyst -- @Manikanta8888
+        Pushparaj Balamani -- Facility Manager
+        Aditya Pahuja -- Creative Designer -- @adityapahuja
+        Vaishali Garg -- Security Researcher
+        Manik  Hundgenn -- Lead Designer
+        Sugat Nayak -- AVP Sales -- @sugatnayak
+        Darshan Chaudhary -- Backend Engineer -- @deathbullet
+        Yashwin -- Frontend Engineer -- @iamyashwin
+        Kartik Jha -- Digital Marketing Manager -- @kartikjha
+        ChillarAnand -- Backend Developer -- @chillaranand
+        Viren Nadkarni -- Prod-Dev Engineer -- @viren_ndk
+        Hemansu Kumar Tanty -- Prod-Dev Engineer -- @hemansutanty
+        Sidharth Das -- AVP Customer Relations -- @garagehipster
+
+
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Python, Django, Postgres,
+    jQuery, Modernizr, Android, Java
