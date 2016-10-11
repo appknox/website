@@ -1,0 +1,639 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Appknox - Secure Our Soul</title>
+    <meta name="description" content="A free 20 minute one-on-one security session every Friday from Appknox detailing your app's security risks and vulnerabilities. Request one now!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+	  <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-touch-icon-152x152.png">
+    <meta name="apple-mobile-web-app-title" content="Appknox">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/icons/mstile-144x144.png">
+    <meta name="application-name" content="Appknox">
+    <meta name="keywords" content="appknox, xysec, xysecurity, xysec labs, mobile app security, mobile security, security, mobile security testing tools, android security, ios security" />
+    <meta name="copyright" content="2016, XySec Labs" />
+    <!-- for Facebook -->
+    <meta property="og:title" content="Appknox - Secure Our Soul" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="/img/Appknox.jpg" />
+    <meta property="og:url" content="/secure-our-soul/" />
+    <meta property="og:description" content="A free 20 minute one-on-one security session every Friday from Appknox detailing your app's security risks and vulnerabilities. Request one now!" />
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="512">
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Appknox - Secure Our Soul" />
+    <meta name="twitter:description" content="A free 20 minute one-on-one security session every Friday from Appknox detailing your app's security risks and vulnerabilities. Request one now!" />
+    <meta name="twitter:image" content="/assets/img/appknox-fb.png" />
+    <meta name="twitter:url" content="/secure-our-soul/" />
+
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://www.appknox.com/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- JQuery Plugin for International Telephone Input with Flag dail codes -->
+    <link rel="stylesheet" href="/css/intltelinput.css">
+
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("f16cc690670dac16e2f51553c42775a1");</script><!-- end Mixpanel -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Appknox - Secure Our Soul",
+      "alternateName": "A free 20 minute one-on-one security session every Friday from Appknox detailing your app's security risks and vulnerabilities. Request one now!",
+      "url": "/secure-our-soul/",
+      "logo": "https://www.appknox.com/img/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/appknox",
+        "https://www.linkedin.com/company/xysec-labs",
+        "https://plus.google.com/+Appknox",
+        "https://twitter.com/appknox"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://blog.appknox.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-669-252-6976",
+          "contactType": "customer service",
+          "email": "secure@appknox.com",
+          "areaServed" : ["US", "CA"]
+        }, {
+          "@type": "ContactPoint",
+          "telephone": "+91-97393-20700",
+          "contactType": "customer service",
+          "email": "secure@appknox.com",
+          "areaServed" : ["IN", "NP"]
+        }, {
+          "@type": "ContactPoint",
+          "telephone": "+65-3163-2145",
+          "contactType": "customer service",
+          "email": "secure@appknox.com",
+          "areaServed" : ["SG","ID", "MY"]
+        }
+      ]
+    }
+    </script>
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1632023723704931');
+fbq('track', "PageView");</script>
+<noscript><img data-proofer-ignore height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1632023723704931&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Conversion Code for SOS Leads FB -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = 'https://connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6057134509288', {'value':'0.01','currency':'INR'}]);
+</script>
+<noscript><img height="1" width="1" alt="fbtrack" style="display:none" src="https://www.facebook.com/tr?ev=6057134509288&amp;cd[value]=0.01&amp;cd[currency]=INR&amp;noscript=1" /></noscript>
+
+</head>
+
+
+<body>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-fixed-top" role="navigation" id="ak-header">
+<div class="container">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="menubar" href="/">
+    <img class="navbar-brand" src="/img/logo.png" alt="Appknox"/>
+  </a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav" id="ak-menu">
+    <li><a class="menubar" href="/">Home</a></li>
+    <li><a class="menubar" href="/pricing">Pricing</a></li>
+    <li class="dropdown" id="resource-menu">
+      <a href="/resources" id="resource-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+      <ul class="dropdown-menu resource-sublinks" id="resource-dropdown">
+        <li><a href="/resources#all" class="hashMenu menubar" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
+        
+          <li><a href="/resources#case-study" class="hashMenu menubar" data-id="case-study" id="res-in-case-study" data-proofer-ignore>Case-Study</a></li>
+        
+          <li><a href="/resources#report" class="hashMenu menubar" data-id="report" id="res-in-report" data-proofer-ignore>Report</a></li>
+        
+          <li><a href="/resources#infographic" class="hashMenu menubar" data-id="infographic" id="res-in-infographic" data-proofer-ignore>Infographic</a></li>
+        
+          <li><a href="/resources#ebook" class="hashMenu menubar" data-id="ebook" id="res-in-ebook" data-proofer-ignore>Ebook</a></li>
+        
+      </ul>
+    </li>
+    <li class="dropdown" id="company-menu">
+      <a href="/company" id="company-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
+        <ul class="dropdown-menu" id="company-dropdown">
+          <li><a href="/company/#about-us" class="hashMenu menubar" id="about-us-butn" data-proofer-ignore>About Us</a></li>
+          <li><a href="/company/#team" class="hashMenu menubar" id="team-butn" data-proofer-ignore>Team</a></li>
+          <li><a href="/company/#press" class="hashMenu menubar" id="press-butn" data-proofer-ignore>Press</a></li>
+          <li><a href="/company/#partners" class="hashMenu menubar" id="partners-butn" data-proofer-ignore>Partners</a></li>
+        </ul>
+    </li>
+    <li><a class="menubar" href="https://blog.appknox.com">Blog</a></li>
+    <li><a class="menubar" href="/contact">Contact Us</a></li>
+  </ul>
+</div><!-- /.navbar-collapse -->
+<div class="request-menu btn-lg pricing-demo" href="https://try.appknox.com/request-demo">REQUEST DEMO</div>
+</div>
+<div class="clearfix"></div>
+</nav>
+
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="header">
+  <div class="lp-logo">
+    <img src="/img/sos/SOS-08.png" class="img-responsive center-block" alt="Appknox Security Session">
+    <img src="/img/sos/SOS-09.png" class="img-responsive center-block" alt="Appknox Security Session">
+  </div>
+</header>
+
+<section class="lp-gray-bg" id="submit_section">
+  <div class="container">
+    <div class="col-md-6 main-section">
+      <div class="heading"> Every Friday – First Come, First Serve
+      </div>
+      <div class="content"> A FREE, exclusive 20 minute one-on-one session that details your app’s security risks and vulnerabilities.
+      </div>
+      <div class="testimony-client text-center">
+        <img src="/img/testimonials-27.png" alt="Appknox Testimonials" />
+      </div>
+      <div class="user-opinion text-center">
+        <q>The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.</q>
+      </div>
+      <div class="client-name text-center">
+        Viet Nguyen Tuan
+      </div>
+    </div>
+    <div class="col-md-6 form-field" id="sos-form-section">
+      <div class="form-heading"> I'm Interested, Sign Me Up!
+      </div>
+      <div id="SOSForm"></div>
+      <form id="submit-sos-form" method="post">
+        <fieldset class="form-group col-md-12 col-sm-8">
+          <div id="name-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="text" name="name" placeholder="Full Name" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-8">
+          <div id="email-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="email" name="email" placeholder="Official Email" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-8">
+          <div id="telephone-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="tel" name="telephone" placeholder="Phone Number" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-8">
+          <div id="app-url-lp-error" class="sos-form-eorror red"></div>
+          <input class="lined-input" type="text" name="app-url" placeholder="App URL or App Name" />
+        </fieldset>
+        <fieldset class="form-group col-md-12 col-sm-8">
+          <input id="SOSForm-submit" class="submit-button btn-lg" type="submit" value="SUBMIT">
+      </form>
+      <div class="condition-text">
+        *Our team will get in-touch with you within 24 business hours and schedule a convenient time for your session.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="col-md-6 col-xs-6 second-section">
+      <img src="/img/sos/SOS-06.png" class="img-responsive center-block session-images" alt="Appknox Security Session">
+    </div>
+    <div class="col-md-6 col-xs-6 session-section">
+      <div class="session-icon col-xs-3">
+        <img src="/img/sos/icons-11.png" class="img-responsive" alt="Appknox Security Session">
+      </div>
+      <div class="session-heading col-xs-9">
+        20 minute sessions
+      </div>
+      <div class="session-desc text-center">
+        As soon as you fill in your details, one of our in-house security researchers will be notified and assigned to perform a security analysis of your mobile application.
+      </div>
+      <div class="book-button btn-lg book_section">Book Your Slot
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="col-md-6 col-xs-6 session-section tab-view">
+      <div class="session-icon col-xs-3">
+        <img src="/img/sos/icons-12.png" class="img-responsive" alt="Appknox Security Session">
+      </div>
+      <div class="session-heading tab-view3 col-xs-9">
+        Reporting back with results
+      </div>
+      <div class="session-desc text-center">
+        Once we finish gathering data, results will be shared and discussed with you, on a one-on-one call with a designated security researcher.
+      </div>
+      <div class="book-button btn-lg book_section">Book Your Slot
+      </div>
+    </div>
+    <div class="col-md-6 third-section col-xs-6 session-images tab-view2">
+      <img src="/img/sos/SOS-07.png" class="img-responsive center-block second-image" alt="Appknox Security Session">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="col-md-6 second-section session-images col-xs-6">
+      <img src="/img/sos/SOS-10.png" class="img-responsive center-block image-enlarge" alt="Appknox Security Session">
+    </div>
+    <div class="col-md-6 session-section col-xs-6 last-section">
+      <div class="session-icon col-xs-3">
+        <img src="/img/sos/icons-13.png" class="img-responsive" alt="Appknox Security Session">
+      </div>
+      <div class="session-heading col-xs-9 last-heading">
+        Incorporate Security Into Your Business Processes
+      </div>
+      <div class="session-desc text-center">
+        Understand how to solve the challenge of making security concerns part of the development cycle.
+      </div>
+      <div class="book-button btn-lg" id="callphone">CALL NOW
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer id="site-footer">
+  <section class="container">
+    <div class="col-md-12 ">
+      <div class="col-md-8" id="footer-form">
+        <h3 class="footer-titles">Subscribe to Updates</h3>
+        <form id="subscribe-form" action="/" method="post">
+          <div id="email-su-error" class="cu-form-eorror red"></div>
+          <input type="email" class="email-placeholder" name="email" placeholder = "your email goes here">
+          <input type="submit" id="footer-subscribe-butn" value="SUBMIT">
+        </form>
+      </div>
+      <div class="col-md-4 footer-links">
+        <a href="/pricing/#faq" class="gray-a submenu">FAQs</a>
+        <a href="https://github.com/appknox/careers" class="gray-a submenu">Careers</a>
+        <a href="/privacy/" class="gray-a submenu">Privacy</a>
+        <a href="/press/" class="gray-a submenu">Press</a>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3 class="footer-titles col-md-12">What's New</h3>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">Blogs</h3>
+        <h4 class="news-title">
+          <a target="_blank" class="submenu" href="https://blog.appknox.com/5-steps-cto-cio-build-agile-team-that-wins/">
+            5 Steps for CTOs & CIOs to Build Agile Teams that Win
+          </a>
+        </h4>
+        <p>
+
+        </p>
+      </div>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">Events</h3>
+        <h4 class="news-title">
+            <a data-proofer-ignore href="http://www.techinnovation.com.sg/" target="_blank" class="submenu">TECHINNOVATION 2016, Singapore</a>
+        </h4>
+        <p>
+
+        </p>
+      </div>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">Press</h3>
+        <h4 class="news-title">
+              <a data-proofer-ignore href="https://techcrunch.com/2016/08/16/mobile-security-startup-appknox-lands-funding-to-focus-on-southeast-asia/" target="_blank" class="submenu">
+                Mobile security startup Appknox lands funding to focus on Southeast Asia
+              </a>
+        </h4>
+        <p>
+
+        </p>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3 class="footer-titles col-md-12">XYSec Labs</h3>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">Singapore</h3>
+        <li>79 Ayer Rajah Crescent</li>
+        <li>#04-09 Singapore 139951</li>
+        <li>Ph: +65 3158 5898</li>
+      </ul>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">India</h3>
+        <li>473, Shri Krishna Temple Rd, Stage 1</li>
+        <li>Indiranagar, Bengaluru Karnataka 38</li>
+        <li> Ph: +91-9739320700</li>
+      </ul>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">USA</h3>
+        <li>#5213, 500 Race Street</li>
+        <li>San Jose , CA 95126</li>
+        <li>Ph: +1-669-252-6976</li>
+      </ul>
+    </div>
+    <div class="col-md-12 no-border">
+      <div class="form-social-block">
+        <a target="_blank" class="submenu" href="https://www.facebook.com/appknox"><img src="/img/facebook.svg" alt="Appknox facebook"/></a>
+        <a target="_blank" class="submenu" href="https://www.linkedin.com/company/3771872"><img src="/img/linkedIn.svg" alt="Appknox LinkedIn"/></a>
+        <a target="_blank" class="submenu" href="https://twitter.com/appknox"><img src="/img/twitter.svg" alt="Appkox Twitter"/></a>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<div id="fancyboxAlert" style="display:none">
+
+</div>
+
+<div id="request-demo-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">Request Demo</h3>
+  <div id="messageBoxDemo" class="neosans marginTop"> </div>
+  <form id="request-demo-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-12">
+      <div id="name-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-position" name="name" placeholder="Full Name (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="email-ds-error" class="cu-form-eorror red"></div>
+      <input type="email" class="form-control placeholder-position" name="email" placeholder="Business Email (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="company-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-position" name="company" placeholder="Company (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="jobtitle-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-position" name="jobtitle" placeholder="Job Title (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="phone-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-tele" id="tele"  name="phone" placeholder="Phone Number">
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="demo-form-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="bulk-orders-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">Bulk Orders</h3>
+  <div id="messageBoxBulk" class="neosans marginTop"> </div>
+  <form id="bulk-order-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-12">
+      <div id="name-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="email-bulk-error" class="cu-form-eorror red"></div>
+      <input type="email" class="form-control" name="email" placeholder="Business Email (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="company-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="company" placeholder="Company (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="jobtitle-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="jobtitle" placeholder="Job Title (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="numapp-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="numapp" placeholder="Number of Apps (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="phone-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <textarea class="form-control" name="remarks" rows="4" cols="50"  placeholder="Remarks/Message"></textarea>
+    </fieldset>
+
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="bulk-order-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="place-order-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">Place Order</h3>
+  <div id="placeOrderMsgBox" class="neosans marginTop"> </div>
+  <form id="place-order-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-12">
+      <div id="name-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="email-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="email" class="form-control" name="email" placeholder="Business Email (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="company-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="company" placeholder="Company (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="jobtitle-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="jobtitle" placeholder="Job Title (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="appurl-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="url" class="form-control" name="appurl" placeholder="App URL">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="phone-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <textarea class="form-control" name="remarks" rows="4" cols="50"  placeholder="Remarks/Message"></textarea>
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="submit-order-button" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="callphone-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">We'll Call You Right Away</h3>
+  <div id="messageBoxCall" class="neosans marginTop"> </div>
+  <div class="neosans marginTop"> </div>
+  <form id="callbox-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-13">
+      <div id="phone-call-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control telesg" id="visitorphone" name="phone" placeholder="Enter Your Phone Number">
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="CallForm-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Call Me">
+    </div>
+  </form>
+</div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/js/plugins.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+
+<script src="/js/main.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50871547-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script>
+  window.intercomSettings = {
+    app_id: "mbkqc0o1"
+  };
+</script>
+<script>
+  (function() {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic('reattach_activator');
+      ic('update', intercomSettings);
+    } else {
+      var d = document;
+      var i = function() {
+        i.c(arguments)
+      };
+      i.q = [];
+      i.c = function(args) {
+        i.q.push(args)
+      };
+      w.Intercom = i;
+
+      function l() {
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://widget.intercom.io/widget/mbkqc0o1';
+        var x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (w.attachEvent) {
+        w.attachEvent('onload', l);
+      } else {
+        w.addEventListener('load', l, false);
+      }
+    }
+  })()
+</script>
+<!--LeadSquared Tracking Code Start-->
+<script type="text/javascript" src="https://web.mxradon.com/t/Tracker.js"></script>
+<script type="text/javascript">
+  pidTracker('9581');
+</script>
+<!--LeadSquared Tracking Code End-->
+<!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+(function(d,s,i,r) {
+if (d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1683437.js';
+e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+
+<!-- Hotjar Tracking Code for https://www.appknox.com -->
+<script>
+   (function(h,o,t,j,a,r){
+       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+       h._hjSettings={hjid:225284,hjsv:5};
+       a=o.getElementsByTagName('head')[0];
+       r=o.createElement('script');r.async=1;
+       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+       a.appendChild(r);
+   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- End of Hotjar Tracking Code for https://www.appknox.com -->
+
+<!-- Plugin to include the country codes in the phone number -->
+<script src="/js/intltelinput.js"></script>
+<script>
+  $(".tele").intlTelInput({initialCountry: "in"});
+  $(".telesg").intlTelInput({initialCountry: "sg"});
+</script>
+<script>
+jQuery('.carousel').carousel({
+		interval: 7000
+	})
+</script>
+<!-- End of Plugin to include the country codes in the phone number -->
+
+<script>
+$('body').scrollspy({
+  target: '#myScrollspy',  offset: 100
+});
+$('.main-nav').affix({offset: {top: 2850, bottom: 800} });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1006 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Appknox - Security zen as a service</title>
+    <meta name="description" content="Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market, higher productivity and complete mobile ...">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+	  <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-touch-icon-152x152.png">
+    <meta name="apple-mobile-web-app-title" content="Appknox">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/icons/mstile-144x144.png">
+    <meta name="application-name" content="Appknox">
+    <meta name="keywords" content="appknox, xysec, xysecurity, xysec labs, mobile app security, mobile security, security, mobile security testing tools, android security, ios security" />
+    <meta name="copyright" content="2016, XySec Labs" />
+    <!-- for Facebook -->
+    <meta property="og:title" content="Appknox - Security zen as a service" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="/img/Appknox.jpg" />
+    <meta property="og:url" content="/" />
+    <meta property="og:description" content="Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market, higher productivity and complete mobile security" />
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="512">
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Appknox - Security zen as a service" />
+    <meta name="twitter:description" content="Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market, higher productivity and complete mobile security" />
+    <meta name="twitter:image" content="/assets/img/appknox-fb.png" />
+    <meta name="twitter:url" content="/" />
+
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://www.appknox.com/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- JQuery Plugin for International Telephone Input with Flag dail codes -->
+    <link rel="stylesheet" href="/css/intltelinput.css">
+
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("f16cc690670dac16e2f51553c42775a1");</script><!-- end Mixpanel -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Appknox - Security zen as a service",
+      "alternateName": "Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market, higher productivity and complete mobile security",
+      "url": "/",
+      "logo": "https://www.appknox.com/img/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/appknox",
+        "https://www.linkedin.com/company/xysec-labs",
+        "https://plus.google.com/+Appknox",
+        "https://twitter.com/appknox"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://blog.appknox.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-669-252-6976",
+          "contactType": "customer service",
+          "email": "secure@appknox.com",
+          "areaServed" : ["US", "CA"]
+        }, {
+          "@type": "ContactPoint",
+          "telephone": "+91-97393-20700",
+          "contactType": "customer service",
+          "email": "secure@appknox.com",
+          "areaServed" : ["IN", "NP"]
+        }, {
+          "@type": "ContactPoint",
+          "telephone": "+65-3163-2145",
+          "contactType": "customer service",
+          "email": "secure@appknox.com",
+          "areaServed" : ["SG","ID", "MY"]
+        }
+      ]
+    }
+    </script>
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1632023723704931');
+fbq('track', "PageView");</script>
+<noscript><img data-proofer-ignore height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1632023723704931&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+
+<body>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-fixed-top" role="navigation" id="ak-header">
+<div class="container">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="menubar" href="/">
+    <img class="navbar-brand" src="/img/logo.png" alt="Appknox"/>
+  </a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav" id="ak-menu">
+    <li><a class="menubar" href="/">Home</a></li>
+    <li><a class="menubar" href="/pricing">Pricing</a></li>
+    <li class="dropdown" id="resource-menu">
+      <a href="/resources" id="resource-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+      <ul class="dropdown-menu resource-sublinks" id="resource-dropdown">
+        <li><a href="/resources#all" class="hashMenu menubar" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
+        
+          <li><a href="/resources#case-study" class="hashMenu menubar" data-id="case-study" id="res-in-case-study" data-proofer-ignore>Case-Study</a></li>
+        
+          <li><a href="/resources#report" class="hashMenu menubar" data-id="report" id="res-in-report" data-proofer-ignore>Report</a></li>
+        
+          <li><a href="/resources#infographic" class="hashMenu menubar" data-id="infographic" id="res-in-infographic" data-proofer-ignore>Infographic</a></li>
+        
+          <li><a href="/resources#ebook" class="hashMenu menubar" data-id="ebook" id="res-in-ebook" data-proofer-ignore>Ebook</a></li>
+        
+      </ul>
+    </li>
+    <li class="dropdown" id="company-menu">
+      <a href="/company" id="company-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
+        <ul class="dropdown-menu" id="company-dropdown">
+          <li><a href="/company/#about-us" class="hashMenu menubar" id="about-us-butn" data-proofer-ignore>About Us</a></li>
+          <li><a href="/company/#team" class="hashMenu menubar" id="team-butn" data-proofer-ignore>Team</a></li>
+          <li><a href="/company/#press" class="hashMenu menubar" id="press-butn" data-proofer-ignore>Press</a></li>
+          <li><a href="/company/#partners" class="hashMenu menubar" id="partners-butn" data-proofer-ignore>Partners</a></li>
+        </ul>
+    </li>
+    <li><a class="menubar" href="https://blog.appknox.com">Blog</a></li>
+    <li><a class="menubar" href="/contact">Contact Us</a></li>
+  </ul>
+</div><!-- /.navbar-collapse -->
+<div class="request-menu btn-lg pricing-demo" href="https://try.appknox.com/request-demo">REQUEST DEMO</div>
+</div>
+<div class="clearfix"></div>
+</nav>
+
+
+  <section id="text-slider">
+  <div class="container" id="ak-slide-zone">
+    <ul id="ak-slide-container">
+      <li></li>
+      <li class="ak-slide">
+        <div class="col-md-6 col-sm-6">
+          <div>
+            <h1 class="ak-ele-animate" id="left-slide-text" data-init-css='{"margin-top":"30px","opacity":1}' data-appear-css='{"margin-top":"40px","opacity":1}' data-perish-css='{"opacity":0}' data-ak-anim-time="900">
+              <div class="text-breaker">75% Apps Fail Basic </div>
+              <div class="text-breaker">Security Checks, says Gartner</div>
+            </h1>
+            <div class="clearfix"></div>
+            <p class="ak-ele-animate" data-init-css='{"marginTop":"20px","opacity":0.5}' data-appear-css='{"margin-top":"50px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
+              How safe is your app?
+            </p>
+          </div>
+          <div class="clearfix"></div>
+          <a href="/find-out-now/" target="_blank" class="ak-ele-animate inslide-buttons pointer neosans submenu" data-init-css='{"marginTop":"50px","opacity":0.5}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
+            <div class="text-breaker">
+              <p class="uppercase">Find Out Now</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 slide-img-zone">
+          <img src="img/slider1_v4.svg" class="ak-ele-animate" alt="Mobile application security" data-init-css='{"width":"50%","marginTop":"-10px","marginLeft":"0px","opacity":0.0}' data-appear-css='{"width":"50%","marginTop":"40px","left":"0px","opacity":1}' data-perish-css='{"opacity":0,"top":"-60px"}' data-ak-anim-time="300">
+        </div>
+      </li>
+      <li class="ak-slide">
+        <div class="col-md-6 col-sm-6">
+          <div>
+            <h1 class="ak-ele-animate" data-init-css='{"margin-top":"30px","opacity":1}' data-appear-css='{"margin-top":"50px","opacity":1}' data-perish-css='{"opacity":0}' data-ak-anim-time="900">
+              Target, Walmart and eBay have all been hacked
+            </h1>
+            <div class="clearfix"></div>
+            <p class="ak-ele-animate" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
+              Where does your business stand?
+            </p>
+          </div>
+          <div class="clearfix"></div>
+          <a href="/app-grader/" target="_blank" class="ak-ele-animate pointer inslide-buttons neosans submenu" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
+            <p class="uppercase">Get FREE Basic Security Check</p>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 slide-img-zone">
+          <img src="img/slider_-19.png" class="ak-ele-animate" alt="Mobile application security" data-init-css='{"width":"50%","marginTop":"-10px","opacity":0.5}' data-appear-css='{"marginTop":"50px","opacity":1}' data-perish-css='{"opacity":0,"marginTop":"-60px"}' data-ak-anim-time="400">
+        </div>
+      </li>
+      <li class="ak-slide">
+        <div class="col-md-6 col-sm-6">
+          <div>
+            <h1 class="ak-ele-animate" data-init-css='{"margin-top":"30px","opacity":1}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0}' data-ak-anim-time="900">
+              Security Zen as a Service
+            </h1>
+            <div class="clearfix"></div>
+            <p class="ak-ele-animate" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"50px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
+              Dedicated, world-class security team on your side
+            </p>
+          </div>
+          <div class="clearfix"></div>
+          <a href="/get-in-touch/" target="_blank" class="ak-ele-animate  pointer inslide-buttons neosans submenu" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"20px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
+            <div class="text-breaker">
+              <p class="uppercase">Get In Touch </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 slide-img-zone">
+          <img src="img/world.svg" class="ak-ele-animate" alt="Mobile application security" data-init-css='{"marginTop":"-130px","opacity":0.5}' data-appear-css='{"width":"60%","marginTop":"38","opacity":1}' data-perish-css='{"opacity":0,"marginTop":"-60px"}' data-ak-anim-time="400">
+          <img src="img/team.svg" class="ak-ele-animate" alt="Mobile application security" data-init-css='{"marginTop":"-190px","marginLeft":"0%","opacity":0.5}' data-appear-css='{"width":"60%","marginTop":"-130px","marginLeft":"0","opacity":1}' data-perish-css='{"opacity":0,"marginTop":"-80px"}' data-ak-anim-time="400">
+        </div>
+      </li>
+      <li class="clearfix"></li>
+    </ul>
+    <div id="slide-jumper-sec" class="text-center">
+      <div class="ak-jumper-block">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col-md-offset-9 banner-top">
+    <img src="/img/appgrader/new_home-09.png" class="img-responsive" alt="New Home" />
+  </div>
+  <div class="banner-main-section">
+    <div class="row grader-row">
+      <div class="col-md-5 ak-appgrader-green-darker">
+        <div class="col-md-2 free-shield">
+          <img src="/img/appgrader/free-shield.png" class="center-block" alt="Free Shield" />
+        </div>
+        <div class="col-md-10 shield-text">
+          <div class="shield-main-text">Get started with FREE Appknox AppGrader</div>
+          <p class="shield-sub-text">Take control of your app before someone else does</p>
+        </div>
+      </div>
+      <div class="col-md-3 grader-logo ak-appgrader-green-bg">
+        <img src="/img/appgrader/logo-and-text.png" class="center-block img-responsive" alt="Logo and Text" />
+      </div>
+      <div class="col-md-4 ak-appgrader-green-dark">
+           <a class="btn-lg try-now-button" href="/app-grader/" target="_blank"><span class="try-now-text">TRY NOW</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a name="Detections"></a>
+
+<section id="ak-radar-zone" class="ak-gray-bg">
+  <div class="container text-center">
+    <ul class="half-block-container">
+      <li id="radar-text" class="col-md-8">
+        <h1 id="head-txt-14" class=" col-md-10 col-sm-8 text-left gray-6">
+          Appknox detects &amp; addresses vulnerabilities in mobile apps
+          <div class="text-breaker">within minutes</div>
+        </h1>
+        <div class="clearfix"></div>
+        <h3 class="text-left col-md-12">
+          Enabling businesses achieve
+          <span id="radar-list-block" class="red bordered-bottom">
+            <span class="ak-vert-animate-ele ">faster time to market</span>
+            <span class="ak-vert-animate-ele "> higher productivity</span>
+            <span class="ak-vert-animate-ele "> complete mobile security </span>
+          </span>
+        </h3>
+        <div class="call-button btn-lg ak-btn-round uppercase inblock" id="callphone">CALL NOW</div>
+      </li>
+      <li id="radar-img-zone" class="text-center col-md-4 col-sm-4">
+        <img id="ak-dotted-circle" src="img/asset-06.svg" alt="Mobile application security" />
+        <img id="ak-cellphone-14" src="img/asset-07.svg" alt="Mobile application security" />
+
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+</section>
+
+<a name="HowWeDo"></a>
+
+<section id="scan-process-zone">
+  <div class="container ak-container">
+    <h1 class=" text-center">How we do it</h1>
+    <div class="horz-split-1x">
+      <span></span>
+    </div>
+    <ul id="scan-process-list">
+      <li id="uploadAppZone" class="col-md-3">
+        <div class="icon">
+          <img alt="Vulnerability Test Online" id="uploadAppIcon" src="img/uploadCloud.svg">
+          <h3 class="title red">Upload</h3>
+        </div>
+        <div>
+          <p class="desc-text block">Submit your application binary or point us to your app store URL</p>
+        </div>
+      </li>
+      <li id="home-video-zone" class="col-md-6">
+        <div id="video-aligner">
+          <div id="video-wrapper">
+            <div class="video-container">
+              <iframe width="854" height="480" src="https://www.youtube.com/embed/ZyKA6xRW7Jc" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="scReportZone" class="col-md-3">
+        <div class="icon">
+          <img alt="Vulnerability Report" src="img/report.svg">
+          <h3 class="title red" id="reportZoneTitle">Report</h3>
+        </div>
+
+        <div>
+          <p class="desc-text">We list your vulnerabilities with suggestions on how to fix them</p>
+        </div>
+      </li>
+      <li class="clearfix"></li>
+      <li id="SASTZone" class="col-md-4">
+        <div class="titleZone">
+          <h3 class="title red">SAST</h3>
+          <h4 class="desc-title ">Static Application
+            <br> Security Testing</h4>
+        </div>
+        <div class="icon-N-text">
+          <div class="icon">
+            <img src="img/gearEye.svg" alt="Static Application Testing">
+          </div>
+          <p class="desc-text">Release on time without security gotchas - basic security checks in just five minutes</p>
+        </div>
+      </li>
+      <li id="DASTZone" class="col-md-4">
+        <div class="titleZone">
+          <h3 class="title red">DAST</h3>
+          <h4 class="desc-title">Dynamic Application
+            <br> Security Testing</h4>
+        </div>
+        <div class="icon-N-text">
+          <div class="icon">
+            <img alt="Dynamic Application Security Testing" src="img/DAST_V2.svg">
+          </div>
+          <p class="desc-text">
+            Plug realtime data leaks while your app runs on our simulated cloud devices
+          </p>
+        </div>
+      </li>
+
+      <li id="UBAZone" class="col-md-4">
+        <div class="innerZoneScan" id="UBAInnerZone">
+          <div class="titleZone">
+            <h3 class="title red">UBA</h3>
+            <h4 class="desc-title"> User Behavior
+              <br> Analysis</h4>
+          </div>
+          <div class="icon-N-text">
+            <div class="icon">
+              <img alt="User Behaviour Analysis" src="img/UBA.svg">
+            </div>
+            <p class="desc-text ">
+              Our security team wears a hacker's hat to discover deeper issues, with a human touch
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="ak-gray-bg">
+  <ul class="container ak-container why-appknox">
+    <li>
+      <h1 class="text-center">Why Appknox?</h1>
+      <div class="horz-split-1x">
+        <span></span>
+      </div>
+    </li>
+    <li class="col-md-4 col-sm-6">
+      <div class="col-md-12">
+        <img class="side-icon" data-proofer-ignore src="img/whyus-V2.svg" alt="Mobile application security" />
+      </div>
+      <div class="col-md-12">
+        <h3 class="red">A Team Within Your Team</h3>
+
+        <p class="text-justify"> Appknox boasts of an arsenal of the industry’s leading security researchers who ensure you have peace of mind with a state of the art security solution that uses a system plus human approach to ensure complete security </p>
+      </div>
+    </li>
+    <li class="col-md-4 col-sm-6" id="whySheildZone">
+      <div class="col-md-12">
+        <img class="side-icon" data-proofer-ignore src="img/shield-grey-17.svg" />
+      </div>
+      <div class="col-md-12">
+        <h3 class="red">Ignoring Security is Expensive</h3>
+        <p class="text-justify">
+          An IBM research shows the average cost of a data breach to be $3.8 Million. Appknox helps you be proactive ensuring you are always covered and secured from people who might be waiting to exploit you
+        </p>
+      </div>
+    </li>
+    <li class="col-md-4 col-sm-6">
+      <div class="col-md-12">
+        <img class="side-icon" data-proofer-ignore src="img/rise_roi.svg" />
+      </div>
+      <div class="col-md-12">
+        <h3 class="red">Be Quicker to Market</h3>
+        <p class="text-justify">
+          Increase your team's productivity using our mobile security solution. With faster on boarding and an easy use-it-when-you-need-it approach, ensure timely releases with complete security
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="">
+  <div class="container ak-container text-center">
+    <h2 class="gills-24 gray-8">Bringing Calm to Teams</h2>
+    <ul class="logos-box">
+      
+      <li>
+        <img src="/img/citrus.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/mobikwik.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/Zerodha.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/zoomcarlogo.jpg" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/bigbasket.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/timesinternet.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/paytm.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/redmart.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/dronahq.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/accessbanknigeria.png" alt="Appknox clients"/>
+      </li>
+      
+      <li>
+        <img src="/img/hooqtv.png" alt="Appknox clients"/>
+      </li>
+      
+    </ul>
+    <p id="many-more-team" class="gray-8">And many more...</p>
+  </div>
+</section>
+
+
+<section class="ak-gray-bg">
+  <div class="container ak-container ak-testimony text-center">
+    <h1 class="">What Our Users Say</h1>
+
+    <div id="carousel-example-generic" class="carousel carousel-fade slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators carousel-spots">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner testimonial-section" role="listbox">
+        <div class="item active">
+          <div class="user-comments">
+            The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.
+          </div>
+          <div class="client-logo">
+            <img src="/img/testimonials-27.png" alt="Appknox clients"/>
+          </div>
+          <div class="client-sign">
+            Viet Nguyen Tuan
+          </div>
+        </div>
+        <div class="item">
+          <div class="user-comments">
+            Appknox helped us scan our app thoroughly. They also tagged a security researcher who helped us understand all our issues, clarify our doubts and suggested appropriate solutions to fix them.
+          </div>
+          <div class="client-logo logo-pos">
+            <img src="/img/dronahq.png" alt="Appknox clients"/>
+          </div>
+          <div class="client-sign sign-pos">
+            Neeraj Kumar
+          </div>
+        </div>
+        <div class="item">
+          <div class="user-comments">
+            Appknox helped us find some really interesting security loopholes and also helped us to fix it.
+          </div>
+          <div class="client-logo logo-pos">
+            <img src="/img/bigbasket.png" alt="Appknox clients"/>
+          </div>
+          <div class="client-sign sign-pos">
+            Hari Palappetty
+          </div>
+        </div>
+        <div class="item">
+          <div class="user-comments">
+            I like the detailed analysis along with code snippet that potentially leads to a problem. The turnaround time from app submission to report generation is quick which helps us to identify problem in our product and enables us to address it quickly.
+          </div>
+          <div class="client-logo logo-pos">
+            <img src="/img/hooqtv.png" alt="Appknox clients"/>
+          </div>
+          <div class="client-sign sign-pos">
+            Dwi Sasongko Supriyadi
+          </div>
+        </div>
+        <div class="item">
+          <div class="user-comments">
+            The Appknox team helped us immensely with our security efforts, with reasonable pricing, keeping in mind that we’re a startup.
+          </div>
+          <div class="client-logo logo-pos">
+            <img src="/img/testimonials-29.png" alt="Appknox clients"/>
+          </div>
+          <div class="client-sign sign-pos">
+            Lokesh Jain
+          </div>
+        </div>
+        <div class="item">
+          <div class="user-comments">
+            Being a pentester in this industry dealing with many clients and vendors, I must say Appknox is one of the best security vendors I have engaged with. They are up-to-date when it comes to quality and timely delivery. I highly recommend Appknox for your next application security.
+          </div>
+          <div class="client-logo logo-pos last-logo">
+            <img src="/img/zebpay.png" alt="Appknox clients"/>
+          </div>
+          <div class="client-sign last-sign">
+            Chintan Gurjar
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+
+      <a class="left carousel-control carousel-button carousel-prev" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control carousel-button carousel-next" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span></a>
+
+      <!-- <a class="left carousel-control carousel-button carousel-click" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control carousel-button carousel-click" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container ak-container text-center">
+    <h2>Recognitions</h2>
+    <div class="horz-split-1x">
+      <span></span>
+    </div>
+    <ul id="awards-box">
+      <li class="col-md-4 col-sm-6">
+        <a data-proofer-ignore href="http://yourstory.com/2015/10/nasscom-product-conclave-2015-startups/" class="awards-image menubar">
+          <img src="img/nasscom-emerge-50-2015.png" alt="Appknox nasscom">
+        </a>
+        <h3 class="gray-5">Emerge 50</h3>
+        <h4 class="gray-5">NASSCOM</h4>
+        <div class="awards-details">
+          <div class="award-time  gray-a">2015</div>
+        </div>
+      </li>
+      <li class="col-md-4 col-sm-6">
+        <a data-proofer-ignore href="http://www.hot100.technology/winners-2014.php" class="awards-image menubar">
+          <img src="img/awards3.png" alt="appknox hot100">
+        </a>
+        <h3 class="gray-5">Winner</h3>
+        <h4 class="gray-5">Hot 100 Tech Awards</h4>
+        <div class="awards-details">
+          <div class="award-time gray-a">2014</div>
+        </div>
+      </li>
+      <li class="col-md-4 col-sm-6">
+        <a data-proofer-ignore href="http://www.cioreviewindia.com/magazine/Appknox-Discovering-and-Fixing-Security-Loopholes-in-Enterprise-Mobile-Apps-BSJO11488613.html" class="awards-image menubar">
+          <img src="img/awards1.png" alt="appknox CIO">
+        </a>
+        <h3 class="gray-5">Top Enterprise Startup</h3>
+        <h4 class="gray-5">CIO Review</h4>
+        <div class="awards-details">
+          <div class="award-time  gray-a">2015</div>
+        </div>
+      </li>
+      <li class="clearfix"></li>
+    </ul>
+  </div>
+</section>
+
+<a name="Vulnerabilities"></a>
+
+<section class="ak-gray-bg">
+  <div class="container ak-container text-center">
+    <h3 class="gills-24 gray-8">We've detected vulnerabilities in</h3>
+    <ul class="logos-box">
+      <li>
+        <img src="img/google-logo.png" alt="Appknox google" />
+      </li>
+      <li>
+        <img src="img/facebook.png" alt="Appknox facebook" />
+      </li>
+      <li>
+        <img src="img/microsoft.png" alt="Appknox microsoft" />
+      </li>
+      <li>
+        <img src="img/paypal.png" alt="Appknox paypal" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container ak-container text-center contact-us-block">
+    <h3 class="gills-24 gray-8 margin-bottom">We'd Love To Hear From You</h3>
+    <a class="button-red btn-lg ak-btn-round uppercase menubar" href="/contact">Contact Us</a>
+  </div>
+</section>
+<script>
+  mixpanel.track("Visited Appknox");
+</script>
+
+
+  <footer id="site-footer">
+  <section class="container">
+    <div class="col-md-12 ">
+      <div class="col-md-8" id="footer-form">
+        <h3 class="footer-titles">Subscribe to Updates</h3>
+        <form id="subscribe-form" action="/" method="post">
+          <div id="email-su-error" class="cu-form-eorror red"></div>
+          <input type="email" class="email-placeholder" name="email" placeholder = "your email goes here">
+          <input type="submit" id="footer-subscribe-butn" value="SUBMIT">
+        </form>
+      </div>
+      <div class="col-md-4 footer-links">
+        <a href="/pricing/#faq" class="gray-a submenu">FAQs</a>
+        <a href="https://github.com/appknox/careers" class="gray-a submenu">Careers</a>
+        <a href="/privacy/" class="gray-a submenu">Privacy</a>
+        <a href="/press/" class="gray-a submenu">Press</a>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3 class="footer-titles col-md-12">What's New</h3>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">Blogs</h3>
+        <h4 class="news-title">
+          <a target="_blank" class="submenu" href="https://blog.appknox.com/5-steps-cto-cio-build-agile-team-that-wins/">
+            5 Steps for CTOs & CIOs to Build Agile Teams that Win
+          </a>
+        </h4>
+        <p>
+
+        </p>
+      </div>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">Events</h3>
+        <h4 class="news-title">
+            <a data-proofer-ignore href="http://www.techinnovation.com.sg/" target="_blank" class="submenu">TECHINNOVATION 2016, Singapore</a>
+        </h4>
+        <p>
+
+        </p>
+      </div>
+      <div class="footer-article col-md-4">
+        <h3 class="footer-titles">Press</h3>
+        <h4 class="news-title">
+              <a data-proofer-ignore href="https://techcrunch.com/2016/08/16/mobile-security-startup-appknox-lands-funding-to-focus-on-southeast-asia/" target="_blank" class="submenu">
+                Mobile security startup Appknox lands funding to focus on Southeast Asia
+              </a>
+        </h4>
+        <p>
+
+        </p>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3 class="footer-titles col-md-12">XYSec Labs</h3>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">Singapore</h3>
+        <li>79 Ayer Rajah Crescent</li>
+        <li>#04-09 Singapore 139951</li>
+        <li>Ph: +65 3158 5898</li>
+      </ul>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">India</h3>
+        <li>473, Shri Krishna Temple Rd, Stage 1</li>
+        <li>Indiranagar, Bengaluru Karnataka 38</li>
+        <li> Ph: +91-9739320700</li>
+      </ul>
+      <ul class="adress-text col-md-4">
+        <h3 class="footer-titles">USA</h3>
+        <li>#5213, 500 Race Street</li>
+        <li>San Jose , CA 95126</li>
+        <li>Ph: +1-669-252-6976</li>
+      </ul>
+    </div>
+    <div class="col-md-12 no-border">
+      <div class="form-social-block">
+        <a target="_blank" class="submenu" href="https://www.facebook.com/appknox"><img src="/img/facebook.svg" alt="Appknox facebook"/></a>
+        <a target="_blank" class="submenu" href="https://www.linkedin.com/company/3771872"><img src="/img/linkedIn.svg" alt="Appknox LinkedIn"/></a>
+        <a target="_blank" class="submenu" href="https://twitter.com/appknox"><img src="/img/twitter.svg" alt="Appkox Twitter"/></a>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<div id="fancyboxAlert" style="display:none">
+
+</div>
+
+<div id="request-demo-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">Request Demo</h3>
+  <div id="messageBoxDemo" class="neosans marginTop"> </div>
+  <form id="request-demo-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-12">
+      <div id="name-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-position" name="name" placeholder="Full Name (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="email-ds-error" class="cu-form-eorror red"></div>
+      <input type="email" class="form-control placeholder-position" name="email" placeholder="Business Email (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="company-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-position" name="company" placeholder="Company (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="jobtitle-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-position" name="jobtitle" placeholder="Job Title (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="phone-ds-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control placeholder-tele" id="tele"  name="phone" placeholder="Phone Number">
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="demo-form-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="bulk-orders-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">Bulk Orders</h3>
+  <div id="messageBoxBulk" class="neosans marginTop"> </div>
+  <form id="bulk-order-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-12">
+      <div id="name-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="email-bulk-error" class="cu-form-eorror red"></div>
+      <input type="email" class="form-control" name="email" placeholder="Business Email (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="company-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="company" placeholder="Company (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="jobtitle-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="jobtitle" placeholder="Job Title (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="numapp-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="numapp" placeholder="Number of Apps (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="phone-bulk-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <textarea class="form-control" name="remarks" rows="4" cols="50"  placeholder="Remarks/Message"></textarea>
+    </fieldset>
+
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="bulk-order-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="place-order-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">Place Order</h3>
+  <div id="placeOrderMsgBox" class="neosans marginTop"> </div>
+  <form id="place-order-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-12">
+      <div id="name-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="name" placeholder="Full Name (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="email-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="email" class="form-control" name="email" placeholder="Business Email (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="company-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="company" placeholder="Company (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="jobtitle-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="jobtitle" placeholder="Job Title (Required)">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="appurl-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="url" class="form-control" name="appurl" placeholder="App URL">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <div id="phone-sumbit-order-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+    </fieldset>
+    <fieldset class="form-group col-md-12">
+      <textarea class="form-control" name="remarks" rows="4" cols="50"  placeholder="Remarks/Message"></textarea>
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="submit-order-button" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div id="callphone-box" class="gen-form text-center maxWidth450" style="display:none">
+  <h3 class="neosans text-center bottom-border gray-5">We'll Call You Right Away</h3>
+  <div id="messageBoxCall" class="neosans marginTop"> </div>
+  <div class="neosans marginTop"> </div>
+  <form id="callbox-form" method="post" data-attr-submitted = "no">
+    <fieldset class="form-group col-md-13">
+      <div id="phone-call-error" class="cu-form-eorror red"></div>
+      <input type="text" class="form-control telesg" id="visitorphone" name="phone" placeholder="Enter Your Phone Number">
+    </fieldset>
+    <div class="clearfix"></div>
+    <div class="text-center">
+      <input type="submit" id="CallForm-submit" class="marginTop button-red btn-lg ak-btn-round uppercase" value="Call Me">
+    </div>
+  </form>
+</div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/js/plugins.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+
+<script src="/js/main.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50871547-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script>
+  window.intercomSettings = {
+    app_id: "mbkqc0o1"
+  };
+</script>
+<script>
+  (function() {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+      ic('reattach_activator');
+      ic('update', intercomSettings);
+    } else {
+      var d = document;
+      var i = function() {
+        i.c(arguments)
+      };
+      i.q = [];
+      i.c = function(args) {
+        i.q.push(args)
+      };
+      w.Intercom = i;
+
+      function l() {
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://widget.intercom.io/widget/mbkqc0o1';
+        var x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (w.attachEvent) {
+        w.attachEvent('onload', l);
+      } else {
+        w.addEventListener('load', l, false);
+      }
+    }
+  })()
+</script>
+<!--LeadSquared Tracking Code Start-->
+<script type="text/javascript" src="https://web.mxradon.com/t/Tracker.js"></script>
+<script type="text/javascript">
+  pidTracker('9581');
+</script>
+<!--LeadSquared Tracking Code End-->
+<!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+(function(d,s,i,r) {
+if (d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1683437.js';
+e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+
+<!-- Hotjar Tracking Code for https://www.appknox.com -->
+<script>
+   (function(h,o,t,j,a,r){
+       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+       h._hjSettings={hjid:225284,hjsv:5};
+       a=o.getElementsByTagName('head')[0];
+       r=o.createElement('script');r.async=1;
+       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+       a.appendChild(r);
+   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- End of Hotjar Tracking Code for https://www.appknox.com -->
+
+<!-- Plugin to include the country codes in the phone number -->
+<script src="/js/intltelinput.js"></script>
+<script>
+  $(".tele").intlTelInput({initialCountry: "in"});
+  $(".telesg").intlTelInput({initialCountry: "sg"});
+</script>
+<script>
+jQuery('.carousel').carousel({
+		interval: 7000
+	})
+</script>
+<!-- End of Plugin to include the country codes in the phone number -->
+
+<script>
+$('body').scrollspy({
+  target: '#myScrollspy',  offset: 100
+});
+$('.main-nav').affix({offset: {top: 2850, bottom: 800} });
+</script>
+
+</body>
+
+</html>

@@ -26,3 +26,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .editorconfig
+  - deploy.sh
+  - .eslintrc
+  - .gitignore
+  - .jsbeautifyrc
+  - .jshintignore
