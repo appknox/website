@@ -2026,6 +2026,29 @@ input[type=email],input[type=text],input[type=url] {
     .banner-top img{
       margin-left: 100px!important;
     }
+    .diy-heading, .diy-desc, .diy-price, .diy-feat-container{
+      margin-left: 30px;
+    }
+    .diy-client{
+      margin-left: 60px!important;
+      margin-top: 45px!important;
+    }
+    .diy-form{
+      margin-left: 116px!important;
+      margin-top: 110px!important;
+    }
+    .diy-background{
+      background-image: url("/img/diy/back_tab-21.png")!important;
+    }
+    .diy-icons img {
+      width: 30%;
+    }
+    .diy-steps{
+      margin-left: -160px!important;
+    }
+    .diy-try-button{
+      margin-left: 365px;
+    }
 
 }
 
@@ -2945,15 +2968,16 @@ header, .main-nav-scrolled {
     display: none!important;
   }
   .diy-form{
-    margin-left: 0px;
-    width: 250px;
+    margin-left: 30px!important;
+    margin-top: 120px!important;
   }
   .diy-image1{
     margin-left: -5px;
     margin-top: 80px;
   }
   .diy-feat{
-    display: inline;
+    margin-top: -40px;
+    margin-left: 60px;
   }
   .diy-icons{
     margin-left: 120px;
@@ -2968,6 +2992,22 @@ header, .main-nav-scrolled {
     bottom: 20px;
     left: 60px;
   }
+  .diy-form-heading{
+    margin-top: 30px;
+  }
+  .diy-feat-image{
+    margin-left: 0px;
+  }
+  .diy-testimonial-container{
+    margin-left: 130px;
+    margin-top: 30px;
+    padding: 10px 10px;
+  }
+  .diy-steps{
+    margin-left: -20px!important;
+    text-align: left!important;
+  }
+
 
 }
 
