@@ -30,3 +30,4 @@ exclude:
   - .eslintrc
   - .gitignore
   - .jsbeautifyrc
+  - .jshintignore
