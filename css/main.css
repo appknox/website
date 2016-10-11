@@ -2665,68 +2665,86 @@ header, .main-nav-scrolled {
 }
 
 .diy-background{
-  background-image: url("/img/diy/background-14.png");
+  background-image: url("/img/diy/back1-20.png");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
 }
 
 .diy-heading{
   margin-top: 70px;
-  color: white;
+  color: #ffffff;
   font-size: 36px;
   font-family: neosans;
 }
 
-.div-desc{
-  color: white;
+.diy-desc{
+  color: #ffffff;
   font-size: 16px;
   font-family: gillsansmtpro;
   margin-top: -20px;
 }
 
-.div-price{
-  color: white;
+.diy-price{
+  color: #ffffff;
   margin-top: 10px;
   font-size: 24px;
   font-family: neosans;
 }
 
 .diy-feat{
-  color: white;
-  font-size: 20px;
+  color: #999999;
+  font-size: 18px;
   font-family: gillsansmtpro;
   line-height: 150%;
   text-align: center;
+  margin-top: 10px;
 }
 
 .diy-testimonial{
-  color: white;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 16px;
   font-family: gillsansmtpro;
 }
 
 .diy-client{
-  color: white;
-  margin-top: 20px;
-  margin-left: 60px
-  font-size: 20px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 100px;
+  font-size: 16px;
   font-family: gillsansmtpro;
 }
 
 .diy-testimonial-container{
-  background-color: black;
+  background-color: #000000;
   opacity: 0.5;
   padding: 40px 30px 40px 30px;
-  margin-left: 200px;
+  margin-left: 180px;
 }
+
+.diy-form-control{
+  background: #000000!important;
+  border: 1px solid #ccc!important;
+}
+
+.diy-section1{
+  margin-top: 20px;
+}
+
 
 .diy-section2{
   font-size: 24px;
   color: #000000;
   font-family: neosans;
+  margin-top: 10px;
 }
 
 .diy-image1{
-  margin-left: 80px;
-  margin-top: 80px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.diy-image3{
+  margin-top: 20px;
 }
 
 .diy-image4{
@@ -2748,30 +2766,32 @@ header, .main-nav-scrolled {
 }
 
 .diy-form{
-  margin-left: 150px;
-  margin-top: 70px;
-  width: 300px;
+  position: static;
+  margin-left: 183px;
+  margin-top: 100px;
+  width: 270px;
   background-color: black;
   opacity: 0.5;
   padding: 10px;
 }
 
 .diy-form-heading{
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   font-family: neosans;
+  text-align: center;
 }
 
 .diy-sign-button {
-    background: #ea2127;
-    border: none;
-    padding: 10px 30px;
-    color: #fff;
-    cursor: pointer;
-    font-family: neosans;
-    margin-top: 40px;
-    margin-left: 80px;
-    border-radius: 40px;
+  background: #ea2127;
+  border: none;
+  padding: 7px 45px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: neosans;
+  margin-top: 40px;
+  margin-left: 55px;
+  border-radius: 40px;
 }
 
 .diy-steps{
@@ -2780,12 +2800,14 @@ header, .main-nav-scrolled {
   color: #808080;
   line-height: 150%;
   text-align: center;
-  margin-left: -260px
+  margin-left: -260px;
+  margin-top: 10px;
 }
 
 .diy-try-button{
   margin-left: 570px;
-  margin-top: -60px;
+  margin-top: -100px;
+  margin-bottom: 20px;
 }
 
 /* End of DIY Landing Page */
