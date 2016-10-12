@@ -1,0 +1,471 @@
+@font-face {
+    font-family: neosans;
+    src: url(../fonts/NEOSANS.OTF);
+}
+
+@font-face {
+    font-family: gillsansmtpro;
+    src: url(../fonts/GILLSANSMTPRO-BOOK.OTF);
+}
+
+body{
+  margin-top: 30px;
+}
+
+.lp-gray-bg{
+  background-color: #f6f6f6;
+}
+
+.heading{
+  margin-top: 60px;
+  max-width: 400px;
+  font-size: 24px;
+  color: #000000;
+  font-family: neosans;
+}
+
+.form-heading{
+  font-size: 24px;
+  color: #000000;
+  font-family: neosans;
+  margin-left: 250px;
+  margin-top: 30px;
+}
+
+.content{
+  max-width: 500px;
+  font-size: 19px;
+  color: #979797;
+  font-family: lato;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.testimony-client{
+  margin-top: 60px;
+}
+
+.user-opinion{
+  color: #000000;
+  font-family: lato;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.client-name{
+  margin-top: 10px;
+  color: #979797;
+  font-family: lato;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.second-section{
+  margin-top: 40px;
+}
+
+.session-section {
+  margin-top: 60px;
+  border-color: #f2f2f2;
+  height: 220px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.session-icon{
+  margin-top: 10px;
+}
+
+.third-section{
+  margin-top: 60px;
+
+}
+.last-section{
+  margin-top: 80px !important;
+  margin-left: -15px;
+}
+
+.session-heading{
+  margin-top: 20px;
+  margin-left: -80px;
+  font-size: 24px;
+  text-align: left;
+  color: #000000;
+  font-family: neosans;
+}
+
+.session-desc{
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 70px;
+  font-size: 17px;
+  color: #666666;
+  font-family: lato;
+  font-weight: 400;
+}
+
+.book-button {
+  background: #f6f6f6;
+  border: none;
+  color: #ff6666;
+  cursor: pointer;
+  font-family: neosans;
+  text-align: center;
+  font-size: 16px;
+  width:40%;
+  margin-left: 130px;
+  margin-top: 4%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.submit-button{
+  background: #ff6666;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: neosans;
+  text-align: center;
+  font-size: 16px;
+  width:40%;
+  margin-left: 300px;
+  margin-top: 4%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.lined-input{
+  color: #979797;
+  height: 28px;
+  padding-left: 10px;
+  text-decoration: none;
+  background-color:#f6f6f6;
+  border-top:0;
+  border-right:0;
+  border-bottom:1px solid black;
+  border-left:0;
+  outline:none;
+  display: block;
+  width: 400px;
+  margin-left: 200px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-family: lato;
+  font-weight: 400;
+}
+
+.form-field{
+  margin-top: 30px;
+}
+
+.condition-text{
+    margin-left: 250px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    font-family: lato;
+    font-weight: 400;
+    color: #979797;
+    width: 330px;
+}
+
+@media (max-width: 1024px) {
+  .content{
+    max-width: 400px;
+  }
+  .lined-input{
+    margin-left: 60px;
+  }
+  .submit-button{
+    margin-left: 170px;
+  }
+  .condition-text{
+    margin-left: 100px;
+    margin-bottom: 40px;
+  }
+  .session-heading{
+    margin-left: -50px;
+  }
+  .form-heading{
+    margin-left: 110px;
+  }
+  .session-section{
+    height: 250px;
+  }
+  .last-section{
+    margin-top: 60px!important;
+  }
+  .third-section{
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .heading{
+    max-width: 100%;
+  }
+  .content{
+    max-width: 100%;
+  }
+  .main-section{
+    text-align: center;
+  }
+  .lined-input{
+    margin-left: 130px;
+  }
+  .submit-button{
+    margin-left: 190px;
+  }
+  .condition-text{
+    margin-left: 165px;
+  }
+  .form-field{
+    margin-top: 50px;
+  }
+  .session-section{
+    height:250px;
+    width: 55%;
+    margin-top: 30px;
+  }
+  .second-section{
+    width: 45%;
+  }
+  .session-heading{
+    margin-left: -45px;
+    font-size: 20px;
+  }
+  .session-desc{
+    text-align: left;
+    margin-top: 60px;
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  .book-button {
+    margin-left: 115px;
+    margin-top: 20px;
+  }
+  .tab-view{
+    width: 55%;
+    margin-top: 30px;
+  }
+  .tab-view2{
+    height:300px;
+    width: 45%;
+  }
+  .last-section{
+    margin-top: 0px !important;
+    margin-left: 0px;
+  }
+  .image-enlarge{
+    margin-left: 15px;
+  }
+  .third-section{
+    margin-top: 0px;
+  }
+  .second-image{
+    margin-top: 100px;
+  }
+  .session-icon{
+    margin-left: -20px;
+  }
+  .last-heading{
+    width: 85%;
+  }
+  .form-heading{
+    margin-left: 190px;
+  }
+
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .heading{
+    max-width: 100%;
+  }
+  .content{
+    max-width: 100%;
+  }
+  .main-section{
+    text-align: center;
+  }
+  .lined-input{
+    margin-left: 30px;
+    width: 300px;
+  }
+  .submit-button{
+    margin-left: 110px;
+  }
+  .condition-text{
+    margin-left: 30px;
+  }
+  .form-field{
+    margin-top: 50px;
+  }
+  .session-images{
+    display: none;
+  }
+  .session-section{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 300px;
+  }
+  .session-heading{
+    margin-left: -45px;
+    font-size: 20px;
+  }
+  .session-desc{
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .last-section{
+    margin-left: 0px;
+    margin-top: 0px!important;
+  }
+  .book-button{
+    margin-left: 105px;
+  }
+  .tab-view3{
+    width: 85%;
+  }
+  .session-section{
+    height: 250px;
+  }
+  .session-icon{
+    margin-left: -20px;
+  }
+  .last-heading{
+    width: 85%;
+  }
+  .form-heading{
+    margin-left: 45px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .heading{
+    max-width: 100%;
+  }
+  .content{
+    max-width: 100%;
+  }
+  .main-section{
+    text-align: center;
+  }
+  .lined-input{
+    margin-left: 20px;
+    width: 300px;
+  }
+  .submit-button{
+    margin-left: 110px;
+  }
+  .condition-text{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 13px;
+    max-width: 300px;
+  }
+  .form-field{
+    margin-top: 50px;
+  }
+  .session-images{
+    display: none;
+  }
+  .session-section{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 300px;
+  }
+  .session-heading{
+    margin-left: -35px;
+    font-size: 20px;
+  }
+  .session-desc{
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .last-section{
+    margin-left: 0px;
+    margin-top: 0px!important;
+  }
+  .book-button{
+    margin-left: 50px;
+    width: 70%;
+  }
+  .tab-view3{
+    width: 90%;
+  }
+  .session-section{
+    height: 270px;
+  }
+  .session-icon{
+    margin-left: -20px;
+  }
+  .form-heading{
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .heading{
+    max-width: 100%;
+  }
+  .content{
+    max-width: 100%;
+  }
+  .main-section{
+    text-align: center;
+  }
+  .lined-input{
+    margin-left: 10px;
+    width: 250px;
+  }
+  .submit-button{
+    margin-left: 80px;
+  }
+  .condition-text{
+    margin-left: -23px;
+  }
+  .form-field{
+    margin-top: 50px;
+  }
+  .session-images{
+    display: none;
+  }
+  .session-section{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 300px;
+  }
+  .session-heading{
+    width: 80%;
+    margin-left: -20px;
+    font-size: 20px;
+  }
+  .session-desc{
+    margin-left: 60px;
+    font-size: 15px;
+  }
+  .last-section{
+    margin-left: 0px;
+    margin-top: 0px!important;
+  }
+  .book-button{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 70%;
+  }
+  .tab-view3{
+    width: 80%;
+  }
+  .condition-text{
+    text-align: center;
+    font-size: 13px;
+    max-width: 300px;
+  }
+  .form-heading{
+    margin-left: 15px;
+    font-size: 20px;
+  }
+}
