@@ -2049,7 +2049,6 @@ input[type=email],input[type=text],input[type=url] {
     .diy-try-button{
       margin-left: 365px!important;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2685,12 +2684,18 @@ header, .main-nav-scrolled {
 
 .diy-signup{
   margin-left: 200px;
-  padding: 10px 10px;
+  margin-top: -30px;
   display: none;
+  font-size: 17px;
 }
 
 .diy-signup input{
-  background-color: black;
+  color: #ffffff;
+  background-color: grey;
+  padding: 5px 5px;
+  width: 200px;
+  height: 35px;
+  border-width: 0px;
 }
 
 .diy-background{
@@ -2758,7 +2763,6 @@ header, .main-nav-scrolled {
 .diy-section1{
   margin-top: 20px;
 }
-
 
 .diy-section2{
   font-size: 24px;
@@ -2842,6 +2846,23 @@ header, .main-nav-scrolled {
 .diy-show-button{
   display: none!important;
 }
+
+.diy-placeholder::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ffffff!important;
+}
+
+.diy-placeholder::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff!important;
+}
+
+.diy-placeholder:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff!important;
+}
+
+.diy-placeholder:-ms-input-placeholder { /* Firefox 18- */
+    color: #ffffff!important;
+}
+
 
 /* End of DIY Landing Page */
 
