@@ -2684,7 +2684,13 @@ header, .main-nav-scrolled {
 }
 
 .diy-signup{
+  margin-left: 200px;
+  padding: 10px 10px;
   display: none;
+}
+
+.diy-signup input{
+  background-color: black;
 }
 
 .diy-background{
