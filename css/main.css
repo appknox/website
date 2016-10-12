@@ -3011,6 +3011,9 @@ header, .main-nav-scrolled {
     margin-left: -20px!important;
     text-align: left!important;
   }
+  .diy-background{
+    background-image: url("/img/diy/background-14.png")!important;
+  }
 
 
 }
@@ -3215,7 +3218,7 @@ header, .main-nav-scrolled {
     margin-left: 0px;
   }
   .diy-background{
-    background-image: url("/img/diy/back_mobile-22.png")!important;
+    background-image: url("/img/diy/background-14.png")!important;
     background-size: 100% 100%;
   }
   .diy-show-button{
@@ -3452,7 +3455,7 @@ header, .main-nav-scrolled {
     margin-left: 0px;
   }
   .diy-background{
-    background-image: url("/img/diy/back_mobile-22.png")!important;
+    background-image: url("/img/diy/background-14.png")!important;
     background-size: 100% 100%;
   }
   .diy-show-button{
@@ -3714,7 +3717,7 @@ header, .main-nav-scrolled {
     margin-left: 0px;
   }
   .diy-background{
-    background-image: url("/img/diy/back_mobile-22.png")!important;
+    background-image: url("/img/diy/background-14.png")!important;
     background-size: 100% 100%;
   }
   .diy-show-button{
