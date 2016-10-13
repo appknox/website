@@ -2833,9 +2833,14 @@ header, .main-nav-scrolled {
 }
 
 .diy-try-button{
-  margin-left: 550px;
+  width: 300px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  position: relative;
+  left: 25px;
   margin-top: -100px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
 }
 
 .diy-show-button{
@@ -2867,6 +2872,16 @@ header, .main-nav-scrolled {
   }
   .diy-steps{
     margin-left: -200px;
+  }
+  .diy-submit{
+    left: 70px;
+  }
+  .diy-try-button{
+    left:15px;
+  }
+  .diy-signup{
+    margin-left: 0px;
+    margin-top: -30px;
   }
 }
 
