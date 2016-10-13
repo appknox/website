@@ -2753,7 +2753,8 @@ header, .main-nav-scrolled {
 
 .diy-form-control{
   background: #000000!important;
-  border: 1px solid #ccc!important;
+  border: 0px solid #ccc!important;
+  opacity: 0.5!important;
 }
 
 .diy-section1{
@@ -2798,8 +2799,8 @@ header, .main-nav-scrolled {
   margin-left: 200px;
   margin-top: 100px;
   width: 270px;
-  background-color: black;
-  opacity: 0.5;
+  background-color: #191919;
+  opacity: 0.8;
   padding: 10px;
 }
 
@@ -2875,8 +2876,8 @@ header, .main-nav-scrolled {
   border: 0px;
 }
 .diy-modal-content{
-  background-color: #000000;
-  opacity: 0.7;
+  background-color: #191919;
+  opacity: 0.9;
 }
 .diy-modal-button{
   display: flex!important;
