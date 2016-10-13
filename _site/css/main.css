@@ -2862,7 +2862,28 @@ header, .main-nav-scrolled {
 .diy-placeholder:-ms-input-placeholder { /* Firefox 18- */
     color: #ffffff!important;
 }
-
+.diy-model-title{
+  text-align: center;
+  color: #ffffff;
+}
+.diy-modal{
+  position: fixed;
+  top: 50px;
+  width:100%;
+}
+.diy-modal-header{
+  border: 0px;
+}
+.diy-modal-content{
+  background-color: #000000;
+  opacity: 0.7;
+}
+.diy-modal-button{
+  display: flex!important;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+}
 
 /* End of DIY Landing Page */
 
@@ -3266,7 +3287,7 @@ header, .main-nav-scrolled {
     width: 300px;
     margin-left:auto;
     margin-right:auto;
-    padding: 10px 115px !important;
+    padding: 10px 45px !important;
     margin-bottom: 30px;
     margin-top: 60px;
   }
@@ -3279,7 +3300,6 @@ header, .main-nav-scrolled {
     margin-right:auto!important;
     position: relative;
     left:10px;
-
   }
 }
 
@@ -3499,7 +3519,7 @@ header, .main-nav-scrolled {
     width: 300px;
     margin-left:auto;
     margin-right:auto;
-    padding: 10px 115px !important;
+    padding: 10px 45px !important;
     margin-bottom: 30px;
     margin-top: 60px;
   }
@@ -3757,7 +3777,7 @@ header, .main-nav-scrolled {
     width: 300px;
     margin-left:auto;
     margin-right:auto;
-    padding: 10px 115px !important;
+    padding: 10px 45px !important;
     margin-bottom: 30px;
     margin-top: 60px;
   }
