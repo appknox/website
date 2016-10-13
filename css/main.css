@@ -2033,13 +2033,6 @@ input[type=email],input[type=text],input[type=url] {
       margin-left: 60px!important;
       margin-top: 45px!important;
     }
-    .diy-form{
-      margin-left: 116px!important;
-      margin-top: 110px!important;
-    }
-    .diy-background{
-      background-image: url("/img/diy/back_tab-21.png")!important;
-    }
     .diy-icons img {
       width: 30%;
     }
@@ -2048,6 +2041,9 @@ input[type=email],input[type=text],input[type=url] {
     }
     .diy-try-button{
       margin-left: 365px!important;
+    }
+    .diy-testimonial-container{
+      margin-left: 120px!important;
     }
 }
 
@@ -2699,7 +2695,7 @@ header, .main-nav-scrolled {
 }
 
 .diy-background{
-  background-image: url("/img/diy/back1-20.png");
+  background-image: url("/img/diy/background-14.png");
   background-repeat:no-repeat;
   background-size: 100% 100%;
 }
@@ -2799,8 +2795,7 @@ header, .main-nav-scrolled {
 }
 
 .diy-form{
-  position: static;
-  margin-left: 183px;
+  margin-left: 200px;
   margin-top: 100px;
   width: 270px;
   background-color: black;
@@ -2865,6 +2860,16 @@ header, .main-nav-scrolled {
 
 
 /* End of DIY Landing Page */
+
+@media (max-width: 1300px) {
+  .diy-icons img {
+    width: 30%;
+  }
+  .diy-steps{
+    margin-left: -200px;
+  }
+}
+
 
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -3037,9 +3042,6 @@ header, .main-nav-scrolled {
   .diy-steps{
     margin-left: -20px!important;
     text-align: left!important;
-  }
-  .diy-background{
-    background-image: url("/img/diy/background-14.png")!important;
   }
 
 
@@ -3244,10 +3246,6 @@ header, .main-nav-scrolled {
   .diy-feat-image{
     margin-left: 0px;
   }
-  .diy-background{
-    background-image: url("/img/diy/background-14.png")!important;
-    background-size: 100% 100%;
-  }
   .diy-show-button{
     display: block!important;
     width: 300px;
@@ -3258,7 +3256,7 @@ header, .main-nav-scrolled {
     margin-top: 60px;
   }
   .diy-testimonial-container{
-    margin-left: 0px;
+    margin-left: 0px!important;
   }
   .diy-try-button{
     width: 300px;
@@ -3481,10 +3479,6 @@ header, .main-nav-scrolled {
   .diy-feat-image{
     margin-left: 0px;
   }
-  .diy-background{
-    background-image: url("/img/diy/background-14.png")!important;
-    background-size: 100% 100%;
-  }
   .diy-show-button{
     display: block!important;
     width: 300px;
@@ -3495,7 +3489,7 @@ header, .main-nav-scrolled {
     margin-top: 60px;
   }
   .diy-testimonial-container{
-    margin-left: 0px;
+    margin-left: 0px!important;
   }
   .diy-try-button{
     width: 300px;
@@ -3743,10 +3737,6 @@ header, .main-nav-scrolled {
   .diy-feat-image{
     margin-left: 0px;
   }
-  .diy-background{
-    background-image: url("/img/diy/background-14.png")!important;
-    background-size: 100% 100%;
-  }
   .diy-show-button{
     display: block!important;
     width: 300px;
@@ -3757,7 +3747,7 @@ header, .main-nav-scrolled {
     margin-top: 60px;
   }
   .diy-testimonial-container{
-    margin-left: 0px;
+    margin-left: 0px!important;
   }
   .diy-try-button{
     width: 300px;
