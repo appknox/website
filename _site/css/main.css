@@ -2664,8 +2664,6 @@ header, .main-nav-scrolled {
   font-family: neosans;
   font-size: 24px;
   color: #f05b27;
-  position: relative;
-  top: -30px
 }
 
 .level-fullform {
@@ -2685,7 +2683,7 @@ header, .main-nav-scrolled {
   font-family: gillsansmtpro;
   font-size: 17px;
   color: #000000;
-  width: 300px;
+  width: 320px;
 }
 
 .margin-left100 {
@@ -2707,7 +2705,15 @@ header, .main-nav-scrolled {
   margin-top: 10px
 }
 
+.positionTop {
+  position: relative;
+  top: -30px
+}
 
+.image-container{
+  width: 200px;
+  height: 200px;
+}
 
 
 @media (min-width: 768px) and (max-width: 990px) {
