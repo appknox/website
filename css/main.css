@@ -1090,6 +1090,10 @@ label.error {
     padding: 0;
 }
 
+.ak-video-desc {
+  padding: 50px 0px
+}
+
 #uploadAppZone {
     margin-top: 30px;
 }
