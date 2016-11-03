@@ -2660,10 +2660,13 @@ header, .main-nav-scrolled {
 }
 
 .level-heading {
-  display: inline;
   font-family: neosans;
   font-size: 24px;
   color: #f05b27;
+}
+
+.displayInline {
+  display: inline;
 }
 
 .level-fullform {
@@ -2715,6 +2718,20 @@ header, .main-nav-scrolled {
   height: 200px;
 }
 
+.image-container img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pull-down-side{
+  position: relative;
+  top:100px
+}
+
 .level-container{
   margin-left: 50px;
   margin-right: 100px;
@@ -2723,6 +2740,10 @@ header, .main-nav-scrolled {
 .level-section{
   margin-top: 400px;
   margin-bottom: 900px;
+}
+
+.text-shift {
+  margin-left: 30px
 }
 
 
