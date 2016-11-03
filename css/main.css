@@ -2683,7 +2683,7 @@ header, .main-nav-scrolled {
   font-family: gillsansmtpro;
   font-size: 17px;
   color: #000000;
-  width: 320px;
+  width: 300px;
 }
 
 .margin-left100 {
@@ -2713,6 +2713,16 @@ header, .main-nav-scrolled {
 .image-container{
   width: 200px;
   height: 200px;
+}
+
+.level-container{
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.level-section{
+  margin-top: 400px;
+  margin-bottom: 900px;
 }
 
 
