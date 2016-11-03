@@ -2652,6 +2652,63 @@ header, .main-nav-scrolled {
 
 /* End of Banner  */
 
+.level-numbers {
+  display: inline;
+  font-family: neosans;
+  font-size: 100px;
+  color: #f05b27
+}
+
+.level-heading {
+  display: inline;
+  font-family: neosans;
+  font-size: 24px;
+  color: #f05b27;
+  position: relative;
+  top: -30px
+}
+
+.level-fullform {
+  font-family: neosans;
+  font-size: 20px;
+  color: #000000;
+}
+
+.level-feat {
+  font-family: gillsansmtpro;
+  font-size: 20px;
+  color: #ffaf39;
+
+}
+
+.level-desc {
+  font-family: gillsansmtpro;
+  font-size: 17px;
+  color: #000000;
+  width: 300px;
+}
+
+.margin-left100 {
+  margin-left: 100px;
+}
+
+.pull-right-side {
+  margin-left: 185px;
+  position: relative;
+  top: -65px
+}
+.pull-left-side {
+  margin-left: 85px;
+  position: relative;
+  top: -65px
+}
+
+.marginTopIncrease{
+  margin-top: 10px
+}
+
+
+
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
