@@ -572,10 +572,8 @@ button:focus {
     color: #fff;
     cursor: pointer;
     font-family: neosans;
-    margin-bottom: 30px;
-    margin-top: 50px;
-    margin-left: 480px;
     border-radius: 40px;
+    margin: auto;
 }
 
 .request-menu{
@@ -733,19 +731,19 @@ button:focus {
 
 #ak-dotted-circle {
     margin-top: 30px;
+    width: 50px;
 }
 
 #ak-cellphone-14 {
     position: relative;
-    margin-top: 30px;
-    max-width: 150px;
-    margin-left: -64%;
+    top: 20px;
+    right: 150px;
+    width: 100px;
 }
 
 #head-txt-14 {
     margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 #many-more-team {
@@ -1010,14 +1008,11 @@ label.error {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     width: 90%;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 #scan-process-list {
     padding-top: 90px;
-}
-
-#radar-list-block {
 }
 
 #radar-list-block>span {
