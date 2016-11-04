@@ -2889,6 +2889,9 @@ header, .main-nav-scrolled {
   .pull-down-side {
     top : 20px
   }
+  .radar-container {
+    margin-bottom: -120px
+  }
 
 
 
