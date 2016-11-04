@@ -2083,11 +2083,6 @@ input[type=email],input[type=text],input[type=url] {
         text-align: center;
     }
 
-    #home-video-zone {
-        width: 70% !important;
-        margin: 15%;
-    }
-
     #text-slider {
         padding-top: 60px;
     }
@@ -2181,11 +2176,6 @@ input[type=email],input[type=text],input[type=url] {
 
     #scan-process-list > li {
         width: 98%;
-    }
-
-    #home-video-zone {
-        width: 98% !important;
-        margin: 20px auto;
     }
 
     #UBAZone {
@@ -2867,7 +2857,7 @@ header, .main-nav-scrolled {
     margin-left: 225px
   }
   #home-video-zone {
-    margin-left: 40px
+    margin: auto
   }
   .level-section{
     margin-top: 10px;
@@ -2955,9 +2945,6 @@ header, .main-nav-scrolled {
   }
   .request-menu{
   display: none;
-  }
-  .call-button {
-    margin-left: 10px;
   }
   .testimonial-section{
     height: 400px;
@@ -3052,6 +3039,37 @@ header, .main-nav-scrolled {
   }
   .ak-appgrader-green-dark {
     text-align: center;
+  }
+  .ak-appgrader-green-dark {
+    text-align: center;
+  }
+  #ak-cellphone-14 {
+    margin-left: 50px
+  }
+  #home-video-zone {
+    margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 300px
+  }
+  .pull-down-side {
+    top : 20px
   }
 }
 
