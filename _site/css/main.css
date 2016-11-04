@@ -573,7 +573,8 @@ button:focus {
     cursor: pointer;
     font-family: neosans;
     border-radius: 40px;
-    margin: auto;
+    margin-left: 30px;
+    margin-top: 20px
 }
 
 .request-menu{
@@ -716,13 +717,8 @@ button:focus {
 }
 
 .half-block-container {
-    margin: 10px 0 70px;
+    margin: 10px 0 0px;
     text-align: left;
-}
-
-.half-block-container>li,.half-block-container>div {
-/*width:50%;
-  float:left;*/
 }
 
 #ak-radar-zone {
@@ -2005,14 +2001,8 @@ input[type=email],input[type=text],input[type=url] {
     .request-menu{
       margin-right: 40px;
     }
-    .call-button {
-      margin-left: 450px;
-    }
     .press-container{
       margin-top: 120px;
-    }
-    .call-button {
-      margin-left: 0px;
     }
     .sign-pos{
       margin-top: 20px;
@@ -2266,7 +2256,7 @@ input[type=email],input[type=text],input[type=url] {
     }
 
     #ak-cellphone-14 {
-        left: -40px;
+        left: 40px;
     }
 
     .ak-container {
@@ -2736,6 +2726,8 @@ header, .main-nav-scrolled {
   margin-bottom: 900px;
 }
 
+/* end  */
+
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
     width: 40%;
@@ -2787,7 +2779,7 @@ header, .main-nav-scrolled {
     margin-right: 25px;
   }
   .call-button {
-    margin-left: 280px;
+    margin-left: 30px;
   }
   .sign-position{
     margin-top: -55px;
@@ -2864,6 +2856,40 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
+  #ak-cellphone-14 {
+    top: -150px;
+    right: 0px;
+  }
+  #radar-list-block {
+      margin-left: 20px;
+  }
+  .radar-desc {
+    margin-left: 225px
+  }
+  #home-video-zone {
+    margin-left: 40px
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 280px
+  }
+  .pull-down-side {
+    top : 20px
+  }
+
 
 
 }
