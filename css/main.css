@@ -1008,7 +1008,7 @@ label.error {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     width: 90%;
-    max-width: 200px;
+    max-width: 170px;
 }
 
 #scan-process-list {
@@ -2012,7 +2012,7 @@ input[type=email],input[type=text],input[type=url] {
       margin-top: 120px;
     }
     .call-button {
-      margin-left: 450px;
+      margin-left: 0px;
     }
     .sign-pos{
       margin-top: 20px;
@@ -2677,7 +2677,7 @@ header, .main-nav-scrolled {
 
 .level-feat {
   font-family: gillsansmtpro;
-  font-size: 20px;
+  font-size: 19px;
   color: #ffaf39;
 
 }
@@ -2686,7 +2686,6 @@ header, .main-nav-scrolled {
   font-family: gillsansmtpro;
   font-size: 17px;
   color: #000000;
-  width: 300px;
 }
 
 .margin-left100 {
@@ -2694,11 +2693,6 @@ header, .main-nav-scrolled {
 }
 
 .pull-right-side {
-  margin-left: 185px;
-  position: relative;
-  top: -65px
-}
-.pull-left-side {
   margin-left: 85px;
   position: relative;
   top: -65px
@@ -2741,11 +2735,6 @@ header, .main-nav-scrolled {
   margin-top: 400px;
   margin-bottom: 900px;
 }
-
-.text-shift {
-  margin-left: 30px
-}
-
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
