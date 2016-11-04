@@ -3071,6 +3071,9 @@ header, .main-nav-scrolled {
   .pull-down-side {
     top : 20px
   }
+  #ak-radar-zone {
+    margin-top: 0px
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -3139,7 +3142,7 @@ header, .main-nav-scrolled {
     display: none;
   }
   .call-button {
-    margin-left: 10px;
+    margin-left: 30px;
   }
   .testimonial-section{
     height: 450px;
@@ -3239,6 +3242,37 @@ header, .main-nav-scrolled {
   }
   .ak-appgrader-green-dark {
     text-align: center;
+  }
+  #ak-cellphone-14 {
+    margin-left: 50px
+  }
+  #home-video-zone {
+    margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 360px
+  }
+  .pull-down-side {
+    top : 20px
+  }
+  #ak-radar-zone {
+    margin-top: 0px
   }
 
 }
