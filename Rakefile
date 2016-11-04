@@ -25,11 +25,13 @@ task :deploy do
 end
 
 desc 'Minify _site/'
-task :minify do
+task :minify , [:filepath] do |t, args|
+  args.with_defaults(filepath: '_site/')
+  puts args[':filepath'].to_s
   puts "\n## Compressing static assets"
   original = 0.0
   compressed = 0
-  Dir.glob('_site/**/*.*') do |file|
+  Dir.glob(args[':filepath'].concat('**/*.*')) do |file|
     case File.extname(file)
     when '.css', '.gif', '.html', '.jpg', '.jpeg', '.js', '.png', '.xml'
       puts "Processing: #{file}"
