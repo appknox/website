@@ -20,11 +20,9 @@
         Sugat Nayak -- AVP Sales -- @sugatnayak
         Darshan Chaudhary -- Backend Engineer -- @deathbullet
         Yashwin -- Frontend Engineer -- @iamyashwin
-        Kartik Jha -- Digital Marketing Manager -- @kartikjha
         ChillarAnand -- Backend Developer -- @chillaranand
         Viren Nadkarni -- Prod-Dev Engineer -- @viren_ndk
         Hemansu Kumar Tanty -- Prod-Dev Engineer -- @hemansutanty
-        Sidharth Das -- AVP Customer Relations -- @garagehipster
 
 
 
