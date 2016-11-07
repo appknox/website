@@ -2660,7 +2660,6 @@ header, .main-nav-scrolled {
   position: relative;
   top: 40%;
   transform: translateY(-50%);
-
 }
 
 .footer-section2 {
@@ -2670,7 +2669,6 @@ header, .main-nav-scrolled {
 .address-section {
   border-left: 1px solid grey;
 }
-
 
 .site-footer .footer-menu-white {
   color: #ffffff!important;
@@ -2723,7 +2721,9 @@ header, .main-nav-scrolled {
   background-color: #f8f8f8
 }
 
-
+.email-placeholder {
+  width: 100%
+}
 
 /* End of footer */
 
