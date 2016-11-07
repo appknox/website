@@ -3085,6 +3085,27 @@ header, .main-nav-scrolled {
   .radar-desc {
     text-align: center;
   }
+  .footer-box {
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: -20px;
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
+  .update-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer-nav {
+    margin-left: 5%;
+  }
+  .footer-nav>li {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -3297,6 +3318,27 @@ header, .main-nav-scrolled {
   .image-container img {
     margin-top: 30px;
     margin-bottom: 30px
+  }
+  .footer-box {
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: -20px;
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
+  .update-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer-nav {
+    margin-left: 10%;
+  }
+  .footer-nav>li {
+    display: inline-block;
   }
 }
 
@@ -3532,6 +3574,30 @@ header, .main-nav-scrolled {
   .image-container img {
     margin-top: 30px;
     margin-bottom: 30px
+  }
+  .footer-box {
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: -20px;
+  }
+  .footer-box a {
+    font-size: 12px
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
+  .update-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer-nav {
+    margin-left: 5%;
+  }
+  .footer-nav>li {
+    display: inline-block;
   }
 }
 
