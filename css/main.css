@@ -1267,8 +1267,7 @@ label.error {
 }
 
 #site-footer {
-    background: #333;
-    padding: 20px 0;
+    background: #02060C;
     color: #9d9d9d;
 }
 
@@ -1290,7 +1289,6 @@ label.error {
 
 #site-footer .container>div {
     padding: 10px 3%;
-    border-bottom: 1px solid #444;
 }
 
 .footer-titles {
@@ -2723,6 +2721,33 @@ header, .main-nav-scrolled {
 }
 
 /* end  */
+
+/* Start of Footer */
+
+  .footer-container {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+  .subscribe-button {
+    background: #000;
+    border: 1px solid #fff;
+    color: #f24c40;
+    cursor: pointer;
+    font-family: neosans;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 30px;
+  }
+
+  .footer-box {
+    background-color: grey;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 50px
+  }
+
+
+/* End of footer */
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
