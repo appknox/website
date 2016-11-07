@@ -2703,6 +2703,24 @@ header, .main-nav-scrolled {
     min-height: 120px
   }
 
+  .subscribe-title {
+    color: #000;
+  }
+  .subscrb-btn{
+    margin: 20px auto;
+    color: #ee5345;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+
+  }
+  #footer-subscribe-butn {
+    border-radius: 20px;
+    width: 150px;
+    border: none;
+    background-color: #f8f8f8
+  }
+
 
 
 /* End of footer */

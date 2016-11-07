@@ -558,8 +558,29 @@ src="https://www.facebook.com/tr?id=1632023723704931&ev=PageView&noscript=1"
             <h4 class="update-text"> UPDATES </h4>
           </div>
           <div class="col-md-3">
-            <div class="subscribe-button btn-lg ak-btn-round uppercase inblock">
+            <div class="subscribe-button btn-lg ak-btn-round uppercase inblock" data-toggle="modal" data-target="#subscribeModal">
               SUBSCRIBE
+            </div>
+
+            <div class="modal fade" id="subscribeModal" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title subscribe-title">Subscribe</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form id="subscribe-form" action="/" method="post">
+                      <div id="email-su-error" class="cu-form-eorror red"></div>
+                      <input type="email" class="email-placeholder" name="email" placeholder = "your email goes here">
+                      <div class="subscrb-btn"><input type="submit" id="footer-subscribe-butn" value="SUBMIT"></div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
