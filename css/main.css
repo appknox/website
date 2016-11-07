@@ -2245,9 +2245,6 @@ input[type=email],input[type=text],input[type=url] {
         padding-bottom: 80px;
     }
 
-    #ak-cellphone-14 {
-        left: 40px;
-    }
 
     .ak-container {
         padding-bottom: 50px;
@@ -3043,9 +3040,6 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
-  #ak-cellphone-14 {
-    margin-left: 50px
-  }
   #home-video-zone {
     margin: auto;
   }
@@ -3073,6 +3067,14 @@ header, .main-nav-scrolled {
   }
   #ak-radar-zone {
     margin-top: 0px
+  }
+  #ak-cellphone-14 {
+    margin: auto;
+    right: 140px;
+  }
+  #radar-img-zone {
+    margin-bottom: 60px;
+    margin-left: 50px;
   }
 }
 
@@ -3243,9 +3245,6 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
-  #ak-cellphone-14 {
-    margin-left: 50px
-  }
   #home-video-zone {
     margin: auto;
   }
@@ -3274,7 +3273,14 @@ header, .main-nav-scrolled {
   #ak-radar-zone {
     margin-top: 0px
   }
-
+  #ak-cellphone-14 {
+    margin: auto;
+    right: 140px;
+  }
+  #radar-img-zone {
+    margin-bottom: 60px;
+    margin-left: 50px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -3465,9 +3471,6 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
-  #ak-cellphone-14 {
-    margin-left: 50px
-  }
   #home-video-zone {
     margin: auto;
   }
@@ -3496,7 +3499,13 @@ header, .main-nav-scrolled {
   #ak-radar-zone {
     margin-top: 0px
   }
-
+  #ak-cellphone-14 {
+    top: 0px;
+    right: 20px
+  }
+  #radar-img-zone {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 320px) {
