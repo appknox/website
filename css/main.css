@@ -2871,9 +2871,15 @@ header, .main-nav-scrolled {
   .radar-container {
     margin-bottom: -120px
   }
-
-
-
+  .update-text {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
