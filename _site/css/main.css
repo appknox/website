@@ -2623,7 +2623,7 @@ header, .main-nav-scrolled {
 }
 
 .site-footer a {
-  font-size: 14px;
+  font-size: 16px;
   transition: all .35s ease-out;
 }
 
@@ -2631,94 +2631,97 @@ header, .main-nav-scrolled {
   color: #fff !important;
 }
 
-  .footer-container {
-    margin-left: 0px;
-    margin-right: 0px
-  }
-  .subscribe-button {
-    background: #000;
-    border: 1px solid #fff;
-    color: #ee5345;
-    cursor: pointer;
-    font-family: neosans;
-    text-align: center;
-    font-size: 13px;
-    padding: 5px 30px;
-  }
+.footer-container {
+  margin-left: 0px;
+  margin-right: 0px
+}
+.subscribe-button {
+  background: #000;
+  border: 1px solid #fff;
+  color: #ee5345;
+  cursor: pointer;
+  font-family: neosans;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px 30px;
+}
 
-  .footer-box {
-    background-color: #0E1316;
-    color: #ccc;
-    font-family: gillsansmtpro;
-    margin-right: 5px;
-    margin-bottom: 20px;
-    height: 70px;
-  }
+.footer-box {
+  background-color: #0E1316;
+  color: #ccc;
+  font-family: gillsansmtpro;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  height: 70px;
+}
 
-  .footer-box a {
-    color: #ccc;
-    line-height: 70px;
-  }
+.footer-box a {
+  color: #ccc;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
 
-  .footer-section2 {
-    margin-top: 10px
-  }
+}
 
-  .address-section {
-    border-left: 1px solid grey;
-  }
+.footer-section2 {
+  margin-top: 10px
+}
+
+.address-section {
+  border-left: 1px solid grey;
+}
 
 
-  .site-footer .footer-menu-white {
-    color: #ffffff!important;
-    text-decoration: underline;
-  }
+.site-footer .footer-menu-white {
+  color: #ffffff!important;
+  text-decoration: underline;
+}
 
-  .site-footer .footer-menu-grey {
-    color: #9d9d9d!important;
-  }
+.site-footer .footer-menu-grey {
+  color: #9d9d9d!important;
+}
 
-  .site-footer .footer-menu-white:hover {
-    color: #fff !important;
-    text-decoration: underline;
-  }
+.site-footer .footer-menu-white:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
 
-  .company-name {
-    font-size: 36px;
-    color: #bfbfbf
-  }
+.company-name {
+  font-size: 36px;
+  color: #bfbfbf
+}
 
-  .office-address {
-    font-size: 13px;
-    color: #999999
-  }
+.office-address {
+  font-size: 13px;
+  color: #999999
+}
 
-  .office-address .address-heading {
-    font-family: neosans;
-    color: #e6e6e6
-  }
+.office-address .address-heading {
+  font-family: neosans;
+  color: #e6e6e6
+}
 
-  .company-address {
-    min-height: 120px
-  }
+.company-address {
+  min-height: 120px
+}
 
-  .subscribe-title {
-    color: #000;
-  }
-  .subscrb-btn{
-    margin: 20px auto;
-    color: #ee5345;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
+.subscribe-title {
+  color: #000;
+}
+.subscrb-btn{
+  margin: 20px auto;
+  color: #ee5345;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
 
-  }
-  #footer-subscribe-butn {
-    border-radius: 20px;
-    width: 150px;
-    border: none;
-    background-color: #f8f8f8
-  }
+}
+#footer-subscribe-butn {
+  border-radius: 20px;
+  width: 150px;
+  border: none;
+  background-color: #f8f8f8
+}
 
 
 
