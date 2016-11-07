@@ -634,6 +634,10 @@ a {
   color: #999999
 }
 
+.office-address li {
+  list-style: none;
+}
+
 .office-address .address-heading {
   font-family: neosans;
   color: #e6e6e6
