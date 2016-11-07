@@ -2652,8 +2652,13 @@ header, .main-nav-scrolled {
     color: #ccc;
     font-family: gillsansmtpro;
     margin-right: 5px;
-    margin-bottom: 5px;
-    height: 50px;
+    margin-bottom: 20px;
+    height: 70px;
+  }
+
+  .footer-box a {
+    color: #ccc;
+    line-height: 70px;
   }
 
   .site-footer .footer-menu-white {
@@ -2686,7 +2691,7 @@ header, .main-nav-scrolled {
   }
 
   .company-address {
-    min-height: 120px 
+    min-height: 120px
   }
 
 
