@@ -1916,7 +1916,6 @@ input[type=email],input[type=text],input[type=url] {
     .banner-top img{
       margin-left: 100px!important;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2604,7 +2603,7 @@ header, .main-nav-scrolled {
 
 .level-images-pos {
   display: block;
-  margin-left: 225px;
+  margin: 0 auto;
 }
 
 .level-images-pos1 {
