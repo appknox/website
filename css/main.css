@@ -2661,6 +2661,15 @@ header, .main-nav-scrolled {
     line-height: 70px;
   }
 
+  .footer-section2 {
+    margin-top: 10px
+  }
+
+  .address-section {
+    border-left: 1px solid grey;
+  }
+
+
   .site-footer .footer-menu-white {
     color: #ffffff!important;
     text-decoration: underline;
