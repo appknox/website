@@ -3074,7 +3074,23 @@ header, .main-nav-scrolled {
   }
   #radar-img-zone {
     margin-bottom: 60px;
-    margin-left: 50px;
+    margin-left: 60px;
+  }
+  .button-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .call-button {
+    margin-left: 0;
+  }
+  #head-txt-14  {
+    text-align: center;
+  }
+  .radar-animate {
+    text-align: center;
+  }
+  .radar-desc {
+    text-align: center;
   }
 }
 
@@ -3142,9 +3158,6 @@ header, .main-nav-scrolled {
   }
   .request-menu{
     display: none;
-  }
-  .call-button {
-    margin-left: 30px;
   }
   .testimonial-section{
     height: 450px;
@@ -3281,6 +3294,16 @@ header, .main-nav-scrolled {
     margin-bottom: 60px;
     margin-left: 50px;
   }
+  .button-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .call-button {
+    margin-left: 0;
+  }
+  #head-txt-14  {
+    text-align: center;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -3356,8 +3379,12 @@ header, .main-nav-scrolled {
   .request-menu{
     display: none;
   }
+  .button-container {
+    margin: 0 auto;
+    text-align: center;
+  }
   .call-button {
-    margin-left: 40px;
+    margin-left: 0;
   }
   .testimonial-section{
     height: 450px;
@@ -3505,6 +3532,12 @@ header, .main-nav-scrolled {
   }
   #radar-img-zone {
     margin-bottom: 60px;
+  }
+  #head-txt-14  {
+    text-align: center;
+  }
+  #radar-list-block span {
+    font-size: 0.8em
   }
 }
 
