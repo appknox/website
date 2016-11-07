@@ -1206,7 +1206,6 @@ label.error {
 
 .why-appknox {
     text-align: left;
-    padding-top: 75px;
 }
 
 .why-appknox h2 {
@@ -2713,6 +2712,16 @@ header, .main-nav-scrolled {
   margin-bottom: 900px;
 }
 
+.level-images-pos {
+  display: block;
+  margin-left: 225px;
+}
+
+.level-images-pos1 {
+  display: block;
+  margin: 0 auto;
+}
+
 /* end  */
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -3063,7 +3072,11 @@ header, .main-nav-scrolled {
     height: 300px
   }
   .pull-down-side {
-    top : 20px
+    top : -60px
+  }
+  .image-container img {
+    margin-top: 30px;
+    margin-bottom: 30px
   }
   #ak-radar-zone {
     margin-top: 0px
@@ -3280,9 +3293,6 @@ header, .main-nav-scrolled {
   .image-container {
     height: 360px
   }
-  .pull-down-side {
-    top : 20px
-  }
   #ak-radar-zone {
     margin-top: 0px
   }
@@ -3303,6 +3313,13 @@ header, .main-nav-scrolled {
   }
   #head-txt-14  {
     text-align: center;
+  }
+  .pull-down-side {
+    top : -120px
+  }
+  .image-container img {
+    margin-top: 30px;
+    margin-bottom: 30px
   }
 }
 
@@ -3520,9 +3537,6 @@ header, .main-nav-scrolled {
   .image-container {
     height: 360px
   }
-  .pull-down-side {
-    top : 20px
-  }
   #ak-radar-zone {
     margin-top: 0px
   }
@@ -3538,6 +3552,13 @@ header, .main-nav-scrolled {
   }
   #radar-list-block span {
     font-size: 0.8em
+  }
+  .pull-down-side {
+    top : -120px
+  }
+  .image-container img {
+    margin-top: 30px;
+    margin-bottom: 30px
   }
 }
 
