@@ -1232,22 +1232,6 @@ label.error {
   margin-top: 5px;
 }
 
-#footer-form input {
-    display: inline-block;
-}
-
-.footer-links {
-    text-align: center;
-    font-size: 0.9em;
-    margin-top: 30px;
-}
-
-.footer-links a {
-    display: inline-block;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
 @keyframes radarrotate {
     from {
         m-ms-transform: rotate(0deg);
@@ -1266,87 +1250,8 @@ label.error {
     }
 }
 
-#site-footer {
-    background: #02060C;
-    color: #9d9d9d;
-}
-
-#site-footer a {
-    color: #9d9d9d !important;
-    transition: all .35s ease-out;
-}
-
-#site-footer a:hover {
-    color: #bbb !important;
-}
-
-#site-footer input[type=email] {
-    border: none;
-    background: #444;
-    padding: 5px 15px;
-    width: 66%;
-}
-
-#site-footer .container>div {
-    padding: 10px 3%;
-}
-
-.footer-titles {
-    color: #e6e6e6;
-    margin: 15px 0;
-    font-size: 24px;
-    font-family: neosans;
-}
-
-.footer-article {
-    margin: 5px 0 40px;
-}
-
-.footer-article p {
-    font-size: .9em;
-    color: #767676;
-}
-
 .news-title {
-    font-size: .8em;
-}
-
-#footer-subscribe-butn {
-    background: #555;
-    color: #aaa;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 23px;
-    font-size: .9em;
-    margin: 10px;
-}
-
-#footer-subscribe-butn:hover {
-    color: #fff;
-}
-
-.adress-text {
-    font-size: .9em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#footer-form {
-    margin-bottom: 40px;
-}
-
-#footer-form h3 {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#footer-form form {
-    display: inline-block;
-    width: 60%;
-}
-
-#contact-us-form {
-    display: nne;
+  font-size: .8em;
 }
 
 input[type=email],input[type=text],input[type=url] {
@@ -2049,10 +1954,6 @@ input[type=email],input[type=text],input[type=url] {
     .year-menu{
       margin-left: -35px!important;
     }
-    .footer-links{
-       font-size: 13px;
-       margin-top: 60px;
-    }
 }
 
 
@@ -2150,15 +2051,6 @@ input[type=email],input[type=text],input[type=url] {
     margin-left: 70px;
   }
 
-}
-
-@media (max-width: 680px) {
-    #footer-form form {
-        width: 100%;
-    }
-    #footer-form {
-        text-align: center;
-    }
 }
 
 @media (max-width: 480px) {
@@ -2724,6 +2616,22 @@ header, .main-nav-scrolled {
 
 /* Start of Footer */
 
+.site-footer {
+  background: #02060C;
+  color: #fff;
+  font-family: neosans;
+  font-size: 16px;
+}
+
+.site-footer a {
+  font-size: 14px;
+  transition: all .35s ease-out;
+}
+
+.site-footer a:hover {
+  color: #fff !important;
+}
+
   .footer-container {
     margin-left: 0px;
     margin-right: 0px
@@ -2731,20 +2639,56 @@ header, .main-nav-scrolled {
   .subscribe-button {
     background: #000;
     border: 1px solid #fff;
-    color: #f24c40;
+    color: #ee5345;
     cursor: pointer;
     font-family: neosans;
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     padding: 5px 30px;
   }
 
   .footer-box {
-    background-color: grey;
+    background-color: #0E1316;
+    color: #ccc;
+    font-family: gillsansmtpro;
     margin-right: 5px;
     margin-bottom: 5px;
-    height: 50px
+    height: 50px;
   }
+
+  .site-footer .footer-menu-white {
+    color: #ffffff!important;
+    text-decoration: underline;
+  }
+
+  .site-footer .footer-menu-grey {
+    color: #9d9d9d!important;
+  }
+
+  .site-footer .footer-menu-white:hover {
+    color: #fff !important;
+    text-decoration: underline;
+  }
+
+  .company-name {
+    font-size: 36px;
+    color: #bfbfbf
+  }
+
+  .office-address {
+    font-size: 13px;
+    color: #999999
+  }
+
+  .office-address .address-heading {
+    font-family: neosans;
+    color: #e6e6e6
+  }
+
+  .company-address {
+    min-height: 120px 
+  }
+
 
 
 /* End of footer */
@@ -3040,9 +2984,6 @@ header, .main-nav-scrolled {
     height: 42px;
     line-height: 30px;
   }
-  .footer-links {
-    margin-left: -20px;
-  }
   .left-error-content{
     margin-left: 0px;
   }
@@ -3268,9 +3209,6 @@ header, .main-nav-scrolled {
   .navbar-years {
     margin-left: 80px;
   }
-  .footer-links {
-    margin-left: -20px;
-  }
   .left-error-content{
     margin-left: 0px;
   }
@@ -3450,15 +3388,11 @@ header, .main-nav-scrolled {
     margin-top: 0px;
   }
   .year-menu{
-  font-size: 13px;
-  margin-top: 20px;
-  height: 42px;
-  line-height: 30px;
-  width: 90%;
-  }
-  .footer-links {
-    margin-left: -57px;
-    text-align: left;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+    width: 90%;
   }
   .year-menu li{
     margin-top: -15px;
