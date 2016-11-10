@@ -2586,17 +2586,31 @@ header, .main-nav-scrolled {
   bottom: 0;
 }
 
-.pull-down-side{
+.pull-down-side {
   position: relative;
   top:100px
 }
 
-.level-container{
-  margin-left: 50px;
-  margin-right: 50px;
+.level-container {
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
-.level-section{
+.video-desc {
+  color: #ffaf39
+}
+
+.bold-text {
+  font-weight: 900;
+  color: #000000
+}
+
+.level-header {
+  font-weight: 100;
+  color: #484359
+}
+
+.level-section {
   margin-top: 400px;
   margin-bottom: 900px;
 }
