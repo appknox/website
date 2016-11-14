@@ -2592,8 +2592,13 @@ header, .main-nav-scrolled {
 }
 
 .level-container {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 200px;
+  padding-bottom: 50px;
+  margin-right: 200px;
+}
+
+.section {
+  margin-bottom: 100px;
 }
 
 .video-desc {
@@ -2656,7 +2661,7 @@ header, .main-nav-scrolled {
 .subscribe-button {
   background: #000;
   border: 1px solid #fff;
-  color: #ee5345;
+  color: white;
   cursor: pointer;
   font-family: neosans;
   text-align: center;
@@ -2682,6 +2687,11 @@ header, .main-nav-scrolled {
 
 .footer-section2 {
   margin-top: 10px
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .address-section {
@@ -3083,8 +3093,8 @@ header, .main-nav-scrolled {
   }
   .level-container {
     padding-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .level-images {
     display: none;
@@ -3323,8 +3333,8 @@ header, .main-nav-scrolled {
   }
   .level-container {
     padding-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .level-images {
     display: none;
@@ -3584,8 +3594,8 @@ header, .main-nav-scrolled {
   }
   .level-container {
     padding-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .level-images {
     display: none;
