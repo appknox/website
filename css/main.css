@@ -572,10 +572,9 @@ button:focus {
     color: #fff;
     cursor: pointer;
     font-family: neosans;
-    margin-bottom: 30px;
-    margin-top: 50px;
-    margin-left: 480px;
     border-radius: 40px;
+    margin-left: 30px;
+    margin-top: 20px
 }
 
 .request-menu{
@@ -718,35 +717,29 @@ button:focus {
 }
 
 .half-block-container {
-    margin: 10px 0 70px;
+    margin: 10px 0 0px;
     text-align: left;
 }
 
-.half-block-container>li,.half-block-container>div {
-/*width:50%;
-  float:left;*/
-}
-
 #ak-radar-zone {
-    margin: 70px 0 10px;
     padding-bottom: 30px;
 }
 
 #ak-dotted-circle {
     margin-top: 30px;
+    width: 50px;
 }
 
 #ak-cellphone-14 {
     position: relative;
-    margin-top: 30px;
-    max-width: 150px;
-    margin-left: -64%;
+    top: 20px;
+    right: 150px;
+    width: 100px;
 }
 
 #head-txt-14 {
     margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 #many-more-team {
@@ -1011,14 +1004,11 @@ label.error {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     width: 90%;
-    max-width: 400px;
+    max-width: 170px;
 }
 
 #scan-process-list {
     padding-top: 90px;
-}
-
-#radar-list-block {
 }
 
 #radar-list-block>span {
@@ -1094,6 +1084,10 @@ label.error {
     max-width: 90% !important;
     background: #fff;
     padding: 0;
+}
+
+.ak-video-desc {
+  padding: 50px 0px
 }
 
 #uploadAppZone {
@@ -1212,7 +1206,6 @@ label.error {
 
 .why-appknox {
     text-align: left;
-    padding-top: 75px;
 }
 
 .why-appknox h2 {
@@ -1239,22 +1232,6 @@ label.error {
   margin-top: 5px;
 }
 
-#footer-form input {
-    display: inline-block;
-}
-
-.footer-links {
-    text-align: center;
-    font-size: 0.9em;
-    margin-top: 30px;
-}
-
-.footer-links a {
-    display: inline-block;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
 @keyframes radarrotate {
     from {
         m-ms-transform: rotate(0deg);
@@ -1273,89 +1250,8 @@ label.error {
     }
 }
 
-#site-footer {
-    background: #333;
-    padding: 20px 0;
-    color: #9d9d9d;
-}
-
-#site-footer a {
-    color: #9d9d9d !important;
-    transition: all .35s ease-out;
-}
-
-#site-footer a:hover {
-    color: #bbb !important;
-}
-
-#site-footer input[type=email] {
-    border: none;
-    background: #444;
-    padding: 5px 15px;
-    width: 66%;
-}
-
-#site-footer .container>div {
-    padding: 10px 3%;
-    border-bottom: 1px solid #444;
-}
-
-.footer-titles {
-    color: #e6e6e6;
-    margin: 15px 0;
-    font-size: 24px;
-    font-family: neosans;
-}
-
-.footer-article {
-    margin: 5px 0 40px;
-}
-
-.footer-article p {
-    font-size: .9em;
-    color: #767676;
-}
-
 .news-title {
-    font-size: .8em;
-}
-
-#footer-subscribe-butn {
-    background: #555;
-    color: #aaa;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 23px;
-    font-size: .9em;
-    margin: 10px;
-}
-
-#footer-subscribe-butn:hover {
-    color: #fff;
-}
-
-.adress-text {
-    font-size: .9em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#footer-form {
-    margin-bottom: 40px;
-}
-
-#footer-form h3 {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#footer-form form {
-    display: inline-block;
-    width: 60%;
-}
-
-#contact-us-form {
-    display: nne;
+  font-size: .8em;
 }
 
 input[type=email],input[type=text],input[type=url] {
@@ -2007,14 +1903,8 @@ input[type=email],input[type=text],input[type=url] {
     .request-menu{
       margin-right: 40px;
     }
-    .call-button {
-      margin-left: 450px;
-    }
     .press-container{
       margin-top: 120px;
-    }
-    .call-button {
-      margin-left: 450px;
     }
     .sign-pos{
       margin-top: 20px;
@@ -2026,7 +1916,6 @@ input[type=email],input[type=text],input[type=url] {
     .banner-top img{
       margin-left: 100px!important;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2064,10 +1953,6 @@ input[type=email],input[type=text],input[type=url] {
     .year-menu{
       margin-left: -35px!important;
     }
-    .footer-links{
-       font-size: 13px;
-       margin-top: 60px;
-    }
 }
 
 
@@ -2093,11 +1978,6 @@ input[type=email],input[type=text],input[type=url] {
 
     .ak-slide div {
         text-align: center;
-    }
-
-    #home-video-zone {
-        width: 70% !important;
-        margin: 15%;
     }
 
     #text-slider {
@@ -2172,15 +2052,6 @@ input[type=email],input[type=text],input[type=url] {
 
 }
 
-@media (max-width: 680px) {
-    #footer-form form {
-        width: 100%;
-    }
-    #footer-form {
-        text-align: center;
-    }
-}
-
 @media (max-width: 480px) {
     .slide-img-zone {
         display: none;
@@ -2193,11 +2064,6 @@ input[type=email],input[type=text],input[type=url] {
 
     #scan-process-list > li {
         width: 98%;
-    }
-
-    #home-video-zone {
-        width: 98% !important;
-        margin: 20px auto;
     }
 
     #UBAZone {
@@ -2267,9 +2133,6 @@ input[type=email],input[type=text],input[type=url] {
         padding-bottom: 80px;
     }
 
-    #ak-cellphone-14 {
-        left: -40px;
-    }
 
     .ak-container {
         padding-bottom: 50px;
@@ -2654,6 +2517,243 @@ header, .main-nav-scrolled {
 
 /* End of Banner  */
 
+.level-numbers {
+  display: inline;
+  font-family: neosans;
+  font-size: 100px;
+  color: #f05b27
+}
+
+.level-heading {
+  font-family: neosans;
+  font-size: 24px;
+  color: #f05b27;
+}
+
+.displayInline {
+  display: inline;
+}
+
+.level-fullform {
+  font-family: neosans;
+  font-size: 20px;
+  color: #000000;
+}
+
+.level-feat {
+  font-family: gillsansmtpro;
+  font-size: 19px;
+  color: #ffaf39;
+
+}
+
+.level-desc {
+  font-family: gillsansmtpro;
+  font-size: 17px;
+  color: #000000;
+}
+
+.margin-left100 {
+  margin-left: 100px;
+}
+
+.pull-right-side {
+  margin-left: 85px;
+  position: relative;
+  top: -65px
+}
+
+.marginTopIncrease{
+  margin-top: 10px
+}
+
+.positionTop {
+  position: relative;
+  top: -30px
+}
+
+.image-container{
+  width: 200px;
+  height: 200px;
+}
+
+.image-container img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pull-down-side {
+  position: relative;
+  top:100px
+}
+
+.level-container {
+  margin-left: 200px;
+  padding-bottom: 50px;
+  margin-right: 200px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.video-desc {
+  color: #ffaf39
+}
+
+.bold-text {
+  font-weight: 900;
+  color: #000000
+}
+
+.level-header {
+  font-weight: 100;
+  color: #484359
+}
+
+.level-section {
+  margin-top: 400px;
+  margin-bottom: 900px;
+}
+
+.level-images-pos {
+  display: block;
+  margin: 0 auto;
+}
+
+.level-images-pos1 {
+  display: block;
+  margin: 0 auto;
+}
+
+/* end  */
+
+/* Start of Footer */
+
+.site-footer {
+  background: #02060C;
+  color: #fff;
+  font-family: neosans;
+  font-size: 16px;
+}
+
+.footer-nav {
+  margin-left: 2%
+}
+
+.site-footer a {
+  font-size: 16px;
+  transition: all .35s ease-out;
+}
+
+.site-footer a:hover {
+  color: #fff !important;
+}
+
+.footer-container {
+  margin-left: 0px;
+  margin-right: 0px
+}
+.subscribe-button {
+  background: #000;
+  border: 1px solid #fff;
+  color: white;
+  cursor: pointer;
+  font-family: neosans;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px 30px;
+}
+
+.footer-box {
+  background-color: #0E1316;
+  color: #ccc;
+  font-family: gillsansmtpro;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  height: 70px;
+}
+
+.footer-box a {
+  color: #ccc;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.footer-section2 {
+  margin-top: 10px
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.address-section {
+  border-left: 1px solid grey;
+}
+
+.site-footer .footer-menu-white {
+  color: #ffffff!important;
+  text-decoration: underline;
+}
+
+.site-footer .footer-menu-grey {
+  color: #9d9d9d!important;
+}
+
+.site-footer .footer-menu-white:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.company-name {
+  font-size: 36px;
+  color: #bfbfbf
+}
+
+.office-address {
+  font-size: 13px;
+  color: #999999
+}
+
+.office-address .address-heading {
+  font-family: neosans;
+  color: #e6e6e6
+}
+
+.company-address {
+  min-height: 120px
+}
+
+.subscribe-title {
+  color: #000;
+}
+.subscrb-btn{
+  margin: 20px auto;
+  color: #ee5345;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+
+}
+#footer-subscribe-butn {
+  border-radius: 20px;
+  width: 150px;
+  border: none;
+  background-color: #f8f8f8
+}
+
+.email-placeholder {
+  width: 100%
+}
+
+/* End of footer */
 
 @media (min-width: 768px) and (max-width: 990px) {
   .plan-top-line{
@@ -2706,7 +2806,7 @@ header, .main-nav-scrolled {
     margin-right: 25px;
   }
   .call-button {
-    margin-left: 280px;
+    margin-left: 30px;
   }
   .sign-position{
     margin-top: -55px;
@@ -2783,8 +2883,51 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
+  #ak-cellphone-14 {
+    top: -150px;
+    right: 0px;
+  }
+  #radar-list-block {
+      margin-left: 20px;
+  }
+  .radar-desc {
+    margin-left: 225px
+  }
+  #home-video-zone {
+    margin: auto
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
 
-
+  }
+  .level-container {
+    padding-bottom: 0px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 280px
+  }
+  .pull-down-side {
+    top : 20px
+  }
+  .radar-container {
+    margin-bottom: -120px
+  }
+  .update-text {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -2845,9 +2988,6 @@ header, .main-nav-scrolled {
   }
   .request-menu{
   display: none;
-  }
-  .call-button {
-    margin-left: 10px;
   }
   .testimonial-section{
     height: 400px;
@@ -2912,9 +3052,6 @@ header, .main-nav-scrolled {
     height: 42px;
     line-height: 30px;
   }
-  .footer-links {
-    margin-left: -20px;
-  }
   .left-error-content{
     margin-left: 0px;
   }
@@ -2942,6 +3079,86 @@ header, .main-nav-scrolled {
   }
   .ak-appgrader-green-dark {
     text-align: center;
+  }
+  .ak-appgrader-green-dark {
+    text-align: center;
+  }
+  #home-video-zone {
+    margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 300px
+  }
+  .pull-down-side {
+    top : -60px
+  }
+  .image-container img {
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+  #ak-radar-zone {
+    margin-top: 0px
+  }
+  #ak-cellphone-14 {
+    margin: auto;
+    right: 140px;
+  }
+  #radar-img-zone {
+    margin-bottom: 60px;
+    margin-left: 60px;
+  }
+  .button-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .call-button {
+    margin-left: 0;
+  }
+  #head-txt-14  {
+    text-align: center;
+  }
+  .radar-animate {
+    text-align: center;
+  }
+  .radar-desc {
+    text-align: center;
+  }
+  .footer-box {
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: -20px;
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
+  .update-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer-nav {
+    margin-left: 5%;
+  }
+  .footer-nav>li {
+    display: inline-block;
   }
 }
 
@@ -3009,9 +3226,6 @@ header, .main-nav-scrolled {
   }
   .request-menu{
     display: none;
-  }
-  .call-button {
-    margin-left: 10px;
   }
   .testimonial-section{
     height: 450px;
@@ -3084,9 +3298,6 @@ header, .main-nav-scrolled {
   .navbar-years {
     margin-left: 80px;
   }
-  .footer-links {
-    margin-left: -20px;
-  }
   .left-error-content{
     margin-left: 0px;
   }
@@ -3112,7 +3323,77 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
+  #home-video-zone {
+    margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
 
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 360px
+  }
+  #ak-radar-zone {
+    margin-top: 0px
+  }
+  #ak-cellphone-14 {
+    margin: auto;
+    right: 140px;
+  }
+  #radar-img-zone {
+    margin-bottom: 60px;
+    margin-left: 50px;
+  }
+  .button-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .call-button {
+    margin-left: 0;
+  }
+  #head-txt-14  {
+    text-align: center;
+  }
+  .pull-down-side {
+    top : -120px
+  }
+  .image-container img {
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+  .footer-box {
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: -20px;
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
+  .update-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer-nav {
+    margin-left: 10%;
+  }
+  .footer-nav>li {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -3188,8 +3469,12 @@ header, .main-nav-scrolled {
   .request-menu{
     display: none;
   }
+  .button-container {
+    margin: 0 auto;
+    text-align: center;
+  }
   .call-button {
-    margin-left: 10px;
+    margin-left: 0;
   }
   .testimonial-section{
     height: 450px;
@@ -3213,15 +3498,11 @@ header, .main-nav-scrolled {
     margin-top: 0px;
   }
   .year-menu{
-  font-size: 13px;
-  margin-top: 20px;
-  height: 42px;
-  line-height: 30px;
-  width: 90%;
-  }
-  .footer-links {
-    margin-left: -57px;
-    text-align: left;
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    line-height: 30px;
+    width: 90%;
   }
   .year-menu li{
     margin-top: -15px;
@@ -3303,11 +3584,80 @@ header, .main-nav-scrolled {
   .ak-appgrader-green-dark {
     text-align: center;
   }
+  #home-video-zone {
+    margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
 
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .level-images {
+    display: none;
+  }
+  .why-appknox {
+   padding-top: 0px;
+  }
+  .image-container {
+    height: 360px
+  }
+  #ak-radar-zone {
+    margin-top: 0px
+  }
+  #ak-cellphone-14 {
+    top: 0px;
+    right: 20px
+  }
+  #radar-img-zone {
+    margin-bottom: 60px;
+  }
+  #head-txt-14  {
+    text-align: center;
+  }
+  #radar-list-block span {
+    font-size: 0.8em
+  }
+  .pull-down-side {
+    top : -120px
+  }
+  .image-container img {
+    margin-top: 30px;
+    margin-bottom: 30px
+  }
+  .footer-box {
+    margin-left: -20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-right: -20px;
+  }
+  .footer-box a {
+    font-size: 12px
+  }
+  .subscribe-button {
+    width: 150px;
+    display: block!important;
+    margin: 20px auto;
+  }
+  .update-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer-nav {
+    margin-left: 5%;
+  }
+  .footer-nav>li {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 320px) {
     .request-menu{
         display: none;
     }
+
 }
