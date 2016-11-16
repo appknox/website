@@ -1877,10 +1877,6 @@ input[type=email],input[type=text],input[type=url] {
 
 
 @media (max-width: 1024px) {
-    .dast-section, .sast-section, .uba-section {
-        margin-left: -90px;
-        margin-right: -90px;
-    }
     .scan-enter {
       margin-bottom: 77px;
     }
@@ -2596,9 +2592,9 @@ header, .main-nav-scrolled {
 }
 
 .level-container {
-  margin-left: 200px;
+  margin-left: 100px;
   padding-bottom: 50px;
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .section {
