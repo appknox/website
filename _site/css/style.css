@@ -346,13 +346,13 @@ a {
 }
 
 .condition-text{
-    margin-left: 250px;
-    margin-bottom: 40px;
-    font-size: 13px;
-    font-family: lato;
-    font-weight: 400;
-    color: #979797;
-    width: 330px;
+  margin-left: 250px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  font-family: lato;
+  font-weight: 400;
+  color: #979797;
+  width: 330px;
 }
 
 .adress-text li {
