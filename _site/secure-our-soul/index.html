@@ -221,32 +221,34 @@ window._fbq.push(['track', '6057134509288', {'value':'0.01','currency':'INR'}]);
         Viet Nguyen Tuan
       </div>
     </div>
-    <div class="col-md-6 form-field" id="sos-form-section">
-      <div class="form-heading"> I'm Interested, Sign Me Up!
+    <div class="col-md-6">
+      <div class="col-md-12 form-field" id="sos-form-section">
+        <div class="form-heading"> I'm Interested, Sign Me Up!
+        </div>
+        <div id="SOSForm"></div>
+        <form id="submit-sos-form" method="post">
+          <fieldset class="form-group col-md-12 col-sm-8">
+            <div id="name-lp-error" class="sos-form-eorror red"></div>
+            <input class="lined-input" type="text" name="name" placeholder="Full Name" />
+          </fieldset>
+          <fieldset class="form-group col-md-12 col-sm-8">
+            <div id="email-lp-error" class="sos-form-eorror red"></div>
+            <input class="lined-input" type="email" name="email" placeholder="Official Email" />
+          </fieldset>
+          <fieldset class="form-group col-md-12 col-sm-8">
+            <div id="telephone-lp-error" class="sos-form-eorror red"></div>
+            <input class="lined-input" type="tel" name="telephone" placeholder="Phone Number" />
+          </fieldset>
+          <fieldset class="form-group col-md-12 col-sm-8">
+            <div id="app-url-lp-error" class="sos-form-eorror red"></div>
+            <input class="lined-input" type="text" name="app-url" placeholder="App URL or App Name" />
+          </fieldset>
+          <fieldset class="form-group col-md-12 col-sm-8">
+            <input id="SOSForm-submit" class="submit-button btn-lg" type="submit" value="SUBMIT" />
+          </fieldset>
+        </form>
       </div>
-      <div id="SOSForm"></div>
-      <form id="submit-sos-form" method="post">
-        <fieldset class="form-group col-md-12 col-sm-8">
-          <div id="name-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="text" name="name" placeholder="Full Name" />
-        </fieldset>
-        <fieldset class="form-group col-md-12 col-sm-8">
-          <div id="email-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="email" name="email" placeholder="Official Email" />
-        </fieldset>
-        <fieldset class="form-group col-md-12 col-sm-8">
-          <div id="telephone-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="tel" name="telephone" placeholder="Phone Number" />
-        </fieldset>
-        <fieldset class="form-group col-md-12 col-sm-8">
-          <div id="app-url-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="text" name="app-url" placeholder="App URL or App Name" />
-        </fieldset>
-        <fieldset class="form-group col-md-12 col-sm-8">
-          <input id="SOSForm-submit" class="submit-button btn-lg" type="submit" value="SUBMIT" />
-        </fieldset>
-      </form>
-      <div class="condition-text">
+      <div class="col-md-12 condition-text">
         *Our team will get in-touch with you within 24 business hours and schedule a convenient time for your session.
       </div>
     </div>
