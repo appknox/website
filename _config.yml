@@ -31,3 +31,4 @@ exclude:
   - .gitignore
   - .jsbeautifyrc
   - .jshintignore
+  - deploy_github.sh
