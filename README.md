@@ -4,3 +4,7 @@
 # appknox.github.io
 
 Appknox Website
+
+# Deploying
+
+`s3_website push --force`
