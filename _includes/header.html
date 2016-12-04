@@ -21,9 +21,9 @@
     <li class="dropdown" id="resource-menu">
       <a href="/resources" id="resource-link" class="dropdown-toggle menubar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
       <ul class="dropdown-menu resource-sublinks" id="resource-dropdown">
-        <li><a href="/resources#all" class="hashMenu menubar" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
+        <li><a href="/resources/#all" class="hashMenu menubar" data-id="all" id="res-in-all" data-proofer-ignore>All</a></li>
         {% for type in site.data.resource_types%}
-          <li><a href="/resources#{{type.name | downcase}}" class="hashMenu menubar" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}" data-proofer-ignore>{{type.name}}</a></li>
+          <li><a href="/resources/#{{type.name | downcase}}" class="hashMenu menubar" data-id="{{type.name | downcase}}" id="res-in-{{type.name | downcase}}" data-proofer-ignore>{{type.name}}</a></li>
         {% endfor %}
       </ul>
     </li>
