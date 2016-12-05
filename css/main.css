@@ -1812,12 +1812,32 @@ input[type=email],input[type=text],input[type=url] {
   display: none;
 }
 
+.ast-answer {
+  margin-top: 10px
+}
+
+.ast-answer-images {
+  padding-top: 30px;
+  padding-bottom: 120px;
+}
+
+.align-center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alt-image-tag {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .ast-section {
-  margin-top: 30px
+  padding-top: 30px
 }
 
 .ast-sub-question {
-  margin-top: 30px
+  margin-top: 10px
 }
 
 .ast-nav li.active {
