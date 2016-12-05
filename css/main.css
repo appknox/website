@@ -1812,6 +1812,17 @@ input[type=email],input[type=text],input[type=url] {
   display: none;
 }
 
+.ast-section {
+  margin-top: 30px
+}
+
+.ast-sub-question {
+  margin-top: 30px
+}
+
+.ast-nav li.active {
+  background-color: #c0c0c0
+}
 
 /* END OF KNOW MORE PAGE */
 
