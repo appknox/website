@@ -2517,15 +2517,64 @@ header, .main-nav-scrolled {
 
 /* End of Banner  */
 
-.image-container{
-  width: 200px;
-  height: 200px;
+.level-numbers {
+  display: inline;
+  font-family: neosans;
+  font-size: 100px;
+  color: #f05b27
 }
 
 .level-heading {
   font-family: neosans;
   font-size: 24px;
   color: #f05b27;
+}
+
+.displayInline {
+  display: inline;
+}
+
+.level-fullform {
+  font-family: neosans;
+  font-size: 20px;
+  color: #000000;
+}
+
+.level-feat {
+  font-family: gillsansmtpro;
+  font-size: 19px;
+  color: #ffaf39;
+
+}
+
+.level-desc {
+  font-family: gillsansmtpro;
+  font-size: 17px;
+  color: #000000;
+}
+
+.margin-left100 {
+  margin-left: 100px;
+}
+
+.pull-right-side {
+  margin-left: 85px;
+  position: relative;
+  top: -65px
+}
+
+.marginTopIncrease{
+  margin-top: 10px
+}
+
+.positionTop {
+  position: relative;
+  top: -30px
+}
+
+.image-container{
+  width: 200px;
+  height: 200px;
 }
 
 .image-container img {
@@ -2539,7 +2588,13 @@ header, .main-nav-scrolled {
 
 .pull-down-side {
   position: relative;
-  top:130px
+  top:100px
+}
+
+.level-container {
+  margin-left: 100px;
+  padding-bottom: 50px;
+  margin-right: 100px;
 }
 
 .section {
@@ -2559,6 +2614,22 @@ header, .main-nav-scrolled {
   font-weight: 100;
   color: #484359
 }
+
+.level-section {
+  margin-top: 400px;
+  margin-bottom: 900px;
+}
+
+.level-images-pos {
+  display: block;
+  margin: 0 auto;
+}
+
+.level-images-pos1 {
+  display: block;
+  margin: 0 auto;
+}
+
 /* end  */
 
 /* Start of Footer */
@@ -2825,6 +2896,17 @@ header, .main-nav-scrolled {
   #home-video-zone {
     margin: auto
   }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+  }
+  .level-images {
+    display: none;
+  }
   .why-appknox {
    padding-top: 0px;
   }
@@ -3003,6 +3085,19 @@ header, .main-nav-scrolled {
   }
   #home-video-zone {
     margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .level-images {
+    display: none;
   }
   .why-appknox {
    padding-top: 0px;
@@ -3230,6 +3325,19 @@ header, .main-nav-scrolled {
   }
   #home-video-zone {
     margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .level-images {
+    display: none;
   }
   .why-appknox {
    padding-top: 0px;
@@ -3478,6 +3586,19 @@ header, .main-nav-scrolled {
   }
   #home-video-zone {
     margin: auto;
+  }
+  .level-section{
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .level-container {
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .level-images {
+    display: none;
   }
   .why-appknox {
    padding-top: 0px;
