@@ -1844,8 +1844,8 @@ input[type=email],input[type=text],input[type=url] {
   margin-top: 10px
 }
 
-.ast-nav li.active {
-  background-color: #c0c0c0
+.active {
+  background-color: #c0c0c0!important
 }
 
 /* END OF KNOW MORE PAGE */

@@ -2535,19 +2535,22 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".sast-section").on("click", function(){
-    $("#dast-zone").hide();
-    $("#mast-zone").hide();
+    $("#dast-zone, #mast-zone").hide();
     $("#sast-zone").show();
+    $(".sast-section").addClass('active');
+    $(".dast-section, .mast-section").removeClass('active');
   });
   $(".dast-section").on("click", function(){
-    $("#sast-zone").hide();
-    $("#mast-zone").hide();
+    $("#sast-zone, #mast-zone").hide();
     $("#dast-zone").show();
+    $(".dast-section").addClass('active');
+    $(".sast-section, .mast-section").removeClass('active');
   });
   $(".mast-section").on("click", function(){
-    $("#sast-zone").hide();
-    $("#dast-zone").hide();
+    $("#sast-zone, #dast-zone").hide();
     $("#mast-zone").show();
+    $(".mast-section").addClass('active');
+    $(".sast-section, .dast-section").removeClass('active');
   });
 });
 
