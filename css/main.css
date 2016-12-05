@@ -1801,16 +1801,20 @@ input[type=email],input[type=text],input[type=url] {
 /* START OF KNOW MORE PAGE */
 
 .ast-container {
-  padding-top: 120px
+  padding-top: 130px
 }
 
-#dast-zone {
-  display: none;
+#sast-zone {
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
-#mast-zone {
+#dast-zone, #mast-zone {
   display: none;
+  padding-top: 50px;
+  margin-top: -50px;
 }
+
 
 .ast-answer {
   margin-top: 10px
