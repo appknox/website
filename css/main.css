@@ -1713,6 +1713,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 /* RESOURCES PAGE */
+
 /* COMPANY PAGE */
 #about-us {
     background: url(../img/team_working.jpg) no-repeat center center fixed;
@@ -1795,6 +1796,25 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 /* END OF COMPANY PAGE */
+
+
+/* START OF KNOW MORE PAGE */
+
+.ast-container {
+  padding-top: 120px
+}
+
+#dast-zone {
+  display: none;
+}
+
+#mast-zone {
+  display: none;
+}
+
+
+/* END OF KNOW MORE PAGE */
+
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
         background-color: transparent !important;

@@ -2533,6 +2533,23 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".sast-section").on("click", function(){
+    $("#dast-zone").hide();
+    $("#mast-zone").hide();
+    $("#sast-zone").show();
+  });
+  $(".dast-section").on("click", function(){
+    $("#sast-zone").hide();
+    $("#mast-zone").hide();
+    $("#dast-zone").show();
+  });
+  $(".mast-section").on("click", function(){
+    $("#sast-zone").hide();
+    $("#dast-zone").hide();
+    $("#mast-zone").show();
+  });
+});
 
 var  mn = $(".main-nav");
     mns = "main-nav-scrolled";
