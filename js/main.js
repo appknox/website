@@ -2537,20 +2537,20 @@ $(document).ready(function () {
   $(".sast-section").on("click", function(){
     $("#dast-zone, #mast-zone").hide();
     $("#sast-zone").show();
-    $(".sast-section").addClass('active');
-    $(".dast-section, .mast-section").removeClass('active');
+    $(".sast-section").addClass('li-active');
+    $(".dast-section, .mast-section").removeClass('li-active');
   });
   $(".dast-section").on("click", function(){
     $("#sast-zone, #mast-zone").hide();
     $("#dast-zone").show();
-    $(".dast-section").addClass('active');
-    $(".sast-section, .mast-section").removeClass('active');
+    $(".dast-section").addClass('li-active');
+    $(".sast-section, .mast-section").removeClass('li-active');
   });
   $(".mast-section").on("click", function(){
     $("#sast-zone, #dast-zone").hide();
     $("#mast-zone").show();
-    $(".mast-section").addClass('active');
-    $(".sast-section, .dast-section").removeClass('active');
+    $(".mast-section").addClass('li-active');
+    $(".sast-section, .dast-section").removeClass('li-active');
   });
 });
 
