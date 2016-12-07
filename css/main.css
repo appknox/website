@@ -1885,6 +1885,10 @@ line-height: 35px;
   border-radius: 5px
 }
 
+.ast-nav {
+  z-index: -1
+}
+
 
 /* END OF KNOW MORE PAGE */
 
@@ -3026,6 +3030,9 @@ header, .main-nav-scrolled {
   }
   .ast-answer-images img {
     padding: 30px
+  }
+  .address-section {
+  border-left: 0px solid grey;
   }
 }
 @media (max-width: 767px) {
