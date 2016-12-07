@@ -1875,6 +1875,14 @@ input[type=email],input[type=text],input[type=url] {
   color: #939597
 }
 
+.ast-nav li:hover {
+  background-color: #c0c0c0!important;
+  color: #f05b27
+}
+
+.ast-nav {
+  position: fixed;
+}
 
 /* END OF KNOW MORE PAGE */
 
@@ -3010,6 +3018,9 @@ header, .main-nav-scrolled {
     width: 150px;
     display: block!important;
     margin: 20px auto;
+  }
+  .ast-container {
+    padding-top: 170px;
   }
 }
 
