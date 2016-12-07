@@ -3045,7 +3045,8 @@ header, .main-nav-scrolled {
     padding: 15px 30px 15px 15px;
     margin-top: -15px;
     margin-left: -15px;
-    width: 100%
+    width: 100%;
+    text-align: center;
   }
   .ast-container
     .container {
