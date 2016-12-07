@@ -3024,6 +3024,9 @@ header, .main-nav-scrolled {
   .ast-container {
     padding-top: 170px;
   }
+  .ast-answer-images img {
+    padding: 30px
+  }
 }
 @media (max-width: 767px) {
   .ast-nav li {
@@ -3053,7 +3056,10 @@ header, .main-nav-scrolled {
   #sast-zone, #dast-zone, #mast-zone {
     padding-top: 350px;
     margin-top: -200px;
-}
+  }
+  .ast-answer-images img {
+    padding: 10px
+  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .enterprise-features{
