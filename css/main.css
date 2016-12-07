@@ -1859,7 +1859,6 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .li-active {
-  background-color: #e6e6e6!important;
   color: #f05b27
 }
 
@@ -1875,14 +1874,17 @@ input[type=email],input[type=text],input[type=url] {
   color: #939597
 }
 
-.ast-nav li:hover {
-  background-color: #c0c0c0!important;
-  color: #f05b27
+.ast-nav li a {
+padding: 5px 15px!important;
+height: 40px;
+line-height: 35px;
 }
 
-.ast-nav {
-  position: fixed;
+.ast-nav li:hover {
+  background-color: #f0fbf2!important;
+  border-radius: 5px
 }
+
 
 /* END OF KNOW MORE PAGE */
 
