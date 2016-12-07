@@ -3025,7 +3025,35 @@ header, .main-nav-scrolled {
     padding-top: 170px;
   }
 }
-
+@media (max-width: 767px) {
+  .ast-nav li {
+    display: inline-block;
+  }
+  .ast-container {
+    padding-top: 0px
+  }
+  .ast-nav {
+    top: 70px;
+    background-color: white;
+    z-index: 1000;
+    padding: 15px 30px 15px 15px;
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 100%
+  }
+  .ast-container
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  .ast-section {
+    padding-top: 180px
+  }
+  .ast-nav li a:hover {
+    background-color: #f0fbf2!important;
+    color: #f05b27
+  }
+}
 @media (min-width: 425px) and (max-width: 767px) {
   .enterprise-features{
     margin-left: 130px;
