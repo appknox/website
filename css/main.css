@@ -1815,9 +1815,23 @@ input[type=email],input[type=text],input[type=url] {
   margin-top: -140px;
 }
 
+.ast-question {
+  font-size: 20px;
+  font-family: neosans;
+  color: #f05b27
+}
+
+.ast-sub-question {
+  font-size: 20px;
+  font-family: gillsansmtpro;
+  color: #000000
+}
 
 .ast-answer {
-  margin-top: 10px
+  margin-top: 10px;
+  font-size: 17px;
+  font-family: gillsansmtpro;
+  color: #595959
 }
 
 .ast-answer-images {
@@ -1845,8 +1859,22 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .li-active {
-  background-color: #c0c0c0!important
+  background-color: #e6e6e6!important;
+  color: #f05b27
 }
+
+.know-more-text {
+  font-size: 24px;
+  font-family: neosans;
+  color: #b1cab8
+}
+
+.ast-nav li {
+  font-size: 24px;
+  font-family: neosans;
+  color: #939597
+}
+
 
 /* END OF KNOW MORE PAGE */
 
