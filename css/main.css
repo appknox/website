@@ -3067,6 +3067,9 @@ header, .main-nav-scrolled {
   .ast-answer-images img {
     padding: 10px
   }
+  .address-section {
+  border-left: 0px solid grey;
+  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .enterprise-features{
