@@ -3123,7 +3123,8 @@ header, .main-nav-scrolled {
   }
   .ta-heading {
     margin-top: 0px;
-    margin-left: 0px
+    margin-left: 0px;
+    text-align: center;
   }
   .ast-try-appknox {
     height: 50px;
