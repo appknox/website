@@ -1868,6 +1868,10 @@ input[type=email],input[type=text],input[type=url] {
   color: #b1cab8
 }
 
+.know-more-text a {
+  color: #b1cab8!important
+}
+
 .ast-nav li {
   font-size: 24px;
   font-family: neosans;
