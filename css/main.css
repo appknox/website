@@ -1889,6 +1889,41 @@ line-height: 35px;
   border-radius: 5px
 }
 
+.ast-sub-section {
+  margin-top: 30px
+}
+
+.ast-threat-report {
+  background-color: #a0aabc;
+  font-family: neosans;
+  height: 200px
+}
+
+.tr-heading {
+  color: #2b3b57;
+  font-size: 24px;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+.tr-sub-heading {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 100px
+}
+
+.ast-try-appknox {
+  background-color: #ff3333;
+  height: 200px;
+}
+
+.ta-heading {
+  font-size: 24px;
+  font-family: neosans;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 30px
+}
 
 /* END OF KNOW MORE PAGE */
 
@@ -3034,6 +3069,9 @@ header, .main-nav-scrolled {
   .address-section {
   border-left: 0px solid grey;
   }
+  .ta-heading {
+    margin-top: 60px;
+  }
 }
 @media (max-width: 767px) {
   .ast-nav li {
@@ -3071,6 +3109,27 @@ header, .main-nav-scrolled {
   .address-section {
   border-left: 0px solid grey;
   }
+  .ast-sub-section {
+    margin-top: 0px
+  }
+  .tr-heading {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 30px
+  }
+  .tr-sub-heading {
+    margin-left: 0px;
+    padding-top: 10px
+  }
+  .ta-heading {
+    margin-top: 0px;
+    margin-left: 0px
+  }
+  .ast-try-appknox {
+    height: 50px;
+    padding-top: 10px
+  }
+
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .enterprise-features{
