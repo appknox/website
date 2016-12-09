@@ -3089,6 +3089,7 @@ header, .main-nav-scrolled {
 @media (max-width: 767px) {
   .ast-nav li {
     display: inline-block;
+    width: 85px
   }
   .ast-container {
     padding-top: 0px
