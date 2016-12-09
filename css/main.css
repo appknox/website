@@ -1935,6 +1935,14 @@ line-height: 35px;
   margin-left: 20%
 }
 
+.move-next {
+  float: right;
+}
+
+.move-next a {
+  color: #f05b27!important
+}
+
 /* END OF KNOW MORE PAGE */
 
 @media (min-width: 768px) {
