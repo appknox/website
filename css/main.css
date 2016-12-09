@@ -3098,8 +3098,7 @@ header, .main-nav-scrolled {
     background-color: #f2f2f2;
     z-index: 1000;
     padding: 15px 30px 15px 15px;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: 59px;
     width: 100%;
     text-align: center;
   }
@@ -3113,8 +3112,9 @@ header, .main-nav-scrolled {
     color: #f05b27
   }
   #sast-zone, #dast-zone, #mast-zone {
-    padding-top: 350px;
-    margin-top: -200px;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-left: 0px!important;
   }
   .ast-answer-images img {
     padding: 10px
@@ -3142,6 +3142,17 @@ header, .main-nav-scrolled {
   .ast-try-appknox {
     height: 50px;
     padding-top: 10px
+  }
+  #sticky {
+    padding-left: 0px!important;
+    padding-right: 0px!important
+  }
+  .stick {
+    top: 0px;
+    z-index: 1000
+  }
+  .non-stick {
+    margin-left: 0px
   }
 
 }
