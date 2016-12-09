@@ -1875,7 +1875,8 @@ input[type=email],input[type=text],input[type=url] {
 .ast-nav li {
   font-size: 24px;
   font-family: neosans;
-  color: #939597
+  color: #939597;
+  width: 100px
 }
 
 .ast-nav li a {
@@ -1923,6 +1924,15 @@ line-height: 35px;
   color: #fff;
   margin-top: 50px;
   margin-left: 30px
+}
+
+.stick {
+  position: fixed!important;
+  top: 100px;
+}
+
+.non-stick {
+  margin-left: 20%
 }
 
 /* END OF KNOW MORE PAGE */
@@ -3071,6 +3081,9 @@ header, .main-nav-scrolled {
   }
   .ta-heading {
     margin-top: 60px;
+  }
+  .stick {
+    top: 160px;
   }
 }
 @media (max-width: 767px) {

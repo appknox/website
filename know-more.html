@@ -8,16 +8,17 @@ permalink:
   <div class="container">
     <div class="row">
       <!-- sidebar -->
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="sidebar" role="navigation">
-        <ul class="nav affix ast-nav">
+      <div id="sticky-anchor"></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="sticky" role="navigation">
+        <ul class="nav ast-nav">
           <div class="know-more-text"> Know more </div>
           <li><a class="sast-section li-active" href="#sast-zone">SAST</a></li>
           <li><a class="dast-section" href="#dast-zone">DAST</a></li>
           <li><a class="mast-section" href="#mast-zone">MAST</a></li>
         </ul>
-      </div>
+    </div>
       <!-- main area -->
-      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="non-sticky">
         <div id="sast-zone">
           <div class="ast-section">
             <div class="ast-question">
@@ -236,6 +237,8 @@ permalink:
       </div>
     </div>
   </div>
+</div>
+<div id="footer">
 </div>
 <div class="row ast-sub-section">
   <div class="col-lg-10 col-md-10 col-sm-9 ast-threat-report">
