@@ -1940,7 +1940,8 @@ line-height: 35px;
 }
 
 .move-next a {
-  color: #f05b27!important
+  color: #f05b27!important;
+  border-bottom: 1px dotted #f05b27;
 }
 
 /* END OF KNOW MORE PAGE */
