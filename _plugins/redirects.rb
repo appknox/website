@@ -12,7 +12,7 @@ module Jekyll
 
     def process_yaml
       file_path = @site.source + "/_data/_redirects.yml"
-      if File.exists?(file_path)
+      if File.exist?(file_path)
         YAML.load_file(file_path).each do | new_url, old_url |
           generate_aliases( old_url, new_url )
         end
