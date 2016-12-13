@@ -1713,6 +1713,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 /* RESOURCES PAGE */
+
 /* COMPANY PAGE */
 #about-us {
     background: url(../img/team_working.jpg) no-repeat center center fixed;
@@ -1795,6 +1796,156 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 /* END OF COMPANY PAGE */
+
+
+/* START OF KNOW MORE PAGE */
+
+.ast-container {
+  padding-top: 130px
+}
+
+#sast-zone {
+  padding-top: 140px;
+  margin-top: -140px;
+}
+
+#dast-zone, #mast-zone {
+  display: none;
+  padding-top: 140px;
+  margin-top: -140px;
+}
+
+.ast-question {
+  font-size: 20px;
+  font-family: neosans;
+  color: #f05b27
+}
+
+.ast-sub-question {
+  font-size: 20px;
+  font-family: gillsansmtpro;
+  color: #000000
+}
+
+.ast-answer {
+  margin-top: 10px;
+  font-size: 17px;
+  font-family: gillsansmtpro;
+  color: #595959
+}
+
+.ast-answer-images {
+  padding-top: 30px;
+  padding-bottom: 120px;
+}
+
+.align-center img {
+  display: block!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.alt-image-tag {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ast-section {
+  padding-top: 30px
+}
+
+.ast-sub-question {
+  margin-top: 10px
+}
+
+.li-active {
+  color: #f05b27
+}
+
+.know-more-text {
+  font-size: 24px;
+  font-family: neosans;
+  color: #b1cab8
+}
+
+.know-more-text a {
+  color: #b1cab8!important
+}
+
+.ast-nav li {
+  font-size: 24px;
+  font-family: neosans;
+  color: #939597;
+  width: 100px
+}
+
+.ast-nav li a {
+padding: 5px 15px!important;
+height: 40px;
+line-height: 35px;
+}
+
+.ast-nav li:hover {
+  background-color: #f0fbf2!important;
+  border-radius: 5px
+}
+
+.ast-sub-section {
+  margin-top: 30px
+}
+
+.ast-threat-report {
+  background-color: #a0aabc;
+  font-family: neosans;
+  height: 200px
+}
+
+.tr-heading {
+  color: #2b3b57;
+  font-size: 24px;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+.tr-sub-heading {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 100px
+}
+
+.ast-try-appknox {
+  background-color: #ff3333;
+  height: 200px;
+}
+
+.ta-heading {
+  font-size: 24px;
+  font-family: neosans;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 30px
+}
+
+.stick {
+  position: fixed!important;
+  top: 100px;
+}
+
+.non-stick {
+  margin-left: 20%
+}
+
+.move-next {
+  float: right;
+}
+
+.move-next a {
+  color: #f05b27!important;
+  border-bottom: 1px dotted #f05b27;
+}
+
+/* END OF KNOW MORE PAGE */
+
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
         background-color: transparent !important;
@@ -2928,8 +3079,93 @@ header, .main-nav-scrolled {
     display: block!important;
     margin: 20px auto;
   }
+  .ast-container {
+    padding-top: 170px;
+  }
+  .ast-answer-images img {
+    padding: 30px
+  }
+  .address-section {
+  border-left: 0px solid grey;
+  }
+  .ta-heading {
+    margin-top: 60px;
+  }
+  .stick {
+    top: 160px;
+  }
 }
+@media (max-width: 767px) {
+  .ast-nav li {
+    display: inline-block;
+    width: 85px
+  }
+  .ast-container {
+    padding-top: 0px
+  }
+  .ast-nav {
+    top: 70px;
+    background-color: #f2f2f2;
+    z-index: 1000;
+    padding: 15px 30px 15px 15px;
+    margin-top: 59px;
+    width: 100%;
+    text-align: center;
+  }
+  .ast-container
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  .ast-nav li a:hover {
+    background-color: #f0fbf2!important;
+    color: #f05b27
+  }
+  #sast-zone, #dast-zone, #mast-zone {
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-left: 0px!important;
+  }
+  .ast-answer-images img {
+    padding: 10px
+  }
+  .address-section {
+  border-left: 0px solid grey;
+  }
+  .ast-sub-section {
+    margin-top: 0px
+  }
+  .tr-heading {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 30px
+  }
+  .tr-sub-heading {
+    margin-left: 0px;
+    padding-top: 10px
+  }
+  .ta-heading {
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .ast-try-appknox {
+    height: 50px;
+    padding-top: 10px
+  }
+  #sticky {
+    padding-left: 0px!important;
+    padding-right: 0px!important
+  }
+  .stick {
+    top: 0px;
+    z-index: 1000
+  }
+  .non-stick {
+    margin-left: 0px
+  }
 
+}
 @media (min-width: 425px) and (max-width: 767px) {
   .enterprise-features{
     margin-left: 130px;

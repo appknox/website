@@ -2533,6 +2533,77 @@ $(document).ready(function () {
   });
 });
 
+function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var footer_top = $("#footer").offset().top;
+    var div_top = $('#sticky-anchor').offset().top;
+    var div_height = $("#sticky").height();
+
+    if (window_top + div_height > footer_top) {
+        $('#sticky').removeClass('stick');
+      }
+    else if (window_top > div_top) {
+        $('#sticky').addClass('stick');
+        $('#non-sticky').addClass('non-stick');
+        $("#sast-zone, #dast-zone, #mast-zone").css({"margin-left": "60px"});
+    } else {
+        $('#sticky').removeClass('stick');
+        $('#non-sticky').removeClass('non-stick');
+        $("#sast-zone, #dast-zone, #mast-zone").css({"margin-left" : "0px"});
+    }
+}
+
+$(function () {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+
+
+function show_sast() {
+  $("#dast-zone, #mast-zone").hide();
+  $("#sast-zone").show();
+  $(".sast-section").addClass('li-active');
+  $(".dast-section, .mast-section").removeClass('li-active');
+}
+
+function show_dast() {
+  $("#sast-zone, #mast-zone").hide();
+  $("#dast-zone").show();
+  $(".dast-section").addClass('li-active');
+  $(".sast-section, .mast-section").removeClass('li-active');
+}
+
+function show_mast() {
+  $("#sast-zone, #dast-zone").hide();
+  $("#mast-zone").show();
+  $(".mast-section").addClass('li-active');
+  $(".sast-section, .dast-section").removeClass('li-active');
+}
+
+$(document).ready(function () {
+  $(".sast-section").on("click", function(){
+    show_sast();
+  });
+  $(".dast-section").on("click", function(){
+    show_dast();
+  });
+  $(".mast-section").on("click", function(){
+    show_mast();
+  });
+});
+
+if(window.location.hash) {
+   var hashkey = window.location.hash;
+   if (hashkey == "#show_sast") {
+     show_sast();
+   }
+   else if (hashkey == "#show_dast") {
+     show_dast();
+   }
+   else if (hashkey == "#show_mast") {
+    show_mast();
+   }
+}
 
 var  mn = $(".main-nav");
     mns = "main-nav-scrolled";
