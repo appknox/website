@@ -32,3 +32,4 @@ exclude:
   - .jsbeautifyrc
   - .jshintignore
   - deploy_github.sh
+  - s3_website.yml
