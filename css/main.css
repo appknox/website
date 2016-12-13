@@ -1175,6 +1175,10 @@ label.error {
     text-align: center;
 }
 
+.tr-sub-heading a {
+    text-decoration: underline;
+}
+
 .awards-image>img {
     text-align: center;
     width: 170px;
@@ -1832,6 +1836,10 @@ input[type=email],input[type=text],input[type=url] {
   font-size: 17px;
   font-family: gillsansmtpro;
   color: #595959
+}
+
+.ast-answer li,ul {
+    list-style-type: disc;
 }
 
 .ast-answer-images {
