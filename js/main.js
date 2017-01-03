@@ -697,10 +697,6 @@ $(document).ready(function(){
         $('.carousel-next').on('click touchend', function() {
           $('#carousel-example-generic').carousel('next')
         });
-
-
-
-
     }
 });
 
@@ -1161,10 +1157,14 @@ PricingManager.prototype.resizeMiddleBox = function(){
   }
 }
 
+
 PricingManager.prototype.faqControl = function(){
-  $('.faq-quest-area').on('click touchend', function(ev) {
-    var faqEle = $(ev.currentTarget).parent();
-    var icon = $(ev.currentTarget).parent().find("i");
+  $('.faq-quest-area').on('click', function() {
+    faqControls();
+  });
+  function faqControls(){
+    var faqEle = $(event.currentTarget).parent();
+    var icon = $(event.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
     $(".faq-answer").each(function(){
       if($(this).parent()[0] !== faqEle[0]){
@@ -1174,13 +1174,10 @@ PricingManager.prototype.faqControl = function(){
         }
       }
     });
-
     faqEle.find(".faq-answer").slideToggle(400);
-
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
-
-  });
+  }
 }
 
 PricingManager.prototype.publishAppCountChange = function(){
