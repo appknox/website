@@ -2828,6 +2828,10 @@ header, .main-nav-scrolled {
   padding: 5px 30px;
 }
 
+#subscribe-form .email-placeholder {
+  color: #000
+}
+
 .footer-box {
   background-color: #0E1316;
   color: #ccc;
