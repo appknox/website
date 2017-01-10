@@ -562,6 +562,10 @@ a {
   font-size: 16px;
 }
 
+.footer-nav {
+  margin-left: 2%
+}
+
 .site-footer a {
   font-size: 16px;
   transition: all .35s ease-out;
@@ -578,12 +582,20 @@ a {
 .subscribe-button {
   background: #000;
   border: 1px solid #fff;
-  color: #ee5345;
+  color: white;
   cursor: pointer;
   font-family: neosans;
   text-align: center;
   font-size: 13px;
   padding: 5px 30px;
+}
+
+.inblock {
+    display: inline-block !important;
+}
+
+#subscribe-form .email-placeholder {
+  color: #000
 }
 
 .footer-box {
