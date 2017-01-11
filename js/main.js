@@ -2494,23 +2494,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  $('.month').on('click touchend', function() {
-    $(".month").addClass("blue");
-    $(".year").removeClass("blue");
-    $(".yearly-plan").hide();
-    $(".monthly-plan").show();
-    $(".hide-savings").removeClass("show-savings");
-  });
-$('.year').on('click touchend', function() {
-    $(".year").addClass("blue");
-    $(".month").removeClass("blue");
-    $(".monthly-plan").hide();
-    $(".yearly-plan").show();
-    $(".hide-savings").addClass("show-savings");
-  });
-});
-
-$(document).ready(function(){
   $(".toggleNew").on("click", function(){
       var $href = $(this).attr('href');
       var $anchor = $(''+$href).offset();
@@ -2532,8 +2515,12 @@ $(document).ready(function () {
 
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
-    var footer_top = $("#footer").offset().top;
-    var div_top = $('#sticky-anchor').offset().top;
+    if (document.getElementById("footer")) {
+      var footer_top = $("#footer").offset().top;
+    }
+    if (document.getElementById("sticky-anchor")) {
+      var div_top = $('#sticky-anchor').offset().top;
+    }
     var div_height = $("#sticky").height();
 
     if (window_top + div_height > footer_top) {
