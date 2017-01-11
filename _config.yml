@@ -15,6 +15,10 @@ url: "https://www.appknox.com" # the base hostname & protocol for your site
 twitter_username: appknox
 github_username:  appknox
 
+# Gem option
+gems:
+  - jekyll-multiple-languages-plugin
+
 # Build settings
 markdown: kramdown
 
