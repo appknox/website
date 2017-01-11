@@ -2098,6 +2098,12 @@ line-height: 35px;
     .year-menu{
       margin-left: -35px!important;
     }
+    #first-container {
+        padding-top: 110px;
+    }
+    #ak-menu li a {
+      padding: 15px 9px;
+    }
 }
 
 
@@ -2952,7 +2958,8 @@ header, .main-nav-scrolled {
     margin-bottom: 10px;
   }
   .request-menu{
-    margin-right: 25px;
+    margin-right: -20px;
+    padding: 5px 16px
   }
   .call-button {
     margin-left: 30px;
