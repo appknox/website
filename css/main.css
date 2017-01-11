@@ -2087,7 +2087,8 @@ line-height: 35px;
       margin-left: 235px;
     }
     .scan-enter{
-      margin-left: 235px;
+      margin-left: 0px;
+      text-align: center;
     }
     .enterprise-features{
       margin-left: 100px;
@@ -2928,9 +2929,6 @@ header, .main-nav-scrolled {
   }
   .scan-benifits{
     width:56%;
-    margin-left: 235px;
-  }
-  .scan-enter{
     margin-left: 235px;
   }
   .enterprise-features{
