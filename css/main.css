@@ -2017,11 +2017,13 @@ line-height: 35px;
 
 }
 
+@media (max-width: 1200px) {
+  .scan-enter {
+    margin-bottom: -8px;
+  }
+}
 
 @media (max-width: 1024px) {
-    .scan-enter {
-      margin-bottom: 77px;
-    }
     .client-name {
       top: 320px;
       right: 100px;
@@ -2071,6 +2073,7 @@ line-height: 35px;
       display: block !important ;
       width: 30%;
       margin-left: 250px;
+      margin-top: 5%
     }
     .plan-bottom-line{
       width: 20%;
