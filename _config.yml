@@ -20,7 +20,11 @@ gems:
   - jekyll-multiple-languages-plugin
 
 # Available Languages
-languages: [en", "ja"]  
+languages: [en", "ja"]
+
+# Exclude from localization
+
+exclude_from_localizations: ["javascript", "images", "css"]
 
 # Build settings
 markdown: kramdown
