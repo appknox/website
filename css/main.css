@@ -516,18 +516,6 @@ p {
 .ak-btn-round {
     border-radius: 20px;
 }
-
-.plan-btn-round {
-    border-radius: 50px;
-    height: 40px;
-    width: 144px;
-    background-color: #ffffff !important;
-    color: #A5A5A5 !important;
-    border-color: black !important;
-    font-family: neosans;
-    font-size: 14px;
-}
-
 button:active {
     outline: none !important;
     border: none !important;
@@ -535,12 +523,6 @@ button:active {
 
 button:focus {
     outline:0 !important;
-}
-
-.blue {
-    font-weight: 900; !important;
-    color: #000000 !important;
-    box-shadow: 0px 0px 2px 2px #999 !important;
 }
 
 .hide-savings{
@@ -1339,6 +1321,7 @@ input[type=email],input[type=text],input[type=url] {
     font-style: neosans;
     font-size: 14px;
     margin-top: 5px;
+    margin-bottom: 20px
 }
 
 .pricing-desc {

@@ -2494,23 +2494,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
-  $('.month').on('click touchend', function() {
-    $(".month").addClass("blue");
-    $(".year").removeClass("blue");
-    $(".yearly-plan").hide();
-    $(".monthly-plan").show();
-    $(".hide-savings").removeClass("show-savings");
-  });
-$('.year').on('click touchend', function() {
-    $(".year").addClass("blue");
-    $(".month").removeClass("blue");
-    $(".monthly-plan").hide();
-    $(".yearly-plan").show();
-    $(".hide-savings").addClass("show-savings");
-  });
-});
-
-$(document).ready(function(){
   $(".toggleNew").on("click", function(){
       var $href = $(this).attr('href');
       var $anchor = $(''+$href).offset();
