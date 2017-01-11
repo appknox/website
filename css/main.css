@@ -590,7 +590,7 @@ button:focus {
     width:73%;
     height: 40px;
     margin-bottom: 30px;
-    margin-top: 4%;
+    margin-top: 10%;
 }
 
 .letter-spacing {
@@ -641,7 +641,7 @@ button:focus {
 }
 
 .scan-enter {
-    margin-bottom: 105px;
+    margin-bottom: 20px;
     width: 100%;
     text-align: left;
     margin-left: 40px;
@@ -1274,7 +1274,7 @@ input[type=email],input[type=text],input[type=url] {
     border-style: solid;
     border-width: 0px 1px 0px 1px;
     border-color: #f2f2f2;
-    height: 516px;
+    height: 440px;
 }
 
 .plan-section:hover {
