@@ -19,6 +19,9 @@ github_username:  appknox
 gems:
   - jekyll-multiple-languages-plugin
 
+# Available Languages
+languages: [en", "ja"]  
+
 # Build settings
 markdown: kramdown
 
