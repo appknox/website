@@ -2515,8 +2515,12 @@ $(document).ready(function () {
 
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
-    var footer_top = $("#footer").offset().top;
-    var div_top = $('#sticky-anchor').offset().top;
+    if (document.getElementById("footer")) {
+      var footer_top = $("#footer").offset().top;
+    }
+    if (document.getElementById("sticky-anchor")) {
+      var div_top = $('#sticky-anchor').offset().top;
+    }
     var div_height = $("#sticky").height();
 
     if (window_top + div_height > footer_top) {
