@@ -113,3 +113,14 @@ footer:
   emailGoesHere: あなたの電子メールはここに行く
   submit: 送信
   close: 閉じる
+
+company:
+  ethicalHackers: We’re a community of ethical hackers <br> dedicated to unmatched mobile app security
+  proactiveAlways: Proactive Always
+  ourMission: Our Mission
+  safeAndSecure: To build a safe and secure mobile ecosystem using a system plus human approach to outsmart hackers
+  howItBegan: How it All Began
+  explosiveGrowth: The explosive growth of mobile apps has created an industry of app development where time-to-market is everything. Security has suffered often, and very publicly, insecure apps have leaked payment, banking, and other sensitive user data much to the embarrassment of major brands.
+  securitySpace: We’ve been in the security space for over five years now. But the mission to build a safe and secure mobile ecosystem began in January 2014 when many public disclosures came to light - Starbucks, Snapchat, and more. Private and confidential data of millions of people were revealed publicly.
+  ideaOfBuilding: This led to the idea of building Appknox, a complete mobile security solution to help app owners secure their apps.
+  appSecurityIssues: Majority of the apps in the app stores were vulnerable to security issues
