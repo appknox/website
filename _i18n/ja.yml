@@ -23,9 +23,9 @@ index:
   simplifyingSecurity: How We're Simplifying Security
   buildSecureApps: Now you can build secure apps without being a security expert! See how.
   threeDetailedAssessments: With Appknox your mobile app goes through three detailed security assessments all through one simple dashboard
-  SAST: Static Application Security Testing
-  DAST: Dynamic Application Security Testing
-  UBA: User Behavioural Analaysis
+  sast: Static Application Security Testing
+  dast: Dynamic Application Security Testing
+  uba: User Behavioural Analaysis
   fullyAutomated: Fully Automated | Basic Configuration Issues
   cloudHostedDevice: Cloud Hosted Device | Realtime Testing
   manualAssessment: Manual Assessment | Industry Renowned Ethical Hackers for You!
@@ -43,3 +43,16 @@ index:
   stayAChamp: Stay a Champ
   higherROI: Higher ROI To Your Business
   increaseProductivity : Increase your team’s productivity using our 360 degree mobile security solution with faster on boarding, easy switch on and switch off business model, ensuring faster releases for your mobile apps without compromising on security.
+  whatOurUsersSay: What Our Users Say
+  appknoxHasDeepUnderstanding: The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.
+  vietNguyenTuan: Viet Nguyen Tuan
+  appknoxHelpedUsScan: Appknox helped us scan our app thoroughly. They also tagged a security researcher who helped us understand all our issues, clarify our doubts and suggested appropriate solutions to fix them.
+  neerajKumar: Neeraj Kumar
+  appknoxHelpedUsFind: Appknox helped us find some really interesting security loopholes and also helped us to fix it.
+  hariPalappetty: Hari Palappetty
+  likeTheDetailedAnalysis: I like the detailed analysis along with code snippet that potentially leads to a problem. The turnaround time from app submission to report generation is quick which helps us to identify problem in our product and enables us to address it quickly.
+  dwiSasongkoSupriyadi: Dwi Sasongko Supriyadi
+  appknoxHelpedUsImmensely: The Appknox team helped us immensely with our security efforts, with reasonable pricing, keeping in mind that we’re a startup.
+  lokeshJain: Lokesh Jain
+  appknoxIsBestSecurityVendor: Being a pentester in this industry dealing with many clients and vendors, I must say Appknox is one of the best security vendors I have engaged with. They are up-to-date when it comes to quality and timely delivery. I highly recommend Appknox for your next application security.
+  chintanGurjar: Chintan Gurjar
