@@ -215,10 +215,10 @@ permalink: /company/
   <div class="horzr-sep-block ak-white-bg"></div>
   <div class="horzr-sep-block ak-white-bg"></div>
   <ul class="container ak-container">
-    <li><h1 class="text-center neosans-40">Partners</h1></li>
+    <li><h1 class="text-center neosans-40">{% t company.partners %}</h1></li>
     <li class="midsize-container">
       <p class="text-center medium-font">
-        One great partnership with the right person can have an incredible impact on your business.
+        {% t company.greatPartnership %}
       </p>
     </li>
     <li id="partners-zone" class="text-center">
@@ -235,7 +235,7 @@ permalink: /company/
       </ul>
     </li>
     <li>
-      <p class="text-center gray-8">Write to us at  <a class="submenu" href="mailto:patner@appknox.comm">patner@appknox.com</a></p>
+      <p class="text-center gray-8">{% t company.writeToUsAt %} <a class="submenu" href="mailto:patner@appknox.comm">patner@appknox.com</a></p>
     </li>
   </ul>
 </section>
@@ -245,7 +245,7 @@ permalink: /company/
   <div class="horzr-sep-block ak-white-bg"></div>
   <div class="horzr-sep-block ak-white-bg"></div>
   <ul class="container ak-container">
-    <li><h1 class="text-center gray-5">Supported By</h1></li>
+    <li><h1 class="text-center gray-5">{% t company.supportedBy %} </h1></li>
     <li id="supporters-zone" class="text-center">
       <ul class="text-center">
         {% for supporter in site.data.supporters %}
