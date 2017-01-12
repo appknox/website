@@ -3,6 +3,7 @@ layout: default
 title: Appknox - Security zen as a service
 excerpt: Appknox detects and addresses vulnerabilities in mobile apps enabling businesses achieve faster time to market, higher productivity and complete mobile security
 ---
+
 <section id="text-slider">
   <div class="container" id="ak-slide-zone">
     <ul id="ak-slide-container">
@@ -11,18 +12,18 @@ excerpt: Appknox detects and addresses vulnerabilities in mobile apps enabling b
         <div class="col-md-6 col-sm-6">
           <div>
             <h1 class="ak-ele-animate" id="left-slide-text" data-init-css='{"margin-top":"30px","opacity":1}' data-appear-css='{"margin-top":"40px","opacity":1}' data-perish-css='{"opacity":0}' data-ak-anim-time="900">
-              <div class="text-breaker">75% Apps Fail Basic </div>
-              <div class="text-breaker">Security Checks, says Gartner</div>
+              <div class="text-breaker">{% t index.appFail %}</div>
+              <div class="text-breaker">{% t index.securityChecks %}</div>
             </h1>
             <div class="clearfix"></div>
             <p class="ak-ele-animate" data-init-css='{"marginTop":"20px","opacity":0.5}' data-appear-css='{"margin-top":"50px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
-              How safe is your app?
+              {% t index.howSafe %}
             </p>
           </div>
           <div class="clearfix"></div>
           <a href="/find-out-now/" target="_blank" class="ak-ele-animate inslide-buttons pointer neosans submenu" data-init-css='{"marginTop":"50px","opacity":0.5}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
             <div class="text-breaker">
-              <p class="uppercase">Find Out Now</p>
+              <p class="uppercase">{% t index.findOut %}</p>
             </div>
           </a>
         </div>
@@ -34,16 +35,16 @@ excerpt: Appknox detects and addresses vulnerabilities in mobile apps enabling b
         <div class="col-md-6 col-sm-6">
           <div>
             <h1 class="ak-ele-animate" data-init-css='{"margin-top":"30px","opacity":1}' data-appear-css='{"margin-top":"50px","opacity":1}' data-perish-css='{"opacity":0}' data-ak-anim-time="900">
-              Target, Walmart and eBay have all been hacked
+              {% t index.allHacked %}
             </h1>
             <div class="clearfix"></div>
             <p class="ak-ele-animate" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
-              Where does your business stand?
+              {% t index.businessStand %}
             </p>
           </div>
           <div class="clearfix"></div>
           <a href="/app-grader/" target="_blank" class="ak-ele-animate pointer inslide-buttons neosans submenu" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
-            <p class="uppercase">Get FREE Basic Security Check</p>
+            <p class="uppercase">{% t index.freeSecurityCheck %}</p>
           </a>
         </div>
         <div class="col-md-6 col-sm-6 slide-img-zone">
@@ -54,17 +55,17 @@ excerpt: Appknox detects and addresses vulnerabilities in mobile apps enabling b
         <div class="col-md-6 col-sm-6">
           <div>
             <h1 class="ak-ele-animate" data-init-css='{"margin-top":"30px","opacity":1}' data-appear-css='{"margin-top":"30px","opacity":1}' data-perish-css='{"opacity":0}' data-ak-anim-time="900">
-              Security Zen as a Service
+              {% t index.securityZen %}
             </h1>
             <div class="clearfix"></div>
             <p class="ak-ele-animate" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"50px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
-              Dedicated, world-class security team on your side
+              {% t index.worldClassTeam %}
             </p>
           </div>
           <div class="clearfix"></div>
           <a href="/get-in-touch/" target="_blank" class="ak-ele-animate  pointer inslide-buttons neosans submenu" data-init-css='{"marginTop":"0px","opacity":0.5}' data-appear-css='{"margin-top":"20px","opacity":1}' data-perish-css='{"opacity":0,"margin-top":0}' data-ak-anim-time="700">
             <div class="text-breaker">
-              <p class="uppercase">Get In Touch </p>
+              <p class="uppercase">{% t index.getInTouch %}</p>
             </div>
           </a>
         </div>
@@ -94,15 +95,15 @@ excerpt: Appknox detects and addresses vulnerabilities in mobile apps enabling b
           <img src="/img/appgrader/free-shield.png" class="center-block" alt="Free Shield" />
         </div>
         <div class="col-md-10 shield-text">
-          <div class="shield-main-text">Get started with FREE Appknox AppGrader</div>
-          <p class="shield-sub-text">Take control of your app before someone else does</p>
+          <div class="shield-main-text">{% t index.getStartedAppGrader %}</div>
+          <p class="shield-sub-text">{% t index.takeControl %}</p>
         </div>
       </div>
       <div class="col-md-3 grader-logo ak-appgrader-green-bg">
         <img src="/img/appgrader/logo-and-text.png" class="center-block img-responsive" alt="Logo and Text" />
       </div>
       <div class="col-md-4 ak-appgrader-green-dark">
-           <a class="btn-lg try-now-button" href="/app-grader/" target="_blank"><span class="try-now-text">TRY NOW</span></a>
+           <a class="btn-lg try-now-button" href="/app-grader/" target="_blank"><span class="try-now-text">{% t index.tryNow %}</span></a>
       </div>
     </div>
   </div>
