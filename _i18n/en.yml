@@ -23,3 +23,13 @@ index:
   simplifyingSecurity: How We're Simplifying Security
   buildSecureApps: Now you can build secure apps without being a security expert! See how.
   threeDetailedAssessments: With Appknox your mobile app goes through three detailed security assessments all through one simple dashboard
+  SAST: Static Application Security Testing
+  DAST: Dynamic Application Security Testing
+  UBA: User Behavioural Analaysis
+  fullyAutomated: Fully Automated | Basic Configuration Issues
+  cloudHostedDevice: Cloud Hosted Device | Realtime Testing
+  manualAssessment: Manual Assessment | Industry Renowned Ethical Hackers for You!
+  fullyAutomatedScan: A fully automated scan designed to analyze application binaries for issues in code and design configurations that can lead to security vulnerabilities.
+  teamInteracts: Your team interacts with your application installed on our cloud hosted devices while we diagnose leakages using proprietary data flow algorithms for an automated real-time testing.
+  deeperManualAssessment: Nothing can outdo human creativity, and so we deploy our industry renowned ethical hackers to perform a deeper manual assessment to catch the hidden bugs and to ensure you and your business are secured from hacks.
+  knowMore: Know more >
