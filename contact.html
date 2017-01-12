@@ -7,7 +7,7 @@ permalink: /contact/
 <section id="first-container" class="contact-page">
     <div class="text-center" id="cuform">
       <div class="col-md-12">
-        <h4 class="form-title neosans-40">We Would Love to Hear From You</h4>
+        <h4 class="form-title neosans-40">{% t contact.weWouldLoveToHear %}</h4>
         <div id="messageBoxCU" class="neosans"> </div>
       </div>
       <div class="col-md-3" id="hello-zone-cu">
@@ -25,48 +25,48 @@ permalink: /contact/
           <form id="ak-contact-from" method="post" data-attr-submitted = "no">
             <fieldset class="form-group col-md-6 col-sm-6">
               <div id="name-cu-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control placeholder-position" name="name" placeholder="Full Name">
+              <input type="text" class="form-control placeholder-position" name="name" placeholder="{% t contact.fullName %}">
             </fieldset>
             <fieldset class="form-group col-md-6 col-sm-6">
               <div id="email-cu-error" class="cu-form-eorror red"></div>
-              <input type="email" class="form-control placeholder-position" name="email" placeholder="Business Email">
+              <input type="email" class="form-control placeholder-position" name="email" placeholder="{% t contact.businessEmail %}">
             </fieldset>
             <fieldset class="form-group col-md-6 col-sm-6">
               <div id="company-cu-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control placeholder-position" name="company" placeholder="Company">
+              <input type="text" class="form-control placeholder-position" name="company" placeholder="{% t contact.company %}">
             </fieldset>
             <fieldset class="form-group col-md-6 col-sm-6">
               <div id="designation-cu-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control placeholder-position" name="designation" placeholder="Job Title">
+              <input type="text" class="form-control placeholder-position" name="designation" placeholder="{% t contact.jobTitle %}">
             </fieldset>
             <fieldset class="form-group col-md-6 col-sm-6">
               <div id="phone-cu-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control placeholder-position" name="phone" placeholder="Phone/Mobile">
+              <input type="text" class="form-control placeholder-position" name="phone" placeholder="{% t contact.phone %}">
             </fieldset>
             <div class="clearfix"></div>
             <ul class="ak-checkbox-pannel" id="cu-ak-checkbox-pannel">
               <li class="col-md-4 col-sm-6 radio-apk" id="purchase-input-li"  data-selected="no">
                 <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-                <div class="ak-cb-title">Purchase</div>
+                <div class="ak-cb-title">{% t contact.purchase %}</div>
                 <input name="purchase" id="purchase-input" type="hidden" value="0" />
               </li>
               <li class="col-md-4 col-sm-6  radio-apk"  id="collaborate-input-li" data-selected="no">
                 <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-                <div class="ak-cb-title">Collaborate</div>
+                <div class="ak-cb-title">{% t contact.collaborate %}</div>
                 <input name="collaborate" id="collaborate-input" type="hidden" value="0" />
               </li>
               <li class="col-md-4 col-sm-6 radio-apk" id="talk-to-us-input-li" data-selected="no">
                 <div class="ak-cb-depth"><div class="ak-cb-depth-inner"></div></div>
-                <div class="ak-cb-title">Enquire</div>
+                <div class="ak-cb-title">{% t contact.enquire %}</div>
                 <input name="talk" id="talk-input" type="hidden" value="0" />
               </li>
             </ul>
             <div class="clearfix"></div>
             <fieldset class="form-group col-md-12">
-              <textarea class="form-control" name="remarks" rows="4" cols="50"  placeholder="Remarks/Message"></textarea>
+              <textarea class="form-control" name="remarks" rows="4" cols="50"  placeholder="{% t contact.remarks %}"></textarea>
             </fieldset>
             <div class="clearfix"></div>
-            <input type="submit" id="contact-form-submit" class="btn btn-primary button-red btn-lg ak-btn-round uppercase" value="Submit">
+            <input type="submit" id="contact-form-submit" class="btn btn-primary button-red btn-lg ak-btn-round uppercase" value="{% t contact.submit %}">
           </form>
         </div>
       </div>

@@ -73,3 +73,16 @@ resources:
   Report: Report
   Infographic: Infographic
   Ebook: Ebook
+
+contact:
+  weWouldLoveToHear: We Would Love to Hear From You
+  fullName: Full Name
+  businessEmail: Business Email
+  company: Company
+  jobTitle: Job Title
+  phone: Phone/Mobile
+  purchase: Purchase
+  collaborate: Collaborate
+  enquire: Enquire
+  remarks: Remarks/Message
+  submit: Submit
