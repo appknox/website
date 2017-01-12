@@ -68,7 +68,7 @@ index:
 resources:
   learnMore: Learn More About Security
   accessReport:  Access our meticolously compiled in-house reports on mobile app security.
-  All: All
+  all: All
   Case-Study: Case-Study
   Report: Report
   Infographic: Infographic
@@ -86,3 +86,16 @@ contact:
   enquire: Enquire
   remarks: Remarks/Message
   submit: Submit
+
+header:
+  home: ホーム
+  pricing: 価格設定
+  resources: リソース
+  company: 会社
+  aboutUs: 私たちに関しては
+  team: チーム
+  press: 押す
+  partners: パートナー
+  blog: ブログ
+  contactUs: お問い合わせ
+  requestDemo: デモを要求する

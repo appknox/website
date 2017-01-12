@@ -68,7 +68,7 @@ index:
 resources:
   learnMore: Learn More About Security
   accessReport:  Access our meticolously compiled in-house reports on mobile app security.
-  All: All
+  all: All
   Case-Study: Case-Study
   Report: Report
   Infographic: Infographic
@@ -86,3 +86,16 @@ contact:
   enquire: Enquire
   remarks: Remarks/Message
   submit: Submit
+
+header:
+  home: Home
+  pricing: Pricing
+  resources: Resources
+  company: Company
+  aboutUs: About Us
+  team: Team
+  press: Press
+  partners: Partners
+  blog: Blog
+  contactUs: Contact Us
+  requestDemo: REQUEST DEMO

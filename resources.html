@@ -16,7 +16,7 @@ permalink: /resources/
 </section>
 <section id="resources-zone">
   <div class="resource-sublinks resource-sublinks-inner text-center gillsans">
-    <a href="/resources/#all" class="hashMenu menubar" data-id="all" data-proofer-ignore>{% t resources.All %}</a>
+    <a href="/resources/#all" class="hashMenu menubar" data-id="all" data-proofer-ignore>{% t resources.all %}</a>
     {% for type in site.data.resource_types%}
       <a href="/resources/#{{type.name | downcase}}" class="hashMenu menubar" data-id="{{type.name | downcase}}" data-proofer-ignore>{% t resources.{{type.name}} %}</a>
     {% endfor %}
