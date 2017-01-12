@@ -2,42 +2,42 @@
   <div class="row">
     <div class="col-md-12">
       <ul class="nav navbar-nav footer-nav">
-        <li><a href="/pricing/#faq" class="submenu footer-menu-grey">FAQs</a></li>
-        <li><a href="https://github.com/appknox/careers" class="submenu footer-menu-grey">Careers</a></li>
-        <li><a href="https://blog.appknox.com" class="submenu footer-menu-grey">Blog</a></li>
-        <li><a href="/pricing" class="submenu footer-menu-grey">Pricing</a></li>
-        <li><a href="/resources" class="submenu footer-menu-grey">Resources</a></li>
-        <li><a href="/company/#team" class="submenu footer-menu-grey">Team</a></li>
-        <li><a href="/contact" class="submenu footer-menu-grey">Contact Us</a></li>
+        <li><a href="/pricing/#faq" class="submenu footer-menu-grey">{% t footer.faqs %}</a></li>
+        <li><a href="https://github.com/appknox/careers" class="submenu footer-menu-grey">{% t footer.careers %}</a></li>
+        <li><a href="https://blog.appknox.com" class="submenu footer-menu-grey">{% t footer.blog %}</a></li>
+        <li><a href="/pricing" class="submenu footer-menu-grey">{% t footer.pricing %}</a></li>
+        <li><a href="/resources" class="submenu footer-menu-grey">{% t footer.resources %}</a></li>
+        <li><a href="/company/#team" class="submenu footer-menu-grey">{% t footer.team %}</a></li>
+        <li><a href="/contact" class="submenu footer-menu-grey">{% t footer.contactUs %}</a></li>
       </ul>
     </div>
     <div class="col-md-12 footer-section2">
       <div class="col-md-8">
         <div class="col-md-12">
           <div class="col-md-2">
-            <h4 class="update-text"> UPDATES </h4>
+            <h4 class="update-text">{% t footer.updates %}</h4>
           </div>
 
           <div class="col-md-10">
               <div class="white subscribe-button btn-lg ak-btn-round uppercase inblock" data-toggle="modal" data-target="#subscribeModal">
-                SUBSCRIBE
+                {% t footer.subscribe %}
               </div>
             <div class="modal fade" id="subscribeModal" role="dialog">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title subscribe-title">Subscribe</h4>
+                    <h4 class="modal-title subscribe-title">{% t footer.subscribe %}</h4>
                   </div>
                   <div class="modal-body">
                     <form id="subscribe-form" action="/" method="post">
                       <div id="email-su-error" class="cu-form-eorror red"></div>
-                      <input type="email" class="email-placeholder" name="email" placeholder = "your email goes here">
-                      <div class="subscrb-btn"><input type="submit" id="footer-subscribe-butn" value="SUBMIT"></div>
+                      <input type="email" class="email-placeholder" name="email" placeholder = "{% t footer.emailGoesHere %}">
+                      <div class="subscrb-btn"><input type="submit" id="footer-subscribe-butn" value="{% t footer.submit %}"></div>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{% t footer.close %}</button>
                   </div>
                 </div>
               </div>

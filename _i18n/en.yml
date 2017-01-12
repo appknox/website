@@ -99,3 +99,17 @@ header:
   blog: Blog
   contactUs: Contact Us
   requestDemo: REQUEST DEMO
+
+footer:
+  faqs: FAQs
+  careers: Careers
+  blog: Blog
+  pricing: Pricing
+  resources: Resources
+  team: team
+  contactUs: Contact Us
+  updates: UPDATES
+  subscribe: SUBSCRIBE
+  emailGoesHere: your email goes here
+  submit: SUBMIT
+  close: Close

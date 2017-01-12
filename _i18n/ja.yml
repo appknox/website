@@ -99,3 +99,17 @@ header:
   blog: ブログ
   contactUs: お問い合わせ
   requestDemo: デモを要求する
+
+footer:
+  faqs: よくある質問
+  careers: キャリア
+  blog: ブログ
+  pricing: 価格設定
+  resources: リソース
+  team: チーム
+  contactUs: お問い合わせ
+  updates: 更新
+  subscribe: 申し込む
+  emailGoesHere: あなたの電子メールはここに行く
+  submit: 送信
+  close: 閉じる
