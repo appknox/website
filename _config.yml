@@ -20,7 +20,7 @@ gems:
   - jekyll-multiple-languages-plugin
 
 # Available Languages
-languages: [en", "ja"]
+languages: ["en", "ja"]
 
 # Exclude from localization
 
