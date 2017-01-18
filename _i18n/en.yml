@@ -161,3 +161,21 @@ error:
   or: OR
   freeDemo: Take A Free Demo
   gradeNow: Grade Your App Now!
+
+sya:
+  completeAppSecurity: Complete Mobile App Security
+  alwaysProtected: We believe that no business, whether big or small, should take security lightly. We combine enterprise-grade security features with intelligent audits to ensure customer and business data is always protected.
+  completeMobileSecurity: Once you are onboard, here’s what we’ll do to ensure complete mobile security
+  automatedSecurityChecks: Point us to your app URL and we’ll put it through our automated security checks
+  inHouseSecurityNinjas: Our in-house security ninjas will then perform manual assessment wearing a hacker’s hat
+  detailedSecurityReport: We’ll email you a detailed security report and set up a call to help you understand and resolve these issues
+  appknoxHelpedUsFindLoopholes: Appknox helped us find some really interesting security loopholes and fix it.
+  secureYourApp: Secure Your App
+  whyTestWithAppknox: Why You Should Test With Appknox
+  testingAutomation: Effortless Testing Automation
+  stateOfTheArtSecurity: We have a state of the art security testing solution that automatically discovers basic security misconfigurations in less than 5 minutes.
+  eagleEyedNinjas: Eagle Eyed Ninjas
+  ninjasThinkLikeHackers: Our in-house security ninjas think like hackers and perform detailed manual assesments identifying advanced security threats in your mobile apps.
+  proactiveAttitude: Proactive Attitude
+  enterpriseSecurityFeatures: We combine enterprise-grade security features with intelligent audits to ensure customer and business data is always protected. After all, an ounce of prevention is worth a pound of cure.
+  understandingOfSecurity: The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.
