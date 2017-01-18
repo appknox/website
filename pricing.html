@@ -24,22 +24,22 @@ permalink: /pricing/
           <img src="{{plan.pricingplan.plan.img}}" alt="{{plan.pricingplan.plan.alt}}" />
         </div>
         <div class="platform-type plan-top-line">
-        {{plan.pricingplan.planTitle}}<br>
+        {% t pricing.{{plan.pricingplan.planTitle}} %}<br>
         <img src="{{plan.pricingplan.pricings.img}}" alt="{{plan.pricingplan.pricings.alt}}" />
         </div>
         {% include scan_list.html %}
         <table class="scan-benifits">
           <tr>
-            <td>{{plan.pricingplan.firstScan.name}}</td>
-            <td>{{plan.pricingplan.firstScan.desc}}</td>
+            <td>{% t pricing.{{plan.pricingplan.firstScan.name}} %}</td>
+            <td>{% t pricing.{{plan.pricingplan.firstScan.desc}} %}</td>
           </tr>
           <tr>
-            <td>{{plan.pricingplan.secondScan.name}}</td>
-            <td>{{plan.pricingplan.secondScan.desc}}</td>
+            <td>{% t pricing.{{plan.pricingplan.secondScan.name}} %}</td>
+            <td>{% t pricing.{{plan.pricingplan.secondScan.desc}} %}</td>
           </tr>
           <tr>
-            <td>{{plan.pricingplan.thirdScan.name}}</td>
-            <td>{{plan.pricingplan.thirdScan.desc}}</td>
+            <td>{% t pricing.{{plan.pricingplan.thirdScan.name}} %}</td>
+            <td>{% t pricing.{{plan.pricingplan.thirdScan.desc}} %}</td>
           </tr>
         </table>
         <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="{{plan.pricingplan.link}}">Request Quote</div>

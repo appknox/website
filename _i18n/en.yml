@@ -154,6 +154,19 @@ pricing:
   appknoxHasDeepUnderstanding: The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.
   detailedAnalysis: The detailed analysis &amp; turnaround time from app submission to report generation is quick which helps us to identify problem in our product and enables us to address it quickly.
   faqs: FAQs
+  singlePlatform: Single Platform
+  dualPlatform: Dual Platform
+  multiplePlatform: Multiple Platform
+  remedition: Remedition
+  oneSession: 1 Session
+  threeSession: 3 Session
+  fiveSession: 5 Session
+  sla: SLA
+  5To7WorkingDays: 5-7 Working Days
+  3To5WorkingDays: 3-5 Working Days
+  7To9WorkingDays: 7-9 Working Days
+  noOfScans: No.of Scans
+  unlimited: unlimited
 
 error:
   notFound: Error 404, the content you are looking for doesn't exist

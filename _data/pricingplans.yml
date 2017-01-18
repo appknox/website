@@ -2,55 +2,55 @@
       plan:
         img: /img/plans-22.png
         alt : Appknox Lite Plan
-      planTitle: Single Platform
+      planTitle: singlePlatform
       pricings:
         img: /img/pricing-19.png
         alt: Appknox any one platform either Android or iOS
       firstScan:
-        name: Remedition
-        desc: 1 Session
+        name: remedition
+        desc: oneSession
       secondScan:
-        name: SLA
-        desc: 3-5 Working Days
+        name: sla
+        desc: 3To5WorkingDays
       thirdScan:
-        name: No.of Scans
-        desc: Unlimited
+        name: noOfScans
+        desc: unlimited
       link: https://try.appknox.com/demo-lite
 
 - pricingplan :
       plan :
         img: /img/plans-23.png
         alt : Appknox Essential Plan
-      planTitle: Dual Platform
+      planTitle: dualPlatform
       pricings:
         img: /img/pricing-20.png
         alt: Appknox Dual Platform including only Android and iOS
       firstScan:
-        name: Remedition
-        desc: 3 Session
+        name: remedition
+        desc: threeSession
       secondScan:
-        name: SLA
-        desc: 5-7 Working Days
+        name: sla
+        desc: 5To7WorkingDays
       thirdScan:
-        name: No.of Scans
-        desc: Unlimited
+        name: noOfScans
+        desc: unlimited
       link: https://try.appknox.com/demo-essential
 
 - pricingplan :
       plan :
         img: /img/plans-24.png
         alt : Appknox Premium Plan
-      planTitle: Multiple Platform
+      planTitle: multiplePlatform
       pricings:
         img: /img/pricing-21.png
         alt: Appknox Multiple Platform including Android, iOS and Windows
       firstScan:
-        name: Remedition
-        desc: 5 Session
+        name: remedition
+        desc: fiveSession
       secondScan:
-        name: SLA
-        desc: 7-9 Working Days
+        name: sla
+        desc: 7To9WorkingDays
       thirdScan:
-        name: No.of Scans
-        desc: Unlimited
+        name: noOfScans
+        desc: unlimited
       link: https://try.appknox.com/demo-premium
