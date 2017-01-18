@@ -230,4 +230,17 @@ know_more:
   copyPasteAppURL: Copy paste your app’s URL or upload your application binary to initiate the scan
   staticTestingResults: Get your static testing results overview in under 10 mins on your dashboard
   downloadReport: Download your detailed security report in PDF
-  learnMoreAboutSAST: Learn more about DAST
+  learnMoreAboutDAST: Learn more about DAST
+  learnMoreAboutDAST: Learn more about MAST
+  dastAnalysis: A Dynamic Application Security Testing (DAST) analysis is generally specifically designed to detect conditions indicative of a security vulnerability in an application while in its running state. One of the most common and classic methods of hacking used by hackers is the Man in the Middle Attack (MiTM).
+  fullyAutomatedSimulation: The Appknox DAST is a fully automated simulation of real-time interactions between users (your team) and our physical Android and iOS devices accessed by you via our cloud-based infrastructure. Our system analyzes, detects and catches loopholes that are threatening in nature and helps businesses plug and secure them from runtime and network attacks like MiTM.
+  differenceBetween: Difference between SAST &amp; DAST
+  unlikeSASTAnalysis: Unlike the SAST analysis, Appknox DAST works by running your uploaded application binary on our cloud-hosted devices. Your app is simply uploaded and put in a test environment where actual attacks are carried out during this simulation to detect advanced vulnerabilities.
+  dastRunsOn: The Appknox DAST runs on the same platform as the Appknox SAST, giving businesses the option to scan their apps individually or together by both analysis, for an integrated view of all threats detected.
+  fasterBetter: Faster, Better !
+  weHaveImplemented: We’ve also implemented a state-of-the-art device-farm consisting of multiple Android and iOS devices  which gives you more stability, faster scans and a boost to your overall testing experience.
+  howDASTWorks: How Appknox DAST works?
+  initiateDynamicScan: After you initiate a dynamic scan on your dashboard, your app is installed onto one of our devices.
+  teamActsAsAUser: Your team acts as a user and performs actions like a user would. Our system simultaneously performs several attacks while your app is interacting with our device.
+  generateDetailedReport: Generate a detailed report from the Appknox dashboard and request a remediation call to fix vulnerabilities detected (optional).
+  redTeaming: Countries around the world, regularly perform a military activity called Red Teaming. The Red Team, comprised of their greatest minds, uses publicly available information and strategically makes plans to exploit any loopholes in the defense and security strategy. MAST stands for Manual Application Security Testing where Appknox acts as your Red-Team.
