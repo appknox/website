@@ -169,7 +169,7 @@ pricing:
   unlimited: unlimited
   sast: SAST (Static)
   dast: DAST (Dynamic)
-  uba: UBA (Manual) 
+  uba: UBA (Manual)
 
 error:
   notFound: Error 404, the content you are looking for doesn't exist
@@ -329,3 +329,11 @@ appgrader:
   getToKnowTreats: Get to know your threats before they get to know your data!
   gradeNow: GRADE NOW
   proactiveAlways: Proactive Always
+
+landing_page:
+  fullName: Full Name (Required)
+  businessEmail: Business Email (Required)
+  companyName: Company Name
+  phoneNumber: Phone Number
+  appURL: App URL
+  submit: Submit
