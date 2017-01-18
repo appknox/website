@@ -244,3 +244,17 @@ know_more:
   teamActsAsAUser: Your team acts as a user and performs actions like a user would. Our system simultaneously performs several attacks while your app is interacting with our device.
   generateDetailedReport: Generate a detailed report from the Appknox dashboard and request a remediation call to fix vulnerabilities detected (optional).
   redTeaming: Countries around the world, regularly perform a military activity called Red Teaming. The Red Team, comprised of their greatest minds, uses publicly available information and strategically makes plans to exploit any loopholes in the defense and security strategy. MAST stands for Manual Application Security Testing where Appknox acts as your Red-Team.
+  personalRedTeam: Consider Appknox as your personal Red Team for mobile app security.
+  builtOverYears: Although our automated systems have been built over years of extensive research and have proven to detect and help neutralize over 100,000 threats, we believe that nothing is as intelligent as the human mind.
+  treatsInApps: At Appknox, we’re proud to have put together some of the brightest minds from the industry who have detected threats in applications like Facebook, Skype, Walmart, Snapchat and many more.
+  inHouseHackersDo: What our in-house hackers do?
+  overviewOfProcess: Our security researchers typically follow a defined, tested and tried process to break down apps and detect threats. Here’s an overview of that process
+  technologyProcess: Identification of technology stack
+  analyzingTreat: Analyzing threat landscape
+  settingUpBreakpoints: Setting up breakpoints on critical functionalities
+  testingResponses: Testing responses and detecting bugs
+  performingExploits: Performing exploits for advanced threat detection
+  howMASTWorks: How Appknox MAST works?
+  initiateManualScan: Once you have initiated the manual scan from your dashboard, our security researchers are notified and your scan gets initiated.
+  daysToFinish: Our researchers typically take 3-5 days to finish their process of scanning your app.
+  onceManualAssessment: Once your manual assessment is completed, our security researchers upload your app’s detailed report and send you an email notification, notifying you of the same.
