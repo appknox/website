@@ -199,8 +199,66 @@ sos:
   incorporateSecurity: Incorporate Security Into Your Business Processes
   understandHowToSolve: Understand how to solve the challenge of making security concerns part of the development cycle.
   callNow: CALL NOW
-  
+
 press:
   press: Press
   mentions: Mentions
   year: YEAR
+
+know_more:
+  knowMore: Know more
+  sast: SAST
+  dast: DAST
+  mast: MAST
+  whatIsSAST: What is SAST ?
+  whatIsDAST: What is DAST ?
+  whatIsMAST: What is MAST ?
+  sastIs: Static Application Security Testing (SAST) can be considered as testing an application from the inside out by examining its source code or application binaries for issues based on configuration which point towards a security vulnerability.
+  howWeStand: How we stand out?
+  36TestCases: 36 different test cases
+  testCasesCover: Our tests cover industry security compliances like OWASP Top 10, PCI-DSS, HIPAA and other commonly exploited basic security threat parameters.Your report is then generated with threat details listed with zero false positives according to high, medium and low severity.
+  performMultipleScans: Perform multiple scans simultaneously
+  appknoxArchitecture: Appknox's architecture is built using multiple &#39;task-workers&#39;. Each worker runs on a different machine to scan multiple applications in parallel to one another. This means that as a business you can perform multiple scans simultaneously wihout any interruption on the Appknox dashboard.
+  assessYourApp: Assess your app even during development
+  ciIntegration: The CI integration feature lets you assess your app even during development or before it’s published on any application store.
+  sastAnalysis: Our SAST analysis supports the three major platforms - iOS, Android and Windows.
+  easyToScaleUp: It’s Easy to Scale up with Appknox
+  scaleWithoutIncurring: Scale without incurring absurd costs on dedicated security resources or additional headcount.
+  flexibilityForAll: Flexibility for all team sizes.
+  quickFeedback: Quick feedback through SAST to include in your development cycle
+  sastWorkflow: SAST workflow
+  copyPasteAppURL: Copy paste your app’s URL or upload your application binary to initiate the scan
+  staticTestingResults: Get your static testing results overview in under 10 mins on your dashboard
+  downloadDetailedReport: Download your detailed security report in PDF
+  learnMoreAboutDAST: Learn more about DAST
+  learnMoreAboutMAST: Learn more about MAST
+  dastAnalysis: A Dynamic Application Security Testing (DAST) analysis is generally specifically designed to detect conditions indicative of a security vulnerability in an application while in its running state. One of the most common and classic methods of hacking used by hackers is the Man in the Middle Attack (MiTM).
+  fullyAutomatedSimulation: The Appknox DAST is a fully automated simulation of real-time interactions between users (your team) and our physical Android and iOS devices accessed by you via our cloud-based infrastructure. Our system analyzes, detects and catches loopholes that are threatening in nature and helps businesses plug and secure them from runtime and network attacks like MiTM.
+  differenceBetween: Difference between SAST &amp; DAST
+  unlikeSASTAnalysis: Unlike the SAST analysis, Appknox DAST works by running your uploaded application binary on our cloud-hosted devices. Your app is simply uploaded and put in a test environment where actual attacks are carried out during this simulation to detect advanced vulnerabilities.
+  dastRunsOn: The Appknox DAST runs on the same platform as the Appknox SAST, giving businesses the option to scan their apps individually or together by both analysis, for an integrated view of all threats detected.
+  fasterBetter: Faster, Better !
+  weHaveImplemented: We’ve also implemented a state-of-the-art device-farm consisting of multiple Android and iOS devices  which gives you more stability, faster scans and a boost to your overall testing experience.
+  howDASTWorks: How Appknox DAST works?
+  initiateDynamicScan: After you initiate a dynamic scan on your dashboard, your app is installed onto one of our devices.
+  teamActsAsAUser: Your team acts as a user and performs actions like a user would. Our system simultaneously performs several attacks while your app is interacting with our device.
+  generateDetailedReport: Generate a detailed report from the Appknox dashboard and request a remediation call to fix vulnerabilities detected (optional).
+  redTeaming: Countries around the world, regularly perform a military activity called Red Teaming. The Red Team, comprised of their greatest minds, uses publicly available information and strategically makes plans to exploit any loopholes in the defense and security strategy. MAST stands for Manual Application Security Testing where Appknox acts as your Red-Team.
+  personalRedTeam: Consider Appknox as your personal Red Team for mobile app security.
+  builtOverYears: Although our automated systems have been built over years of extensive research and have proven to detect and help neutralize over 100,000 threats, we believe that nothing is as intelligent as the human mind.
+  treatsInApps: At Appknox, we’re proud to have put together some of the brightest minds from the industry who have detected threats in applications like Facebook, Skype, Walmart, Snapchat and many more.
+  inHouseHackersDo: What our in-house hackers do?
+  overviewOfProcess: Our security researchers typically follow a defined, tested and tried process to break down apps and detect threats. Here’s an overview of that process
+  technologyProcess: Identification of technology stack
+  analyzingTreat: Analyzing threat landscape
+  settingUpBreakpoints: Setting up breakpoints on critical functionalities
+  testingResponses: Testing responses and detecting bugs
+  performingExploits: Performing exploits for advanced threat detection
+  howMASTWorks: How Appknox MAST works?
+  initiateManualScan: Once you have initiated the manual scan from your dashboard, our security researchers are notified and your scan gets initiated.
+  daysToFinish: Our researchers typically take 3-5 days to finish their process of scanning your app.
+  onceManualAssessment: Once your manual assessment is completed, our security researchers upload your app’s detailed report and send you an email notification, notifying you of the same.
+  failPlayStore: 95% of e-commerce mobile apps on the PlayStore fail basic security testing.
+  securityThreatReport: Appknox E-commerce Global Security Threat Report.
+  downloadReport: Download Report
+  tryAppknox: Try Appknox for your App

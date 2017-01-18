@@ -229,9 +229,9 @@ know_more:
   sastWorkflow: SAST workflow
   copyPasteAppURL: Copy paste your app’s URL or upload your application binary to initiate the scan
   staticTestingResults: Get your static testing results overview in under 10 mins on your dashboard
-  downloadReport: Download your detailed security report in PDF
+  downloadDetailedReport: Download your detailed security report in PDF
   learnMoreAboutDAST: Learn more about DAST
-  learnMoreAboutDAST: Learn more about MAST
+  learnMoreAboutMAST: Learn more about MAST
   dastAnalysis: A Dynamic Application Security Testing (DAST) analysis is generally specifically designed to detect conditions indicative of a security vulnerability in an application while in its running state. One of the most common and classic methods of hacking used by hackers is the Man in the Middle Attack (MiTM).
   fullyAutomatedSimulation: The Appknox DAST is a fully automated simulation of real-time interactions between users (your team) and our physical Android and iOS devices accessed by you via our cloud-based infrastructure. Our system analyzes, detects and catches loopholes that are threatening in nature and helps businesses plug and secure them from runtime and network attacks like MiTM.
   differenceBetween: Difference between SAST &amp; DAST
@@ -258,3 +258,7 @@ know_more:
   initiateManualScan: Once you have initiated the manual scan from your dashboard, our security researchers are notified and your scan gets initiated.
   daysToFinish: Our researchers typically take 3-5 days to finish their process of scanning your app.
   onceManualAssessment: Once your manual assessment is completed, our security researchers upload your app’s detailed report and send you an email notification, notifying you of the same.
+  failPlayStore: 95% of e-commerce mobile apps on the PlayStore fail basic security testing.
+  securityThreatReport: Appknox E-commerce Global Security Threat Report.
+  downloadReport: Download Report
+  tryAppknox: Try Appknox for your App
