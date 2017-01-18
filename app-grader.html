@@ -21,29 +21,29 @@ stylesheets: '/css/style.css'
 </header>
 <section class="lp-gray-bg" id="grade-section">
   <div class="container">
-    <p class="ag-content">How Does Your App Fare Against Industry Security Benchmarks- Find out in 24 hours!</p>
+    <p class="ag-content">{% t appgrader.howDoesAppFare %}</p>
     <div class="col-md-6 main-section">
       <img  src="/img/appgrader/appgrader-05.png" class="img-responsive ag-curve" alt="scan mobile app online">
       <img  src="/img/appgrader/appgrader-06.png" class="img-responsive image-fit" alt="scan mobile app online">
-      <p class="curve-content"><span class="sub-content">Submit your App</span> to stay ahead of the Mobile App Security curve</p>
+      <p class="curve-content"><span class="sub-content">{% t appgrader.submitYourApp %}</span>{% t appgrader.toStayAhead %}</p>
   	</div>
     <div class="col-md-6 form-pos">
       <div id="AGForm"></div>
       <form id="submit-ag-form" method="post">
         <fieldset class="form-group col-md-12 col-sm-8">
           <div id="email-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="email" name="email" placeholder="Official Email" />
+          <input class="lined-input" type="email" name="email" placeholder="{% t appgrader.officialEmail %}" />
         </fieldset>
         <fieldset class="form-group col-md-12 col-sm-8">
           <div id="app-url-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="text" name="app-url" placeholder="App URL or App Name" />
+          <input class="lined-input" type="text" name="app-url" placeholder="{% t appgrader.appURL %}" />
         </fieldset>
         <fieldset class="form-group col-md-12 col-sm-8">
           <div id="telephone-lp-error" class="sos-form-eorror red"></div>
-          <input class="lined-input" type="tel" name="telephone" placeholder="Phone Number" />
+          <input class="lined-input" type="tel" name="telephone" placeholder="{% t appgrader.phoneNumber %}" />
         </fieldset>
         <fieldset class="form-group col-md-12 col-sm-8">
-          <input id="AGForm-submit" class="submit-button btn-lg" type="submit" value="SUBMIT" />
+          <input id="AGForm-submit" class="submit-button btn-lg" type="submit" value="{% t appgrader.submit %}" />
         </fieldset>
       </form>
    </div>
@@ -51,60 +51,60 @@ stylesheets: '/css/style.css'
 </section>
 <section class="appgrader-insights">
   <div class="container">
-    <p class="mailbox-content">Delivered to your mailbox in one day!</p>
+    <p class="mailbox-content">{% t appgrader.deliveredToYourMailbox %}</p>
       <div class="col-md-4">
-        <p class="mailbox-sub">Powerful Insights</p>
+        <p class="mailbox-sub">{% t appgrader.powerfulInsights %}</p>
         <div class="clearfix float-my-children">
           <img src="/img/appgrader/appgrader-02.png" class="img-responsive insight-images" alt="scan mobile app online">
-          <span class="image-text">32% High</span>
+          <span class="image-text">{% t appgrader.32High %}</span>
         <div>
           <table class="ap-table">
             <tr>
-              <td>Vulnerabilities</td>
+              <td>{% t appgrader.vulnerabilities %}</td>
               <td>50</td>
             </tr>
             <tr>
-              <td>High</td>
+              <td>{% t appgrader.high %}</td>
               <td>21</td>
             </tr>
             <tr>
-              <td>Medium</td>
+              <td>{% t appgrader.medium %}</td>
               <td>10</td>
             </tr>
             <tr>
-              <td>Low</td>
+              <td>{% t appgrader.low %}</td>
               <td>12</td>
             </tr>
             <tr>
-              <td>None</td>
+              <td>{% t appgrader.none %}</td>
               <td>7</td>
             </tr>
           </table>
         </div>
       </div>
-        <p class="insight-content insight-text">Is your App equipped to face new evolving threats each day?</p>
+        <p class="insight-content insight-text">{% t appgrader.isYourAppEquipped %}</p>
       </div>
       <div class="col-md-4">
-        <p class="mailbox-sub">Benchmark with the Best</p>
+        <p class="mailbox-sub">{% t appgrader.benchmarkWithThe %}</p>
         <img src="/img/appgrader/appgrader-04.png" class="img-responsive center-block" alt="scan mobile app online">
-        <p class="insight-content">Does your App score above the industry benchmark of 95?</p>
+        <p class="insight-content">{% t appgrader.aboveIndustryMark %}</p>
       </div>
       <div class="col-md-4">
-      <p class="mailbox-sub">Know Critical Gaps</p>
+      <p class="mailbox-sub">{% t appgrader.criticalGaps %}</p>
         <img src="/img/appgrader/appgrader-03.png" class="img-responsive center-block" alt="scan mobile app online">
-        <p class="insight-content">Get an overview of your app tested against 36 critical threat scenarios.</p>
+        <p class="insight-content">{% t appgrader.getAnOverview %}</p>
       </div>
   </div>
 </section>
 <section class="lp-gray-bg">
   <div class="container">
-    <p class="grade-title">Get to know your threats before they get to know your data!<br>
-  <input class="grade-button btn-lg grade_section" align="middle" type="submit" value="GRADE NOW">
+    <p class="grade-title">{% t appgrader.getToKnowTreats %}<br>
+  <input class="grade-button btn-lg grade_section" align="middle" type="submit" value="{% t appgrader.gradeNow %}">
   </div>
 </section>
 <section class="proactive-appgrader">
   <div class="container">
   <img src="/img/appgrader/appknox_grey-08.png" class="img-responsive center-block" alt="scan mobile app online">
   </div>
-  <p class="proactive-text">#ProactiveAlways</p>
+  <p class="proactive-text">#{% t appgrader.proactiveAlways %}</p>
 </section>
