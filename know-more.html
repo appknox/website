@@ -11,10 +11,10 @@ permalink: /know-more/
       <div id="sticky-anchor"></div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="sticky" role="navigation">
         <ul class="nav ast-nav">
-          <div class="know-more-text"> Know more </div>
-          <li><a class="sast-section li-active" href="#sast-zone">SAST</a></li>
-          <li><a class="dast-section" href="#dast-zone">DAST</a></li>
-          <li><a class="mast-section" href="#mast-zone" onclick="$('html,body').scrollTop(0);">MAST</a></li>
+          <div class="know-more-text">{% t know_more.knowMore %}</div>
+          <li><a class="sast-section li-active" href="#sast-zone">{% t know_more.sast %}</a></li>
+          <li><a class="dast-section" href="#dast-zone">{% t know_more.dast %}</a></li>
+          <li><a class="mast-section" href="#mast-zone" onclick="$('html,body').scrollTop(0);">{% t know_more.mast %}</a></li>
         </ul>
     </div>
       <!-- main area -->
@@ -22,24 +22,21 @@ permalink: /know-more/
         <div id="sast-zone">
           <div class="ast-section">
             <div class="ast-question">
-              What is SAST ?
+              {% t know_more.whatIsSAST %}
             </div>
             <div class="ast-answer">
-              Static Application Security Testing (SAST) can be considered as testing an application from the inside out by
-              examining its source code or application binaries for issues based on configuration which point towards a security vulnerability.
+              {% t know_more.sastIs %}
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              How we stand out?
+              {% t know_more.howWeStand %}
             </div>
             <div class="ast-sub-question">
-              36 different test cases
+              {% t know_more.36TestCases %}
             </div>
             <div class="ast-answer">
-              Our tests cover industry security compliances like OWASP Top 10, PCI-DSS, HIPAA and other commonly
-              exploited basic security threat parameters.Your report is then generated with threat details listed
-               with zero false positives according to high, medium and low severity.
+              {% t know_more.testCasesCover %}
             </div>
             <div class="ast-answer-images">
               <div class="col-lg-3 col-md-3 col-xs-6">
@@ -56,54 +53,52 @@ permalink: /know-more/
               </div>
             </div>
             <div class="ast-sub-question">
-              Perform multiple scans simultaneously
+              {% t know_more.performMultipleScans %}
             </div>
             <div class="ast-answer">
-              Appknox's architecture is built using multiple &#39;task-workers&#39;. Each worker runs on a different machine to scan
-              multiple applications in parallel to one another. This means that as a business you can perform multiple scans simultaneously
-              wihout any interruption on the Appknox dashboard.
+              {% t know_more.appknoxArchitecture %}
             </div>
             <div class="ast-sub-question">
-              Assess your app even during development
+              {% t know_more.assessYourApp %}
             </div>
             <div class="ast-answer">
               <ul>
-                <li>The CI integration feature lets you assess your app even during development or before it’s published on any application store. </li>
-                <li> Our SAST analysis supports the three major platforms - iOS, Android and Windows. </li>
+                <li>{% t know_more.ciIntegration %}</li>
+                <li>{% t know_more.sastAnalysis %} </li>
               </ul>
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              It’s Easy to Scale up with Appknox
+              {% t know_more.easyToScaleUp %}
             </div>
             <div class="ast-answer">
               <ul>
-                <li>Scale without incurring absurd costs on dedicated security resources or additional headcount.</li>
-                <li>Flexibility for all team sizes.</li>
-                <li>Quick feedback through SAST to include in your development cycle.</li>
+                <li>{% t know_more.scaleWithoutIncurring %}</li>
+                <li>{% t know_more.flexibilityForAll %}</li>
+                <li>{% t know_more.quickFeedback %}.</li>
               </ul>
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              SAST workflow
+              {% t know_more.sastWorkflow %}
             </div>
             <div class="ast-answer">
               <div class="ast-image-heading">
-                1. Copy paste your app’s URL or upload your application binary to initiate the scan
+                1. {% t know_more.copyPasteAppURL %}
               </div>
               <div class="alt-image-tag align-center">
                 <img src="/img/ast/asset-5.png" alt="Mobile application security" class="img-responsive" />
               </div>
               <div class="ast-image-heading">
-                2. Get your static testing results overview in under 10 mins on your dashboard
+                2. {% t know_more.staticTestingResults %}
               </div>
               <div class="alt-image-tag align-center">
                 <img src="/img/ast/asset-6.png" alt="Mobile application security" class="img-responsive" />
               </div>
               <div class="ast-image-heading">
-                3. Download your detailed security report in PDF
+                3. {% t know_more.www %}
               </div>
               <div class="alt-image-tag align-center">
                 <img src="/img/ast/asset-7.png" alt="Mobile application security" class="img-responsive" />
@@ -111,62 +106,66 @@ permalink: /know-more/
             </div>
           </div>
           <div class="move-next">
-            <a class="dast-section" href="#dast-zone" onclick="$('html,body').scrollTop(0);"> Learn more about DAST > </a>
+            <a class="dast-section" href="#dast-zone" onclick="$('html,body').scrollTop(0);">{% t know_more.learnMoreAboutSAST %} > </a>
           </div>
         </div>
         <div id="dast-zone">
           <div class="ast-section">
             <div class="ast-question">
-              What is DAST ?
+              {% t know_more.www %}What is DAST ?
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               A Dynamic Application Security Testing (DAST) analysis is generally specifically designed to detect conditions indicative of a security vulnerability in an application while in its running state.
               One of the most common and classic methods of hacking used by hackers is the Man in the Middle Attack (MiTM).
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               The Appknox DAST is a fully automated simulation of real-time interactions between users (your team) and our physical Android and iOS devices accessed by you via our cloud-based infrastructure.
               Our system analyzes, detects and catches loopholes that are threatening in nature and helps businesses plug and secure them from runtime and network attacks like MiTM.
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              Difference between SAST &amp; DAST
+              {% t know_more.www %}Difference between SAST &amp; DAST
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               Unlike the SAST analysis, Appknox DAST works by running your uploaded application binary on our cloud-hosted devices.
               Your app is simply uploaded and put in a test environment where actual attacks are carried out during this simulation to detect advanced vulnerabilities.
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               The Appknox DAST runs on the same platform as the Appknox SAST, giving businesses the option to scan their apps individually or together by both analysis, for an integrated view of all threats detected.
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              Faster, Better !
+              {% t know_more.www %}Faster, Better !
             </div>
             <div class="ast-answer">
-              We’ve also implemented a state-of-the-art device-farm consisting of multiple Android and iOS devices  which gives you more stability, faster scans and a boost to your overall testing experience.
+              {% t know_more.www %}We’ve also implemented a state-of-the-art device-farm consisting of multiple Android and iOS devices  which gives you more stability, faster scans and a boost to your overall testing experience.
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              How Appknox DAST works?
+              {% t know_more.www %}How Appknox DAST works?
             </div>
             <div class="ast-answer">
               <div class="ast-image-heading">
-                1. After you initiate a dynamic scan on your dashboard, your app is installed onto one of our devices.
+                1. {% t know_more.www %}After you initiate a dynamic scan on your dashboard, your app is installed onto one of our devices.
               </div>
               <div class="alt-image-tag">
                 <img src="/img/ast/dast-1.png" alt="Mobile application security" class="img-responsive" />
               </div>
               <div class="ast-image-heading">
-                2. Your team acts as a user and performs actions like a user would. Our system simultaneously performs several attacks while your app is interacting with our device.
+                2. {% t know_more.www %}Your team acts as a user and performs actions like a user would. Our system simultaneously performs several attacks while your app is interacting with our device.
               </div>
               <div class="alt-image-tag">
                 <img src="/img/ast/dast-2.png" alt="Mobile application security" class="img-responsive" />
               </div>
               <div class="ast-image-heading">
-                3. Generate a detailed report from the Appknox dashboard and request a remediation call to fix vulnerabilities detected (optional).
+                3. {% t know_more.www %}Generate a detailed report from the Appknox dashboard and request a remediation call to fix vulnerabilities detected (optional).
               </div>
               <div class="alt-image-tag">
                 <img src="/img/ast/dast-3.png" alt="Mobile application security" class="img-responsive" />
@@ -180,9 +179,10 @@ permalink: /know-more/
         <div id="mast-zone">
           <div class="ast-section">
             <div class="ast-question">
-              What is MAST ?
+              {% t know_more.www %}What is MAST ?
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               Countries around the world, regularly perform a military activity called Red Teaming.
               The Red Team, comprised of their greatest minds, uses publicly available information and
               strategically makes plans to exploit any loopholes in the defense and security strategy.
@@ -191,51 +191,56 @@ permalink: /know-more/
           </div>
           <div class="ast-section">
             <div class="ast-question">
+              {% t know_more.www %}
               Consider Appknox as your personal Red Team for mobile app security.
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               Although our automated systems have been built over years of extensive research and have proven to detect and help neutralize over 100,000 threats,
               we believe that nothing is as intelligent as the human mind.
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               At Appknox, we’re proud to have put together some of the brightest minds from the industry who have detected threats in
               applications like Facebook, Skype, Walmart, Snapchat and many more.
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
+              {% t know_more.www %}
               What our in-house hackers do?
             </div>
             <div class="ast-answer">
+              {% t know_more.www %}
               Our security researchers typically follow a defined, tested and tried process to break down apps and detect threats. Here’s an overview of that process:
               <ul>
-                <li>Identification of technology stack</li>
-                <li>Analyzing threat landscape</li>
-                <li>Setting up breakpoints on critical functionalities</li>
-                <li>Testing responses and detecting bugs</li>
-                <li>Performing exploits for advanced threat detection</li>
+                <li>{% t know_more.www %} Identification of technology stack</li>
+                <li>{% t know_more.www %} Analyzing threat landscape</li>
+                <li>{% t know_more.www %} Setting up breakpoints on critical functionalities</li>
+                <li>{% t know_more.www %} Testing responses and detecting bugs</li>
+                <li>{% t know_more.www %} Performing exploits for advanced threat detection</li>
               </ul>
             </div>
           </div>
           <div class="ast-section">
             <div class="ast-question">
-              How Appknox MAST works?
+              {% t know_more.www %}How Appknox MAST works?
             </div>
             <div class="ast-answer">
               <div class="ast-image-heading">
-                1. Once you have initiated the manual scan from your dashboard, our security researchers are notified and your scan gets initiated.
+                1. {% t know_more.www %}Once you have initiated the manual scan from your dashboard, our security researchers are notified and your scan gets initiated.
               </div>
               <div class="alt-image-tag">
                 <img src="/img/ast/mast-1.png" alt="Mobile application security" class="img-responsive" />
               </div>
               <div class="ast-image-heading">
-                2. Our researchers typically take 3-5 days to finish their process of scanning your app.
+                2. {% t know_more.www %}Our researchers typically take 3-5 days to finish their process of scanning your app.
               </div>
               <div class="alt-image-tag">
                 <img src="/img/ast/mast-2.png" alt="Mobile application security" class="img-responsive" />
               </div>
               <div class="ast-image-heading">
-                3. Once your manual assessment is completed, our security researchers upload your app’s detailed report and send you an email notification, notifying you of the same.
+                3. {% t know_more.www %}Once your manual assessment is completed, our security researchers upload your app’s detailed report and send you an email notification, notifying you of the same.
               </div>
               <div class="alt-image-tag">
                 <img src="/img/ast/mast-3.png" alt="Mobile application security" class="img-responsive" />
@@ -252,15 +257,16 @@ permalink: /know-more/
 <div class="row ast-sub-section">
   <div class="col-lg-10 col-md-10 col-sm-9 ast-threat-report">
     <div class="tr-heading">
+      {% t know_more.www %}
       95% of e-commerce mobile apps on the PlayStore fail basic security testing.
     </div>
     <div class="tr-sub-heading">
-      - Appknox E-commerce Global Security Threat Report. <a href="https://try.appknox.com/global-e-commerce-mobile-security-threat-report">Download Report > </a>
+      - {% t know_more.www %} Appknox E-commerce Global Security Threat Report. <a href="https://try.appknox.com/global-e-commerce-mobile-security-threat-report">Download Report > </a>
     </div>
   </div>
   <div class="col-lg-2 col-md-2 col-sm-3 ast-try-appknox">
     <div class="ta-heading">
-      Try Appknox for your App
+      {% t know_more.www %}Try Appknox for your App
     </div>
   </div>
 </div>
