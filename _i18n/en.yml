@@ -277,3 +277,14 @@ git:
   achievedZen: From Those Who've Achieved Zen
   understandingOfSecurity: The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.
   appknoxHelpedUsScan: Appknox helped us scan our app thoroughly. They also tagged a security researcher who helped us understand all our issues, clarify our doubts and suggested appropriate solutions to fix them.
+
+fon:
+  basicSecurityChecks: Does Your App Pass Basic Security Checks?
+  studyByGartner: A recent study by Gartner shows that more than 75% of mobile apps fail basic security checks. In fact, our internal data shows this number to be around 90%.
+  areYouAware: Are you aware if your app passes these basic checks? We can find out and let you know in just three simple steps
+  pointUsToURL: Point us to your app URL
+  weWillVerify: We’ll verify your details and run a quick static analysis of your app
+  emailSecurityRating: We’ll email you a security rating for your app and an overview of the vulnerabilities that you might be facing
+  worthMillions: A single vulnerability detected in basic security checks can save businesses from attacks worth millions.
+  findOut: Find Out Now
+  understandingOfSecurity: The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.

@@ -8,39 +8,39 @@ code: find-out-now
 <section id="first-container">
   <div class="container" id="first-block">
       <div class="col-md-8">
-        <h2 class="col-md-8 col-sm-12"> Does Your App Pass Basic Security Checks? </h2>
+        <h2 class="col-md-8 col-sm-12">{% t fon.basicSecurityChecks %} </h2>
         <p class="col-md-8 col-sm-12 gray-7">
-          A recent study by Gartner shows that more than 75% of mobile apps fail basic security checks. In fact, our internal data shows this number to be around 90%.
+          {% t fon.studyByGartner %}
         </p>
         <p class="col-md-8 col-sm-12 gray-7">
-          Are you aware if your app passes these basic checks? We can find out and let you know in just three simple steps:
+          {% t fon.areYouAware %}:
         </p>
         <ul class="col-md-8 col-sm-12 lp-list">
           <li>
               <img data-proofer-ignore src="/img/arrow_circled.svg" class="inblock img-icon" />
-              <p class="inblock">Point us to your app URL<p>
+              <p class="inblock">{% t fon.pointUsToURL %}<p>
           </li>
           <li>
             <img data-proofer-ignore src="/img/magnifying.svg" class="inblock img-icon" />
-            <p class="inblock">We’ll verify your details and run a quick static analysis of your app<p>
+            <p class="inblock">{% t fon.weWillVerify %}<p>
           </li>
           <li>
             <img data-proofer-ignore src="/img/desk-graph.svg" class="inblock img-icon" />
             <p class="inblock">
-              We’ll email you a security rating for your app and an overview of the vulnerabilities that you might be facing
+              {% t fon.emailSecurityRating %}
             <p>
           </li>
         </ul>
         <ul>
           <li class="col-md-10 col-sm-12 marginTop">
-            <h3 class="red marginTop">A single vulnerability detected in basic security checks can save businesses from attacks worth millions.</h3>
+            <h3 class="red marginTop">{% t fon.worthMillions %}</h3>
           </li>
         </ul>
         <div class="clearfix"></div>
         <div  class="marginTop"></div>
       </div>
       <div class="col-md-4" id="lpForm1Container">
-          <h3 class="red col-md-12 marginTop">Find Out Now</h3>
+          <h3 class="red col-md-12 marginTop">{% t fon.findOut %}</h3>
           {% include landing_page_form_1.html %}
       </div>
     </div>
@@ -49,7 +49,7 @@ code: find-out-now
 <section class="ak-gray-bg">
   <div class="container ak-container">
     <div class="gray-8 col-md-offset-2 col-md-8 text-center marginTop">
-      "The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have."
+      "{% t fon.understandingOfSecurity %}"
     </div>
     <div class="small-font text-center col-md-12 marginTop">
       Viet Nguyen Tuan, Redmart
