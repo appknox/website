@@ -42,7 +42,7 @@ permalink: /pricing/
             <td>{% t pricing.{{plan.pricingplan.thirdScan.desc}} %}</td>
           </tr>
         </table>
-        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="{{plan.pricingplan.link}}">Request Quote</div>
+        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="{{plan.pricingplan.link}}">{% t pricing.requestQuote %}</div>
       </li>
       </section>
         {% endfor %}
@@ -52,42 +52,42 @@ permalink: /pricing/
                 <img src="/img/plans-25.png" alt="Appknox Enterprise Plan" />
               </div>
               <div class="platform-type plan-top-line black-line">
-              Dedicated Infrastructure<br>
+              {% t pricing.dedicatedInfrastructure %}<br>
               <table class="enterprise-features">
                 <tr>
-                  <td>Multiple <span class="black-font">Teams</span></td>
+                  <td>{% t pricing.multiple %} <span class="black-font">{% t pricing.teams %}</span></td>
                 </tr>
                 <tr>
-                  <td>Multiple <span class="black-font">Projects</span></td>
+                  <td>{% t pricing.multiple %}<span class="black-font">{% t pricing.project %}</span></td>
                 </tr>
                 <tr>
-                  <td>Multiple <span class="black-font">Platforms</span></td>
+                  <td>{% t pricing.multiple %}<span class="black-font">{% t pricing.platforms %}</span></td>
                 </tr>
               </table>
               </div>
               <table class="scan-list enterprise-list">
                 <tr>
-                  <td>SAST (Static)</td>
+                  <td>{% t pricing.sast %}</td>
                   <td class="check-26"></td>
                 </tr>
                 <tr>
-                  <td>DAST (Dynamic)</td>
+                  <td>{% t pricing.dast %}</td>
                   <td class="check-26"></td>
                 </tr>
                 <tr>
-                  <td>Private Secure Cloud</td>
+                  <td>{% t pricing.privateSectorCloud %}</td>
                   <td class="check-26"></td>
                 </tr>
               </table>
               <table class="scan-enter">
                 <tr>
-                  <td>Dedicated Account Manager</td>
+                  <td>{% t pricing.dedicatedAccountManager %}</td>
                 </tr>
                 <tr>
-                  <td>Dedicated Security Researcher</td>
+                  <td>{% t pricing.dedicatedSecurityResearcher %}</td>
                 </tr>
               </table>
-              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="https://try.appknox.com/demo-enterprise">Get In Touch</div>
+              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="https://try.appknox.com/demo-enterprise">{% t pricing.getInTouch %}</div>
             </li>
           </section>
 
@@ -95,7 +95,7 @@ permalink: /pricing/
           <li class="clearfix"></li>
     </ul>
     <ul class="marginTop">
-        <li class="xs-font gray-a text-center">{% t pricing.reachUsAt %}  <a class="gray-7" href="mailto:pricing@appknox.com">pricing@appknox.com</a></li>
+        <li class="xs-font gray-a text-center">{% t pricing.reachUsAt %} -  <a class="gray-7" href="mailto:pricing@appknox.com">pricing@appknox.com</a></li>
     </ul>
   </div>
 </section>

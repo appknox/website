@@ -32,7 +32,7 @@ index:
   fullyAutomatedScan: A fully automated scan designed to analyze application binaries for issues in code and design configurations that can lead to security vulnerabilities.
   teamInteracts: Your team interacts with your application installed on our cloud hosted devices while we diagnose leakages using proprietary data flow algorithms for an automated real-time testing.
   deeperManualAssessment: Nothing can outdo human creativity, and so we deploy our industry renowned ethical hackers to perform a deeper manual assessment to catch the hidden bugs and to ensure you and your business are secured from hacks.
-  knowMore: Know more >
+  knowMore: Know more
   whyAppknox: Why Appknox?
   alwaysByYourSide: Always By Your Side
   teamWithinTeam: A reliable team within your team
@@ -148,7 +148,7 @@ pricing:
   unlimitedScan: Unlimited Scans For Everyone
   flexibleCancellation: Flexible Cancellation &nbsp;&nbsp;|&nbsp;&nbsp; Proactive Support
   saveYearly: Save With Yearly Subscription
-  reachUsAt: For any queries regarding pricing, reach us at -
+  reachUsAt: For any queries regarding pricing, reach us at
   testimonials: Testimonials
   appknoxHelpedUs: Appknox helped us find our security related vulnerabilities. I am fully satisfied and would recommend Appknox.
   appknoxHasDeepUnderstanding: The Appknox team has a deep understanding of security standards in mobile platforms. They are efficient and responsive in addressing any security problems we have.
@@ -170,6 +170,16 @@ pricing:
   sast: SAST (Static)
   dast: DAST (Dynamic)
   uba: UBA (Manual)
+  privateSectorCloud: Private Secure Cloud
+  requestQuote: Request Quote
+  dedicatedInfrastructure: Dedicated Infrastructure
+  multiple: Multiple
+  teams: Teams
+  project: Projects
+  platforms: Platforms
+  dedicatedAccountManager: Dedicated Account Manager
+  dedicatedSecurityResearcher: Dedicated Security Researcher
+  getInTouch: Get In Touch
 
 error:
   notFound: Error 404, the content you are looking for doesn't exist
