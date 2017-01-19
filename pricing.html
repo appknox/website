@@ -143,10 +143,10 @@ permalink: /pricing/
             <div class="faq-region">
               <div class="faq-quest-area">
                   <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
-                  <span class="faq-quest">{{faq.question}}</span>
+                  <span class="faq-quest">{% t faqs.{{faq.question}} %}</span>
               </div>
               <div class="faq-answer">
-                {{faq.answer}}
+                {% t faqs.{{faq.answer}} %}
               </div>
             </div>
             {% endfor %}
@@ -156,10 +156,10 @@ permalink: /pricing/
             <div class="faq-region">
               <div class="faq-quest-area">
                   <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
-                  <span class="faq-quest">{{faq.question}}</span>
+                  <span class="faq-quest">{% t faqs.{{faq.question}} %}</span>
               </div>
               <div class="faq-answer">
-                {{faq.answer}}
+                {% t faqs.{{faq.answer}} %}
               </div>
             </div>
             {% endfor %}
