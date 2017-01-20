@@ -2576,6 +2576,13 @@ $(document).ready(function () {
   });
 });
 
+var userLang = window.navigator.language || window.navigator.userLanguage;
+  if(userLang == "ja") {
+    if(window.location.pathname.indexOf(userLang) == -1){
+      window.location = "/" + userLang + window.location.pathname;
+    }
+  }
+
 if(window.location.hash) {
    var hashkey = window.location.hash;
    if (hashkey == "#show_sast") {
