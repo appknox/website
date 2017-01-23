@@ -38,14 +38,6 @@
     - https://www.facebook.com/darell.khin
     - darell@appknox.com
 
-- name: Syed Khalid M
-  title: Security Analyst
-  gravatar: https://www.gravatar.com/avatar/98746bcb4bebdfc698607f3e1c809d59?s=150
-  links:
-    - https://www.linkedin.com/in/syedkhaled
-    - https://twitter.com/syed_khaled
-    - syed@appknox.com
-
 - name: Avantika Agarwal
   title: Product Designer
   gravatar: https://www.gravatar.com/avatar/98e456b993fde5a45b438d9633b8801e?s=150
@@ -61,14 +53,6 @@
     - https://in.linkedin.com/in/manikanta-gupta-p-10978038
     - https://twitter.com/Manikanta8888
     - manikanta@appknox.com
-
-- name: Pushparaj Balamani
-  title: Facility Manager
-  gravatar: https://www.gravatar.com/avatar/36bc3903c7843a2959d20d59e2c84070?s=200
-  links:
-    - https://in.linkedin.com/in/pushpi-b-4154a8102
-    - https://www.facebook.com/pushpiracer
-    - pushpi@appknox.com
 
 - name: Aditya Pahuja
   title: Creative Designer
@@ -86,15 +70,6 @@
     - https://in.linkedin.com/in/vaishali-garg-41423a19
     - https://www.facebook.com/vaishali.garg.54
     - vaishali@appknox.com
-
-- name: Manik  Hundgenn
-  title: Lead Designer
-  gravatar: https://www.gravatar.com/avatar/fec934a169c34307b3d7d83be06d83c0?s=200
-  links:
-    - https://www.facebook.com/manik.msh
-    - https://www.twitter.com/tweetvala
-    - manik@appknox.com
-    - http://www.manikhundgenn.com
 
 - name: Sugat Nayak
   title: AVP Sales
