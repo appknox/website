@@ -787,11 +787,16 @@ button:focus {
   margin-top: -20px;
 }
 
+.last-logo {
+  margin-top: -35px
+}
+
 .sign-pos{
   margin-top: 20px;
 }
 
 .carousel-spots{
+  top: 300px;
   bottom: 0px;
 }
 
@@ -2021,6 +2026,9 @@ line-height: 35px;
   .scan-enter {
     margin-bottom: -8px;
   }
+  .user-comments {
+    font-size: 20px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3097,6 +3105,9 @@ header, .main-nav-scrolled {
   .stick {
     top: 160px;
   }
+  .carousel-spots{
+    top: 350px;
+  }
 }
 @media (max-width: 767px) {
   .ast-nav li {
@@ -3166,6 +3177,12 @@ header, .main-nav-scrolled {
   }
   .non-stick {
     margin-left: 0px
+  }
+  .reduce-padding {
+    margin-bottom: 0px
+  }
+  .reduce-padding .ak-container {
+    padding-bottom: 0px
   }
 
 }
@@ -3398,6 +3415,15 @@ header, .main-nav-scrolled {
   }
   .footer-nav>li {
     display: inline-block;
+  }
+  .carousel-spots{
+    top: 420px;
+  }
+  .last-logo {
+    margin-top: 0px
+  }
+  .last-sign {
+    margin-top: 0px
   }
 }
 
@@ -3632,6 +3658,15 @@ header, .main-nav-scrolled {
   }
   .footer-nav>li {
     display: inline-block;
+  }
+  .carousel-spots{
+    top: 470px;
+  }
+  .last-logo {
+    margin-top: 0px
+  }
+  .last-sign {
+    margin-top: 0px
   }
 }
 
@@ -3891,6 +3926,15 @@ header, .main-nav-scrolled {
   }
   .footer-nav>li {
     display: inline-block;
+  }
+  .carousel-spots{
+    top: 470px;
+  }
+  .last-logo {
+    margin-top: 0px
+  }
+  .last-sign {
+    margin-top: 0px
   }
 }
 
