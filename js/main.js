@@ -2507,6 +2507,17 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function() {
+  var country = geoplugin_countryName()
+  if(country == "India") {
+    if(window.location.pathname.startsWith("/in") == false){
+      if(window.location.pathname.indexOf(country) == -1){
+        window.location= "/in" + window.location.pathname;
+      }
+    }
+  }
+});
+
 $(document).ready(function () {
   $(".grade_section").click(function() {
   window.location.href="#grade-section";
