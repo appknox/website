@@ -2341,6 +2341,119 @@ function bindAGForm(){
 }
 
 
+var DAFormValidateRules = {
+  rules: {
+    "name": {
+      required: true,
+      maxlength: 100,
+    },
+    "email": {
+      required: true,
+      maxlength: 100,
+      email: true
+    },
+    "telephone":{
+      required: true,
+      maxlength: 40,
+    }
+  },
+  errorPlacement: function(error, element) {
+    var errorEleId = "#" + element.attr("name") + "-lp-error"
+    var errorBox = null;
+    $(errorEleId).children().remove(); //removing if already outputed error from  backend
+    errorBox = $("<div class='mp-dynamic-error' />");
+    errorBox.fadeOut(200, function() {
+      showError()
+    });
+    $(errorEleId).append(errorBox);
+
+    function showError() {
+      errorBox.append(error);
+      errorBox.fadeIn(200);
+    }
+  },
+  messages: {
+    "name": {
+      required: "Name is required",
+      maxlength: "Maximum 100 characters allowed"
+    },
+    "email": {
+      required: "Email is required",
+      maxlength: "Email maximum length 100"
+    },
+    "telephone": {
+      required: "Phone Number is required",
+      maxlength: "Phone Number maximum length 40"
+    }
+  }
+}
+
+
+function sendDAForm(ev){
+  ev.preventDefault();
+
+  var form = $("#submit-da-form");
+  form.validate(DAFormValidateRules);
+  var isValid = form.valid();
+
+  if(isValid){
+    //Loading sign etc
+  }else{
+    return;
+  }
+
+  $("#DAForm").html(getProcessingHtml());
+
+  var serializeData = form.serialize();
+  var url = HAWKINS_ENDURL + "appknox-da-form/1029041/11rxhu";
+  var method = form.attr("method");
+
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback
+  }
+
+  var xhr = $.ajax(option);
+  form.find("input,textarea").attr("disabled",true);
+
+  function errorCallback(jqXHR, err, errException){
+    $("#DAForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+    form.find("input,textarea").removeAttr("disabled");
+  }
+
+  function successCallback(resData){
+    if(resData.status === "success"){
+      $("#DAForm").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
+      form.find("input,textarea").attr("disabled",true);
+      form.remove();
+    }else{
+      $("#DAForm").html(SUBMIT_ERROR_MSG);
+      form.find("input,textarea").removeAttr("disabled");
+    }
+  }
+}
+
+function bindDAForm(){
+  $("#DAForm-submit").unbind("click",sendDAForm).bind("click",sendDAForm);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function fancyCallPhoneForm() {
   var formStatus = $("#callphone-form").attr("data-attr-submitted");
