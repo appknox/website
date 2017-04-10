@@ -2509,14 +2509,16 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   if(window.location.search != "?disabled") {
-    var country = geoplugin_countryName()
-    if(country == "India") {
+    $.get("https://ipinfo.io", function(response) {
+    var country = response.country
+    if(country == "IN") {
       if(window.location.pathname.startsWith("/in") == false){
         if(window.location.pathname.indexOf(country) == -1){
           window.location= "/in" + window.location.pathname;
         }
       }
     }
+    }, "jsonp");
   }
 });
 
