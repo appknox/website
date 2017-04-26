@@ -2507,6 +2507,22 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function() {
+  if(window.location.search != "?disabled" && window.location.hostname == "www.appknox.com") {
+    $.getJSON("https://geoip-db.com/json/geoip.php?jsonp=?", function(location) {
+    var country = location.country_name;
+    if(country == "India") {
+      if(window.location.pathname.startsWith("/in") == false){
+        if(window.location.pathname.indexOf(country) == -1){
+          var hash = window.location.hash
+          window.location= "/in" + window.location.pathname + hash;
+        }
+      }
+    }
+    });
+  }
+});
+
 $(document).ready(function () {
   $(".grade_section").click(function() {
   window.location.href="#grade-section";

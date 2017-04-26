@@ -6,3 +6,4 @@ gem 'html-proofer'
 gem 'coveralls', require: false
 gem 's3_website'
 gem 'jekyll-assets'
+gem 'jekyll-multiple-languages-plugin'

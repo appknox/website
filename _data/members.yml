@@ -54,15 +54,6 @@
     - https://twitter.com/Manikanta8888
     - manikanta@appknox.com
 
-- name: Aditya Pahuja
-  title: Creative Designer
-  gravatar: https://www.gravatar.com/avatar/d6114920ba5dd0f1a8208f6897dbab7f?s=200
-  links:
-    - https://www.linkedin.com/in/adityapahuja
-    - https://twitter.com/adityapahuja
-    - https://www.facebook.com/aditya.pahuja
-    - aditya@appknox.com
-
 - name: Vaishali Garg
   title: Security Researcher
   gravatar: https://www.gravatar.com/avatar/4edb3340a5e8a464c18939e8d02fbb8c?s=200
@@ -115,7 +106,7 @@
   gravatar: https://viren.gitlab.io/files/200.jpeg
   links:
     - viren@appknox.com
-    - http://viren.me
+    - https://viren.gitlab.io
     - https://github.com/viren-nadkarni
     - https://twitter.com/viren_ndk
     - https://www.linkedin.com/in/virennadkarni
@@ -130,3 +121,18 @@
     - hemansu.tanty@appknox.com
     - https://twitter.com/hemansutanty
     - https://github.com/hemansutanty
+
+- name: Lino Jose
+  title: Client Success Manager
+  gravatar: https://s.gravatar.com/avatar/d9c09882f9f5240ce3a2179464cd42f4?s=200
+  links:
+    - https://www.linkedin.com/in/linojosem/
+    - https://www.facebook.com/lino.jose.16
+
+- name: Karthik Kumar
+  title: AVP, Global Sales and Partnerships
+  gravatar: https://secure.gravatar.com/avatar/f539ebe01f99e281fbdc7a1f36285ce5?s=200
+  links:
+    - https://www.linkedin.com/in/karthiknkumar/
+    - https://www.facebook.com/karthiknkumar
+    - https://twitter.com/ankarthikkumar

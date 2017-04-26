@@ -448,7 +448,7 @@ p {
 #ak-slide-container {
     display: block;
     list-style-type: none;
-    min-height: 370px;
+    min-height: 510px;
     text-align: left;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -2621,6 +2621,11 @@ header, .main-nav-scrolled {
   margin-top: -29px;
 }
 
+.banner-top{
+  margin-top: -50px
+}
+
+
 .banner-top img{
   position:relative;
   z-index: 100;
@@ -3108,6 +3113,9 @@ header, .main-nav-scrolled {
   .carousel-spots{
     top: 350px;
   }
+  #ak-slide-container {
+    min-height: 630px
+  }
 }
 @media (max-width: 767px) {
   .ast-nav li {
@@ -3425,6 +3433,9 @@ header, .main-nav-scrolled {
   .last-sign {
     margin-top: 0px
   }
+  #ak-slide-container {
+    min-height: 600px
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -3667,6 +3678,9 @@ header, .main-nav-scrolled {
   }
   .last-sign {
     margin-top: 0px
+  }
+  #ak-slide-container {
+    min-height: 620px
   }
 }
 
@@ -3935,6 +3949,9 @@ header, .main-nav-scrolled {
   }
   .last-sign {
     margin-top: 0px
+  }
+  #ak-slide-container {
+    min-height: 730px
   }
 }
 
