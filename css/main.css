@@ -1953,6 +1953,13 @@ line-height: 35px;
   padding-right: 60px
 }
 
+.slick-lightbox .slick-dots {
+  bottom: 10px
+}
+
+.slick-lightbox .slick-dots button::before {
+  color: #fff!important
+}
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
