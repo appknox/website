@@ -1942,6 +1942,11 @@ line-height: 35px;
 
 /* END OF KNOW MORE PAGE */
 
+.slick-slide {
+  margin: 10px;
+  width: 800px!important
+}
+
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
         background-color: transparent !important;
