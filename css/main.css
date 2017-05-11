@@ -1944,7 +1944,13 @@ line-height: 35px;
 
 .slick-slide {
   margin: 10px;
-  width: 800px!important
+  width: 700px!important;
+  box-shadow: 0 0 10px 2px #d3d3d3;
+}
+
+.slider-container {
+  padding-left: 60px;
+  padding-right: 60px
 }
 
 @media (min-width: 768px) {
