@@ -1942,6 +1942,10 @@ line-height: 35px;
 
 /* END OF KNOW MORE PAGE */
 
+.slider-image {
+  margin-top: 50px
+}
+
 .slider {
   margin: 10px;
   width: 700px!important;
@@ -1949,8 +1953,7 @@ line-height: 35px;
 }
 
 .slider-container {
-  padding-left: 60px;
-  padding-right: 60px
+  padding: 60px
 }
 
 .slick-lightbox .slick-dots {
