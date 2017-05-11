@@ -1942,7 +1942,7 @@ line-height: 35px;
 
 /* END OF KNOW MORE PAGE */
 
-.slick-slide {
+.slider {
   margin: 10px;
   width: 700px!important;
   box-shadow: 0 0 10px 2px #d3d3d3;
@@ -1952,6 +1952,7 @@ line-height: 35px;
   padding-left: 60px;
   padding-right: 60px
 }
+
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
