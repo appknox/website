@@ -1948,8 +1948,13 @@ line-height: 35px;
 
 .slider {
   margin: 10px;
-  width: 700px!important;
   box-shadow: 0 0 10px 2px #d3d3d3;
+  width: 800px!important;
+}
+
+.slick-center {
+  box-shadow: 0 0 15px 2px #191919;
+  transition: width 1s ease-in-out;
 }
 
 .slider-container {
