@@ -1952,9 +1952,26 @@ line-height: 35px;
   width: 800px!important;
 }
 
+@media (max-width: 1200px) {
+  .slider {
+    width: 600px!important
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    width: 600px!important
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .slider {
+    width: 500px!important
+  }
+}
+
 .slick-center {
   box-shadow: 0 0 15px 2px #191919;
-  transition: width 1s ease-in-out;
 }
 
 .slick-next {
