@@ -1942,6 +1942,8 @@ line-height: 35px;
 
 /* END OF KNOW MORE PAGE */
 
+/* Start of Slick Slider */
+
 .slider-image {
   margin-top: 50px
 }
@@ -1950,24 +1952,6 @@ line-height: 35px;
   margin: 10px;
   box-shadow: 0 0 10px 2px #d3d3d3;
   width: 800px!important;
-}
-
-@media (max-width: 1200px) {
-  .slider {
-    width: 600px!important
-  }
-}
-
-@media (max-width: 1024px) {
-  .slider {
-    width: 600px!important
-  }
-}
-
-@media (min-width: 768px) and (max-width: 990px) {
-  .slider {
-    width: 500px!important
-  }
 }
 
 .slick-center {
@@ -2003,6 +1987,8 @@ line-height: 35px;
 .slick-lightbox .slick-dots button::before {
   color: #fff!important
 }
+
+/* End of Slick Slider */
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
@@ -2047,10 +2033,7 @@ line-height: 35px;
 
     a:focus {
         background: none !important;
-    }/*#ak-header{
-        border-bottom: 1px solid #E9E9E9;
-      }*/
-
+    }
 }
 
 @media (max-width: 990px) {
@@ -2091,6 +2074,9 @@ line-height: 35px;
   .user-comments {
     font-size: 20px
   }
+  .slider {
+    width: 600px!important
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2129,6 +2115,9 @@ line-height: 35px;
     }
     .banner-top img{
       margin-left: 100px!important;
+    }
+    .slider {
+      width: 600px!important
     }
 }
 
@@ -3178,7 +3167,11 @@ header, .main-nav-scrolled {
   #ak-slide-container {
     min-height: 630px
   }
+  .slider {
+    width: 500px!important
+  }
 }
+
 @media (max-width: 767px) {
   .ast-nav li {
     display: inline-block;
@@ -3498,6 +3491,12 @@ header, .main-nav-scrolled {
   #ak-slide-container {
     min-height: 600px
   }
+  .slider {
+    width: 400px!important
+  }
+  .slider-container {
+    padding: 30px!important
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -3743,6 +3742,12 @@ header, .main-nav-scrolled {
   }
   #ak-slide-container {
     min-height: 620px
+  }
+  .slider {
+    width: 350px!important
+  }
+  .slider-container {
+    padding: 10px!important
   }
 }
 
@@ -4014,6 +4019,12 @@ header, .main-nav-scrolled {
   }
   #ak-slide-container {
     min-height: 730px
+  }
+  .slider {
+    width: 300px!important
+  }
+  .slider-container {
+    padding: 10px!important
   }
 }
 
