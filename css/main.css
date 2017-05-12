@@ -1984,6 +1984,11 @@ line-height: 35px;
   bottom: 10px
 }
 
+.slick-lightbox .slick-next, .slick-lightbox .slick-prev {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .slick-lightbox .slick-dots button::before {
   color: #fff!important
 }
@@ -2163,6 +2168,10 @@ line-height: 35px;
     }
     #ak-menu li a {
       padding: 15px 9px;
+    }
+    .slick-lightbox .slick-next, .slick-lightbox .slick-prev {
+      margin-left: 0px;
+      margin-right: 0px;
     }
 }
 
