@@ -2116,7 +2116,6 @@ line-height: 35px;
     }
     .shield-sub-text{
       font-size: 15px!important;
-      margin-right: -60px!important;
     }
     .banner-top img{
       margin-left: 100px!important;
@@ -3256,6 +3255,9 @@ header, .main-nav-scrolled {
   .reduce-padding .ak-container {
     padding-bottom: 0px
   }
+  .shield-text{
+    display: none;
+  }
 
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -3449,7 +3451,8 @@ header, .main-nav-scrolled {
   }
   #radar-img-zone {
     margin-bottom: 60px;
-    margin-left: 60px;
+    margin-left: 15px;
+    padding-left: 60px;
   }
   .button-container {
     margin: 0 auto;
@@ -3700,7 +3703,8 @@ header, .main-nav-scrolled {
   }
   #radar-img-zone {
     margin-bottom: 60px;
-    margin-left: 50px;
+    margin-left: 15px;
+    padding-left: 50px;
   }
   .button-container {
     margin: 0 auto;
