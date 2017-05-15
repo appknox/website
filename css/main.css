@@ -2853,6 +2853,7 @@ header, .main-nav-scrolled {
 }
 
 .level-header {
+  padding-top: 30px;
   font-weight: 100;
   color: #484359
 }
