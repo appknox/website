@@ -2820,7 +2820,7 @@ header, .main-nav-scrolled {
 /* Start of Bee3D styles */
 
 #demo {
-    margin-top: 300px;
+  margin-top: 300px;
 }
 .bee3D--slide {
   background-color: gray;
@@ -2834,6 +2834,44 @@ header, .main-nav-scrolled {
 
 /* End of Bee3D styles */
 
+/* Start of Slick Lightbox styles */
+
+.slick-next {
+  background: url("../img/right-arrow.png")!important;
+  width: 50px;
+  height: 50px;
+  margin-right: -30px
+}
+
+.slick-prev {
+  background: url("../img/left-arrow.png")!important;
+  width: 50px;
+  height: 50px;
+  margin-left: -30px
+}
+
+.slick-prev::before, .slick-next::before {
+  content: none!important;
+}
+
+.slider-container {
+  padding: 60px
+}
+
+.slick-lightbox .slick-dots {
+  bottom: 10px
+}
+
+.slick-lightbox .slick-next, .slick-lightbox .slick-prev {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slick-lightbox .slick-dots button::before {
+  color: #fff!important
+}
+
+/* End of Slick Lightbox styles */
 
 /* Start of Footer */
 
