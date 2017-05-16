@@ -200,6 +200,13 @@ p {
     display: inline-block;
 }
 
+#demo {
+    margin-top: 300px;
+}
+.bee3D--slide {
+    background-color: gray;
+}
+
 .plan-top-line {
     display: inline-block;
     width: 80%;
