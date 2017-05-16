@@ -103,6 +103,30 @@ $('body').scrollspy({
 $('.main-nav').affix({offset: {top: 2850, bottom: 800} });
 </script>
 
+
+<!-- Start of slick lighbox config -->
+<script>
+$(document).ready(function(){
+  $('.slides').slickLightbox({
+    src: 'src',
+    itemSelector: 'img.sliders',
+    slick: {
+      dots: true,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
+    }
+  });
+});
+</script>
+<!-- End of slick lighbox config -->
+
 <script>
 $(document).ready(function(){
   $('.carousel').carousel({
@@ -117,6 +141,7 @@ $(document).ready(function(){
   });
 });
 </script>
+
 
 <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
 <script>
