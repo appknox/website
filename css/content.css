@@ -1,0 +1,325 @@
+body
+{
+	background :#F3F3F3;
+	margin-top :20px;
+	margin-bottom :20px;
+}
+
+select
+{
+	width :150px;
+}
+
+/* _________________________________________________________ */
+
+/* CONTAINER */
+/* _________________________________________________________ */
+
+/* container */
+.column1container {width: 80px;}
+.column2container {width: 160px;}
+.column3container {width: 240px;}
+.column4container {width: 320px;}
+.column5container {width: 400px;}
+.column6container {width: 480px;}
+.column7container {width: 560px;}
+.column8container {width: 640px;}
+.column9container {width: 720px;}
+.column10container {width: 800px;}
+.column11container {width: 880px;}
+.column12container {width: 930px;}
+
+/* column */
+.column1,
+.column2,
+.column3,
+.column4,
+.column5,
+.column6,
+.column7,
+.column8,
+.column9,
+.column10,
+.column11,
+.column12 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.column1 {width:60px;}
+.column2 {width:140px;}
+.column3 {width:220px;}
+.column4 {width:270px;}
+.column5 {width:380px;}
+.column6 {width:460px;}
+.column7 {width:540px;}
+.column8 {width:620px;}
+.column9 {width:700px;}
+.column10 {width:780px;}
+.column11 {width:860px;}
+.column12 
+{
+	width:930px;
+	margin :0 ; 
+	padding-top :20px; 
+	padding-bottom :15px; 
+	/*background-color:#E5EBF0; Silver */
+	background-color : transparent;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* content */
+
+.main_container
+{
+	margin :0 auto;
+	background :#fff;
+	border-top :solid 3px silver;
+}
+
+.heading
+{
+	height :100px;
+}
+
+.heading h1
+{
+	font-family :Arial ;
+	margin :10px 0 0 0;
+	padding :0;
+}
+
+.heading h2
+{
+	font-family :Arial, Verdana ;
+	font-size :14px;
+	font-weight :normal ;
+	margin :10px 0 40px 0;
+	padding :0;
+	color : #888 ;
+}
+
+.download
+{
+	text-align :right ;
+	padding-top :20px;
+}
+
+.download a
+{
+	text-decoration :none;
+}
+
+.download img
+{
+	border :0;
+}
+
+/* _____________________________________________________________ */
+
+.leftContent
+{
+	margin :0;
+	margin-top :10px;
+}
+
+.columnLeftContent_container
+{
+	width :620px;
+	margin :10px 0;
+	position :relative ;
+	float :left ;
+	background :#fff;
+}
+
+.columnLeftContent_container h2
+{
+	margin : 10px 10px;
+	padding :0 0 10px 0;
+	border-bottom :solid 1px #ccc;
+	font-family :Arial, Verdana ;
+	font-size :1.3em;
+}
+
+.column1Left
+{
+	width :150px;
+	margin :10px;
+	position :relative ;
+	float :left ;
+}
+
+.column2Left
+{
+	width :410px;
+	margin :10px;
+	position :relative ;
+	float :left ;
+	font-family :Arial , Verdana ;
+	font-size :13px;
+}
+
+.column2Left p
+{
+	line-height :1.5em;
+}
+
+.column2Left .strong
+{
+	font-size :2em;
+}
+
+/* _______________________________________________________________ */
+
+.rightContent
+{
+	width :280px;
+	margin :0;
+	margin-left :20px;
+	margin-top :20px;
+	border-left : dashed 2px #ccc;
+	
+}
+
+.columnRightContent_container
+{
+	width :250px;
+	margin :10px 10px 10px 30px;
+	position :relative ;
+	float :left ;
+	background :#fff;
+}
+
+.columnRightContent_container strong
+{
+	font-size :18px;
+	font-style :italic ;
+}
+
+.columnRightContent_container ul
+{
+	margin : 0 0;
+	padding :0;
+}
+
+.columnRightContent_container li
+{
+	list-style-type : none;
+	line-height :1.5em;
+}
+
+.columnRightContent_container a
+{
+	text-decoration :none;
+	color :#000;
+}
+
+.columnRightContent_container a:hover
+{
+	text-decoration : underline;
+}
+
+.columnRightContent_container .preview
+{
+	text-decoration :underline;
+	color :Blue ;
+}
+
+.download_content
+{
+	text-align :center ;
+	color :Silver ;
+}
+
+.download_content p
+{
+	text-align :center ;
+	margin :0;
+	padding :0;
+}
+
+.download_content a
+{
+	text-decoration :none;
+	margin :0;
+	padding :0;
+}
+
+.download_content img
+{
+	border :0;
+}
+
+.content
+{
+}
+
+/* ________________________________________________________ */
+
+.footer
+{
+	margin :0 auto;
+}
+
+.footer strong
+{
+	font-family :Arial, Verdana ;
+	font-size: 1.5em;
+}
+
+.leftFooter
+{
+	width :550px;
+	margin :10px 0;
+	position :relative ;
+	float :left ;
+}
+
+.leftFooter a
+{
+	text-decoration :none;
+	margin-right :10px;
+}
+
+.leftFooter img
+{
+	border :none;
+}
+
+.rightFooter
+{
+	width :220px;
+	margin :10px 0;
+	position :relative ;
+	float : right ;
+	text-align :left;
+}
+
+.leftFooter p
+{
+	font-family :Arial , Verdana ;
+	font-size :13px;
+	line-height :1.5em;
+}
+
+.rightFooter a
+{
+	text-decoration :none;
+}
+
+.rightFooter img
+{
+	border :0;
+}
+

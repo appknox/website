@@ -6,9 +6,12 @@
 <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
 <script src="/js/main.js"></script>
 <script src="/js/vendor/classie.js"></script>
-<script src="/js/bee3D.js"></script>
 <script src="/js/slick.min.js"></script>
 <script src="/js/slick-lightbox.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.carousel-1.1.min.js"></script>
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -104,49 +107,18 @@ $('body').scrollspy({
 $('.main-nav').affix({offset: {top: 2850, bottom: 800} });
 </script>
 
-<!-- Start of Bee3D slider config -->
-<script>
-  var demo = document.getElementById('demo');
-  var slider = new Bee3D(demo, {
-  effect: 'coverflow',
-  listeners: {
-      keys: true
-    },
-  autoplay: {
-		enabled: true,
-		speed: 3000,
-    pauseHover: true
-  },
-  loop: {
-    enabled: true,
-    continuous: true
-  }
-  });
-</script>
-<!-- End of Bee3D slider config -->
 
-<!-- Start of slick lighbox config -->
 <script>
 $(document).ready(function(){
-  $('.bee3D--parent').slickLightbox({
-    src: 'src',
-    itemSelector: 'img.slider',
-    slick: {
-      dots: true,
-      arrows: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
-    }
+  $('.carousel').carousel({
+  carouselWidth:930,
+  carouselHeight:330,
+  directionNav:true,
+  shadow:true,
+  buttonNav:'bullets'
   });
 });
 </script>
-<!-- End of slick lighbox config -->
 
 <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->
 <script>
