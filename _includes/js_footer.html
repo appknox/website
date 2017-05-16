@@ -5,8 +5,6 @@
 <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
 <script src="/js/main.js"></script>
-<script src="/js/slick.min.js"></script>
-<script src="/js/slick-lightbox.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -100,56 +98,6 @@ $('body').scrollspy({
   target: '#myScrollspy',  offset: 100
 });
 $('.main-nav').affix({offset: {top: 2850, bottom: 800} });
-</script>
-
-<script>
-$(document).ready(function(){
-  $('.slider-image').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-  $('.slider-image').slickLightbox({
-    src: 'src',
-    itemSelector: 'img.slider',
-    slick: {
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
-    }
-  });
-});
 </script>
 
 <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com -->

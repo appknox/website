@@ -1942,58 +1942,6 @@ line-height: 35px;
 
 /* END OF KNOW MORE PAGE */
 
-/* Start of Slick Slider */
-
-.slider-image {
-  margin-top: 50px
-}
-
-.slider {
-  margin: 10px;
-  box-shadow: 0 0 10px 2px #d3d3d3;
-  width: 800px!important;
-}
-
-.slick-center {
-  box-shadow: 0 0 15px 2px #191919;
-}
-
-.slick-next {
-  background: url("../img/right-arrow.png")!important;
-  width: 50px;
-  height: 50px;
-  margin-right: -30px
-}
-
-.slick-prev {
-  background: url("../img/left-arrow.png")!important;
-  width: 50px;
-  height: 50px;
-  margin-left: -30px
-}
-
-.slick-prev::before, .slick-next::before {
-  content: none!important;
-}
-
-.slider-container {
-  padding: 60px
-}
-
-.slick-lightbox .slick-dots {
-  bottom: 10px
-}
-
-.slick-lightbox .slick-next, .slick-lightbox .slick-prev {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.slick-lightbox .slick-dots button::before {
-  color: #fff!important
-}
-
-/* End of Slick Slider */
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
@@ -2079,9 +2027,6 @@ line-height: 35px;
   .user-comments {
     font-size: 20px
   }
-  .slider {
-    width: 600px!important
-  }
   .footer-box {
     height: 80px!important
   }
@@ -2125,9 +2070,6 @@ line-height: 35px;
     }
     .banner-top img{
       margin-left: 100px!important;
-    }
-    .slider {
-      width: 600px!important
     }
 }
 
@@ -3196,9 +3138,6 @@ header, .main-nav-scrolled {
   #ak-slide-container {
     min-height: 630px
   }
-  .slider {
-    width: 500px!important
-  }
 }
 
 @media (max-width: 767px) {
@@ -3524,12 +3463,6 @@ header, .main-nav-scrolled {
   #ak-slide-container {
     min-height: 600px
   }
-  .slider {
-    width: 400px!important
-  }
-  .slider-container {
-    padding: 30px!important
-  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -3776,12 +3709,6 @@ header, .main-nav-scrolled {
   }
   #ak-slide-container {
     min-height: 620px
-  }
-  .slider {
-    width: 350px!important
-  }
-  .slider-container {
-    padding: 10px!important
   }
 }
 
@@ -4053,12 +3980,6 @@ header, .main-nav-scrolled {
   }
   #ak-slide-container {
     min-height: 730px
-  }
-  .slider {
-    width: 300px!important
-  }
-  .slider-container {
-    padding: 10px!important
   }
 }
 
