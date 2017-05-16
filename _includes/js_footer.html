@@ -106,10 +106,19 @@ $('.main-nav').affix({offset: {top: 2850, bottom: 800} });
 <script>
   var demo = document.getElementById('demo');
   var slider = new Bee3D(demo, {
-  effect: 'concave',
+  effect: 'carousel',
   listeners: {
       keys: true
-    }
+    },
+  autoplay: {
+		enabled: true,
+		speed: 3000,
+    pauseHover: true
+  },
+  loop: {
+    enabled: true,
+    continuous: true
+  }
   });
 </script>
 <!-- End of Bee3D slider confifg -->
