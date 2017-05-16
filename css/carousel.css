@@ -71,10 +71,10 @@ Version: 1.0
 /* _______________________________________________ */
 
 
-.carousel .nextButton {
+.carousel-slider .nextButton {
   position : absolute;
   right : 10px;
-  top : 133px;
+  top : 183px;
   width : 50px;
   height : 50px;
   background : url("../img/next_button.png") no-repeat center;
@@ -82,10 +82,10 @@ Version: 1.0
   z-index : 9999;
 }
 
-.carousel .prevButton {
+.carousel-slider .prevButton {
   position : absolute;
-  left : 80px;
-  top : 133px;
+  left : 10px;
+  top : 183px;
   width : 50px;
   height: 50px;
   background : url("../img/prev_button.png");
