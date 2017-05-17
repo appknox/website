@@ -1,14 +1,3 @@
-body
-{
-	background :#F3F3F3;
-	margin-top :20px;
-	margin-bottom :20px;
-}
-
-select
-{
-	width :150px;
-}
 
 /* _________________________________________________________ */
 
@@ -60,12 +49,12 @@ select
 .column9 {width:700px;}
 .column10 {width:780px;}
 .column11 {width:860px;}
-.column12 
+.column12
 {
 	width:930px;
-	margin :0 ; 
-	padding-top :20px; 
-	padding-bottom :15px; 
+	margin :0 ;
+	padding-top :20px;
+	padding-bottom :15px;
 	/*background-color:#E5EBF0; Silver */
 	background-color : transparent;
 }
@@ -189,7 +178,7 @@ select
 	margin-left :20px;
 	margin-top :20px;
 	border-left : dashed 2px #ccc;
-	
+
 }
 
 .columnRightContent_container
@@ -322,4 +311,3 @@ select
 {
 	border :0;
 }
-

@@ -73,7 +73,7 @@ Version: 1.0
 
 .carousel-slider .nextButton {
   position : absolute;
-  right : -200px;
+  right : -40px;
   top : 183px;
   width : 50px;
   height : 50px;
@@ -84,7 +84,7 @@ Version: 1.0
 
 .carousel-slider .prevButton {
   position : absolute;
-  left : -200px;
+  left : -40px;
   top : 183px;
   width : 50px;
   height: 50px;
