@@ -3531,6 +3531,13 @@ header, .main-nav-scrolled {
   #ak-slide-container {
     min-height: 600px
   }
+  .sec-slider, .carousel {
+    margin-top: 30px;
+    width: 320px;
+  }
+  .sec-slider .carousel-spots {
+    top: 200px
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -3777,6 +3784,16 @@ header, .main-nav-scrolled {
   }
   #ak-slide-container {
     min-height: 620px
+  }
+  .sec-slider, .carousel {
+    margin-top: 30px;
+    width: 320px;
+  }
+  .slider-container {
+    padding: 30px
+  }
+  .sec-slider .carousel-spots {
+    top: 200px
   }
 }
 
@@ -4048,6 +4065,16 @@ header, .main-nav-scrolled {
   }
   #ak-slide-container {
     min-height: 730px
+  }
+  .sec-slider, .carousel {
+    margin-top: 30px;
+    width: 280px;
+  }
+  .slider-container {
+    padding: 20px
+  }
+  .sec-slider .carousel-spots {
+    top: 180px
   }
 }
 
