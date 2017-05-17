@@ -2071,6 +2071,19 @@ line-height: 35px;
     .banner-top img{
       margin-left: 100px!important;
     }
+    .carousel-slider {
+      display: none;
+    }
+    .sec-slider {
+      display: block!important;
+      width: 800px;
+    }
+    .sec-slider .carousel-spots {
+      top: 470px
+    }
+    .level-header {
+      padding-top: 60px!important
+    }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2125,6 +2138,12 @@ line-height: 35px;
     }
     .footer-box a {
       top: 35%!important
+    }
+    .sec-slider, .carousel {
+      width: 600px;
+    }
+    .sec-slider .carousel-spots {
+      top: 350px
     }
 }
 
@@ -2823,6 +2842,10 @@ header, .main-nav-scrolled {
 
 .carousel-slider {
   padding-top: 50px
+}
+
+.sec-slider {
+  display: none;
 }
 
 .slick-next {
