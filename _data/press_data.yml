@@ -1,23 +1,51 @@
+- date: November 16, 2016
+  logo: /img/press/press_01.jpg
+  title: Launch of the Latest Security Report on Bank Apps in APAC at Singapore FinTech Festival
+  desc: Rio Olympics Cybersecurity is the talk of the town. We list down 5 things that your boss would want to know regarding it.
+  link: https://letstalkpayments.com/launch-of-the-latest-security-report-on-bank-apps-in-apac-at-singapore-fintech-festival/
+  identifier: 2016
+
+- date: August 28, 2016
+  logo: /img/press/press_01.jpg
+  title: 5 Things About Rio Olympics Cybersecurity Your Boss Wants To Know
+  desc: Rio Olympics Cybersecurity is the talk of the town. We list down 5 things that your boss would want to know regarding it.
+  link: http://techseen.com/2016/08/29/5-things-rio-olympics-cybersecurity/
+  identifier: 2016-1
+
 - date: August 10, 2016
   logo: /img/press/press_01.jpg
   title: 5 Things About Rio Olympics Cybersecurity Your Boss Wants To Know
   desc: Rio Olympics Cybersecurity is the talk of the town. We list down 5 things that your boss would want to know regarding it.
   link: http://threatbrief.com/5-things-rio-olympics-cybersecurity-boss-wants-know/
-  identifier: 2016
+  identifier: 2016-2
 
 - date: July 15, 2016
   logo: /img/press/press_02.png
   title: Singapore Plans Legislation to Secure Data Collected by Firms
   desc: Singapore will introduce legislation to protect sensitive data used by mobile app developers and other companies as the city-state intensifies its push to become one of the world’s leading technology hubs.
   link: http://www.bloomberg.com/news/articles/2016-07-14/singapore-plans-legislation-to-secure-data-collected-by-firms
-  identifier: 2016-2
+  identifier: 2016-3
+
+- date: June 22, 2016
+  logo: /img/press/press_01.jpg
+  title: How safe are you from cyber attacks?
+  desc: Rio Olympics Cybersecurity is the talk of the town. We list down 5 things that your boss would want to know regarding it.
+  link: http://economictimes.indiatimes.com/small-biz/security-tech/security/how-safe-are-you-from-cyber-attacks/articleshow/52851255.cms
+  identifier: 2016-4
+
+- date: June 10, 2016
+  logo: /img/press/press_01.jpg
+  title: Three things CIOs should do to ensure security of their mobile banking apps
+  desc: Rio Olympics Cybersecurity is the talk of the town. We list down 5 things that your boss would want to know regarding it.
+  link: http://economictimes.indiatimes.com/wealth/save/three-things-cios-should-do-to-ensure-security-of-their-mobile-banking-apps/articleshow/52684066.cms?from=mdr
+  identifier: 2016-5
 
 - date: May 24, 2016
   logo: /img/press/press_03.png
   title: Beyond Interiors- Adding More Meaning To Spaces And How I Did It For Appknox
   desc: Bangalore is a city that I have come to terms with now and started calling home. This place has nurtured a very healthy startup culture which is unique in its own way. One of my first interior projects in the city is an office space for a mobile security startup called Appknox.
   link: https://inc42.com/resources/designing-appknox/
-  identifier: 2016-3
+  identifier: 2016-6
   show_separtor: content-separator
 
 - date: November 02, 2015
