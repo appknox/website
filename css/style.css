@@ -611,14 +611,16 @@ a {
   color: #ccc;
   font-family: gillsansmtpro;
   margin-right: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   height: 70px;
 }
 
 .footer-box a {
   color: #ccc;
   position: relative;
-  top: 40%;
+  top: 30%;
+  font-size: 14px;
+  padding-top: 10px;
   transform: translateY(-50%);
 }
 
@@ -688,6 +690,15 @@ a {
 }
 
 /* End of footer */
+
+@media (max-width: 1200px) {
+  .footer-box {
+    height: 80px!important
+  }
+  .footer-box a {
+    top: 20%!important
+  }
+}
 
 @media (max-width: 1024px) {
   .call-button {
@@ -851,6 +862,21 @@ a {
     width: 150px;
     display: block!important;
     margin: 20px auto;
+  }
+  .footer-box {
+    height: 60px!important
+  }
+  .footer-box a {
+    top: 35%!important
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-box {
+    height: 60px!important
+  }
+  .footer-box a {
+    top: 30%!important
   }
 }
 
