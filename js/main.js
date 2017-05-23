@@ -375,7 +375,7 @@ function AkElementAnimator(element){
   this.appearanceCss = null;
   this.perishCss = null;
   this.animTime = null;
-  this.defaultAnimTime = 500;
+  this.defaultAnimTime = 1000;
   this.createAnimator(element);
 }
 
