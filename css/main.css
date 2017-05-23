@@ -2535,11 +2535,9 @@ header, .main-nav-scrolled {
 }
 
 .press-logo{
-  width: 80px;
-  height: 80px;
-  margin-left: 0px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  max-width: 80px;
+  max-height: 80px;
+  vertical-align: middle;
 }
 
 .block-section{
