@@ -62,7 +62,11 @@ ul,li {
 }
 
 .red {
-    color: #f17758;
+  color: #f17758;
+}
+
+.red-text {
+  color: #ea2127;
 }
 
 .bg-red {
