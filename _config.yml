@@ -23,7 +23,7 @@ gems:
 languages: ["en", "in"]
 
 # Exclude options
-exclude_from_localizations: ["js", "img", "css"]
+exclude_from_localizations: ["js", "img", "css", "fonts"]
 
 # Build settings
 markdown: kramdown
@@ -43,3 +43,5 @@ exclude:
   - .jshintignore
   - deploy_github.sh
   - s3_website.yml
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
