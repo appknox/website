@@ -140,10 +140,17 @@
 
 - name: Nikhil Kumar
   title: Digital Marketing Manager
-  gravatar: https://secure.gravatar.com/avatar/7141f143b3641572525ba9ca92e3863a
+  gravatar: https://secure.gravatar.com/avatar/7141f143b3641572525ba9ca92e3863a?s=200
   links:
     - https://www.linkedin.com/in/nikhonit/
     - https://twitter.com/nikhonit
     - https://www.facebook.com/Nikthehacker
     - nikhil@appknox.com
     - http://www.nikhilkumarofficial.com/
+
+- name: Hari Krishna R M
+  title: Creative Designer
+  gravatar: https://secure.gravatar.com/avatar/4bcc5fe9e5bd28741e1e929f5dbaf85d?s=200
+  links:
+    - https://www.linkedin.com/in/r-m-hari-krishna-9a179694/
+    - hari@appknox.com
