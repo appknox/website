@@ -2487,11 +2487,9 @@ header, .main-nav-scrolled {
 }
 
 .press-logo{
-  width: 80px;
-  height: 80px;
-  margin-left: 0px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  max-width: 80px;
+  max-height: 80px;
+  vertical-align: middle;
 }
 
 .block-section{
@@ -3283,13 +3281,11 @@ header, .main-nav-scrolled {
     width: 90%;
     margin-bottom: 10px;
   }
-  .press-logo {
-    width:70px;
-    height: 70px;
+  .press-logo{
     margin-left: 20px;
   }
-  .navbar-years {
-    margin-left: 80px;
+  .navbar-years{
+    margin-left: 0px;
   }
   .toggleNew {
     margin-top: 29px!important;
@@ -3336,12 +3332,15 @@ header, .main-nav-scrolled {
     margin-top: -15px;
     display: inline-block;
   }
-  .year-menu li a {
+  .year-menu li:first-child {
+    margin-left: 10px
+  }
+  .year-menu li a{
     line-height: 10px;
   }
   .year-selector {
-    margin-left: -20px;
-    margin-top: 5px;
+    margin-left: -27px;
+    margin-top: 7px;
     font-size: 13px;
     padding-left: 0px;
   }
@@ -3349,10 +3348,11 @@ header, .main-nav-scrolled {
     height: 30px;
   }
   .arrow-left {
-    bottom:20px;
+    bottom: 22px;
+    left: 37px
   }
   .year-menu li a:hover {
-  background-color: #fafafa;
+    background-color: #fafafa;
   }
   .main-nav-scrolled {
     width: 90%!important;
@@ -3361,7 +3361,7 @@ header, .main-nav-scrolled {
   }
   .year-menu {
     margin-left: 0px!important;
-    width: 350px;
+    width: 390px;
     font-size: 13px;
     margin-top: 20px;
     height: 42px;
@@ -3551,8 +3551,6 @@ header, .main-nav-scrolled {
     margin-bottom: 10px;
   }
   .press-logo {
-    width:70px;
-    height: 70px;
     margin-left: 20px;
   }
   .mentions-text {
@@ -3621,7 +3619,7 @@ header, .main-nav-scrolled {
   }
   .year-menu {
     margin-left: 0px!important;
-    width: 300px;
+    width: 333px;
     font-size: 13px;
     margin-top: 20px;
     height: 42px;
@@ -3636,26 +3634,26 @@ header, .main-nav-scrolled {
   .navbar-years {
     margin-left: 80px;
   }
-  .left-error-content{
+  .left-error-content {
     margin-left: 0px;
   }
-  .or-heading{
+  .or-heading {
     margin-top: 30px;
   }
-  .blog-box-top{
+  .blog-box-top {
     margin-top: 20px;
   }
-  .blog-box-down{
+  .blog-box-down {
     margin-top: 20px;
   }
-  .error-right-heading{
+  .error-right-heading {
     margin-top: 30px;
   }
   .grader-logo img {
     position: relative;
     top: 0px;
   }
-  .try-now-button{
+  .try-now-button {
     left: 0px;
   }
   .ak-appgrader-green-dark {
@@ -3664,7 +3662,7 @@ header, .main-nav-scrolled {
   #home-video-zone {
     margin: auto;
   }
-  .level-section{
+  .level-section {
     margin-top: 10px;
     margin-bottom: 0px;
   }
@@ -3797,8 +3795,6 @@ header, .main-nav-scrolled {
     width: 250px;
   }
   .press-logo{
-    width:70px;
-    height: 70px;
     margin-left: 20px;
   }
   .press-content{
@@ -3897,13 +3893,12 @@ header, .main-nav-scrolled {
     background-color: #fafafa;
   }
   .year-menu{
-    margin-left: 0px!important;
-    width: 250px;
+    margin-left: -10px!important;
+    width: 275px;
     font-size: 13px;
     margin-top: 20px;
     height: 42px;
     line-height: 30px;
-    margin-left: 20px!important;
   }
   .main-nav-scrolled {
     width: 85%!important;
