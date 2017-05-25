@@ -1759,6 +1759,13 @@ input[type=email],input[type=text],input[type=url] {
   border-radius: 80px;
   margin-bottom: 20px;
   overflow: hidden;
+  opacity: .8;
+  transition: all .35s ease-out;
+}
+
+.member-pic-zone>img:hover {
+  opacity: 1;
+  border-radius: 45px;
 }
 
 .logo-pic-zone>img {
@@ -1789,6 +1796,11 @@ input[type=email],input[type=text],input[type=url] {
 
 .social-icons li > a {
   color: #999;
+}
+
+.social-icons li > a:hover {
+  cursor: pointer;
+  color: #505050;
 }
 
 /* END OF COMPANY PAGE */
