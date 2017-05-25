@@ -126,10 +126,14 @@ $(document).ready(function(){
   $('.video-modal').slickLightbox({
     itemSelector: 'div.open-modal'
   });
+  $('.image-video-modal').slickLightbox({
+    src: 'src',
+    itemSelector: 'img.ak-ele-animate'
+  });
   var imgsrc = $('.slick-lightbox-slick-img').attr('src');
-  $('.video-modal').click(function(){
-    if(imgsrc == undefined) {
-    $('img.slick-lightbox-slick-img').replaceWith( "<iframe width='854' height='480' src='https://www.youtube.com/embed/ZyKA6xRW7Jc?rel=0&amp;autoplay=1' frameborder='0' allowfullscreen></iframe>" );
+  $('.video-modal , .image-video-modal').click(function(){
+    if(imgsrc == undefined || imgsrc == "img/slides/top-slides/slider-1.png") {
+    $('img.slick-lightbox-slick-img').replaceWith( "<iframe width='854' height='480' class='iframe-modal' src='https://www.youtube.com/embed/ZyKA6xRW7Jc?rel=0&amp;autoplay=1' frameborder='0' allowfullscreen></iframe>" );
     }
   });
 });
