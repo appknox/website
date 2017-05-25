@@ -2793,6 +2793,10 @@ header, .main-nav-scrolled {
   display: none;
 }
 
+.hide-image {
+  display: none;
+}
+
 .slick-next {
   background: url("../img/next_button.png")!important;
   width: 50px;
