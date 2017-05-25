@@ -23,7 +23,7 @@ gems:
 languages: ["en", "in"]
 
 # Exclude options
-exclude_from_localizations: ["javascript", "images", "css"]
+exclude_from_localizations: ["js", "img", "css"]
 
 # Build settings
 markdown: kramdown

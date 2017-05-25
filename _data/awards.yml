@@ -1,16 +1,16 @@
-- image: img/nasscom-emerge-50-2015.png
+- image: /img/nasscom-emerge-50-2015.png
   alt: Appknox nasscom
   heading: Emerge 50
   subheading: NASSCOM
   year: 2015
 
-- image: img/awards3.png
+- image: /img/awards3.png
   alt: appknox hot100
   heading: Winner
   subheading: Hot 100 Tech Awards
   year: 2014
 
-- image: img/awards1.png
+- image: /img/awards1.png
   alt: appknox CIO
   heading: Top Enterprise Startup
   subheading: CIO Review
