@@ -123,6 +123,27 @@ a {
    cursor: pointer;
  }
 
+ .location-selector {
+  margin-top: -45px;
+  margin-right: -20px;
+  float: right;
+  font-size: 12px;
+  font-family: neosans;
+  height: 30px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.location-selector label {
+  margin-bottom: 0px
+}
+
+.location-selector select {
+  width: 80px;
+  height: 30px;
+  font-size: 12px
+}
+
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
@@ -179,7 +200,7 @@ a {
   float: left;
   }
   .request-menu{
-    margin-right: 40px;
+    margin-right: 70px;
   }
 }
 
@@ -869,6 +890,26 @@ a {
   .footer-box a {
     top: 35%!important
   }
+  #ak-menu li a {
+    padding: 15px 7px;
+  }
+  #ak-menu li>a {
+    font-size: 14px
+  }
+  .request-menu{
+    margin-right: 70px;
+    padding: 5px 16px
+  }
+  .navbar-brand {
+    margin-left: -40px!important
+  }
+  .location-selector {
+    margin-top: -42px;
+    margin-right: -16px
+  }
+  .sos-main-heading{
+    max-width: 700px
+  }
 }
 
 @media (max-width: 767px) {
@@ -878,6 +919,14 @@ a {
   .footer-box a {
     top: 30%!important
   }
+  .location-selector {
+    margin-top: -40px;
+    margin-right: 45px
+  }
+  .navbar-brand {
+    margin-top: 0px
+  }
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
