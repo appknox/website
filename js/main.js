@@ -2523,6 +2523,28 @@ $(document).ready(function() {
   }
 });
 
+$(".location").change(function(){
+  var optionSelected = $(this).find("option:selected");
+  var valueSelected  = optionSelected.val();
+  var india = "location=India";
+  var globe = "location=Global";
+  if(valueSelected == "India") {
+    document.cookie = india;
+  }
+  if(valueSelected == "Global") {
+    document.cookie = globe;
+  }
+  if(document.cookie.indexOf("location=India") >=0) {
+    if(window.location.pathname.startsWith("/in") == false){
+      var hash = window.location.hash
+      window.location= "/in" + window.location.pathname + hash;
+    }
+  }
+  if(document.cookie.indexOf("location=Global") >=0) {
+    window.location= "/";
+  }
+});
+
 $(document).ready(function () {
   $(".grade_section").click(function() {
   window.location.href="#grade-section";
