@@ -1159,10 +1159,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 
 
 PricingManager.prototype.faqControl = function(){
-  $('.faq-quest-area').on('click', function() {
-    faqControls();
-  });
-  function faqControls(){
+  $('.faq-quest-area').on('click', function(event) {
     var faqEle = $(event.currentTarget).parent();
     var icon = $(event.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
@@ -1177,7 +1174,7 @@ PricingManager.prototype.faqControl = function(){
     faqEle.find(".faq-answer").slideToggle(400);
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
-  }
+  });
 }
 
 PricingManager.prototype.publishAppCountChange = function(){

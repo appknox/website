@@ -1576,6 +1576,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .faqArrow {
+  cursor: pointer;
   font-size: 15px;
   width: 20px;
 }
