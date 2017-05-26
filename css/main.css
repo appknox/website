@@ -563,7 +563,7 @@ button:focus {
   margin-top: 20px
 }
 
-.request-menu{
+.request-menu {
   background: #ea2127;
   border: none;
   padding: 5px 20px;
@@ -577,6 +577,27 @@ button:focus {
   height: 30px;
   line-height: 23px;
   cursor: pointer;
+}
+
+.location-selector {
+  margin-top: -45px;
+  margin-right: -20px;
+  float: right;
+  font-size: 12px;
+  font-family: neosans;
+  height: 30px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.location-selector label {
+  margin-bottom: 0px
+}
+
+.location-selector select {
+  width: 70px;
+  height: 30px;
+  font-size: 12px
 }
 
 .button-red:hover {
