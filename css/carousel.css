@@ -79,7 +79,7 @@ Version: 1.0
   height : 50px;
   background : url("../img/next_button.png") no-repeat center;
   cursor : pointer;
-  z-index : 9999;
+  z-index : 1000;
 }
 
 .carousel-slider .prevButton {
@@ -90,7 +90,7 @@ Version: 1.0
   height: 50px;
   background : url("../img/prev_button.png");
   cursor : pointer;
-  z-index : 9999;
+  z-index : 1000;
 }
 
 /* _______________________________________________ */
