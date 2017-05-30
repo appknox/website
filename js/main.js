@@ -287,7 +287,7 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
   var repeatAnim = this.binder(this.createIntervalAnim);
-  this.interval = setInterval(repeatAnim,5000);
+  this.interval = setInterval(repeatAnim,12000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
@@ -375,7 +375,7 @@ function AkElementAnimator(element){
   this.appearanceCss = null;
   this.perishCss = null;
   this.animTime = null;
-  this.defaultAnimTime = 500;
+  this.defaultAnimTime = 1000;
   this.createAnimator(element);
 }
 
@@ -1159,10 +1159,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 
 
 PricingManager.prototype.faqControl = function(){
-  $('.faq-quest-area').on('click', function() {
-    faqControls();
-  });
-  function faqControls(){
+  $('.faq-quest-area').on('click', function(event) {
     var faqEle = $(event.currentTarget).parent();
     var icon = $(event.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
@@ -1177,7 +1174,7 @@ PricingManager.prototype.faqControl = function(){
     faqEle.find(".faq-answer").slideToggle(400);
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
-  }
+  });
 }
 
 PricingManager.prototype.publishAppCountChange = function(){
