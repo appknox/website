@@ -580,27 +580,6 @@ button:focus {
   cursor: pointer;
 }
 
-.location-selector {
-  margin-top: -45px;
-  margin-right: -20px;
-  float: right;
-  font-size: 12px;
-  font-family: neosans;
-  height: 30px;
-  line-height: 23px;
-  cursor: pointer;
-}
-
-.location-selector label {
-  margin-bottom: 0px
-}
-
-.location-selector select {
-  width: 80px;
-  height: 30px;
-  font-size: 12px
-}
-
 .button-red:hover {
   color: #fff !important;
 }
@@ -2115,6 +2094,18 @@ line-height: 35px;
   .slide-img-zone {
     margin-top: 80px
   }
+  .request-menu {
+    margin-right: 0px
+  }
+  .navbar-brand {
+    margin-left: -46px!important
+  }
+  #ak-menu li a {
+    padding: 15px 6px;
+  }
+  #ak-menu li>a {
+    font-size: 14px
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2158,10 +2149,10 @@ line-height: 35px;
       padding-top: 110px;
   }
   #ak-menu li a {
-    padding: 15px 7px;
+    padding: 15px 9px;
   }
   #ak-menu li>a {
-    font-size: 14px
+    font-size: 16px
   }
   .slick-lightbox .slick-next, .slick-lightbox .slick-prev {
     margin-left: 0px;
@@ -3050,7 +3041,7 @@ header, .main-nav-scrolled {
     margin-bottom: 10px;
   }
   .request-menu{
-    margin-right: 70px;
+    margin-right: 0px;
     padding: 5px 16px
   }
   .call-button {
@@ -3205,10 +3196,6 @@ header, .main-nav-scrolled {
   .navbar-brand {
     margin-left: -40px!important
   }
-  .location-selector {
-    margin-top: -42px;
-    margin-right: -16px
-  }
 }
 
 @media (max-width: 767px) {
@@ -3288,10 +3275,6 @@ header, .main-nav-scrolled {
   }
   .shield-text {
     display: none;
-  }
-  .location-selector {
-    margin-top: -40px;
-    margin-right: 45px
   }
   .navbar-brand {
     margin-top: 0px

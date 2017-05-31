@@ -646,7 +646,9 @@ a {
 }
 
 .footer-section2 {
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: -30px;
+  background-color: #02060C
 }
 
 .address-section {
