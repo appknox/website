@@ -18,19 +18,16 @@ github_username:  appknox
 # Gem option
 gems:
   - jekyll-multiple-languages-plugin
+  - jekyll-assets
 
 # Available languages
 languages: ["en", "in"]
 
 # Exclude options
-exclude_from_localizations: ["js", "img", "css", "fonts"]
+exclude_from_localizations: ["js", "img", "css"]
 
 # Build settings
 markdown: kramdown
-
-# Adding Gems
-gems:
-  - jekyll-assets
 
 # Exclude Files
 exclude:
@@ -47,6 +44,8 @@ exclude:
   - .jshintignore
   - deploy_github.sh
   - s3_website.yml
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
 
 assets:
   compress:
@@ -72,11 +71,7 @@ assets:
     - _assets/img
     - _assets/js
   features:
-    features:
     liquid: true
     integrity: true
     automatic_img_size: true
     automatic_img_alt : true
-
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
