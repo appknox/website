@@ -2507,7 +2507,7 @@ $(document).ready(function(){
 $(document).ready(function() {
   var india = document.cookie.indexOf("location=India") >=0
   var globe = document.cookie.indexOf("location=Global") >=0
-  if(window.location.search != "?disabled" && window.location.hostname == "127.0.0.1") {
+  if(window.location.search != "?disabled" && window.location.hostname == "www.appknox.com") {
     $.getJSON("https://geoip-db.com/json/geoip.php?jsonp=?", function(location) {
     var country = location.country_name;
     if(country == "India" && globe == false ) {
