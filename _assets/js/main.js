@@ -287,7 +287,7 @@ AkSlideManager.prototype.binder = function(Method){
 AkSlideManager.prototype.callAnimationLoop = function()
 {
   var repeatAnim = this.binder(this.createIntervalAnim);
-  this.interval = setInterval(repeatAnim,5000);
+  this.interval = setInterval(repeatAnim,12000);
 }
 
 AkSlideManager.prototype.addSupportElements = function(){
@@ -375,7 +375,7 @@ function AkElementAnimator(element){
   this.appearanceCss = null;
   this.perishCss = null;
   this.animTime = null;
-  this.defaultAnimTime = 500;
+  this.defaultAnimTime = 1000;
   this.createAnimator(element);
 }
 
@@ -1159,10 +1159,7 @@ PricingManager.prototype.resizeMiddleBox = function(){
 
 
 PricingManager.prototype.faqControl = function(){
-  $('.faq-quest-area').on('click', function() {
-    faqControls();
-  });
-  function faqControls(){
+  $('.faq-quest-area').on('click', function(event) {
     var faqEle = $(event.currentTarget).parent();
     var icon = $(event.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
@@ -1177,7 +1174,7 @@ PricingManager.prototype.faqControl = function(){
     faqEle.find(".faq-answer").slideToggle(400);
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
-  }
+  });
 }
 
 PricingManager.prototype.publishAppCountChange = function(){
@@ -2505,6 +2502,72 @@ $(document).ready(function(){
     var url = $(this).attr('href');
     window.open(url, '_self');
     });
+});
+
+$(document).ready(function() {
+  var india = document.cookie.indexOf("location=India") >=0
+  var globe = document.cookie.indexOf("location=Global") >=0
+  if(window.location.search != "?disabled" && window.location.hostname == "127.0.0.1") {
+    $.getJSON("https://geoip-db.com/json/geoip.php?jsonp=?", function(location) {
+    var country = location.country_name;
+    if(country == "India" && globe == false ) {
+      if(window.location.pathname.startsWith("/in") == false){
+        if(window.location.pathname.indexOf(country) == -1){
+          var hash = window.location.hash
+          window.location= "/in" + window.location.pathname + hash;
+        }
+      }
+    }
+    });
+  }
+});
+
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+
+$(".location").click(function(){
+  var optionSelected = $(this).attr('value');
+  if(optionSelected == "India") {
+    value = readCookie(location)
+    createCookie(location,"",-1);
+    createCookie("location", "India", 1000);
+  }
+  if(optionSelected == "Global") {
+    value = readCookie(location)
+    createCookie(location,"",-1);
+    createCookie("location", "Global", 1000);
+  }
+  if(document.cookie.indexOf("location=India") >=0) {
+    if(window.location.pathname.startsWith("/in") == false){
+      var hash = window.location.hash
+      window.location= "/in" + window.location.pathname + hash;
+    }
+  }
+  if(document.cookie.indexOf("location=Global") >=0) {
+    window.location= "/";
+  }
 });
 
 $(document).ready(function () {
