@@ -2,6 +2,10 @@
   display: none;
 }
 
+.icon-container:hover {
+  cursor: pointer;
+}
+
 .icon-container:hover .tooltip {
   display: inline-block;
 }
