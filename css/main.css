@@ -334,6 +334,11 @@ p {
   text-decoration: underline;
 }
 
+.text-title {
+  font-style: italic;
+  font-size: 14px  
+}
+
 .bottom-border {
   border-bottom: 1px solid #aaa;
   padding-bottom: 3px;

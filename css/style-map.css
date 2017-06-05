@@ -1,0 +1,7 @@
+.icon-container .tooltip{
+  display: none;
+}
+
+.icon-container:hover .tooltip {
+  display: inline-block;
+}
