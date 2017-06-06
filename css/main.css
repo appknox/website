@@ -2218,6 +2218,10 @@ line-height: 35px;
   .sec-slider .carousel-spots {
     top: 350px
   }
+  .partner-logo .logos {
+    height: 160px;
+    margin-bottom: -30px
+  }
 }
 
 @media (max-width: 767px) {
@@ -2229,6 +2233,10 @@ line-height: 35px;
   }
   .footer-box a {
     top: 30%!important
+  }
+  .partner-logo .logos {
+    height: 180px;
+    margin-bottom: -30px
   }
 }
 
