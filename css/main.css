@@ -194,6 +194,29 @@ ul,li {
   margin-bottom: 10px
 }
 
+.ak-partner-section img {
+  max-width: 100px;
+  vertical-align: middle;
+}
+
+.ak-partner-section h2 {
+  padding-top: 20px;
+  padding-bottom: 40px
+}
+
+.ak-partner-section .logos {
+  height: 130px;
+  margin-bottom: -30px
+}
+
+.ak-partner-section .button-red {
+  margin-top: 30px
+}
+
+.ak-partner-section {
+  vertical-align: middle;
+}
+
 .block-breaker {
   display: block !important;
 }
