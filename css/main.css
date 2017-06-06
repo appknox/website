@@ -1818,9 +1818,8 @@ input[type=email],input[type=text],input[type=url] {
   border-radius: 45px;
 }
 
-.logo-pic-zone>img {
-  max-width: 180px;
-  background-color: #fff;
+.logo-pic-zone img {
+  max-width: 120px;
   margin-bottom: 20px;
   overflow: hidden;
   vertical-align: top;

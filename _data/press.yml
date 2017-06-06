@@ -1,32 +1,32 @@
 - name: Appknox EconomicTimes
-  img: /img/press/economictimes.jpg
+  img: /img/press/press_logos/logo-1.png
   link: http://articles.economictimes.indiatimes.com/2015-05-20/news/62413108_1_corporate-espionage-hotspots-bengaluru-airport
 
 
 - name: Appknox StraitsInteractive
-  img: /img/press/str.jpg
+  img: /img/press/press_logos/logo-2.png
   link: https://www.straitsinteractive.com/research-findings/summary-findings-from-singapores-first-privacy-survey-covering-mobile-applications/
 
 - name: Appknox BusinessStandard
-  img: /img/press/business-standard.jpg
+  img: /img/press/press_logos/logo-3.png
   link: http://www.business-standard.com/article/companies/all-for-a-ride-techies-flag-major-vulnerabilities-in-ola-app-115032000022_1.html
 
 - name: Appknox e27
-  img: /img/press/e27.jpg
+  img: /img/press/press_logos/logo-4.png
   link: https://e27.co/think-apps-appstore-safe/
 
 - name: Appknox TechInAsia
-  img: /img/press/techinasia.jpg
+  img: /img/press/press_logos/logo-5.jpg
   link: https://www.techinasia.com/10-startups-asia-watch-techlist-march-30-2015
 
 - name: Appknox IDA
-  img: /img/press/IDA.jpg
+  img: /img/press/press_logos/logo-6.png
   link: https://www.ida.gov.sg/blog/insg/ict-enterprises/securing-mobile-apps-with-appknox/
 
 - name: Appknox Bloomberg
-  img: /img/press/bloomberg.jpg
+  img: /img/press/press_logos/logo-7.png
   link: http://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=268070454
 
 - name: Appknox highscalability
-  img: /img/press/high.jpg
+  img: /img/press/press_logos/logo-8.png
   link: http://highscalability.com/blog/2015/5/25/appknox-architecture-making-the-switch-from-aws-to-the-googl.html
