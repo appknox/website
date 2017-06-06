@@ -18,3 +18,8 @@
 .tooltip {
   font-family: neosans
 }
+
+.map-svg {
+  width: 960px;
+  height: 560px;
+}
