@@ -1,3 +1,8 @@
+@font-face {
+  font-family: neosans;
+  src: url(../fonts/NEOSANS.OTF);
+}
+
 .icon-container .tooltip{
   display: none;
 }
@@ -8,4 +13,8 @@
 
 .icon-container:hover .tooltip {
   display: inline-block;
+}
+
+.tooltip {
+  font-family: neosans
 }
