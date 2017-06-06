@@ -219,12 +219,9 @@ permalink: /company/
 </section>
 
 <section id="partners">
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <ul class="container ak-container">
+  <ul class="container ak-container svg-ak-container">
     <li><h1 class="text-center neosans-40">Partners</h1></li>
-    <li class="midsize-container">
+    <li class="text-center midsize-container">
       <p class="gray-8">
         Our success has really been based on partnerships from the very beginning - <span class="text-title">Bill Gates</span>
       </p>
@@ -232,8 +229,22 @@ permalink: /company/
         <b> Introducing <span class="red-text"> Appknox global partners </span> that have been instrumental in our success.</b>
       </h4>
     </li>
-    <li class="midsize-container">
+    <li class="svg-container">
       <embed type="image/svg+xml" src="/img/map.svg" />
+    </li>
+    <li>
+      <div class="row partner-logo">
+        <div class="text-center">
+          <div class="col-md-offset-2 col-md-1">
+            <img src="/img/partners/logo-1.png" alt="appknox partners" class="img-responsive" />
+          </div>
+          {% for partner in site.data.partner_logos %}
+            <div class="col-md-1">
+              <img src="{{partner.img}}" alt="appknox partners" class="img-responsive" />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </li>
     <li>
       <p class="text-center gray-8">Write to us at  <a class="submenu" href="mailto:partner@appknox.comm">partner@appknox.com</a></p>
@@ -242,9 +253,6 @@ permalink: /company/
 </section>
 
 <section class="ak-gray-bg" id="supporters">
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
   <ul class="container ak-container">
     <li><h1 class="text-center gray-5">Supported By</h1></li>
     <li id="supporters-zone" class="text-center">

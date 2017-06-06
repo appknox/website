@@ -175,6 +175,25 @@ ul,li {
   margin: 0 auto;
 }
 
+.svg-container {
+  padding: 50px 70px
+}
+
+.svg-ak-container {
+  padding-bottom: 50px!important
+}
+
+.partner-logo {
+  border-top: 2px solid #DDDFE2;
+  border-bottom: 2px solid #DDDFE2;
+  margin-bottom: 30px
+}
+
+.partner-logo img {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
 .block-breaker {
   display: block !important;
 }
@@ -336,7 +355,7 @@ p {
 
 .text-title {
   font-style: italic;
-  font-size: 14px  
+  font-size: 14px
 }
 
 .bottom-border {
@@ -2043,6 +2062,10 @@ line-height: 35px;
   }
   .footer-box a {
     top: 20%!important
+  }
+  .svg-container {
+    padding: 50px 0px;
+    margin-left: -20px
   }
 }
 
