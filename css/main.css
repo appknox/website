@@ -189,14 +189,25 @@ ul,li {
   margin-bottom: 30px
 }
 
+.partner-logo .logos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .partner-logo img {
-  margin-top: 10px;
-  margin-bottom: 10px
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 10px
 }
 
 .ak-partner-section img {
   max-width: 100px;
-  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .ak-partner-section h2 {
@@ -206,7 +217,7 @@ ul,li {
 
 .ak-partner-section .logos {
   height: 130px;
-  margin-bottom: -30px
+  margin-bottom: -30px;
 }
 
 .ak-partner-section .button-red {
