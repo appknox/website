@@ -176,7 +176,7 @@ ul,li {
 }
 
 .svg-container {
-  padding: 50px 70px
+  padding: 30px 70px
 }
 
 .svg-ak-container {
@@ -1830,7 +1830,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .logo-pic-zone img {
-  max-width: 120px;
+  max-width: 100px;
   margin-bottom: 20px;
   overflow: hidden;
   vertical-align: top;
@@ -2230,7 +2230,9 @@ line-height: 35px;
   }
   .partner-logo .logos {
     height: 160px;
-    margin-bottom: -30px
+  }
+  .partner-logo .logos img {
+    max-width: 150px
   }
 }
 
@@ -2245,8 +2247,14 @@ line-height: 35px;
     top: 30%!important
   }
   .partner-logo .logos {
-    height: 180px;
-    margin-bottom: -30px
+    height: 50px;
+    padding-bottom: 85px
+  }
+  .partner-logo img {
+    position: relative;
+  }
+  .partner-logo .logos img {
+    max-width: 100px;
   }
 }
 
@@ -3248,7 +3256,7 @@ header, .main-nav-scrolled {
     top: 160px;
   }
   .carousel-spots{
-    top: 350px;
+    top: 380px;
   }
   #ak-slide-container {
     min-height: 630px
@@ -3344,6 +3352,9 @@ header, .main-nav-scrolled {
   }
   .navbar-brand {
     margin-top: 0px
+  }
+  .ak-partner-section img {
+    position: relative;
   }
 
 }
@@ -3580,10 +3591,10 @@ header, .main-nav-scrolled {
     display: inline-block;
   }
   .carousel-spots{
-    top: 420px;
+    top: 450px;
   }
   .last-logo {
-    margin-top: 0px
+    margin-top: -52px;
   }
   .last-sign {
     margin-top: 0px
@@ -3601,6 +3612,9 @@ header, .main-nav-scrolled {
   .iframe-modal {
     width: 380px;
     height: 200px;
+  }
+  .ak-testimony {
+    padding-bottom: 85px;
   }
 }
 
@@ -3944,7 +3958,7 @@ header, .main-nav-scrolled {
     height: 450px;
   }
   .last-logo{
-    margin-top: -40px!important;
+    margin-top: -58px!important;
   }
   .client-logo{
     width: 100%;
@@ -4118,9 +4132,6 @@ header, .main-nav-scrolled {
   .carousel-spots{
     top: 470px;
   }
-  .last-logo {
-    margin-top: 0px
-  }
   .last-sign {
     margin-top: 0px
   }
@@ -4140,6 +4151,9 @@ header, .main-nav-scrolled {
   .iframe-modal {
     width: 280px;
     height: 200px;
+  }
+  .ak-testimony {
+    padding-bottom: 85px;
   }
 }
 
