@@ -1836,6 +1836,10 @@ input[type=email],input[type=text],input[type=url] {
   vertical-align: top;
 }
 
+.supporters-logo img {
+  max-width: 200px
+}
+
 .social-icons {
   list-style: none;
   overflow: hidden;
@@ -2322,6 +2326,9 @@ line-height: 35px;
     width: 56%;
     padding: 0 1.5%;
     margin-left: 0px;
+  }
+  .supporters-data-zone {
+    width: 70%
   }
 }
 
@@ -3269,6 +3276,9 @@ header, .main-nav-scrolled {
   }
   .navbar-brand {
     margin-left: -40px!important
+  }
+  .supporters-data-zone {
+    width: 30%
   }
 }
 
