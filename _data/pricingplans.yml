@@ -10,7 +10,7 @@
         name: Remedition
         desc: 1 Session
       secondScan:
-        name: SLA
+        name: TAT
         desc: 3-5 Working Days
       thirdScan:
         name: No.of Scans
@@ -29,7 +29,7 @@
         name: Remedition
         desc: 3 Session
       secondScan:
-        name: SLA
+        name: TAT
         desc: 5-7 Working Days
       thirdScan:
         name: No.of Scans
@@ -48,7 +48,7 @@
         name: Remedition
         desc: 5 Session
       secondScan:
-        name: SLA
+        name: TAT
         desc: 7-9 Working Days
       thirdScan:
         name: No.of Scans
