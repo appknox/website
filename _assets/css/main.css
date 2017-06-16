@@ -16,6 +16,7 @@ body,html {
   height: 100%;
 }
 
+
 .ak-fullscreen {
   min-height: 100%;
   width: 100%;
@@ -563,7 +564,7 @@ button:focus {
   margin-top: 20px
 }
 
-.request-menu{
+.request-menu {
   background: #ea2127;
   border: none;
   padding: 5px 20px;
@@ -1297,6 +1298,7 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .pricing-heading {
+  padding-top: 20px;
   font-size: 24px;
   font-style: neosans;
 }
@@ -2061,7 +2063,7 @@ line-height: 35px;
       margin-left: 0%;
   }
   .request-menu{
-    margin-right: 40px;
+    margin-right: 70px;
   }
   .press-container{
     margin-top: 120px;
@@ -2091,6 +2093,18 @@ line-height: 35px;
   }
   .slide-img-zone {
     margin-top: 80px
+  }
+  .request-menu {
+    margin-right: 0px
+  }
+  .navbar-brand {
+    margin-left: -46px!important
+  }
+  #ak-menu li a {
+    padding: 15px 6px;
+  }
+  #ak-menu li>a {
+    font-size: 14px
   }
 }
 
@@ -2136,6 +2150,9 @@ line-height: 35px;
   }
   #ak-menu li a {
     padding: 15px 9px;
+  }
+  #ak-menu li>a {
+    font-size: 16px
   }
   .slick-lightbox .slick-next, .slick-lightbox .slick-prev {
     margin-left: 0px;
@@ -2908,7 +2925,9 @@ header, .main-nav-scrolled {
 }
 
 .footer-section2 {
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: -30px;
+  background-color: #02060C
 }
 
 .row {
@@ -3022,7 +3041,7 @@ header, .main-nav-scrolled {
     margin-bottom: 10px;
   }
   .request-menu{
-    margin-right: -20px;
+    margin-right: 0px;
     padding: 5px 16px
   }
   .call-button {
@@ -3174,6 +3193,9 @@ header, .main-nav-scrolled {
   .slide-img-zone {
     margin-top: 100px
   }
+  .navbar-brand {
+    margin-left: -40px!important
+  }
 }
 
 @media (max-width: 767px) {
@@ -3254,6 +3276,9 @@ header, .main-nav-scrolled {
   .shield-text {
     display: none;
   }
+  .navbar-brand {
+    margin-top: 0px
+  }
 
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -3311,7 +3336,7 @@ header, .main-nav-scrolled {
     margin-left: 0px;
   }
   .request-menu {
-  display: none;
+    display: none;
   }
   .testimonial-section {
     height: 400px;

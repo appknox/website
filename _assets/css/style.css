@@ -123,6 +123,27 @@ a {
    cursor: pointer;
  }
 
+ .location-selector {
+  margin-top: -45px;
+  margin-right: -20px;
+  float: right;
+  font-size: 12px;
+  font-family: neosans;
+  height: 30px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.location-selector label {
+  margin-bottom: 0px
+}
+
+.location-selector select {
+  width: 80px;
+  height: 30px;
+  font-size: 12px
+}
+
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
@@ -179,23 +200,32 @@ a {
   float: left;
   }
   .request-menu{
-    margin-right: 40px;
+    margin-right: 70px;
   }
 }
 
 .heading{
-  margin-top: 60px;
+  margin-top: 20px;
   max-width: 400px;
   font-size: 24px;
   color: #000000;
   font-family: neosans;
 }
 
+.sos-main-heading{
+  margin-top: 60px;
+  max-width: 400px;
+  color: #000000;
+  text-align: center;
+  font-family: neosans;
+}
+
+
 .form-heading{
-  font-size: 24px;
+  font-size: 23px;
   color: #000000;
   font-family: neosans;
-  margin-left: 250px;
+  margin-left: 230px;
   margin-top: 30px;
 }
 
@@ -431,7 +461,6 @@ a {
 }
 
 .ag-content{
-  font-size: 24px;
   font-family: neosans;
   text-align: center;
   margin-top: 20px;
@@ -603,19 +632,23 @@ a {
   color: #ccc;
   font-family: gillsansmtpro;
   margin-right: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   height: 70px;
 }
 
 .footer-box a {
   color: #ccc;
   position: relative;
-  top: 40%;
+  top: 30%;
+  font-size: 14px;
+  padding-top: 10px;
   transform: translateY(-50%);
 }
 
 .footer-section2 {
-  margin-top: 10px
+  margin-top: 10px;
+  margin-bottom: -30px;
+  background-color: #02060C
 }
 
 .address-section {
@@ -680,6 +713,15 @@ a {
 }
 
 /* End of footer */
+
+@media (max-width: 1200px) {
+  .footer-box {
+    height: 80px!important
+  }
+  .footer-box a {
+    top: 20%!important
+  }
+}
 
 @media (max-width: 1024px) {
   .call-button {
@@ -844,6 +886,49 @@ a {
     display: block!important;
     margin: 20px auto;
   }
+  .footer-box {
+    height: 60px!important
+  }
+  .footer-box a {
+    top: 35%!important
+  }
+  #ak-menu li a {
+    padding: 15px 7px;
+  }
+  #ak-menu li>a {
+    font-size: 14px
+  }
+  .request-menu{
+    margin-right: 70px;
+    padding: 5px 16px
+  }
+  .navbar-brand {
+    margin-left: -40px!important
+  }
+  .location-selector {
+    margin-top: -42px;
+    margin-right: -16px
+  }
+  .sos-main-heading{
+    max-width: 700px
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-box {
+    height: 60px!important
+  }
+  .footer-box a {
+    top: 30%!important
+  }
+  .location-selector {
+    margin-top: -40px;
+    margin-right: 45px
+  }
+  .navbar-brand {
+    margin-top: 0px
+  }
+
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
