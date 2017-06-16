@@ -24,7 +24,7 @@ gems:
 languages: ["en", "in"]
 
 # Exclude options
-exclude_from_localizations: ["js", "img", "css", "fonts"]
+exclude_from_localizations: ["js", "css"]
 
 # Build settings
 markdown: kramdown
@@ -64,8 +64,6 @@ assets:
     - "bundle.css"
   sources:
     - _assets/css
-    - _assets/fonts
-    - _assets/img
     - _assets/js
   features:
     liquid: true
