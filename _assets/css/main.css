@@ -82,6 +82,10 @@ ul,li {
   font-weight: 700;
 }
 
+.margin-top {
+  margin-top: 30px;
+}
+
 .xs-font {
   font-size: .7em;
 }
@@ -173,6 +177,59 @@ ul,li {
   padding: 0 2.5%;
   max-width: 700px;
   margin: 0 auto;
+}
+
+.svg-container {
+  padding: 30px 70px
+}
+
+.svg-ak-container {
+  padding-bottom: 50px!important
+}
+
+.partner-logo {
+  border-top: 2px solid #DDDFE2;
+  border-bottom: 2px solid #DDDFE2;
+  margin-bottom: 30px
+}
+
+.partner-logo .logos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.partner-logo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 10px
+}
+
+.ak-partner-section img {
+  max-width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.ak-partner-section h2 {
+  padding-top: 20px;
+  padding-bottom: 40px
+}
+
+.ak-partner-section .logos {
+  height: 130px;
+  margin-bottom: -30px;
+}
+
+.ak-partner-section .button-red {
+  margin-top: 30px
+}
+
+.ak-partner-section {
+  vertical-align: middle;
 }
 
 .block-breaker {
@@ -332,6 +389,11 @@ p {
 
 .underline {
   text-decoration: underline;
+}
+
+.text-title {
+  font-style: italic;
+  font-size: 14px
 }
 
 .bottom-border {
@@ -1771,12 +1833,15 @@ input[type=email],input[type=text],input[type=url] {
   border-radius: 45px;
 }
 
-.logo-pic-zone>img {
-  max-width: 180px;
-  background-color: #fff;
+.logo-pic-zone img {
+  max-width: 100px;
   margin-bottom: 20px;
   overflow: hidden;
   vertical-align: top;
+}
+
+.supporters-logo img {
+  max-width: 200px
 }
 
 .social-icons {
@@ -2039,6 +2104,10 @@ line-height: 35px;
   .footer-box a {
     top: 20%!important
   }
+  .svg-container {
+    padding: 50px 0px;
+    margin-left: -20px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2096,9 +2165,6 @@ line-height: 35px;
   }
   .request-menu {
     margin-right: 0px
-  }
-  .navbar-brand {
-    margin-left: -46px!important
   }
   #ak-menu li a {
     padding: 15px 6px;
@@ -2170,6 +2236,12 @@ line-height: 35px;
   .sec-slider .carousel-spots {
     top: 350px
   }
+  .partner-logo .logos {
+    height: 160px;
+  }
+  .partner-logo .logos img {
+    max-width: 150px
+  }
 }
 
 @media (max-width: 767px) {
@@ -2181,6 +2253,16 @@ line-height: 35px;
   }
   .footer-box a {
     top: 30%!important
+  }
+  .partner-logo .logos {
+    height: 50px;
+    padding-bottom: 85px
+  }
+  .partner-logo img {
+    position: relative;
+  }
+  .partner-logo .logos img {
+    max-width: 100px;
   }
 }
 
@@ -2245,9 +2327,12 @@ line-height: 35px;
     margin-top: 4%;
   }
   .member-data-zone {
-    width: 47%;
+    width: 56%;
     padding: 0 1.5%;
-    margin-left: 12px;
+    margin-left: 0px;
+  }
+  .supporters-data-zone {
+    width: 70%
   }
 }
 
@@ -3182,7 +3267,7 @@ header, .main-nav-scrolled {
     top: 160px;
   }
   .carousel-spots{
-    top: 350px;
+    top: 380px;
   }
   #ak-slide-container {
     min-height: 630px
@@ -3195,6 +3280,12 @@ header, .main-nav-scrolled {
   }
   .navbar-brand {
     margin-left: -40px!important
+  }
+  .supporters-data-zone {
+    width: 30%
+  }
+  .site-footer a {
+    font-size: 14px
   }
 }
 
@@ -3278,6 +3369,9 @@ header, .main-nav-scrolled {
   }
   .navbar-brand {
     margin-top: 0px
+  }
+  .ak-partner-section img {
+    position: relative;
   }
 
 }
@@ -3514,10 +3608,10 @@ header, .main-nav-scrolled {
     display: inline-block;
   }
   .carousel-spots{
-    top: 420px;
+    top: 450px;
   }
   .last-logo {
-    margin-top: 0px
+    margin-top: -52px;
   }
   .last-sign {
     margin-top: 0px
@@ -3535,6 +3629,9 @@ header, .main-nav-scrolled {
   .iframe-modal {
     width: 380px;
     height: 200px;
+  }
+  .ak-testimony {
+    padding-bottom: 85px;
   }
 }
 
@@ -3878,7 +3975,7 @@ header, .main-nav-scrolled {
     height: 450px;
   }
   .last-logo{
-    margin-top: -40px!important;
+    margin-top: -58px!important;
   }
   .client-logo{
     width: 100%;
@@ -4052,9 +4149,6 @@ header, .main-nav-scrolled {
   .carousel-spots{
     top: 470px;
   }
-  .last-logo {
-    margin-top: 0px
-  }
   .last-sign {
     margin-top: 0px
   }
@@ -4074,6 +4168,9 @@ header, .main-nav-scrolled {
   .iframe-modal {
     width: 280px;
     height: 200px;
+  }
+  .ak-testimony {
+    padding-bottom: 85px;
   }
 }
 
