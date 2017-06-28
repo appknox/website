@@ -82,6 +82,10 @@ ul,li {
   font-weight: 700;
 }
 
+.margin-top {
+  margin-top: 30px;
+}
+
 .xs-font {
   font-size: .7em;
 }
@@ -3279,6 +3283,9 @@ header, .main-nav-scrolled {
   }
   .supporters-data-zone {
     width: 30%
+  }
+  .site-footer a {
+    font-size: 14px
   }
 }
 
