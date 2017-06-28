@@ -39,23 +39,26 @@
     <meta name="twitter:image" content="/assets/img/appknox-fb.png" />
     <meta name="twitter:url" content="{{page.url}}" />
 
-    <!-- <link rel="stylesheet" href="{{ "/css/bootstrap.min.css"}}"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ "/css/bootstrap-theme.min.css"}}">
-    <link rel="stylesheet" href="{{ "/css/slick.css"}}">
-    <link rel="stylesheet" href="{{ "/css/slick-theme.css"}}">
-    <link rel="stylesheet" href="{{ "/css/slick-lightbox.css"}}">
-    <link rel="stylesheet" href="{{ "/css/carousel.css"}}">
-    <link rel="stylesheet" href="{{ "/css/content.css"}}">
+    {% css slick %}
+    {% css slick-theme %}
+    {% css slick-lightbox %}
+    {% css carousel %}
+    {% css content %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% if page.stylesheets %}{{page.stylesheets}}{% else %}{{ "/css/main.css"}}{% endif %}">
-    <link rel="stylesheet" href="{{ "/css/jquery.fancybox.css"}}">
+    {% css bootstrap-theme.min %}
+    {% if page.stylesheets %}
+      {% css style %}
+    {% else %}
+      {% css main %}
+    {% endif %}
+    {% css jquery.fancybox %}
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <script src="{{ "/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" | prepend: site.url }}"></script>
+    {% js modernizr-2.8.3-respond-1.4.2.min %}
 
     <!-- JQuery Plugin for International Telephone Input with Flag dail codes -->
-    <link rel="stylesheet" href="/css/intltelinput.css">
+    {% css intltelinput %}
 
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
 for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
