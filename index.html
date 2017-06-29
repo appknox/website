@@ -240,7 +240,7 @@ excerpt: Appknox is a mobile app security testing solution to detect and fix vul
   </div>
 </section>
 
-<section class="section reduce-padding ak-gray-bg">
+<section class="reduce-padding ak-gray-bg">
   <div class="container ak-container text-center">
     <div class="why-appknox">
       <h2>Why Appknox?</h2>
@@ -409,23 +409,20 @@ excerpt: Appknox is a mobile app security testing solution to detect and fix vul
 
 <a name="Vulnerabilities"></a>
 
-<section class="ak-gray-bg">
+<section class="ak-gray-bg ak-partner-section">
   <div class="container text-center">
-    <h3 class="gills-24 gray-8">Detected vulnerabilities in</h3>
-    <ul class="logos-box">
-      <li>
-        <img src="/img/google-logo.png" alt="Appknox google" />
-      </li>
-      <li>
-        <img src="/img/facebook.png" alt="Appknox facebook" />
-      </li>
-      <li>
-        <img src="/img/microsoft.png" alt="Appknox microsoft" />
-      </li>
-      <li>
-        <img src="/img/paypal.png" alt="Appknox paypal" />
-      </li>
-    </ul>
+    <h2>Partnering Locally, Delivering Globally</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-6 logos">
+          <img src="/img/partners/logo-1.png" alt="appknox partners" />
+        </div>
+        {% for partner in site.data.partner_logos %}
+          <div class="col-md-3 col-sm-3 col-xs-6 logos">
+            <img src="{{partner.img}}" alt="appknox partners" />
+          </div>
+        {% endfor %}
+    </div>
+    <div class="button-red btn-lg ak-btn-round uppercase inblock pricing-demo" href="/company/#partners">See All Partners</div>
   </div>
 </section>
 

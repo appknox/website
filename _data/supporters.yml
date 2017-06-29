@@ -1,7 +1,11 @@
-- name: Microsoft Ventures startups
-  img: /img/ms-ventures-logo.png
-  link: https://www.microsoftaccelerator.com/startups
-
 - name: JFDI asia alumnus
-  img: /img/jfdi-logo.png
+  img: /img/supporters/logo-2.png
   link: http://www.jfdi.asia/portfolio/appknox
+
+- name: Microsoft Ventures startups
+  img: /img/supporters/logo-1.png
+  link: https://www.microsoftaccelerator.com/startups  
+
+- name: Cisco Launchpad
+  img: /img/supporters/logo-3.png
+  link: https://www.cisco.com/c/m/en_in/launchpad/index.html

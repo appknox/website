@@ -197,50 +197,52 @@ permalink: /company/
         {% for pressInfo in site.data.press %}
         <li class="member-data-zone">
           <div class="logo-pic-zone">
-
             <a class="submenu" data-proofer-ignore href="{{pressInfo.link}}" target="_blank"><img src="{{pressInfo.img}}" alt="{{pressInfo.name}}"/></a>
-
           </div>
         </li>
         {% endfor %}
       </ul>
     </li>
     <li>
-        <div class="row text-center">
-            <div class="button-red btn-lg ak-btn-round uppercase inblock pricing-demo" href="/press" id="request-demo">See All Mentions</div>
-        </div>
+      <div class="row text-center">
+        <div class="button-red btn-lg ak-btn-round uppercase inblock pricing-demo" href="/press" id="request-demo">See All Mentions</div>
+      </div>
     </li>
     <li>
-        <div class="row">
-            <p class="text-center gray-8">Write to us at <a class="submenu" href="mailto:press@appknox.com">press@appknox.com</a></p>
-        </div>
+      <div class="row">
+        <p class="text-center gray-8">Write to us at <a class="submenu" href="mailto:press@appknox.com">press@appknox.com</a></p>
+      </div>
     </li>
   </ul>
 </section>
 
 <section id="partners">
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <ul class="container ak-container">
+  <ul class="container ak-container svg-ak-container">
     <li><h1 class="text-center neosans-40">Partners</h1></li>
-    <li class="midsize-container">
-      <p class="text-center medium-font">
-        One great partnership with the right person can have an incredible impact on your business.
+    <li class="text-center midsize-container">
+      <p class="gray-8">
+        Our success has really been based on partnerships from the very beginning - <span class="text-title">Bill Gates</span>
       </p>
+      <h4>
+        <b> Introducing <span class="red-text"> Appknox global partners </span> that have been instrumental in our success.</b>
+      </h4>
     </li>
-    <li id="partners-zone" class="text-center">
-      <ul class="text-center">
-        {% for partner in site.data.partners %}
-        <li class="member-data-zone">
-          <a class="submenu" data-proofer-ignore href="{{partner.link}}" target="_blank">
-            <div class="logo-pic-zone">
-                <img src="{{partner.img}}" alt="{{partner.name}}"/>
+    <li class="svg-container">
+      <embed type="image/svg+xml" src="/img/map.svg" />
+    </li>
+    <li>
+      <div class="row partner-logo">
+        <div class="text-center">
+          <div class="col-md-offset-2 col-md-1 col-sm-3 col-xs-6 logos">
+            <img src="/img/partners/logo-1.png" alt="appknox partners" class="img-responsive" />
+          </div>
+          {% for partner in site.data.partner_logos %}
+            <div class="col-md-1 col-sm-3 col-xs-6 logos">
+              <img src="{{partner.img}}" alt="appknox partners" class="img-responsive" />
             </div>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
+          {% endfor %}
+        </div>
+      </div>
     </li>
     <li>
       <p class="text-center gray-8">Write to us at  <a class="submenu" href="mailto:partner@appknox.comm">partner@appknox.com</a></p>
@@ -249,17 +251,14 @@ permalink: /company/
 </section>
 
 <section class="ak-gray-bg" id="supporters">
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
-  <div class="horzr-sep-block ak-white-bg"></div>
   <ul class="container ak-container">
     <li><h1 class="text-center gray-5">Supported By</h1></li>
     <li id="supporters-zone" class="text-center">
       <ul class="text-center">
         {% for supporter in site.data.supporters %}
-        <li class="member-data-zone">
+        <li class="member-data-zone supporters-data-zone">
           <a class="submenu" data-proofer-ignore href="{{supporter.link}}" target="_blank">
-            <div class="logo-pic-zone">
+            <div class="logo-pic-zone supporters-logo">
                 <img src="{{supporter.img}}" alt="{{supporter.name}}">
             </div>
           </a>

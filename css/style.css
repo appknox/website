@@ -238,6 +238,10 @@ a {
   margin-top: 30px;
 }
 
+.margin-top {
+  margin-top: 30px;
+}
+
 .testimony-client{
   margin-top: 60px;
 }
@@ -911,6 +915,9 @@ a {
   }
   .sos-main-heading{
     max-width: 700px
+  }
+  .site-footer a {
+    font-size: 14px
   }
 }
 
