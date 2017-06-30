@@ -144,6 +144,10 @@ a {
   font-size: 12px
 }
 
+.country-code .telephone-input .intl-tel-input .lined-input, .selected-flag {
+  margin-left: 200px;
+  margin-right: 0px;
+}
 
 @media (min-width: 768px) {
     .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
@@ -595,6 +599,10 @@ a {
   font-size: 16px;
 }
 
+.site-footer .row {
+  margin-right: 0px
+}
+
 .footer-nav {
   margin-left: 2%
 }
@@ -737,6 +745,9 @@ a {
   .lined-input{
     margin-left: 60px;
   }
+  .country-code .telephone-input .intl-tel-input .lined-input, .selected-flag {
+    margin-left: 60px
+  }
   .submit-button{
     margin-left: 170px;
   }
@@ -783,6 +794,9 @@ a {
   }
   .lined-input{
     margin-left: 130px;
+  }
+  .country-code .telephone-input .intl-tel-input .lined-input, .selected-flag {
+    margin-left: 130px
   }
   .submit-button{
     margin-left: 250px;
@@ -955,6 +969,9 @@ a {
     margin-left: 30px;
     width: 300px;
   }
+  .country-code .telephone-input .intl-tel-input .lined-input, .selected-flag {
+    margin-left: 30px
+  }
   .submit-button{
     margin-left: 110px;
   }
@@ -1030,7 +1047,10 @@ a {
     margin-top: 20px;
   }
   .sos-form-eorror{
-    margin-left: 30px;
+    margin-left: -20px;
+  }
+  .sos-form-eorror label{
+    margin-left: 40px;
   }
   .footer-box {
     margin-left: -20px;
@@ -1072,6 +1092,9 @@ a {
   .lined-input{
     margin-left: 20px;
     width: 300px;
+  }
+  .country-code .telephone-input .intl-tel-input .lined-input, .selected-flag {
+    margin-left: 20px
   }
   .submit-button{
     margin-left: 110px;
@@ -1142,7 +1165,10 @@ a {
     margin-top: 30px;
   }
   .sos-form-eorror{
-    margin-left: 20px;
+    margin-left: -70px;
+  }
+  .sos-form-eorror label{
+    margin-left: 80px;
   }
   .footer-box {
     margin-left: -20px;
@@ -1183,6 +1209,9 @@ a {
   .lined-input{
     margin-left: 10px;
     width: 250px;
+  }
+  .country-code .telephone-input .intl-tel-input .lined-input, .selected-flag {
+    margin-left: 10px
   }
   .submit-button{
     margin-left: 80px;
@@ -1265,7 +1294,10 @@ a {
     width: 100%;
   }
   .sos-form-eorror{
-    margin-left: 10px;
+    margin-left: -125px;
+  }
+  .sos-form-eorror label{
+    margin-left: 125px;
   }
   .footer-box {
     margin-left: -20px;
