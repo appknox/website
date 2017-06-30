@@ -2164,6 +2164,7 @@ function sendLandingPageForm1(ev){
   function successCallback(resData){
     if(resData.status === "success"){
       $("#lpForm1MsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+      $("#lp_form_1").hide();
       form.find("input,textarea").attr("disabled",true);
     }else{
       $("#lpForm1MsgBox").html(SUBMIT_ERROR_MSG);
