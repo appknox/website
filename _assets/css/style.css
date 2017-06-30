@@ -1049,8 +1049,17 @@ a {
   .sos-form-eorror{
     margin-left: -20px;
   }
+  .sos-form .sos-form-eorror{
+    margin-left: -35px;
+  }
   .sos-form-eorror label{
     margin-left: 40px;
+  }
+  .sos-form .sos-form-eorror label{
+    margin-left: 40px;
+  }
+  .sos-form .lined-input, .selected-flag {
+    margin-left: 10px!important
   }
   .footer-box {
     margin-left: -20px;
@@ -1165,10 +1174,19 @@ a {
     margin-top: 30px;
   }
   .sos-form-eorror{
-    margin-left: -70px;
+    margin-left: -85px;
+  }
+  .sos-form .sos-form-eorror{
+    margin-left: -100px;
   }
   .sos-form-eorror label{
     margin-left: 80px;
+  }
+  .sos-form .sos-form-eorror label{
+    margin-left: 80px;
+  }
+  .sos-form .lined-input, .selected-flag {
+    margin-left: -15px!important
   }
   .footer-box {
     margin-left: -20px;
@@ -1296,8 +1314,17 @@ a {
   .sos-form-eorror{
     margin-left: -125px;
   }
+  .sos-form .sos-form-eorror{
+    margin-left: -140px;
+  }
   .sos-form-eorror label{
     margin-left: 125px;
+  }
+  .sos-form .sos-form-eorror label{
+    margin-left: 120px;
+  }
+  .sos-form .lined-input, .selected-flag {
+    margin-left: -15px!important
   }
   .footer-box {
     margin-left: -20px;
