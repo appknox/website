@@ -983,6 +983,14 @@ button:focus {
   margin: 40px 0;
 }
 
+.country-code fieldset .intl-tel-input {
+  display: block
+}
+
+.country-code fieldset .intl-tel-input input.placeholder-position {
+  padding-left: 75px!important
+}
+
 #hello-zone-cu {
   padding-top: 40px;
 }
