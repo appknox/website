@@ -17,6 +17,6 @@ test:
   pre:
     - bundle exec jekyll build
   override:
-    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --check-favicon --enforce-https --check-html
+    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --enforce-https --check-html
   post:
     - bundle exec coveralls push
