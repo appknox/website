@@ -121,26 +121,6 @@ permalink: /company/
           </li>
           {% endfor %}
       </ul>
-      <ul>
-        {% for member in site.data.members %}
-        <li class="member-data-zone">
-          <div class="member-pic-zone">
-            <img src="{{member.gravatar}}" alt="{{member.name}}"/>
-          </div>
-          <div class="member-name">{{member.name}}</div>
-          <div class="member-title gray-6">{{member.title}}</div>
-            <ul class="social-icons">
-            {% for link in member.links %}
-              <li>
-               <a class="submenu" data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
-                  <i class="fa fa-{{link | ak_icon }}" aria-hidden="true"></i>
-                </a>
-            </li>
-          {% endfor %}
-      </ul>
-        </li>
-        {% endfor %}
-      </ul>
     </li>
     <li>
       <br>
