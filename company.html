@@ -92,12 +92,7 @@ permalink: /company/
   <div class="horzr-sep-block ak-white-bg"></div>
   <div class="horzr-sep-block ak-gray-bg"></div>
   <ul class="container ak-container">
-    <li><h1 class="text-center neosans-40">Team</h1></li>
-    <li class="midsize-container">
-      <p class="text-center medium-font">We are a team of young, experienced, enthusiastic and intelligent anti-hacking professionals
-        dedicated to keep our clients secure.
-      </p>
-    </li>
+    <li><h1 class="text-center neosans-40">The Founding Team</h1></li>
     <li id="team-members-zone" class="text-center">
       <ul>
           {% for member in site.data.founders %}
@@ -120,26 +115,6 @@ permalink: /company/
         </ul>
           </li>
           {% endfor %}
-      </ul>
-      <ul>
-        {% for member in site.data.members %}
-        <li class="member-data-zone">
-          <div class="member-pic-zone">
-            <img src="{{member.gravatar}}" alt="{{member.name}}"/>
-          </div>
-          <div class="member-name">{{member.name}}</div>
-          <div class="member-title gray-6">{{member.title}}</div>
-            <ul class="social-icons">
-            {% for link in member.links %}
-              <li>
-               <a class="submenu" data-proofer-ignore href="{{ link | ak_link }}" target="_blank">
-                  <i class="fa fa-{{link | ak_icon }}" aria-hidden="true"></i>
-                </a>
-            </li>
-          {% endfor %}
-      </ul>
-        </li>
-        {% endfor %}
       </ul>
     </li>
     <li>
