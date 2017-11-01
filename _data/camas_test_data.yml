@@ -1,0 +1,20 @@
+- class: right-rouned-corner
+  heading: SAST
+  sub_heading: Static Application Security Testing
+  tagline: Fully Automated | Basic Configuration Issues
+  desc: A fully automated scan designed to analyze application binaries for issues in code and design configurations that can lead to security vulnerabilities
+  image_path: /img/camas/sast.png
+
+- class: left-rouned-corner
+  heading: DAST
+  sub_heading: Dynamic Application Security Testing
+  tagline: Cloud Hosted Device | Realtime Testing
+  desc: Your team interacts with your application installed on our cloud hosted devices while we diagnose leakages using proprietary data flow algorithms for an automated real-time testing.
+  image_path: /img/camas/dast.png
+
+- class: right-rouned-corner
+  heading: API TESTING
+  sub_heading: Application Programming Interface Testing
+  tagline: Mobile App Components |Server Side Testing
+  desc: Our fully automated API scanner attempts to break into your server to discover vulnerabilities so you can plug them before the bad guys exploit them
+  image_path: /img/camas/api.png
