@@ -151,6 +151,10 @@ a {
 
 /* START OF CAMAS PAGE */
 
+.submit-button:focus {
+    outline:0 !important;
+}
+
 .camas-main-container .row {
   margin-right: 0px
 }
@@ -227,7 +231,11 @@ a {
 .camas-right-form {
   box-shadow: 0px 5px 10px #888888;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
+
+
 
 .camas-right-form .lined-input, .camas-right-form .selected-flag {
   margin-left: 0px!important;
@@ -240,13 +248,17 @@ a {
 
 .camas-right-form .submit-button {
   margin-left: 0px!important;
-  width: 50%
+  width: 60%
 }
 
 .camas-right-form .sos-form-eorror {
   margin-left: 0px!important;
   text-align: left;
   width: 100%;
+}
+
+.step-next-image {
+  width: 100%
 }
 
 ul.camas-feat-list {
@@ -1013,9 +1025,6 @@ ul.camas-feat-list {
   .footer-box a {
     top: 20%!important
   }
-  .step-next-image {
-    width: 100%
-  }
 }
 
 @media (max-width: 1024px) {
@@ -1059,6 +1068,17 @@ ul.camas-feat-list {
   }
   .sos-form-eorror{
     margin-left: 60px;
+  }
+  .camas-right-form {
+    height: 350px;
+    max-width: 400px;
+    margin: 50px auto 0px auto
+  }
+  .camas-right-form .submit-button {
+    margin-left: 100px!important
+  }
+  .camas-feat-text2 {
+    width: 200px
   }
 }
 
@@ -1843,5 +1863,8 @@ ul.camas-feat-list {
   }
   .camas-button {
     width: 60%!important
+  }
+  .camas-feat-text2 {
+    width: 240px
   }
 }
