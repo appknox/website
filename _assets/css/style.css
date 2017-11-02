@@ -1074,9 +1074,6 @@ ul.camas-feat-list {
     max-width: 400px;
     margin: 50px auto 0px auto
   }
-  .camas-right-form .submit-button {
-    margin-left: 100px!important
-  }
   .camas-feat-text2 {
     width: 200px
   }
@@ -1387,6 +1384,9 @@ ul.camas-feat-list {
   }
   .camas-left-desc {
     padding: 0px
+  }
+  .camas-right-form .submit-button {
+    margin-left: 0px!important
   }
 
 }
@@ -1827,7 +1827,8 @@ ul.camas-feat-list {
     max-width: 280px
   }
   .camas-right-form .submit-button {
-    width: 60%
+    width: 60%;
+    margin-left: 0px!important
   }
   .camas-step-image {
     max-width: 50px
