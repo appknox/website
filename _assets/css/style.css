@@ -151,7 +151,7 @@ a {
 
 /* START OF CAMAS PAGE */
 
-.submit-button:focus {
+.submit-button:focus, .grade-button:focus {
     outline:0 !important;
 }
 
