@@ -278,12 +278,6 @@ p {
   font-family : neosans !important;
 }
 
-.col-head-line{
-  display: inline-block;
-  width: 100%;
-  border-bottom: 2px solid #000;
-}
-
 #first-container {
   padding-top: 90px;
 }
@@ -646,26 +640,8 @@ button:focus {
   color: #fff !important;
 }
 
-.request-button {
-  background: #f24c40;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: neosans;
-  text-align: center;
-  font-size: 16px;
-  width:73%;
-  height: 40px;
-  margin-bottom: 30px;
-  margin-top: 10%;
-}
-
 .letter-spacing {
   letter-spacing: 1px;
-}
-
-.request-button:hover{
-  box-shadow: 2px 2px 2px #999;
 }
 
 .scan-list {
@@ -699,14 +675,6 @@ button:focus {
   font-weight: 900;
 }
 
-.scan-benifits {
-  width: 100%;
-  text-align: left;
-  margin-left: 40px;
-  font-size: 14px;
-  color: #5d4770;
-}
-
 .scan-enter {
   margin-bottom: 20px;
   width: 100%;
@@ -715,12 +683,6 @@ button:focus {
   font-size: 14px;
   font-style: gillsans;
   color: #5d4770;
-}
-
-.platform-type {
-  margin-top: 20px;
-  padding: 0;
-  font-size: 20px;
 }
 
 #know-more{
@@ -981,14 +943,6 @@ button:focus {
 
 #contact-form-holder textarea {
   margin: 40px 0;
-}
-
-.country-code fieldset .intl-tel-input {
-  display: block
-}
-
-.country-code fieldset .intl-tel-input input.placeholder-position {
-  padding-left: 75px!important
 }
 
 #hello-zone-cu {
@@ -1344,31 +1298,7 @@ input[type=email],input[type=text],input[type=url] {
   margin: 40px auto;
 }
 
-#pricingZoneBox {
-  padding: 0;
-  box-shadow: 0 0 6px #ccc;
-}
-
-.plan-section {
-  padding: 0 !important;
-  border-style: solid;
-  border-width: 0px 1px 0px 1px;
-  border-color: #f2f2f2;
-  height: 440px;
-}
-
-.plan-section:hover {
-    box-shadow: 3px 3px 20px #999;
-    z-index: 1;
-
-}
-
-.plan-section:hover .col-head-line {
-  border-bottom: 2px solid #f24c40;
-}
-
 .pricing-heading {
-  padding-top: 20px;
   font-size: 24px;
   font-style: neosans;
 }
@@ -1394,8 +1324,8 @@ input[type=email],input[type=text],input[type=url] {
 }
 
 .margin-reduce{
-  margin-top: 70px;
   margin-bottom: 40px;
+  padding-top: 1px
 }
 
 .plan-type {
@@ -1412,12 +1342,6 @@ input[type=email],input[type=text],input[type=url] {
 
 .changeBack{
   background-color: red;
-}
-
-.pricing-col-head {
-  margin: 0;
-  background-color: #FFF;
-  color: #fff;
 }
 
 #quantityZones,#quantityTitleZones {
@@ -1689,7 +1613,208 @@ input[type=email],input[type=text],input[type=url] {
   color: #aaa;
 }
 
+.pricing-plan-section {
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  overflow:hidden;
+}
+
+.addon-container {
+  margin-top: 30px;
+  overflow:hidden;
+  margin-bottom: 30px;
+  padding: 0px 200px
+}
+
+.plan-section {
+  box-shadow: 0px 0px 7px #999;
+  height: 475px;
+  background-color: #f1f0f0;
+  margin: auto;
+  width: 370px
+}
+
+.pricing-plan-head {
+  height: 100px;
+  background-color: #323233;
+  box-shadow: 0px 0px 7px #999;
+}
+
+.pricing-plan-sub-head {
+  font-size: 12px;
+  color: #ff4939
+}
+
+.pricing-plan-content {
+  height: 250px
+}
+
+ul.pricing-plan-list {
+  margin-top: 30px;
+}
+
+.pricing-plan-list li {
+  text-align: left;
+  margin-left: 20%;
+  list-style-type: square;
+  font-size: 30px;
+  height: 30px
+}
+
+.pricing-plan-list i.fa-plus {
+  margin-left: -20%;
+  margin-top: 5%
+}
+
+.pricing-plan-list li span {
+  font-size: 16px
+}
+
+.gradient-banner {
+  background: #28bb9e;
+  background: radial-gradient(#17846e, #28bb9e);
+  background: -webkit-radial-gradient(#17846e, #28bb9e);
+  background: -o-radial-gradient(#17846e, #28bb9e);
+  background: -moz-radial-gradient(#17846e, #28bb9e);
+  padding: 5px;
+  color: #fff;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  box-shadow: 0px 0px 7px #999;
+}
+
+.request-button {
+  background: #f24c40;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: neosans;
+  text-align: center;
+  font-size: 16px;
+  min-width: 45%;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 10%;
+}
+
+.plan-section:hover .pricing-plan-head {
+  background-color: #ff4939;
+  color: #000;
+}
+
+.plan-section:hover .pricing-plan-sub-head {
+  color: #000;
+  font-size: 14px
+}
+
+.plan-section:hover .pricing-plan-list li {
+  color: #ff4939;
+}
+
+.plan-section:hover .pricing-plan-list span {
+  color: #000
+}
+
+.plan-section:hover {
+  box-shadow: 0px 0px 20px #999;
+}
+
+.pricing-plans-section {
+  text-align: center;
+}
+
+.addons-section {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px
+}
+
+.add-on-section {
+  border: 1px solid #888;
+  max-width: 200px;
+  margin: auto;
+}
+
+.add-on-section div {
+  background-color: #959595;
+  color: #fff;
+  padding: 5px
+}
+
+.tooltip-icon {
+  padding-left:25px;
+  background:url('/img/pricing/info_small.png') no-repeat top left;
+  display: inline-block;
+  height: 17px;
+  width: 50px;
+  margin-left: 5px;
+  margin-bottom: -4px;
+  cursor: pointer;
+}
+
+.tooltip-icon:hover {
+  background:url('/img/pricing/info_small_active.png') no-repeat top left;
+}
+
+.icon-big {
+  background:url('/img/pricing/info_big.png') no-repeat top left;
+  height: 30px;
+  margin-left: 75%;
+  margin-top: 5px
+}
+
+.icon-big:hover {
+    background:url('/img/pricing/info_big_active.png') no-repeat top left;
+}
+
+.tooltip-text {
+  position: absolute;
+  visibility: hidden;
+}
+
+.tooltip-box {
+  position: absolute;
+  visibility: hidden;
+	border: 2px solid #959595;
+  border-radius: 5px;
+  bottom: 235px;
+  left: 190px;
+  padding: 15px
+}
+
+.tooltip-box:after, .tooltip-box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip-box:after {
+	border-width: 10px;
+	margin-left: -34px;
+}
+
+.tooltip-box:before {
+	border-top-color: #959595;
+	border-width: 10px;
+	margin-left: -34px;
+}
+
+.tooltip-icon:hover .tooltip-text {
+  visibility: visible;
+}
+
+.icon-big:hover .tooltip-box {
+  visibility: visible;
+}
+
 /* END PRICING PAGE */
+
 /* RESOURCES PAGE */
 .resource {
   display: none;
@@ -2116,6 +2241,9 @@ line-height: 35px;
     padding: 50px 0px;
     margin-left: -20px
   }
+  .addon-container {
+    padding: 0 150px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2180,6 +2308,12 @@ line-height: 35px;
   #ak-menu li>a {
     font-size: 14px
   }
+  .plan-section {
+    width: 300px
+  }
+  .addon-container {
+    padding: 0 100px
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2189,21 +2323,11 @@ line-height: 35px;
   .call-button {
     margin-left: 280px;
   }
-  .request-button{
-    display: block !important ;
-    width: 30%;
-    margin-left: 250px;
-    margin-top: 5%
-  }
   .plan-bottom-line{
     width: 20%;
   }
   .scan-list{
     width:30%;
-    margin-left: 235px;
-  }
-  .scan-benifits{
-    width:56%;
     margin-left: 235px;
   }
   .scan-enter{
@@ -2249,6 +2373,13 @@ line-height: 35px;
   }
   .partner-logo .logos img {
     max-width: 150px
+  }
+  .plan-section {
+    width: 300px;
+    margin-bottom: 50px
+  }
+  .addon-container {
+    padding: 0px
   }
 }
 
@@ -3093,20 +3224,11 @@ header, .main-nav-scrolled {
   .plan-top-line{
     width: 40%;
   }
-  .request-button{
-    display: block !important ;
-    width: 30%;
-    margin-left: 250px;
-  }
   .plan-bottom-line{
     width: 20%;
   }
   .scan-list{
     width:30%;
-    margin-left: 235px;
-  }
-  .scan-benifits{
-    width:56%;
     margin-left: 235px;
   }
   .enterprise-features{
@@ -3381,14 +3503,26 @@ header, .main-nav-scrolled {
   .ak-partner-section img {
     position: relative;
   }
-
+  .plan-section {
+    margin-bottom: 30px
+  }
+  .plan-section {
+    max-width: 400px
+  }
+  .add-on-section {
+    max-width: 200px
+  }
+  .addon-container {
+    margin-top: 0px;
+    padding: 0px
+  }
+  .addons-section {
+    margin-top: 20px
+  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .enterprise-features {
     margin-left: 130px;
-  }
-  .plan-section {
-    margin-top: 20px;
   }
   .client-sign {
     margin-top: 60px;
@@ -4179,6 +4313,16 @@ header, .main-nav-scrolled {
   }
   .ak-testimony {
     padding-bottom: 85px;
+  }
+  .add-on-section {
+    width: 70%
+  }
+  .plan-section {
+    max-width: 300px
+  }
+  .pricing-plan-section .col-sm-12 {
+    padding-left: 0px;
+    padding-right: 0px
   }
 }
 

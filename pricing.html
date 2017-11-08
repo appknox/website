@@ -6,98 +6,67 @@ permalink: /pricing/
 ---
 <section id="first-container">
   <div class="text-center">
-    <h2 class="pricing-heading"> Unlimited Scans For Everyone </h2>
+    <h2 class="pricing-heading"> Unlimited Mobile App Scans For Everyone </h2>
     <p class="pricing-tagline">Flexible Cancellation &nbsp;&nbsp;|&nbsp;&nbsp; Proactive Support</p>
   </div>
 </section>
 <section class="plan-type">
   <div class="text-center saving-text">Save With Yearly Subscription</div>
 </section>
-<section class="pricing-zone">
-  <div class="container text-center">
-    <ul id="pricingZoneBox">
-      {% for plan in site.data.pricingplans %}
-      <section>
-      <li class="col-md-3 plan-section">
-        <div class="pricing-col-head col-head-line">
-
-          <img src="{{plan.pricingplan.plan.img}}" alt="{{plan.pricingplan.plan.alt}}" />
-        </div>
-        <div class="platform-type plan-top-line">
-        {{plan.pricingplan.planTitle}}<br>
-        <img src="{{plan.pricingplan.pricings.img}}" alt="{{plan.pricingplan.pricings.alt}}" />
-        </div>
-        {% include scan_list.html %}
-        <table class="scan-benifits">
-          <tr>
-            <td>{{plan.pricingplan.firstScan.name}}</td>
-            <td>{{plan.pricingplan.firstScan.desc}}</td>
-          </tr>
-          <tr>
-            <td>{{plan.pricingplan.secondScan.name}}</td>
-            <td>{{plan.pricingplan.secondScan.desc}}</td>
-          </tr>
-          <tr>
-            <td>{{plan.pricingplan.thirdScan.name}}</td>
-            <td>{{plan.pricingplan.thirdScan.desc}}</td>
-          </tr>
-        </table>
-        <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="{{plan.pricingplan.link}}">Request Quote</div>
-      </li>
-      </section>
-        {% endfor %}
-        <section>
-            <li class="col-md-3 plan-section">
-              <div class="pricing-col-head col-head-line">
-                <img src="/img/plans-25.png" alt="Appknox Enterprise Plan" />
+<section class="pricing-plan-section">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row pricing-plans-section">
+      {% for plan in site.data.pricingplans.pricingplan %}
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="plan-section">
+            <div class="pricing-plan-head">
+              <img src="{{plan.img}}" alt="{{plan.plan.alt}}" />
+              <div class="pricing-plan-sub-head">
+                {{plan.planTitle}}
               </div>
-              <div class="platform-type plan-top-line black-line">
-              Dedicated Infrastructure<br>
-              <table class="enterprise-features">
-                <tr>
-                  <td>Multiple <span class="black-font">Teams</span></td>
-                </tr>
-                <tr>
-                  <td>Multiple <span class="black-font">Projects</span></td>
-                </tr>
-                <tr>
-                  <td>Multiple <span class="black-font">Platforms</span></td>
-                </tr>
-              </table>
-              </div>
-              <table class="scan-list enterprise-list">
-                <tr>
-                  <td>SAST (Static)</td>
-                  <td class="check-26"></td>
-                </tr>
-                <tr>
-                  <td>DAST (Dynamic)</td>
-                  <td class="check-26"></td>
-                </tr>
-                <tr>
-                  <td>Private Secure Cloud</td>
-                  <td class="check-26"></td>
-                </tr>
-              </table>
-              <table class="scan-enter">
-                <tr>
-                  <td>Dedicated Account Manager</td>
-                </tr>
-                <tr>
-                  <td>Dedicated Security Researcher</td>
-                </tr>
-              </table>
-              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="https://try.appknox.com/demo-enterprise">Get In Touch</div>
-            </li>
-          </section>
-
-
-          <li class="clearfix"></li>
-    </ul>
-    <ul class="marginTop">
-        <li class="xs-font gray-a text-center">For any queries regarding pricing, reach us at - <a class="gray-7" href="mailto:pricing@appknox.com">pricing@appknox.com</a></li>
-    </ul>
+            </div>
+            <div class="pricing-plan-content">
+              <ul class="pricing-plan-list">
+                {{plan.pricingDescriptions}}
+              </ul>
+            </div>
+            {{plan.price}}
+            <div class="pricing-plan-footer">
+              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar">{{plan.button}}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
+</section>
+<section class="addon-container">
+  <div class="text-center">
+    <h2 class="pricing-heading"> On Demand Add-ons </h2>
+    <h4> Select the add-on of your choice for the desired plan </h2>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row addons-section">
+      {% for plan in site.data.pricingplans.addons %}
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="add-on-section">
+            <span class="tooltip-icon icon-big">
+              <span class="tooltip-box"> Tooltip Text </span>
+              <span class="tooltip-box-pointer"></span>
+            </span>
+            <img src="{{plan.img}}" alt="Appknox pricing addons" />
+            <div>
+              {{plan.name}}
+            </div>
+          </div>
+          <input type="checkbox" class="addon-checkbox" value="{{plan.name}}" />
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <ul class="marginTop">
+        <li class="xs-font gray-a text-center">For any queries regarding pricing, reach us at - <a class="gray-7" href="mailto:pricing@appknox.com">pricing@appknox.com</a></li>
+  </ul>
 </section>
 <section class="margin-reduce ak-gray-bg">
   <div class="text-center">
