@@ -2159,6 +2159,87 @@ line-height: 35px;
 
 /* END OF KNOW MORE PAGE */
 
+/* START OF THANK YOU PAGE */
+
+
+.thank-you-container {
+  padding: 30px 100px;
+  height: 100%
+}
+
+.thank-you-section {
+  background-image:url('/img/thanks/bg_image.jpg');
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #999
+}
+
+.top-brand {
+  margin-top: 30px;
+  height: 50px;
+  margin-bottom: 30px
+}
+
+.congrats-box {
+  background-color: #FFF;
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #999;
+  z-index: 3;
+  position: relative;
+}
+
+.congrats-box h2 {
+  color: #282b31
+}
+
+.congrats-box h3 {
+  font-family: gillsansmtpro;
+  color: #e43634
+}
+
+.congrats-box h4 {
+  font-family: gillsansmtpro;
+  color: #282b31
+}
+
+.thank-you-footer h3 {
+  color: #e43634
+}
+
+.congrats-box1 {
+  width: 86%;
+  height: 20px;
+  padding: 0px;
+  position: relative;
+  top: 24px;
+  z-index: 1;
+  position: relative;
+}
+
+.congrats-box2 {
+  width: 88%;
+  height: 20px;
+  padding: 0px;
+  position: relative;
+  top: 12px;
+  z-index: 2;
+  position: relative;
+}
+
+.congrats-box img {
+  padding: 20px;
+}
+
+.thank-you-footer {
+  padding-top: 10px;
+  padding-bottom: 5px
+}
+
+/* END OF THANK YOU PAGE */
+
 
 @media (min-width: 768px) {
   .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
@@ -2244,6 +2325,9 @@ line-height: 35px;
   .addon-container {
     padding: 0 150px
   }
+  .thank-you-container {
+    padding: 15px 30px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2314,6 +2398,9 @@ line-height: 35px;
   .addon-container {
     padding: 0 100px
   }
+  .thank-you-container {
+    padding: 15px
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2381,6 +2468,12 @@ line-height: 35px;
   .addon-container {
     padding: 0px
   }
+  .thank-you-container {
+    padding: 15px
+  }
+  .thank-you-footer {
+    margin-bottom: 15px
+  }
 }
 
 @media (max-width: 767px) {
@@ -2402,6 +2495,18 @@ line-height: 35px;
   }
   .partner-logo .logos img {
     max-width: 100px;
+  }
+  .thank-you-container {
+    padding: 10px
+  }
+  .thank-you-footer {
+    margin-bottom: 10px
+  }
+  .congrats-box {
+    width: 100%
+  }
+  .congrats-box img {
+    padding: 0px
   }
 }
 
