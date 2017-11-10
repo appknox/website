@@ -32,7 +32,7 @@ permalink: /pricing/
             </div>
             {{plan.price}}
             <div class="pricing-plan-footer">
-              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar">{{plan.button}}</div>
+              <div class="request-button btn-lg ak-btn-round uppercase inblock pricing-demo letter-spacing menubar" href="{{plan.link}}">{{plan.button}}</div>
             </div>
           </div>
         </div>
@@ -51,11 +51,10 @@ permalink: /pricing/
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="add-on-section">
             <span class="tooltip-icon icon-big">
-              <span class="tooltip-box"> Tooltip Text </span>
-              <span class="tooltip-box-pointer"></span>
+              <span class="tooltip-box"> {{plan.tooltip}} </span>
             </span>
-            <img src="{{plan.img}}" alt="Appknox pricing addons" />
-            <div>
+            <img class="addon-image" src="{{plan.img}}" alt="Appknox pricing addons" />
+            <div class="addon-name">
               {{plan.name}}
             </div>
           </div>

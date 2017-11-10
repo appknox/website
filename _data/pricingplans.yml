@@ -2,30 +2,36 @@ pricingplan :
   - img: /img/pricing/plans-23.png
     alt : Appknox Essential Plan
     planTitle: Automated Testing </br> For Power Users
-    pricingDescriptions : <li><span>Unlimited Scans</span></li><li><span>Static Scan</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Dynamic Scan</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>API Scan</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Continuous Integration</span><span class="tooltip-icon">
-                          <span class="tooltip-text">Tooltip text</span></span></li><li><span>Multiple Users</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Chat Support</span></li>
+    pricingDescriptions : <li><span>Unlimited Scans</span></li><li><span>Static Scan</span><span class="tooltip-icon"><span class="tooltip-text">Basic configuration testing with 75+ Test cases</span></span></li><li><span>Dynamic Scan</span><span class="tooltip-icon"><span class="tooltip-text">Testing your app’s data flow for a deeper analysis</span></span></li><li><span>API Scan</span><span class="tooltip-icon">
+                          <span class="tooltip-text">Mobile app component testing on the server side</span></span></li><li><span>Continuous Integration</span><span class="tooltip-icon"><span class="tooltip-text">CI lets you detect threats even during development of your app</span></span></li><li><span>Multiple Users</span><span class="tooltip-icon"><span class="tooltip-text">Add unlimited users & teams and assign them to projects</span></span></li><li><span>Chat Support</span></li>
     price: <div class="gradient-banner">$1999/App/Year</div>
+    link: /automated
     button: START 7 DAY FREE TRIAL
 
   - img: /img/pricing/plans-24.png
-    alt : Appknox Premium Plan
+    alt : Appknox Professional Plan
     planTitle: Automated + Manual Assesments </br> For Deeper Testing
-    pricingDescriptions: <li><span>Everything in Essential</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Manual Scan</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Remedition Call</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Dedicated Account Manager</span></li><li><span>Dedicated Security Researcher</span></li><li><span>Dedicated Call & Chat Support</span></li>
+    pricingDescriptions: <li><span>Everything in Essential</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Manual Scan</span><span class="tooltip-icon"><span class="tooltip-text">Our security experts manually break down your app to detect threats</span></span></li><li><span>Remedition Call</span><span class="tooltip-icon"><span class="tooltip-text">Request for a call with our security experts to help you fix threats detected</span></span></li><li><span>Dedicated Account Manager</span></li><li><span>Dedicated Security Researcher</span></li><li><span>Dedicated Call & Chat Support</span></li>
+    link: https://try.appknox.com/request-quote-professional
     button: REQUEST QUOTE
 
   - img: /img/pricing/plans-25.png
     alt : Appknox Enterprise Plan
     planTitle: Your Demand </br> Our Command
-    pricingDescriptions: <li><span>Everything in Essential & Premium</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Private Cloud</span></li><li><span>Dedicated Device Farm</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Request Custom Test Cases</span><span class="tooltip-icon"><span class="tooltip-text">Tooltip text</span></span></li><li><span>Customized Reports</span><span class="tooltip-icon">
-                         <span class="tooltip-text">Tooltip text</span></span></li>
-    button: REQUEST QUOTE                     
+    pricingDescriptions: <li><span>Everything in Essential & Premium</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Private Cloud</span></li><li><span>Dedicated Device Farm</span><span class="tooltip-icon"><span class="tooltip-text">We’ll build a whole new device farm dedicated solely to your business</span></span></li><li><span>Request Custom Test Cases</span></li><li><span>Customized Reports</span><span class="tooltip-icon">
+                         <span class="tooltip-text">Report detailing for all levels of organization. CXO’s, Managers, Security Teams, Developers etc</span></span></li>
+    link: https://try.appknox.com/request-quote-enterprise
+    button: REQUEST QUOTE
 
 addons :
   - img: /img/pricing/addons_1.png
     name: Web Testing
+    tooltip: Ensure total security for your web application
 
   - img: /img/pricing/addons_2.png
     name: Certifications
+    tooltip: CERT IN & PCI-DSS Certifications on demand
 
   - img: /img/pricing/addons_3.png
     name: SDK Testing
+    tooltip: Ensure proper implementation of both your SDK and its implementation
