@@ -2,7 +2,7 @@
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
-var HAWKINS_ONBOARDING_URL = "http://hawkins.appknox.com/api/on_boarding/";
+var HAWKINS_ONBOARDING_URL = "https://hawkins.appknox.com/api/on_boarding/";
 var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
 var SUBMIT_ERROR_MSG = "<i class='fa fa-check-square' aria-hidden='true'></i> Sorry! Form submission failed";
 var SUBMITTED_NO = "no";
