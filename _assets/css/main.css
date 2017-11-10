@@ -1789,39 +1789,26 @@ ul.pricing-plan-list {
 .tooltip-text {
   position: absolute;
   visibility: hidden;
+  background-color: #323233;
+  color: #fff!important;
+  font-size: 12px!important;
+  padding: 5px;
+  max-width: 200px;
+  border-radius: 5px;
+  margin-top: -10px
 }
 
 .tooltip-box {
   position: absolute;
   visibility: hidden;
   border-radius: 5px;
-  bottom: 190px;
-  left: 195px;
+  bottom: 205px;
+  left: 130px;
   padding: 5px;
   background-color: #323233;
-  color: #fff
-}
-
-.tooltip-box:after, .tooltip-box:before {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.tooltip-box:after {
-	border-width: 10px;
-	margin-left: -34px;
-}
-
-.tooltip-box:before {
-	border-top-color: #323233;
-	border-width: 10px;
-	margin-left: -34px;
+  color: #fff;
+  font-size: 14px;
+  width: 200px
 }
 
 .tooltip-icon:hover .tooltip-text {
