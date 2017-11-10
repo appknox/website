@@ -35,3 +35,4 @@ addons :
   - img: /img/pricing/addons_3.png
     name: SDK Testing
     tooltip: Ensure proper implementation of both your SDK and its implementation
+
