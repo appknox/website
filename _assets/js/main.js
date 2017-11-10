@@ -2693,14 +2693,6 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".request-button").on("click", function(){
-    var web_testing = document.getElementsByClassName("addon-checkbox")[0].checked
-    var certifications = document.getElementsByClassName("addon-checkbox")[1].checked
-    var sdk_testing = document.getElementsByClassName("addon-checkbox")[2].checked
-  });
-});
-
 if(window.location.hash) {
    var hashkey = window.location.hash;
    if (hashkey == "#show_sast") {
