@@ -1,56 +1,38 @@
-- pricingplan :
-      plan:
-        img: /img/plans-22.png
-        alt : Appknox Lite Plan
-      planTitle: Single Platform
-      pricings:
-        img: /img/pricing-19.png
-        alt: Appknox any one platform either Android or iOS
-      firstScan:
-        name: Remedition
-        desc: 1 Session
-      secondScan:
-        name: TAT
-        desc: 3-5 Working Days
-      thirdScan:
-        name: No.of Scans
-        desc: Unlimited
-      link: https://try.appknox.com/demo-lite
+pricingplan :
+  - img: /img/pricing/plans-23.png
+    alt : Appknox Essential Plan
+    planTitle: Automated Testing <br /> For Power Users
+    pricingDescriptions : <li><span>Unlimited Scans</span></li><li><span>Static Scan</span><span class="tooltip-icon"><span class="tooltip-text">Basic configuration testing with 75+ Test cases</span></span></li><li><span>Dynamic Scan</span><span class="tooltip-icon"><span class="tooltip-text">Testing your app’s data flow for a deeper analysis</span></span></li><li><span>API Scan</span><span class="tooltip-icon">
+                          <span class="tooltip-text">Mobile app component testing on the server side</span></span></li><li><span>Continuous Integration</span><span class="tooltip-icon"><span class="tooltip-text">CI lets you detect threats even during development of your app</span></span></li><li><span>Multiple Users</span><span class="tooltip-icon"><span class="tooltip-text">Add unlimited users & teams and assign them to projects</span></span></li><li><span>Chat Support</span></li>
+    price: <div class="gradient-banner">$1999/App/Year</div>
+    link: /automated-mobile-app-security-testing/
+    button: START 7 DAY FREE TRIAL
 
-- pricingplan :
-      plan :
-        img: /img/plans-23.png
-        alt : Appknox Essential Plan
-      planTitle: Dual Platform
-      pricings:
-        img: /img/pricing-20.png
-        alt: Appknox Dual Platform including only Android and iOS
-      firstScan:
-        name: Remedition
-        desc: 3 Session
-      secondScan:
-        name: TAT
-        desc: 5-7 Working Days
-      thirdScan:
-        name: No.of Scans
-        desc: Unlimited
-      link: https://try.appknox.com/demo-essential
+  - img: /img/pricing/plans-24.png
+    alt : Appknox Professional Plan
+    planTitle: Automated + Manual Assesments <br /> For Deeper Testing
+    pricingDescriptions: <li><span>Everything in Essential</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Manual Scan</span><span class="tooltip-icon"><span class="tooltip-text">Our security experts manually break down your app to detect threats</span></span></li><li><span>Remedition Call</span><span class="tooltip-icon"><span class="tooltip-text">Request for a call with our security experts to help you fix threats detected</span></span></li><li>
+                         <span>Dedicated Account  Manager</span></li><li><span>Dedicated Security Researcher</span></li><li><span>Dedicated Call & Chat Support</span></li>
+    link: https://try.appknox.com/demo-premium
+    button: REQUEST QUOTE
 
-- pricingplan :
-      plan :
-        img: /img/plans-24.png
-        alt : Appknox Premium Plan
-      planTitle: Multiple Platform
-      pricings:
-        img: /img/pricing-21.png
-        alt: Appknox Multiple Platform including Android, iOS and Windows
-      firstScan:
-        name: Remedition
-        desc: 5 Session
-      secondScan:
-        name: TAT
-        desc: 7-9 Working Days
-      thirdScan:
-        name: No.of Scans
-        desc: Unlimited
-      link: https://try.appknox.com/demo-premium      
+  - img: /img/pricing/plans-25.png
+    alt : Appknox Enterprise Plan
+    planTitle: Your Demand <br /> Our Command
+    pricingDescriptions: <li><span>Everything in Essential & Premium</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Private Cloud</span></li><li><span>Dedicated Device Farm</span><span class="tooltip-icon"><span class="tooltip-text">We’ll build a whole new device farm dedicated solely to your business</span></span></li><li><span>Request Custom Test Cases</span></li><li><span>Customized Reports</span><span class="tooltip-icon">
+                         <span class="tooltip-text">Report detailing for all levels of organization. CXO’s, Managers, Security Teams, Developers etc</span></span></li>
+    link: https://try.appknox.com/demo-enterprise
+    button: REQUEST QUOTE
+
+addons :
+  - img: /img/pricing/addons_1.png
+    name: Web Testing
+    tooltip: Ensure total security for your web application
+
+  - img: /img/pricing/addons_2.png
+    name: Certifications
+    tooltip: CERT IN & PCI-DSS Certifications on demand
+
+  - img: /img/pricing/addons_3.png
+    name: SDK Testing
+    tooltip: Ensure proper implementation of both your SDK and its implementation
