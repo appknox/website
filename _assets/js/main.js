@@ -2,7 +2,7 @@
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
-var HAWKINS_ONBOARDING_URL = "http://192.168.0.74:5000/api/on_boarding/";
+var HAWKINS_ONBOARDING_URL = "http://hawkins.appknox.com/api/on_boarding/";
 var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
 var SUBMIT_ERROR_MSG = "<i class='fa fa-check-square' aria-hidden='true'></i> Sorry! Form submission failed";
 var SUBMITTED_NO = "no";
@@ -2165,6 +2165,7 @@ function sendLandingPageForm1(ev){
   function successCallback(resData){
     if(resData.status === "success"){
       $("#lpForm1MsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+      $("#lp_form_1").hide();
       form.find("input,textarea").attr("disabled",true);
     }else{
       $("#lpForm1MsgBox").html(SUBMIT_ERROR_MSG);
@@ -2371,19 +2372,15 @@ function sendCAMASForm(ev){
   form.find("input,textarea").attr("disabled",true);
 
   function errorCallback(jqXHR, err, errException){
-    debugger
     $("#AGForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
     form.find("input,textarea").removeAttr("disabled");
   }
 
   function successCallback(resData){
-    debugger
     if(resData.status === "success"){
-      $("#AGForm").removeClass("red").addClass("green ak-margin-10").html(SUBMIT_SUCCESS_MSG);
-      form.find("input,textarea").attr("disabled",true);
-      form.remove();
+      window.location = resData.redirect_url
     }else{
-      $("#AGForm").html(SUBMIT_ERROR_MSG);
+      $("#AGForm").removeClass("green").addClass("red").html(resData.message);
       form.find("input,textarea").removeAttr("disabled");
     }
   }
