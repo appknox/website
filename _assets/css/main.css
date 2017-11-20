@@ -932,6 +932,14 @@ button:focus {
   font-size: 17px;
 }
 
+.country-code fieldset .intl-tel-input {
+   display: block
+ }
+
+.country-code fieldset .intl-tel-input input.placeholder-position {
+   padding-left: 75px!important
+ }
+
 #contact-form-holder textarea,#contact-form-holder input[type=text],#contact-form-holder input[type=email] {
   background: #f8f8f8;
   border: none;
