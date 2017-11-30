@@ -12,7 +12,6 @@ Thumbs.db
 ################
 .sass-cache
 .jekyll-metadata
-Gemfile.lock
 .bundle/
 coverage
 _site/
