@@ -1625,7 +1625,7 @@ input[type=email],input[type=text],input[type=url] {
   margin: 10px auto;
   text-align: center;
   position: relative;
-  padding: 0px 200px
+  padding: 0px 100px
 }
 
 .addon-container {
