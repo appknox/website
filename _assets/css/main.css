@@ -1658,6 +1658,14 @@ input[type=email],input[type=text],input[type=url] {
   height: 250px
 }
 
+.learn-more {
+  width: 150px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
 ul.pricing-plan-list {
   margin-top: 30px;
 }
