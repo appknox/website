@@ -531,8 +531,14 @@ p {
 .inslide-buttons {
   padding: 10px 40px 7px;
   display: inline-block;
-  border: 1px solid #000;
   border-radius: 30px;
+  background: #ea2127;
+  color: #fff
+}
+
+.inslide-buttons:hover, .call-button:hover, .pricing-demo:hover, .button-red:hover {
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
 .inslide-buttons p {
@@ -638,6 +644,11 @@ button:focus {
 
 .button-red:hover {
   color: #fff !important;
+}
+
+.button-red:focus {
+  color: #fff;
+  outline: none!important
 }
 
 .letter-spacing {
@@ -2166,8 +2177,11 @@ line-height: 35px;
   font-size: 24px;
   font-family: neosans;
   color: #fff;
-  margin-top: 50px;
-  margin-left: 30px
+  margin-top: 75px
+}
+
+.ta-heading .button-red {
+  padding: 10px 20px
 }
 
 .stick {
@@ -3620,6 +3634,7 @@ header, .main-nav-scrolled {
     margin-left: 0px;
     text-align: center;
   }
+
   .ast-try-appknox {
     height: 50px;
     padding-top: 10px
