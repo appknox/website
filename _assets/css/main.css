@@ -2181,7 +2181,8 @@ line-height: 35px;
 }
 
 .ta-heading .button-red {
-  padding: 10px 20px
+  padding: 10px 20px;
+  font-size: 16px
 }
 
 .stick {
@@ -2375,6 +2376,12 @@ line-height: 35px;
   .pricing-plan-section {
     padding: 0px 100px
   }
+  .ta-heading {
+    margin-top: 90px
+  }
+  .ta-heading .button-red {
+    font-size: 13px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2527,6 +2534,15 @@ line-height: 35px;
   .pricing-plan-section {
     overflow: hidden;
   }
+  .tr-heading {
+    margin-top: 50px
+  }
+  .ta-heading {
+    margin-top: 70px
+  }
+  .ta-heading .button-red {
+    font-size: 9px
+  }
 }
 
 @media (max-width: 767px) {
@@ -2563,6 +2579,13 @@ line-height: 35px;
   }
   .pricing-plan-section {
     overflow: hidden;
+  }
+  .ast-sec-section {
+    height: 75px;
+    margin-top: -1px
+  }
+  .ta-heading .button-red {
+    margin-top: 10px
   }
 }
 
@@ -3549,10 +3572,7 @@ header, .main-nav-scrolled {
     padding: 30px
   }
   .address-section {
-  border-left: 0px solid grey;
-  }
-  .ta-heading {
-    margin-top: 60px;
+    border-left: 0px solid grey;
   }
   .stick {
     top: 160px;
