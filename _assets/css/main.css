@@ -2379,9 +2379,6 @@ line-height: 35px;
   .ta-heading {
     margin-top: 90px
   }
-  .ta-heading .button-red {
-    font-size: 13px
-  }
   .shield-text {
     font-size: 22px!important
   }
@@ -2543,9 +2540,6 @@ line-height: 35px;
   .ta-heading {
     margin-top: 70px
   }
-  .ta-heading .button-red {
-    font-size: 9px
-  }
   .ak-appgrader-green-bg {
     text-align: center;
   }
@@ -2589,9 +2583,6 @@ line-height: 35px;
   .ast-sec-section {
     height: 75px;
     margin-top: -1px
-  }
-  .ta-heading .button-red {
-    margin-top: 10px
   }
   .ak-appgrader-green-bg {
     text-align: center;
@@ -3265,6 +3256,11 @@ header, .main-nav-scrolled {
 
 .slider-container {
   padding: 60px
+}
+
+.slider-container .learn-more {
+  margin-top: 30px;
+  margin-bottom: -30px
 }
 
 .slick-lightbox .slick-dots {
@@ -4218,7 +4214,8 @@ header, .main-nav-scrolled {
     width: 320px;
   }
   .slider-container {
-    padding: 30px
+    padding: 30px;
+    padding-bottom: 50px
   }
   .sec-slider .carousel-spots {
     top: 200px
@@ -4499,7 +4496,8 @@ header, .main-nav-scrolled {
     width: 280px;
   }
   .slider-container {
-    padding: 20px
+    padding: 20px;
+    padding-bottom: 50px
   }
   .sec-slider .carousel-spots {
     top: 180px
