@@ -2382,6 +2382,9 @@ line-height: 35px;
   .ta-heading .button-red {
     font-size: 13px
   }
+  .shield-text {
+    font-size: 22px!important
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2543,6 +2546,9 @@ line-height: 35px;
   .ta-heading .button-red {
     font-size: 9px
   }
+  .ak-appgrader-green-bg {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2586,6 +2592,9 @@ line-height: 35px;
   }
   .ta-heading .button-red {
     margin-top: 10px
+  }
+  .ak-appgrader-green-bg {
+    text-align: center;
   }
 }
 
@@ -3070,7 +3079,7 @@ header, .main-nav-scrolled {
 .shield-text{
   color: #ffffff;
   font-family: neosans;
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   top: 15px;
 }
@@ -3676,9 +3685,6 @@ header, .main-nav-scrolled {
   .reduce-padding .ak-container {
     padding-bottom: 0px
   }
-  .shield-text {
-    display: none;
-  }
   .navbar-brand {
     margin-top: 0px
   }
@@ -3700,6 +3706,9 @@ header, .main-nav-scrolled {
   }
   .addons-section {
     margin-top: 20px
+  }
+  .ak-appgrader-green-darker {
+    height: 150px
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -3956,6 +3965,9 @@ header, .main-nav-scrolled {
   }
   .ak-testimony {
     padding-bottom: 85px;
+  }
+  .shield-text {
+    font-size: 17px!important
   }
 }
 
@@ -4214,6 +4226,9 @@ header, .main-nav-scrolled {
   .iframe-modal {
     width: 330px;
     height: 200px;
+  }
+  .shield-text {
+    font-size: 15px!important
   }
 }
 
@@ -4505,6 +4520,9 @@ header, .main-nav-scrolled {
   .pricing-plan-section .col-sm-12 {
     padding-left: 0px;
     padding-right: 0px
+  }
+  .shield-text {
+    font-size: 12px!important
   }
 }
 
