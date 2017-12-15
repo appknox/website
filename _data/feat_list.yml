@@ -15,9 +15,8 @@ list_2:
      text: 0% false positives
 
 plan_list:
-  - text: 7 day free trial
   - text: Static, Dynamic & API Testing
   - text: Chat Support
   - text: Detailed Reporting
   - text: Integrations with JIRA & GITHUB
-  - text: Unlimited Users    
+  - text: Unlimited Users

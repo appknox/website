@@ -531,8 +531,14 @@ p {
 .inslide-buttons {
   padding: 10px 40px 7px;
   display: inline-block;
-  border: 1px solid #000;
   border-radius: 30px;
+  background: #ea2127;
+  color: #fff
+}
+
+.inslide-buttons:hover, .call-button:hover, .pricing-demo:hover, .button-red:hover {
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
 .inslide-buttons p {
@@ -638,6 +644,11 @@ button:focus {
 
 .button-red:hover {
   color: #fff !important;
+}
+
+.button-red:focus {
+  color: #fff;
+  outline: none!important
 }
 
 .letter-spacing {
@@ -1625,7 +1636,7 @@ input[type=email],input[type=text],input[type=url] {
   margin: 10px auto;
   text-align: center;
   position: relative;
-  padding: 0px 200px
+  padding: 0px 100px
 }
 
 .addon-container {
@@ -1656,6 +1667,23 @@ input[type=email],input[type=text],input[type=url] {
 
 .pricing-plan-content {
   height: 250px
+}
+
+.learn-more {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.learn-more a:focus, .learn-more a:active {
+  background-color: #f24c40!important;
+  color: #fff!important
+}
+
+.learn-more a {
+  width: 170px;
+  margin-bottom: 30px;
+  padding: 10px 30px 10px 30px
 }
 
 ul.pricing-plan-list {
@@ -2149,8 +2177,12 @@ line-height: 35px;
   font-size: 24px;
   font-family: neosans;
   color: #fff;
-  margin-top: 50px;
-  margin-left: 30px
+  margin-top: 75px
+}
+
+.ta-heading .button-red {
+  padding: 10px 20px;
+  font-size: 16px
 }
 
 .stick {
@@ -2344,6 +2376,12 @@ line-height: 35px;
   .pricing-plan-section {
     padding: 0px 100px
   }
+  .ta-heading {
+    margin-top: 90px
+  }
+  .shield-text {
+    font-size: 22px!important
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2496,6 +2534,15 @@ line-height: 35px;
   .pricing-plan-section {
     overflow: hidden;
   }
+  .tr-heading {
+    margin-top: 50px
+  }
+  .ta-heading {
+    margin-top: 70px
+  }
+  .ak-appgrader-green-bg {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2532,6 +2579,13 @@ line-height: 35px;
   }
   .pricing-plan-section {
     overflow: hidden;
+  }
+  .ast-sec-section {
+    height: 75px;
+    margin-top: -1px
+  }
+  .ak-appgrader-green-bg {
+    text-align: center;
   }
 }
 
@@ -3016,7 +3070,7 @@ header, .main-nav-scrolled {
 .shield-text{
   color: #ffffff;
   font-family: neosans;
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   top: 15px;
 }
@@ -3202,6 +3256,11 @@ header, .main-nav-scrolled {
 
 .slider-container {
   padding: 60px
+}
+
+.slider-container .learn-more {
+  margin-top: 30px;
+  margin-bottom: -30px
 }
 
 .slick-lightbox .slick-dots {
@@ -3518,10 +3577,7 @@ header, .main-nav-scrolled {
     padding: 30px
   }
   .address-section {
-  border-left: 0px solid grey;
-  }
-  .ta-heading {
-    margin-top: 60px;
+    border-left: 0px solid grey;
   }
   .stick {
     top: 160px;
@@ -3603,6 +3659,7 @@ header, .main-nav-scrolled {
     margin-left: 0px;
     text-align: center;
   }
+
   .ast-try-appknox {
     height: 50px;
     padding-top: 10px
@@ -3623,9 +3680,6 @@ header, .main-nav-scrolled {
   }
   .reduce-padding .ak-container {
     padding-bottom: 0px
-  }
-  .shield-text {
-    display: none;
   }
   .navbar-brand {
     margin-top: 0px
@@ -3648,6 +3702,9 @@ header, .main-nav-scrolled {
   }
   .addons-section {
     margin-top: 20px
+  }
+  .ak-appgrader-green-darker {
+    height: 150px
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -3905,6 +3962,9 @@ header, .main-nav-scrolled {
   .ak-testimony {
     padding-bottom: 85px;
   }
+  .shield-text {
+    font-size: 17px!important
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -4154,7 +4214,8 @@ header, .main-nav-scrolled {
     width: 320px;
   }
   .slider-container {
-    padding: 30px
+    padding: 30px;
+    padding-bottom: 50px
   }
   .sec-slider .carousel-spots {
     top: 200px
@@ -4162,6 +4223,9 @@ header, .main-nav-scrolled {
   .iframe-modal {
     width: 330px;
     height: 200px;
+  }
+  .shield-text {
+    font-size: 15px!important
   }
 }
 
@@ -4432,7 +4496,8 @@ header, .main-nav-scrolled {
     width: 280px;
   }
   .slider-container {
-    padding: 20px
+    padding: 20px;
+    padding-bottom: 50px
   }
   .sec-slider .carousel-spots {
     top: 180px
@@ -4453,6 +4518,9 @@ header, .main-nav-scrolled {
   .pricing-plan-section .col-sm-12 {
     padding-left: 0px;
     padding-right: 0px
+  }
+  .shield-text {
+    font-size: 12px!important
   }
 }
 
