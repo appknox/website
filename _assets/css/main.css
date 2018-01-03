@@ -2177,12 +2177,36 @@ line-height: 35px;
   font-size: 24px;
   font-family: neosans;
   color: #fff;
-  margin-top: 75px
+  margin-top: 30px;
+  text-align: center;
 }
 
 .ta-heading .button-red {
   padding: 10px 20px;
   font-size: 16px
+}
+
+.ast-sec-section {
+  background-color: #ea2127
+}
+
+.ast-sec-section img {
+  margin: auto
+}
+
+.ast-sec-section:hover {
+  margin-top: -5px;
+  margin-bottom: -10px;
+  height: 210px;
+  box-shadow: 0px 0px 10px 0px #999
+}
+
+.download-report {
+  color: #ea2127
+}
+
+.download-report:hover {
+  color: #ea2127
 }
 
 .stick {
@@ -2284,6 +2308,8 @@ line-height: 35px;
   padding-bottom: 5px
 }
 
+
+
 /* END OF THANK YOU PAGE */
 
 @media (min-width: 768px) {
@@ -2375,9 +2401,6 @@ line-height: 35px;
   }
   .pricing-plan-section {
     padding: 0px 100px
-  }
-  .ta-heading {
-    margin-top: 90px
   }
   .shield-text {
     font-size: 22px!important
@@ -2538,7 +2561,8 @@ line-height: 35px;
     margin-top: 50px
   }
   .ta-heading {
-    margin-top: 70px
+    margin-top: 5px;
+    font-size: 20px
   }
   .ak-appgrader-green-bg {
     text-align: center;
@@ -2581,8 +2605,14 @@ line-height: 35px;
     overflow: hidden;
   }
   .ast-sec-section {
-    height: 75px;
-    margin-top: -1px
+    height: 120px;
+    margin-top: -1px;
+    padding-top: 10px
+  }
+  .ast-sec-section:hover {
+    height: 120px;
+    margin-top: -1px;
+    margin-bottom: 0px
   }
   .ak-appgrader-green-bg {
     text-align: center;
