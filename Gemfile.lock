@@ -270,11 +270,11 @@ DEPENDENCIES
   coveralls
   github-pages
   html-proofer
-  jekyll
+  jekyll (~> 3.4.3)
   jekyll-assets
   jekyll-multiple-languages-plugin
   reduce
   s3_website
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
