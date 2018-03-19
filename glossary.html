@@ -5,28 +5,19 @@ excerpt: Appknox is a mobile app security testing solution to detect and fix vul
 ---
 
 <section class="glossary-section">
-  <div>
-    <h2>Glossary</h2>
-  </div>
   <div class="container">
+
     <div class="row">
-      <div class="glossary-headings col-lg-12">
-        <div class="col-lg-3">
-          Notation
-        </div>
-        <div class="col-lg-9">
-          Description
-        </div>
+      <div>
+        <h2>Glossary</h2>
       </div>
-    </div>
-    <div class="row">
       {% for glossary in site.data.glossary %}
-      <div class="glossary-container col-lg-12">
-        <div class="col-lg-3">
+      <div class="glossary-container col-lg-12 col-md-12 col-sm-12">
+        <div class="glossary-notation">
           <a href="{{glossary.link}}" target="_blank">{{glossary.notation}}</a>
         </div>
-        <div class="col-lg-9">
-          {{glossary.description}}
+        <div class="glossary-description">
+          <h4>{{glossary.description}}</h4>
         </div>
       </div>
       {% endfor %}
