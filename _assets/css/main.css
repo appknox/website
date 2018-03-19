@@ -2318,18 +2318,35 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   padding-top: 80px;
 }
 
-.glossary-headings {
-  background-color: #e5e5e5;
+.glossary-notation {
+  padding-top: 30px
 }
 
-.glossary-headings div, .glossary-container div {
-  padding: 10px;
+.glossary-notation a {
+  margin-top: 20px;
+  color: #ea2127;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 900;
 }
 
-.glossary-container {
-  background-color: #f5f5f5;
-  border-bottom: 2px solid #FFF
+.glossary-description h4 {
+  font-family: gillsansmtpro;
 }
+
+.glossary-description h4 p {
+  font-size: 17px
+}
+
+.glossary-description ol li {
+  list-style-type:decimal;
+}
+
+.glossary-description ul li {
+  margin-left: 30px;
+  list-style-type:disc;
+}
+
 
 /* END OF GlOSSARY PAGE */
 

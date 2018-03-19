@@ -66,7 +66,7 @@
               it is essential to test your Android application across various
               parameters – Performance, Usability, Functionality, Compatibility,
               Load, Security, etc. Since time to market is essential, most businesses
-              often neglect the security testing part. Here’s the link to the ultimate
+              often neglect the security testing part. Here’s the <a href="https://blog.appknox.com/ultimate-android-security-checklist/" target="_blank">link</a> to the ultimate
               security checklist of different tests to take care of before you launch
               your Android app, and even if you already have, it might be good to revisit.
   link: https://blog.appknox.com/ultimate-android-security-checklist/
@@ -232,9 +232,8 @@
                 <li>Attempts to gain unauthorised access to a system and/or to data.</li>
                 <li>Unauthorised use of systems for the processing or storing of data.</li>
                 <li>Changes to a systems firmware, software or hardware without the system
-                  owners consent.
-                <li>
-                <li>Malicious disruption and/or denial of service.<li>
+                  owners consent.</li>
+                <li>Malicious disruption and/or denial of service.</li>
               </ul>
 
   link: https://blog.appknox.com/tag/cybersecurity/
