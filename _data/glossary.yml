@@ -3,12 +3,12 @@
               in infrastructure to one another and provides access to a distribution
               system, if connected, which is typically an organization’s enterprise
               wired network.
-  link:
+  class: no-link
 
 - notation: Access Type
   description: Privilege to perform action on an object. Read, write, execute,
                append, modify, delete, and create are examples of access types
-  link:
+  class: no-link
 
 - notation: Account Management, User
   description: Involves
@@ -23,7 +23,7 @@
                   <li>managing these functions
                 </li>
               <ol>
-  link:
+  class: no-link
 
 - notation: AES
   description: The Advanced Encryption Standard (AES) specifies a U.S.
@@ -59,7 +59,7 @@
 - notation: Android Market
   description: The former name of the Google Play app market, an online marketplace
                for mobile apps that run on the Android platform.
-  link:
+  class: no-link
 
 - notation: Android Application Security
   description: As you build your Android app and work on your mobile strategy,
@@ -149,7 +149,7 @@
 - notation: botnet
   description: A network of infected devices, connected to the Internet, used to
               commit coordinated cyber attacks without their owner's knowledge.
-  link:
+  class: no-link
 
 - notation: breach
   description: An incident in which data, computer systems, electronic devices or
@@ -158,7 +158,7 @@
 
 - notation: browser
   description: A software application which presents information and services from the web.
-  link:
+  class: no-link
 
 - notation: brute force attack
   description: Using a computational power to automatically enter a huge number of
@@ -200,7 +200,7 @@
 - notation: credentials
   description: A user's authentication information used to verify identity -
               typically one, or more, of password, token, certificate.
-  link:
+  class: no-link
 
 - notation: Cryptography
   description: The discipline that embodies the principles, means, and methods
@@ -214,7 +214,7 @@
                to click on a malicious link in an email that loads crypto mining code
                on the computer, or by infecting a website or online ad with JavaScript
                code that auto-executes once loaded in the victim’s browser.
-  link:
+  class: no-link
 
 - notation: CVE
   description: Common Vulnerabilities and Exposures (CVE) is a dictionary of common
@@ -254,17 +254,17 @@
 - notation: Data at rest
   description: Describes data in persistent storage such as hard disks,
                removable media or backups.
-  link:
+  class: no-link
 
 - notation: dictionary attack
   description: A type of brute force attack in which the attacker uses known
               dictionary words, phrases or common passwords as their guesses.
-  link:
+  class: no-link
 
 - notation: digital footprint
   description: A 'footprint' of digital information that a user's online activity
               leaves behind.
-  link:
+  class: no-link
 
 - notation: denial of service (DoS)
   description: When legitimate users are denied access to computer services (or resources),
@@ -273,25 +273,27 @@
 
 - notation: DDoS
   description: A Denial of Service technique that uses numerous hosts to perform the attack.
-  link:
+  link: https://blog.appknox.com/tag/ddos/
 
 - notation: download attack
   description: The unintentional installation of malicious software or virus onto a device
               without the users knowledge or consent. May also be known as a drive-by download.
-  link:
+  class: no-link
 
 - notation: encryption
   description: A mathematical function that protects information by making it
               unreadable by everyone except those with the key to decode it.
+  link: https://blog.appknox.com/tag/encryption/
+
 - notation: End-to-End Encryption
   description: Communications encryption in which data is encrypted when being
               passed through a network, but routing information remains visible.
-  link: https://blog.appknox.com/tag/encryption/
+  class: no-link
 
 - notation: end user device (EUD)
   description: Collective term to describe modern smartphones, laptops and tablets
                that connect to an organisation's network.
-  link:
+  class: no-link
 
 - notation: exploit
   description: May refer to software or data that takes advantage of a vulnerability
@@ -339,7 +341,7 @@
   description: Decoy system or network to attract potential attackers that helps
               limit access to actual systems by detecting and deflecting or
               learning from an attack. Multiple honeypots form a honeynet.
-  link:
+  class: no-link
 
 - notation: Identity fraud
   description: Identity fraud is stealing someone’s identity as a method to gain
@@ -350,7 +352,7 @@
 - notation: insider risks
   description: The potential for damage to be done maliciously or inadvertently
               by a legitimate user with privileged access to systems, networks or data.
-  link:
+  class: no-link
 
 - notation: Integrity
   description: <p>Integrity is another important aspect of information security as it
@@ -392,7 +394,7 @@
 
 - notation: malvertising
   description: Using online advertising as a delivery method for malware.
-  link:
+  class: no-link
 
 - notation: malware
   description: Malicious software - a term that includes viruses, trojans, worms or any code
@@ -408,7 +410,7 @@
 
 - notation: mitigation
   description: Steps that organisations and individuals can take to minimise and address risks.
-  link:
+  class: no-link
 
 - notation: MITM
   description: A man in the middle attack (MITM) is a kind of cyber attack where the attacker
@@ -438,7 +440,7 @@
 
 - notation: network
   description: Two or more computers linked in order to share resources.
-  link:
+  class: no-link
 
 - notation: OWASP
   description: OWASP or Open Web Application Security Project is an online community
@@ -467,7 +469,7 @@
 - notation: patching
   description: Applying updates to firmware or software to improve security
               and/or enhance functionality.
-  link:
+  class: no-link
 
 - notation: PCI-DSS
   description: The Payment Card Industry Data Security Standard (PCI DSS) is a set
@@ -484,7 +486,7 @@
   description: An attack on network infrastructure that results in a user being
               redirected to an illegitimate website despite the user having
               entered the correct address.
-  link:
+  class: no-link
 
 - notation: phishing
   description: Untargeted, mass emails sent to many people asking for sensitive
@@ -495,7 +497,7 @@
 - notation: platform
   description: The basic hardware (device) and software (operating system) on
               which applications can be run.
-  link:
+  class: no-link
 
 - notation: Personally identifiable information (PII)
   description: Any information that, by itself or when combined with other
@@ -506,7 +508,7 @@
   description: The isolation of files that are suspected of containing a virus,
               spam, suspicious content, or PUPs. Quarantined files cannot be
               opened or executed.
-  link:
+  class: no-link
 
 - notation: Quick response (QR) code
   description: A two-dimensional code that can be scanned with a QR barcode reader
@@ -516,7 +518,7 @@
               with a quick and easy way to direct their customers to online content. QR
               codes are often found in magazines, product packaging, on advertisements,
               online, and in other marketing collateral.
-  link:
+  class: no-link
 
 - notation: ransomware
   description: Malicious software that makes data or systems unusable until
@@ -530,12 +532,12 @@
               to alter or replace system applications and settings, run apps that require
               administrator permissions, or perform operations that otherwise would have
               not been possible.
-  link:
+  class: no-link
 
 - notation: router
   description: A network device which sends data packets from one network to another
               based on the destination address. May also be called a gateway.
-  link:
+  class: no-link
 
 - notation: SAST
   description: Static Application Security Testing (SAST) can be considered as testing
@@ -551,38 +553,38 @@
 - notation: sanitisation
   description: Using electronic or physical destruction methods to securely erase or
               remove data from memory.
-  link:
+  class: no-link
 
 - notation: smishing
   description: Phishing via SMS - mass text messages sent to users asking for sensitive
               information (eg bank details) or encouraging them to visit a fake website.
-  link:
+  class: no-link
 
 - notation: social engineering
   description: Manipulating people into carrying out specific actions, or divulging information,
               that's of use to an attacker.
-  link:
+  class: no-link
 
 - notation: spear-phishing
   description: A more targeted form of phishing, where the email is designed to look
               like it's from a person the recipient knows and/or trusts.
-  link:
+  class: no-link
 
 - notation: Sandboxing
   description: A restricted, controlled execution environment that prevents potentially
               malicious software, such as mobile code, from accessing any system resources
               except those for which the software is authorized.
-  link:
+  class: no-link
 
 - notation: trojan
   description: A type of malware or virus disguised as legitimate software, that is used to
               hack into the victim's computer.
-  link:
+  class: no-link
 
 - notation: two-factor authentication (2FA)
   description: The use of two different components to verify a user's claimed identity.
               Also known as multi-factor authentication.
-  link:
+  class: no-link
 
 - notation: Transport Layer Security (TLS)
   description: An authentication and security protocol widely implemented in
@@ -601,48 +603,48 @@
   description: The examination of threat sources against system vulnerabilities
               to determine the threats for a particular system in a particular
               operational environment.
-  link:
+  class: no-link
 
 - notation: Threat Assessment
   description: Formal description and evaluation of threat to an information system.
-  link:
+  class: no-link
 
 - notation: Token
   description: Something that the Claimant possesses and controls (typically a key
               or password) that is used to authenticate the Claimant’s identity.
-  link:
+  class: no-link
 
 - notation: Unauthorized Access
   description: Occurs when a user, legitimate or unauthorized, accesses a resource
               that the user is not permitted to use.
-  link:
+  class: no-link
 
 - notation: Untrusted Process
   description: Process that has not been evaluated or examined for correctness and
               adherence to the security policy. It may include incorrect or malicious
               code that attempts to circumvent the security mechanisms.
-  link:
+  class: no-link
 
 - notation: Update (a Certificate)
   description: The act or process by which data items bound in an existing public
               key certificate, especially authorizations granted to the subject,
               are changed by issuing a new certificate.
-  link:
+  class: no-link
 
 - notation: User
   description: Individual or (system) process authorized to access an information system.
-  link:
+  class: no-link
 
 - notation: virus
   description: Programs which can self-replicate and are designed to infect legitimate
               software programs or systems. A form of malware.
-  link:
+  class: no-link
 
 - notation: Virtual Private Network (VPN)
   description: An encrypted network often created to allow secure connections for
               remote users, for example in an organisation with offices in multiple
               locations.
-  link:
+  class: no-link
 
 - notation: vulnerability
   description: A weakness, or flaw, in software, a system or process. An attacker may
@@ -654,27 +656,27 @@
               the adequacy of security measures, identify security deficiencies, provide
               data from which to predict the effectiveness of proposed security measures,
               and confirm the adequacy of such measures after implementation.
-  link:
+  class: no-link
 
 - notation: water-holing (watering hole attack)
   description: Setting up a fake website (or compromising a real one) in order
               to exploit visiting users.
-  link:
+  class: no-link
 
 - notation: whaling
   description: Highly targeted phishing attacks (masquerading as a legitimate emails)
               that are aimed at senior executives.
-  link:
+  class: no-link
 
 - notation: whitelisting
   description: Authorising approved applications for use within organisations in
               order to protect systems from potentially harmful applications.
-  link:
+  class: no-link
 
 - notation: Worm
   description: A self-replicating, self-propagating, self-contained program that
               uses networking mechanisms to spread itself.
-  link:
+  class: no-link
 
 - notation: XSS
   description: Cross Site Scripting is a vulnerability that allows attackers to inject
@@ -688,3 +690,4 @@
 - notation: zero-day
   description: Recently discovered vulnerabilities (or bugs), not yet known to
               vendors or antivirus companies, that hackers can exploit.
+  class: no-link
