@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
-gem 'jekyll'
+
+ruby '2.4.3'
+
+gem 'jekyll', '~> 3.4.3'
 gem 'github-pages'
 gem 'reduce'
 gem 'html-proofer'

@@ -46,6 +46,7 @@ exclude:
   - s3_website.yml
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
+  - .ruby-version
 
 assets:
   compress:

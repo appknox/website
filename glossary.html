@@ -1,0 +1,26 @@
+---
+layout: default
+title: Appknox - Glossary
+excerpt: Appknox is a mobile app security testing solution to detect and fix vulnerabilities in mobile apps using a combination of automated and manual tests.
+---
+
+<section class="glossary-section">
+  <div class="container">
+
+    <div class="row">
+      <div>
+        <h2>Glossary</h2>
+      </div>
+      {% for glossary in site.data.glossary %}
+      <div class="glossary-container col-lg-12 col-md-12 col-sm-12">
+        <div class="glossary-notation">
+          <a class="{{glossary.class}}" href="{{glossary.link}}" target="_blank">{{glossary.notation}}</a>
+        </div>
+        <div class="glossary-description">
+          <p>{{glossary.description}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

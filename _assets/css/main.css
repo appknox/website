@@ -2312,6 +2312,50 @@ line-height: 35px;
 
 /* END OF THANK YOU PAGE */
 
+/* START OF GlOSSARY PAGE */
+
+nav.navbar.navbar-fixed-top ~ .glossary-section {
+  padding-top: 80px;
+}
+
+.glossary-notation {
+  padding-top: 30px
+}
+
+.glossary-notation a {
+  margin-top: 20px;
+  color: #ea2127;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.glossary-description h4 {
+  font-family: gillsansmtpro;
+}
+
+.glossary-description h4 p {
+  font-size: 17px
+}
+
+.glossary-description ol li {
+  list-style-type:decimal;
+}
+
+.glossary-description ul li {
+  margin-left: 30px;
+  list-style-type:disc;
+}
+
+.glossary-notation a.no-link {
+  text-decoration: none;
+  cursor: text;
+  pointer-events:none;
+}
+
+
+/* END OF GlOSSARY PAGE */
+
 @media (min-width: 768px) {
   .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
     background-color: transparent !important;

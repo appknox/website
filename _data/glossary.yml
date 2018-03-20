@@ -1,0 +1,694 @@
+- notation: Access Point
+  description: A device that logically connects wireless client devices operating
+              in infrastructure to one another and provides access to a distribution
+              system, if connected, which is typically an organization’s enterprise
+              wired network.
+  class: no-link
+
+- notation: Access Type
+  description: Privilege to perform action on an object. Read, write, execute,
+               append, modify, delete, and create are examples of access types
+  class: no-link
+
+- notation: Account Management, User
+  description: Involves </p>
+              <ol>
+                <li>
+                  the process of requesting, establishing, issuing,
+                  and closing user accounts;
+                </li>
+                <li>
+                  tracking users and their respective access authorizations; and
+                </li>
+                  <li>managing these functions
+                </li>
+              </ol><p>
+  class: no-link
+
+- notation: AES
+  description: The Advanced Encryption Standard (AES) specifies a U.S.
+              government-approved cryptographic algorithm that can be used to
+              protect electronic data. The AES algorithm is a symmetric block
+              cipher that can encrypt (encipher) and decrypt (decipher) information.
+              This standard specifies the Rijndael algorithm, a symmetric block
+              cipher that can process data blocks of 128 bits, using cipher keys
+              with lengths of 128, 192, and 256 bits.
+  link: https://blog.appknox.com/tag/aes/
+
+- notation: Agile Mobile Application Development
+  description: Agile basically means swift or having the ability to move quickly
+               and easily. Applying that to application development, agile mobile
+               application development is a method of building apps that
+               characterized by the division of tasks into short phases of work
+               and frequent reassessment and adaptation of plans.
+               <br /><br />
+               The objective is to simplify the process of mobile application
+               development so that the resulting apps are adaptable after release
+  link: https://blog.appknox.com/agile-mobile-application-development/
+
+- notation: Android
+  description: Android is a mobile operating system developed by Google, based on
+               a modified version of the Linux kernel and other open source
+               software and designed primarily for touchscreen mobile devices
+               such as smartphones and tablets. In addition, Google has further
+               developed Android TV for televisions, Android Auto for cars, and
+               Android Wear for wrist watches, each with a specialized user
+               interface. Variants of Android are also used on game consoles,
+               digital cameras, PCs and other electronics.
+  link: https://blog.appknox.com/tag/android/
+
+- notation: Android Market
+  description: The former name of the Google Play app market, an online marketplace
+               for mobile apps that run on the Android platform.
+  class: no-link
+
+- notation: Android Application Security
+  description: As you build your Android app and work on your mobile strategy,
+              it is essential to test your Android application across various
+              parameters – Performance, Usability, Functionality, Compatibility,
+              Load, Security, etc. Since time to market is essential, most businesses
+              often neglect the security testing part. Here’s the <a href="https://blog.appknox.com/ultimate-android-security-checklist/" target="_blank">link</a> to the ultimate
+              security checklist of different tests to take care of before you launch
+              your Android app, and even if you already have, it might be good to revisit.
+  link: https://blog.appknox.com/ultimate-android-security-checklist/
+
+- notation: Antivirus
+  description: Software that is designed to detect, stop and remove viruses and
+               other kinds of malicious software.
+  link: https://blog.appknox.com/tag/antivirus/
+
+- notation: App
+  description: Short for Application, typically refers to a software program for
+               a smartphone or tablet.
+  link: https://blog.appknox.com/tag/mobile-apps/
+
+- notation: API
+  description: An application program interface (API) is a set of routines, protocols,
+              and tools for building software applications. Basically, an API specifies
+              how software components should interact.
+  link: https://appknox.com/automated-mobile-app-security-testing/
+
+- notation: API Testing
+  description: API testing is a type of software testing that involves testing
+              application programming interfaces (APIs) directly and as part of
+              integration testing to determine if they meet expectations for
+              functionality, reliability, performance, and security.
+  link: https://appknox.com/automated-mobile-app-security-testing/
+
+- notation: Attacker
+  description: Malicious actor who seeks to exploit computer systems with the
+              intent to change, destroy, steal or disable their information,
+              and then exploit the outcome.
+  link: https://blog.appknox.com/tag/attacker/
+
+- notation: Authentication
+  description: Authentication is the act of verifying a claim of the identity of
+               a user or a server to allow access to the resources in a system.
+               One of the main goals of information security is to allow reliable
+               access to the information by authorized people which are achieved
+               by applying proper authentication types.
+  link: https://blog.appknox.com/3-basic-mobile-security-principles/
+
+- notation: Authorization
+  description: While authentication confirms the identity of a person while he/she
+               tries to access a system’s resources, authorization verifies that
+               the user in question has correct permissions to access the requested
+               resources.
+  link: https://blog.appknox.com/3-basic-mobile-security-principles/
+
+- notation: Backdoor
+  description: An undocumented way of gaining access to a computer system,
+               a product, or an embedded device, or its embodiment. A backdoor
+               is a potential security risk.
+  link: https://blog.appknox.com/tag/backdoor/
+
+- notation: Backup
+  description: A copy of files and programs made to facilitate recovery, if necessary.
+  link: https://blog.appknox.com/tag/backup/
+
+- notation: Blacklist
+  description: A list of discrete entities, such as hosts or applications,
+               that have been previously determined to be associated with
+               malicious activity.
+  link: https://blog.appknox.com/tag/blacklist/
+
+- notation: Blacklisting
+  description: The process of the system invalidating a user ID based on the
+               user’s inappropriate actions. A blacklisted user ID cannot be used
+               to log on to the system, even with the correct authenticator.
+               Blacklisting and lifting of a blacklisting are both security-relevant
+               events. Blacklisting also applies to blocks placed against IP addresses
+               to prevent inappropriate or unauthorized use of Internet resources.
+  link: https://blog.appknox.com/tag/blacklist/
+
+- notation: Bluetooth
+  description: Bluetooth is a wireless technology standard for exchanging data
+               over short distances from fixed and mobile devices, and building
+               personal area networks.
+  link: https://blog.appknox.com/tag/bluetooth/
+
+- notation: botnet
+  description: A network of infected devices, connected to the Internet, used to
+              commit coordinated cyber attacks without their owner's knowledge.
+  class: no-link
+
+- notation: breach
+  description: An incident in which data, computer systems, electronic devices or
+              networks are accessed or affected in a non-authorised way.
+  link: https://blog.appknox.com/tag/data-breach/
+
+- notation: browser
+  description: A software application which presents information and services from the web.
+  class: no-link
+
+- notation: brute force attack
+  description: Using a computational power to automatically enter a huge number of
+               combination of values, usually in order to discover passwords and gain access.
+  link: https://blog.appknox.com/tag/brute-force/
+
+- notation: bring your own device (BYOD)
+  description: An organisation's strategy or policy that allows employees to use
+               their own personal devices for work purposes.
+  link: https://blog.appknox.com/tag/byod/
+
+- notation: certificate
+  description: A form of digital identity for a computer, user or organisation to
+               allow the authentication and secure exchange of information.
+  link: https://blog.appknox.com/tag/certificate/
+
+- notation: cloud
+  description: Where shared compute and storage resources are accessed as a service
+              (usually online), instead of hosted locally on physical services.
+              Resources can include infrastructure, platform or software services.
+  link: https://blog.appknox.com/tag/cloud/
+
+- notation: Cloud Computing
+  description: A model for enabling on-demand network access to a shared pool of
+               configurable IT capabilities/ resources (e.g., networks, servers,
+               storage, applications, and services) that can be rapidly provisioned
+               and released with minimal management effort or service provider interaction.
+  link: https://blog.appknox.com/tag/cloud-computing/
+
+- notation: Confidentiality
+  description: Confidentiality means preventing information from being disclosed
+              to unauthorized entities. It basically involves taking measures to
+              ensure sensitive information doesn’t reach wrong hands but the
+              right people who are authorized to view the data. The information
+              that needs to be secured can be of any type i.e. information stored
+              in digital media or stored on premise or the information in transit.
+  link: https://blog.appknox.com/3-basic-mobile-security-principles/
+
+- notation: credentials
+  description: A user's authentication information used to verify identity -
+              typically one, or more, of password, token, certificate.
+  class: no-link
+
+- notation: Cryptography
+  description: The discipline that embodies the principles, means, and methods
+              for the transformation of data in order to hide their semantic content,
+              prevent their unauthorized use, or prevent their undetected modification.
+  link: https://blog.appknox.com/tag/broken-cryptography/
+
+- notation: Cryptojacking
+  description: Cryptojacking is the unauthorized use of someone else’s computer
+               to mine cryptocurrency. Hackers do this by either getting the victim
+               to click on a malicious link in an email that loads crypto mining code
+               on the computer, or by infecting a website or online ad with JavaScript
+               code that auto-executes once loaded in the victim’s browser.
+  class: no-link
+
+- notation: CVE
+  description: Common Vulnerabilities and Exposures (CVE) is a dictionary of common
+               names for publicly known information system vulnerabilities.
+  link: https://blog.appknox.com/tag/cve/
+
+- notation: cyber attack
+  description: Malicious attempts to damage, disrupt or gain unauthorised access
+              to computer systems, networks or devices, via cyber means.
+  link: https://blog.appknox.com/tag/cyber-attack/
+
+- notation: cyber incident
+  description: A breach of the security rules for a system or service - most commonly;</p>
+              <ul>
+                <li>Attempts to gain unauthorised access to a system and/or to data.</li>
+                <li>Unauthorised use of systems for the processing or storing of data.</li>
+                <li>Changes to a systems firmware, software or hardware without the system
+                  owners consent.</li>
+                <li>Malicious disruption and/or denial of service.</li>
+              </ul><p>
+
+  link: https://blog.appknox.com/tag/cybersecurity/
+
+- notation: cyber security
+  description: The protection of devices, services and networks — and the
+               information on them — from theft or damage.
+  link: https://blog.appknox.com/tag/cybersecurity/
+
+- notation: DAST
+  description: A Dynamic Application Security Testing (DAST) analysis is generally
+               specifically designed to detect conditions indicative of a security
+               vulnerability in an application while in its running state.
+               One of the most common and classic methods of hacking used by
+               hackers is the Man in the Middle Attack (MiTM).
+  link: https://blog.appknox.com/dynamic-application-security-testing/
+
+- notation: Data at rest
+  description: Describes data in persistent storage such as hard disks,
+               removable media or backups.
+  class: no-link
+
+- notation: dictionary attack
+  description: A type of brute force attack in which the attacker uses known
+              dictionary words, phrases or common passwords as their guesses.
+  class: no-link
+
+- notation: digital footprint
+  description: A 'footprint' of digital information that a user's online activity
+              leaves behind.
+  class: no-link
+
+- notation: denial of service (DoS)
+  description: When legitimate users are denied access to computer services (or resources),
+               usually by overloading the service with requests.
+  link: https://blog.appknox.com/tag/ddos/
+
+- notation: DDoS
+  description: A Denial of Service technique that uses numerous hosts to perform the attack.
+  link: https://blog.appknox.com/tag/ddos/
+
+- notation: download attack
+  description: The unintentional installation of malicious software or virus onto a device
+              without the users knowledge or consent. May also be known as a drive-by download.
+  class: no-link
+
+- notation: encryption
+  description: A mathematical function that protects information by making it
+              unreadable by everyone except those with the key to decode it.
+  link: https://blog.appknox.com/tag/encryption/
+
+- notation: End-to-End Encryption
+  description: Communications encryption in which data is encrypted when being
+              passed through a network, but routing information remains visible.
+  class: no-link
+
+- notation: end user device (EUD)
+  description: Collective term to describe modern smartphones, laptops and tablets
+               that connect to an organisation's network.
+  class: no-link
+
+- notation: exploit
+  description: May refer to software or data that takes advantage of a vulnerability
+               in a system to cause unintended consequences.
+  link: https://blog.appknox.com/tag/exploit/
+
+- notation: firewall
+  description: Hardware or software which uses a defined rule set to constrain network
+              traffic to prevent unauthorised access to or from a network.
+  link: https://blog.appknox.com/tag/firewall/
+
+- notation: FISMA
+  description: The Federal Information Security Management Act (FISMA) is United States
+               legislation that defines a comprehensive framework to protect government
+               information, operations and assets against natural or man-made threats.
+               FISMA was signed into law part of the Electronic Government Act of 2002.
+  link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-fisma/
+
+- notation: GDPR
+  description: The General Data Protection Regulation (Regulation (EU) 2016/679) is a
+              regulation by which the European Parliament, the Council of the European
+              Union and the European Commission intend to strengthen and unify data
+              protection for all individuals within the European Union (EU).
+  link: https://blog.appknox.com/gdpr-compliance-checklist/
+
+- notation: GLBA
+  description: The Gramm-Leach-Bliley Act (GLB Act or GLBA), also known as the Financial
+              Modernization Act of 1999, is a federal law enacted in the United States
+              to control the ways that financial institutions deal with the private
+              information of individuals.
+  link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-glba/
+
+- notation: hacker
+  description: In mainstream use as being someone with some computer skills who
+              uses them to break into computers, systems and networks.
+  link: https://blog.appknox.com/world-famous-hackers/
+
+- notation: HIPAA
+  description: HIPAA (Health Insurance Portability and Accountability Act of 1996)
+              is United States legislation that provides data privacy and security
+              provisions for safeguarding medical information.
+  link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-hipaa/
+
+- notation: honeypot (honeynet)
+  description: Decoy system or network to attract potential attackers that helps
+              limit access to actual systems by detecting and deflecting or
+              learning from an attack. Multiple honeypots form a honeynet.
+  class: no-link
+
+- notation: Identity fraud
+  description: Identity fraud is stealing someone’s identity as a method to gain
+              access to resources such as credit card and social security benefits
+              for personal gain.
+  link: https://blog.appknox.com/infographic-identity-fraud-are-you-you/
+
+- notation: insider risks
+  description: The potential for damage to be done maliciously or inadvertently
+              by a legitimate user with privileged access to systems, networks or data.
+  class: no-link
+
+- notation: Integrity
+  description: Integrity is another important aspect of information security as it
+              ensures consistency, accuracy & trustworthiness of data over its entire
+              lifecycle such as storage, transmission & usage of data. As soon as the
+              data leaves the sender’s end it may go through multiple hands before
+              reaching the right recipient for whom the information is actually
+              intended for.<br /><br />While the information is in transit it’s essential
+              to ensure that it is not altered or modified by unauthorized people.
+  link: https://blog.appknox.com/3-basic-mobile-security-principles/
+
+- notation: Internet of things (IoT)
+  description: Refers to the ability of everyday objects (rather than computers and devices)
+              to connect to the Internet. Examples include kettles, fridges and televisions.
+  link: https://blog.appknox.com/must-know-iot-security/
+
+- notation: iOS
+  description: iOS is a mobile operating system created and developed by Apple Inc.
+              exclusively for its hardware. It is the operating system that presently
+              powers many of the company's mobile devices, including the
+              iPhone, iPad, and iPod Touch.
+  link: https://blog.appknox.com/tag/ios/
+
+- notation: iOS Application Security
+  description: As you build your iOS app and work on your mobile strategy, it is essential
+              to test your application across various parameters – Performance, Usability,
+              Functionality, Compatibility, Load, Security, etc. Since time to market is
+              essential, most businesses often neglect the security testing part. Here’s a
+              checklist of different tests to take care of before you launch your iOS app,
+              and even if you already have, it might be good to revisit.
+  link: https://blog.appknox.com/ultimate-ios-security-checklist/
+
+- notation: ISO 27001
+  description: ISO 27001 (formally known as ISO/IEC 27001:2005) is a specification for an
+              information security management system (ISMS). An ISMS is a framework of
+              policies and procedures that includes all legal, physical and technical
+              controls involved in an organisation's information risk management processes.
+  link: https://blog.appknox.com/5-things-businesses-need-to-follow-to-be-compliant-with-iso-27001/
+
+- notation: malvertising
+  description: Using online advertising as a delivery method for malware.
+  class: no-link
+
+- notation: malware
+  description: Malicious software - a term that includes viruses, trojans, worms or any code
+              or content that could have an adverse impact on organisations or individuals.
+  link: https://blog.appknox.com/tag/malware/
+
+- notation: MAST
+  description: Countries around the world, regularly perform a military activity called Red Teaming.
+              The Red Team, comprised of their greatest minds, uses publicly available information
+              and strategically makes plans to exploit any loopholes in the defense and security strategy.
+              MAST stands for Manual Application Security Testing where Appknox acts as your Red-Team.
+  link: https://appknox.com/know-more/#mast-zone
+
+- notation: mitigation
+  description: Steps that organisations and individuals can take to minimise and address risks.
+  class: no-link
+
+- notation: MITM
+  description: A man in the middle attack (MITM) is a kind of cyber attack where the attacker
+              secretly relays and possibly alters the communication between two parties who
+              believe they are directly communicating with each other. In simple words,
+              a third person tries to break a connection between two people without them
+              realizing this and is thus able to sniff and retrieve communication between them.
+  link: https://blog.appknox.com/mobile-man-in-the-middle-attack/
+
+- notation: Mobile MITM
+  description: Man in the middle attack is not something new. They have been around for a
+              few years now but have been mostly restricted to computers and laptops.
+              With mobile growing at a fast pace, there has been a shift in emphasis
+              to hacking mobile devices. This is particularly worrying as this gives
+              access to a lot of information like personal identity, location, messages.
+              In fact, hackers can also eavesdrop on conversations.
+  link: https://blog.appknox.com/mobile-man-in-the-middle-attack/
+
+- notation: Mobile Security
+  description: Mobile security involves protecting both personal and business information
+              stored on and transmitted from smartphones, tablets, laptops and other mobile
+              devices.<br /><br />The term mobile security is a broad one that covers everything
+              from protecting mobile devices from malware threats to reducing risks and
+              securing mobile devices and their data in case of a theft, unauthorized access
+              or accidental loss of the mobile device.
+  link: https://blog.appknox.com/tag/mobile-security/
+
+- notation: network
+  description: Two or more computers linked in order to share resources.
+  class: no-link
+
+- notation: OWASP
+  description: OWASP or Open Web Application Security Project is an online community
+              dedicated to web application security. The community works towards finding
+              the most critical web application security flaws. The issues reported by
+              OWASP are often easy to find and exploit and hence it is a cause of
+              worry for all businesses.
+  link: https://blog.appknox.com/tag/owasp/
+
+- notation: OWASP Top 10
+  description: The goal of the Top 10 project is to raise awareness about application
+              security by identifying some of the most critical risks facing
+              organizations. The Top 10 project is referenced by many standards,
+              books, tools, and organizations, including MITRE, PCI DSS, DISA, FTC,
+              and many more.
+  link: https://blog.appknox.com/owasp-top-10-2017/
+
+- notation: OWASP Mobile Security Project
+  description: The OWASP Mobile Security Project is a centralized resource intended
+              to give developers and security teams the resources they need to build
+              and maintain secure mobile applications. Through the project, the goal
+              of OWASP  is to classify mobile security risks and provide developmental
+              controls to reduce their impact or likelihood of exploitation.
+  link: https://blog.appknox.com/owasp-security-guidelines-for-your-mobile-app/
+
+- notation: patching
+  description: Applying updates to firmware or software to improve security
+              and/or enhance functionality.
+  class: no-link
+
+- notation: PCI-DSS
+  description: The Payment Card Industry Data Security Standard (PCI DSS) is a set
+              of security standards designed to ensure that ALL companies that accept,
+              process, store or transmit credit card information maintain a secure environment.
+  link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-pci-dss/
+
+- notation: pentest
+  description: Short for penetration test. An authorised test of a computer network
+              or system designed to look for security weaknesses so that they can be fixed.
+  link: https://blog.appknox.com/tag/penetration-testing/
+
+- notation: pharming
+  description: An attack on network infrastructure that results in a user being
+              redirected to an illegitimate website despite the user having
+              entered the correct address.
+  class: no-link
+
+- notation: phishing
+  description: Untargeted, mass emails sent to many people asking for sensitive
+              information (such as bank details) or encouraging them to visit
+              a fake website.
+  link: https://blog.appknox.com/tag/phishing/
+
+- notation: platform
+  description: The basic hardware (device) and software (operating system) on
+              which applications can be run.
+  class: no-link
+
+- notation: Personally identifiable information (PII)
+  description: Any information that, by itself or when combined with other
+              information, can identify an individual.
+  link: https://blog.appknox.com/tag/pii/
+
+- notation: Quarantine
+  description: The isolation of files that are suspected of containing a virus,
+              spam, suspicious content, or PUPs. Quarantined files cannot be
+              opened or executed.
+  class: no-link
+
+- notation: Quick response (QR) code
+  description: A two-dimensional code that can be scanned with a QR barcode reader
+              or a camera-enabled smartphone with QR reader software. Once a QR code
+              is scanned, it can direct a user to just about anything - a web page,
+              call a phone number, or an SMS text message. QR codes provide organizations
+              with a quick and easy way to direct their customers to online content. QR
+              codes are often found in magazines, product packaging, on advertisements,
+              online, and in other marketing collateral.
+  class: no-link
+
+- notation: ransomware
+  description: Malicious software that makes data or systems unusable until
+              the victim makes a payment.
+  link: https://blog.appknox.com/tag/ransomware/
+
+- notation: Rooting
+  description: A way that users of mobile devices (mobile phones, tablet PCs, and other
+              devices running the Android operating system) hack their devices to gain
+              privileged access to the operating system. This gives the user the ability
+              to alter or replace system applications and settings, run apps that require
+              administrator permissions, or perform operations that otherwise would have
+              not been possible.
+  class: no-link
+
+- notation: router
+  description: A network device which sends data packets from one network to another
+              based on the destination address. May also be called a gateway.
+  class: no-link
+
+- notation: SAST
+  description: Static Application Security Testing (SAST) can be considered as testing
+              an application from the inside out by examining its source code or application
+              binaries for issues based on configuration which point towards a security vulnerability.
+  link: https://appknox.com/know-more/#sast-zone
+
+- notation: software as a service (SaaS)
+  description: Describes a business model where consumers access centrally-hosted
+              software applications over the Internet.
+  link: https://blog.appknox.com/security-service-will-biggest-asset-cio-cto-today/
+
+- notation: sanitisation
+  description: Using electronic or physical destruction methods to securely erase or
+              remove data from memory.
+  class: no-link
+
+- notation: smishing
+  description: Phishing via SMS - mass text messages sent to users asking for sensitive
+              information (eg bank details) or encouraging them to visit a fake website.
+  class: no-link
+
+- notation: social engineering
+  description: Manipulating people into carrying out specific actions, or divulging information,
+              that's of use to an attacker.
+  class: no-link
+
+- notation: spear-phishing
+  description: A more targeted form of phishing, where the email is designed to look
+              like it's from a person the recipient knows and/or trusts.
+  class: no-link
+
+- notation: Sandboxing
+  description: A restricted, controlled execution environment that prevents potentially
+              malicious software, such as mobile code, from accessing any system resources
+              except those for which the software is authorized.
+  class: no-link
+
+- notation: trojan
+  description: A type of malware or virus disguised as legitimate software, that is used to
+              hack into the victim's computer.
+  class: no-link
+
+- notation: two-factor authentication (2FA)
+  description: The use of two different components to verify a user's claimed identity.
+              Also known as multi-factor authentication.
+  class: no-link
+
+- notation: Transport Layer Security (TLS)
+  description: An authentication and security protocol widely implemented in
+                browsers and Web servers.
+  link: https://blog.appknox.com/tag/tls/
+
+- notation: Threat
+  description: Any circumstance or event with the potential to adversely impact
+              organizational operations (including mission, functions, image, or
+              reputation), organizational assets, individuals, other organizations,
+              or the Nation through an information system via unauthorized access,
+              destruction, disclosure, modification of information, and/or denial of service.
+  link: https://blog.appknox.com/tag/cyber-threat/
+
+- notation: Threat Analysis
+  description: The examination of threat sources against system vulnerabilities
+              to determine the threats for a particular system in a particular
+              operational environment.
+  class: no-link
+
+- notation: Threat Assessment
+  description: Formal description and evaluation of threat to an information system.
+  class: no-link
+
+- notation: Token
+  description: Something that the Claimant possesses and controls (typically a key
+              or password) that is used to authenticate the Claimant’s identity.
+  class: no-link
+
+- notation: Unauthorized Access
+  description: Occurs when a user, legitimate or unauthorized, accesses a resource
+              that the user is not permitted to use.
+  class: no-link
+
+- notation: Untrusted Process
+  description: Process that has not been evaluated or examined for correctness and
+              adherence to the security policy. It may include incorrect or malicious
+              code that attempts to circumvent the security mechanisms.
+  class: no-link
+
+- notation: Update (a Certificate)
+  description: The act or process by which data items bound in an existing public
+              key certificate, especially authorizations granted to the subject,
+              are changed by issuing a new certificate.
+  class: no-link
+
+- notation: User
+  description: Individual or (system) process authorized to access an information system.
+  class: no-link
+
+- notation: virus
+  description: Programs which can self-replicate and are designed to infect legitimate
+              software programs or systems. A form of malware.
+  class: no-link
+
+- notation: Virtual Private Network (VPN)
+  description: An encrypted network often created to allow secure connections for
+              remote users, for example in an organisation with offices in multiple
+              locations.
+  class: no-link
+
+- notation: vulnerability
+  description: A weakness, or flaw, in software, a system or process. An attacker may
+              seek to exploit a vulnerability to gain unauthorised access to a system.
+  link: https://blog.appknox.com/tag/vulnerabilities/
+
+- notation: Vulnerability Assessment
+  description: Systematic examination of an information system or product to determine
+              the adequacy of security measures, identify security deficiencies, provide
+              data from which to predict the effectiveness of proposed security measures,
+              and confirm the adequacy of such measures after implementation.
+  class: no-link
+
+- notation: water-holing (watering hole attack)
+  description: Setting up a fake website (or compromising a real one) in order
+              to exploit visiting users.
+  class: no-link
+
+- notation: whaling
+  description: Highly targeted phishing attacks (masquerading as a legitimate emails)
+              that are aimed at senior executives.
+  class: no-link
+
+- notation: whitelisting
+  description: Authorising approved applications for use within organisations in
+              order to protect systems from potentially harmful applications.
+  class: no-link
+
+- notation: Worm
+  description: A self-replicating, self-propagating, self-contained program that
+              uses networking mechanisms to spread itself.
+  class: no-link
+
+- notation: XSS
+  description: Cross Site Scripting is a vulnerability that allows attackers to inject
+              malicious code into an otherwise benign website. These scripts acquire the
+              permissions of scripts generated by the target website and can therefore
+              compromise the confidentiality and integrity of data transfers between the
+              website and client. Websites are vulnerable if they display user supplied data
+              from requests or forms without sanitizing the data so that it is not executable.
+  link: https://blog.appknox.com/understanding-owasp-top-10-cross-site-scripting-xss/
+
+- notation: zero-day
+  description: Recently discovered vulnerabilities (or bugs), not yet known to
+              vendors or antivirus companies, that hackers can exploit.
+  class: no-link
