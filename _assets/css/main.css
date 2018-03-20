@@ -2347,6 +2347,12 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   list-style-type:disc;
 }
 
+.glossary-notation a.no-link {
+  text-decoration: none;
+  cursor: text;
+  pointer-events:none;
+}
+
 
 /* END OF GlOSSARY PAGE */
 
