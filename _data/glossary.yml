@@ -11,7 +11,7 @@
   class: no-link
 
 - notation: Account Management, User
-  description: Involves
+  description: Involves </p>
               <ol>
                 <li>
                   the process of requesting, establishing, issuing,
@@ -22,7 +22,7 @@
                 </li>
                   <li>managing these functions
                 </li>
-              <ol>
+              </ol><p>
   class: no-link
 
 - notation: AES
@@ -36,13 +36,14 @@
   link: https://blog.appknox.com/tag/aes/
 
 - notation: Agile Mobile Application Development
-  description: <p>Agile basically means swift or having the ability to move quickly
+  description: Agile basically means swift or having the ability to move quickly
                and easily. Applying that to application development, agile mobile
                application development is a method of building apps that
                characterized by the division of tasks into short phases of work
-               and frequent reassessment and adaptation of plans.</p>
-               <p>The objective is to simplify the process of mobile application
-               development so that the resulting apps are adaptable after release</p>
+               and frequent reassessment and adaptation of plans.
+               <br /><br />
+               The objective is to simplify the process of mobile application
+               development so that the resulting apps are adaptable after release
   link: https://blog.appknox.com/agile-mobile-application-development/
 
 - notation: Android
@@ -227,14 +228,14 @@
   link: https://blog.appknox.com/tag/cyber-attack/
 
 - notation: cyber incident
-  description: A breach of the security rules for a system or service - most commonly;
+  description: A breach of the security rules for a system or service - most commonly;</p>
               <ul>
                 <li>Attempts to gain unauthorised access to a system and/or to data.</li>
                 <li>Unauthorised use of systems for the processing or storing of data.</li>
                 <li>Changes to a systems firmware, software or hardware without the system
                   owners consent.</li>
                 <li>Malicious disruption and/or denial of service.</li>
-              </ul>
+              </ul><p>
 
   link: https://blog.appknox.com/tag/cybersecurity/
 
@@ -355,13 +356,13 @@
   class: no-link
 
 - notation: Integrity
-  description: <p>Integrity is another important aspect of information security as it
+  description: Integrity is another important aspect of information security as it
               ensures consistency, accuracy & trustworthiness of data over its entire
               lifecycle such as storage, transmission & usage of data. As soon as the
               data leaves the sender’s end it may go through multiple hands before
               reaching the right recipient for whom the information is actually
-              intended for.<p><p>While the information is in transit it’s essential
-              to ensure that it is not altered or modified by unauthorized people.</p>
+              intended for.<br /><br />While the information is in transit it’s essential
+              to ensure that it is not altered or modified by unauthorized people.
   link: https://blog.appknox.com/3-basic-mobile-security-principles/
 
 - notation: Internet of things (IoT)
@@ -430,12 +431,12 @@
   link: https://blog.appknox.com/mobile-man-in-the-middle-attack/
 
 - notation: Mobile Security
-  description: <p>Mobile security involves protecting both personal and business information
+  description: Mobile security involves protecting both personal and business information
               stored on and transmitted from smartphones, tablets, laptops and other mobile
-              devices.</p><p>The term mobile security is a broad one that covers everything
+              devices.<br /><br />The term mobile security is a broad one that covers everything
               from protecting mobile devices from malware threats to reducing risks and
               securing mobile devices and their data in case of a theft, unauthorized access
-              or accidental loss of the mobile device.</p>
+              or accidental loss of the mobile device.
   link: https://blog.appknox.com/tag/mobile-security/
 
 - notation: network
