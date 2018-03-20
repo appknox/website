@@ -8,6 +8,6 @@
 
 rm -rf ./_site/*
 bundle exec jekyll build
-bundle exec rake minify
+# bundle exec rake minify
 
 s3_website push --force
