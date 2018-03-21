@@ -147,36 +147,36 @@
                personal area networks.
   link: https://blog.appknox.com/tag/bluetooth/
 
-- notation: botnet
+- notation: Botnet
   description: A network of infected devices, connected to the Internet, used to
               commit coordinated cyber attacks without their owner's knowledge.
   class: no-link
 
-- notation: breach
+- notation: Breach
   description: An incident in which data, computer systems, electronic devices or
               networks are accessed or affected in a non-authorised way.
   link: https://blog.appknox.com/tag/data-breach/
 
-- notation: browser
+- notation: Browser
   description: A software application which presents information and services from the web.
   class: no-link
 
-- notation: brute force attack
+- notation: Brute Force Attack
   description: Using a computational power to automatically enter a huge number of
                combination of values, usually in order to discover passwords and gain access.
   link: https://blog.appknox.com/tag/brute-force/
 
-- notation: bring your own device (BYOD)
+- notation: Bring Your Own Device (BYOD)
   description: An organisation's strategy or policy that allows employees to use
                their own personal devices for work purposes.
   link: https://blog.appknox.com/tag/byod/
 
-- notation: certificate
+- notation: Certificate
   description: A form of digital identity for a computer, user or organisation to
                allow the authentication and secure exchange of information.
   link: https://blog.appknox.com/tag/certificate/
 
-- notation: cloud
+- notation: Cloud
   description: Where shared compute and storage resources are accessed as a service
               (usually online), instead of hosted locally on physical services.
               Resources can include infrastructure, platform or software services.
@@ -198,7 +198,7 @@
               in digital media or stored on premise or the information in transit.
   link: https://blog.appknox.com/3-basic-mobile-security-principles/
 
-- notation: credentials
+- notation: Credentials
   description: A user's authentication information used to verify identity -
               typically one, or more, of password, token, certificate.
   class: no-link
@@ -222,12 +222,12 @@
                names for publicly known information system vulnerabilities.
   link: https://blog.appknox.com/tag/cve/
 
-- notation: cyber attack
+- notation: Cyber Attack
   description: Malicious attempts to damage, disrupt or gain unauthorised access
               to computer systems, networks or devices, via cyber means.
   link: https://blog.appknox.com/tag/cyber-attack/
 
-- notation: cyber incident
+- notation: Cyber Incident
   description: A breach of the security rules for a system or service - most commonly;</p>
               <ul>
                 <li>Attempts to gain unauthorised access to a system and/or to data.</li>
@@ -257,17 +257,17 @@
                removable media or backups.
   class: no-link
 
-- notation: dictionary attack
+- notation: Dictionary Attack
   description: A type of brute force attack in which the attacker uses known
               dictionary words, phrases or common passwords as their guesses.
   class: no-link
 
-- notation: digital footprint
+- notation: Digital Footprint
   description: A 'footprint' of digital information that a user's online activity
               leaves behind.
   class: no-link
 
-- notation: denial of service (DoS)
+- notation: Denial of Service (DoS)
   description: When legitimate users are denied access to computer services (or resources),
                usually by overloading the service with requests.
   link: https://blog.appknox.com/tag/ddos/
@@ -276,12 +276,12 @@
   description: A Denial of Service technique that uses numerous hosts to perform the attack.
   link: https://blog.appknox.com/tag/ddos/
 
-- notation: download attack
+- notation: Download Attack
   description: The unintentional installation of malicious software or virus onto a device
               without the users knowledge or consent. May also be known as a drive-by download.
   class: no-link
 
-- notation: encryption
+- notation: Encryption
   description: A mathematical function that protects information by making it
               unreadable by everyone except those with the key to decode it.
   link: https://blog.appknox.com/tag/encryption/
@@ -291,17 +291,17 @@
               passed through a network, but routing information remains visible.
   class: no-link
 
-- notation: end user device (EUD)
+- notation: End User Device (EUD)
   description: Collective term to describe modern smartphones, laptops and tablets
                that connect to an organisation's network.
   class: no-link
 
-- notation: exploit
+- notation: Exploit
   description: May refer to software or data that takes advantage of a vulnerability
                in a system to cause unintended consequences.
   link: https://blog.appknox.com/tag/exploit/
 
-- notation: firewall
+- notation: Firewall
   description: Hardware or software which uses a defined rule set to constrain network
               traffic to prevent unauthorised access to or from a network.
   link: https://blog.appknox.com/tag/firewall/
@@ -327,7 +327,7 @@
               information of individuals.
   link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-glba/
 
-- notation: hacker
+- notation: Hacker
   description: In mainstream use as being someone with some computer skills who
               uses them to break into computers, systems and networks.
   link: https://blog.appknox.com/world-famous-hackers/
@@ -338,19 +338,19 @@
               provisions for safeguarding medical information.
   link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-hipaa/
 
-- notation: honeypot (honeynet)
+- notation: Honeypot (Honeynet)
   description: Decoy system or network to attract potential attackers that helps
               limit access to actual systems by detecting and deflecting or
               learning from an attack. Multiple honeypots form a honeynet.
   class: no-link
 
-- notation: Identity fraud
+- notation: Identity Fraud
   description: Identity fraud is stealing someone’s identity as a method to gain
               access to resources such as credit card and social security benefits
               for personal gain.
   link: https://blog.appknox.com/infographic-identity-fraud-are-you-you/
 
-- notation: insider risks
+- notation: Insider Risks
   description: The potential for damage to be done maliciously or inadvertently
               by a legitimate user with privileged access to systems, networks or data.
   class: no-link
@@ -365,7 +365,7 @@
               to ensure that it is not altered or modified by unauthorized people.
   link: https://blog.appknox.com/3-basic-mobile-security-principles/
 
-- notation: Internet of things (IoT)
+- notation: Internet of Things (IoT)
   description: Refers to the ability of everyday objects (rather than computers and devices)
               to connect to the Internet. Examples include kettles, fridges and televisions.
   link: https://blog.appknox.com/must-know-iot-security/
@@ -393,11 +393,11 @@
               controls involved in an organisation's information risk management processes.
   link: https://blog.appknox.com/5-things-businesses-need-to-follow-to-be-compliant-with-iso-27001/
 
-- notation: malvertising
+- notation: Malvertising
   description: Using online advertising as a delivery method for malware.
   class: no-link
 
-- notation: malware
+- notation: Malware
   description: Malicious software - a term that includes viruses, trojans, worms or any code
               or content that could have an adverse impact on organisations or individuals.
   link: https://blog.appknox.com/tag/malware/
@@ -409,7 +409,7 @@
               MAST stands for Manual Application Security Testing where Appknox acts as your Red-Team.
   link: https://appknox.com/know-more/#mast-zone
 
-- notation: mitigation
+- notation: Mitigation
   description: Steps that organisations and individuals can take to minimise and address risks.
   class: no-link
 
@@ -439,7 +439,7 @@
               or accidental loss of the mobile device.
   link: https://blog.appknox.com/tag/mobile-security/
 
-- notation: network
+- notation: Network
   description: Two or more computers linked in order to share resources.
   class: no-link
 
@@ -467,7 +467,7 @@
               controls to reduce their impact or likelihood of exploitation.
   link: https://blog.appknox.com/owasp-security-guidelines-for-your-mobile-app/
 
-- notation: patching
+- notation: Patching
   description: Applying updates to firmware or software to improve security
               and/or enhance functionality.
   class: no-link
@@ -478,29 +478,29 @@
               process, store or transmit credit card information maintain a secure environment.
   link: https://blog.appknox.com/what-businesses-need-to-follow-to-be-compliant-with-pci-dss/
 
-- notation: pentest
+- notation: Pentest
   description: Short for penetration test. An authorised test of a computer network
               or system designed to look for security weaknesses so that they can be fixed.
   link: https://blog.appknox.com/tag/penetration-testing/
 
-- notation: pharming
+- notation: Pharming
   description: An attack on network infrastructure that results in a user being
               redirected to an illegitimate website despite the user having
               entered the correct address.
   class: no-link
 
-- notation: phishing
+- notation: Phishing
   description: Untargeted, mass emails sent to many people asking for sensitive
               information (such as bank details) or encouraging them to visit
               a fake website.
   link: https://blog.appknox.com/tag/phishing/
 
-- notation: platform
+- notation: Platform
   description: The basic hardware (device) and software (operating system) on
               which applications can be run.
   class: no-link
 
-- notation: Personally identifiable information (PII)
+- notation: Personally Identifiable Information (PII)
   description: Any information that, by itself or when combined with other
               information, can identify an individual.
   link: https://blog.appknox.com/tag/pii/
@@ -511,7 +511,7 @@
               opened or executed.
   class: no-link
 
-- notation: Quick response (QR) code
+- notation: Quick Response (QR) code
   description: A two-dimensional code that can be scanned with a QR barcode reader
               or a camera-enabled smartphone with QR reader software. Once a QR code
               is scanned, it can direct a user to just about anything - a web page,
@@ -521,7 +521,7 @@
               online, and in other marketing collateral.
   class: no-link
 
-- notation: ransomware
+- notation: Ransomware
   description: Malicious software that makes data or systems unusable until
               the victim makes a payment.
   link: https://blog.appknox.com/tag/ransomware/
@@ -535,7 +535,7 @@
               not been possible.
   class: no-link
 
-- notation: router
+- notation: Router
   description: A network device which sends data packets from one network to another
               based on the destination address. May also be called a gateway.
   class: no-link
@@ -546,27 +546,27 @@
               binaries for issues based on configuration which point towards a security vulnerability.
   link: https://appknox.com/know-more/#sast-zone
 
-- notation: software as a service (SaaS)
+- notation: Software as a Service (SaaS)
   description: Describes a business model where consumers access centrally-hosted
               software applications over the Internet.
   link: https://blog.appknox.com/security-service-will-biggest-asset-cio-cto-today/
 
-- notation: sanitisation
+- notation: Sanitisation
   description: Using electronic or physical destruction methods to securely erase or
               remove data from memory.
   class: no-link
 
-- notation: smishing
+- notation: Smishing
   description: Phishing via SMS - mass text messages sent to users asking for sensitive
               information (eg bank details) or encouraging them to visit a fake website.
   class: no-link
 
-- notation: social engineering
+- notation: Social Engineering
   description: Manipulating people into carrying out specific actions, or divulging information,
               that's of use to an attacker.
   class: no-link
 
-- notation: spear-phishing
+- notation: Spear-Phishing
   description: A more targeted form of phishing, where the email is designed to look
               like it's from a person the recipient knows and/or trusts.
   class: no-link
@@ -577,12 +577,12 @@
               except those for which the software is authorized.
   class: no-link
 
-- notation: trojan
+- notation: Trojan
   description: A type of malware or virus disguised as legitimate software, that is used to
               hack into the victim's computer.
   class: no-link
 
-- notation: two-factor authentication (2FA)
+- notation: Two-Factor Authentication (2FA)
   description: The use of two different components to verify a user's claimed identity.
               Also known as multi-factor authentication.
   class: no-link
@@ -636,7 +636,7 @@
   description: Individual or (system) process authorized to access an information system.
   class: no-link
 
-- notation: virus
+- notation: Virus
   description: Programs which can self-replicate and are designed to infect legitimate
               software programs or systems. A form of malware.
   class: no-link
@@ -647,7 +647,7 @@
               locations.
   class: no-link
 
-- notation: vulnerability
+- notation: Vulnerability
   description: A weakness, or flaw, in software, a system or process. An attacker may
               seek to exploit a vulnerability to gain unauthorised access to a system.
   link: https://blog.appknox.com/tag/vulnerabilities/
@@ -659,17 +659,17 @@
               and confirm the adequacy of such measures after implementation.
   class: no-link
 
-- notation: water-holing (watering hole attack)
+- notation: Water-Holing (Watering Hole Attack)
   description: Setting up a fake website (or compromising a real one) in order
               to exploit visiting users.
   class: no-link
 
-- notation: whaling
+- notation: Whaling
   description: Highly targeted phishing attacks (masquerading as a legitimate emails)
               that are aimed at senior executives.
   class: no-link
 
-- notation: whitelisting
+- notation: Whitelisting
   description: Authorising approved applications for use within organisations in
               order to protect systems from potentially harmful applications.
   class: no-link
@@ -688,7 +688,7 @@
               from requests or forms without sanitizing the data so that it is not executable.
   link: https://blog.appknox.com/understanding-owasp-top-10-cross-site-scripting-xss/
 
-- notation: zero-day
+- notation: Zero-Day
   description: Recently discovered vulnerabilities (or bugs), not yet known to
               vendors or antivirus companies, that hackers can exploit.
   class: no-link
