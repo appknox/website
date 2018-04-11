@@ -2477,12 +2477,9 @@ function sendCallForm(ev){
   $("#CallForm").html(getProcessingHtml());
   phone_num = $("#visitorphone").val().trim();
   var serializeData = {
-                  api_key: API_KEY,
-                  agent_number: AGENT_NUMBER,
-                  phone_number: phone_num,
-                  sr_number: SR_NUMBER
-              };
-  var url = "https://sr.knowlarity.com/vr/api/click2call/";
+    phone_number: phone_num
+  };
+  var url = HAWKINS_ENDURL + "call-back/1029041/f44wra";
   var method = form.attr("method");
 
   var option = {
