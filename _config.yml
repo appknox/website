@@ -21,7 +21,7 @@ gems:
   - jekyll-assets
 
 # Available languages
-languages: ["en", "in"]
+languages: ["en", "in", "jp", "gcc"]
 
 # Exclude options
 exclude_from_localizations: ["js", "css"]

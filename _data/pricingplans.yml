@@ -7,6 +7,7 @@ pricingplan :
     price: <div class="gradient-banner">$1999/App/Year</div>
     link: /automated-mobile-app-security-testing/
     button: START 7 DAY FREE TRIAL
+    button2: REQUEST DEMO
 
   - img: /img/pricing/plans-24.png
     alt : Appknox Professional Plan
@@ -15,6 +16,7 @@ pricingplan :
                          <span>Dedicated Account  Manager</span></li><li><span>Dedicated Security Researcher</span></li><li><span>Dedicated Call & Chat Support</span></li>
     link: https://try.appknox.com/demo-premium
     button: REQUEST DEMO
+    button2: REQUEST DEMO
 
   - img: /img/pricing/plans-25.png
     alt : Appknox Enterprise Plan
@@ -23,6 +25,7 @@ pricingplan :
                          <span class="tooltip-text">Report detailing for all levels of organization. CXO’s, Managers, Security Teams, Developers etc</span></span></li>
     link: https://try.appknox.com/demo-enterprise
     button: REQUEST DEMO
+    button2: REQUEST DEMO
 
 addons :
   - img: /img/pricing/addons_1.png
