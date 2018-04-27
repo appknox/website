@@ -71,40 +71,40 @@ input.error {
 }
 
 .navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 10px;
-    margin-top: 8px;
-    font-size: 18px;
-    line-height: 20px;
+  float: left;
+  height: 50px;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 20px;
 }
 .block {
-    display: block !important;
+  display: block !important;
 }
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 #ak-header {
-    background: #fff;
-    border-bottom: 1px solid #EBEBEB;
+  background: #fff;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 #ak-header li>a {
-    font-family: neosans;
-    font-size: 16px;
-    transition: all .4s ease-out;
-    cursor: pointer;
+  font-family: neosans;
+  font-size: 16px;
+  transition: all .4s ease-out;
+  cursor: pointer;
 }
 
 #ak-header li>a:focus,#ak-header nav .open>a {
-    text-decoration: none;
-    background-color: transparent !important;
+  text-decoration: none;
+  background-color: transparent !important;
 }
 
 #ak-header li>a:hover,#ak-header li>a:active {
-    text-decoration: none;
-    background: transparent !important;
+  text-decoration: none;
+  background: transparent !important;
 }
 
 .request-menu{
@@ -117,13 +117,17 @@ a {
    float: right;
    font-size: 13px;
    font-family: neosans;
-   margin-right: 70px;
+   margin-right: 90px;
    height: 30px;
    line-height: 23px;
    cursor: pointer;
  }
 
- .location-selector {
+.register-button {
+  margin-right: -25px
+}
+
+.location-selector {
   margin-top: -45px;
   margin-right: -20px;
   float: right;
@@ -492,11 +496,8 @@ ul.camas-feat-list {
 
 @media (max-width: 990px) {
   #ak-menu {
-  margin-right: 100px!important;
-  float: left;
-  }
-  .request-menu{
-    margin-right: 70px;
+    margin-right: 100px!important;
+    float: left;
   }
 }
 
@@ -1217,8 +1218,11 @@ ul.camas-feat-list {
     font-size: 14px
   }
   .request-menu{
-    margin-right: 70px;
+    margin-right: 90px;
     padding: 5px 16px
+  }
+  .register-button {
+    margin-right: -20px!important
   }
   .navbar-brand {
     margin-left: -40px!important
