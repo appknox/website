@@ -637,13 +637,17 @@ button:focus {
   color: #ffffff!important;
   border-radius: 30px;
   margin-top: -43px;
-  margin-right: 60px;
+  margin-right: 90px;
   float: right;
   font-size: 13px;
   font-family: neosans;
   height: 30px;
   line-height: 23px;
   cursor: pointer;
+}
+
+.register-button {
+  margin-right: -25px
 }
 
 .button-red:hover {
@@ -2419,9 +2423,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     margin-right: 100px!important;
     float: left;
   }
-  .request-menu{
-    margin-right: 40px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -2474,10 +2475,7 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     width: 90%;
   }
   .navbar-nav {
-      margin-left: 0%;
-  }
-  .request-menu{
-    margin-right: 70px;
+    margin-left: 0%;
   }
   .press-container{
     margin-top: 120px;
@@ -2507,9 +2505,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .slide-img-zone {
     margin-top: 80px
-  }
-  .request-menu {
-    margin-right: 0px
   }
   #ak-menu li a {
     padding: 15px 6px;
@@ -2565,7 +2560,7 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     padding: 15px 9px;
   }
   #ak-menu li>a {
-    font-size: 16px
+    font-size: 14px
   }
   .slick-lightbox .slick-next, .slick-lightbox .slick-prev {
     margin-left: 0px;
@@ -3514,25 +3509,28 @@ header, .main-nav-scrolled {
     font-size: 13px;
     font-family: gillsans;
   }
-  .press-content{
+  .press-content {
     margin-top: 25px;
     margin-left: 30px;
   }
-  .section-collapse{
+  .section-collapse {
     width: 90%;
     margin-bottom: 10px;
   }
-  .request-menu{
-    margin-right: -10px;
+  .request-menu {
+    margin-right: 80px;
     padding: 5px 16px
+  }
+  .register-button {
+    margin-right: -20px!important
   }
   .call-button {
     margin-left: 30px;
   }
-  .sign-position{
+  .sign-position {
     margin-top: -55px;
   }
-  .client-name{
+  .client-name {
     right: 320px;
     top:160px;
     margin-top: 30px;
