@@ -24,7 +24,7 @@ gems:
 languages: ["en", "in", "jp", "gcc"]
 
 # Exclude options
-exclude_from_localizations: ["js", "css"]
+exclude_from_localizations: ["js", "css", "svg"]
 
 # Build settings
 markdown: kramdown
