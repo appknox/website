@@ -1,0 +1,25 @@
+@font-face {
+  font-family: neosans;
+  src: url(../fonts/NEOSANS.OTF);
+}
+
+.icon-container .tooltip{
+  display: none;
+}
+
+.icon-container:hover {
+  cursor: pointer;
+}
+
+.icon-container:hover .tooltip {
+  display: inline-block;
+}
+
+.tooltip {
+  font-family: neosans
+}
+
+.map-svg {
+  width: 960px;
+  height: 560px;
+}
