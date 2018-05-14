@@ -24,7 +24,7 @@ gems:
 languages: ["en", "in", "jp", "gcc"]
 
 # Exclude options
-exclude_from_localizations: ["js", "css"]
+exclude_from_localizations: ["js"]
 
 # Build settings
 markdown: kramdown
@@ -47,6 +47,10 @@ exclude:
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - .ruby-version
+
+# Include the following files
+include:
+  - _redirects
 
 assets:
   compress:
