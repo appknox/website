@@ -2340,58 +2340,6 @@ function bindAGForm(){
   $("#AGForm-submit").unbind("click",sendAGForm).bind("click",sendAGForm);
 }
 
-
-function sendCAMASForm(ev){
-  ev.preventDefault();
-  var form = $("#submit-camas-form");
-  form.validate(SOSFormValidateRules);
-  var isValid = form.valid();
-
-  if(isValid){
-    //Loading sign etc
-  }else{
-    return;
-  }
-
-  $("#AGForm").html(getProcessingHtml());
-
-  var serializeData = form.serialize();
-  var url = HAWKINS_ONBOARDING_URL;
-  var method = form.attr("method");
-
-  var option = {
-    url : url,
-    method : method,
-    data : serializeData,
-    asyn : true,
-    error : errorCallback,
-    success : successCallback
-  }
-
-  var xhr = $.ajax(option);
-  form.find("input,textarea").attr("disabled",true);
-
-  function errorCallback(jqXHR, err, errException){
-    $("#AGForm").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
-    form.find("input,textarea").removeAttr("disabled");
-  }
-
-  function successCallback(resData){
-    if(resData.status === "success"){
-      window.location = resData.redirect_url
-    }else{
-      $("#AGForm").removeClass("green").addClass("red").html(resData.message);
-      form.find("input,textarea").removeAttr("disabled");
-    }
-  }
-}
-
-function bindCAMASForm(){
-  $("#CAMASForm-submit").unbind("click",sendCAMASForm).bind("click",sendCAMASForm);
-}
-
-
-
 function fancyCallPhoneForm() {
   var formStatus = $("#callphone-form").attr("data-attr-submitted");
 
@@ -2523,7 +2471,6 @@ $(document).ready(function(){
   bindLandingPageForm1();
   bindSOSForm();
   bindAGForm();
-  bindCAMASForm();
   bindCallForm()
   $(".book_section").click(function() {
       $('html, body').animate({
