@@ -646,6 +646,10 @@ button:focus {
   cursor: pointer;
 }
 
+.request-menu-demo {
+  margin-right: 75px;
+}
+
 .register-button {
   margin-right: -25px
 }
@@ -3520,6 +3524,9 @@ header, .main-nav-scrolled {
   .request-menu {
     margin-right: 80px;
     padding: 5px 16px
+  }
+  .request-menu-demo {
+    margin-right: 45px;
   }
   .register-button {
     margin-right: -20px!important
