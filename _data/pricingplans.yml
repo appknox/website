@@ -14,7 +14,7 @@ pricingplan :
     planTitle: Automated + Manual Assesments <br /> For Deeper Testing
     pricingDescriptions: <li><span>Everything in Essential</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Manual Scan</span><span class="tooltip-icon"><span class="tooltip-text">Our security experts manually break down your app to detect threats</span></span></li><li><span>Remedition Call</span><span class="tooltip-icon"><span class="tooltip-text">Request for a call with our security experts to help you fix threats detected</span></span></li><li>
                          <span>Dedicated Account  Manager</span></li><li><span>Dedicated Security Researcher</span></li><li><span>Dedicated Call & Chat Support</span></li>
-    link: https://try.appknox.com/demo-premium
+    link: https://try.appknox.com/schedule-appknox-demo
     button: REQUEST DEMO
     button2: REQUEST DEMO
 
@@ -23,7 +23,7 @@ pricingplan :
     planTitle: Your Demand <br /> Our Command
     pricingDescriptions: <li><span>Everything in Essential & Professional</span></li><i class="fa fa-plus" aria-hidden="true"></i><li><span>Private Cloud</span></li><li><span>Dedicated Device Farm</span><span class="tooltip-icon"><span class="tooltip-text">We’ll build a whole new device farm dedicated solely to your business</span></span></li><li><span>Request Custom Test Cases</span></li><li><span>Customized Reports</span><span class="tooltip-icon">
                          <span class="tooltip-text">Report detailing for all levels of organization. CXO’s, Managers, Security Teams, Developers etc</span></span></li>
-    link: https://try.appknox.com/demo-enterprise
+    link: https://try.appknox.com/schedule-appknox-demo
     button: REQUEST DEMO
     button2: REQUEST DEMO
 
