@@ -66,6 +66,10 @@ ul,li {
   color: #f17758;
 }
 
+.grey-text {
+  color: #888;
+}
+
 .red-text {
   color: #ea2127;
 }
@@ -142,6 +146,11 @@ ul,li {
   font-family: neosans;
 }
 
+.neosans-36 {
+  font-size: 36px;
+  font-family: neosans;
+}
+
 .neosans-40 {
   font-size: 40px;
   font-family: neosans;
@@ -162,6 +171,10 @@ ul,li {
 
 .marginTop {
   margin-top: 20px;
+}
+
+.margin-left0 {
+  margin-left: 0px!important
 }
 
 .marginTopMax{
@@ -538,6 +551,7 @@ p {
 
 .inslide-buttons:focus {
   background: #ea2127!important;
+  color: #fff!important
 }
 
 .inslide-buttons:hover, .call-button:hover, .pricing-demo:hover, .button-red:hover {
@@ -2368,6 +2382,33 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
 
 /* END OF GlOSSARY PAGE */
 
+/* START OF SECURITY STATUS SECTION */
+
+.security-status-section {
+  padding: 30px 0px 0px 0px
+}
+
+.security-status-image {
+  margin-left: 64px
+}
+
+.security-status-text {
+  padding-left: 240px
+}
+
+.security-status-description {
+  margin-top: 30px;
+  margin-bottom: 20px
+}
+
+.security-status-image-container {
+  text-align: right;
+  padding-right: 0px;
+  margin-top: 60px
+}
+
+/* END OF SECURITY STATUS SECTION */
+
 @media (min-width: 768px) {
   .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
     background-color: transparent !important;
@@ -2458,6 +2499,22 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .shield-text {
     font-size: 22px!important
   }
+  .security-status-image {
+    width: 84%
+  }
+  .security-status-heading {
+    font-size: 28px
+  }
+  .security-status-text {
+    padding-left: 174px
+  }
+  .security-status-description {
+    font-size: 18px;
+    margin-top: 10px
+  }
+  .security-status-image-container {
+    margin-top: 10px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2527,6 +2584,12 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .pricing-plan-section {
     padding: 0px
+  }
+  .security-status-image-container {
+    margin-top: 20px
+  }
+  .shield-text {
+    top: 5px!important
   }
 }
 
@@ -2614,6 +2677,18 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .ak-appgrader-green-bg {
     text-align: center;
   }
+  .security-status-text {
+    padding-left: 10px
+  }
+  .security-status-heading {
+    font-size: 24px
+  }
+  .security-status-description {
+    font-size: 16px;
+  }
+  .security-status-image-container {
+    margin-top: 10px
+  }
 }
 
 @media (max-width: 767px) {
@@ -2663,6 +2738,21 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .ak-appgrader-green-bg {
     text-align: center;
+  }
+  .security-status-text {
+    padding-left: 10px
+  }
+  .security-status-heading {
+    font-size: 24px
+  }
+  .security-status-description {
+    font-size: 16px;
+  }
+  .security-status-image-container {
+    margin-top: 10px
+  }
+  .security-status-image {
+    margin-left: 0px
   }
 }
 
@@ -3592,8 +3682,8 @@ header, .main-nav-scrolled {
   .free-shield img {
     display: inline-block;
   }
-  .shield-text{
-    top : -60px;
+  .shield-text {
+    top: -60px!important;
     text-align: center;
   }
   .shield-sub-text{
@@ -3742,7 +3832,6 @@ header, .main-nav-scrolled {
     margin-left: 0px;
     text-align: center;
   }
-
   .ast-try-appknox {
     height: 50px;
     padding-top: 10px
@@ -4046,7 +4135,8 @@ header, .main-nav-scrolled {
     padding-bottom: 85px;
   }
   .shield-text {
-    font-size: 17px!important
+    font-size: 17px!important;
+    top: 1px!important
   }
 }
 
