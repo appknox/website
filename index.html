@@ -299,7 +299,7 @@ excerpt: Appknox is a mobile app security testing solution to detect and fix vul
         <div class="col-md-3 col-sm-3 col-xs-6 logos">
           <img src="/img/partners/logo-2.png" alt="appknox partners" />
         </div>
-        {% for partner in site.data.partner_logos %}
+        {% for partner in site.data.partner_logos.set_one %}
           <div class="col-md-3 col-sm-3 col-xs-6 logos">
             <img src="{{partner.img}}" alt="appknox partners" />
           </div>
