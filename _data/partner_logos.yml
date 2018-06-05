@@ -1,8 +1,14 @@
-- img: /img/partners/logo-3.png
-- img: /img/partners/logo-4.png
-- img: /img/partners/logo-5.png
-- img: /img/partners/logo-6.png
-- img: /img/partners/logo-7.png
-- img: /img/partners/logo-8.png
-- img: /img/partners/logo-9.png
-- img: /img/partners/logo-10.png
+set_one:
+  - img: /img/partners/logo-3.png
+  - img: /img/partners/logo-4.png
+  - img: /img/partners/logo-5.png
+  - img: /img/partners/logo-6.png
+  - img: /img/partners/logo-7.png
+  - img: /img/partners/logo-8.png
+  - img: /img/partners/logo-9.png
+set_two:
+  - img: /img/partners/logo-10.png
+  - img: /img/partners/logo-11.png
+  - img: /img/partners/logo-12.png
+  - img: /img/partners/logo-13.png
+  - img: /img/partners/logo-14.png
