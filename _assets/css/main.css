@@ -1236,6 +1236,10 @@ label.error {
   text-align: center;
 }
 
+.award-heading {
+  height: 60px
+}
+
 .tr-sub-heading a {
   text-decoration: underline;
 }
@@ -2515,6 +2519,12 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .security-status-image-container {
     margin-top: 10px
   }
+  .award-heading {
+    font-size: 20px
+  }
+  .award-subheading {
+    font-size: 16px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2689,6 +2699,13 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .security-status-image-container {
     margin-top: 10px
   }
+  .award-heading {
+    font-size: 17px;
+    height: 20px
+  }
+  .award-subheading {
+    font-size: 13px
+  }
 }
 
 @media (max-width: 767px) {
@@ -2753,6 +2770,9 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .security-status-image {
     margin-left: 0px
+  }
+  .award-heading {
+    height: 45px
   }
 }
 
