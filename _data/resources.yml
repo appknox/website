@@ -1,3 +1,8 @@
+- name: Security Status for m-Commerce in USA
+  category: Report
+  img: /img/resources/Security-Status-In-m-Commerce.jpg
+  downloadLink: https://try.appknox.com/mcommerce-security-report-usa
+
 - name: Security Analysis of Top 100 Banking Apps in APAC
   category: Report
   img: /img/resources/Appknox-Report-October-2015-Thumbnail.jpg
@@ -42,8 +47,3 @@
   category: Infographic
   img: https://blog.appknox.com/wp-content/uploads/2016/03/appknox-Cyber-Security-Findings.jpg
   downloadLink: https://try.appknox.com/infographic/cyber-security-findings-by-experts
-
-- name: Security Status for m-Commerce in USA
-  category: Report
-  img: /img/resources/Security-Status-In-m-Commerce.jpg
-  downloadLink: https://try.appknox.com/mcommerce-security-report-usa
