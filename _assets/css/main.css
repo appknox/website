@@ -1232,28 +1232,6 @@ label.error {
   margin-bottom: 20px;
 }
 
-.award-top-container {
-  position: relative;
-  top: 133px
-}
-
-.award-banner {
-  height: 70px;
-}
-
-.award-text {
-  line-height: 80px;
-  font-size: 18px
-}
-
-.award-text a:hover, a:focus{
-  color: #ea2127
-}
-
-.award-banner img{
-  margin-top: 10px
-}
-
 .awards-image {
   text-align: center;
 }
@@ -2484,11 +2462,8 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     text-align: left!important;
     margin-left: 50px;
   }
-  .award-top-container {
-    top: 20px
-  }
-  .banner-top {
-    margin-top: 49px!important
+  .banner-main-section{
+    margin-top: 0px!important;
   }
   .banner-top img{
     display: none!important;
@@ -2549,9 +2524,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .award-subheading {
     font-size: 16px
-  }
-  .award-banner img{
-    margin-top: 15px
   }
 }
 
@@ -2628,9 +2600,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .shield-text {
     top: 5px!important
-  }
-  .award-text {
-    font-size: 16px
   }
 }
 
@@ -2737,19 +2706,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .award-subheading {
     font-size: 13px
   }
-  .esm-logo img {
-    width: 200px;
-    max-width: none;
-    margin-top: 24px!important
-  }
-  .award-banner img {
-    margin-top: 20px
-  }
-  .award-text {
-    font-size: 15px;
-    margin-left: 20px;
-  }
-
 }
 
 @media (max-width: 767px) {
@@ -2817,9 +2773,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .award-heading {
     height: 45px
-  }
-  .banner-top {
-    margin-top: 105px!important
   }
 }
 
@@ -3943,10 +3896,7 @@ header, .main-nav-scrolled {
     margin-top: 20px
   }
   .ak-appgrader-green-darker {
-    height: 160px
-  }
-  .award-text {
-    font-size: 14px
+    height: 150px
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -4470,9 +4420,6 @@ header, .main-nav-scrolled {
   .shield-text {
     font-size: 15px!important
   }
-  .award-text {
-    font-size: 12px
-  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -4767,10 +4714,6 @@ header, .main-nav-scrolled {
   }
   .shield-text {
     font-size: 12px!important
-  }
-  .award-text {
-    line-height: 20px;
-    margin-top: 30px
   }
 }
 
