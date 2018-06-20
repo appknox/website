@@ -2500,9 +2500,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .pricing-plan-section {
     padding: 0px 100px
   }
-  .shield-text {
-    font-size: 22px!important
-  }
   .security-status-image {
     width: 84%
   }
@@ -2524,6 +2521,14 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .award-subheading {
     font-size: 16px
+  }
+  .ak-appgrader-green-bg .try-now-button {
+    padding: 15px
+  }
+  .ak-appgrader-green-darker .shield-text {
+    font-size: 19px;
+    left: 45px;
+    top: 15px;
   }
 }
 
@@ -2553,9 +2558,6 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .sign-pos{
     margin-top: 20px;
-  }
-  .shield-sub-text{
-    font-size: 15px!important;
   }
   .banner-top img{
     margin-left: 100px!important;
@@ -2598,8 +2600,9 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .security-status-image-container {
     margin-top: 20px
   }
-  .shield-text {
-    top: 5px!important
+  .ak-appgrader-green-darker .shield-text {
+    font-size: 18px;
+    left: 50px;
   }
 }
 
@@ -2706,6 +2709,14 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   .award-subheading {
     font-size: 13px
   }
+  .ak-appgrader-green-bg .try-now-button {
+    padding: 15px 50px 15px 50px;
+  }
+  .ak-appgrader-green-darker .shield-text {
+    font-size: 15px;
+    left: 15px;
+    top: 22px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2773,6 +2784,9 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .award-heading {
     height: 45px
+  }
+  .ak-appgrader-green-bg .try-now-button {
+    padding: 15px 50px 15px 50px;
   }
 }
 
@@ -3212,17 +3226,19 @@ header, .main-nav-scrolled {
 
 .ak-appgrader-green-bg {
   background-color: #55c5b9;
-  height: 94px;
+  height: 80px;
+  text-align: center;
 }
 
 .ak-appgrader-green-darker {
   background-color: #00aa98;
-  height: 94px;
+  height: 80px;
+  padding-left: 0px
 }
 
 .ak-appgrader-green-dark {
   background-color: #3dbeb2;
-  height: 94px;
+  height: 80px;
 }
 
 .grader-row{
@@ -3248,24 +3264,17 @@ header, .main-nav-scrolled {
   top: 10px;
 }
 
-.free-shield img {
-  position: relative;
-  top: 5px;
-  left: -10px;
+.free-shield {
+  padding-left: 0px
 }
 
 .shield-text{
   color: #ffffff;
   font-family: neosans;
-  font-size: 24px;
+  font-size: 21px;
   position: relative;
-  top: 15px;
-}
-
-.shield-sub-text{
-  font-family: gillsansmtpro;
-  font-size: 16px;
-  margin-right: -25px;
+  top: 10px;
+  left: 25px
 }
 
 .try-now-button{
@@ -3279,8 +3288,7 @@ header, .main-nav-scrolled {
   cursor: pointer;
   padding: 15px 50px 15px 50px;
   position: relative;
-  top: 35px;
-  left: 100px;
+  top: 28px;
 }
 
 .try-now-button:link {
@@ -3698,16 +3706,6 @@ header, .main-nav-scrolled {
   }
   .error-right-heading{
     margin-top: 30px;
-  }
-  .free-shield img {
-    display: inline-block;
-  }
-  .shield-text {
-    top: -60px!important;
-    text-align: center;
-  }
-  .shield-sub-text{
-    margin-right: 0px;
   }
   .grader-logo img {
     position: relative;
@@ -4154,9 +4152,11 @@ header, .main-nav-scrolled {
   .ak-testimony {
     padding-bottom: 85px;
   }
-  .shield-text {
-    font-size: 17px!important;
-    top: 1px!important
+  .ak-appgrader-green-darker .shield-text {
+    font-size: 16px;
+    text-align: center;
+    left: 0px;
+    top: 10px;
   }
 }
 
@@ -4417,8 +4417,14 @@ header, .main-nav-scrolled {
     width: 330px;
     height: 200px;
   }
-  .shield-text {
-    font-size: 15px!important
+  .ak-appgrader-green-darker .free-shield img {
+    width: 100%
+  }
+  .ak-appgrader-green-darker .shield-text {
+    font-size: 15px;
+    text-align: center;
+    left: 0px;
+    top: 15px;
   }
 }
 
@@ -4712,8 +4718,14 @@ header, .main-nav-scrolled {
     padding-left: 0px;
     padding-right: 0px
   }
-  .shield-text {
-    font-size: 12px!important
+  .ak-appgrader-green-darker .free-shield img {
+    width: 100%
+  }
+  .ak-appgrader-green-darker .shield-text {
+    font-size: 12px;
+    text-align: center;
+    left: 0px;
+    top: 35px;
   }
 }
 
