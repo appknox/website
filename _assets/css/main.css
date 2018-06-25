@@ -70,6 +70,10 @@ ul,li {
   color: #888;
 }
 
+.grey-colored-text {
+  color: #333333;
+}
+
 .red-text {
   color: #ea2127;
 }
@@ -88,6 +92,14 @@ ul,li {
 
 .margin-top {
   margin-top: 30px;
+}
+
+.margin-top20 {
+  margin-top: 20px;
+}
+
+.margin-top10 {
+  margin-top: 10px;
 }
 
 .xs-font {
@@ -125,6 +137,18 @@ ul,li {
 .gills-24 {
   font-size: 24px;
   font-family: gillsansmtpro;
+}
+
+.font-size24px {
+  font-size: 24px;
+}
+
+.font-size20px {
+  font-size: 20px;
+}
+
+ol.ordered-list li {
+  list-style-type: decimal;
 }
 
 .gills-30 {
@@ -2530,6 +2554,15 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     left: 45px;
     top: 15px;
   }
+  .register-container {
+    margin-left: 0px!important
+  }
+  .register-container .right-container {
+    padding-right: 0px
+  }
+  .register-container .left-container div {
+    margin-top: 20px
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2716,6 +2749,16 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     font-size: 15px;
     left: 15px;
     top: 22px;
+  }
+  .background-register {
+    height: 1400px!important
+  }
+  .register-container form {
+    width: 400px;
+    margin: auto;
+  }
+  .register-container .button-red {
+    margin-top: 10px!important
   }
 }
 
@@ -3300,6 +3343,75 @@ header, .main-nav-scrolled {
 }
 
 /* End of Banner  */
+
+
+/* Start of Register Page */
+
+.background-register {
+  height: 800px;
+  background: url("/img/awards/background.jpg");
+}
+
+.ap-logo {
+  margin-top: 10px;
+  width: 150px
+}
+
+.register-container {
+  position: absolute;
+  top: 75px;
+  margin-left: 130px
+}
+
+.register-container .left-container {
+  padding-top: 30px
+}
+.register-container .right-container {
+  padding-top: 30px
+}
+
+.register-container form {
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px #999;
+  border-radius: 5px
+}
+
+.register-container form input.form-control {
+  height: 30px;
+  background: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 30px
+}
+
+.register-container .cu-form-eorror {
+  height: 15px;
+  font-size: 12px
+}
+
+.register-container form input[type=checkbox] {
+  display: inline;
+  width: 20px;
+  height: 15px
+}
+
+.register-container .button-red {
+  margin-bottom: 10px;
+  margin-top: 85px;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+}
+
+.g-recaptcha div {
+  width: auto!important
+}
+
+.right-container form .form-group {
+  margin-bottom: 0px
+}
+
+/* Start of Register Page */
 
 .level-numbers {
   display: inline;
@@ -4158,6 +4270,16 @@ header, .main-nav-scrolled {
     left: 0px;
     top: 10px;
   }
+  .background-register {
+    height: 1700px!important
+  }
+  .register-container form {
+    width: 400px;
+    margin: auto;
+  }
+  .register-container .button-red {
+    margin-top: 10px!important
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -4425,6 +4547,19 @@ header, .main-nav-scrolled {
     text-align: center;
     left: 0px;
     top: 15px;
+  }
+  .background-register {
+    height: 1800px!important
+  }
+  .register-container form {
+    width: 350px;
+    margin: auto;
+  }
+  .register-container .right-container {
+    padding-left: 0px
+  }
+  .register-container .button-red {
+    margin-top: 10px!important
   }
 }
 
@@ -4726,6 +4861,26 @@ header, .main-nav-scrolled {
     text-align: center;
     left: 0px;
     top: 35px;
+  }
+  .background-register {
+    height: 1900px!important
+  }
+  .register-container form {
+    width: 310px;
+    margin: auto;
+  }
+  .register-container .right-container {
+    padding-left: 0px
+  }
+  .register-container .button-red {
+    margin-top: 10px!important
+  }
+  .main-reg-container {
+    padding-left: 0px;
+    padding-right: 0px
+  }
+  .esm-logo img {
+    width: 90%
   }
 }
 

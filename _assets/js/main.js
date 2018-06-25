@@ -2090,7 +2090,6 @@ var landinPageForm1ValidateRules = {
       maxlength: 100,
       url:true,
     }
-
   },
   errorPlacement: function(error, element) {
     var errorEleId = "#" + element.attr("name") + "-lp-error"
@@ -2177,6 +2176,139 @@ function sendLandingPageForm1(ev){
 //Function to watch demo form submit
 function bindLandingPageForm1(){
   $("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////  REGISTER PAGE FORM /////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+//Register Page Form validation rules
+var registerPageFormValidateRules = {
+  rules: {
+    "username": {
+      required: true,
+      maxlength: 40,
+    },
+    "email": {
+      required: true,
+      maxlength: 90,
+      email: true
+    },
+    "company": {
+      required: true,
+      maxlength: 90
+    },
+    "phone": {
+      required: true,
+      maxlength: 90
+    },
+    "password": {
+      required: true,
+      minlength: 06,
+      maxlength: 90
+    },
+    "confirm-password": {
+      required: true,
+      minlength: 06,
+      maxlength: 90
+    }
+  },
+  errorPlacement: function(error, element) {
+    var errorEleId = "#" + element.attr("name") + "-lp-error"
+    var errorBox = null;
+    $(errorEleId).children().remove(); //removing if already outputed error from  backend
+    errorBox = $("<div class='mp-dynamic-error' />");
+    errorBox.fadeOut(200, function() {
+      showError()
+    });
+    $(errorEleId).append(errorBox);
+
+    function showError() {
+      errorBox.append(error);
+      errorBox.fadeIn(200);
+    }
+  },
+  messages: {
+    "username": {
+      required: "Username is required",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "email": {
+      required: "Email is required",
+      maxlength: "Email maximum length 90"
+    },
+    "company":{
+      required: "Company name is required",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "phone":{
+      required: "Phone number is required",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "password":{
+      required: "Password is required",
+      minlength: "Please enter minimun 6 characters",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "confirm-password":{
+      required: "Please confirm the password",
+      minlength: "Password doesn't match",
+      maxlength: "Maximum 50 characters allowed"
+    }
+  }
+}
+
+
+function sendRegisterPageForm(ev){
+  ev.preventDefault();
+  var form = $("#register_form");
+  form.validate(registerPageFormValidateRules);
+  var termsAccepted = document.querySelector('#terms-accepted').checked;
+  var isValid = form.valid();
+  if(isValid){
+    if(!termsAccepted) {
+      return document.getElementById("accept-terms-lp-error").innerHTML = "Please accept the terms";
+    }
+    else {
+      return document.getElementById("accept-terms-lp-error").innerHTML = "";
+    }
+  }
+  else{
+    return;
+  }
+  $("#registerFormMsgBox").html(getProcessingHtml());
+  var serializeData = form.serialize();
+  var url = HAWKINS_ENDURL + "";
+  var method = form.attr("method");
+  var option = {
+    url : url,
+    method : method,
+    data : serializeData,
+    asyn : true,
+    error : errorCallback,
+    success : successCallback
+  }
+  var xhr = $.ajax(option);
+  form.find("input,textarea").attr("disabled",true);
+  function errorCallback(jqXHR, err, errException){
+    $("#registerFormMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+    form.find("input,textarea").removeAttr("disabled");
+  }
+  function successCallback(resData){
+    if(resData.status === "success"){
+      $("#registerFormMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+      $("#register_form").hide();
+      form.find("input,textarea").attr("disabled",true);
+    }else{
+      $("#registerFormMsgBox").html(SUBMIT_ERROR_MSG);
+      form.find("input,textarea").removeAttr("disabled");
+    }
+  }
+}
+
+// Function to validate and submit Register form
+function bindRegisterPageForm(){
+  $("#register_form_submit").unbind("click",sendRegisterPageForm).bind("click",sendRegisterPageForm);
 }
 
 var SOSFormValidateRules = {
@@ -2469,6 +2601,7 @@ $(document).ready(function(){
   bindDemoSubmitCheck();
   bindBulkSubmitCheck();
   bindLandingPageForm1();
+  bindRegisterPageForm();
   bindSOSForm();
   bindAGForm();
   bindCallForm()
