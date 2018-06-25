@@ -1,6 +1,7 @@
 /////////////////////////////////////////////////////////////////
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
+var APPKNOX_API = "https://api.appknox.com/api/"
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
 var HAWKINS_ONBOARDING_URL = "https://hawkins.appknox.com/api/on_boarding/";
 var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
@@ -2206,11 +2207,6 @@ var registerPageFormValidateRules = {
       required: true,
       minlength: 06,
       maxlength: 90
-    },
-    "confirm-password": {
-      required: true,
-      minlength: 06,
-      maxlength: 90
     }
   },
   errorPlacement: function(error, element) {
@@ -2249,11 +2245,6 @@ var registerPageFormValidateRules = {
       required: "Password is required",
       minlength: "Please enter minimun 6 characters",
       maxlength: "Maximum 50 characters allowed"
-    },
-    "confirm-password":{
-      required: "Please confirm the password",
-      minlength: "Password doesn't match",
-      maxlength: "Maximum 50 characters allowed"
     }
   }
 }
@@ -2263,45 +2254,58 @@ function sendRegisterPageForm(ev){
   ev.preventDefault();
   var form = $("#register_form");
   form.validate(registerPageFormValidateRules);
-  var termsAccepted = document.querySelector('#terms-accepted').checked;
   var isValid = form.valid();
   if(isValid){
-    if(!termsAccepted) {
-      return document.getElementById("accept-terms-lp-error").innerHTML = "Please accept the terms";
+    var pwd = document.querySelector('#reg-password').value;
+    var cpwd = document.querySelector('#reg-confirm-password').value;
+    var passwordsMatch;
+    if(pwd === cpwd) {
+      document.getElementById("confirm-pwd-lp-error").innerHTML = "";
+      passwordsMatch = true;
     }
     else {
-      return document.getElementById("accept-terms-lp-error").innerHTML = "";
+      document.getElementById("confirm-pwd-lp-error").innerHTML = "Passwords doesn't match";
+      passwordsMatch = false;
     }
   }
   else{
     return;
   }
-  $("#registerFormMsgBox").html(getProcessingHtml());
-  var serializeData = form.serialize();
-  var url = HAWKINS_ENDURL + "";
-  var method = form.attr("method");
-  var option = {
-    url : url,
-    method : method,
-    data : serializeData,
-    asyn : true,
-    error : errorCallback,
-    success : successCallback
-  }
-  var xhr = $.ajax(option);
-  form.find("input,textarea").attr("disabled",true);
-  function errorCallback(jqXHR, err, errException){
-    $("#registerFormMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
-    form.find("input,textarea").removeAttr("disabled");
-  }
-  function successCallback(resData){
-    if(resData.status === "success"){
-      $("#registerFormMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
-      $("#register_form").hide();
+  if(passwordsMatch) {
+    var termsAccepted = document.querySelector('#terms-accepted').checked;
+    if(termsAccepted) {
+      document.getElementById("accept-terms-lp-error").innerHTML = "";
+      $("#registerFormMsgBox").html(getProcessingHtml());
+      var serializeData = form.serialize();
+      var url = APPKNOX_API + "registration";
+      var method = form.attr("method");
+      var option = {
+        url : url,
+        method : method,
+        data : serializeData,
+        asyn : true,
+        error : errorCallback,
+        success : successCallback
+      }
+      var xhr = $.ajax(option);
       form.find("input,textarea").attr("disabled",true);
-    }else{
-      $("#registerFormMsgBox").html(SUBMIT_ERROR_MSG);
-      form.find("input,textarea").removeAttr("disabled");
+      function errorCallback(jqXHR, err, errException){
+        $("#registerFormMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
+        form.find("input,textarea").removeAttr("disabled");
+      }
+      function successCallback(resData){
+        if(resData.status === "success"){
+          $("#registerFormMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+          $("#register_form").hide();
+          form.find("input,textarea").attr("disabled",true);
+        }else{
+          $("#registerFormMsgBox").html(SUBMIT_ERROR_MSG);
+          form.find("input,textarea").removeAttr("disabled");
+        }
+      }
+    }
+    else {
+      document.getElementById("accept-terms-lp-error").innerHTML = "Please accept the terms";
     }
   }
 }
