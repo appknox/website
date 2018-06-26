@@ -3400,7 +3400,6 @@ header, .main-nav-scrolled {
   margin-top: 85px;
   padding: 5px 10px;
   border-radius: 6px;
-
 }
 
 .g-recaptcha div {
@@ -3411,7 +3410,19 @@ header, .main-nav-scrolled {
   margin-bottom: 0px
 }
 
-/* Start of Register Page */
+#recaptcha-error {
+  display: none;
+  position: relative;
+  top: -40px;
+  left: 10px;
+}
+
+.position-relative {
+  position: relative;
+  right: 100px
+}
+
+/* End of Register Page */
 
 .level-numbers {
   display: inline;
@@ -4271,14 +4282,17 @@ header, .main-nav-scrolled {
     top: 10px;
   }
   .background-register {
-    height: 1700px!important
+    height: 1750px!important
   }
   .register-container form {
-    width: 400px;
+    width: 390px;
     margin: auto;
   }
   .register-container .button-red {
     margin-top: 10px!important
+  }
+  .register-container .right-container {
+    padding-left: 0px
   }
 }
 
@@ -4549,7 +4563,7 @@ header, .main-nav-scrolled {
     top: 15px;
   }
   .background-register {
-    height: 1800px!important
+    height: 1850px!important
   }
   .register-container form {
     width: 350px;
@@ -4863,7 +4877,7 @@ header, .main-nav-scrolled {
     top: 35px;
   }
   .background-register {
-    height: 1900px!important
+    height: 1950px!important
   }
   .register-container form {
     width: 310px;

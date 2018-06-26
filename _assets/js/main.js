@@ -2283,38 +2283,56 @@ function sendRegisterPageForm(ev){
         termsAccepted.value = "true";
       }
       var captcha = serializedData.find(data => data.name === "g-recaptcha-response");
+
       captcha.name = "recaptcha";
 
-      var jsonData = {};
+      var hasCaptcha;
 
-      serializedData.forEach(function(data) {
-        jsonData[data.name] = data.value
-      });
+      if(captcha.value === "") {
+        document.getElementById("recaptcha-error").innerHTML = "Please Confirm that you are not a bot";
+        document.getElementById("recaptcha-error").style.display = "inline";
+        $("#register_form_submit").addClass("position-relative");
+        hasCaptcha = false;
+      }
+      else {
+        document.getElementById("recaptcha-error").innerHTML = "";
+        document.getElementById("recaptcha-error").style.display = "none";
+        $("#register_form_submit").removeClass("position-relative");
+        hasCaptcha = true;
+      }
 
-      var url = APPKNOX_API + "registration";
-      var method = form.attr("method");
-      var option = {
-        url : url,
-        method : method,
-        data : jsonData,
-        asyn : true,
-        error : errorCallback,
-        success : successCallback
-      }
-      var xhr = $.ajax(option);
-      form.find("input,textarea").attr("disabled",true);
-      function errorCallback(jqXHR, err, errException){
-        $("#registerFormMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
-        form.find("input,textarea").removeAttr("disabled");
-      }
-      function successCallback(resData){
-        if(resData.status === "success"){
-          $("#registerFormMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
-          $("#register_form").hide();
-          form.find("input,textarea").attr("disabled",true);
-        }else{
-          $("#registerFormMsgBox").html(SUBMIT_ERROR_MSG);
+      if(hasCaptcha) {
+        var jsonData = {};
+
+        serializedData.forEach(function(data) {
+          jsonData[data.name] = data.value
+        });
+
+        var url = APPKNOX_API + "registration";
+        var method = form.attr("method");
+        var option = {
+          url : url,
+          method : method,
+          data : jsonData,
+          asyn : true,
+          error : errorCallback,
+          success : successCallback
+        }
+        var xhr = $.ajax(option);
+        form.find("input,textarea").attr("disabled",true);
+        function errorCallback(jqXHR, err, errException){
+          $("#registerFormMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
           form.find("input,textarea").removeAttr("disabled");
+        }
+        function successCallback(resData){
+          if(resData.status === "success"){
+            $("#registerFormMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
+            $("#register_form").hide();
+            form.find("input,textarea").attr("disabled",true);
+          }else{
+            $("#registerFormMsgBox").html(SUBMIT_ERROR_MSG);
+            form.find("input,textarea").removeAttr("disabled");
+          }
         }
       }
     }
