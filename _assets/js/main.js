@@ -2250,7 +2250,6 @@ var registerPageFormValidateRules = {
   }
 }
 
-
 function sendRegisterPageForm(ev){
   ev.preventDefault();
   var form = $("#register_form");
