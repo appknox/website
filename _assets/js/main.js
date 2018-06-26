@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
-var APPKNOX_API = "https://api.appknox.com/api/"
+var APPKNOX_API = "https://api.appknox.com/api/";
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
 var HAWKINS_ONBOARDING_URL = "https://hawkins.appknox.com/api/on_boarding/";
 var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
@@ -2276,13 +2276,27 @@ function sendRegisterPageForm(ev){
     if(termsAccepted) {
       document.getElementById("accept-terms-lp-error").innerHTML = "";
       $("#registerFormMsgBox").html(getProcessingHtml());
-      var serializeData = form.serialize();
+
+      var serializedData = form.serializeArray();
+      var termsAccepted = serializedData.find(data => data.name === "terms_accepted");
+      if(termsAccepted.value === "on") {
+        termsAccepted.value = "true";
+      }
+      var captcha = serializedData.find(data => data.name === "g-recaptcha-response");
+      captcha.name = "recaptcha";
+
+      var jsonData = {};
+
+      serializedData.forEach(function(data) {
+        jsonData[data.name] = data.value
+      });
+
       var url = APPKNOX_API + "registration";
       var method = form.attr("method");
       var option = {
         url : url,
         method : method,
-        data : serializeData,
+        data : jsonData,
         asyn : true,
         error : errorCallback,
         success : successCallback
