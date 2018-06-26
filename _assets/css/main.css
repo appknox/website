@@ -3422,6 +3422,11 @@ header, .main-nav-scrolled {
   right: 100px
 }
 
+#registerFormSuccessMessage {
+  display: none;
+  position: relative;
+  top: 250px
+}
 /* End of Register Page */
 
 .level-numbers {

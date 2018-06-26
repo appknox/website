@@ -5,6 +5,7 @@ var APPKNOX_API = "https://api.appknox.com/api/";
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
 var HAWKINS_ONBOARDING_URL = "https://hawkins.appknox.com/api/on_boarding/";
 var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
+var REGISTRATION_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you for registering with Appknox. An activation link has been sent to the email provided.";
 var SUBMIT_ERROR_MSG = "<i class='fa fa-check-square' aria-hidden='true'></i> Sorry! Form submission failed";
 var SUBMITTED_NO = "no";
 var FORM_SUBMITTED_YES = "yes";
@@ -2275,7 +2276,6 @@ function sendRegisterPageForm(ev){
     var termsAccepted = document.querySelector('#terms-accepted').checked;
     if(termsAccepted) {
       document.getElementById("accept-terms-lp-error").innerHTML = "";
-      $("#registerFormMsgBox").html(getProcessingHtml());
       var serializedData = form.serializeArray();
       var termsAccepted = serializedData.find(function (data) {
         return data.name === "terms_accepted";
@@ -2300,12 +2300,12 @@ function sendRegisterPageForm(ev){
         $("#register_form_submit").removeClass("position-relative");
         hasCaptcha = true;
       }
-
       if(hasCaptcha) {
         var jsonData = {};
         serializedData.forEach(function(data) {
           jsonData[data.name] = data.value
         });
+        $("#registerFormMsgBox").html(getProcessingHtml());
         var url = APPKNOX_API + "registration";
         var method = form.attr("method");
         var option = {
@@ -2319,18 +2319,15 @@ function sendRegisterPageForm(ev){
         var xhr = $.ajax(option);
         form.find("input,textarea").attr("disabled",true);
         function errorCallback(jqXHR, err, errException){
-          $("#registerFormMsgBox").removeClass("green").addClass("red").html(SUBMIT_ERROR_MSG);
-          form.find("input,textarea").removeAttr("disabled");
+          var obj = jqXHR.responseJSON;
+          var values = Object.values(obj);
+          var valueString = values.toString();
+          $("#registerFormMsgBox").removeClass("green").addClass("red").html(valueString);
         }
-        function successCallback(resData){
-          if(resData.status === "success"){
-            $("#registerFormMsgBox").removeClass("red").addClass("green").html(SUBMIT_SUCCESS_MSG);
-            $("#register_form").hide();
-            form.find("input,textarea").attr("disabled",true);
-          }else{
-            $("#registerFormMsgBox").html(SUBMIT_ERROR_MSG);
-            form.find("input,textarea").removeAttr("disabled");
-          }
+        function successCallback(){
+          $("#register_form").hide();
+          document.getElementById("registerFormSuccessMessage").style.display = "block";
+          $("#registerFormSuccessMessage").removeClass("red").addClass("green").html(REGISTRATION_SUCCESS_MSG);
         }
       }
     }
