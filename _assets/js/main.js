@@ -2277,11 +2277,15 @@ function sendRegisterPageForm(ev){
       document.getElementById("accept-terms-lp-error").innerHTML = "";
       $("#registerFormMsgBox").html(getProcessingHtml());
       var serializedData = form.serializeArray();
-      var termsAccepted = serializedData.find(data => data.name === "terms_accepted");
+      var termsAccepted = serializedData.find(function (data) {
+        return data.name === "terms_accepted";
+      });
       if(termsAccepted.value === "on") {
         termsAccepted.value = "true";
       }
-      var captcha = serializedData.find(data => data.name === "g-recaptcha-response");
+      var captcha = serializedData.find(function (data) {
+        return data.name === "g-recaptcha-response";
+      });
       captcha.name = "recaptcha";
       var hasCaptcha;
       if(captcha.value === "") {
