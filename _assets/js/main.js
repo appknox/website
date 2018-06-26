@@ -2320,9 +2320,14 @@ function sendRegisterPageForm(ev){
         form.find("input,textarea").attr("disabled",true);
         function errorCallback(jqXHR, err, errException){
           var obj = jqXHR.responseJSON;
-          var values = Object.values(obj);
-          var valueString = values.toString();
-          $("#registerFormMsgBox").removeClass("green").addClass("red").html(valueString);
+          if(obj) {
+            var values = Object.values(obj);
+            var valueString = values.toString();
+            $("#registerFormMsgBox").removeClass("green").addClass("red").html(valueString);
+          }
+          else {
+            $("#registerFormMsgBox").removeClass("green").addClass("red").html("Sorry, something went wrong, Please try again");
+          }
         }
         function successCallback(){
           $("#register_form").hide();
