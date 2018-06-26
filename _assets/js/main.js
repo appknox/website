@@ -2276,18 +2276,14 @@ function sendRegisterPageForm(ev){
     if(termsAccepted) {
       document.getElementById("accept-terms-lp-error").innerHTML = "";
       $("#registerFormMsgBox").html(getProcessingHtml());
-
       var serializedData = form.serializeArray();
       var termsAccepted = serializedData.find(data => data.name === "terms_accepted");
       if(termsAccepted.value === "on") {
         termsAccepted.value = "true";
       }
       var captcha = serializedData.find(data => data.name === "g-recaptcha-response");
-
       captcha.name = "recaptcha";
-
       var hasCaptcha;
-
       if(captcha.value === "") {
         document.getElementById("recaptcha-error").innerHTML = "Please Confirm that you are not a bot";
         document.getElementById("recaptcha-error").style.display = "inline";
@@ -2303,11 +2299,9 @@ function sendRegisterPageForm(ev){
 
       if(hasCaptcha) {
         var jsonData = {};
-
         serializedData.forEach(function(data) {
           jsonData[data.name] = data.value
         });
-
         var url = APPKNOX_API + "registration";
         var method = form.attr("method");
         var option = {
