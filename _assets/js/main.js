@@ -2332,6 +2332,7 @@ function sendRegisterPageForm(ev){
         function successCallback(){
           $("#register_form").hide();
           document.getElementById("registerFormSuccessMessage").style.display = "block";
+          $("#registerFormMsgBox").html("");
           $("#registerFormSuccessMessage").removeClass("red").addClass("green").html(REGISTRATION_SUCCESS_MSG);
         }
       }
