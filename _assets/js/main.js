@@ -2318,6 +2318,7 @@ function sendRegisterPageForm(ev){
         var xhr = $.ajax(option);
         form.find("input,textarea").attr("disabled",true);
         function errorCallback(jqXHR, err, errException){
+          form.find("input,textarea").removeAttr("disabled");
           var obj = jqXHR.responseJSON;
           if(obj) {
             var values = Object.values(obj);
