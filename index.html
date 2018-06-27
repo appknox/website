@@ -314,12 +314,12 @@ excerpt: Appknox is a mobile app security testing solution to detect and fix vul
     <h2>Awards</h2>
     <ul id="awards-box">
       {% for award in site.data.awards %}
-        <li class="col-md-4 col-sm-6">
+        <li class="col-md-3 col-sm-6 awards-list">
           <a class="awards-image menubar">
             <img src="{{award.image}}" alt="{{award.alt}}">
           </a>
-          <h3 class="gray-5">{{award.heading}}</h3>
-          <h4 class="gray-5">{{award.subheading}}</h4>
+          <h3 class="gray-5 award-heading">{{award.heading}}</h3>
+          <h4 class="gray-5 award-subheading">{{award.subheading}}</h4>
           <div class="awards-details">
             <div class="award-time  gray-a">{{award.year}}</div>
           </div>

@@ -1,9 +1,11 @@
 /////////////////////////////////////////////////////////////////
 //Globally declaring $ as reference to jQuery as required in WP
 var $ = jQuery
+var APPKNOX_API = "https://api.appknox.com/api/";
 var HAWKINS_ENDURL = "https://hawkins.appknox.com/api/send/";
 var HAWKINS_ONBOARDING_URL = "https://hawkins.appknox.com/api/on_boarding/";
 var SUBMIT_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you! We will get in touch shortly";
+var REGISTRATION_SUCCESS_MSG = "<i class='fa fa-check' aria-hidden='true'></i> Thank you for registering with Appknox. An activation link has been sent to the email provided.";
 var SUBMIT_ERROR_MSG = "<i class='fa fa-check-square' aria-hidden='true'></i> Sorry! Form submission failed";
 var SUBMITTED_NO = "no";
 var FORM_SUBMITTED_YES = "yes";
@@ -2090,7 +2092,6 @@ var landinPageForm1ValidateRules = {
       maxlength: 100,
       url:true,
     }
-
   },
   errorPlacement: function(error, element) {
     var errorEleId = "#" + element.attr("name") + "-lp-error"
@@ -2177,6 +2178,172 @@ function sendLandingPageForm1(ev){
 //Function to watch demo form submit
 function bindLandingPageForm1(){
   $("#landing_page_1_submit").unbind("click",sendLandingPageForm1).bind("click",sendLandingPageForm1);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////  REGISTER PAGE FORM /////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+//Register Page Form validation rules
+var registerPageFormValidateRules = {
+  rules: {
+    "username": {
+      required: true,
+      maxlength: 40,
+    },
+    "email": {
+      required: true,
+      maxlength: 90,
+      email: true
+    },
+    "company": {
+      required: true,
+      maxlength: 90
+    },
+    "phone": {
+      required: true,
+      maxlength: 90
+    },
+    "password": {
+      required: true,
+      minlength: 06,
+      maxlength: 90
+    }
+  },
+  errorPlacement: function(error, element) {
+    var errorEleId = "#" + element.attr("name") + "-lp-error"
+    var errorBox = null;
+    $(errorEleId).children().remove(); //removing if already outputed error from  backend
+    errorBox = $("<div class='mp-dynamic-error' />");
+    errorBox.fadeOut(200, function() {
+      showError()
+    });
+    $(errorEleId).append(errorBox);
+
+    function showError() {
+      errorBox.append(error);
+      errorBox.fadeIn(200);
+    }
+  },
+  messages: {
+    "username": {
+      required: "Username is required",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "email": {
+      required: "Email is required",
+      maxlength: "Email maximum length 90"
+    },
+    "company":{
+      required: "Company name is required",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "phone":{
+      required: "Phone number is required",
+      maxlength: "Maximum 50 characters allowed"
+    },
+    "password":{
+      required: "Password is required",
+      minlength: "Please enter minimun 6 characters",
+      maxlength: "Maximum 50 characters allowed"
+    }
+  }
+}
+
+function sendRegisterPageForm(ev){
+  ev.preventDefault();
+  var form = $("#register_form");
+  form.validate(registerPageFormValidateRules);
+  var isValid = form.valid();
+  if(isValid){
+    var pwd = document.querySelector('#reg-password').value;
+    var cpwd = document.querySelector('#reg-confirm-password').value;
+    var passwordsMatch;
+    if(pwd === cpwd) {
+      document.getElementById("confirm-pwd-lp-error").innerHTML = "";
+      passwordsMatch = true;
+    }
+    else {
+      document.getElementById("confirm-pwd-lp-error").innerHTML = "Passwords doesn't match";
+      passwordsMatch = false;
+    }
+  }
+  else{
+    return;
+  }
+  if(passwordsMatch) {
+    var termsAccepted = document.querySelector('#terms-accepted').checked;
+    if(termsAccepted) {
+      document.getElementById("accept-terms-lp-error").innerHTML = "";
+      var serializedData = form.serializeArray();
+      var termsAccepted = serializedData.find(function (data) {
+        return data.name === "terms_accepted";
+      });
+      if(termsAccepted.value === "on") {
+        termsAccepted.value = "true";
+      }
+      var captcha = serializedData.find(function (data) {
+        return data.name === "g-recaptcha-response";
+      });
+      captcha.name = "recaptcha";
+      var hasCaptcha;
+      if(captcha.value === "") {
+        document.getElementById("recaptcha-error").innerHTML = "Please Confirm that you are not a bot";
+        document.getElementById("recaptcha-error").style.display = "inline";
+        $("#register_form_submit").addClass("position-relative");
+        hasCaptcha = false;
+      }
+      else {
+        document.getElementById("recaptcha-error").innerHTML = "";
+        document.getElementById("recaptcha-error").style.display = "none";
+        $("#register_form_submit").removeClass("position-relative");
+        hasCaptcha = true;
+      }
+      if(hasCaptcha) {
+        var jsonData = {};
+        serializedData.forEach(function(data) {
+          jsonData[data.name] = data.value
+        });
+        $("#registerFormMsgBox").html(getProcessingHtml());
+        var url = APPKNOX_API + "registration";
+        var method = form.attr("method");
+        var option = {
+          url : url,
+          method : method,
+          data : jsonData,
+          asyn : true,
+          error : errorCallback,
+          success : successCallback
+        }
+        var xhr = $.ajax(option);
+        form.find("input,textarea").attr("disabled",true);
+        function errorCallback(jqXHR, err, errException){
+          var obj = jqXHR.responseJSON;
+          if(obj) {
+            var values = Object.values(obj);
+            var valueString = values.toString();
+            $("#registerFormMsgBox").removeClass("green").addClass("red").html(valueString);
+          }
+          else {
+            $("#registerFormMsgBox").removeClass("green").addClass("red").html("Sorry, something went wrong, Please try again");
+          }
+        }
+        function successCallback(){
+          $("#register_form").hide();
+          document.getElementById("registerFormSuccessMessage").style.display = "block";
+          $("#registerFormSuccessMessage").removeClass("red").addClass("green").html(REGISTRATION_SUCCESS_MSG);
+        }
+      }
+    }
+    else {
+      document.getElementById("accept-terms-lp-error").innerHTML = "Please accept the terms";
+    }
+  }
+}
+
+// Function to validate and submit Register form
+function bindRegisterPageForm(){
+  $("#register_form_submit").unbind("click",sendRegisterPageForm).bind("click",sendRegisterPageForm);
 }
 
 var SOSFormValidateRules = {
@@ -2469,6 +2636,7 @@ $(document).ready(function(){
   bindDemoSubmitCheck();
   bindBulkSubmitCheck();
   bindLandingPageForm1();
+  bindRegisterPageForm();
   bindSOSForm();
   bindAGForm();
   bindCallForm()
