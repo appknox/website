@@ -2126,6 +2126,10 @@ ul.pricing-plan-list {
   color: #f05b27
 }
 
+.ta-heading-gcc {
+  margin-top: 70px
+}
+
 .ast-sub-question {
   font-size: 20px;
   font-family: gillsansmtpro;
@@ -3922,6 +3926,9 @@ header, .main-nav-scrolled {
   .site-footer a {
     font-size: 14px
   }
+  .ta-heading-gcc {
+    margin-top: 50px
+  }
 }
 
 @media (max-width: 767px) {
@@ -4023,6 +4030,9 @@ header, .main-nav-scrolled {
   }
   .ak-appgrader-green-darker {
     height: 150px
+  }
+  .ast-threat-report {
+    height: 210px
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
