@@ -4,7 +4,6 @@ pricingplan :
     planTitle: Automated Testing <br /> For Power Users
     pricingDescriptions : <li><span>Unlimited Scans</span></li><li><span>Static Scan</span><span class="tooltip-icon"><span class="tooltip-text">Basic configuration testing with 75+ Test cases</span></span></li><li><span>Dynamic Scan</span><span class="tooltip-icon"><span class="tooltip-text">Testing your app’s data flow for a deeper analysis</span></span></li><li><span>API Scan</span><span class="tooltip-icon">
                           <span class="tooltip-text">Mobile app component testing on the server side</span></span></li><li><span>Continuous Integration</span><span class="tooltip-icon"><span class="tooltip-text">CI lets you detect threats even during development of your app</span></span></li><li><span>Multiple Users</span><span class="tooltip-icon"><span class="tooltip-text">Add unlimited users & teams and assign them to projects</span></span></li><li><span>Chat Support</span></li>
-    price: <div class="gradient-banner">$1999/App/Year</div>
     link: https://secure.appknox.com/register
     button: START FREE TRIAL
     button2: REQUEST DEMO
