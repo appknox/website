@@ -1,0 +1,43 @@
+# A basic redirects rule
+[[redirects]]
+  from = "/gcc/*"
+  to = "/gcc/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/in/*"
+  to = "/in/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/jp/*"
+  to = "/jp/404.html"
+  status = 404
+
+# Country Specific Routing
+
+[[redirects]]
+  from = "/*"
+  to = "/in/:splat"
+  status = 302
+  conditions = {Country = ["IN"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/gcc/:splat"
+  status = 302
+  conditions = {Country = ["BH", "KW", "OM", "QA", "SA", "AE"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/in/:splat"
+  status = 302
+  conditions = {Country = ["JP"]}
+
+[[headers]]
+  for = "/*" # This defines which paths this specific [[headers]] block will cover.
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

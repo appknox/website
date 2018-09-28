@@ -48,10 +48,6 @@ exclude:
   - CONTRIBUTING.md
   - .ruby-version
 
-# Include the following files
-include:
-  - _redirects
-
 assets:
   compress:
     css: true
