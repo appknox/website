@@ -4,11 +4,6 @@
 <svg class="map-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve">
 	 <style>
-		 @font-face {
-		   font-family: neosans;
-		   src: url(../fonts/NEOSANS.OTF);
-		 }
-
 		 .icon-container .tooltip{
 		   display: none;
 		 }
