@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="/css/style-map.css" ?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg class="map-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve">
+	 <style>
+		 @font-face {
+		   font-family: neosans;
+		   src: url(../fonts/NEOSANS.OTF);
+		 }
+
+		 .icon-container .tooltip{
+		   display: none;
+		 }
+
+		 .icon-container:hover {
+		   cursor: pointer;
+		 }
+
+		 .icon-container:hover .tooltip {
+		   display: inline-block;
+		 }
+
+		 .tooltip {
+		   font-family: neosans
+		 }
+
+		 .map-svg {
+		   width: 960px;
+		   height: 560px;
+		 }
+	 </style>
 <g>
 	<path fill="#E2E0DF" stroke="#FFFFFF" stroke-miterlimit="10" d="M777.232,280.388l0.511-0.714l1.041,0.052l1.46-1.825l1.096,0.154
 		l0.209,1.047l3.288,0.416l4.118-3.389l0.365-1.565l1.2-0.941l4.742-6.049l0.523-2.919l4.226-4.691l0.988-6.104l-0.622-2.138
