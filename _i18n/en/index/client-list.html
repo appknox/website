@@ -1,0 +1,13 @@
+<section class="{{include.class}}">
+  <div class="container ak-container text-center">
+    <h2 class="gills-24 gray-8">Supporting these happy teams</h2>
+    <ul class="logos-box">
+      {% for client in site.data.global_clients %}
+      <li>
+        <img src="{{client.img}}" alt="Appknox Clients"/>
+      </li>
+      {% endfor %}
+    </ul>
+    <p id="many-more-team" class="gray-8">And many more...</p>
+  </div>
+</section>
