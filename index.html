@@ -288,7 +288,11 @@ excerpt: Appknox is a mobile app security testing solution to detect and fix vul
   </div>
 </section>
 
-{% include client_list.html %}
+{% if site.lang == "en" %}
+  {% translate_file index/client-list.html %}
+{% else" %}
+  {% include client_list.html %}
+{% endif %}
 
 <a name="Vulnerabilities"></a>
 
