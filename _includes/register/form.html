@@ -1,0 +1,57 @@
+<div class="col-lg-4 col-md-4 right-container">
+  <div id="registerFormMsgBox" class="neosans col-md-12 text-center green"> </div>
+  <div id="registerFormSuccessMessage" class="neosans col-md-12 text-center green"> </div>
+  <form id="register_form" method="POST">
+    <div class="register_form_data">
+      <div class="text-center">
+        <img class="ap-logo" alt="Appknox logo" src="/img/logo.png" />
+        <div class="margin-top10">
+          Register for a <span class="red-text">FREE TRIAL</span>
+        </div>
+      </div>
+      <div class="margin-top10">
+      </div>
+      <fieldset class="form-group col-md-6">
+        <input type="text" class="form-control" name="first_name" placeholder="First Name">
+      </fieldset>
+      <fieldset class="form-group col-md-6">
+        <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+      </fieldset>
+      <fieldset class="form-group col-md-12">
+        <div id="username-lp-error" class="cu-form-eorror red"></div>
+        <input type="text" class="form-control" name="username" placeholder="Username (Required)">
+      </fieldset>
+      <fieldset class="form-group col-md-12">
+        <div id="email-lp-error" class="cu-form-eorror red"></div>
+        <input type="text" class="form-control" name="email" placeholder="Official Email (Required)">
+      </fieldset>
+      <fieldset class="form-group col-md-12">
+        <div id="company-lp-error" class="cu-form-eorror red"></div>
+        <input type="text" class="form-control" name="company" placeholder="Company Name (Required)">
+      </fieldset>
+      <input type="hidden" class="form-control" name="campaign" value="{{include.campaign_id}}">
+      <fieldset class="form-group col-md-12 telephone-input">
+        <div id="phone-lp-error" class="cu-form-eorror red"></div>
+        <input type="text" class="form-control teleus" name="phone" placeholder="Phone Number">
+      </fieldset>
+      <fieldset class="form-group col-md-12">
+        <div id="password-lp-error" class="cu-form-eorror red"></div>
+        <input type="password" id="reg-password" class="form-control" name="password" placeholder="Password(Min 6 Characters)">
+      </fieldset>
+      <fieldset class="form-group col-md-12">
+        <div id="confirm-pwd-lp-error" class="cu-form-eorror red"></div>
+        <input type="password" id="reg-confirm-password" class="form-control" name="confirm_password" placeholder="Confirm Password">
+      </fieldset>
+      <fieldset class="form-group col-md-12">
+        <a href="https://appknox.com/privacy" target="_blank"><div id="accept-terms-lp-error" class="cu-form-eorror red"></div><a/>
+        <input type="checkbox" id="terms-accepted" class="form-control" name="terms_accepted"> I accept the terms and conditions<a href="https://appknox.com/privacy" target="_blank"><sup>*</sup><a/>
+      </fieldset>
+      <div class="text-center"><div class="g-recaptcha" data-sitekey="6LfDdlUUAAAAAE9Bz9-3FLjrNw_AEUk11zXDH-0_"></div></div>
+      <div class="clearfix"></div>
+      <div class="text-center">
+        <div id="recaptcha-error" class="cu-form-eorror red"></div>
+        <input type="submit" id="register_form_submit" class="button-red btn-lg ak-btn-round uppercase" value="Register">
+      </div>
+    </div>
+  </form>
+</div>
