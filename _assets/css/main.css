@@ -16,6 +16,14 @@ body,html {
   height: 100%;
 }
 
+body {
+  background: #02060C
+}
+
+.content {
+  padding-top: 3em;
+  background: white;
+}
 
 .ak-fullscreen {
   min-height: 100%;
@@ -329,6 +337,10 @@ p {
 
 #ak-menu {
   margin-right: 200px!important;
+}
+
+.navbar-fixed-top {
+  height: 3em;
 }
 
 .video-container {
@@ -3368,6 +3380,10 @@ header, .main-nav-scrolled {
   background: url("/img/awards/background.jpg");
 }
 
+.background-register-wework {
+  padding: 2em 0;
+}
+
 .ap-logo {
   margin-top: 10px;
   width: 150px
@@ -3380,14 +3396,15 @@ header, .main-nav-scrolled {
 }
 
 .register-container-wework {
-  top: 75px;
-  margin-left: 130px;
   overflow: hidden;
   position: static;
+  margin-left: 0px;
+  padding: 0 2em;
+  top: 0px;
 }
 
 .register-container .left-container {
-  padding-top: 30px
+
 }
 
 .register-container .right-container {
@@ -3395,8 +3412,7 @@ header, .main-nav-scrolled {
 }
 
 .register-container-wework .right-container {
-  padding-top: 100px;
-  margin-bottom: 20px
+  padding: 1em 0;
 }
 
 .register-container form {
@@ -3455,6 +3471,11 @@ header, .main-nav-scrolled {
   display: none;
   position: relative;
   top: 250px
+}
+
+#registerFormSuccessMessage.success-message-wework {
+  position: static;
+  top: 0px
 }
 
 .campaign-logo {

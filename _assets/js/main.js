@@ -2318,12 +2318,17 @@ function sendRegisterPageForm(ev){
         var xhr = $.ajax(option);
         form.find("input,textarea").attr("disabled",true);
         function errorCallback(jqXHR, err, errException){
+          $("div[id$='-lp-error']").each(function (key, el) {
+            el.innerHTML = "";
+          });
+          window.grecaptcha.reset()
           form.find("input,textarea").removeAttr("disabled");
           var obj = jqXHR.responseJSON;
           if(obj) {
-            var values = Object.values(obj);
-            var valueString = values.toString();
-            $("#registerFormMsgBox").removeClass("green").addClass("red").html(valueString);
+            Object.keys(obj).forEach(function(key) {
+              $("#"+ key + "-lp-error").html(obj[key]);
+            });
+            $("#registerFormMsgBox").html("");
           }
           else {
             $("#registerFormMsgBox").removeClass("green").addClass("red").html("Sorry, something went wrong, Please try again");
