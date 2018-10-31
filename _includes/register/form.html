@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-4 right-container">
   <div id="registerFormMsgBox" class="neosans col-md-12 text-center green"> </div>
-  <div id="registerFormSuccessMessage" class="neosans col-md-12 text-center green"> </div>
+  <div id="registerFormSuccessMessage" class="neosans col-md-12 text-center green success-message-{{include.campaign_id}}"> </div>
   <form id="register_form" method="POST">
     <div class="register_form_data">
       <div class="text-center">
@@ -46,7 +46,7 @@
         <a href="https://appknox.com/privacy" target="_blank"><div id="accept-terms-lp-error" class="cu-form-eorror red"></div><a/>
         <input type="checkbox" id="terms-accepted" class="form-control" name="terms_accepted"> I accept the terms and conditions<a href="https://appknox.com/privacy" target="_blank"><sup>*</sup><a/>
       </fieldset>
-      <div class="text-center"><div class="g-recaptcha" data-sitekey="6LfDdlUUAAAAAE9Bz9-3FLjrNw_AEUk11zXDH-0_"></div></div>
+      <div class="text-center"><div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LfDdlUUAAAAAE9Bz9-3FLjrNw_AEUk11zXDH-0_"></div></div>
       <div class="clearfix"></div>
       <div class="text-center">
         <div id="recaptcha-error" class="cu-form-eorror red"></div>
