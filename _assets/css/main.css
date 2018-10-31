@@ -2641,6 +2641,15 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     font-size: 18px;
     left: 50px;
   }
+  .main-reg-container-wework {
+    flex-direction: column;
+  }
+  .register-container-wework .left-container .campaign-circle {
+    width: 15em;
+    height: 15em;
+    padding: 10px;
+    margin-top: 125px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -2834,6 +2843,9 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .ak-appgrader-green-bg .try-now-button {
     padding: 15px 50px 15px 50px;
+  }
+  .register-container-wework .left-container .campaign-circle {
+    margin-top: 50px
   }
 }
 
@@ -3367,11 +3379,24 @@ header, .main-nav-scrolled {
   margin-left: 130px
 }
 
+.register-container-wework {
+  top: 75px;
+  margin-left: 130px;
+  overflow: hidden;
+  position: static;
+}
+
 .register-container .left-container {
   padding-top: 30px
 }
+
 .register-container .right-container {
   padding-top: 30px
+}
+
+.register-container-wework .right-container {
+  padding-top: 100px;
+  margin-bottom: 20px
 }
 
 .register-container form {
@@ -3431,6 +3456,32 @@ header, .main-nav-scrolled {
   position: relative;
   top: 250px
 }
+
+.campaign-logo {
+  vertical-align: initial;
+  margin-bottom: -0.1em;
+}
+
+.main-reg-container-wework {
+  display: flex;
+  align-items: center;
+}
+
+.campaign-text {
+  text-align: center;
+}
+
+.campaign-circle {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: #000;
+  border: 2px solid #000;
+}
+
 /* End of Register Page */
 
 .level-numbers {

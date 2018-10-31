@@ -2,88 +2,15 @@
 layout: default
 title: Appknox - Mobile App Security Testing
 excerpt: Appknox is a mobile app security testing solution to detect and fix vulnerabilities in mobile apps using a combination of automated and manual tests.
+permalink: /register/
 ---
 
 <section class="background-register">
   <div class="register-container">
-    <div class="col-lg-12 align-center esm-logo">
-      <img src="/img/awards/esm-logo-1.png" alt="ESM" />
-    </div>
+    {% include register/top-banner.html %}
     <div class="col-lg-12 main-reg-container">
-      <div class="col-lg-8 col-md-8 left-container">
-        <div class="red-text font-size24px">Appknox Voted Top 10 Global Vulnerability Management Solution Providers in 2018</div>
-        <div class="gillsans font-size20px grey-colored-text margin-top">We’ve worked hard to build the best automated mobile app security testing solution along with
-            a strong team of security professionals to ensure complete security for businesses. We are
-            grateful today to be recognized and validated as one of the top global security vendors
-            by the Enterprise Security Magazine.</div>
-        <div class="gillsans font-size20px margin-top">Some of the highlights of this recognition are:</div>
-        <ol class="ordered-list grey-colored-text">
-          <li>We’ve been featured amongst industry giants like Qualys, Rapid7 and Beyond Trust. </li>
-          <li>We’re the only security company that is based in Asia to be featured. </li>
-          <li>We’re the only company amongst the others that specializes mobile app security testing.</li>
-        </ol>
-        <div class="gillsans font-size20px grey-colored-text margin-top">If you’d like to know more about why Appknox was chosen in this list, sign up with us for a FREE trial
-          and see for yourself! We promise you won’t be disappointed.</div>
-        <div class="red-text font-size20px margin-top">START FREE APPKNOX TRIAL</div>
-        <div class="gillsans font-size20px grey-colored-text margin-top">Get details to the full article covering Appknox using this <a class="red-text" target="_blank" href="https://www.enterprisesecuritymag.com/vendors/top-vulnerability-management-solution-providers-2018.html">LINK</a></div>
-      </div>
-      <div class="col-lg-4 col-md-4 right-container">
-
-        <div id="registerFormMsgBox" class="neosans col-md-12 text-center green"> </div>
-        <div id="registerFormSuccessMessage" class="neosans col-md-12 text-center green"> </div>
-        <form id="register_form" method="POST">
-          <div class="register_form_data">
-            <div class="text-center">
-              <img class="ap-logo" alt="Appknox logo" src="/img/logo.png" />
-              <div class="margin-top10">
-                Register for a <span class="red-text">FREE TRIAL</span>
-              </div>
-            </div>
-            <div class="margin-top10">
-            </div>
-            <fieldset class="form-group col-md-6">
-              <input type="text" class="form-control" name="first_name" placeholder="First Name">
-            </fieldset>
-            <fieldset class="form-group col-md-6">
-              <input type="text" class="form-control" name="last_name" placeholder="Last Name">
-            </fieldset>
-            <fieldset class="form-group col-md-12">
-              <div id="username-lp-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control" name="username" placeholder="Username (Required)">
-            </fieldset>
-            <fieldset class="form-group col-md-12">
-              <div id="email-lp-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control" name="email" placeholder="Official Email (Required)">
-            </fieldset>
-            <fieldset class="form-group col-md-12">
-              <div id="company-lp-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control" name="company" placeholder="Company Name (Required)">
-            </fieldset>
-            <fieldset class="form-group col-md-12 telephone-input">
-              <div id="phone-lp-error" class="cu-form-eorror red"></div>
-              <input type="text" class="form-control teleus" name="phone" placeholder="Phone Number">
-            </fieldset>
-            <fieldset class="form-group col-md-12">
-              <div id="password-lp-error" class="cu-form-eorror red"></div>
-              <input type="password" id="reg-password" class="form-control" name="password" placeholder="Password(Min 6 Characters)">
-            </fieldset>
-            <fieldset class="form-group col-md-12">
-              <div id="confirm-pwd-lp-error" class="cu-form-eorror red"></div>
-              <input type="password" id="reg-confirm-password" class="form-control" name="confirm_password" placeholder="Confirm Password">
-            </fieldset>
-            <fieldset class="form-group col-md-12">
-              <a href="https://appknox.com/privacy" target="_blank"><div id="accept-terms-lp-error" class="cu-form-eorror red"></div><a/>
-              <input type="checkbox" id="terms-accepted" class="form-control" name="terms_accepted"> I accept the terms and conditions<a href="https://appknox.com/privacy" target="_blank"><sup>*</sup><a/>
-            </fieldset>
-            <div class="text-center"><div class="g-recaptcha" data-sitekey="6LfDdlUUAAAAAE9Bz9-3FLjrNw_AEUk11zXDH-0_"></div></div>
-            <div class="clearfix"></div>
-            <div class="text-center">
-              <div id="recaptcha-error" class="cu-form-eorror red"></div>
-              <input type="submit" id="register_form_submit" class="button-red btn-lg ak-btn-round uppercase" value="Register">
-            </div>
-          </div>
-        </form>
-      </div>
+      {% include register/description.html %}
+      {% include register/form.html %}
     </div>
   </div>
 </section>
