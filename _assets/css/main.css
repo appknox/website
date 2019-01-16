@@ -74,6 +74,10 @@ ul,li {
   color: #f17758;
 }
 
+.red-input, .red-input:focus, .red-input:hover {
+    color: #f17758;
+}
+
 .grey-text {
   color: #888;
 }
