@@ -2387,8 +2387,6 @@ line-height: 35px;
   padding-bottom: 5px
 }
 
-
-
 /* END OF THANK YOU PAGE */
 
 /* START OF GlOSSARY PAGE */
@@ -2867,6 +2865,10 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .register-container-wework .left-container .campaign-circle {
     margin-top: 50px
+  }
+  #navbar.navbar-collapse {
+    background: #FFF;
+    box-shadow: 2px 6px 10px #999;
   }
 }
 

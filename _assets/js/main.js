@@ -516,7 +516,7 @@ function activateProductSubmenu(directCall){
   }
   else if( doc.width() > 760){
     if(!directCall){
-      var menu =   $("#product-menu");
+      var menu = $("#product-menu");
       $("#product-dropdown").addClass("block");
     }
   }else if(productPage.length === 0 && doc.width() > 760){
@@ -2923,17 +2923,17 @@ $(document).ready(function () {
 });
 
 if(window.location.hash) {
-   var hashkey = window.location.hash;
-   if (hashkey == "#show_sast") {
+  var hashkey = window.location.hash;
+  if (hashkey == "#sast-zone") {
      show_sast();
    }
-   else if (hashkey == "#show_dast") {
+  else if (hashkey == "#dast-zone") {
      show_dast();
    }
-   else if (hashkey == "#show_apit") {
+  else if (hashkey == "#apit-zone") {
      show_apit();
    }
-   else if (hashkey == "#show_mast") {
+  else if (hashkey == "#mast-zone") {
     show_mast();
    }
 }
