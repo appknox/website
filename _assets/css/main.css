@@ -2130,7 +2130,7 @@ ul.pricing-plan-list {
   margin-top: -140px;
 }
 
-#dast-zone, #mast-zone {
+#dast-zone, #mast-zone, #apit-zone {
   display: none;
   padding-top: 140px;
   margin-top: -140px;
@@ -2513,7 +2513,7 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     display: none!important;
   }
   #ak-menu {
-    margin-right: 100px!important;
+    margin-right: 0px!important;
     float: left;
   }
 }
@@ -2699,10 +2699,10 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
       padding-top: 110px;
   }
   #ak-menu li a {
-    padding: 15px 9px;
+    padding: 15px 8px;
   }
   #ak-menu li>a {
-    font-size: 14px
+    font-size: 12px
   }
   .slick-lightbox .slick-next, .slick-lightbox .slick-prev {
     margin-left: 0px;
@@ -4029,7 +4029,7 @@ header, .main-nav-scrolled {
     background-color: #f0fbf2!important;
     color: #f05b27
   }
-  #sast-zone, #dast-zone, #mast-zone {
+  #sast-zone, #dast-zone, #mast-zone, #apit-zone {
     padding-top: 0px;
     margin-top: 10px;
     margin-left: 0px!important;
