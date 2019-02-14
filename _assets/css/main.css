@@ -3407,12 +3407,8 @@ header, .main-nav-scrolled {
   top: 0px;
 }
 
-.register-container .left-container {
-
-}
-
 .register-container .right-container {
-  padding-top: 30px
+  padding-top: 4em
 }
 
 .register-container-wework .right-container {
@@ -4373,7 +4369,7 @@ header, .main-nav-scrolled {
     top: 10px;
   }
   .background-register {
-    height: 1750px!important
+    height: 1250px!important
   }
   .register-container form {
     width: 390px;
@@ -4654,7 +4650,7 @@ header, .main-nav-scrolled {
     top: 15px;
   }
   .background-register {
-    height: 1850px!important
+    height: 1350px!important
   }
   .register-container form {
     width: 350px;
@@ -4968,7 +4964,7 @@ header, .main-nav-scrolled {
     top: 35px;
   }
   .background-register {
-    height: 1950px!important
+    height: 1350px!important
   }
   .register-container form {
     width: 310px;
