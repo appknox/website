@@ -2125,6 +2125,11 @@ ul.pricing-plan-list {
   padding-top: 130px
 }
 
+.section-leveler {
+  margin-top: -2em!important;
+  margin-bottom: 2em!important;
+}
+
 #sast-zone {
   padding-top: 140px;
   margin-top: -140px;
