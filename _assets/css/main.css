@@ -2125,9 +2125,9 @@ ul.pricing-plan-list {
   padding-top: 130px
 }
 
-.section-leveler {
-  margin-top: -2em!important;
-  margin-bottom: 2em!important;
+.level-images-pos.section-leveler {
+  margin-top: -2em;
+  margin-bottom: 2em
 }
 
 #sast-zone {
