@@ -500,7 +500,7 @@ ul.camas-feat-list {
 
 @media (max-width: 990px) {
   #ak-menu {
-    margin-right: 100px!important;
+    margin-right: 0px!important;
     float: left;
   }
 }
@@ -1219,7 +1219,7 @@ ul.camas-feat-list {
     padding: 15px 7px;
   }
   #ak-menu li>a {
-    font-size: 14px
+    font-size: 12px
   }
   .request-menu{
     margin-right: 90px;

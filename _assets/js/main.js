@@ -501,6 +501,90 @@ var listAnimatorRadar = new ListAnimator();
 listAnimatorRadar.init({blockId:"radar-list-block",time:500});
 
 /*********************************************************************************
+* Product Page Sub menu Activation
+**********************************************************************************/
+function activateProductSubmenu(directCall){
+  var productPage = $("#product-page");
+  var doc = $(document);
+
+  if(productPage.length > 0 && doc.width() > 760){
+    $("#product-dropdown").addClass("block");
+    $("#product-dropdown").css("z-index","1");
+  }
+  else if(productPage.length > 0 && doc.width() < 760){
+    $("#product-dropdown").removeClass("block");
+  }
+  else if( doc.width() > 760){
+    if(!directCall){
+      var menu = $("#product-menu");
+      $("#product-dropdown").addClass("block");
+    }
+  }else if(productPage.length === 0 && doc.width() > 760){
+    $("#product-dropdown").removeClass("block");
+  }
+}
+
+function hideProductSubMenu(ev){
+  var target = ev.currentTarget;
+  var productPage = $("#product-page");
+
+  if(target.id !== "product-menu" && productPage.length == 0){
+    $("#product-dropdown").removeClass("block");
+  }
+}
+
+function hideProductSubMenuOnDepart(ev){
+  var doc = $(document);
+
+  if(doc.width()<760){
+    $("#product-dropdown").removeClass("block");
+    return; //to prevent non clickable menu links in iOS
+  }
+
+  try{
+    var mouseY = ev.clientY;
+    var subMenuTop = $("#product-dropdown").css("top");
+    var subMenuHeight = $("#product-dropdown").outerHeight();
+    var downEnd = parseInt(subMenuTop) + subMenuHeight;
+    var productPage = $("#product-page");
+
+    if(productPage.length == 0 && mouseY >= (downEnd + 100)){
+      $("#product-dropdown").removeClass("block");
+    }
+  }catch(e){}
+}
+
+////////////////////////////////////////////////////////
+//Method to prevent navigation of product-link in mobile menu
+function productLinkClickAction(){
+  $("#product-link").click(function(ev){
+    var doc = $(document);
+    if(doc.width()<760){
+      ev.preventDefault; // jshint ignore:line
+    }else{
+      document.location = ev.currentTarget.href;
+    }
+  });
+}
+
+$(document).ready(function(){
+  activateProductSubmenu(true);
+  productLinkClickAction();
+
+  $("#product-menu").bind("mouseover",function(){
+    activateProductSubmenu();
+  });
+
+  $(document).mousemove(hideProductSubMenuOnDepart);
+  $("#ak-menu>li").mouseover(hideProductSubMenu);
+});
+
+$(window).resize(function(){
+  activateProductSubmenu();
+});
+
+
+/*********************************************************************************
 * COmpany Page Sub menu Activation
 **********************************************************************************/
 function activateCompanySubmenu(directCall){
@@ -564,7 +648,7 @@ function companyLinkClickAction(){
     }else{
       document.location = ev.currentTarget.href;
     }
-  })
+  });
 }
 
 $(document).ready(function(){
@@ -2781,11 +2865,11 @@ function sticky_relocate() {
     else if (window_top > div_top) {
         $('#sticky').addClass('stick');
         $('#non-sticky').addClass('non-stick');
-        $("#sast-zone, #dast-zone, #mast-zone").css({"margin-left": "60px"});
+        $("#sast-zone, #dast-zone, #apit-zone, #mast-zone").css({"margin-left": "60px"});
     } else {
         $('#sticky').removeClass('stick');
         $('#non-sticky').removeClass('non-stick');
-        $("#sast-zone, #dast-zone, #mast-zone").css({"margin-left" : "0px"});
+        $("#sast-zone, #dast-zone, #apit-zone, #mast-zone").css({"margin-left" : "0px"});
     }
 }
 
@@ -2796,24 +2880,31 @@ $(function () {
 
 
 function show_sast() {
-  $("#dast-zone, #mast-zone").hide();
+  $("#dast-zone, #apit-zone, #mast-zone").hide();
   $("#sast-zone").show();
   $(".sast-section").addClass('li-active');
-  $(".dast-section, .mast-section").removeClass('li-active');
+  $(".dast-section, .apit-section, .mast-section").removeClass('li-active');
 }
 
 function show_dast() {
-  $("#sast-zone, #mast-zone").hide();
+  $("#sast-zone, #apit-zone, #mast-zone").hide();
   $("#dast-zone").show();
   $(".dast-section").addClass('li-active');
-  $(".sast-section, .mast-section").removeClass('li-active');
+  $(".sast-section, .apit-section, .mast-section").removeClass('li-active');
+}
+
+function show_apit() {
+  $("#sast-zone, #dast-zone, #mast-zone").hide();
+  $("#apit-zone").show();
+  $(".apit-section").addClass('li-active');
+  $(".sast-section, .dast-section, .mast-section").removeClass('li-active');
 }
 
 function show_mast() {
-  $("#sast-zone, #dast-zone").hide();
+  $("#sast-zone, #apit-zone, #dast-zone").hide();
   $("#mast-zone").show();
   $(".mast-section").addClass('li-active');
-  $(".sast-section, .dast-section").removeClass('li-active');
+  $(".sast-section, .apit-section, .dast-section").removeClass('li-active');
 }
 
 $(document).ready(function () {
@@ -2823,20 +2914,26 @@ $(document).ready(function () {
   $(".dast-section").on("click", function(){
     show_dast();
   });
+  $(".apit-section").on("click", function(){
+    show_apit();
+  });
   $(".mast-section").on("click", function(){
     show_mast();
   });
 });
 
 if(window.location.hash) {
-   var hashkey = window.location.hash;
-   if (hashkey == "#show_sast") {
+  var hashkey = window.location.hash;
+  if (hashkey == "#sast-zone") {
      show_sast();
    }
-   else if (hashkey == "#show_dast") {
+  else if (hashkey == "#dast-zone") {
      show_dast();
    }
-   else if (hashkey == "#show_mast") {
+  else if (hashkey == "#apit-zone") {
+     show_apit();
+   }
+  else if (hashkey == "#mast-zone") {
     show_mast();
    }
 }

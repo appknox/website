@@ -1,3 +1,5 @@
-/static-application-security-testing: /know-more/#show_sast
-/dynamic-application-security-testing: /know-more/#show_dast
-/manual-application-security-testing: /know-more/#show_mast
+/static-application-security-testing: /know-more/#sast-zone
+/dynamic-application-security-testing: /know-more/#dast-zone
+/application-program-interface-testing: /know-more/#apit-zone
+/manual-application-security-testing: /know-more/#mast-zone
+/products: /know-more

@@ -2125,12 +2125,17 @@ ul.pricing-plan-list {
   padding-top: 130px
 }
 
+.level-images-pos.section-leveler {
+  margin-top: -2em;
+  margin-bottom: 2em
+}
+
 #sast-zone {
   padding-top: 140px;
   margin-top: -140px;
 }
 
-#dast-zone, #mast-zone {
+#dast-zone, #mast-zone, #apit-zone {
   display: none;
   padding-top: 140px;
   margin-top: -140px;
@@ -2382,8 +2387,6 @@ line-height: 35px;
   padding-bottom: 5px
 }
 
-
-
 /* END OF THANK YOU PAGE */
 
 /* START OF GlOSSARY PAGE */
@@ -2513,7 +2516,7 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
     display: none!important;
   }
   #ak-menu {
-    margin-right: 100px!important;
+    margin-right: 0px!important;
     float: left;
   }
 }
@@ -2699,10 +2702,10 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
       padding-top: 110px;
   }
   #ak-menu li a {
-    padding: 15px 9px;
+    padding: 15px 8px;
   }
   #ak-menu li>a {
-    font-size: 14px
+    font-size: 12px
   }
   .slick-lightbox .slick-next, .slick-lightbox .slick-prev {
     margin-left: 0px;
@@ -2862,6 +2865,10 @@ nav.navbar.navbar-fixed-top ~ .glossary-section {
   }
   .register-container-wework .left-container .campaign-circle {
     margin-top: 50px
+  }
+  #navbar.navbar-collapse {
+    background: #FFF;
+    box-shadow: 2px 6px 10px #999;
   }
 }
 
@@ -4029,7 +4036,7 @@ header, .main-nav-scrolled {
     background-color: #f0fbf2!important;
     color: #f05b27
   }
-  #sast-zone, #dast-zone, #mast-zone {
+  #sast-zone, #dast-zone, #mast-zone, #apit-zone {
     padding-top: 0px;
     margin-top: 10px;
     margin-left: 0px!important;
