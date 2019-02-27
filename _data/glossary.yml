@@ -86,14 +86,14 @@
   description: An application program interface (API) is a set of routines, protocols,
               and tools for building software applications. Basically, an API specifies
               how software components should interact.
-  link: https://secure.appknox.com/register
+  link: /register
 
 - notation: API Testing
   description: API testing is a type of software testing that involves testing
               application programming interfaces (APIs) directly and as part of
               integration testing to determine if they meet expectations for
               functionality, reliability, performance, and security.
-  link: https://secure.appknox.com/register
+  link: /register
 
 - notation: Attacker
   description: Malicious actor who seeks to exploit computer systems with the
